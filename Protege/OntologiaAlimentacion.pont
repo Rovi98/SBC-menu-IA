@@ -1,0 +1,231 @@
+; Thu May 02 16:47:23 CEST 2019
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(multislot temporada
+		(type SYMBOL)
+		(allowed-values Invierno Primavera Verano Otono)
+		(cardinality 1 4)
+		(create-accessor read-write))
+	(single-slot limita
+		(type INSTANCE)
+;+		(allowed-classes Nutriente Ingrediente)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot enfermades
+		(type INSTANCE)
+;+		(allowed-classes Enfermedad)
+		(create-accessor read-write))
+	(single-slot peso
+;+		(comment "g")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipo
+		(type SYMBOL)
+		(allowed-values NoPuede NoDebe)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot KB_778509_Class9
+		(type SYMBOL)
+;+		(allowed-parents Persona)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KB_778509_Class8
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot categoria
+		(type SYMBOL)
+		(allowed-values PrimerPlato SegundoPlato Postre Desayuno)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot OntologiaAlimentacion_Class10002
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ingredientes
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+		(create-accessor read-write))
+	(multislot formaDeCocinar
+		(type INSTANCE)
+;+		(allowed-classes FormaDeCocinar)
+		(create-accessor read-write))
+	(single-slot OntologiaAlimentacion_Class5
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot nutriente
+		(type INSTANCE)
+;+		(allowed-classes Nutriente)
+		(create-accessor read-write))
+	(single-slot OntologiaAlimentacion_Class2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot preferencias
+		(type INSTANCE)
+;+		(allowed-classes Preferencia)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot limitaciones
+		(type INSTANCE)
+;+		(allowed-classes Limitacion)
+		(create-accessor read-write))
+	(single-slot energia
+;+		(comment "kcal/g")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Ingrediente
+	(is-a USER)
+	(role concrete)
+	(multislot temporada
+		(type SYMBOL)
+		(allowed-values Invierno Primavera Verano Otono)
+		(cardinality 1 4)
+		(create-accessor read-write))
+	(single-slot peso
+;+		(comment "g")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot nutriente
+		(type INSTANCE)
+;+		(allowed-classes Nutriente)
+		(create-accessor read-write))
+	(single-slot energia
+;+		(comment "kcal/g")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Plato
+	(is-a USER)
+	(role concrete)
+	(multislot temporada
+		(type SYMBOL)
+		(allowed-values Invierno Primavera Verano Otono)
+		(cardinality 1 4)
+		(create-accessor read-write))
+	(multislot ingredientes
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+		(create-accessor read-write))
+	(multislot categoria
+		(type SYMBOL)
+		(allowed-values PrimerPlato SegundoPlato Postre Desayuno)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot formaDeCocinar
+		(type INSTANCE)
+;+		(allowed-classes FormaDeCocinar)
+		(create-accessor read-write)))
+
+(defclass Persona
+	(is-a USER)
+	(role concrete)
+	(multislot preferencias
+		(type INSTANCE)
+;+		(allowed-classes Preferencia)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot enfermades
+		(type INSTANCE)
+;+		(allowed-classes Enfermedad)
+		(create-accessor read-write)))
+
+(defclass Enfermedad
+	(is-a USER)
+	(role concrete)
+	(multislot limitaciones
+		(type INSTANCE)
+;+		(allowed-classes Limitacion)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Preferencia
+	(is-a USER)
+	(role concrete)
+	(multislot limitaciones
+		(type INSTANCE)
+;+		(allowed-classes Limitacion)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass FormaDeCocinar
+	(is-a USER)
+	(role concrete)
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Nutriente
+	(is-a USER)
+	(role concrete))
+
+(defclass Micronutriente
+	(is-a Nutriente)
+	(role concrete))
+
+(defclass Vitamina
+	(is-a Micronutriente)
+	(role concrete))
+
+(defclass Mineral
+	(is-a Micronutriente)
+	(role concrete))
+
+(defclass Macronutriente
+	(is-a Nutriente)
+	(role concrete))
+
+(defclass Proteina
+	(is-a Macronutriente)
+	(role concrete))
+
+(defclass Limitacion
+	(is-a USER)
+	(role concrete)
+	(single-slot limita
+		(type INSTANCE)
+;+		(allowed-classes Nutriente Ingrediente)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tipo
+		(type SYMBOL)
+		(allowed-values NoPuede NoDebe)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))

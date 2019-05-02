@@ -1,0 +1,42 @@
+digraph OntologiaAlimentacion {
+	node [label="\N"];
+	graph [bb="0,0,677,1070"];
+	Persona [label="{Persona|{preferencias|Instance*|{Preferencia}}|{nombre|String}|{enfermades|Instance*|{Enfermedad}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="235,1023", rects="118,1046,352,1069 118,1023,202,1046 202,1023,272,1046 272,1023,352,1046 118,1000,239,1023 239,1000,352,1023 118,977,198,1000 198\
+,977,268,1000 268,977,352,1000", width="3.25", height="1.2917"];
+	Preferencia [label="{Preferencia|{nombre|String}|{limitaciones|Instance*|{Limitacion}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="113,889", rects="-0.5,900.5,226.5,923.5 -0.5,877.5,117.5,900.5 117.5,877.5,226.5,900.5 -0.5,854.5,81.5,877.5 81.5,854.5,151.5,877.5 151.5,854.5,226.5\
+,877.5", width="3.1458", height="0.97222"];
+	Enfermedad [label="{Enfermedad|{limitaciones|Instance*|{Limitacion}}|{nombre|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="358,889", rects="244.5,900.5,471.5,923.5 244.5,877.5,326.5,900.5 326.5,877.5,396.5,900.5 396.5,877.5,471.5,900.5 244.5,854.5,362.5,877.5 362.5,854.5\
+,471.5,877.5", width="3.1458", height="0.97222"];
+	Nutriente [label=Nutriente, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="260,194", width="0.92361", height="0.5"];
+	Limitacion [label="{Limitacion|{limita|Instance|{Nutriente|Ingrediente}}|{tipo|Symbol|{NoPuede|NoDebe}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="253,663", rects="159.5,697.5,346.5,720.5 159.5,651.5,205.5,697.5 205.5,651.5,268.5,697.5 268.5,674.5,346.5,697.5 268.5,651.5,346.5,674.5 159.5,605.5\
+,204.5,651.5 204.5,605.5,271.5,651.5 271.5,628.5,346.5,651.5 271.5,605.5,346.5,628.5", width="2.5903", height="1.6111"];
+	Ingrediente [label="{Ingrediente|{peso|String}|{nombre|String}|{nutriente|Instance*|{Nutriente}}|{energia|Float}|{temporada|Symbol*|{Invierno|Primavera\
+|Verano|Otono}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="369,368", rects="261.5,448.5,476.5,471.5 261.5,425.5,365.5,448.5 365.5,425.5,476.5,448.5 261.5,402.5,373.5,425.5 373.5,402.5,476.5,425.5 261.5,379.5\
+,329.5,402.5 329.5,379.5,404.5,402.5 404.5,379.5,476.5,402.5 261.5,356.5,374.5,379.5 374.5,356.5,476.5,379.5 261.5,264.5,337.5\
+,356.5 337.5,264.5,404.5,356.5 404.5,333.5,476.5,356.5 404.5,310.5,476.5,333.5 404.5,287.5,476.5,310.5 404.5,264.5,476.5,287.5", width="2.9792", height="2.8889"];
+	Vitamina [label=Vitamina, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="161,18", width="0.89583", height="0.5"];
+	Micronutriente [label=Micronutriente, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="221,106", width="1.3611", height="0.5"];
+	Proteina [label=Proteina, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="339,18", width="0.86111", height="0.5"];
+	Macronutriente [label=Macronutriente, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="339,106", width="1.3958", height="0.5"];
+	Mineral [label=Mineral, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="241,18", width="0.80556", height="0.5"];
+	Plato [label="{Plato|{ingredientes|Instance*|{Ingrediente}}|{nombre|String}|{formaDeCocinar|Instance*|{FormaDeCocinar}}|{temporada|Symbol*|{Invierno\
+|Primavera|Verano|Otono}}|{categoria|Symbol*|{PrimerPlato|SegundoPlato|Postre|Desayuno}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="531,663", rects="384.5,778,677.5,801 384.5,755,487.5,778 487.5,755,578.5,778 578.5,755,677.5,778 384.5,732,535.5,755 535.5,732,677.5,755 384.5,709\
+,494.5,732 494.5,709,564.5,732 564.5,709,677.5,732 384.5,617,486.5,709 486.5,617,579.5,709 579.5,686,677.5,709 579.5,663,677.5,\
+686 579.5,640,677.5,663 579.5,617,677.5,640 384.5,525,472.5,617 472.5,525,560.5,617 560.5,594,677.5,617 560.5,571,677.5,594 560.5\
+,548,677.5,571 560.5,525,677.5,548", width="4.0625", height="3.8472"];
+	FormaDeCocinar [label="{FormaDeCocinar|{nombre|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="551,368", rects="494.5,368,607.5,391 494.5,345,555.5,368 555.5,345,607.5,368", width="1.5625", height="0.65278"];
+	Persona -> Preferencia [style=filled, label="preferencias*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,144.06,923.6 193.36,976.94 179.6,962.06 164.38,945.59 150.92,931.03", lp="211.5,950"];
+	Persona -> Enfermedad [style=filled, label="enfermades*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,326.69,923.6 276.99,976.94 290.85,962.06 306.2,945.59 319.77,931.03", lp="343.5,950"];
+	Enfermedad -> Limitacion [style=filled, label="limitaciones*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,279.65,720.85 342.28,854.46 326.91,821.67 303.08,770.85 283.91,729.95", lp="369.5,828"];
+	Limitacion -> Nutriente [style=filled, label=limita, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,247.36,212.11 237.16,605.3 217.89,527.18 191.49,382.64 222,264 225.95,248.65 234.11,233.06 241.86,220.59", lp="237,368"];
+	Limitacion -> Ingrediente [style=filled, label=limita, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,328.36,471.65 275.5,605.16 289.44,569.96 307.82,523.54 324.59,481.18", lp="333,498"];
+	Micronutriente -> Vitamina [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,208.86,87.597 203.1,79.339 193.34,65.36 181.54,48.444 172.92,36.084", lp="205,62"];
+	Macronutriente -> Proteina [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,339,87.597 339,77.342 339,63.774 339,47.861 339,36.084", lp="347,62"];
+	Micronutriente -> Mineral [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,225.05,87.597 227.34,77.744 230.51,64.09 234.26,47.977 237.03,36.084", lp="241,62"];
+	Nutriente -> Micronutriente [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,252.11,175.6 247.82,166.15 241.59,152.41 234.19,136.09 228.75,124.08", lp="252,150"];
+	Plato -> Ingrediente [style=filled, label="ingredientes*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,425.85,471.82 455.22,524.94 447.03,510.14 438.78,495.21 430.79,480.76", lp="476.5,498"];
+	Plato -> FormaDeCocinar [style=filled, label="formaDeCocinar*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,549.5,391.04 540.36,524.94 543.5,478.91 546.72,431.63 548.79,401.38", lp="592,498"];
+	Nutriente -> Macronutriente [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,275.99,175.6 282.85,168.13 295.83,154 311.74,136.68 323.31,124.08", lp="315,150"];
+	Preferencia -> Limitacion [style=filled, label="limitaciones*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,217.47,720.85 133.96,854.46 154.54,821.54 186.49,770.42 212.11,729.43", lp="191.5,828"];
+	Ingrediente -> Nutriente [style=filled, label="nutriente*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,270.89,212.18 304.02,264.46 293.78,248.3 284.04,232.94 276.35,220.8", lp="320.5,238"];
+}
