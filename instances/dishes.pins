@@ -1,0 +1,2095 @@
+([EasterLeftoverSandwich] of Plato
+	(ingredients 
+		[HardBoiledEggs]
+		[Mayonnaise]
+		[GrainyDijonMustard]
+		[SaltAndPeppertotaste]
+		[SeveralDashesWorcestershireSauce]
+		[LeftoverBakedHamSliced]
+		[KaiserRolls]
+		[OtherBread]
+		[ExtraMayonnaiseAndDijonForSpreading]
+		[SwissCheese]
+		[OtherCheeseSlices]
+		[ThinlySlicedRedOnion]
+		[AvocadoSlices]
+		[SlicedTomatoes]
+		[LettuceSpinach,]
+		[Arugula])
+	(nombre Easter Leftover Sandwich))
+
+([PastawithPestoCreamSauce] of Plato
+	(ingredients 
+		[FreshBasilLeaves]
+		[GratedParmesanCheese]
+		[PineNuts]
+		[clovesGarlicPeeled]
+		[SaltAndPeppertotaste]
+		[ExtraVirginOliveOil]
+		[HeavyCream]
+		[Butter]
+		[GratedParmesan]
+		[Pasta]
+		[TomatoesDiced])
+	(nombre Pasta with Pesto Cream Sauce))
+
+([HerbRoastedPorkTenderloinwithPreserves] of Plato
+	(ingredients 
+		[PorkTenderloins]
+		[SaltAndPeppertotaste]
+		[HerbsDeProvencemoreIfNeeded]
+		[Preserves]
+		[Water]
+		[Vinegar])
+	(nombre Herb Roasted Pork Tenderloin with Preserves))
+
+([ChickenFlorentinePasta] of Plato
+	(ingredients 
+		[poundPenne]
+		[BonelessSkinlessChickenBreasts]
+		[SaltAndPeppertotaste]
+		[Butter]
+		[OliveOil]
+		[clovesGarlicMinced]
+		[DryWhiteWine]
+		[Low-sodiumBrothMoreIfNeeded]
+		[BabySpinach]
+		[GrapeTomatoesHalvedLengthwise]
+		[ParmesanCheeseShavedWithVegetablePeeler])
+	(nombre Chicken Florentine Pasta))
+
+([PerfectIcedCoffee] of Plato
+	(ingredients 
+		[poundGroundCoffee]
+		[quartsColdWater]
+		[Half-and-half]
+		[SweetenedCondensedMilk]
+		[Note:CanUseSkimMilk%MilkMilkSugarArtificialSweetenersSyrups...adaptToYourLiking!])
+	(nombre Perfect Iced Coffee))
+
+([EasyGreenChileEnchiladas] of Plato
+	(ingredients 
+		[OnionDiced]
+		[Butter]
+		[canGreenEnchiladaSauce]
+		[cansChoppedGreenChilies]
+		[CornTortillas]
+		[FreshlyGratedCheddarCheese]
+		[SourCream]
+		[Salsa]
+		[PicoDeGallo]
+		[Guacamole]
+		[CilantroLeavesOptional])
+	(nombre Easy Green Chile Enchiladas))
+
+([KrispyEasterEggs] of Plato
+	(ingredients 
+		[Butter]
+		[packageMiniMarshmallows]
+		[RiceKrispies]
+		[AssortedSprinkles]
+		[SmallChocolateEasterEggs]
+		[PlasticEasterEggs])
+	(nombre Krispy Easter Eggs))
+
+([PattyMelts] of Plato
+	(ingredients 
+		[stickButter]
+		[LargeOnionHalvedAndSliced]
+		[-poundGroundBeef]
+		[SaltAndPeppertotaste]
+		[dashesWorcestershireSauce]
+		[slicesSwissCheese]
+		[slicesRyeBread])
+	(nombre Patty Melts))
+
+([Yum.Doughnuts!] of Plato
+	(ingredients 
+		[Doughnuts]
+		[-MilkWarm]
+		[Sugar]
+		[-Instant]
+		[ActiveDryYeast]
+		[LargeEggsBeaten]
+		[-stickUnsaltedButtermelted]
+		[All-purposeFlour]
+		[Salt]
+		[Shortening]
+		[GLAZE]
+		[PowderedSugar]
+		[Salt]
+		[Vanilla]
+		[ColdWater]
+		[Milk])
+	(nombre Yum. Doughnuts!))
+
+([ButteryLemonParsleyNoodles] of Plato
+	(ingredients 
+		[poundPasta]
+		[Butter]
+		[FinelyMincedParsley]
+		[Lemon]
+		[SaltAndPeppertotaste])
+	(nombre Buttery Lemon Parsley Noodles))
+
+([RoastChicken] of Plato
+	(ingredients 
+		[ChickenRinsedAndPattedDry]
+		[ButterSoftened]
+		[Lemons]
+		[sprigsRosemary]
+		[SaltAndPeppertotaste])
+	(nombre Roast Chicken))
+
+([BakedFrenchToast] of Plato
+	(ingredients 
+		[FRENCHTOAST]
+		[ButterForGreasing]
+		[loafCrustySourdough]
+		[FrenchBread]
+		[Eggs]
+		[Milk]
+		[HeavyCream]
+		[Sugar]
+		[BrownSugar]
+		[VanillaExtract]
+		[Topping]
+		[Flour]
+		[FirmlyPackedBrownSugar]
+		[Cinnamon]
+		[Salt]
+		[FreshlyGratedNutmegOptional]
+		[stickColdButterCutIntoPieces]
+		[WarmSyrupForServing]
+		[ButterForServing]
+		[FreshBlueberriesForServing])
+	(nombre Baked French Toast))
+
+([YummySlice-and-BakeCookies] of Plato
+	(ingredients 
+		[-All-purposeFlour]
+		[InstantCoffeeGranules]
+		[BakingSoda]
+		[Salt]
+		[SaltedButterSoftened]
+		[-PackedBrownSugar]
+		[GranulatedSugar]
+		[Eggs]
+		[Vanilla]
+		[CreamyPeanutButter]
+		[Nutella]
+		[VeryFinelyChoppedPecans]
+		[M&amp;M'sRoughlyChopped])
+	(nombre Yummy Slice-and-Bake Cookies))
+
+([YummyGrilledZucchini] of Plato
+	(ingredients 
+		[Zucchini]
+		[OliveOil]
+		[KosherSalt]
+		[BlackPepper]
+		[LemonsZested]
+		[KosherSalt]
+		[ExtraOliveOilIfNeededForBrushing])
+	(nombre Yummy Grilled Zucchini))
+
+([ChocolateCoveredS\umores] of Plato
+	(ingredients 
+		[GrahamCrackerSquares]
+		[containerMarshmallowCreme]
+		[PackageChocolateAlmondBarn]
+		[OtherMeltingChocolate]
+		[ChoppedNutsSprinklesEtc.])
+	(nombre Chocolate Covered S\umores))
+
+([T-BoneSteakswithHotelButter] of Plato
+	(ingredients 
+		[HOTELBUTTER]
+		[sticksSaltedButterSoftened]
+		[FinelyMincedParsley]
+		[LemonZestedAndHalved]
+		[OPTIONAL:FinelyMincedGarlicSaltPepperAnyMixOfHerbsCrushedRedPepperPaprika...anythingYouCanComeUpWith!]
+		[Steaks]
+		[Steaks]
+		[SaltAndPeppertotaste]
+		[ButterForFrying])
+	(nombre T-Bone Steaks with Hotel Butter))
+
+([MangoMargaritas!] of Plato
+	(ingredients 
+		[Limes]
+		[CoarseSugar]
+		[jarsMangoChunksDrained]
+		[-Tequila]
+		[-TripleSec]
+		[Sugar])
+	(nombre Mango Margaritas!))
+
+([TuscanBeanSoupwithShrimp] of Plato
+	(ingredients 
+		[clovesGarlicMinced]
+		[MediumOnionDiced]
+		[cans.CansGreatNortherBeansDrainedAndRinsed]
+		[OliveOil]
+		[RedPepperFlakes]
+		[DriedOregano]
+		[TomatoPaste]
+		[DryWhiteWine]
+		[can]
+		[DicedTomatoes]
+		[LowSodiumChickenBroth]
+		[bunchKale]
+		[PlentyOfTornFreshBasil]
+		[Butter]
+		[-poundRawShrimpPeeledAndDeveined]
+		[ChoppedFreshParsley]
+		[FreshParmesanShavings])
+	(nombre Tuscan Bean Soup with Shrimp))
+
+([Hoppin\uJohn] of Plato
+	(ingredients 
+		[Butter]
+		[LargeOnionDiced]
+		[clovesGarlicMinced]
+		[GreenBellPepperDiced]
+		[stalksCeleryDiced]
+		[SoakedBlack-eyedPeas]
+		[Low-sodiumChickenBroth]
+		[HamHock]
+		[SaltAndPeppertotaste]
+		[CayennePepperToTaste]
+		[WhiteVinegar]
+		[White]
+		[BrownRiceForServing])
+	(nombre Hoppin\u John))
+
+([TurkeyelBurger] of Plato
+	(ingredients 
+		[Everythingels]
+		[Butter]
+		[GoatCheese]
+		[CreamCheese]
+		[Pesto]
+		[poundsGroundTurkey]
+		[KosherSalt]
+		[PlentyOfBlackPepper]
+		[dashesWorcestershireSauce]
+		[dashesHotSauce]
+		[EggYolk]
+		[CanolaOil]
+		[Butter]
+		[RomaTomatoesSliced]
+		[AvocadosSliced]
+		[LargeBasilLeaves])
+	(nombre Turkey el Burger))
+
+([PerfectFrenchFries] of Plato
+	(ingredients 
+		[poundsRussetPotatoes]
+		[Vegetable]
+		[PeanutOilForFrying]
+		[SeaSalt])
+	(nombre Perfect French Fries))
+
+([ApplePecanandBlueCheeseSaladwithDriedCherries] of Plato
+	(ingredients 
+		[SaladGreens]
+		[ApplesCoredAndSlicedVeryThin]
+		[PecanHalves]
+		[DriedCherries]
+		[BlueCheeseCutIntoChunks]
+		[DijonMustard]
+		[MapleSyrup]
+		[AppleCiderVinegar]
+		[OliveOil]
+		[SaltAndPeppertotaste])
+	(nombre ApplePecanand Blue Cheese Salad with Dried Cherries))
+
+([DeepDishFruitPizza] of Plato
+	(ingredients 
+		[-Shortening]
+		[-Sugar]
+		[OrangeZest]
+		[Vanilla]
+		[Eggs]
+		[Milk]
+		[All-purposeFlour]
+		[BakingPowder]
+		[Salt]
+		[jarsMarshmallowCreme]
+		[packagesCreamCheese]
+		[Peaches]
+		[KiwiFruit]
+		[Blueberries]
+		[Pears]
+		[Raspberries]
+		[OtherFruitOptional])
+	(nombre Deep Dish Fruit Pizza))
+
+([Bacon-WrappedScallopswithChiliButter] of Plato
+	(ingredients 
+		[poundsLargeScallops]
+		[poundBaconCutIntoThirds]
+		[Halves]
+		[stickButter]
+		[ChiliPowder]
+		[DashOfCayenne])
+	(nombre Bacon-Wrapped Scallops with Chili Butter))
+
+([Sausage-KaleBreakfastStrata] of Plato
+	(ingredients 
+		[Eggs]
+		[-HalfAndHalf]
+		[SaltAndPeppertotaste]
+		[MincedFreshOregano]
+		[loafCrustyFrench]
+		[ItalianBreadCutIntoCubes]
+		[poundsBreakfastSausagePattiesCookedAndCutIntoCubes]
+		[bunchRegularKaleTornIntoPieces]
+		[OliveOilForFrying]
+		[WhiteMushroomsHalved]
+		[-GratedMontereyJackCheese])
+	(nombre Sausage-Kale Breakfast Strata))
+
+([SpicyStewedBeefwithCreamyCheddarGrits] of Plato
+	(ingredients 
+		[CanolaOil]
+		[Butter]
+		[poundsStewMeat]
+		[DicedChuckRoast]
+		[canChipotlePeppersInAdoboSauce]
+		[Low-sodiumBeefBrothMoreIfNeeded]
+		[clovesMincedGarlic]
+		[Cumin]
+		[ChiliPowder]
+		[OnionDiced]
+		[RedBellPepper]
+		[Chilies]
+		[StoneGroundGrits]
+		[LowSodiumChickenBroth]
+		[Water]
+		[Half-and-half]
+		[GratedCheddarCheese])
+	(nombre Spicy Stewed Beef with Creamy Cheddar Grits))
+
+([SpicySpinach-StuffedMushrooms] of Plato
+	(ingredients 
+		[WhiteMushrooms]
+		[OliveOil]
+		[Butter]
+		[MediumOnionDiced]
+		[PankoBreadcrumbs]
+		[SaltAndBlackPepperToTaste]
+		[CreamCheeseSoftened]
+		[SourCream]
+		[GratedSharpCheddarCheese]
+		[GratedMontereyJack]
+		[Farmer'sCheese]
+		[packageChoppedSpinachThawed]
+		[dashesHotSauce])
+	(nombre Spicy Spinach-Stuffed Mushrooms))
+
+([PorkChopswithGarlicandWine] of Plato
+	(ingredients 
+		[PorkChops]
+		[Olive(Oil]
+		[Butter]
+		[SaltAndPepper]
+		[-RedWine]
+		[BeefBroth]
+		[BayLeaf]
+		[BalsamicVinegar]
+		[PeeledGarlicCloves]
+		[Butter])
+	(nombre Pork Chops with Garlic and Wine))
+
+([PotsdeCr\uemeal\uOrange] of Plato
+	(ingredients 
+		[Semi-SweetChocolateChips]
+		[Eggs]
+		[GrandMarnierMoreToTaste]
+		[dashSalt]
+		[VeryHotStrongCoffee]
+		[FreshWhippedCreamForServing]
+		[ThinlySlicedOrangePeelForGarnish])
+	(nombre Pots de Cr\ueme a l\uOrange))
+
+([ChocolateCookieswithToppings] of Plato
+	(ingredients 
+		[sticksSaltedButterSlightlySoftened]
+		[PowderedSugar]
+		[Egg]
+		[VanillaExtract]
+		[-Flour]
+		[CocoaPowder]
+		[Salt]
+		[WhiteAlmondBark]
+		[ChocolateAlmondBark]
+		[DIPPINGBAR]
+		[PistachiosFinelyChopped]
+		[M&amp;M'sSlightlyChopped]
+		[ToffeeBarsChopped]
+		[AssortedNutsSprinklesCandies])
+	(nombre Chocolate Cookies with Toppings))
+
+([VegetarianLettuceWraps] of Plato
+	(ingredients 
+		[Peanut]
+		[OliveOil]
+		[packageFirmTofu]
+		[earsCorn]
+		[ChiliPowder]
+		[SoySauce]
+		[RomaineLettuceHearts]
+		[AvocadosSliced]
+		[BalsamicVinegar])
+	(nombre Vegetarian Lettuce Wraps))
+
+([PastaPuttanesca] of Plato
+	(ingredients 
+		[Bucatini]
+		[Spaghetti]
+		[OliveOil]
+		[RedOnionSliced]
+		[-GrapeTomatoesHalved]
+		[ChickenBroth]
+		[WhiteWine]
+		[clovesGarlic]
+		[AnchovyFilets]
+		[AssortedPittedOlives]
+		[BasilLeaves]
+		[GoodParmesanCheese])
+	(nombre Pasta Puttanesca))
+
+([ChickenwithMustardCreamSauce] of Plato
+	(ingredients 
+		[BonelessSkinlessChickenBreasts]
+		[OliveOil]
+		[Butter]
+		[GarlicClovesMinced]
+		[Brandy]
+		[DijonMustard]
+		[GrainyMustard]
+		[HeavyCream]
+		[ChickenBroth]
+		[SaltAndPeppertotaste])
+	(nombre Chicken with Mustard Cream Sauce))
+
+([PorkChopswithPineappleFriedRice] of Plato
+	(ingredients 
+		[PineappleCutIntoSpearsAndSkewered]
+		[White]
+		[BrownRiceCooked]
+		[PorkChops]
+		[Butter]
+		[PeanutOil]
+		[CanolaOil]
+		[LargeOnionSliced]
+		[SoySauce]
+		[RiceWineVinegar]
+		[Honey]
+		[Sriracha,]
+		[OtherHotSauce]
+		[SaltToTaste]
+		[clovesMincedGarlic]
+		[Eggs]
+		[jarDrainedPimentos]
+		[-FrozenPeas]
+		[SoySauce])
+	(nombre Pork Chops with Pineapple Fried Rice))
+
+([NewYorkStyleChoppedSalad] of Plato
+	(ingredients 
+		[Greens]
+		[MixedSaladGreens]
+		[BibbLettuce]
+		[RomaineLeaves]
+		[FIXINS]
+		[GrapeTomatoesHalved]
+		[KidneyBeansDrainedAndRinsed]
+		[GarbanzoBeansDrainedAndRinsed]
+		[PittedMixedOlives]
+		[Sliced]
+		[DicedBellPepper]
+		[HardBoiledEggsPeeledAndSliced]
+		[AvocadoSliced]
+		[MushroomsSliced]
+		[CheeseGrated]
+		[FreshMozzarellaCubed]
+		[CucumbersHalvedThenSliced]
+		[AsparagusBlanchedAndSlicedIntoPieces]
+		[SunflowerSeeds]
+		[SlicedAlmonds]
+		[FORTHEDRESSING:]
+		[DressingsOfYourChoice])
+	(nombre New York Style Chopped Salad))
+
+([PerfectSunny-SideUpEggs] of Plato
+	(ingredients 
+		[Eggs]
+		[CanolaOil])
+	(nombre Perfect Sunny-Side Up Eggs))
+
+([SalisburySteakMashedPotatoesandPeas] of Plato
+	(ingredients 
+		[MEATMIXTURE]
+		[-poundLeanGroundBeef]
+		[SeasonedBreadcrumbs]
+		[DryMustard]
+		[cubeBeefBouillonCrumbed]
+		[dashesWorcestershireSauce]
+		[Ketchup]
+		[SaltAndPepper]
+		[Gravy]
+		[OnionHalvedAndThinlySliced]
+		[BeefBroth]
+		[dashesWorcestershire]
+		[Ketchup]
+		[KitchenBouquet]
+		[CornStarchMixedWithALittleBeefBrothToMakeAThinPaste]
+		[SaltAndPeppertotaste]
+		[MoreBrothIfNeededForThinning]
+		[MashedPotatoesForServing]
+		[ButteredPeasForServing]
+		[OliveOilForFrying]
+		[ButterForFrying])
+	(nombre Salisbury SteakMashed Potatoesand Peas))
+
+([SeafoodPasta] of Plato
+	(ingredients 
+		[OliveOil]
+		[Butter]
+		[poundScallops]
+		[poundShrimp]
+		[clovesGarlic]
+		[DryWhiteWine]
+		[]
+		[DicedTomatoes]
+		[SaltAndPeppertotaste]
+		[CrushedRedPepper]
+		[HeavyCreamWarmed]
+		[BasilLeavesTorn]
+		[ChickenBrothIfNeededForSplashingInALittleLiquid]
+		[PastaIUsedFusilliBucatiButAnyKindWillDo!])
+	(nombre Seafood Pasta))
+
+([PetiteVanillaScones] of Plato
+	(ingredients 
+		[SCONES]
+		[All-purposeFlour]
+		[Sugar]
+		[BakingPowder]
+		[Salt]
+		[sticksUNSALTEDButterChilled]
+		[LargeEgg]
+		[HeavyCream]
+		[VanillaBeans]
+		[GLAZE]
+		[PowderedSugarSifted]
+		[MilkMoreIfNeededForThinning]
+		[VanillaBean]
+		[DashOfSalt])
+	(nombre Petite Vanilla Scones))
+
+([IndividualCherryAlmondCrisps] of Plato
+	(ingredients 
+		[FORTHECRUMBMIXTURE:]
+		[All-purposeFlour]
+		[Sugar]
+		[PackedBrownSugar]
+		[Cinnamon]
+		[dashNutmegDoubleThisAmountIfDesired]
+		[Salt]
+		[-stickColdButterCutIntoPieces]
+		[SliveredAlmonds]
+		[FORTHECHERRIES:]
+		[sFrozenTartCherries]
+		[WhiteSugar]
+		[Cornstarch]
+		[AlmondExtract]
+		[FORTHEWHIPPEDCREAM:]
+		[HeavyCream]
+		[Sugar])
+	(nombre Individual Cherry Almond Crisps))
+
+([ScallopedPotatoesandHam] of Plato
+	(ingredients 
+		[poundsRusset]
+		[YukonGoldPotatoesWashedThoroughly]
+		[Butter]
+		[YellowOnionDiced]
+		[DicedHam]
+		[-Half-and-half]
+		[-HeavyCream]
+		[Flour]
+		[BlackPepperToTaste]
+		[GratedCheddarCheese]
+		[GratedMontereyJackCheese]
+		[ChoppedParsley])
+	(nombre Scalloped Potatoes and Ham))
+
+([SimpleScrumptiousGrilledChicken+Grillin\uRecipeContest] of Plato
+	(ingredients 
+		[BonelessSkinlessChickenBreasts]
+		[MARINADE:]
+		[BalsamicVinegar]
+		[OliveOil]
+		[BrownSugar]
+		[SteakSeasoning]
+		[Sauce:]
+		[Honey]
+		[piecesThickCutBaconDiced]
+		[WorcestershireSauce]
+		[HotSauce]
+		[cansBush\usSweetMesquiteGrillin\uBeans])
+	(nombre Simple Scrumptious Grilled Chicken + Grillin\u Recipe Contest))
+
+([It\usEggsBenedictDay!] of Plato
+	(ingredients 
+		[EnglishMuffins]
+		[slicesCanadianBacon]
+		[Eggs]
+		[sticksButter]
+		[LemonJuiced]
+		[CayennePepperToTaste])
+	(nombre It\us Eggs Benedict Day!))
+
+([OatmealWhoopiePies] of Plato
+	(ingredients 
+		[Cookies:]
+		[BrownSugar]
+		[ButterSoftened]
+		[Shortening]
+		[Eggs]
+		[Salt]
+		[GroundCinnamon]
+		[BakingPowder]
+		[BoilingWater]
+		[BakingSoda]
+		[-Flour]
+		[QuickOats]
+		[FILLINGOPTION#]
+		[MarshmallowCreme]
+		[FILLINGOPTION#]
+		[All-purposeFlour]
+		[Milk]
+		[Vanilla]
+		[Butter]
+		[GranulatedSugar])
+	(nombre Oatmeal Whoopie Pies))
+
+([CubanPorkChops+RecipeContestReminder!] of Plato
+	(ingredients 
+		[FORTHECHOPS:]
+		[Bone-inCenterCutPorkChops]
+		[OrangeJuice]
+		[LimesJuiced]
+		[clovesGarlicMinced]
+		[Cumin]
+		[CayennePepper]
+		[DriedOregano]
+		[SmallYellowOnionHalvedAndSlicedThin]
+		[FORTHESAUCE:]
+		[bunchCilantro]
+		[bunchParsley]
+		[OliveOil]
+		[SaltAndPeppertotaste]
+		[cansBush\usBlackBeanFiestaGrillin\uBeansToServe])
+	(nombre Cuban Pork Chops + Recipe Contest Reminder!))
+
+([CauliflowerSoup] of Plato
+	(ingredients 
+		[stickButterDivided]
+		[OnionFinelyDiced]
+		[CarrotFinelyDiced]
+		[stalkCeleryFinelyDiced]
+		[CauliflowerHeads]
+		[Fresh]
+		[DriedParsleyChopped]
+		[quartsLow-sodiumChickenBroth]
+		[Stock]
+		[All-purposeFlour]
+		[Milk]
+		[Half-and-half]
+		[ToSaltToTaste]
+		[SourCreamRoomTemperature])
+	(nombre Cauliflower Soup))
+
+([BruschettaChicken] of Plato
+	(ingredients 
+		[OliveOil]
+		[clovesGarlicFinelyMinced]
+		[pintRedGrapeTomatoesHalvedLengthwise]
+		[pintYellowGrapeTomatoesHalvedLengthwise]
+		[BalsamicVinegar]
+		[BasilLeaves]
+		[SaltAndBlackPepperToTaste]
+		[BonelessSkinlessChickenBreastsCutInHalfToCreateTwoThinBreasts]
+		[SaltAndPeppertotaste]
+		[FreshlyGrated]
+		[ShavedParmesan])
+	(nombre Bruschetta Chicken))
+
+([ShrimpTacos] of Plato
+	(ingredients 
+		[Shrimp]
+		[CanolaOil]
+		[-poundShrimpPeeledAndDeveinedTailsRemoved]
+		[canMexicanTomatoSauce]
+		[EnchiladaSauce]
+		[Cumin]
+		[Slaw:]
+		[headCabeSlicedThin]
+		[headPurpleCabeSlicedThin]
+		[JalapenoChopped]
+		[Milk]
+		[Mayonnnaise]
+		[WhiteVinegar]
+		[Sugar]
+		[Salt]
+		[CayennePepper]
+		[bunchCilantroRoughlyChopped]
+		[EXTRAS:]
+		[CornTortillasWarmed]
+		[PicoDeGallo]
+		[AvocadoSlices]
+		[LimeWedges])
+	(nombre Shrimp Tacos))
+
+([MapleGlazedChickenKabobswithSweetJalapenoSalsa] of Plato
+	(ingredients 
+		[-ChickenBreasts]
+		[MapleSyrup]
+		[SoySauce]
+		[PineappleJuice]
+		[PineappleFinelyDiced]
+		[JalapenoMinced]
+		[bunchCilantroRoughlyChopped]
+		[SmallRedOnionDiced]
+		[RiceWineVinegar]
+		[Sugar]
+		[Salt]
+		[BlackPepperToTaste]
+		[cansBush'sBourbonAndBrownSugarGrillin'Beans])
+	(nombre Maple Glazed Chicken Kabobs with Sweet Jalapeno Salsa))
+
+([BruschettaPaniniandMore!] of Plato
+	(ingredients 
+		[OliveOil]
+		[clovesGarlicFinelyMinced]
+		[pintRedGrapeTomatoesHalvedLengthwise]
+		[pintYellowGrapeTomatoesHalvedLengthwise]
+		[BalsamicVinegar]
+		[BasilLeaves]
+		[SaltAndPepperToTastedon'tOversalt!]
+		[uette]
+		[Butter])
+	(nombre Bruschetta Panini and More!))
+
+([ChocolateChipCaramelIceCreamSundae] of Plato
+	(ingredients 
+		[sticksButterSoftened]
+		[BrownSugar]
+		[Sugar]
+		[Eggs]
+		[Vanilla]
+		[-Flour]
+		[InstantCoffeeGranules]
+		[BakingSoda]
+		[-Salt]
+		[ChocolateChips]
+		[ChocolateChunksmoreToTaste!]
+		[IceCreamFlavorOfYourChoice]
+		[HotFudgeForDrizzling]
+		[CaramelSauceForDrizzling]
+		[WhippedCream]
+		[MaraschinoCherries])
+	(nombre Chocolate Chip Caramel Ice Cream Sundae))
+
+([MonsterBLT] of Plato
+	(ingredients 
+		[slicesThick-cutBaconCookedTillSlightlyCrisp]
+		[slicesMarbledRyeBreadToasted]
+		[Mayonnaise]
+		[AdoboSauceFromChipotlePeppersMoreToTaste]
+		[RomaTomatoesSlicedThick]
+		[GreenLeafLettuceLeavesWashed]
+		[SaltAndPepper]
+		[OptionalIngredients:CheeseSlicesAvocadoRedOnionSlices])
+	(nombre Monster BLT))
+
+([CornmealPancakeswithBlackberrySyrup] of Plato
+	(ingredients 
+		[Pancakes]
+		[-All-purposeFlour]
+		[-HeapingYellowCornmeal]
+		[Salt]
+		[BakingPowder]
+		[Sugar]
+		[-Milk]
+		[LargeEggs]
+		[Vanilla]
+		[ButterMelted]
+		[BlackberrySyrup]
+		[pintBlackberries]
+		[Sugar]
+		[Water]
+		[Cornstarch]
+		[ExtraButterForServing]
+		[Maple]
+		[PancakeSyrupForServing])
+	(nombre Cornmeal Pancakes with Blackberry Syrup))
+
+([BarbecueChickenSandwiches] of Plato
+	(ingredients 
+		[CutUpFryerChicken]
+		[SaltAndPeppertotaste]
+		[CanolaOil]
+		[bottleBarbecueSauce]
+		[OnionSliced]
+		[ClovesGarlic]
+		[Slaw:]
+		[headCabeSlicedThin]
+		[headPurpleCabeSlicedThin]
+		[Milk]
+		[Mayonnaise]
+		[WhiteVinegar]
+		[Sugar]
+		[Salt]
+		[CayennePepper]
+		[bunchCilantroRoughlyChopped])
+	(nombre Barbecue Chicken Sandwiches))
+
+([Grillin\uRecipeContestWinners!] of Plato
+	(ingredients 
+		[RibeyeHangerFlatIron,]
+		[StripSteaks]
+		[GroundNutmeg]
+		[GroundCumin]
+		[GroundCinnamon]
+		[GroundGinger]
+		[ChiliPowder]
+		[GroundTurmeric]
+		[GarlicSalt]
+		[OliveOil]
+		[cansBush'sGrillinBeansSteakhouseRecipe])
+	(nombre Grillin\u Recipe Contest Winners!))
+
+([TortillaRollups] of Plato
+	(ingredients 
+		[CreamCheeseSoftened]
+		[ChoppedGreenOnions]
+		[Chives]
+		[MincedFreshParsley]
+		[BasilLeavesChopped]
+		[SaltAndPeppertotaste]
+		[FreshLemonJuice]
+		[TacoSizedFlourTortillas]
+		[poundShavedTurkey]
+		[CarrotsPeeledAndJullienned]
+		[CucumberSeedsScrapedOutAndJulienned]
+		[leavesGreenLeafLettuceSpineRemoved]
+		[AvocadosSliced])
+	(nombre Tortilla Rollups ))
+
+([PastaCarbonara] of Plato
+	(ingredients 
+		[PastaAnyVariety]
+		[piecesThickCutBacon]
+		[MediumOnionDicedSmall]
+		[clovesGarlicMinced]
+		[Eggs]
+		[FinelyGratedParmesan]
+		[HeavyCream]
+		[Salt&amp;PlentyOfBlackPepper]
+		[Peas])
+	(nombre Pasta Carbonara))
+
+([CreamyLemonBasilPotatoSalad] of Plato
+	(ingredients 
+		[-SmallPotatoes]
+		[LemonsJuiced]
+		[OliveOil]
+		[Mayonnaise]
+		[SaltAndPeppertotaste]
+		[PreparedPesto]
+		[PineNuts]
+		[SmallBasilLeaves])
+	(nombre Creamy Lemon Basil Potato Salad))
+
+([TheBestSpinachArtichokeDipEver] of Plato
+	(ingredients 
+		[Butter]
+		[GarlicMinced]
+		[Spinach]
+		[SaltAndPeppertotaste]
+		[cansArtichokeHeartsRinsedAndDrained]
+		[Butter]
+		[Flour]
+		[-Milk]
+		[packageSoftenedCreamCheese]
+		[CrumbledFeta]
+		[GratedParmesan]
+		[GratedPepperJackCheese]
+		[Cayenne]
+		[ExtraGratedPepperJack]
+		[PitaWedgesTortillaChipsCrackers])
+	(nombre The Best Spinach Artichoke Dip Ever))
+
+([PotatoSkins] of Plato
+	(ingredients 
+		[RussetPotatoes]
+		[CanolaOil]
+		[Butter]
+		[SaltToTaste]
+		[-GratedCheddarCheese]
+		[slicesThickCutPepperedBaconFriedUntilAlmostCrispAndChopped]
+		[GreenOnionsSliced]
+		[SourCream])
+	(nombre Potato Skins))
+
+([TheBestMacaroniSaladEver] of Plato
+	(ingredients 
+		[ElbowMacaroni]
+		[RoastedRedPeppersChopped]
+		[BlackOlivesChoppedFine]
+		[Sweet/spicyPickleSlicesDiced]
+		[GreenOnionsSliced]
+		[Mayonnaise]
+		[RedWine]
+		[DistilledVinegar]
+		[SugarMore]
+		[LessToTaste]
+		[SaltMoreToTaste]
+		[PlentyOfBlackPepper]
+		[Milk]
+		[SplashOfPickleJuice]
+		[ExtraPickleJuiceToTaste])
+	(nombre The Best Macaroni Salad Ever))
+
+([PineappleFruitBowls] of Plato
+	(ingredients 
+		[PineappleCutInHalfLengthwiseJuiceReserved]
+		[HoneydewMelonChunks]
+		[CantaloupeChunks]
+		[Blueberries]
+		[RedGrapes]
+		[PineappleChunks]
+		[HoneyMore]
+		[LessToTaste]
+		[MintLeavesForGarnish])
+	(nombre Pineapple Fruit Bowls))
+
+([EasyCalzones] of Plato
+	(ingredients 
+		[FrozenUnrisenDinnerRollsNote:CanAlsoUseFrozenBreadLoaves.]
+		[Butter]
+		[MediumOnionDiced]
+		[poundBreakfast]
+		[ItalianSausage]
+		[ItalianSeasoning]
+		[RedPepperFlakes]
+		[fluidMilkRicottaCheese]
+		[GratedParmesanCheese]
+		[-GratedMozzarellaCheese]
+		[Eggs]
+		[Salt]
+		[BlackPepperToTaste]
+		[ChoppedFreshParsley]
+		[MarinaraSauceForServing]
+		[EggBeaten])
+	(nombre Easy Calzones))
+
+([SteakFingerswithGravy] of Plato
+	(ingredients 
+		[poundsTenderizedRoundSteak]
+		[CubeSteakCutInto-inchStrips]
+		[Flour]
+		[SeasonedSalt]
+		[BlackPepper]
+		[Cayenne]
+		[Eggs]
+		[Milk]
+		[CanolaOilAndButterForFrying]
+		[Milk]
+		[SaltAndPeppertotaste])
+	(nombre Steak Fingers with Gravy))
+
+([StrawberrySparkleCake] of Plato
+	(ingredients 
+		[AngleFoodCake]
+		[EggWhitesAtRoomTemperature]
+		[CreamOfTartar]
+		[-PlusSugarSiftedThreeTimes]
+		[CakeFlour]
+		[Salt]
+		[Vanilla]
+		[Filling]
+		[packageStrawberryJello]
+		[-BoilingWater]
+		[packageFrozenSlicedStrawberries]
+		[Icing]
+		[-HeavyCream]
+		[Sugar])
+	(nombre Strawberry Sparkle Cake))
+
+([ChocolateMintBrownieBites] of Plato
+	(ingredients 
+		[AndesMints]
+		[stickButterSoftened]
+		[Sugar]
+		[UnsweetenedChocolate]
+		[Eggs]
+		[All-purposeFlour]
+		[MintExtract]
+		[Butter]
+		[BittersweetChocolateChoppedFine])
+	(nombre Chocolate Mint Brownie Bites))
+
+([HuevointheHole] of Plato
+	(ingredients 
+		[CornTortillas]
+		[Butter]
+		[Egg]
+		[SaltAndPeppertotaste]
+		[Salsa]
+		[SourCream]
+		[PicoDeGallo]
+		[AvocadoSlices])
+	(nombre Huevo in the Hole))
+
+([Low-CarbBurgers] of Plato
+	(ingredients 
+		[poundsGroundChuck]
+		[KosherSalt]
+		[BlackPepper]
+		[dashesWorcestershireSauce]
+		[Butter]
+		[Mayonnaise]
+		[DijonMustard]
+		[dashesWorcestershireSauce]
+		[AvocadosSliced]
+		[TomatoesSliced]
+		[ThinlySlicedRedOnion]
+		[headIcebergGreenLeaf,]
+		[ButterLettuce]
+		[OptionalToppings:ChoppedPicklesFetaCheeseCilantroPicoDeGallo])
+	(nombre Low-Carb Burgers))
+
+([Hot&amp;SpicyItalianDripBeef] of Plato
+	(ingredients 
+		[OliveOil]
+		[ChuckRoasts]
+		[SaltAndPepper]
+		[fluidBeefStock]
+		[canCrushedTomatoes]
+		[jarPepperoncinisWithJuice]
+		[jarHotCherryPeppersDrained]
+		[jarsPimentos]
+		[ButteredToastedRolls]
+		[Provolone]
+		[MozzarellaCheese])
+	(nombre Hot &amp; Spicy Italian Drip Beef))
+
+([ILoveYaTomorrow!] of Plato
+	(ingredients 
+		[Cake]
+		[Sugar]
+		[VegetableOil]
+		[Eggs]
+		[All-purposeFlourPlusMoreForDusting]
+		[BakingPowder]
+		[BakingSoda]
+		[GroundCinnamon]
+		[Salt]
+		[GratedCarrots]
+		[ButterForGreasing]
+		[Icing]
+		[stickButterSoftened]
+		[packageCreamCheeseSoftened]
+		[poundPowderedSugar]
+		[Vanilla]
+		[PecansChoppedReallyFinely])
+	(nombre I Love YaTomorrow!))
+
+([Surf&amp;TurfCajunPasta] of Plato
+	(ingredients 
+		[-BeefFiletSteaksInchesThickorAnySmall/petiteSteak]
+		[CajunSeasoning]
+		[Butter]
+		[OliveOil]
+		[poundJumboShrimpDeveined&amp;ShellsRemoved]
+		[SmallRedOnionHalvedAndSliced]
+		[GreenBellPepperSeededHalvedAndSliced]
+		[RedBellPepperSeededHalvedAndSliced]
+		[clovesGarlicMinced]
+		[WhiteWine]
+		[-Low-sodiumChickenBroth]
+		[HeavyCream]
+		[ParmesanCheeseGrated]
+		[TomatoesDiced]
+		[MincedParsleyToTaste]
+		[poundFettuccineRigatoni,]
+		[OtherNoodle])
+	(nombre Surf &amp; Turf Cajun Pasta))
+
+([SpaghettiSauce] of Plato
+	(ingredients 
+		[poundsGroundBeef]
+		[OliveOil]
+		[LargeYellowOnionsDiced]
+		[GreenBellPepperSeededAndDiced]
+		[clovesGarlicMinced]
+		[WhiteWine]
+		[cansCrushedTomatoes]
+		[canCrushedTomatoes]
+		[cansmall-TomatoPaste]
+		[jarGoodStoreboughtMarinaraSauce]
+		[GroundOregano]
+		[GroundThyme]
+		[BayLeaves]
+		[Sugar]
+		[KosherSalt]
+		[CrushedRedPepper]
+		[FinelyMincedFreshParsleyMoreToTaste]
+		[RindFromOneWedgeParmesan]
+		[GratedParmesanCheese]
+		[poundsSpaghettiCookedAlDenteAndTossedWithOliveOil]
+		[ExtraMincedParsleyForServing]
+		[ExtraParmesanCheeseForServing])
+	(nombre Spaghetti Sauce))
+
+([ItalianSloppyJoes] of Plato
+	(ingredients 
+		[LeftoverSpaghettiSauce]
+		[ThickSlicesOfGarlicBread]
+		[MozzarellaCheeseSlices]
+		[MincedFreshParsley])
+	(nombre Italian Sloppy Joes))
+
+([GranolaBars] of Plato
+	(ingredients 
+		[RolledOats]
+		[ButterMeltedPlusMoreForGreasing]
+		[Vegetable]
+		[CanolaOil]
+		[Salt]
+		[BrownSugar]
+		[Honey]
+		[AppleJuice]
+		[Molasses]
+		[VanillaExtract]
+		[-RiceKrispies]
+		[WheatGerm]
+		[FinelyChoppedPecans]
+		[RoughlyChoppedAlmonds]
+		[MilkChocolate]
+		[ChocolateAlmondBarkMelted])
+	(nombre Granola Bars))
+
+([PepperoniPizzaBurgers] of Plato
+	(ingredients 
+		[-poundGroundBeef]
+		[poundItalianSausageALittleMoreIsFine!]
+		[ItalianSeasoning]
+		[slicesMozzarella]
+		[ProvoloneCheese]
+		[PepperoniSlices]
+		[JarredMarinaraSauce]
+		[GratedParmesanCheese]
+		[KaiserRolls]
+		[GoodHamburgerBuns])
+	(nombre Pepperoni Pizza Burgers))
+
+([NutellaKrispieTreats] of Plato
+	(ingredients 
+		[SaltedButter]
+		[LargeMarshmallows]
+		[Salt]
+		[Nutella]
+		[RiceKrispies]
+		[-MiniatureMarshmallows]
+		[PecansFinelyChopped]
+		[SemiSweetChocolateMelted])
+	(nombre Nutella Krispie Treats))
+
+([SpinachArtichokePasta] of Plato
+	(ingredients 
+		[Butter]
+		[clovesGarlicFinelyMinced]
+		[sBabySpinach]
+		[cansArtichokeHeartsDrainedAndHalved]
+		[Flour]
+		[Milk]
+		[CayennePepper]
+		[SaltAndPeppertotaste]
+		[GratedParmesanCheese]
+		[-Mozzarella]
+		[MontereyJackCheeseGrated]
+		[LowSodiumChickenBroth]
+		[PenneCookedUntilAlDente]
+		[SeasonedPankoBreadcrumbs]
+		[CrushedRedPepperToTaste])
+	(nombre Spinach Artichoke Pasta))
+
+([SupremePizzaBurgers] of Plato
+	(ingredients 
+		[-poundGroundBeef]
+		[poundItalianSausageALittleMoreIsFine!]
+		[ItalianSeasoning]
+		[slicesMozzarella]
+		[ProvoloneCheese]
+		[PepperoniSlices]
+		[JarredMarinaraSaucePlusALittleMore]
+		[GratedParmesanCheese]
+		[KaiserRolls]
+		[GoodHamburgerBuns]
+		[ThinlySlicedRedOnion]
+		[GreenBellPepperSlicedThick]
+		[SlicedBlackOlives]
+		[SlicedMushrooms])
+	(nombre Supreme Pizza Burgers))
+
+([IttyBittyNutellaCakes] of Plato
+	(ingredients 
+		[StoreboughtAngelFoodCake]
+		[PoundCake]
+		[Nutella]
+		[CoolWhipThawedInTheFridge])
+	(nombre Itty Bitty Nutella Cakes))
+
+([PorkSandwicheswithCilantro-JalapenoSlaw] of Plato
+	(ingredients 
+		[OnionPeeledAndQuartered]
+		[PorkButt]
+		[SaltAndPepper]
+		[canChipotlePeppersInAdoboSauce]
+		[cansCola]
+		[BrownSugar]
+		[GoodQualityKaiser]
+		[DeliRolls]
+		[Butter]
+		[headCabeSlicedThin]
+		[headPurpleCabeSlicedThin]
+		[JalapenoHalvedLengthwiseAndThinlySliced]
+		[Milk]
+		[Mayonnaise]
+		[WhiteVinegar]
+		[Sugar]
+		[Salt]
+		[CayennePepper]
+		[CilantroLeavesBarelyChopped])
+	(nombre Pork Sandwiches with Cilantro-Jalapeno Slaw))
+
+([PolloAsado] of Plato
+	(ingredients 
+		[OliveOil]
+		[OrangeJuicefreshlySqueezedIfPossible;SaveJuicedOrangeHalves]
+		[LemonsJuiced]
+		[LimesJuiced]
+		[GarlicClovesPeeledAndSmashed]
+		[OnionsPeeledAndQuartered]
+		[Salt]
+		[BlackPepper]
+		[ChickenLegs]
+		[FlourTortillasWarmed]
+		[CornTortillasWarmed]
+		[PicoDeGallo]
+		[Guacamole]
+		[CookedBeans])
+	(nombre Pollo Asado))
+
+([CapreseSalad] of Plato
+	(ingredients 
+		[BalsamicVinegar]
+		[RipeTomatoesSlicedThick]
+		[MozzarellaCheeseSlicedThick]
+		[FreshBasilLeaves]
+		[OliveOilForDrizzling]
+		[KosherSaltAndFreshlyGroundBlackPepper])
+	(nombre Caprese Salad))
+
+([FrenchToastwithBerryButter] of Plato
+	(ingredients 
+		[poundUnsaltedButterSoftened]
+		[Raspberries]
+		[Blackberries]
+		[loafCrustyBread:uetteFrenchLoafEtc.]
+		[EggYolks]
+		[Half-and-half]
+		[Sugar]
+		[Vanilla]
+		[ZestOfOneLemon]
+		[MapleSyrupForServing]
+		[SiftedPowderSugarForServing])
+	(nombre French Toast with Berry Butter))
+
+([Missy\usMarinatedTomatoes] of Plato
+	(ingredients 
+		[CanolaOil]
+		[BalsamicVinegar]
+		[Sugar]
+		[Salt]
+		[FreshlyGroundBlackPepper]
+		[GreenOnionsSliced]
+		[ChoppedParsley]
+		[BasilLeaves]
+		[GroundThyme]
+		[clovesGarlicMincedFinely]
+		[poundsTomatoesCutIntoQuarters]
+		[Halves]
+		[uetteSliced]
+		[cloveGarlicPeeled])
+	(nombre Missy\us Marinated Tomatoes))
+
+([VanillaIceCreamwithBasil-PeachTopping] of Plato
+	(ingredients 
+		[PeachesPittedAndChopped]
+		[Sugar]
+		[Water]
+		[BasilLeavesWashed]
+		[Vanilla]
+		[StrawberryIceCream])
+	(nombre Vanilla Ice Cream with Basil-Peach Topping))
+
+([AvocadoEggSalad] of Plato
+	(ingredients 
+		[HardBoiledEggsPeeled]
+		[AvocadosPitted]
+		[Mayonnaise]
+		[RedWineVinegar]
+		[KosherSald]
+		[BlackPepperToTaste]
+		[ChivesChopped])
+	(nombre Avocado Egg Salad))
+
+([GrilledCornGuacamole] of Plato
+	(ingredients 
+		[earsCornShucked]
+		[AvocadosDiced]
+		[LargeTomatoDiced]
+		[OnionFinelyDiced]
+		[clovesGarlicFinelyMinced]
+		[DicedFreshJalapeno]
+		[LimeJuiced]
+		[KosherSalt]
+		[GroundCumin]
+		[CilantroLeaves])
+	(nombre Grilled Corn Guacamole))
+
+([WatermelonGranita] of Plato
+	(ingredients 
+		[SeedlessWatermelonCutIntoChunks]
+		[LimesJuiced]
+		[Sugar])
+	(nombre Watermelon Granita))
+
+([Cake] of Plato
+	(ingredients 
+		[Self-RisingFlour]
+		[Sugar]
+		[canFruitCocktailWithJuice]
+		[SoftenedButterForPan]
+		[UnsweetenedWhippedCreamForServing])
+	(nombre Cake))
+
+([GrilledVegetablePizza] of Plato
+	(ingredients 
+		[PizzaCrust]
+		[ActiveDryYeast]
+		[WarmWater]
+		[All-purposeFlour]
+		[KosherSalt]
+		[OliveOil]
+		[Pesto]
+		[FreshBasilLeaves]
+		[GratedParmesanCheese]
+		[PineNuts]
+		[clovesGarlicPeeled]
+		[SaltAndPeppertotaste]
+		[ExtraVirginOliveOil]
+		[TOPPINGS:]
+		[ZucchiniCutInDiagonalSlices]
+		[SummerSquashCutInDiagonalSlices]
+		[OliveOilForBrushing]
+		[YellowBellPepper]
+		[RedBellPepper]
+		[FreshMozzarellaSliced]
+		[GoatCheese]
+		[ExtraBasilLeavesForGarnish]
+		[Grated]
+		[ShavedParmesanCheeseForSprinkling])
+	(nombre Grilled Vegetable Pizza))
+
+([ChipotleSteakSalad] of Plato
+	(ingredients 
+		[Mayonnaise]
+		[ChipotlePeppersInAdoboSauceReserveAdobo]
+		[FlankSteak]
+		[OliveOil]
+		[WorcestershireSauce]
+		[GroundCumin]
+		[Oregano]
+		[Honey]
+		[SaladGreens]
+		[RomaTomatoesSliced]
+		[CucumberSliced]
+		[RedOnionHalvedAndSliced])
+	(nombre Chipotle Steak Salad))
+
+([David\usDuckRisotto] of Plato
+	(ingredients 
+		[OliveOil]
+		[DuckLegsTrimmedOfExcessFat]
+		[KosherSaltAndFreshlyGroundBlackPepper]
+		[ChickenStock]
+		[Low-sodiumChickenBroth]
+		[BonelessDuckBreastHalf]
+		[SmokedSpanishSausageCutIntoInchCubes]
+		[SmallYellowOnionMinced]
+		[ArborioRice]
+		[DryWhiteWine]
+		[SerranoHam]
+		[ProsciuttoCubed]
+		[FreshOrangeJuice]
+		[UnsaltedButter]
+		[MinchedFlat-leafParsleyLeavesForGarnish]
+		[GratedOrangeZest])
+	(nombre David\us Duck Risotto))
+
+([SpicyBeans] of Plato
+	(ingredients 
+		[DryPintoBeans]
+		[HamHock]
+		[OnionDiced]
+		[RedBellPeppersDiced]
+		[clovesGarlicMinced]
+		[JalapenosSliced]
+		[SaltMoreToTaste]
+		[ChiliPowder]
+		[BlackPepperMoreToTaste])
+	(nombre Spicy Beans))
+
+([PastawithWhiskeyWineandMushrooms] of Plato
+	(ingredients 
+		[ThicklySlicedMushrooms]
+		[OliveOil]
+		[KosherSalt]
+		[BlackPepper]
+		[OliveOil]
+		[Butter]
+		[LargeOnionPeeledAndSliced]
+		[DryWhiteWine]
+		[Whiskey]
+		[ChickenBroth]
+		[HeavyCream]
+		[SaltAndPeppertotaste]
+		[MostaciolliCookedAlDente])
+	(nombre Pasta with WhiskeyWineand Mushrooms))
+
+([Peach-WhiskeyBarbecueChicken] of Plato
+	(ingredients 
+		[ChickenThighsBone-inSkin-on]
+		[OliveOil]
+		[Butter]
+		[YellowOnionDiced]
+		[-Whiskey]
+		[fluidBarbecueSauce]
+		[jarPeachPreserves]
+		[Water]
+		[WorcestershireSauce]
+		[clovesGarlicPeeled]
+		[GreenOnionsSlicedThin])
+	(nombre Peach-Whiskey Barbecue Chicken))
+
+([CherrySherbet] of Plato
+	(ingredients 
+		[Fresh]
+		[FrozenCherriesPitted.]
+		[Sugar]
+		[-Milk]
+		[HeavyCream]
+		[CherryBooze]
+		[ClearRum]
+		[JuiceOfLemon])
+	(nombre Cherry Sherbet))
+
+([Quick-and-EasyPeachParcels] of Plato
+	(ingredients 
+		[StoreboughtCrepes]
+		[RipePeachPittedAndCutIntoChunks]
+		[ButterSoftened]
+		[BrownSugar]
+		[VanillaExtract]
+		[PeachSchnaaps]
+		[FreshlyWhippedCream]
+		[SpecialEquipment:Clothespins])
+	(nombre Quick-and-Easy Peach Parcels))
+
+([PorkChopswithApples&amp;CreamyBaconCheeseGrits] of Plato
+	(ingredients 
+		[BonelessPorkChopsAbout-inchThick]
+		[OliveOil]
+		[Butter]
+		[GalaApplesDiced]
+		[DryWhiteWine]
+		[AppleCiderVinegar]
+		[PureMapleSyrup]
+		[dashSalt]
+		[FreshlyGroundBlackPepper]
+		[CreamyBacon-CheeseGrits])
+	(nombre Pork Chops with Apples &amp; Creamy Bacon Cheese Grits))
+
+([LemonBlueberryPancakes] of Plato
+	(ingredients 
+		[-CakeFlour]
+		[CakeFlour]
+		[Salt]
+		[BakingPowder]
+		[Sugar]
+		[-EvaporatedMilk]
+		[Lemon]
+		[LargeEgg]
+		[-Vanilla]
+		[ButterMelted]
+		[ZestFromLemon]
+		[HeapingBlueberries]
+		[ExtraButter]
+		[Maple]
+		[PancakeSyrup])
+	(nombre Lemon Blueberry Pancakes))
+
+([Fig-ProsciuttoPizzawithArugula] of Plato
+	(ingredients 
+		[PizzaCrust]
+		[ActiveDryYeast]
+		[All-purposeFlour]
+		[KosherSalt]
+		[OliveOil]
+		[FORTHEPIZZA:]
+		[OliveOil]
+		[FigSpread]
+		[Jam]
+		[KosherSaltToTaste]
+		[FreshMozzarellaSlicedThin]
+		[ThinlySlicedProsciutto]
+		[bunchWashedAndRinsedArugula]
+		[FreshlyGroundPeppertotaste]
+		[ShavedParmesan])
+	(nombre Fig-Prosciutto Pizza with Arugula))
+
+([SteakhousePizza] of Plato
+	(ingredients 
+		[ActiveDryYeast]
+		[WarmWater]
+		[All-purposeFlour]
+		[KosherSalt]
+		[OliveOil])
+	(nombre Steakhouse Pizza))
+
+([RoastedRootVegetable\ucCandy\ud] of Plato
+	(ingredients 
+		[CeleryRootPeeledAndDiced]
+		[ParsnipsPeeledAndDiced]
+		[CarrotsPeeledAndDiced]
+		[OtherRootVegetablesPeeledAndDiced]
+		[OliveOilForDrizzling]
+		[SaltAndPeppertotaste])
+	(nombre Roasted Root Vegetable \ucCandy\ud))
+
+([CajunChickenPasta] of Plato
+	(ingredients 
+		[BonelessSkinlessChickenBreastsCutIntoCubes]
+		[CajunSpiceMixMoreToTaste]
+		[poundFettuccine]
+		[OliveOil]
+		[Butter]
+		[GreenBellPepperSeededAndSliced]
+		[RedBellPepperSeededAndSliced]
+		[LargeRedOnionSliced]
+		[clovesGarlicMinced]
+		[RomaTomatoesDiced]
+		[LowSodiumChickenBroth]
+		[WhiteWine]
+		[HeavyCream]
+		[CayennePepperToTaste]
+		[FreshlyGroundBlackPepperToTaste]
+		[SaltToTaste]
+		[ChoppedFreshParsleyToTaste])
+	(nombre Cajun Chicken Pasta))
+
+([RavioliThreeWays] of Plato
+	(ingredients 
+		[MilkRicotta]
+		[-FreshlyGratedParmesan]
+		[Romano]
+		[Egg]
+		[SaltAndPeppertotaste]
+		[Arugula]
+		[OliveOil]
+		[EggYolks]
+		[WontonWrappers]
+		[OliveOilForDrizzling]
+		[KosherSalt&amp;FreshlyGroundBlackPepperForServing]
+		[Egg]
+		[Water])
+	(nombre RavioliThree Ways))
+
+([ShortRibswithWineandCream] of Plato
+	(ingredients 
+		[Shortribs]
+		[SaltAndPeppertotaste]
+		[OliveOil]
+		[RedWine]
+		[fluidBeefBroth]
+		[BeefStock]
+		[MincedFreshRosemary]
+		[GrainyMustard]
+		[HeavyCream]
+		[CapersmoreIfYouWant!]
+		[AssortedMushrooms:CreminiOysterBabyBellasEtc.]
+		[OliveOilForDrizzling]
+		[RosemarySprigToBeFancy])
+	(nombre Short Ribs with Wine and Cream))
+
+([FritoChiliPie] of Plato
+	(ingredients 
+		[poundsGroundChuck]
+		[clovesGarlicMinced]
+		[canToTomatoSauce]
+		[canRo-tel]
+		[Salt]
+		[GroundOregano]
+		[GroundCumin]
+		[ChiliPowder]
+		[can-KidneyBeansDrainedAndRinsed]
+		[can-PintoBeansDrainedAndRinsed]
+		[Masa]
+		[RegularCornMeal]
+		[WarmWater]
+		[IndividualsOfFritos]
+		[GratedSharpCheddarCheese]
+		[DicedRedOnion])
+	(nombre Frito Chili Pie))
+
+([SausagePotatoandKaleSoup] of Plato
+	(ingredients 
+		[bunchesKalePickedOverCleanedAndTornIntoBiteSizedPieces]
+		[RedPotatosSlicedThin]
+		[OnionChopped]
+		[-poundItalianSausage]
+		[RedPepperFlakes]
+		[LowSodiumChickenBroth]
+		[Milk]
+		[Half-and-half]
+		[SplashOfHeavyCream]
+		[Fresh]
+		[DriedOregano]
+		[BlackPepperToTaste])
+	(nombre SausagePotatoand Kale Soup))
+
+([PenneWithChickenThighs] of Plato
+	(ingredients 
+		[ChickenThighsBone-inSkin-on]
+		[SaltAndPepper]
+		[OliveOil]
+		[LargeOnionDiced]
+		[clovesGarlicMinced]
+		[jarsMarinaraSauce]
+		[FreshBasil-ToTaste]
+		[ParmesanCheeseForSprinkling]
+		[Penne]
+		[Rigatoni])
+	(nombre Penne With Chicken Thighs))
+
+([CitrusButterCookies] of Plato
+	(ingredients 
+		[SaltedButterSoftened]
+		[-Sugar]
+		[LargeEggsSeparated]
+		[All-purposeFlour]
+		[OrangeLemonAndLimeZest]
+		[OrangeLemonAnd/orLimeJuice]
+		[Icing]
+		[PowderedSugar]
+		[Milk]
+		[OrangeLemonAndLimeZest]
+		[JuiceOfLime]
+		[JuiceOfLemon]
+		[DashOfSalt]
+		[ExtraZestForDecorating])
+	(nombre Citrus Butter Cookies))
+
+([CavemanPops] of Plato
+	(ingredients 
+		[TurkeyLegs]
+		[BRINE:]
+		[quartsWater]
+		[KosherSalt]
+		[Sugar]
+		[BrownSugar]
+		[SeasoningBlend]
+		[BayLeaf]
+		[DryRub]
+		[ChiliPowderlessIfYouDon'tLikeThingsTooSpicy!]
+		[SeasoningBlend]
+		[Paprika]
+		[OnionSalt])
+	(nombre Caveman Pops ))
+
+([SaltedCaramelApples] of Plato
+	(ingredients 
+		[Apples]
+		[packagesCaramelMelts]
+		[HeavyCream]
+		[Vanilla]
+		[DashOfSalt]
+		[Toppings:MiniM&amp;MsCrushedPretzelsKosherSaltChocolateChipsCoconutCrushedPecansCrushedSaltinesEtc.]
+		[Chopsticks])
+	(nombre Salted  Caramel Apples))
+
+([ClassicCornDogsandCheese-on-a-Stick] of Plato
+	(ingredients 
+		[KrusteazPancakeMix]
+		[YellowCornMeal]
+		[EggsSlightlyBeaten]
+		[WaterMoreIfNeededToThinBatter]
+		[HotDogs]
+		[CheeseCutInto-inchXInchSticks]
+		[Chopsticks]
+		[CanolaOilForFrying]
+		[SpicyMustardForServing])
+	(nombre Classic Corn Dogs and Cheese-on-a-Stick))
+
+([Corn&amp;CheeseChowder] of Plato
+	(ingredients 
+		[StickButter]
+		[OnionChopped]
+		[slicesBaconCutIntoPieces]
+		[BellPeppersFinelyDiced]
+		[earsCornKernelsSlicedOff]
+		[All-purposeFlour]
+		[ChickenStock]
+		[Broth]
+		[Half-and-half]
+		[GratedMontereyJack]
+		[PepperJack]
+		[SlicedGreenOnions]
+		[BreadBowls])
+	(nombre Corn &amp; Cheese Chowder))
+
+([Carrot-ThymeSoupwithCream] of Plato
+	(ingredients 
+		[poundsBabyCarrots]
+		[quartsVegetableStock]
+		[ChickenStock]
+		[sprigsFreshThyme]
+		[Honey]
+		[HeavyCream]
+		[DashOfSalt])
+	(nombre Carrot-Thyme Soup with Cream))
+
+([PumpkinSmoothie] of Plato
+	(ingredients 
+		[canPumpkinPieFilling]
+		[Milk]
+		[VanillaYogurtupTo]
+		[AFewDashesOfCinnamon]
+		[CinnamonGrahamCrackersCrushed])
+	(nombre Pumpkin Smoothie))
+
+([Broccoli-CheeseSoup] of Plato
+	(ingredients 
+		[OnionDiced]
+		[stickButter]
+		[Flour]
+		[Milk]
+		[Half-and-half]
+		[headsBroccoliCutIntoFlorets]
+		[pinchNutmeg]
+		[GratedCheese]
+		[SmallDashOfSalt]
+		[FreshlyGroundBlackPepper]
+		[ChickenBrothIfNeededForThinning])
+	(nombre Broccoli-Cheese Soup))
+
+([BlueberryCornbreadMini-Muffins] of Plato
+	(ingredients 
+		[Muffins]
+		[YellowCornMeal]
+		[All-purposeFlour]
+		[Salt]
+		[BakingPowder]
+		[Sugar]
+		[Buttermilk]
+		[Milk]
+		[BakingSoda]
+		[Egg]
+		[ShorteningMelted]
+		[Vanilla]
+		[DriedBlueberries]
+		[VANILLABUTTER]
+		[stickButterSoftened]
+		[VanillaBean]
+		[Sugar])
+	(nombre Blueberry Cornbread Mini-Muffins))
+
+([PorkRoastwithApplesandOnions] of Plato
+	(ingredients 
+		[Pork]
+		[OliveOil]
+		[PorkShoulderRoast]
+		[SaltAndPeppertotaste]
+		[AppleJuice]
+		[BeefStock]
+		[ApplesCoredAndCutIntoWedges]
+		[MediumOnionsSliced]
+		[BayLeaf]
+		[WildRice]
+		[-WildRice]
+		[Water]
+		[ChickenStock]
+		[stickButter]
+		[ChoppedPecans])
+	(nombre Pork Roast with Apples and Onions))
+
+([PumpkinSoup] of Plato
+	(ingredients 
+		[PiePumpkins]
+		[quartVegetable]
+		[ChickenStock]
+		[HeavyCream]
+		[MapleSyrup]
+		[DashOfNutmeg]
+		[SaltToTaste]
+		[ExtraCreamForServing])
+	(nombre Pumpkin Soup))
+
+([TurkeyTetrazzini] of Plato
+	(ingredients 
+		[-poundThinSpaghettiBrokenInHalf]
+		[Butter]
+		[clovesGarlicMinced]
+		[poundWhiteMushroomsQuartered]
+		[Salt]
+		[WhiteWine]
+		[Flour]
+		[TurkeyBroth]
+		[blockCreamCheese]
+		[CookedTurkeyShredded]
+		[Diced]
+		[FinelyChoppedBlackOlives]
+		[-FrozenGreenPeas]
+		[slicesBaconFriedAndCutIntoBits]
+		[GratedMontereyJackCheese]
+		[GratedParmesanCheese]
+		[SaltAndPeppertotaste]
+		[ExtraBrothForThinning]
+		[PankoBreadCrumbs])
+	(nombre Turkey Tetrazzini))
+
+([OysterDressing] of Plato
+	(ingredients 
+		[CornbreadCutIntoCubes]
+		[loavesCiabatta]
+		[OtherCrustyItalianBreadCutIntoCubes]
+		[BaconFat]
+		[Butter]
+		[cansOystersDrainedLiquidReserved]
+		[CarrotsDiced]
+		[stalksCeleryDiced]
+		[SmallOnionsDiced]
+		[TurkeyBroth]
+		[GroundSage]
+		[ChoppedRosemary]
+		[SaltAndPeppertotaste]
+		[Eggs]
+		[ChoppedFreshParsley])
+	(nombre Oyster Dressing))
+
+([BroccoliCheese&amp;CrackerCasserole] of Plato
+	(ingredients 
+		[poundsBroccoliCutIntoFlorets]
+		[poundsVelveeta]
+		[Milk]
+		[HeavyCream]
+		[SaltAndBlackPepperToTaste]
+		[CayennePepper]
+		[Dijon]
+		[RitzCrackers])
+	(nombre Broccoli Cheese &amp; Cracker Casserole))
+
+([LeftoverTurkeyandSwissPanini] of Plato
+	(ingredients 
+		[-LeftoverTurkeyShredded]
+		[LeftoverCranberrySauce]
+		[ChoppedPecans]
+		[Fig]
+		[ApricotJam]
+		[DijonMustard]
+		[slicesSwissCheese]
+		[slicesSourdough]
+		[OtherBread]
+		[Butter])
+	(nombre Leftover Turkey and Swiss Panini))
+
+([MiniCornLoaveswithCranberriesandPecans] of Plato
+	(ingredients 
+		[YellowCornmeal]
+		[All-purposeFlour]
+		[Salt]
+		[BakingPowder]
+		[Sugar]
+		[Buttermilk]
+		[Milk]
+		[BakingSoda]
+		[Egg]
+		[Shortening]
+		[Vanilla]
+		[DriedCranberries]
+		[ChoppedPecans]
+		[MAPLEBUTTER]
+		[stickSoftenedButter]
+		[MapleSyrup]
+		[ExtraMapleSyrupAndMeltedButterForBrushing])
+	(nombre Mini Corn Loaves with Cranberries and Pecans))
+
+([LeftoverTurkeySpringRolls] of Plato
+	(ingredients 
+		[]
+		[RicePaperWrappers]
+		[ChunksOfTurkey]
+		[SoySauce]
+		[RiceWineVinegar]
+		[SesameOil]
+		[ChoppedCilantro]
+		[FinelyDicedCarrots]
+		[StripsOfCucumber]
+		[LeafyLettuce]
+		[Alralfa]
+		[BeanSprouts]
+		[CellophaneNoodles])
+	(nombre Leftover Turkey Spring Rolls))
+
+([StickyPecanMini-Buns] of Plato
+	(ingredients 
+		[Milk]
+		[CanolaOil]
+		[Sugar]
+		[-ActiveDryYeast]
+		[Flour]
+		[Flour]
+		[BakingPowder]
+		[BakingSoda]
+		[-Salt]
+		[sticksButter]
+		[Sugar]
+		[Cinnamon]
+		[FinelyChoppedPecans]
+		[LightCornSyrup]
+		[VanillaExtract])
+	(nombre Sticky Pecan Mini-Buns))
+
+([PeppermintIceCream] of Plato
+	(ingredients 
+		[Half-and-half]
+		[Sugar]
+		[Vanilla]
+		[LargeEggYolks]
+		[HeavyCream]
+		[CrushedPeppermintCandies]
+		[ChoppedAndesMints])
+	(nombre Peppermint Ice Cream))
+
+([ChickenSoup] of Plato
+	(ingredients 
+		[Chicken]
+		[BayLeaf]
+		[fluidUnsaltedChickenBroth]
+		[LargeOnionChopped]
+		[RibsOfCelerySliced]
+		[CarrotsPeeledAndChopped]
+		[ParsnipsPeeledAndChopped]
+		[Salt]
+		[GroundBlackPepper])
+	(nombre Chicken Soup))
+
+([DecoratingCinnamonRollsasGifts] of Plato
+	(ingredients 
+		[quartMilk]
+		[VegetableOil]
+		[Sugar]
+		[packagesActiveDryYeast.Packets]
+		[All-purposeFlour]
+		[BakingPowder]
+		[BakingSoda]
+		[Salt]
+		[PlentyOfMeltedButter]
+		[Sugar]
+		[GenerousSprinklingOfCinnamon]
+		[_____]
+		[MAPLEFROSTING:]
+		[PowderedSugar]
+		[MapleFlavoring]
+		[Milk]
+		[MeltedButter]
+		[BrewedCoffee]
+		[Salt])
+	(nombre Decorating Cinnamon Rolls as Gifts))
+
+([PrimeRib] of Plato
+	(ingredients 
+		[RibEyeRoastAboutPounds]
+		[OliveOil]
+		[KosherSalt]
+		[Tri-colorPeppercorns]
+		[sprigsRosemary]
+		[sprigsThyme]
+		[MincedGarlic])
+	(nombre Prime Rib))
+
+([DuchessPotatoes] of Plato
+	(ingredients 
+		[poundsRussetPotatoesPeeledAndBoiledUntilForkTender]
+		[EggYolks]
+		[stickButterSoftened]
+		[SaltMore]
+		[LessToTaste]
+		[PlentyOfBlackPepper]
+		[Nutmeg]
+		[-HeavyCream]
+		[Egg])
+	(nombre Duchess Potatoes))
+
+([DeliciousHotChocolate] of Plato
+	(ingredients 
+		[Milk]
+		[Half-and-half]
+		[GoodSemiSweetChocolateChips]
+		[Sugar]
+		[VARIATIONS:OrangeRindOrangeSyrupCinnamonSticksRaspberrySyrupAbuelitaChocolateMintExtractPeppermintPattiesWhippedCreamChocolateShavings])
+	(nombre Delicious Hot Chocolate))
+
+([BrusselsSproutswithBalsamicandCranberries] of Plato
+	(ingredients 
+		[poundsBrusselsSprouts]
+		[OliveOil]
+		[SaltAndPepper]
+		[BalsamicVinegar]
+		[Sugar]
+		[DriedCranberries])
+	(nombre Brussels Sprouts with Balsamic and Cranberries))
+
+([SpicyWhiskeyBBQSliders] of Plato
+	(ingredients 
+		[poundsGroundMeat]
+		[SaltAndPepper]
+		[Butter]
+		[LargeOnionDiced]
+		[Whiskey]
+		[BarbecueSauce]
+		[JarredJalapenoSlices]
+		[SliderBuns]
+		[DinnerRollsSplit])
+	(nombre Spicy Whiskey BBQ Sliders))
+
