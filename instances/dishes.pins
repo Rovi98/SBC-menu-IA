@@ -14,7 +14,7 @@
 		[ThinlySlicedRedOnion]
 		[AvocadoSlices]
 		[SlicedTomatoes]
-		[LettuceSpinach,]
+		[LettuceSpinach]
 		[Arugula])
 	(nombre "Easter Leftover Sandwich"))
 
@@ -472,7 +472,7 @@
 		[SoySauce]
 		[RiceWineVinegar]
 		[Honey]
-		[Sriracha,]
+		[Sriracha]
 		[OtherHotSauce]
 		[SaltToTaste]
 		[clovesMincedGarlic]
@@ -830,7 +830,7 @@
 
 ([Grillin] of Plato
 	(ingredientes 
-		[RibeyeHangerFlatIron,]
+		[RibeyeHangerFlatIron]
 		[StripSteaks]
 		[GroundNutmeg]
 		[GroundCumin]
@@ -1039,7 +1039,7 @@
 		[AvocadosSliced]
 		[TomatoesSliced]
 		[ThinlySlicedRedOnion]
-		[headIcebergGreenLeaf,]
+		[headIcebergGreenLeaf]
 		[ButterLettuce])
 	(nombre "Low-Carb Burgers"))
 
@@ -1096,7 +1096,7 @@
 		[ParmesanCheeseGrated]
 		[TomatoesDiced]
 		[MincedParsleyToTaste]
-		[poundFettuccineRigatoni,]
+		[poundFettuccineRigatoni]
 		[OtherNoodle])
 	(nombre "Surf & Turf Cajun Pasta"))
 

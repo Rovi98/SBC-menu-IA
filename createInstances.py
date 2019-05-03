@@ -7,7 +7,7 @@ def writeList(llista):
 
 
 def changeString(word):
-    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","")
+    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","").replace(",","")
 
 def main():
     if not os.path.exists('instances/'):
