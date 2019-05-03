@@ -1,0 +1,19 @@
+([EasterLeftoverSandwich] of Plato
+	(ingredientes 
+		[HardBoiledEggs]
+		[Mayonnaise]
+		[GrainyDijonMustard]
+		[SaltAndPeppertotaste]
+		[SeveralDashesWorcestershireSauce]
+		[LeftoverBakedHamSliced]
+		[KaiserRolls]
+		[OtherBread]
+		[ExtraMayonnaiseAndDijonForSpreading]
+		[SwissCheese]
+		[OtherCheeseSlices]
+		[ThinlySlicedRedOnion]
+		[AvocadoSlices]
+		[SlicedTomatoes]
+		[LettuceSpinach,]
+		[Arugula])
+	(nombre "Easter Leftover Sandwich"))
