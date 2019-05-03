@@ -2,8 +2,12 @@ import os
 import csv
 
 def writeList(llista):
-    llista =list(map(lambda x:'\n\t\t['+x.replace(" ","")+']' , llista))
+    llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
     return "".join(llista)
+
+
+def changeString(word):
+    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","")
 
 def main():
     if not os.path.exists('instances/'):
@@ -19,17 +23,19 @@ def main():
                     if line_count == 0:
                         line_count += 1
                     else :
+                        if len(row) < 2 : 
+                            continue
                         # AQUI TENIM LA INFO
                         name = row[0]
-                        print('Recipe Name {}:'.format(name))
+                     #   print('Recipe Name {}:'.format(name))
                         ingredients = (row[1]).split('\\n')  #llista ingredients
                         ingredients = list(map(lambda x: x.strip() , ingredients))
-                        print('Ingredients: \n {}'.format(ingredients))
+                    #    print('Ingredients: \n {}'.format(ingredients))
 
                         
                         # RECIPE String , INGREDIENTS List of Strings
-                        f.write('(['+ name.replace(" ","")+ '] of '+ 'Plato\n\t(ingredients '+writeList(ingredients)+')')
-                        f.write(f'\n\t(nombre {name}))\n\n')
+                        f.write('(['+ changeString(name) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredients)+')')
+                        f.write(f'\n\t(nombre "{name}"))\n\n')
 
                     
 
