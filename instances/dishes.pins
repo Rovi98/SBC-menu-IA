@@ -291,12 +291,7 @@
 		[ApplesCoredAndSlicedVeryThin]
 		[PecanHalves]
 		[DriedCherries]
-		[BlueCheeseCutIntoChunks]
-		[DijonMustard]
-		[MapleSyrup]
-		[AppleCiderVinegar]
-		[OliveOil]
-		[SaltAndPeppertotaste])
+		[BlueCheese])
 	(nombre "ApplePecanand Blue Cheese Salad with Dried Cherries"))
 
 ([DeepDishFruitPizza] of Plato
@@ -376,7 +371,7 @@
 ([PorkChopswithGarlicandWine] of Plato
 	(ingredientes 
 		[PorkChops]
-		[Olive(Oil]
+		[OliveOil]
 		[Butter]
 		[SaltAndPepper]
 		[RedWine]
@@ -461,25 +456,7 @@
 
 ([PorkChopswithPineappleFriedRice] of Plato
 	(ingredientes 
-		[PineappleCutIntoSpearsAndSkewered]
-		[White]
-		[BrownRiceCooked]
-		[PorkChops]
-		[Butter]
-		[PeanutOil]
-		[CanolaOil]
-		[LargeOnionSliced]
-		[SoySauce]
-		[RiceWineVinegar]
-		[Honey]
-		[Sriracha]
-		[OtherHotSauce]
-		[SaltToTaste]
-		[clovesMincedGarlic]
-		[Eggs]
-		[jarDrainedPimentos]
-		[FrozenPeas]
-		[SoySauce])
+		[Pineapple])
 	(nombre "Pork Chops with Pineapple Fried Rice"))
 
 ([NewYorkStyleChoppedSalad] of Plato
@@ -971,16 +948,7 @@
 ([SteakFingerswithGravy] of Plato
 	(ingredientes 
 		[poundsTenderizedRoundSteak]
-		[CubeSteakCutIntoinchStrips]
-		[Flour]
-		[SeasonedSalt]
-		[BlackPepper]
-		[Cayenne]
-		[Eggs]
-		[Milk]
-		[CanolaOilAndButterForFrying]
-		[Milk]
-		[SaltAndPeppertotaste])
+		[CubeSteak])
 	(nombre "Steak Fingers with Gravy"))
 
 ([StrawberrySparkleCake] of Plato
@@ -1342,9 +1310,7 @@
 
 ([WatermelonGranita] of Plato
 	(ingredientes 
-		[SeedlessWatermelonCutIntoChunks]
-		[LimesJuiced]
-		[Sugar])
+		[SeedlessWatermelon])
 	(nombre "Watermelon Granita"))
 
 ([Cake] of Plato
@@ -1407,16 +1373,7 @@
 		[ChickenStock]
 		[LowsodiumChickenBroth]
 		[BonelessDuckBreastHalf]
-		[SmokedSpanishSausageCutIntoInchCubes]
-		[SmallYellowOnionMinced]
-		[ArborioRice]
-		[DryWhiteWine]
-		[SerranoHam]
-		[ProsciuttoCubed]
-		[FreshOrangeJuice]
-		[UnsaltedButter]
-		[MinchedFlatleafParsleyLeavesForGarnish]
-		[GratedOrangeZest])
+		[SmokedSpanishSausage])
 	(nombre "David's Duck Risotto"))
 
 ([SpicyBeans] of Plato
@@ -1479,12 +1436,7 @@
 ([QuickandEasyPeachParcels] of Plato
 	(ingredientes 
 		[StoreboughtCrepes]
-		[RipePeachPittedAndCutIntoChunks]
-		[ButterSoftened]
-		[BrownSugar]
-		[VanillaExtract]
-		[PeachSchnaaps]
-		[FreshlyWhippedCream])
+		[RipePeachPittedAnd])
 	(nombre "Quick-and-Easy Peach Parcels"))
 
 ([PorkChopswithApplesCreamyBaconCheeseGrits] of Plato
@@ -1704,10 +1656,7 @@
 		[EggsSlightlyBeaten]
 		[WaterMoreIfNeededToThinBatter]
 		[HotDogs]
-		[CheeseCutIntoinchXInchSticks]
-		[Chopsticks]
-		[CanolaOilForFrying]
-		[SpicyMustardForServing])
+		[Cheese])
 	(nombre "Classic Corn Dogs and Cheese-on-a-Stick"))
 
 ([CornCheeseChowder] of Plato
