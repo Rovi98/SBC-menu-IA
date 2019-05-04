@@ -3,7 +3,7 @@
 ;;****************
 
 (deffunction ask-question-yes-no (?question)
-  (printout t "| > " ?question crlf "| ")
+  (printout t "| > " ?question " (yes/no) " crlf "| ")
   (bind ?answer (read))
   (bind ?allowed-values (create$ Yes No yes no Y N y n))
   (while (not (member$ ?answer ?allowed-values)) do
@@ -17,7 +17,7 @@
 )
 
 (deffunction ask-question-opt (?question ?allowed-values)
-  (printout t "| > " ?question ?allowed-values crlf "| ")
+  (printout t "| > " ?question " " ?allowed-values crlf "| ")
   (bind ?answer (read))
   (while (not (member$ ?answer ?allowed-values)) do
     (printout t "| > " ?question crlf "| ")
@@ -27,7 +27,7 @@
 )
 
 (deffunction ask-question-multi-opt (?question ?allowed-values)
-  (printout t "| > " ?question ?allowed-values crlf "| ")
+  (printout t "| > " ?question " " ?allowed-values crlf "| ")
   (bind ?line (readline))
   (bind $?answer (explode$ ?line))
   (bind ?valid FALSE)
@@ -68,3 +68,9 @@
     (printout t "| " ?question)
         (bind ?answer (read)))
   ?answer)
+
+
+(deffunction print-menu (?menuSemana)
+  (printout t "Menu:" crlf)
+  (printout t (send ?menuSemana imprimir))
+)
