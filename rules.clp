@@ -5,7 +5,9 @@
 ;%%%%%
 
 (defglobal
-  ?*TEMPORADAS* = (create$ invierno primavera verano otono)
+  ?*DAYS* = (create$ Lunes Martes Miercoles Jueves Viernes)
+  ?*MEALS* = (create$ Desayuno Comida Cena)
+  ?*SEASONS* = (create$ Invierno Primavera Verano Otono)
   ;?*EVENT_TYPES* = (create$ Familiar Congress)
   ;?*DRINK_TYPES* = (create$ Alcohol Soft-drinks Caffeine Juice none)
   ;?*CUISINE_STYLES* = (create$ Mediterranean Spanish Italian French Chinese Japanese Turkish American Mexican Indian Moroccan Gourmet any)
@@ -21,49 +23,83 @@
 ;;;* MENU STATE RULES *
 ;;;********************
 
+(defrule menu-done ""
+   (declare (salience 10))
+   (menu-done)
+   =>
+   (bind ?menuSemana (make-instance (gensym) of MenuSemana))
+   (loop-for-count (?i 5) do
+      (bind ?desayuno (make-instance (gensym) of Desayuno))
+      (bind ?comida (make-instance (gensym) of Comida))
+      (bind ?cena (make-instance (gensym) of Cena))
+      (bind ?menuDia 
+        (make-instance (gensym) of MenuDia
+          (desayuno ?desayuno)
+          (comida ?comida)
+          (cena ?cena)
+        )
+      )
+      (slot-replace$ ?menuSemana menusDia ?i ?i ?menuDia)
+      ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
+   )
+   
+   (print-menu ?menuSemana)
+)
+
 (defrule normal-menu-state-conclusions ""
    (declare (salience 10))
-   (vegetables-state normal)
+   (vegetables-state ?)
+   (age-range ?)
+   (temporada ?)
+   (sex ?)
    =>
-   (assert (menu1 "Niceee")))
-   
-(defrule none-menu-state-conclusions ""
-   (declare (salience 10))
-   (vegetables-state none)
-   =>
-   (assert (menu1 "Bff..	")))
+   (assert (menu-done))
+)
    
 ;;;***************
 ;;;* QUERY RULES *
 ;;;***************
 
+(defrule determine-sex ""
+  (not (sex ?))
+  =>
+   (bind ?response (ask-question-opt "What is your gender?" (create$ Male Female)))
+   (assert(sex ?response))
+)
+
 (defrule determine-age-range ""
   (not (age ?))
   =>
   (bind ?num (ask-question-num "How old are you?" 0 150))
-  (if (<= 30 ?num) then
-		(assert (age-range range1))
+  (if (< ?num 65) then
+    (assert (age-range range1))
   )
-  (if (and (> 30 ?num) (<= 50 ?num)) then
-		(assert (age-range range2))
+  (if (<= 65 ?num 74) then
+    (assert (age-range range2))
+  )
+  (if (<= 75 ?num 84) then
+    (assert (age-range range3))
+  )
+  (if (<= 85 ?num ) then
+    (assert (age-range range4))
   )
 )
 
 (defrule determine-temporada ""
    (not (temporada ?))
    =>
-   (bind ?response 
-      (ask-question-opt "What season is it?" ?*TEMPORADAS*))
-	  (assert(temporada ?response)))
+   (bind ?response (ask-question-opt "What season is it?" ?*SEASONS*))
+	 (assert(temporada ?response))
+)
 	
 
 (defrule determine-vegetables-state ""
    (not (vegetables-state ?))
    (not (menu1 ?))
    =>
-   (if (ask-question-yes-no "Are you vegan? (yes/no) ") 
+   (if (ask-question-yes-no "Are you vegan?") 
        then 
-       (if (ask-question-yes-no "Why though? (yes/no) ")
+       (if (ask-question-yes-no "Why though?")
            then (assert (vegetables-state none))
            else (assert (vegetables-state none)))
        else 
@@ -108,3 +144,46 @@
 	;;;)
 	;;;(assert (final))
 ;;;)
+
+;;;************
+;;;* MESSAGES *
+;;;************
+
+(defmessage-handler Desayuno imprimir ()
+  (printout t "|| · " ?self:plato crlf)
+)
+
+(defmessage-handler Comida imprimir ()
+  (printout t "|| · [1r Plato] " ?self:primerPlato crlf)
+  (printout t "|| · [2o Plato] " ?self:segundoPlato crlf)
+  (printout t "|| · [Postre] " ?self:postre crlf)
+)
+
+(defmessage-handler Cena imprimir ()
+  (printout t "|| · [1r Plato] " ?self:primerPlato crlf)
+  (printout t "|| · [2o Plato] " ?self:segundoPlato crlf)
+  (printout t "|| · [Postre] " ?self:postre crlf)
+)
+
+(defmessage-handler MenuDia imprimir ()
+  (printout t "||" crlf)
+  (printout t "|| >>> Desayuno <<<" crlf)
+  (printout t (send ?self:desayuno imprimir))
+  (printout t "||" crlf)
+  (printout t "|| >>>  Comida  <<<" crlf)
+  (printout t (send ?self:comida imprimir))
+  (printout t "||" crlf)
+  (printout t "|| >>>   Cena   <<<" crlf)
+  (printout t (send ?self:cena imprimir))
+  (printout t "||" crlf)
+)
+
+(defmessage-handler MenuSemana imprimir ()
+  (loop-for-count (?i 1 5) do
+    (printout t "============================================" crlf)     
+    (printout t "|||| " (nth$ ?i ?*DAYS*) crlf)
+    (printout t "============================================" crlf)     
+    (printout t (send (nth$ ?i ?self:menusDia) imprimir))
+  )
+  (printout t "============================================" crlf)
+)
