@@ -14,11 +14,11 @@ def main():
         os.makedirs('instances/')
 
     
-    with open('/home/adria/Desktop/Universitat/IA/openrecipes_mini2.csv','r') as csv_file:
+    with open('/home/adria/Desktop/SBC-menu-IA/openrecipes_mini2.csv','r') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter='|')
             line_count = 0
             ingredients = ''
-            ingredientsTots = []
+            ingredientsTots = [[]]
             dishesTots = []
             with open('instances/dishes.pins','w') as f: 
                 for row in csv_reader:
@@ -39,7 +39,7 @@ def main():
                         ingredientsTots.append(ingredients)
 
                         
-                with open('/home/adria/Desktop/Universitat/IA/Dataset.csv','r') as g:
+                with open('/home/adria/Desktop/SBC-menu-IA/Dataset.csv','r') as g:
                     csv_reader2 = csv.reader(g, delimiter=',')
                     line_count2 = 0
                     nutrients = []
@@ -67,24 +67,30 @@ def main():
                             characteristics = [fat, carbohydrates, calories, sucrose, glucose, fructose, cholesterol, saturated, vitaminB5, vitaminB6, vitaminB12]
                             nutrients.append(characteristics)
                             ingredients.append(name)
-                    available = [False] * len(ingredientsTots)
-                   
+                    available2 = [[False for x in y] for y in ingredientsTots]
                     for i,i2 in enumerate(ingredientsTots):
-                        for j in i2:
+                        for j1,j in enumerate(i2):
                             if(any(j.lower()  in s.lower() for s in ingredients)):
-                                
-                                available[i] = True
+                                available2[i][j1] = True
 
-                        if available[i] :
-                            print(ingredientsTots[i])
-                            print(dishesTots[i])
-                            print("Trobat")
-                            
-
-              # RECIPE String , INGREDIENTS List of Strings
-           # f.write('(['+ changeString(name) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredients)+')')
-           # f.write(f'\n\t(nombre "{name}"))\n\n')
-
+                    # A available 2 tinc una llista dels aliments que si i que no de cada menjar            
+                    for i,i2 in enumerate(available2):
+                        for j,j2 in enumerate(i2):
+                            if not j2:
+                                try:
+                                    ingredientsTots[i].pop(j)
+                                    dishesTots.pop(i)
+                                    j = j-1
+                                    i = i-1
+                                except:
+                                    continue
+                for i,i2 in enumerate(dishesTots):
+                # RECIPE String , INGREDIENTS List of Strings
+                    f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(nombre "{i2}"))\n\n')
+                for i,i2 in enumerate(ingredients):
+                    f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
+                    f.write(f'\n\t(nombre "{i2}"))\n\n')
+                
 if __name__ == '__main__':
     main()
 
