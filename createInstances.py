@@ -20,6 +20,7 @@ def main():
             ingredients = ''
             ingredientsTots = [[]]
             dishesTots = []
+            infoDishes = [[]]
             with open('instances/dishes.pins','w') as f: 
                 for row in csv_reader:
                     if line_count == 0:
@@ -27,6 +28,7 @@ def main():
                         continue
                     else :
                        # print(len(row))
+                       # print(row)
                         if len(row) < 2 : 
                             continue
                         # AQUI TENIM LA INFO
@@ -37,7 +39,9 @@ def main():
                     #    print('Ingredients: \n {}'.format(ingredients))
                         dishesTots.append(name)
                         ingredientsTots.append(ingredients)
-
+                        aux = row[2].split('\\n')
+                        aux = list(map(lambda x: x.strip(),aux))
+                        infoDishes.append([aux,row[3]])
                         
                 with open('/home/adria/Desktop/SBC-menu-IA/Dataset.csv','r') as g:
                     csv_reader2 = csv.reader(g, delimiter=',')
@@ -86,10 +90,11 @@ def main():
                                     continue
                 for i,i2 in enumerate(dishesTots):
                 # RECIPE String , INGREDIENTS List of Strings
-                    f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(nombre "{i2}"))\n\n')
-                for i,i2 in enumerate(ingredients):
-                    f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
-                    f.write(f'\n\t(nombre "{i2}"))\n\n')
+                    if len(ingredientsTots[i]) > 0: 
+                        f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo "{writeList(infodishes[i][0])}")\n\t(season {writeList(infodishes[i][1])})\n\t(nombre "{i2}"))\n\n')
+                    for i,i2 in enumerate(ingredients):
+                        f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
+                        f.write(f'\n\t(nombre "{i2}"))\n\n')
                 
 if __name__ == '__main__':
     main()
