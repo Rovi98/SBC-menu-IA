@@ -1,19 +1,29 @@
 import os
 import csv
 
-ENFERMETATS = ['Diabetes', 'Celiac'] 
+ENFERMETATS = ['Diabetes', 'Celiac','Colesterol','Gota','Hipertension'] 
 
 LIMITACIONS = [
-		['azucar', 'hidratos'],
-		['gluten']]
+		['azucar', 'hidratos','fructosa','glucosa'],
+		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine']]
+                
 			
 LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
-
-		
 LIMITACIONS_ORIGINAL = [
 		['azucar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
-		['gluten',LIMITACIONS_TIPO[0]]] 
+		['gluten',LIMITACIONS_TIPO[0]],
+                ['fructosa',LIMITACIONS_TIPO[1]],
+                ['glucosa',LIMITACIONS_TIPO[1]],
+                ['colesterol',LIMITACIONS_TIPO[1]],
+                ['saturated',LIMITACIONS_TIPO[0]],
+                ['fat', LIMITACIONS_TIPO[1]],
+                ['Tomatoe', LIMITACIONS_TIPO[0]],
+                ['Meat', LIMITACIONS_TIPO[1]],
+                ['Shellfish', LIMITACIONS_TIPO[0]],
+                ['Coffee', LIMITACIONS_TIPO[0]],
+                ['Wine', LIMITACIONS_TIPO[1]]                    
+                ] 
 
 def writeList(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
@@ -125,8 +135,8 @@ def main():
                 # LIMITACIONS 
                 with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitacions.pins','wa') as r:
                     for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-                        r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(tipo '+changeString(i2[1])+')')
-                        r.write('\n\t(nombre "'+i2[0]+'"))\n\n')                         
+                        r.write('(['+ changeString(i2[1]) + '] of '+ 'Limitacion\n\t(limita '+changeString(i2[0])+')')
+                        r.write('\n\t(tipo "'+i2[1]+'"))\n\n')                         
                 r.close()
 
 if __name__ == '__main__':
