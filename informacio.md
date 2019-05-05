@@ -1,0 +1,34 @@
+# ENFERMETATS
+	- Osteoporosis
+		- Cosas con mucho calcio (como Espinacas o Leche)
+	- Diabetes
+		- Poco azucar
+		- Pocos hidratos de carbono (que se transforman en azucar)
+	- Colesterol
+		- NO
+			- Embutidos
+			- Cosas procesadas
+			- Carne
+			- Grasas saturadas
+			- Quesos curados 
+		- Si
+			- Omega3
+			- Pescado azul
+			- Fruitos secos
+			- Aceito de oliva
+	- Exceso de Ácido Úrico (provoca Gota)
+		- NO
+			- Carne Roja
+			- Tomate
+			- Marisco
+			- Alcohol
+		- SI
+			- Verduras
+			- Pescado Blanco
+	- Hipertensión
+		- NO
+			- Alimentos con sal 
+			- Cafeína
+			- Alcohol	
+			- Boquerones o cosas en salazón	
+
