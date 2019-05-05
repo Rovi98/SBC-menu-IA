@@ -1,5 +1,5 @@
 ([NODEBE] of Limitacion
-	(limita azucar)
+	(limita sugar)
 	(tipo "NO DEBE"))
 
 ([NODEBE] of Limitacion
@@ -49,4 +49,12 @@
 ([NODEBE] of Limitacion
 	(limita Wine)
 	(tipo "NO DEBE"))
+
+([NODEBE] of Limitacion
+	(limita Alcohol)
+	(tipo "NO DEBE"))
+
+([NOPUEDE] of Limitacion
+	(limita Caffeine)
+	(tipo "NO PUEDE"))
 

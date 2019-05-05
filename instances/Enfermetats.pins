@@ -1,6 +1,6 @@
 ([Diabetes] of Enfermedad
 	(limitaciones 
-		[azucar]
+		[sugar]
 		[hidratos]
 		[fructosa]
 		[glucosa])
@@ -29,6 +29,8 @@
 ([Hipertension] of Enfermedad
 	(limitaciones 
 		[Coffee]
-		[Wine])
+		[Wine]
+		[Caffeine]
+		[Alcohol])
 	(nombre "Hipertension"))
 

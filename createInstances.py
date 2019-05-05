@@ -4,13 +4,13 @@ import csv
 ENFERMETATS = ['Diabetes', 'Celiac','Colesterol','Gota','Hipertension'] 
 
 LIMITACIONS = [
-		['azucar', 'hidratos','fructosa','glucosa'],
-		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine']]
+		['sugar', 'hidratos','fructosa','glucosa'],
+		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine','Caffeine','Alcohol']]
                 
 			
 LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
 LIMITACIONS_ORIGINAL = [
-		['azucar',LIMITACIONS_TIPO[1]],
+		['sugar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
 		['gluten',LIMITACIONS_TIPO[0]],
                 ['fructosa',LIMITACIONS_TIPO[1]],
@@ -22,7 +22,9 @@ LIMITACIONS_ORIGINAL = [
                 ['Meat', LIMITACIONS_TIPO[1]],
                 ['Shellfish', LIMITACIONS_TIPO[0]],
                 ['Coffee', LIMITACIONS_TIPO[0]],
-                ['Wine', LIMITACIONS_TIPO[1]]                    
+                ['Wine', LIMITACIONS_TIPO[1]],
+                ['Alcohol',LIMITACIONS_TIPO[1]],
+                ['Caffeine',LIMITACIONS_TIPO[0]],
                 ] 
 
 def writeList(llista):
@@ -90,12 +92,16 @@ def main():
                             sucrose = row[6]
                             glucose = row[7]
                             fructose = row[8]
+                            lactose = row[9]
+                            caffeine = row[13]
+                            alcohol = row[11]
+                            sugar = row[15]
                             cholesterol = row[-3]
                             saturated = row[-2]
                             vitaminB5 = row[-8]
                             vitaminB6 = row[-7]
                             vitaminB12 = row[-5]
-                            characteristics = [fat, carbohydrates, calories, sucrose, glucose, fructose, cholesterol, saturated, vitaminB5, vitaminB6, vitaminB12]
+                            characteristics = [fat, carbohydrates, calories, sucrose, glucose, fructose, lactose, alcohol,caffeine, sugar,cholesterol, saturated, vitaminB5, vitaminB6, vitaminB12]
                             nutrients.append(characteristics)
                             ingredients.append(name)
                     available2 = [[False for x in y] for y in ingredientsTots]

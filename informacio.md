@@ -31,12 +31,17 @@
 			- Cafeína
 			- Alcohol	
 			- Boquerones o cosas en salazón	
-## Info de nutrients que tenim
+## Info de nutrients que tenim (ordenats)
 	- fat
 	- carbohidrats
 	- calories
-	- fructosa
+	- sucrosa
 	- glucosa
+	- fructosa
+	- lactosa
+	- alcohol
+	- caffeine
+	- sugar
 	- cholesterol
 	- saturated
 	- vitaminB5
