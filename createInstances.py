@@ -95,10 +95,10 @@ def main():
                 # RECIPE String , INGREDIENTS List of Strings
                     if len(ingredientsTots[i]) > 0:
                         f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo '+ writeList(infoDishes[i][0])+')\n\t(season '+writeList(infoDishes[i][1])+'\n\t(nombre '+i2+'))\n\n')
-                    for i,i2 in enumerate(ingredients):
-                        f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
-                        f.write('\n\t(nombre "'+i2+'"))\n\n')
-                
+                for i,i2 in enumerate(ingredients):
+                    f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
+                    f.write('\n\t(nombre "'+i2+'"))\n\n')
+                     
 if __name__ == '__main__':
     main()
 
