@@ -15,6 +15,21 @@ import csv
 #LIMITACIONS_ORIGINAL = [['NOM_LIMITACIO',LIMITACIONS_TIPO[1 o 2]], etc] 
 #LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
 
+ENFERMETATS = ['Diabetes', 'Celiac'] 
+
+LIMITACIONS = [
+		['azucar', 'hidratos'],
+		['gluten']]
+		
+preparat = True		
+		
+LIMITACIONS_ORIGINAL = [
+		['azucar',LIMITACIONS_TIPO[2]],
+		['hidratos',LIMITACIONS_TIPO[2]],
+		['gluten',LIMITACIONS_TIPO[1]]] 
+		
+LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
+
 def writeList(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
     return "".join(llista)
