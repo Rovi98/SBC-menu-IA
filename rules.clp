@@ -8,6 +8,8 @@
   ?*DAYS* = (create$ Lunes Martes Miercoles Jueves Viernes)
   ?*MEALS* = (create$ Desayuno Comida Cena)
   ?*SEASONS* = (create$ Invierno Primavera Verano Otono)
+  ?*DISEASE* = (create$ Diabetes Celiaco Intolerante-Lactosa Hipertension Osteoporosis VIH Cancer ELA Ebola none)
+  ?*NOLIKE* = (create$ Fruits Vegetables Meat Fish Pasta none)
   ;?*EVENT_TYPES* = (create$ Familiar Congress)
   ;?*DRINK_TYPES* = (create$ Alcohol Soft-drinks Caffeine Juice none)
   ;?*CUISINE_STYLES* = (create$ Mediterranean Spanish Italian French Chinese Japanese Turkish American Mexican Indian Moroccan Gourmet any)
@@ -51,7 +53,10 @@
    (vegetables-state ?)
    (age-range ?)
    (temporada ?)
+   (disease ?)
+   (nolike ?)
    (sex ?)
+   (exercise ?)
    =>
    (assert (menu-done))
 )
@@ -60,11 +65,11 @@
 ;;;* QUERY RULES *
 ;;;***************
 
-(defrule determine-sex ""
-  (not (sex ?))
+(defrule determine-exercise ""
+  (not (exercise ?))
   =>
-   (bind ?response (ask-question-opt "What is your gender?" (create$ Male Female)))
-   (assert(sex ?response))
+   (bind ?response (ask-question-opt "How much exercise do you do per week?" (create$ None Once-a-week Twice-a-week More)))
+   (assert(exercise ?response))
 )
 
 (defrule determine-age-range ""
@@ -85,25 +90,46 @@
   )
 )
 
+(defrule determine-sex ""
+  (not (sex ?))
+  =>
+   (bind ?response (ask-question-opt "What is your gender?" (create$ Male Female Other Non-Binary)))
+   (assert(sex ?response))
+)
+
+(defrule determine-dont-like ""
+  (not (nolike ?))
+  =>
+   (bind ?response (ask-question-multi-opt "Is there something that you do not like?" ?*NOLIKE*))
+   (assert(nolike ?response))
+)
+
 (defrule determine-temporada ""
    (not (temporada ?))
    =>
-   (bind ?response (ask-question-opt "What season is it?" ?*SEASONS*))
+   (bind ?response (ask-question-opt "Which season do you want the menu for?" ?*SEASONS*))
 	 (assert(temporada ?response))
 )
-	
 
 (defrule determine-vegetables-state ""
    (not (vegetables-state ?))
    (not (menu1 ?))
    =>
-   (if (ask-question-yes-no "Are you vegan?") 
+   (if (ask-question-yes-no "Do you eat meat?") 
        then 
-       (if (ask-question-yes-no "Why though?")
-           then (assert (vegetables-state none))
-           else (assert (vegetables-state none)))
+       (assert (vegetables-state normal))
        else 
-       (assert (vegetables-state normal))))
+       (if (ask-question-yes-no "Do you eat milk or egs?")
+           then (assert (vegetables-state vegeterian))
+           else (assert (vegetables-state vegan)))
+       ))
+       
+(defrule determine-disease ""
+  (not (disease ?))
+  =>
+   (bind ?response (ask-question-multi-opt "Do you have any of this diseases?" ?*DISEASE*))
+   (assert(disease ?response))
+)
 	   
 ;;;****************************
 ;;;* STARTUP AND OUTPUT RULES *

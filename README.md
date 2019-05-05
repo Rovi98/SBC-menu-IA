@@ -4,7 +4,7 @@
 	- TEMPORADA LAS CUATRO POR DEFECTO
 		- TODO: canviar/afegir algunes manualment
 -	- POSTRES 
-		-Manual del csv
+		- Manual del csv
 - Dataset de ingredients
 	- Obtenir csv?
 	- Convertir a clips
@@ -12,7 +12,7 @@
 -
 -
 
-# Questions
+# Questions (Aquestes ja estan posades)
 
 - Do you have any disease?
 	- Diabetes

@@ -1,7 +1,7 @@
 (clear)
 ;;;(batch "run.clp.bat")
 (load "out.pont")
-(load-instances "instances/dishes.pins")
+(load-instances "instances/dishes2.pins")
 ;(load "/Protege/OntologiaAlimentacion.pont")
 ;(load-instances "/Protege/OntologiaAlimentacion.pins")
 (load "functions.clp")
