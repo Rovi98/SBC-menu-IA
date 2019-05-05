@@ -12,7 +12,7 @@ import csv
  #       []]
 #preparat = False
 
-#LIMITACIONS_ORIGINAL = [['NOM_LIMITACIÓ',LIMITACIONS_TIPO[1 o 2]], etc] 
+#LIMITACIONS_ORIGINAL = [['NOM_LIMITACIO',LIMITACIONS_TIPO[1 o 2]], etc] 
 #LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
 
 def writeList(llista):

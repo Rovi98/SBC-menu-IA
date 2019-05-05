@@ -9,8 +9,7 @@
 	- Obtenir csv?
 	- Convertir a clips
 	- Asegurar compatibilitat de ids amb dishes 
--
--
+
 
 # Questions (Aquestes ja estan posades)
 
@@ -65,4 +64,4 @@ Until NO
 	- Twice a week
 	- More
 
-- 
+ 
