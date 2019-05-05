@@ -1,6 +1,7 @@
 import os
 import csv
 
+
 def writeList(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
     return "".join(llista)
@@ -95,10 +96,17 @@ def main():
                 # RECIPE String , INGREDIENTS List of Strings
                     if len(ingredientsTots[i]) > 0:
                         f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo '+ writeList(infoDishes[i][0])+')\n\t(season '+writeList(infoDishes[i][1])+'\n\t(nombre '+i2+'))\n\n')
-                for i,i2 in enumerate(ingredients):
-                    f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
-                    f.write('\n\t(nombre "'+i2+'"))\n\n')
-                     
+                f.close()
+                with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Food.pins','wa') as t:
+                    for i,i2 in enumerate(ingredients):
+                        t.write('(['+ changeString(i2) + '] of Ingrediente\n\t(nutrientes '+writeList(nutrients[i])+')')
+                        t.write('\n\t(nombre "'+i2+'"))\n\n')
+                t.close()
+            #UNA ENFERMETAT TE NOMBRE I LIMITACIONES
+               # for i,i2 in enumerate(enfermetats):
+                #    f.write('(['+ changeString(i2) + '] of '+ 'Restriccions\n\t(nutrientes '+writeList(nutrients[i])+')')
+                 #   f.write('\n\t(nombre "'+i2+'"))\n\n')
+
 if __name__ == '__main__':
     main()
 
