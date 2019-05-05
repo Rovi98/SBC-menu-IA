@@ -1,0 +1,5 @@
+Este prototipo inicial propone menus provisionales aleatorios, despues de responder a unas preguntas.
+El programa hace muchas preguntas, las cuales no tienen efecto alguno en el menu de salida, sin embargo sirven de idea para las futuras funcionalidades que queremos implementar.
+
+Instrucciones:
+- Ejecutar el batch 'run.clp.bat' en CLIPS.

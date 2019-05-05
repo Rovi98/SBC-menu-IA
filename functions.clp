@@ -74,3 +74,7 @@
   (printout t "Menu:" crlf)
   (printout t (send ?menuSemana imprimir))
 )
+
+(deffunction random-from-list (?list)
+  (return (nth$ (random 1 (length$ ?list)) ?list))
+)
