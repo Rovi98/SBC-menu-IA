@@ -30,10 +30,34 @@
    (menu-done)
    =>
    (bind ?menuSemana (make-instance (gensym) of MenuSemana))
+   (bind ?lista-platos (find-all-instances ((?p Plato)) TRUE))
    (loop-for-count (?i 5) do
-      (bind ?desayuno (make-instance (gensym) of Desayuno))
-      (bind ?comida (make-instance (gensym) of Comida))
-      (bind ?cena (make-instance (gensym) of Cena))
+      
+      (bind ?desayuno 
+        (make-instance (gensym) of Desayuno
+          (plato (nth$ 1 ?lista-platos))
+        )
+      )
+      (bind ?lista-platos (delete$ ?lista-platos 1 1))
+      
+      (bind ?comida 
+        (make-instance (gensym) of Comida
+          (primerPlato (nth$ 1 ?lista-platos))
+          (segundoPlato (nth$ 2 ?lista-platos))
+          (postre (nth$ 3 ?lista-platos))
+        )
+      )
+      (bind ?lista-platos (delete$ ?lista-platos 1 3))
+
+      (bind ?cena 
+        (make-instance (gensym) of Cena
+          (primerPlato (nth$ 1 ?lista-platos))
+          (segundoPlato (nth$ 2 ?lista-platos))
+          (postre (nth$ 3 ?lista-platos))
+        )
+      )
+      (bind ?lista-platos (delete$ ?lista-platos 1 3))
+
       (bind ?menuDia 
         (make-instance (gensym) of MenuDia
           (desayuno ?desayuno)
@@ -47,6 +71,8 @@
    
    (print-menu ?menuSemana)
 )
+
+;(assert (menu-done))
 
 (defrule normal-menu-state-conclusions ""
    (declare (salience 10))
@@ -176,19 +202,19 @@
 ;;;************
 
 (defmessage-handler Desayuno imprimir ()
-  (printout t "|| · " ?self:plato crlf)
+  (printout t "|| · " (send ?self:plato get-nombre) crlf)
 )
 
 (defmessage-handler Comida imprimir ()
-  (printout t "|| · [1r Plato] " ?self:primerPlato crlf)
-  (printout t "|| · [2o Plato] " ?self:segundoPlato crlf)
-  (printout t "|| · [Postre] " ?self:postre crlf)
+  (printout t "|| · [1r Plato] " (send ?self:primerPlato get-nombre) crlf)
+  (printout t "|| · [2o Plato] " (send ?self:segundoPlato get-nombre) crlf)
+  (printout t "|| · [Postre] " (send ?self:postre get-nombre) crlf)
 )
 
 (defmessage-handler Cena imprimir ()
-  (printout t "|| · [1r Plato] " ?self:primerPlato crlf)
-  (printout t "|| · [2o Plato] " ?self:segundoPlato crlf)
-  (printout t "|| · [Postre] " ?self:postre crlf)
+  (printout t "|| · [1r Plato] " (send ?self:primerPlato get-nombre) crlf)
+  (printout t "|| · [2o Plato] " (send ?self:segundoPlato get-nombre) crlf)
+  (printout t "|| · [Postre] " (send ?self:postre get-nombre) crlf)
 )
 
 (defmessage-handler MenuDia imprimir ()
