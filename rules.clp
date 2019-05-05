@@ -151,9 +151,9 @@
        ))
        
 (defrule determine-disease ""
-  (not (disease ?))
+  (not (disease $?))
   =>
-   (bind ?response (ask-question-multi-opt "Do you have any of this diseases?" ?*DISEASE*))
+   (bind ?response (ask-question-multi-opt "Do you have any of the following diseases? Write more than one if needed." ?*DISEASE*))
    (assert(disease ?response))
 )
 	   
