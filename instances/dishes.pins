@@ -12,14 +12,14 @@
 		[SlicedTomatoes]
 		[LettuceSpinach]
 		[Arugula])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Baked French Toast"))
 
 ([MangoMargaritas] of Plato
@@ -31,14 +31,14 @@
 		[GratedParmesan]
 		[Pasta]
 		[TomatoesDiced])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Mango Margaritas"))
 
 ([TuscanBeanSoupwithShrimp] of Plato
@@ -46,14 +46,14 @@
 		[SaltAndPeppertotaste]
 		[Preserves]
 		[Vinegar])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Tuscan Bean Soup with Shrimp"))
 
 ([ApplePecanandBlueCheeseSaladwithDriedCherries] of Plato
@@ -66,28 +66,28 @@
 		[BabySpinach]
 		[GrapeTomatoesHalvedLengthwise]
 		[ParmesanCheeseShavedWithVegetablePeeler])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "ApplePecanand Blue Cheese Salad with Dried Cherries"))
 
 ([DeepDishFruitPizza] of Plato
 	(ingredientes 
 		[quartsColdWater]
 		[Halfandhalf])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Deep Dish Fruit Pizza"))
 
 ([PotsdeCrémealOrange] of Plato
@@ -100,14 +100,14 @@
 		[PicoDeGallo]
 		[Guacamole]
 		[CilantroLeavesOptional])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Pots de Créme a l'Orange"))
 
 ([ChocolateCookieswithToppings] of Plato
@@ -116,14 +116,14 @@
 		[AssortedSprinkles]
 		[SmallChocolateEasterEggs]
 		[PlasticEasterEggs])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Chocolate Cookies with Toppings"))
 
 ([PerfectSunnySideUpEggs] of Plato
@@ -132,14 +132,14 @@
 		[poundGroundBeef]
 		[SaltAndPeppertotaste]
 		[slicesSwissCheese])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Perfect Sunny-Side Up Eggs"))
 
 ([IndividualCherryAlmondCrisps] of Plato
@@ -157,14 +157,14 @@
 		[Vanilla]
 		[ColdWater]
 		[Milk])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Individual Cherry Almond Crisps"))
 
 ([ScallopedPotatoesandHam] of Plato
@@ -172,14 +172,14 @@
 		[Butter]
 		[Lemon]
 		[SaltAndPeppertotaste])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Scalloped Potatoes and Ham"))
 
 ([OatmealWhoopiePies] of Plato
@@ -187,14 +187,14 @@
 		[ButterSoftened]
 		[Lemons]
 		[SaltAndPeppertotaste])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Oatmeal Whoopie Pies"))
 
 ([TheBestSpinachArtichokeDipEver] of Plato
@@ -211,14 +211,14 @@
 		[Salt]
 		[FreshlyGratedNutmeg]
 		[stickColdButter])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "The Best Spinach Artichoke Dip Ever"))
 
 ([PotatoSkins] of Plato
@@ -232,14 +232,14 @@
 		[Nutella]
 		[VeryFinelyChoppedPecans]
 		[MMsRoughlyChopped])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Potato Skins"))
 
 ([TheBestMacaroniSaladEver] of Plato
@@ -248,14 +248,14 @@
 		[BlackPepper]
 		[KosherSalt]
 		[ExtraOliveOilIfNeededForBrushing])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "The Best Macaroni Salad Ever"))
 
 ([PineappleFruitBowls] of Plato
@@ -263,14 +263,14 @@
 		[containerMarshmallowCreme]
 		[OtherMeltingChocolate]
 		[ChoppedNutsSprinklesEtc])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Pineapple Fruit Bowls"))
 
 ([LowCarbBurgers] of Plato
@@ -279,14 +279,14 @@
 		[FinelyMincedParsley]
 		[SaltAndPeppertotaste]
 		[ButterForFrying])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Low-Carb Burgers"))
 
 ([SpaghettiSauce] of Plato
@@ -294,14 +294,14 @@
 		[Limes]
 		[Tequila]
 		[TripleSec])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Spaghetti Sauce"))
 
 ([MissysMarinatedTomatoes] of Plato
@@ -319,14 +319,14 @@
 		[poundRawShrimpPeeledAndDeveined]
 		[ChoppedFreshParsley]
 		[FreshParmesanShavings])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Missy's Marinated Tomatoes"))
 
 ([VanillaIceCreamwithBasilPeachTopping] of Plato
@@ -340,14 +340,14 @@
 		[WhiteVinegar]
 		[White]
 		[BrownRiceForServing])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Vanilla Ice Cream with Basil-Peach Topping"))
 
 ([AvocadoEggSalad] of Plato
@@ -365,28 +365,28 @@
 		[RomaTomatoesSliced]
 		[AvocadosSliced]
 		[LargeBasilLeaves])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Avocado Egg Salad"))
 
 ([GrilledCornGuacamole] of Plato
 	(ingredientes 
 		[Vegetable]
 		[SeaSalt])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Grilled Corn Guacamole"))
 
 ([GrilledVegetablePizza] of Plato
@@ -394,14 +394,14 @@
 		[ApplesCoredAndSlicedVeryThin]
 		[DriedCherries]
 		[BlueCheese])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Grilled Vegetable Pizza"))
 
 ([SpicyBeans] of Plato
@@ -420,27 +420,27 @@
 		[Blueberries]
 		[Pears]
 		[Raspberries])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Spicy Beans"))
 
 ([PastawithWhiskeyWineandMushrooms] of Plato
 	(ingredientes 
 		[poundBacon])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Pasta with WhiskeyWineand Mushrooms"))
 
 ([PorkChopswithApplesCreamyBaconCheeseGrits] of Plato
@@ -449,14 +449,14 @@
 		[SaltAndPeppertotaste]
 		[MincedFreshOregano]
 		[ItalianBread])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Pork Chops with Apples & Creamy Bacon Cheese Grits"))
 
 ([ClassicCornDogsandCheeseonaStick] of Plato
@@ -473,14 +473,14 @@
 		[Water]
 		[Halfandhalf]
 		[GratedCheddarCheese])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Classic Corn Dogs and Cheese-on-a-Stick"))
 
 ([CornCheeseChowder] of Plato
@@ -494,14 +494,14 @@
 		[FarmersCheese]
 		[packageChoppedSpinachThawed]
 		[dashesHotSauce])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Corn & Cheese Chowder"))
 
 ([CarrotThymeSoupwithCream] of Plato
@@ -513,14 +513,14 @@
 		[BalsamicVinegar]
 		[PeeledGarlicCloves]
 		[Butter])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Carrot-Thyme Soup with Cream"))
 
 ([PumpkinSmoothie] of Plato
@@ -530,14 +530,14 @@
 		[VeryHotStrongCoffee]
 		[FreshWhippedCreamForServing]
 		[ThinlySlicedOrangePeelForGarnish])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Pumpkin Smoothie"))
 
 ([DeliciousHotChocolate] of Plato
@@ -551,14 +551,14 @@
 		[MMsSlightlyChopped]
 		[ToffeeBarsChopped]
 		[AssortedNutsSprinklesCandies])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Delicious Hot Chocolate"))
 
 ([BrusselsSproutswithBalsamicandCranberries] of Plato
@@ -568,14 +568,14 @@
 		[earsCorn]
 		[SoySauce]
 		[AvocadosSliced])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Brussels Sprouts with Balsamic and Cranberries"))
 
 ([SpicyWhiskeyBBQSliders] of Plato
@@ -589,13 +589,13 @@
 		[AssortedPittedOlives]
 		[BasilLeaves]
 		[GoodParmesanCheese])
-	(tipo 
+	(categoria 
 		[PrimerPlato]
 		[SegundoPlato])
-	(season 
+	(temporada 
 		[Invierno]
 		[Primavera]
 		[Otono]
-		[Verano]
+		[Verano])
 	(nombre "Spicy Whiskey BBQ Sliders"))
 

@@ -108,7 +108,7 @@ def main():
                 for i,i2 in enumerate(dishesTots):
                 # RECIPE String , INGREDIENTS List of Strings
                     if len(ingredientsTots[i]) > 0:
-                        f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo '+ writeList(infoDishes[i][0])+')\n\t(season '+writeList(infoDishes[i][1])+'\n\t(nombre "'+i2+'"))\n\n')
+                        f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(categoria '+ writeList(infoDishes[i][0])+')\n\t(temporada '+writeList(infoDishes[i][1])+')\n\t(nombre "'+i2+'"))\n\n')
                 f.close()
                 with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Food.pins','wa') as t:
                     for i,i2 in enumerate(ingredients):
