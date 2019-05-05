@@ -35,28 +35,25 @@
       
       (bind ?desayuno 
         (make-instance (gensym) of Desayuno
-          (plato (nth$ 1 ?lista-platos))
+          (plato (random-from-list ?lista-platos))
         )
       )
-      (bind ?lista-platos (delete$ ?lista-platos 1 1))
       
       (bind ?comida 
         (make-instance (gensym) of Comida
-          (primerPlato (nth$ 1 ?lista-platos))
-          (segundoPlato (nth$ 2 ?lista-platos))
-          (postre (nth$ 3 ?lista-platos))
+          (primerPlato (random-from-list ?lista-platos))
+          (segundoPlato (random-from-list ?lista-platos))
+          (postre (random-from-list ?lista-platos))
         )
       )
-      (bind ?lista-platos (delete$ ?lista-platos 1 3))
 
       (bind ?cena 
         (make-instance (gensym) of Cena
-          (primerPlato (nth$ 1 ?lista-platos))
-          (segundoPlato (nth$ 2 ?lista-platos))
-          (postre (nth$ 3 ?lista-platos))
+          (primerPlato (random-from-list ?lista-platos))
+          (segundoPlato (random-from-list ?lista-platos))
+          (postre (random-from-list ?lista-platos))
         )
       )
-      (bind ?lista-platos (delete$ ?lista-platos 1 3))
 
       (bind ?menuDia 
         (make-instance (gensym) of MenuDia
