@@ -7,21 +7,22 @@ def writeList(llista):
 
 
 def changeString(word):
-    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","").replace(",","")
+    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","").replace(",","").replace('NULL','0')
+
 
 def main():
     if not os.path.exists('instances/'):
         os.makedirs('instances/')
 
     
-    with open('/home/adria/Desktop/SBC-menu-IA/openrecipes_mini2.csv','r') as csv_file:
+    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/openrecipes_mini2.csv','r') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter='|')
             line_count = 0
             ingredients = ''
             ingredientsTots = [[]]
             dishesTots = []
             infoDishes = [[]]
-            with open('instances/dishes.pins','w') as f: 
+            with open('instances/dishes.pins','wa+') as f: 
                 for row in csv_reader:
                     if line_count == 0:
                         line_count = line_count +1 
@@ -40,10 +41,12 @@ def main():
                         dishesTots.append(name)
                         ingredientsTots.append(ingredients)
                         aux = row[2].split('\\n')
+                        season = row[3].split('\\n')
+                        season = list(map(lambda x: x.strip(),season))
                         aux = list(map(lambda x: x.strip(),aux))
-                        infoDishes.append([aux,row[3]])
+                        infoDishes.append([aux,season])
                         
-                with open('/home/adria/Desktop/SBC-menu-IA/Dataset.csv','r') as g:
+                with open('/home/adria/Desktop/Universitat/SBC-menu-IA/Dataset.csv','r') as g:
                     csv_reader2 = csv.reader(g, delimiter=',')
                     line_count2 = 0
                     nutrients = []
@@ -90,11 +93,11 @@ def main():
                                     continue
                 for i,i2 in enumerate(dishesTots):
                 # RECIPE String , INGREDIENTS List of Strings
-                    if len(ingredientsTots[i]) > 0: 
-                        f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo "{writeList(infodishes[i][0])}")\n\t(season {writeList(infodishes[i][1])})\n\t(nombre "{i2}"))\n\n')
+                    if len(ingredientsTots[i]) > 0:
+                        f.write('(['+ changeString(i2) + '] of '+ 'Plato\n\t(ingredientes '+writeList(ingredientsTots[i])+')\n\t(tipo '+ writeList(infoDishes[i][0])+')\n\t(season '+writeList(infoDishes[i][1])+'\n\t(nombre '+i2+'))\n\n')
                     for i,i2 in enumerate(ingredients):
                         f.write('(['+ changeString(i2) + '] of '+ 'Ingredients\n\t(nutrientes '+writeList(nutrients[i])+')')
-                        f.write(f'\n\t(nombre "{i2}"))\n\n')
+                        f.write('\n\t(nombre "'+i2+'"))\n\n')
                 
 if __name__ == '__main__':
     main()
