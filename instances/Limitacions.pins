@@ -1,0 +1,12 @@
+([azucar] of Limitacion
+	(tipo NODEBE)
+	(nombre "azucar"))
+
+([hidratos] of Limitacion
+	(tipo NODEBE)
+	(nombre "hidratos"))
+
+([gluten] of Limitacion
+	(tipo NOPUEDE)
+	(nombre "gluten"))
+

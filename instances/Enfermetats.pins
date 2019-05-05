@@ -1,0 +1,11 @@
+([Diabetes] of Enfermedad
+	(limitaciones 
+		[azucar]
+		[hidratos])
+	(nombre "Diabetes"))
+
+([Celiac] of Enfermedad
+	(limitaciones 
+		[gluten])
+	(nombre "Celiac"))
+
