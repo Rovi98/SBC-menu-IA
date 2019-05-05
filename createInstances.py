@@ -1,34 +1,29 @@
 import os
 import csv
 
-
-#ENFERMETATS = ['Diabetes', 'SIDA', 'Osteoporosis', 'Cholesterol', 'TensionBaja', 'TensionAlta', 'Cataratas'] 
-#LIMITACIONS = [
-   #     [], 
-    #    [],
-    #    [],
-   #     [],
-  #      [],
- #       []]
-#preparat = False
-
-#LIMITACIONS_ORIGINAL = [['NOM_LIMITACIO',LIMITACIONS_TIPO[1 o 2]], etc] 
-#LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
-
-ENFERMETATS = ['Diabetes', 'Celiac'] 
+ENFERMETATS = ['Diabetes', 'Celiac','Colesterol','Gota','Hipertension'] 
 
 LIMITACIONS = [
-		['azucar', 'hidratos'],
-		['gluten']]
-		
-preparat = True		
-		
-LIMITACIONS_ORIGINAL = [
-		['azucar',LIMITACIONS_TIPO[2]],
-		['hidratos',LIMITACIONS_TIPO[2]],
-		['gluten',LIMITACIONS_TIPO[1]]] 
-		
+		['azucar', 'hidratos','fructosa','glucosa'],
+		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine']]
+                
+			
 LIMITACIONS_TIPO = ['NO PUEDE', 'NO DEBE']
+LIMITACIONS_ORIGINAL = [
+		['azucar',LIMITACIONS_TIPO[1]],
+		['hidratos',LIMITACIONS_TIPO[1]],
+		['gluten',LIMITACIONS_TIPO[0]],
+                ['fructosa',LIMITACIONS_TIPO[1]],
+                ['glucosa',LIMITACIONS_TIPO[1]],
+                ['colesterol',LIMITACIONS_TIPO[1]],
+                ['saturated',LIMITACIONS_TIPO[0]],
+                ['fat', LIMITACIONS_TIPO[1]],
+                ['Tomatoe', LIMITACIONS_TIPO[0]],
+                ['Meat', LIMITACIONS_TIPO[1]],
+                ['Shellfish', LIMITACIONS_TIPO[0]],
+                ['Coffee', LIMITACIONS_TIPO[0]],
+                ['Wine', LIMITACIONS_TIPO[1]]                    
+                ] 
 
 def writeList(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
@@ -130,19 +125,20 @@ def main():
                         t.write('(['+ changeString(i2) + '] of Ingrediente\n\t(nutrientes '+writeList(nutrients[i])+')')
                         t.write('\n\t(nombre "'+i2+'"))\n\n')
                 t.close()
-"""
-                if preparat:
-                    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Enfermetats.pins','wa') as r:
-                        for i,i2 in enumerate(ENFERMETATS):
-                            r.write('(['+ changeString(i2) + '] of '+ 'Enfermedad\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
-                            r.write('\n\t(nombre "'+i2+'"))\n\n')
-                    r.close()
-                    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitacions.pins','wa') as r;
-                        for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-                            r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(tipo '+changeString(i2[1])+')')
-                            r.write('\n\t(nombre "'+i2+'"))\n\n')                         
-                    r.close()
-"""
+               
+               # ENFERMETATS
+                with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Enfermetats.pins','wa') as r:
+                    for i,i2 in enumerate(ENFERMETATS):
+                        r.write('(['+ changeString(i2) + '] of '+ 'Enfermedad\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
+                        r.write('\n\t(nombre "'+i2+'"))\n\n')
+                r.close()
+                # LIMITACIONS 
+                with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitacions.pins','wa') as r:
+                    for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
+                        r.write('(['+ changeString(i2[1]) + '] of '+ 'Limitacion\n\t(limita '+changeString(i2[0])+')')
+                        r.write('\n\t(tipo "'+i2[1]+'"))\n\n')                         
+                r.close()
+
 if __name__ == '__main__':
     main()
 

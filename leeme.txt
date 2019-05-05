@@ -1,5 +1,7 @@
 Este prototipo inicial propone menus provisionales aleatorios, despues de responder a unas preguntas.
-El programa hace muchas preguntas, las cuales no tienen efecto alguno en el menu de salida, sin embargo sirven de idea para las futuras funcionalidades que queremos implementar.
+El programa hace muchas preguntas, las cuales no tienen efecto alguno en el menu de salida, sin embargo sirven de idea para las futuras funcionalidades que queremos implementar. Ahora mismo nuestro prototipo muestra un menu de salida utilizando las instancias que tenemos.
 
+
+Actualmente tenemos un script que parsea dos bases de datos con platos y alimentos y es capaz de generar instancias para Protege siempre y cuando tengamos información nutricional de los ingredientes de los platos. Los nutrientes que estamos examinando de momento (no descartamos añadir más en un futuro) son la grasa, grasa saturadas, calorías, fructosa y glucosa (azúcares), colesterol, vitaminaB5, vitaminaB6 y vitaminaB12. Así pues tenemos instancias de Comida, Platos, Ingredientes, Limitaciones y Enfermedades.
 Instrucciones:
-- Ejecutar el batch 'run.clp.bat' en CLIPS.
+- Ejecutar el batch 'run.clp.bat' en CLIPS
