@@ -27,6 +27,8 @@ LIMITACIONS_ORIGINAL = [
                 ['Caffeine',LIMITACIONS_TIPO[0]],
                 ] 
 
+NUTRIENTES = ['fat', 'carbohidrats', 'calories', 'sucrosa', 'glucosa', 'fructosa', 'lactosa', 'alcohol', 'caffeine', 'sugar', 'cholesterol', 'saturated', 'vitaminB5', 'vitaminB6', 'vitaminB12']
+
 def writeList(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
     return "".join(llista)
@@ -101,7 +103,7 @@ def main():
                             vitaminB5 = row[-8]
                             vitaminB6 = row[-7]
                             vitaminB12 = row[-5]
-                            characteristics = [fat, carbohydrates, calories, sucrose, glucose, fructose, lactose, alcohol,caffeine, sugar,cholesterol, saturated, vitaminB5, vitaminB6, vitaminB12]
+                            characteristics = [tipus, fat, carbohydrates, calories, sucrose, glucose, fructose, lactose, alcohol,caffeine, sugar,cholesterol, saturated, vitaminB5, vitaminB6, vitaminB12]
                             nutrients.append(characteristics)
                             ingredients.append(name)
                     available2 = [[False for x in y] for y in ingredientsTots]
@@ -143,6 +145,12 @@ def main():
                     for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
                         r.write('(['+ changeString(i2[1]) + '] of '+ 'Limitacion\n\t(limita '+changeString(i2[0])+')')
                         r.write('\n\t(tipo "'+i2[1]+'"))\n\n')                         
+                r.close()
+		
+		with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Nutrients.pins','wa') as r:
+			for i,i2 in enumerate(NUTRIENTES):
+				r.write('(['+ changeString(i2) + '] of '+ 'Nutriente\n\t)
+                       		r.write('\n\t(tipo "'+i2+'"))\n\n')                         
                 r.close()
 
 if __name__ == '__main__':
