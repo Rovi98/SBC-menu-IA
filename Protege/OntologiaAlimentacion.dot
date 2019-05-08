@@ -5,9 +5,9 @@ digraph OntologiaAlimentacion {
 	Macronutrient [label=Macronutrient, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="299,106", width="1.3125", height="0.5"];
 	NutrientQuantity [label="{NutrientQuantity|{nutrient|Instance|{Nutrient}}|{quantity|Float}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="423,311", rects="332,322.5,514,345.5 332,299.5,390,322.5 390,299.5,453,322.5 453,299.5,514,322.5 332,276.5,431,299.5 431,276.5,514,299.5", width="2.5278", height="0.97222"];
 	Nutrient [label="{Nutrient|{name|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="336,200", rects="288,200,384,223 288,177,334,200 334,177,384,200", width="1.3333", height="0.65278"];
-	Course [label="{Course|{season|Symbol*|{Invierno|Primavera|Verano|...}}|{ingredients|Instance*|{IngredientQuantity}}|{name|String}|{cookingMethod\
-|Instance*|{CookingMethod}}|{category|Symbol*|{FirstCourse|SecondCourse|Desert|...}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="612,965", rects="470.5,1080,753.5,1103 470.5,988,554.5,1080 554.5,988,651.5,1080 651.5,1057,753.5,1080 651.5,1034,753.5,1057 651.5,1011,753.5,1034\
- 651.5,988,753.5,1011 470.5,965,552.5,988 552.5,965,628.5,988 628.5,965,753.5,988 470.5,942,609.5,965 609.5,942,753.5,965 470.5\
+	Course [label="{Course|{season|Symbol*|{Summer|Winter|Autumn|Spring}}|{ingredients|Instance*|{IngredientQuantity}}|{name|String}|{cookingMethod\
+|Instance*|{CookingMethod}}|{category|Symbol*|{FirstCourse|SecondCourse|Desert|Breakfast}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="612,965", rects="470.5,1080,753.5,1103 470.5,988,557.5,1080 557.5,988,657.5,1080 657.5,1057,753.5,1080 657.5,1034,753.5,1057 657.5,1011,753.5,1034\
+ 657.5,988,753.5,1011 470.5,965,552.5,988 552.5,965,628.5,988 628.5,965,753.5,988 470.5,942,609.5,965 609.5,942,753.5,965 470.5\
 ,919,575.5,942 575.5,919,645.5,942 645.5,919,753.5,942 470.5,827,552.5,919 552.5,827,636.5,919 636.5,896,753.5,919 636.5,873,753.5\
 ,896 636.5,850,753.5,873 636.5,827,753.5,850", width="3.9236", height="3.8472"];
 	IngredientQuantity [label="{IngredientQuantity|{ingredient|Instance|{Ingredient}}|{quantity|Float}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="641,716", rects="538,727.5,744,750.5 538,704.5,609,727.5 609,704.5,672,727.5 672,704.5,744,727.5 538,681.5,649,704.5 649,681.5,744,704.5", width="2.8611", height="0.97222"];
@@ -17,8 +17,8 @@ digraph OntologiaAlimentacion {
 ,1303,597,1326 597,1303,660,1326 660,1303,713,1326", width="2.5556", height="1.2917"];
 	Limitation [label="{Limitation|{element|Instance|{Nutrient|Ingredient}}|{atMost|Float}|{atLeast|Float}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="297,716", rects="200,750.5,394,773.5 200,704.5,259,750.5 259,704.5,322,750.5 322,727.5,394,750.5 322,704.5,394,727.5 200,681.5,302,704.5 302,681.5\
 ,394,704.5 200,658.5,302,681.5 302,658.5,394,681.5", width="2.6944", height="1.6111"];
-	Ingredient [label="{Ingredient|{season|Symbol*|{Invierno|Primavera|Verano|...}}|{name|String}|{nutrients|Instance*|{NutrientQuantity}}|{energy|Float\
-}|{weight|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="446,502", rects="325,582.5,567,605.5 325,490.5,396,582.5 396,490.5,479,582.5 479,559.5,567,582.5 479,536.5,567,559.5 479,513.5,567,536.5 479,490.5\
+	Ingredient [label="{Ingredient|{season|Symbol*|{Summer|Winter|Autumn|Spring}}|{name|String}|{nutrients|Instance*|{NutrientQuantity}}|{energy|Float}\
+|{weight|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="446,502", rects="325,582.5,567,605.5 325,490.5,399,582.5 399,490.5,485,582.5 485,559.5,567,582.5 485,536.5,567,559.5 485,513.5,567,536.5 485,490.5\
 ,567,513.5 325,467.5,444,490.5 444,467.5,567,490.5 325,444.5,389,467.5 389,444.5,459,467.5 459,444.5,567,467.5 325,421.5,450,444.5\
  450,421.5,567,444.5 325,398.5,447,421.5 447,398.5,567,421.5", width="3.3611", height="2.8889"];
 	Vitamin [label=Vitamin, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="469,18", width="0.8125", height="0.5"];

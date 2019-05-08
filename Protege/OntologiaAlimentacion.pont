@@ -1,4 +1,4 @@
-; Wed May 08 21:16:07 CEST 2019
+; Wed May 08 21:25:41 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -110,7 +110,7 @@
 		(create-accessor read-write))
 	(multislot season
 		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
+		(allowed-values Summer Winter Autumn Spring)
 		(cardinality 1 4)
 		(create-accessor read-write))
 	(multislot menuDays
@@ -146,7 +146,7 @@
 		(create-accessor read-write))
 	(multislot season
 		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
+		(allowed-values Summer Winter Autumn Spring)
 		(cardinality 1 4)
 		(create-accessor read-write)))
 
@@ -159,7 +159,7 @@
 		(create-accessor read-write))
 	(multislot season
 		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
+		(allowed-values Summer Winter Autumn Spring)
 		(cardinality 1 4)
 		(create-accessor read-write))
 	(multislot ingredients

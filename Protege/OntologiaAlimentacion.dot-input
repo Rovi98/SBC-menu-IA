@@ -4,7 +4,7 @@ digraph "OntologiaAlimentacion" {
 "Macronutrient"->"Protein" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
 "NutrientQuantity" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{NutrientQuantity|{nutrient|Instance|{Nutrient}}|{quantity|Float}}"]
 "NutrientQuantity"->"Nutrient" [style=filled, label="nutrient", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
-"Course" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Course|{season|Symbol*|{Invierno|Primavera|Verano|...}}|{ingredients|Instance*|{IngredientQuantity}}|{name|String}|{cookingMethod|Instance*|{CookingMethod}}|{category|Symbol*|{FirstCourse|SecondCourse|Desert|...}}}"]
+"Course" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Course|{season|Symbol*|{Summer|Winter|Autumn|Spring}}|{ingredients|Instance*|{IngredientQuantity}}|{name|String}|{cookingMethod|Instance*|{CookingMethod}}|{category|Symbol*|{FirstCourse|SecondCourse|Desert|Breakfast}}}"]
 "Course"->"IngredientQuantity" [style=filled, label="ingredients*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
 "Course"->"CookingMethod" [style=filled, label="cookingMethod*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
 "MenuWeek" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{MenuWeek|{menuDays|Instance*|{MenuDay}}}"]
@@ -49,6 +49,6 @@ digraph "OntologiaAlimentacion" {
 "Disease"->"Limitation" [style=filled, label="limitations*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
 "Mineral" [shape=box, label="Mineral", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
 "Micronutrient"->"Mineral" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
-"Ingredient" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Ingredient|{season|Symbol*|{Invierno|Primavera|Verano|...}}|{name|String}|{nutrients|Instance*|{NutrientQuantity}}|{energy|Float}|{weight|String}}"]
+"Ingredient" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Ingredient|{season|Symbol*|{Summer|Winter|Autumn|Spring}}|{name|String}|{nutrients|Instance*|{NutrientQuantity}}|{energy|Float}|{weight|String}}"]
 "Ingredient"->"NutrientQuantity" [style=filled, label="nutrients*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
 }
