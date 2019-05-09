@@ -1,60 +1,60 @@
-([sugar] of Limitacion
-	(limita -50)
-	(value "sugar"))
+([sugar-50] of LimitationNutrient
+	(value -50)
+	(nutrient "sugar"))
 
-([hidratos] of Limitacion
-	(limita -50)
-	(value "hidratos"))
+([hidratos-50] of LimitationNutrient
+	(value -50)
+	(nutrient "hidratos"))
 
-([gluten] of Limitacion
-	(limita -100)
-	(value "gluten"))
+([gluten-100] of LimitationNutrient
+	(value -100)
+	(nutrient "gluten"))
 
-([fructosa] of Limitacion
-	(limita -50)
-	(value "fructosa"))
+([fructosa-50] of LimitationNutrient
+	(value -50)
+	(nutrient "fructosa"))
 
-([glucosa] of Limitacion
-	(limita -50)
-	(value "glucosa"))
+([glucosa-50] of LimitationNutrient
+	(value -50)
+	(nutrient "glucosa"))
 
-([colesterol] of Limitacion
-	(limita -50)
-	(value "colesterol"))
+([colesterol-50] of LimitationNutrient
+	(value -50)
+	(nutrient "colesterol"))
 
-([saturated] of Limitacion
-	(limita -100)
-	(value "saturated"))
+([saturated-100] of LimitationNutrient
+	(value -100)
+	(nutrient "saturated"))
 
-([fat] of Limitacion
-	(limita -50)
-	(value "fat"))
+([fat-50] of LimitationNutrient
+	(value -50)
+	(nutrient "fat"))
 
-([Tomatoe] of Limitacion
-	(limita -100)
-	(value "Tomatoe"))
+([Tomatoe-100] of LimitationNutrient
+	(value -100)
+	(nutrient "Tomatoe"))
 
-([Meat] of Limitacion
-	(limita -50)
-	(value "Meat"))
+([Meat-50] of LimitationNutrient
+	(value -50)
+	(nutrient "Meat"))
 
-([Shellfish] of Limitacion
-	(limita -100)
-	(value "Shellfish"))
+([Shellfish-100] of LimitationNutrient
+	(value -100)
+	(nutrient "Shellfish"))
 
-([Coffee] of Limitacion
-	(limita -100)
-	(value "Coffee"))
+([Coffee-100] of LimitationNutrient
+	(value -100)
+	(nutrient "Coffee"))
 
-([Wine] of Limitacion
-	(limita -50)
-	(value "Wine"))
+([Wine-50] of LimitationNutrient
+	(value -50)
+	(nutrient "Wine"))
 
-([Alcohol] of Limitacion
-	(limita -50)
-	(value "Alcohol"))
+([Alcohol-50] of LimitationNutrient
+	(value -50)
+	(nutrient "Alcohol"))
 
-([Caffeine] of Limitacion
-	(limita -100)
-	(value "Caffeine"))
+([Caffeine-100] of LimitationNutrient
+	(value -100)
+	(nutrient "Caffeine"))
 

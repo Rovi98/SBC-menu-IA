@@ -177,3 +177,186 @@
 	(name_ "Carbonara Spaghetti")
 	(category "FirstCourse"))
 
+([Friedchicken] of Course
+	(ingredients 
+		[Chickenbroilersorfryersmeatandskincookedfriedflour150])
+	(name_ "Fried chicken")
+	(category "SecondCourse"))
+
+([Hamburger] of Course
+	(ingredients 
+		[Rollshamburgerorhotdogmixedgrain150]
+		[Tomatoesredriperawyearroundaverage10]
+		[Breadirishsodapreparedfromrecipe30])
+	(name_ "Hamburger")
+	(category "SecondCourse"))
+
+([Loin] of Course
+	(ingredients 
+		[Beefshortloinporterhousesteakseparableleanandfattrimmedto1/8fatallgradescookedgrilled200])
+	(name_ "Loin")
+	(category "SecondCourse"))
+
+([Beef] of Course
+	(ingredients 
+		[Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220])
+	(name_ "Beef")
+	(category "SecondCourse"))
+
+([Tuna] of Course
+	(ingredients 
+		[Fishtunafreshbluefincookeddryheat200])
+	(name_ "Tuna")
+	(category "SecondCourse"))
+
+([Salmon] of Course
+	(ingredients 
+		[FishsalmonAtlanticwildcookeddryheat200])
+	(name_ "Salmon")
+	(category "SecondCourse"))
+
+([Sole] of Course
+	(ingredients 
+		[Fishflatfishflounderandsolespeciescookeddryheat150]
+		[Onionsdehydratedflakes10]
+		[Pineapplecannedjuicepacksolidsandliquids20])
+	(name_ "Sole")
+	(category "SecondCourse"))
+
+([Sardinswithbread] of Course
+	(ingredients 
+		[FishsardineAtlanticcannedinoildrainedsolidswithbone150])
+	(name_ "Sardins with bread")
+	(category "SecondCourse"))
+
+([Sausages] of Course
+	(ingredients 
+		[SausageItalianporkraw170])
+	(name_ "Sausages")
+	(category "SecondCourse"))
+
+([VeganMeatballs] of Course
+	(ingredients 
+		[Meatballsmeatless170])
+	(name_ "Vegan Meatballs")
+	(category "SecondCourse"))
+
+([VeggieNuggets] of Course
+	(ingredients 
+		[MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170])
+	(name_ "Veggie Nuggets")
+	(category "SecondCourse"))
+
+([VeggieBurger] of Course
+	(ingredients 
+		[Veggieburgersorsoyburgersunprepared150]
+		[Tomatoesredriperawyearroundaverage10]
+		[Breadirishsodapreparedfromrecipe30])
+	(name_ "Veggie Burger")
+	(category "SecondCourse"))
+
+([VeggieLasagna] of Course
+	(ingredients 
+		[MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200])
+	(name_ "Veggie Lasagna")
+	(category "SecondCourse"))
+
+([Ratatouille] of Course
+	(ingredients 
+		[Eggplantcookedboileddrainedwithsalt100]
+		[Tomatoesredripecookedwithsalt100]
+		[Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100])
+	(name_ "Ratatouille")
+	(category "SecondCourse"))
+
+([Chocolatecake] of Course
+	(ingredients 
+		[Cakechocolatecommerciallypreparedwithchocolatefrostinginstorebakery50])
+	(name_ "Chocolate cake")
+	(category "Deserts"))
+
+([FruitYogurt] of Course
+	(ingredients 
+		[Yogurtfruitlowfat10gramsproteinper8ounce100])
+	(name_ "Fruit Yogurt")
+	(category "Deserts"))
+
+([Yogurt] of Course
+	(ingredients 
+		[Yogurtplainlowfat12gramsproteinper8ounce100])
+	(name_ "Yogurt")
+	(category "Deserts"))
+
+([Gelatin] of Course
+	(ingredients 
+		[Gelatindessertsdrymixpreparedwithwater100])
+	(name_ "Gelatin")
+	(category "Deserts"))
+
+([Flan] of Course
+	(ingredients 
+		[Dessertsflancaramelcustardpreparedfromrecipe100])
+	(name_ "Flan")
+	(category "Deserts"))
+
+([SomeNuts] of Course
+	(ingredients 
+		[NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50])
+	(name_ "Some Nuts")
+	(category "Deserts"))
+
+([ApplePie] of Course
+	(ingredients 
+		[Cakefruitcakecommerciallyprepared50])
+	(name_ "Apple Pie")
+	(category "Deserts"))
+
+([Apple] of Course
+	(ingredients 
+		[Applesrawwithskin100])
+	(name_ "Apple")
+	(category "Deserts"))
+
+([Banana] of Course
+	(ingredients 
+		[Bananasraw100])
+	(name_ "Banana")
+	(category "Deserts"))
+
+([Watermelon] of Course
+	(ingredients 
+		[Watermelonraw100])
+	(name_ "Watermelon")
+	(category "Deserts"))
+
+([Plum] of Course
+	(ingredients 
+		[Plumsraw100])
+	(name_ "Plum")
+	(category "Deserts"))
+
+([Cherries] of Course
+	(ingredients 
+		[Cherriessweetraw100])
+	(name_ "Cherries")
+	(category "Deserts"))
+
+([Pears] of Course
+	(ingredients 
+		[Pearsasianraw100])
+	(name_ "Pears")
+	(category "Deserts"))
+
+([Orange] of Course
+	(ingredients 
+		[OrangesrawCaliforniavalencias100])
+	(name_ "Orange")
+	(category "Deserts"))
+
+([Strawberrieswithcream] of Course
+	(ingredients 
+		[Strawberriesraw80]
+		[Creamfluidlightwhipping20])
+	(name_ "Strawberries with cream")
+	(category "Deserts"))
+

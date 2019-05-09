@@ -30,7 +30,7 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Mixed Vegetables",[("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
 ["Carbonara Spaghetti",[("Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",200), ("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",20), ("Milk, buttermilk, fluid, cultured, reduced fat",30)]]]
 
-SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",)]],
+SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",150)]],
 ["Hamburger",[("Rolls, hamburger or hotdog, mixed-grain",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Loin",[("Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled",200)]],
 ["Beef",[("Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised",220)]],
@@ -72,25 +72,25 @@ LIMITACIONS = [
 		['sugar', 'hidratos','fructosa','glucosa'],
 		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine','Caffeine','Alcohol']]
                 
-			
+#canviar limitacions 
 LIMITACIONS_TIPO = [-100,-50]
 LIMITACIONS_ORIGINAL = [
 		['sugar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
 		['gluten',LIMITACIONS_TIPO[0]],
-                ['fructosa',LIMITACIONS_TIPO[1]],
-                ['glucosa',LIMITACIONS_TIPO[1]],
-                ['colesterol',LIMITACIONS_TIPO[1]],
-                ['saturated',LIMITACIONS_TIPO[0]],
-                ['fat', LIMITACIONS_TIPO[1]],
-                ['Tomatoe', LIMITACIONS_TIPO[0]],
-                ['Meat', LIMITACIONS_TIPO[1]],
-                ['Shellfish', LIMITACIONS_TIPO[0]],
-                ['Coffee', LIMITACIONS_TIPO[0]],
-                ['Wine', LIMITACIONS_TIPO[1]],
-                ['Alcohol',LIMITACIONS_TIPO[1]],
-                ['Caffeine',LIMITACIONS_TIPO[0]],
-                ] 
+        ['fructosa',LIMITACIONS_TIPO[1]],
+        ['glucosa',LIMITACIONS_TIPO[1]],
+        ['colesterol',LIMITACIONS_TIPO[1]],
+        ['saturated',LIMITACIONS_TIPO[0]],
+        ['fat', LIMITACIONS_TIPO[1]],
+        ['Tomatoe', LIMITACIONS_TIPO[0]],
+        ['Meat', LIMITACIONS_TIPO[1]],
+        ['Shellfish', LIMITACIONS_TIPO[0]],
+        ['Coffee', LIMITACIONS_TIPO[0]],
+        ['Wine', LIMITACIONS_TIPO[1]],
+        ['Alcohol',LIMITACIONS_TIPO[1]],
+        ['Caffeine',LIMITACIONS_TIPO[0]],
+        ] 
 
 
 def writeList(llista):
@@ -159,8 +159,8 @@ def main():
                 if j > 0:
                     if j2[1] != 'NULL' and j2[1] != "0": 
                         r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t')
-                        r.write('\n\t(nutrient "'+j2[0]+'"))')       
-                        r.write('\n\t(quantity "'+j2[1]+'"))\n\n')                      
+                        r.write('\n\t(nutrient '+j2[0]+')')       
+                        r.write('\n\t(quantity '+j2[1]+'))\n\n')                      
     r.close()
 
     
@@ -168,7 +168,7 @@ def main():
 
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Nutrients.pins','w') as r:
         for i,i2 in enumerate(characteristics):
-            r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutriente\n\t')
+            r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutrient\n\t')
             r.write('\n\t(name_ "'+i2[0]+'"))\n\n')                         
     r.close()
 
@@ -196,26 +196,35 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients):
             t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i])+')')
-            t.write('\n\t(name_ "'+i2+'"))')
+            t.write('\n\t(name_ "'+i2+'")')
             t.write('\n\t(type "'+changeString(nutrients[i][0][1])+'"))\n\n')
     t.close()
     
-    # ENFERMETATS
+    # ENFERMETATS canviar aqui lo de limitacions
     
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
-            r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
+            r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitations '+writeList2(LIMITACIONS[i])+')')
             r.write('\n\t(name_ "'+i2+'"))\n\n')
     r.close()
 
     # LIMITACIONS #FER DOS TIPUS DE LIMITACIONS INGREDIENT I NUTRIENT TIPUS LO DE BREAKFAST
-    
+    #LIMITATION NUTRIENT
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(limita '+str(i2[1])+')')
-            r.write('\n\t(value "'+i2[0]+'"))\n\n')                         
+            r.write('(['+ changeString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+str(i2[1])+')')
+            r.write('\n\t(nutrient "'+changeString(i2[0])+'"))\n\n')                         
     r.close()
 
+    #LIMITATION FOOD
+    """
+    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitations.pins','w') as r:
+        for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
+            r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(value '+str(i2[1])+')')
+            r.write('\n\t(nutrient "'+i2[0]+'"))\n\n')                         
+    r.close()
+    """
+    
     #COURSES
 
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Courses.pins','w') as t:
