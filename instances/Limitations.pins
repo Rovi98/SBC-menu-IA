@@ -1,64 +1,60 @@
 ([sugar-50] of LimitationNutrient
 	(value -50)
-	(nutrient "sugar"))
+	(nutrient [sugar])
 
 ([hidratos-50] of LimitationNutrient
 	(value -50)
-	(nutrient "hidratos"))
+	(nutrient [hidratos])
 
 ([gluten-100] of LimitationNutrient
 	(value -100)
-	(nutrient "gluten"))
+	(nutrient [gluten])
 
 ([fructosa-50] of LimitationNutrient
 	(value -50)
-	(nutrient "fructosa"))
+	(nutrient [fructosa])
 
 ([glucosa-50] of LimitationNutrient
 	(value -50)
-	(nutrient "glucosa"))
+	(nutrient [glucosa])
 
 ([colesterol-50] of LimitationNutrient
 	(value -50)
-	(nutrient "colesterol"))
+	(nutrient [colesterol])
 
 ([saturated-100] of LimitationNutrient
 	(value -100)
-	(nutrient "saturated"))
+	(nutrient [saturated])
 
 ([fat-50] of LimitationNutrient
 	(value -50)
-	(nutrient "fat"))
+	(nutrient [fat])
 
 ([Tomatoe-100] of LimitationNutrient
 	(value -100)
-	(nutrient "Tomatoe"))
+	(nutrient [Tomatoe])
 
 ([Meat-50] of LimitationNutrient
 	(value -50)
-	(nutrient "Meat"))
+	(nutrient [Meat])
 
 ([Shellfish-100] of LimitationNutrient
 	(value -100)
-	(nutrient "Shellfish"))
+	(nutrient [Shellfish])
 
 ([Coffee-100] of LimitationNutrient
 	(value -100)
-	(nutrient "Coffee"))
+	(nutrient [Coffee])
 
 ([Wine-50] of LimitationNutrient
 	(value -50)
-	(nutrient "Wine"))
+	(nutrient [Wine])
 
 ([Alcohol-50] of LimitationNutrient
 	(value -50)
-	(nutrient "Alcohol"))
+	(nutrient [Alcohol])
 
 ([Caffeine-100] of LimitationNutrient
 	(value -100)
-	(nutrient "Caffeine"))
-	
-([gluten-100] of LimitationType
-	(value -100)
-	(type Sweets))
+	(nutrient [Caffeine])
 
