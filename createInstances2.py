@@ -138,7 +138,7 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Nutrients.pins','w') as r:
         for i,i2 in enumerate(characteristics):
             r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutriente\n\t')
-            r.write('\n\t(name "'+i2[0]+'"))\n\n')                         
+            r.write('\n\t(name_ "'+i2[0]+'"))\n\n')                         
     r.close()
 
 
@@ -165,7 +165,7 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients):
             t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i])+')')
-            t.write('\n\t(name "'+i2+'"))')
+            t.write('\n\t(name_ "'+i2+'"))')
             t.write('\n\t(type "'+changeString(nutrients[i][0][1])+'"))\n\n')
     t.close()
     
@@ -174,7 +174,7 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
             r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
-            r.write('\n\t(name "'+i2+'"))\n\n')
+            r.write('\n\t(name_ "'+i2+'"))\n\n')
     r.close()
 
     # LIMITACIONS #FER DOS TIPUS DE LIMITACIONS INGREDIENT I NUTRIENT TIPUS LO DE BREAKFAST
@@ -190,11 +190,11 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Courses.pins','w') as t:
         for i,i2 in enumerate(breakfast):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
-            t.write('\n\t(name "'+i2[0]+'")')
+            t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category "'+'Breakfast'+'"))\n\n')
         for i,i2 in enumerate(FirstCourse):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
-            t.write('\n\t(name "'+i2[0]+'")')
+            t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category "'+'FirstCourse'+'"))\n\n')
     t.close()
 

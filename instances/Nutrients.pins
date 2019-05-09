@@ -1,64 +1,64 @@
 ([tipus] of Nutriente
 	
-	(name "tipus"))
+	(name_ "tipus"))
 
 ([fat] of Nutriente
 	
-	(name "fat"))
+	(name_ "fat"))
 
 ([carbohydrates] of Nutriente
 	
-	(name "carbohydrates"))
+	(name_ "carbohydrates"))
 
 ([calories] of Nutriente
 	
-	(name "calories"))
+	(name_ "calories"))
 
 ([sucrose] of Nutriente
 	
-	(name "sucrose"))
+	(name_ "sucrose"))
 
 ([glucose] of Nutriente
 	
-	(name "glucose"))
+	(name_ "glucose"))
 
 ([fructose] of Nutriente
 	
-	(name "fructose"))
+	(name_ "fructose"))
 
 ([lactose] of Nutriente
 	
-	(name "lactose"))
+	(name_ "lactose"))
 
 ([alcohol] of Nutriente
 	
-	(name "alcohol"))
+	(name_ "alcohol"))
 
 ([caffeine] of Nutriente
 	
-	(name "caffeine"))
+	(name_ "caffeine"))
 
 ([sugar] of Nutriente
 	
-	(name "sugar"))
+	(name_ "sugar"))
 
 ([cholesterol] of Nutriente
 	
-	(name "cholesterol"))
+	(name_ "cholesterol"))
 
 ([saturated] of Nutriente
 	
-	(name "saturated"))
+	(name_ "saturated"))
 
 ([vitaminB5] of Nutriente
 	
-	(name "vitaminB5"))
+	(name_ "vitaminB5"))
 
 ([vitaminB6] of Nutriente
 	
-	(name "vitaminB6"))
+	(name_ "vitaminB6"))
 
 ([vitaminB12] of Nutriente
 	
-	(name "vitaminB12"))
+	(name_ "vitaminB12"))
 
