@@ -79,9 +79,9 @@
 )
 
 
-(deffunction print-menu (?menuSemana)
+(deffunction print-menu (?menuWeek)
   (printout t "Menu:" crlf)
-  (printout t (send ?menuSemana imprimir))
+  (printout t (send ?menuWeek display))
 )
 
 (deffunction random-from-list (?list)

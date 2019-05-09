@@ -1,4 +1,4 @@
-; Thu May 09 03:52:29 CEST 2019
+; Thu May 09 18:38:13 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -24,7 +24,7 @@
 	(multislot menusDay
 		(type INSTANCE)
 ;+		(allowed-classes MenuDay)
-		(cardinality 5 5)
+		(cardinality 7 7)
 		(create-accessor read-write))
 	(multislot category
 		(type SYMBOL)
@@ -260,11 +260,21 @@
 		(type INSTANCE)
 ;+		(allowed-classes Nutrient)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass LimitationIngredient
 	(is-a Limitation)
 	(role concrete)
+	(single-slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot ingredient
 		(type INSTANCE)
 ;+		(allowed-classes Ingredient)
@@ -278,6 +288,11 @@
 		(type SYMBOL)
 		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass MenuWeek
@@ -286,7 +301,7 @@
 	(multislot menusDay
 		(type INSTANCE)
 ;+		(allowed-classes MenuDay)
-		(cardinality 5 5)
+		(cardinality 7 7)
 		(create-accessor read-write)))
 
 (defclass MenuDay

@@ -24,7 +24,7 @@
    (declare (salience 10))
    (menu-done)
    =>
-   (bind ?menuSemana (make-instance (gensym) of MenuWeek))
+   (bind ?menuWeek (make-instance (gensym) of MenuWeek))
    (bind ?list-courses (find-all-instances ((?c Course)) TRUE))
    (loop-for-count (?i 7) do
 
@@ -57,11 +57,11 @@
           (dinner ?dinner)
         )
       )
-      (slot-replace$ ?menuSemana menusDia ?i ?i ?menuDay)
+      (slot-replace$ ?menuWeek menusDay ?i ?i ?menuDay)
       ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
    )
 
-   (print-menu ?menuSemana)
+   (print-menu ?menuWeek)
 )
 
 ;(assert (menu-done))
@@ -72,9 +72,10 @@
    (age-range ?)
    (season ?)
    (diseases ?)
-   (nolike ?)
    (sex ?)
    (exercise ?)
+   (preferences-positive ?)
+   (preferences-negative ?)
    =>
    (assert (menu-done))
 )
@@ -82,11 +83,10 @@
 (defrule vegetables-state-vegetarian ""
    (vegetables-state vegetarian)
    =>
-   (do-for-all-instances  ((?lim LimitationType))
-     TRUE
-     (send ?lim apply)
+    (bind ?pref (nth$ 1 (find-instance ((?p Preference)) (eq ?p:name_ "Vegetarian"))))
+    (foreach ?lim (send ?pref get-limitations)
+      (send ?lim apply)
     )
-   ;(assert (menu-done))
 )
 
 ;;;***************
@@ -115,7 +115,7 @@
        (assert (vegetables-state normal))
        else
        (if (ask-question-yes-no "Do you eat milk or egs?")
-           then (assert (vegetables-state vegeterian))
+           then (assert (vegetables-state vegetarian))
            else (assert (vegetables-state vegan))
       )
     )
@@ -192,7 +192,7 @@
 	;;;(printout t crlf)
 	;;;(progn$ (?curr-dia $?dias)
 	;;;(progn$ (?curr-dia $?dias)
-	;;;(printout t (send ?curr-dia imprimir))
+	;;;(printout t (send ?curr-dia display))
 	;;;)
 	;;;(assert (final))
 ;;;)
@@ -201,41 +201,41 @@
 ;;;* MESSAGES *
 ;;;************
 
-(defmessage-handler Breakfast imprimir ()
-  (printout t "|| · " (send ?self:course get-nombre) crlf)
+(defmessage-handler Breakfast display ()
+  (printout t "|| · " (send ?self:course get-name_) crlf)
 )
 
-(defmessage-handler Lunch imprimir ()
-  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-nombre) crlf)
-  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-nombre) crlf)
-  (printout t "|| · [Postre] " (send ?self:desert get-nombre) crlf)
+(defmessage-handler Lunch display ()
+  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| · [Postre] " (send ?self:desert get-name_) crlf)
 )
 
-(defmessage-handler Dinner imprimir ()
-  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-nombre) crlf)
-  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-nombre) crlf)
-  (printout t "|| · [Postre] " (send ?self:desert get-nombre) crlf)
+(defmessage-handler Dinner display ()
+  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| · [Postre] " (send ?self:desert get-name_) crlf)
 )
 
-(defmessage-handler MenuDay imprimir ()
+(defmessage-handler MenuDay display ()
   (printout t "||" crlf)
   (printout t "|| >>> Desayuno <<<" crlf)
-  (printout t (send ?self:breakfast imprimir))
+  (printout t (send ?self:breakfast display))
   (printout t "||" crlf)
   (printout t "|| >>>  Comida  <<<" crlf)
-  (printout t (send ?self:lunch imprimir))
+  (printout t (send ?self:lunch display))
   (printout t "||" crlf)
   (printout t "|| >>>   Cena   <<<" crlf)
-  (printout t (send ?self:dinner imprimir))
+  (printout t (send ?self:dinner display))
   (printout t "||" crlf)
 )
 
-(defmessage-handler MenuWeek imprimir ()
-  (loop-for-count (?i 1 5) do
+(defmessage-handler MenuWeek display ()
+  (loop-for-count (?i 1 7) do
     (printout t "============================================" crlf)
     (printout t "|||| " (nth$ ?i ?*WEEKDAYS*) crlf)
     (printout t "============================================" crlf)
-    (printout t (send (nth$ ?i ?self:menusDay) imprimir))
+    (printout t (send (nth$ ?i ?self:menusDay) display))
   )
   (printout t "============================================" crlf)
 )
@@ -251,11 +251,27 @@
 )
 
 (defmessage-handler LimitationType apply ()
-  (printout t "shiiet" crlf)
-  (do-for-all-instances  ((?cour Course) (?ingr Ingredient))
-    (and (member$ ?ingr (send ?cour get-ingredients)) (eq ?self:type  (send ?ingr get-type)))
+  (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity))
+    (and 
+      (member$ ?ingrQty ?cour:ingredients)
+      (eq ?self:type (send ?ingrQty:ingredient get-type))
+    )
     (bind ?prev_score (send ?cour get-score))
-    (printout t ?cour " " ?ingr crlf)
-    (send ?cour put-score (+ ?prev_score 100))
+    (printout t "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
+    (send ?cour put-score (+ ?prev_score (* ?self:value (send ?ingrQty get-quantity))))
   )
 )
+
+; (defmessage-handler LimitationNutrient apply ()
+;   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity) (?nutrQty Nutrient))
+;     (and 
+;       (member$ ?ingrQty (send ?cour get-ingredients))
+;       (member$ ?nutr (send ?cour get-nutrients))
+;       (eq ?self:type  (send (send ?ingrQty get-ingredient) get-type))
+;     )
+;     (bind ?prev_score (send ?cour get-score))
+;     (printout t "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
+;     (send ?cour put-score (+ ?prev_score (* ?self:value (send ?ingrQty get-quantity))))
+;   )
+; )
+
