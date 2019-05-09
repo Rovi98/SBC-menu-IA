@@ -1,0 +1,179 @@
+([CocoaButterSandwichNocillaSandwich] of Course
+	(ingredients 
+		[Oilcocoabutter30]
+		[Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
+	(name "Cocoa Butter Sandwich (Nocilla Sandwich)")
+	(category "Breakfast"))
+
+([JamToasts] of Course
+	(ingredients 
+		[Jamsandpreserves30]
+		[Breadwhitecommerciallypreparedtoasted90])
+	(name "Jam Toasts")
+	(category "Breakfast"))
+
+([BaconandFriedEggs] of Course
+	(ingredients 
+		[Porkcuredbaconcookedbroiledpanfriedorroastedreducedsodium40]
+		[Eggwholecookedfried100])
+	(name "Bacon and Fried Eggs")
+	(category "Breakfast"))
+
+([Cornflakeswithmilk] of Course
+	(ingredients 
+		[CerealsreadytoeatPOSTHONEYBUNCHESOFOATSwithalmonds30]
+		[Milkproducerfluid37milkfat90])
+	(name "Cornflakes with milk")
+	(category "Breakfast"))
+
+([Muffins] of Course
+	(ingredients 
+		[Englishmuffinsplainenrichedwithcapropincludessourdough150])
+	(name "Muffins")
+	(category "Breakfast"))
+
+([SalamiSandwich] of Course
+	(ingredients 
+		[Salamidryorhardpork30]
+		[Breadfrenchorviennaincludessourdough90])
+	(name "Salami Sandwich")
+	(category "Breakfast"))
+
+([HamSandwich] of Course
+	(ingredients 
+		[Hamslicedregularapproximately11fat30]
+		[Breadfrenchorviennaincludessourdough90])
+	(name "Ham Sandwich")
+	(category "Breakfast"))
+
+([ChorizoSandwich] of Course
+	(ingredients 
+		[Chorizoporkandbeef30]
+		[Breadfrenchorviennaincludessourdough90])
+	(name "Chorizo Sandwich")
+	(category "Breakfast"))
+
+([VeganCheeseSandwich] of Course
+	(ingredients 
+		[Imitationcheeseamericanorcheddarlowcholesterol30]
+		[Breadfrenchorviennaincludessourdough90])
+	(name "Vegan Cheese Sandwich")
+	(category "Breakfast"))
+
+([Nutswithmilk] of Course
+	(ingredients 
+		[Nutswalnutsblackdried15]
+		[RaisinsseededSeeds, sunflower seed kernels, toasted, without salt]
+		[SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90])
+	(name "Nuts with milk")
+	(category "Breakfast"))
+
+([TofuSandwich] of Course
+	(ingredients 
+		[Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari20]
+		[Tomatoesredriperawyearroundaverage10]
+		[Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
+	(name "Tofu Sandwich")
+	(category "Breakfast"))
+
+([Macaroniwithtomato] of Course
+	(ingredients 
+		[Pastacookedenrichedwithaddedsalt200]
+		[Tomatoproductscannedsauce50])
+	(name "Macaroni with tomato")
+	(category "FirstCourse"))
+
+([Ricewithtomato] of Course
+	(ingredients 
+		[Ricewhitemediumgrainenrichedcooked200]
+		[Tomatoproductscannedsauce50])
+	(name "Rice with tomato")
+	(category "FirstCourse"))
+
+([Greenbeanwithpotatoes] of Course
+	(ingredients 
+		[Beanssnapgreenfrozencookedboileddrainedwithoutsalt100]
+		[Potatoesboiledcookedinskinfleshwithsalt100])
+	(name "Green bean with potatoes")
+	(category "FirstCourse"))
+
+([Chickensoup] of Course
+	(ingredients 
+		[Soupchickennoodlereducedsodiumcannedreadytoserve200])
+	(name "Chicken soup")
+	(category "FirstCourse"))
+
+([Pupkincream] of Course
+	(ingredients 
+		[Pumpkincookedboileddrainedwithoutsalt180]
+		[Potatoesboiledcookedinskinfleshwithsalt50])
+	(name "Pupkin cream")
+	(category "FirstCourse"))
+
+([Fideua] of Course
+	(ingredients 
+		[Noodleseggenrichedcooked150]
+		[Molluskssquidmixedspeciescookedfried30]
+		[Mollusksmusselbluecookedmoistheat30])
+	(name "Fideua")
+	(category "FirstCourse"))
+
+([Lentilssalad] of Course
+	(ingredients 
+		[Lentilsmatureseedscookedboiledwithsalt180]
+		[Pepperssweetredcookedboileddrainedwithoutsalt30]
+		[Onionsraw30])
+	(name "Lentils salad")
+	(category "FirstCourse"))
+
+([Chickpeas] of Course
+	(ingredients 
+		[Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids230])
+	(name "Chickpeas")
+	(category "FirstCourse"))
+
+([Melonwithham] of Course
+	(ingredients 
+		[Melonscasabaraw200]
+		[Porkcuredhamcenterslicecountrystyleseparableleanonlyraw50])
+	(name "Melon with ham")
+	(category "FirstCourse"))
+
+([ThreeDelightRice] of Course
+	(ingredients 
+		[Ricewhitemediumgrainenrichedcooked100]
+		[Peassplitmatureseedscookedboiledwithsalt100]
+		[Cornsweetwhitecannedwholekernelregularpacksolidsandliquids100])
+	(name "Three Delight Rice")
+	(category "FirstCourse"))
+
+([BoiledVegetableCarrotsPotatoesandPeas] of Course
+	(ingredients 
+		[Carrotscookedboileddrainedwithsalt100]
+		[Potatoesboiledcookedinskinfleshwithsalt100]
+		[Peassplitmatureseedscookedboiledwithsalt100])
+	(name "Boiled Vegetable (Carrots, Potatoes and Peas)")
+	(category "FirstCourse"))
+
+([Vegancuscus] of Course
+	(ingredients 
+		[Couscouscooked150]
+		[Carrotscookedboileddrainedwithsalt50]
+		[Pepperssweetredcookedboileddrainedwithoutsalt50])
+	(name "Vegan cuscus")
+	(category "FirstCourse"))
+
+([MixedVegetables] of Course
+	(ingredients 
+		[Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250])
+	(name "Mixed Vegetables")
+	(category "FirstCourse"))
+
+([CarbonaraSpaghetti] of Course
+	(ingredients 
+		[Spaghettiproteinfortifiedcookedenrichednx625200]
+		[Porkcuredbaconcookedbroiledpanfriedorroastedreducedsodium20]
+		[Milkbuttermilkfluidculturedreducedfat30])
+	(name "Carbonara Spaghetti")
+	(category "FirstCourse"))
+

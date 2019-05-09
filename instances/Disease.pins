@@ -1,0 +1,36 @@
+([Diabetes] of Disease
+	(limitaciones 
+		[sugar]
+		[hidratos]
+		[fructosa]
+		[glucosa])
+	(name "Diabetes"))
+
+([Celiac] of Disease
+	(limitaciones 
+		[gluten])
+	(name "Celiac"))
+
+([Colesterol] of Disease
+	(limitaciones 
+		[colesterol]
+		[saturated]
+		[fat])
+	(name "Colesterol"))
+
+([Gota] of Disease
+	(limitaciones 
+		[Tomatoe]
+		[Meat]
+		[Steak]
+		[Shellfish])
+	(name "Gota"))
+
+([Hipertension] of Disease
+	(limitaciones 
+		[Coffee]
+		[Wine]
+		[Caffeine]
+		[Alcohol])
+	(name "Hipertension"))
+

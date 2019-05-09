@@ -42,7 +42,7 @@ LIMITACIONS = [
 		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine','Caffeine','Alcohol']]
                 
 			
-LIMITACIONS_TIPO = ['NO PUEDE','NO LE GUSTA','LE GUSTA','NECESITA']
+LIMITACIONS_TIPO = [-100,-50]
 LIMITACIONS_ORIGINAL = [
 		['sugar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
@@ -69,7 +69,10 @@ def writeList(llista):
 def writeList2(llista):
     llista =list(map(lambda x:'\n\t\t['+changeString(x[0])+ str(x[1])+']' , llista))
     return "".join(llista)
-
+    
+def writeList3(llista):
+    llista =list(map(lambda x:'\n\t\t['+changeString(x[0])+']' , llista))
+    return "".join(llista)
 
 def changeString(word):
     return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","").replace(",","").replace('NULL','0').replace('(',"").replace(')',"").replace('%',"")
@@ -122,9 +125,11 @@ def main():
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/NutrientsQuantity.pins','w') as r:
         for i,i2 in enumerate(ingredients):
             for j,j2 in enumerate(characteristics):
-                r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t)
-                r.write('\n\t(nutrient "'+j2[0]+'"))')       
-                r.write('\n\t(quantity "'+j2[1]+'"))\n\n')                      
+                if j > 0:
+                    if j2[1] != "NULL" or j2[1] != "0": #not working this tho
+                        r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t')
+                        r.write('\n\t(nutrient "'+j2[0]+'"))')       
+                        r.write('\n\t(quantity "'+j2[1]+'"))\n\n')                      
     r.close()
 
     
@@ -132,47 +137,52 @@ def main():
 
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Nutrients.pins','w') as r:
         for i,i2 in enumerate(characteristics):
-            r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutriente\n\t)
-            r.write('\n\t(tipo "'+i2[0]+'"))\n\n')                         
+            r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutriente\n\t')
+            r.write('\n\t(name "'+i2[0]+'"))\n\n')                         
     r.close()
 
 
     # INGREDIENTS-QUANTITY
     
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/IngredientsQuantity.pins','w') as t:
-        for i,i2 in enumerate(FirstCourse):
-            for j,j2 in i2[1]:
-                t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0]])+')')
-                t.write('\n\t(quantity "'+j2[1]+'"))\n\n')
+        for i,i2 in enumerate(FirstCourse): 
+            for j,j2 in enumerate(i2[1]): 
+                if isinstance(j2[1],int):
+                    if (j2[1]) > 0:
+                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0])+')')
+                        t.write('\n\t(quantity "'+str(j2[1])+'"))\n\n')
         for i,i2 in enumerate(breakfast):
-            for j,j2 in i2[1]:
-                t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0]])+')')
-                t.write('\n\t(quantity "'+j2[1]+'"))\n\n')
+            for j,j2 in enumerate(i2[1]): 
+                 if isinstance(j2[1],int):
+                    if (j2[1]) > 0:
+                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0])+')')
+                        t.write('\n\t(quantity "'+str(j2[1])+'"))\n\n')
 
     t.close()
     
-    # INGREDIENTS
+    # INGREDIENTS FALTA SEASON
     
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients):
-            t.write('(['+ changeString(i2) + '] of Ingrediente\n\t(nutrientes '+writeList(nutrients[i])+')')
-            t.write('\n\t(nombre "'+i2+'"))\n\n')
+            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i])+')')
+            t.write('\n\t(name "'+i2+'"))')
+            t.write('\n\t(type "'+changeString(nutrients[i][0][1])+'"))\n\n')
     t.close()
     
     # ENFERMETATS
     
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
-            r.write('(['+ changeString(i2) + '] of '+ 'Enfermedad\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
-            r.write('\n\t(nombre "'+i2+'"))\n\n')
+            r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitaciones '+writeList(LIMITACIONS[i])+')')
+            r.write('\n\t(name "'+i2+'"))\n\n')
     r.close()
 
-    # LIMITACIONS 
+    # LIMITACIONS #FER DOS TIPUS DE LIMITACIONS INGREDIENT I NUTRIENT TIPUS LO DE BREAKFAST
     
     with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('(['+ changeString(i2[1]) + '] of '+ 'Limitacion\n\t(limita '+changeString(i2[0])+')')
-            r.write('\n\t(tipo "'+i2[1]+'"))\n\n')                         
+            r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(limita '+str(i2[1])+')')
+            r.write('\n\t(value "'+i2[0]+'"))\n\n')                         
     r.close()
 
     #COURSES
@@ -189,20 +199,6 @@ def main():
     t.close()
 
 
-
-"""
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/IngredientsQuantity.pins','w') as t:
-        for i,i2 in enumerate(FirstCourse):
-            for j,j2 in i2[1]:
-                t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0]])+')')
-                t.write('\n\t(quantity "'+j2[1]+'"))\n\n')
-        for i,i2 in enumerate(breakfast):
-            for j,j2 in i2[1]:
-                t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0]])+')')
-                t.write('\n\t(quantity "'+j2[1]+'"))\n\n')
-
-    t.close()
-"""
 
 if __name__ == '__main__':
     main()

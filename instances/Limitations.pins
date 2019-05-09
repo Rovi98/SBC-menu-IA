@@ -1,0 +1,60 @@
+([sugar] of Limitacion
+	(limita -50)
+	(value "sugar"))
+
+([hidratos] of Limitacion
+	(limita -50)
+	(value "hidratos"))
+
+([gluten] of Limitacion
+	(limita -100)
+	(value "gluten"))
+
+([fructosa] of Limitacion
+	(limita -50)
+	(value "fructosa"))
+
+([glucosa] of Limitacion
+	(limita -50)
+	(value "glucosa"))
+
+([colesterol] of Limitacion
+	(limita -50)
+	(value "colesterol"))
+
+([saturated] of Limitacion
+	(limita -100)
+	(value "saturated"))
+
+([fat] of Limitacion
+	(limita -50)
+	(value "fat"))
+
+([Tomatoe] of Limitacion
+	(limita -100)
+	(value "Tomatoe"))
+
+([Meat] of Limitacion
+	(limita -50)
+	(value "Meat"))
+
+([Shellfish] of Limitacion
+	(limita -100)
+	(value "Shellfish"))
+
+([Coffee] of Limitacion
+	(limita -100)
+	(value "Coffee"))
+
+([Wine] of Limitacion
+	(limita -50)
+	(value "Wine"))
+
+([Alcohol] of Limitacion
+	(limita -50)
+	(value "Alcohol"))
+
+([Caffeine] of Limitacion
+	(limita -100)
+	(value "Caffeine"))
+
