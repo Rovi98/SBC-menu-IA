@@ -126,7 +126,7 @@ def main():
         for i,i2 in enumerate(ingredients):
             for j,j2 in enumerate(characteristics):
                 if j > 0:
-                    if j2[1] != "NULL" or j2[1] != "0": #not working this tho
+                    if j2[1] != 'NULL' and j2[1] != "0": 
                         r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t')
                         r.write('\n\t(nutrient "'+j2[0]+'"))')       
                         r.write('\n\t(quantity "'+j2[1]+'"))\n\n')                      
