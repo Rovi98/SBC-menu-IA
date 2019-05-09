@@ -1,3 +1,91 @@
+([Oilcocoabutter30] of IngredientQuantity
+	(ingredient [Oilcocoabutter])
+	(quantity 30))
+
+([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
+	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
+	(quantity 90))
+
+([Jamsandpreserves30] of IngredientQuantity
+	(ingredient [Jamsandpreserves])
+	(quantity 30))
+
+([Breadwhitecommerciallypreparedtoasted90] of IngredientQuantity
+	(ingredient [Breadwhitecommerciallypreparedtoasted])
+	(quantity 90))
+
+([Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40] of IngredientQuantity
+	(ingredient [Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
+	(quantity 40))
+
+([Eggwholecookedfried100] of IngredientQuantity
+	(ingredient [Eggwholecookedfried])
+	(quantity 100))
+
+([Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30] of IngredientQuantity
+	(ingredient [Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds])
+	(quantity 30))
+
+([Milkproducerfluid37milkfat90] of IngredientQuantity
+	(ingredient [Milkproducerfluid37milkfat])
+	(quantity 90))
+
+([Englishmuffinsplainenrichedwithcapropincludessourdough150] of IngredientQuantity
+	(ingredient [Englishmuffinsplainenrichedwithcapropincludessourdough])
+	(quantity 150))
+
+([Salamidryorhardpork30] of IngredientQuantity
+	(ingredient [Salamidryorhardpork])
+	(quantity 30))
+
+([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Breadfrenchorviennaincludessourdough])
+	(quantity 90))
+
+([Hamslicedregularapproximately11fat30] of IngredientQuantity
+	(ingredient [Hamslicedregularapproximately11fat])
+	(quantity 30))
+
+([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Breadfrenchorviennaincludessourdough])
+	(quantity 90))
+
+([Chorizoporkandbeef30] of IngredientQuantity
+	(ingredient [Chorizoporkandbeef])
+	(quantity 30))
+
+([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Breadfrenchorviennaincludessourdough])
+	(quantity 90))
+
+([Imitationcheeseamericanorcheddarlowcholesterol30] of IngredientQuantity
+	(ingredient [Imitationcheeseamericanorcheddarlowcholesterol])
+	(quantity 30))
+
+([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Breadfrenchorviennaincludessourdough])
+	(quantity 90))
+
+([Nutswalnutsblackdried15] of IngredientQuantity
+	(ingredient [Nutswalnutsblackdried])
+	(quantity 15))
+
+([SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90] of IngredientQuantity
+	(ingredient [SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD])
+	(quantity 90))
+
+([Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari20] of IngredientQuantity
+	(ingredient [Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari])
+	(quantity 20))
+
+([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
+	(ingredient [Tomatoesredriperawyearroundaverage])
+	(quantity 10))
+
+([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
+	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
+	(quantity 90))
+
 ([Pastacookedenrichedwithaddedsalt200] of IngredientQuantity
 	(ingredient [Pastacookedenrichedwithaddedsalt])
 	(quantity 200))
@@ -122,91 +210,155 @@
 	(ingredient [Milkbuttermilkfluidculturedreducedfat])
 	(quantity 30))
 
-([Oilcocoabutter30] of IngredientQuantity
-	(ingredient [Oilcocoabutter])
-	(quantity 30))
-
-([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
-	(quantity 90))
-
-([Jamsandpreserves30] of IngredientQuantity
-	(ingredient [Jamsandpreserves])
-	(quantity 30))
-
-([Breadwhitecommerciallypreparedtoasted90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedtoasted])
-	(quantity 90))
-
-([Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40] of IngredientQuantity
-	(ingredient [Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
-	(quantity 40))
-
-([Eggwholecookedfried100] of IngredientQuantity
-	(ingredient [Eggwholecookedfried])
-	(quantity 100))
-
-([Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30] of IngredientQuantity
-	(ingredient [Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds])
-	(quantity 30))
-
-([Milkproducerfluid37milkfat90] of IngredientQuantity
-	(ingredient [Milkproducerfluid37milkfat])
-	(quantity 90))
-
-([Englishmuffinsplainenrichedwithcapropincludessourdough150] of IngredientQuantity
-	(ingredient [Englishmuffinsplainenrichedwithcapropincludessourdough])
+([Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
+	(ingredient [Chickenbroilersorfryersmeatandskincookedfriedflour])
 	(quantity 150))
 
-([Salamidryorhardpork30] of IngredientQuantity
-	(ingredient [Salamidryorhardpork])
-	(quantity 30))
-
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
-	(quantity 90))
-
-([Hamslicedregularapproximately11fat30] of IngredientQuantity
-	(ingredient [Hamslicedregularapproximately11fat])
-	(quantity 30))
-
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
-	(quantity 90))
-
-([Chorizoporkandbeef30] of IngredientQuantity
-	(ingredient [Chorizoporkandbeef])
-	(quantity 30))
-
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
-	(quantity 90))
-
-([Imitationcheeseamericanorcheddarlowcholesterol30] of IngredientQuantity
-	(ingredient [Imitationcheeseamericanorcheddarlowcholesterol])
-	(quantity 30))
-
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
-	(quantity 90))
-
-([Nutswalnutsblackdried15] of IngredientQuantity
-	(ingredient [Nutswalnutsblackdried])
-	(quantity 15))
-
-([SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90] of IngredientQuantity
-	(ingredient [SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD])
-	(quantity 90))
-
-([Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari20] of IngredientQuantity
-	(ingredient [Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari])
-	(quantity 20))
+([Rollshamburgerorhotdogmixed-grain150] of IngredientQuantity
+	(ingredient [Rollshamburgerorhotdogmixed-grain])
+	(quantity 150))
 
 ([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
 	(ingredient [Tomatoesredriperawyearroundaverage])
 	(quantity 10))
 
-([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
-	(quantity 90))
+([Breadirishsodapreparedfromrecipe30] of IngredientQuantity
+	(ingredient [Breadirishsodapreparedfromrecipe])
+	(quantity 30))
+
+([Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled200] of IngredientQuantity
+	(ingredient [Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled])
+	(quantity 200))
+
+([Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220] of IngredientQuantity
+	(ingredient [Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised])
+	(quantity 220))
+
+([Fishtunafreshbluefincookeddryheat200] of IngredientQuantity
+	(ingredient [Fishtunafreshbluefincookeddryheat])
+	(quantity 200))
+
+([FishsalmonAtlanticwildcookeddryheat200] of IngredientQuantity
+	(ingredient [FishsalmonAtlanticwildcookeddryheat])
+	(quantity 200))
+
+([Fishflatfishflounderandsolespeciescookeddryheat150] of IngredientQuantity
+	(ingredient [Fishflatfishflounderandsolespeciescookeddryheat])
+	(quantity 150))
+
+([Onionsdehydratedflakes10] of IngredientQuantity
+	(ingredient [Onionsdehydratedflakes])
+	(quantity 10))
+
+([Pineapplecannedjuicepacksolidsandliquids20] of IngredientQuantity
+	(ingredient [Pineapplecannedjuicepacksolidsandliquids])
+	(quantity 20))
+
+([FishsardineAtlanticcannedinoildrainedsolidswithbone150] of IngredientQuantity
+	(ingredient [FishsardineAtlanticcannedinoildrainedsolidswithbone])
+	(quantity 150))
+
+([SausageItalianporkraw170] of IngredientQuantity
+	(ingredient [SausageItalianporkraw])
+	(quantity 170))
+
+([Meatballsmeatless170] of IngredientQuantity
+	(ingredient [Meatballsmeatless])
+	(quantity 170))
+
+([MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170] of IngredientQuantity
+	(ingredient [MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared])
+	(quantity 170))
+
+([Veggieburgersorsoyburgersunprepared150] of IngredientQuantity
+	(ingredient [Veggieburgersorsoyburgersunprepared])
+	(quantity 150))
+
+([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
+	(ingredient [Tomatoesredriperawyearroundaverage])
+	(quantity 10))
+
+([Breadirishsodapreparedfromrecipe30] of IngredientQuantity
+	(ingredient [Breadirishsodapreparedfromrecipe])
+	(quantity 30))
+
+([MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200] of IngredientQuantity
+	(ingredient [MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared])
+	(quantity 200))
+
+([Eggplantcookedboileddrainedwithsalt100] of IngredientQuantity
+	(ingredient [Eggplantcookedboileddrainedwithsalt])
+	(quantity 100))
+
+([Tomatoesredripecookedwithsalt100] of IngredientQuantity
+	(ingredient [Tomatoesredripecookedwithsalt])
+	(quantity 100))
+
+([Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100] of IngredientQuantity
+	(ingredient [Squashsummerzucchiniincludesskincookedboileddrainedwithsalt])
+	(quantity 100))
+
+([Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50] of IngredientQuantity
+	(ingredient [Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery])
+	(quantity 50))
+
+([Yogurtfruitlowfat10gramsproteinper8ounce100] of IngredientQuantity
+	(ingredient [Yogurtfruitlowfat10gramsproteinper8ounce])
+	(quantity 100))
+
+([Yogurtplainlowfat12gramsproteinper8ounce100] of IngredientQuantity
+	(ingredient [Yogurtplainlowfat12gramsproteinper8ounce])
+	(quantity 100))
+
+([Gelatindessertsdrymixpreparedwithwater100] of IngredientQuantity
+	(ingredient [Gelatindessertsdrymixpreparedwithwater])
+	(quantity 100))
+
+([Dessertsflancaramelcustardprepared-from-recipe100] of IngredientQuantity
+	(ingredient [Dessertsflancaramelcustardprepared-from-recipe])
+	(quantity 100))
+
+([NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50] of IngredientQuantity
+	(ingredient [NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend])
+	(quantity 50))
+
+([Cakefruitcakecommerciallyprepared50] of IngredientQuantity
+	(ingredient [Cakefruitcakecommerciallyprepared])
+	(quantity 50))
+
+([Applesrawwithskin100] of IngredientQuantity
+	(ingredient [Applesrawwithskin])
+	(quantity 100))
+
+([Bananasraw100] of IngredientQuantity
+	(ingredient [Bananasraw])
+	(quantity 100))
+
+([Watermelonraw100] of IngredientQuantity
+	(ingredient [Watermelonraw])
+	(quantity 100))
+
+([Plumsraw100] of IngredientQuantity
+	(ingredient [Plumsraw])
+	(quantity 100))
+
+([Cherriessweetraw100] of IngredientQuantity
+	(ingredient [Cherriessweetraw])
+	(quantity 100))
+
+([Pearsasianraw100] of IngredientQuantity
+	(ingredient [Pearsasianraw])
+	(quantity 100))
+
+([OrangesrawCaliforniavalencias100] of IngredientQuantity
+	(ingredient [OrangesrawCaliforniavalencias])
+	(quantity 100))
+
+([Strawberriesraw80] of IngredientQuantity
+	(ingredient [Strawberriesraw])
+	(quantity 80))
+
+([Creamfluidlightwhipping20] of IngredientQuantity
+	(ingredient [Creamfluidlightwhipping])
+	(quantity 20))
 

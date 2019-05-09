@@ -177,19 +177,12 @@ def main():
     # INGREDIENTS-QUANTITY
     
     with open('./instances/IngredientsQuantity.pins','w') as t:
-        for i,i2 in enumerate(FirstCourse): 
+        for i,i2 in enumerate(list(breakfast+FirstCourse+SecondCourse+Deserts)): 
             for j,j2 in enumerate(i2[1]): 
                 if isinstance(j2[1],int):
                     if (j2[1]) > 0:
                         t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient ['+changeString(j2[0])+'])')
                         t.write('\n\t(quantity '+str(j2[1])+'))\n\n')
-        for i,i2 in enumerate(breakfast):
-            for j,j2 in enumerate(i2[1]): 
-                 if isinstance(j2[1],int):
-                    if (j2[1]) > 0:
-                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient ['+changeString(j2[0])+'])')
-                        t.write('\n\t(quantity '+str(j2[1])+'))\n\n')
-
     t.close()
     
     # INGREDIENTS FALTA SEASON
