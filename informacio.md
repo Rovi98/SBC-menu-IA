@@ -47,3 +47,16 @@
 	- vitaminB5
 	- vitaminB6
 	- vitaminB12
+
+
+## TODO 
+
+- pensar preguntes
+- concretar ontologia
+- repassar instàncies
+- CLIPS
+- Documentació i Jocs de prova
+
+
+
+
