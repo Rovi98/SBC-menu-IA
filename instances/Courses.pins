@@ -3,62 +3,62 @@
 		[Oilcocoabutter30]
 		[Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
 	(name_ "Cocoa Butter Sandwich (Nocilla Sandwich)")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([JamToasts] of Course
 	(ingredients 
 		[Jamsandpreserves30]
 		[Breadwhitecommerciallypreparedtoasted90])
 	(name_ "Jam Toasts")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([BaconandFriedEggs] of Course
 	(ingredients 
-		[Porkcuredbaconcookedbroiledpanfriedorroastedreducedsodium40]
+		[Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40]
 		[Eggwholecookedfried100])
 	(name_ "Bacon and Fried Eggs")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([Cornflakeswithmilk] of Course
 	(ingredients 
-		[CerealsreadytoeatPOSTHONEYBUNCHESOFOATSwithalmonds30]
+		[Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30]
 		[Milkproducerfluid37milkfat90])
 	(name_ "Cornflakes with milk")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([Muffins] of Course
 	(ingredients 
 		[Englishmuffinsplainenrichedwithcapropincludessourdough150])
 	(name_ "Muffins")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([SalamiSandwich] of Course
 	(ingredients 
 		[Salamidryorhardpork30]
 		[Breadfrenchorviennaincludessourdough90])
 	(name_ "Salami Sandwich")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([HamSandwich] of Course
 	(ingredients 
 		[Hamslicedregularapproximately11fat30]
 		[Breadfrenchorviennaincludessourdough90])
 	(name_ "Ham Sandwich")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([ChorizoSandwich] of Course
 	(ingredients 
 		[Chorizoporkandbeef30]
 		[Breadfrenchorviennaincludessourdough90])
 	(name_ "Chorizo Sandwich")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([VeganCheeseSandwich] of Course
 	(ingredients 
 		[Imitationcheeseamericanorcheddarlowcholesterol30]
 		[Breadfrenchorviennaincludessourdough90])
 	(name_ "Vegan Cheese Sandwich")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([Nutswithmilk] of Course
 	(ingredients 
@@ -66,7 +66,7 @@
 		[RaisinsseededSeeds, sunflower seed kernels, toasted, without salt]
 		[SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90])
 	(name_ "Nuts with milk")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([TofuSandwich] of Course
 	(ingredients 
@@ -74,41 +74,41 @@
 		[Tomatoesredriperawyearroundaverage10]
 		[Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
 	(name_ "Tofu Sandwich")
-	(category "Breakfast"))
+	(category Breakfast))
 
 ([Macaroniwithtomato] of Course
 	(ingredients 
 		[Pastacookedenrichedwithaddedsalt200]
 		[Tomatoproductscannedsauce50])
 	(name_ "Macaroni with tomato")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Ricewithtomato] of Course
 	(ingredients 
-		[Ricewhitemediumgrainenrichedcooked200]
+		[Ricewhitemedium-grainenrichedcooked200]
 		[Tomatoproductscannedsauce50])
 	(name_ "Rice with tomato")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Greenbeanwithpotatoes] of Course
 	(ingredients 
 		[Beanssnapgreenfrozencookedboileddrainedwithoutsalt100]
 		[Potatoesboiledcookedinskinfleshwithsalt100])
 	(name_ "Green bean with potatoes")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Chickensoup] of Course
 	(ingredients 
-		[Soupchickennoodlereducedsodiumcannedreadytoserve200])
+		[Soupchickennoodlereducedsodiumcannedready-to-serve200])
 	(name_ "Chicken soup")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Pupkincream] of Course
 	(ingredients 
 		[Pumpkincookedboileddrainedwithoutsalt180]
 		[Potatoesboiledcookedinskinfleshwithsalt50])
 	(name_ "Pupkin cream")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Fideua] of Course
 	(ingredients 
@@ -116,7 +116,7 @@
 		[Molluskssquidmixedspeciescookedfried30]
 		[Mollusksmusselbluecookedmoistheat30])
 	(name_ "Fideua")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Lentilssalad] of Course
 	(ingredients 
@@ -124,28 +124,28 @@
 		[Pepperssweetredcookedboileddrainedwithoutsalt30]
 		[Onionsraw30])
 	(name_ "Lentils salad")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Chickpeas] of Course
 	(ingredients 
 		[Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids230])
 	(name_ "Chickpeas")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Melonwithham] of Course
 	(ingredients 
 		[Melonscasabaraw200]
-		[Porkcuredhamcenterslicecountrystyleseparableleanonlyraw50])
+		[Porkcuredhamcenterslicecountry-styleseparableleanonlyraw50])
 	(name_ "Melon with ham")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([ThreeDelightRice] of Course
 	(ingredients 
-		[Ricewhitemediumgrainenrichedcooked100]
+		[Ricewhitemedium-grainenrichedcooked100]
 		[Peassplitmatureseedscookedboiledwithsalt100]
 		[Cornsweetwhitecannedwholekernelregularpacksolidsandliquids100])
 	(name_ "Three Delight Rice")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([BoiledVegetableCarrotsPotatoesandPeas] of Course
 	(ingredients 
@@ -153,7 +153,7 @@
 		[Potatoesboiledcookedinskinfleshwithsalt100]
 		[Peassplitmatureseedscookedboiledwithsalt100])
 	(name_ "Boiled Vegetable (Carrots, Potatoes and Peas)")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Vegancuscus] of Course
 	(ingredients 
@@ -161,59 +161,59 @@
 		[Carrotscookedboileddrainedwithsalt50]
 		[Pepperssweetredcookedboileddrainedwithoutsalt50])
 	(name_ "Vegan cuscus")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([MixedVegetables] of Course
 	(ingredients 
 		[Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250])
 	(name_ "Mixed Vegetables")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([CarbonaraSpaghetti] of Course
 	(ingredients 
-		[Spaghettiproteinfortifiedcookedenrichednx625200]
-		[Porkcuredbaconcookedbroiledpanfriedorroastedreducedsodium20]
+		[Spaghettiprotein-fortifiedcookedenrichednx625200]
+		[Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium20]
 		[Milkbuttermilkfluidculturedreducedfat30])
 	(name_ "Carbonara Spaghetti")
-	(category "FirstCourse"))
+	(category FirstCourse))
 
 ([Friedchicken] of Course
 	(ingredients 
 		[Chickenbroilersorfryersmeatandskincookedfriedflour150])
 	(name_ "Fried chicken")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Hamburger] of Course
 	(ingredients 
-		[Rollshamburgerorhotdogmixedgrain150]
+		[Rollshamburgerorhotdogmixed-grain150]
 		[Tomatoesredriperawyearroundaverage10]
 		[Breadirishsodapreparedfromrecipe30])
 	(name_ "Hamburger")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Loin] of Course
 	(ingredients 
-		[Beefshortloinporterhousesteakseparableleanandfattrimmedto1/8fatallgradescookedgrilled200])
+		[Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled200])
 	(name_ "Loin")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Beef] of Course
 	(ingredients 
 		[Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220])
 	(name_ "Beef")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Tuna] of Course
 	(ingredients 
 		[Fishtunafreshbluefincookeddryheat200])
 	(name_ "Tuna")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Salmon] of Course
 	(ingredients 
 		[FishsalmonAtlanticwildcookeddryheat200])
 	(name_ "Salmon")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Sole] of Course
 	(ingredients 
@@ -221,31 +221,31 @@
 		[Onionsdehydratedflakes10]
 		[Pineapplecannedjuicepacksolidsandliquids20])
 	(name_ "Sole")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Sardinswithbread] of Course
 	(ingredients 
 		[FishsardineAtlanticcannedinoildrainedsolidswithbone150])
 	(name_ "Sardins with bread")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Sausages] of Course
 	(ingredients 
 		[SausageItalianporkraw170])
 	(name_ "Sausages")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([VeganMeatballs] of Course
 	(ingredients 
 		[Meatballsmeatless170])
 	(name_ "Vegan Meatballs")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([VeggieNuggets] of Course
 	(ingredients 
 		[MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170])
 	(name_ "Veggie Nuggets")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([VeggieBurger] of Course
 	(ingredients 
@@ -253,13 +253,13 @@
 		[Tomatoesredriperawyearroundaverage10]
 		[Breadirishsodapreparedfromrecipe30])
 	(name_ "Veggie Burger")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([VeggieLasagna] of Course
 	(ingredients 
 		[MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200])
 	(name_ "Veggie Lasagna")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Ratatouille] of Course
 	(ingredients 
@@ -267,96 +267,96 @@
 		[Tomatoesredripecookedwithsalt100]
 		[Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100])
 	(name_ "Ratatouille")
-	(category "SecondCourse"))
+	(category SecondCourse))
 
 ([Chocolatecake] of Course
 	(ingredients 
-		[Cakechocolatecommerciallypreparedwithchocolatefrostinginstorebakery50])
+		[Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50])
 	(name_ "Chocolate cake")
-	(category "Deserts"))
+	(category Deserts))
 
 ([FruitYogurt] of Course
 	(ingredients 
 		[Yogurtfruitlowfat10gramsproteinper8ounce100])
 	(name_ "Fruit Yogurt")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Yogurt] of Course
 	(ingredients 
 		[Yogurtplainlowfat12gramsproteinper8ounce100])
 	(name_ "Yogurt")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Gelatin] of Course
 	(ingredients 
 		[Gelatindessertsdrymixpreparedwithwater100])
 	(name_ "Gelatin")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Flan] of Course
 	(ingredients 
-		[Dessertsflancaramelcustardpreparedfromrecipe100])
+		[Dessertsflancaramelcustardprepared-from-recipe100])
 	(name_ "Flan")
-	(category "Deserts"))
+	(category Deserts))
 
 ([SomeNuts] of Course
 	(ingredients 
 		[NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50])
 	(name_ "Some Nuts")
-	(category "Deserts"))
+	(category Deserts))
 
 ([ApplePie] of Course
 	(ingredients 
 		[Cakefruitcakecommerciallyprepared50])
 	(name_ "Apple Pie")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Apple] of Course
 	(ingredients 
 		[Applesrawwithskin100])
 	(name_ "Apple")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Banana] of Course
 	(ingredients 
 		[Bananasraw100])
 	(name_ "Banana")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Watermelon] of Course
 	(ingredients 
 		[Watermelonraw100])
 	(name_ "Watermelon")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Plum] of Course
 	(ingredients 
 		[Plumsraw100])
 	(name_ "Plum")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Cherries] of Course
 	(ingredients 
 		[Cherriessweetraw100])
 	(name_ "Cherries")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Pears] of Course
 	(ingredients 
 		[Pearsasianraw100])
 	(name_ "Pears")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Orange] of Course
 	(ingredients 
 		[OrangesrawCaliforniavalencias100])
 	(name_ "Orange")
-	(category "Deserts"))
+	(category Deserts))
 
 ([Strawberrieswithcream] of Course
 	(ingredients 
 		[Strawberriesraw80]
 		[Creamfluidlightwhipping20])
 	(name_ "Strawberries with cream")
-	(category "Deserts"))
+	(category Deserts))
 

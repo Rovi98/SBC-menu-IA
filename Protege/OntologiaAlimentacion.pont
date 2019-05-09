@@ -1,4 +1,4 @@
-; Wed May 08 21:25:41 CEST 2019
+; Thu May 09 03:52:29 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,19 +21,10 @@
 ;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot atMost
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot comida
+	(multislot menusDay
 		(type INSTANCE)
-;+		(allowed-classes Lunch)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot energy
-;+		(comment "kcal/g")
-		(type FLOAT)
-;+		(cardinality 1 1)
+;+		(allowed-classes MenuDay)
+		(cardinality 5 5)
 		(create-accessor read-write))
 	(multislot category
 		(type SYMBOL)
@@ -45,26 +36,27 @@
 ;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot atLeast
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(multislot nutrients
 		(type INSTANCE)
 ;+		(allowed-classes NutrientQuantity)
+		(create-accessor read-write))
+	(single-slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot preferences
 		(type INSTANCE)
 ;+		(allowed-classes Preference)
 		(create-accessor read-write))
+	(single-slot score
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot limitations
 		(type INSTANCE)
 ;+		(allowed-classes Limitation)
-		(create-accessor read-write))
-	(single-slot element
-		(type INSTANCE)
-;+		(allowed-classes Nutrient Ingredient)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot ingredient
 		(type INSTANCE)
@@ -74,6 +66,11 @@
 	(single-slot firstCourse
 		(type INSTANCE)
 ;+		(allowed-classes Course)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot desert
@@ -87,17 +84,12 @@
 		(create-accessor read-write))
 	(single-slot breakfast
 		(type INSTANCE)
-;+		(allowed-classes Desert)
+;+		(allowed-classes Breakfast)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot cookingMethod
 		(type INSTANCE)
 ;+		(allowed-classes CookingMethod)
-		(create-accessor read-write))
-	(single-slot weight
-;+		(comment "g")
-		(type STRING)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot nutrient
 		(type INSTANCE)
@@ -113,10 +105,10 @@
 		(allowed-values Summer Winter Autumn Spring)
 		(cardinality 1 4)
 		(create-accessor read-write))
-	(multislot menuDays
+	(single-slot lunch
 		(type INSTANCE)
-;+		(allowed-classes MenuDay)
-		(cardinality 5 5)
+;+		(allowed-classes Lunch)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot diseases
 		(type INSTANCE)
@@ -126,19 +118,14 @@
 (defclass Ingredient
 	(is-a USER)
 	(role concrete)
-	(single-slot weight
-;+		(comment "g")
-		(type STRING)
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot nutrients
 		(type INSTANCE)
 ;+		(allowed-classes NutrientQuantity)
-		(create-accessor read-write))
-	(single-slot energy
-;+		(comment "kcal/g")
-		(type FLOAT)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
@@ -174,6 +161,11 @@
 		(type SYMBOL)
 		(allowed-values FirstCourse SecondCourse Desert Breakfast)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot score
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Person
@@ -255,24 +247,43 @@
 (defclass Limitation
 	(is-a USER)
 	(role concrete)
-	(single-slot element
+	(single-slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass LimitationNutrient
+	(is-a Limitation)
+	(role concrete)
+	(single-slot nutrient
 		(type INSTANCE)
-;+		(allowed-classes Nutrient Ingredient)
+;+		(allowed-classes Nutrient)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass LimitationIngredient
+	(is-a Limitation)
+	(role concrete)
+	(single-slot ingredient
+		(type INSTANCE)
+;+		(allowed-classes Ingredient)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot atLeast
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot atMost
-		(type FLOAT)
-;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass LimitationType
+	(is-a Limitation)
+	(role concrete)
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass MenuWeek
 	(is-a USER)
 	(role concrete)
-	(multislot menuDays
+	(multislot menusDay
 		(type INSTANCE)
 ;+		(allowed-classes MenuDay)
 		(cardinality 5 5)
@@ -281,19 +292,19 @@
 (defclass MenuDay
 	(is-a USER)
 	(role concrete)
-	(single-slot comida
-		(type INSTANCE)
-;+		(allowed-classes Lunch)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot breakfast
 		(type INSTANCE)
-;+		(allowed-classes Desert)
+;+		(allowed-classes Breakfast)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot dinner
 		(type INSTANCE)
 ;+		(allowed-classes Dinner)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot lunch
+		(type INSTANCE)
+;+		(allowed-classes Lunch)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -339,7 +350,7 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Desert
+(defclass Breakfast
 	(is-a Meal)
 	(role concrete)
 	(single-slot course
