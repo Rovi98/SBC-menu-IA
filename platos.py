@@ -38,8 +38,7 @@
 ["Veggie Nuggets",[("MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared",170)]],
 ["Veggie Burger",[("Veggie burgers or soyburgers, unprepared",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Veggie Lasagna",[("MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared", 200)]],
-["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]],
-]
+["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]]]
 
 [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],
 ["Fruit Yogurt",[("Yogurt, fruit, low fat, 10 grams protein per 8 ounce",100)]],

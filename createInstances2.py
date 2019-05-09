@@ -30,6 +30,37 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Mixed Vegetables",[("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
 ["Carbonara Spaghetti",[("Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",200), ("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",20), ("Milk, buttermilk, fluid, cultured, reduced fat",30)]]]
 
+SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",)]],
+["Hamburger",[("Rolls, hamburger or hotdog, mixed-grain",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
+["Loin",[("Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled",200)]],
+["Beef",[("Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised",220)]],
+["Tuna",[("Fish, tuna, fresh, bluefin, cooked, dry heat",200)]],
+["Salmon",[("Fish, salmon, Atlantic, wild, cooked, dry heat",200)]],
+["Sole",[("Fish, flatfish (flounder and sole species), cooked, dry heat",150), ("Onions, dehydrated flakes",10), ("Pineapple, canned, juice pack, solids and liquids",20)]],
+["Sardins with bread",[("Fish, sardine, Atlantic, canned in oil, drained solids with bone",150)]],
+["Sausages",[("Sausage, Italian, pork, raw",170)]],
+["Vegan Meatballs",[("Meatballs, meatless",170)]],
+["Veggie Nuggets",[("MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared",170)]],
+["Veggie Burger",[("Veggie burgers or soyburgers, unprepared",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
+["Veggie Lasagna",[("MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared", 200)]],
+["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]]]
+
+Deserts = [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],
+["Fruit Yogurt",[("Yogurt, fruit, low fat, 10 grams protein per 8 ounce",100)]],
+["Yogurt",[("Yogurt, plain, low fat, 12 grams protein per 8 ounce",100)]],
+["Gelatin",[("Gelatin desserts, dry mix, prepared with water",100)]],
+["Flan",[("Desserts, flan, caramel custard, prepared-from-recipe",100)]],
+["Some Nuts",[("Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend", 50)]],
+["Apple Pie",[("Cake, fruitcake, commercially prepared",50)]],
+["Apple",[("Apples, raw, with skin",100)]],
+["Banana",[("Bananas, raw",100)]],
+["Watermelon",[("Watermelon, raw",100)]],
+["Plum",[("Plums, raw",100)]],
+["Cherries",[("Cherries, sweet, raw",100)]],
+["Pears",[("Pears, asian, raw",100)]],
+["Orange",[("Oranges, raw, California, valencias",100)]],
+["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
+
               
 # DISEASES
 
@@ -196,6 +227,14 @@ def main():
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category "'+'FirstCourse'+'"))\n\n')
+        for i,i2 in enumerate(SecondCourse):
+            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t(category "'+'SecondCourse'+'"))\n\n')
+        for i,i2 in enumerate(Deserts):
+            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t(category "'+'Deserts'+'"))\n\n')
     t.close()
 
 
