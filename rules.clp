@@ -82,8 +82,8 @@
 (defrule vegetables-state-vegetarian ""
    (vegetables-state vegetarian)
    =>
-   (do-for-all-instances  ((?lim Limitation))
-     (TRUE)
+   (do-for-all-instances  ((?lim LimitationType))
+     TRUE
      (send ?lim apply)
     )
    ;(assert (menu-done))
@@ -109,7 +109,6 @@
 
 (defrule determine-vegetables-state ""
    (not (vegetables-state ?))
-   (not (menu1 ?))
    =>
    (if (ask-question-yes-no "Do you eat meat?")
        then
@@ -117,8 +116,10 @@
        else
        (if (ask-question-yes-no "Do you eat milk or egs?")
            then (assert (vegetables-state vegeterian))
-           else (assert (vegetables-state vegan)))
-       ))
+           else (assert (vegetables-state vegan))
+      )
+    )
+)
 
 (defrule determine-disease ""
   (not (diseases $?))
@@ -177,16 +178,6 @@
   (printout t "Food Menu v0.8")
   (printout t crlf crlf))
 
-(defrule print-repair ""
-  (declare (salience 10))
-  (menu1 ?item)
-  =>
-  (printout t crlf crlf)
-  (printout t "Monday:")
-  (printout t crlf)
-  (printout t "============================================" crlf)
-  (printout t ?item)
-  (printout t crlf crlf))
   ;(format t " %s%n%n%n" ?item))
 
 
@@ -260,9 +251,11 @@
 )
 
 (defmessage-handler LimitationType apply ()
+  (printout t "shiiet" crlf)
   (do-for-all-instances  ((?cour Course) (?ingr Ingredient))
-    (eq (?self:type)  (send ?ingr get-type))
+    (and (member$ ?ingr (send ?cour get-ingredients)) (eq ?self:type  (send ?ingr get-type)))
     (bind ?prev_score (send ?cour get-score))
+    (printout t ?cour " " ?ingr crlf)
     (send ?cour put-score (+ ?prev_score 100))
   )
 )

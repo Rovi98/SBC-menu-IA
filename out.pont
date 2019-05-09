@@ -1,4 +1,4 @@
-; Thu May 09 03:52:46 CEST 2019
+; Thu May 09 03:52:29 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -70,8 +70,8 @@
 		(create-accessor read-write))
 	(slot type
 		(type SYMBOL)
-		(allowed-values Meat Fish)
-;+		(cardinality 0 1)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(slot desert
 		(type INSTANCE)
@@ -120,8 +120,8 @@
 	(role concrete)
 	(slot type
 		(type SYMBOL)
-		(allowed-values Meat Fish)
-;+		(cardinality 0 1)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot nutrients
 		(type INSTANCE)
@@ -271,13 +271,13 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass LimitacionType
+(defclass LimitationType
 	(is-a Limitation)
 	(role concrete)
 	(slot type
 		(type SYMBOL)
-		(allowed-values Meat Fish)
-;+		(cardinality 0 1)
+		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass MenuWeek

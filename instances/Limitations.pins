@@ -57,4 +57,8 @@
 ([Caffeine-100] of LimitationNutrient
 	(value -100)
 	(nutrient [Caffeine])
+	
+([Sweets-100] of LimitationType
+	(value -100)
+	(type Sweets)
 

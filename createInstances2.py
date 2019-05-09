@@ -189,7 +189,7 @@ def main():
     
     with open('./instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients):
-            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i])+')')
+            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i][1:])+')')
             t.write('\n\t(name_ "'+i2+'")')
             t.write('\n\t(type '+changeString(nutrients[i][0][1])+'))\n\n')
     t.close()

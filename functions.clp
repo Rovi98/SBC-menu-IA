@@ -13,8 +13,8 @@
 )
 
 (deffunction ask-question-yes-no (?question)
-  (bind ?allowed-values-yes (create$ Yes yes Y y))
-  (bind ?allowed-values-no (create$ No no N n))
+  (bind ?allowed-values-yes (create$ Yes yes Y y 1))
+  (bind ?allowed-values-no (create$ No no N n 0))
   (while TRUE do ;return function will exit this loop
     (printout t "| > " ?question " (yes/no) " crlf "| ")
     (bind ?answer (read))
