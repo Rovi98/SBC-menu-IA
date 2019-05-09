@@ -1,4 +1,4 @@
-; Sun May 05 21:42:02 CEST 2019
+; Thu May 09 03:52:46 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,344 +7,380 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(slot desayuno
+	(slot dinner
 		(type INSTANCE)
-;+		(allowed-classes Desayuno)
+;+		(allowed-classes Dinner)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot menusDia
-		(type INSTANCE)
-;+		(allowed-classes MenuDia)
-		(cardinality 5 5)
 		(create-accessor read-write))
 	(slot name_
 		(type STRING)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot formaDeCocinar
+	(slot course
 		(type INSTANCE)
-;+		(allowed-classes FormaDeCocinar)
+;+		(allowed-classes Course)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot categoria
+	(multislot menusDay
+		(type INSTANCE)
+;+		(allowed-classes MenuDay)
+		(cardinality 5 5)
+		(create-accessor read-write))
+	(multislot category
 		(type SYMBOL)
-		(allowed-values PrimerPlato SegundoPlato Postre Desayuno)
+		(allowed-values FirstCourse SecondCourse Desert Breakfast)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(slot postre
+	(slot secondCourse
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot OntologiaAlimentacion_Class10002
-		(type STRING)
+	(multislot nutrients
+		(type INSTANCE)
+;+		(allowed-classes NutrientQuantity)
+		(create-accessor read-write))
+	(slot value
+		(type INTEGER)
+		(range -100 100)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot preferences
+		(type INSTANCE)
+;+		(allowed-classes Preference)
+		(create-accessor read-write))
+	(slot score
+		(type FLOAT)
+		(default 0.0)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(slot peso
-;+		(comment "g")
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot comida
+	(multislot limitations
 		(type INSTANCE)
-;+		(allowed-classes Comida)
-;+		(cardinality 1 1)
+;+		(allowed-classes Limitation)
 		(create-accessor read-write))
-	(slot cena
+	(slot ingredient
 		(type INSTANCE)
-;+		(allowed-classes Cena)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot plato
-		(type INSTANCE)
-;+		(allowed-classes Plato)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot primerPlato
-		(type INSTANCE)
-;+		(allowed-classes Plato)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot segundoPlato
-		(type INSTANCE)
-;+		(allowed-classes Plato)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot limitaciones
-		(type INSTANCE)
-;+		(allowed-classes Limitacion)
-		(create-accessor read-write))
-	(multislot nutrientes
-		(type INSTANCE)
-;+		(allowed-classes Nutriente)
-		(create-accessor read-write))
-	(multislot ingredientes
-		(type INSTANCE)
-;+		(allowed-classes Ingrediente)
-		(create-accessor read-write))
-	(slot OntologiaAlimentacion_Class5
-		(type STRING)
+;+		(allowed-classes Ingredient)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot enfermades
+	(slot firstCourse
 		(type INSTANCE)
-;+		(allowed-classes Enfermedad)
+;+		(allowed-classes Course)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot preferencias
-		(type INSTANCE)
-;+		(allowed-classes Preferencia)
-		(create-accessor read-write))
-	(slot OntologiaAlimentacion_Class2
-		(type STRING)
+	(slot type
+		(type SYMBOL)
+		(allowed-values Meat Fish)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(slot KB_778509_Class8
-		(type STRING)
-;+		(cardinality 0 1)
+	(slot desert
+		(type INSTANCE)
+;+		(allowed-classes Course)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot energia
-;+		(comment "kcal/g")
+	(slot quantity
 		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot KB_778509_Class9
-		(type SYMBOL)
-;+		(allowed-parents Persona)
-;+		(cardinality 0 1)
+	(slot breakfast
+		(type INSTANCE)
+;+		(allowed-classes Breakfast)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot temporada
+	(multislot cookingMethod
+		(type INSTANCE)
+;+		(allowed-classes CookingMethod)
+		(create-accessor read-write))
+	(slot nutrient
+		(type INSTANCE)
+;+		(allowed-classes Nutrient)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot ingredients
+		(type INSTANCE)
+;+		(allowed-classes IngredientQuantity)
+		(create-accessor read-write))
+	(multislot season
 		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
+		(allowed-values Summer Winter Autumn Spring)
 		(cardinality 1 4)
 		(create-accessor read-write))
-	(slot tipo
-		(type SYMBOL)
-		(allowed-values NoPuede NoDebe)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot limita
+	(slot lunch
 		(type INSTANCE)
-;+		(allowed-classes Nutriente Ingrediente)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(slot nombre
-		(type STRING)
+;+		(allowed-classes Lunch)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot diseases
+		(type INSTANCE)
+;+		(allowed-classes Disease)
 		(create-accessor read-write)))
 
-(defclass Ingrediente
+(defclass Ingredient
 	(is-a USER)
 	(role concrete)
-	(multislot temporada
+	(slot type
 		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
-		(cardinality 1 4)
+		(allowed-values Meat Fish)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(slot nombre
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot nutrientes
+	(multislot nutrients
 		(type INSTANCE)
-;+		(allowed-classes Nutriente)
+;+		(allowed-classes NutrientQuantity)
 		(create-accessor read-write))
-	(slot energia
-;+		(comment "kcal/g")
-		(type FLOAT)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot peso
-;+		(comment "g")
+	(slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot season
+		(type SYMBOL)
+		(allowed-values Summer Winter Autumn Spring)
+		(cardinality 1 4)
 		(create-accessor read-write)))
 
-(defclass Plato
+(defclass Course
 	(is-a USER)
 	(role concrete)
-	(multislot temporada
-		(type SYMBOL)
-		(allowed-values Invierno Primavera Verano Otono)
-		(cardinality 1 4)
-		(create-accessor read-write))
-	(multislot ingredientes
-		(type INSTANCE)
-;+		(allowed-classes Ingrediente)
-		(create-accessor read-write))
-	(slot nombre
+	(slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot formaDeCocinar
-		(type INSTANCE)
-;+		(allowed-classes FormaDeCocinar)
-		(create-accessor read-write))
-	(multislot categoria
+	(multislot season
 		(type SYMBOL)
-		(allowed-values PrimerPlato SegundoPlato Postre Desayuno)
+		(allowed-values Summer Winter Autumn Spring)
+		(cardinality 1 4)
+		(create-accessor read-write))
+	(multislot ingredients
+		(type INSTANCE)
+;+		(allowed-classes IngredientQuantity)
+		(create-accessor read-write))
+	(multislot cookingMethod
+		(type INSTANCE)
+;+		(allowed-classes CookingMethod)
+		(create-accessor read-write))
+	(multislot category
+		(type SYMBOL)
+		(allowed-values FirstCourse SecondCourse Desert Breakfast)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(slot score
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass Persona
+(defclass Person
 	(is-a USER)
 	(role concrete)
-	(slot nombre
+	(slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot preferencias
+	(multislot preferences
 		(type INSTANCE)
-;+		(allowed-classes Preferencia)
+;+		(allowed-classes Preference)
 		(create-accessor read-write))
-	(multislot enfermades
+	(multislot diseases
 		(type INSTANCE)
-;+		(allowed-classes Enfermedad)
+;+		(allowed-classes Disease)
 		(create-accessor read-write)))
 
-(defclass Enfermedad
+(defclass Disease
 	(is-a USER)
 	(role concrete)
-	(multislot limitaciones
+	(multislot limitations
 		(type INSTANCE)
-;+		(allowed-classes Limitacion)
+;+		(allowed-classes Limitation)
 		(create-accessor read-write))
-	(slot nombre
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass Preferencia
-	(is-a USER)
-	(role concrete)
-	(multislot limitaciones
-		(type INSTANCE)
-;+		(allowed-classes Limitacion)
-		(create-accessor read-write))
-	(slot nombre
+	(slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass FormaDeCocinar
+(defclass Preference
 	(is-a USER)
 	(role concrete)
-	(slot nombre
+	(multislot limitations
+		(type INSTANCE)
+;+		(allowed-classes Limitation)
+		(create-accessor read-write))
+	(slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Nutriente
+(defclass CookingMethod
 	(is-a USER)
+	(role concrete)
+	(slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Nutrient
+	(is-a USER)
+	(role concrete)
+	(slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Micronutrient
+	(is-a Nutrient)
 	(role concrete))
 
-(defclass Micronutriente
-	(is-a Nutriente)
-	(role concrete))
-
-(defclass Vitamina
-	(is-a Micronutriente)
+(defclass Vitamin
+	(is-a Micronutrient)
 	(role concrete))
 
 (defclass Mineral
-	(is-a Micronutriente)
+	(is-a Micronutrient)
 	(role concrete))
 
-(defclass Macronutriente
-	(is-a Nutriente)
+(defclass Macronutrient
+	(is-a Nutrient)
 	(role concrete))
 
-(defclass Proteina
-	(is-a Macronutriente)
+(defclass Protein
+	(is-a Macronutrient)
 	(role concrete))
 
-(defclass Limitacion
+(defclass Limitation
 	(is-a USER)
 	(role concrete)
-	(slot limita
-		(type INSTANCE)
-;+		(allowed-classes Nutriente Ingrediente)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(slot tipo
-		(type SYMBOL)
-		(allowed-values NoPuede NoDebe)
+	(slot value
+		(type INTEGER)
+		(range -100 100)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass MenuSemana
+(defclass LimitationNutrient
+	(is-a Limitation)
+	(role concrete)
+	(slot nutrient
+		(type INSTANCE)
+;+		(allowed-classes Nutrient)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass LimitationIngredient
+	(is-a Limitation)
+	(role concrete)
+	(slot ingredient
+		(type INSTANCE)
+;+		(allowed-classes Ingredient)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass LimitacionType
+	(is-a Limitation)
+	(role concrete)
+	(slot type
+		(type SYMBOL)
+		(allowed-values Meat Fish)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass MenuWeek
 	(is-a USER)
 	(role concrete)
-	(multislot menusDia
+	(multislot menusDay
 		(type INSTANCE)
-;+		(allowed-classes MenuDia)
+;+		(allowed-classes MenuDay)
 		(cardinality 5 5)
 		(create-accessor read-write)))
 
-(defclass MenuDia
+(defclass MenuDay
 	(is-a USER)
 	(role concrete)
-	(slot comida
+	(slot breakfast
 		(type INSTANCE)
-;+		(allowed-classes Comida)
+;+		(allowed-classes Breakfast)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot cena
+	(slot dinner
 		(type INSTANCE)
-;+		(allowed-classes Cena)
+;+		(allowed-classes Dinner)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot desayuno
+	(slot lunch
 		(type INSTANCE)
-;+		(allowed-classes Desayuno)
+;+		(allowed-classes Lunch)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass ComidaDia
+(defclass Meal
 	(is-a USER)
 	(role concrete))
 
-(defclass Comida
-	(is-a ComidaDia)
+(defclass Lunch
+	(is-a Meal)
 	(role concrete)
-	(slot primerPlato
+	(slot desert
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot postre
+	(slot secondCourse
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot segundoPlato
+	(slot firstCourse
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Cena
-	(is-a ComidaDia)
+(defclass Dinner
+	(is-a Meal)
 	(role concrete)
-	(slot primerPlato
+	(slot desert
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot postre
+	(slot secondCourse
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(slot segundoPlato
+	(slot firstCourse
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Desayuno
-	(is-a ComidaDia)
+(defclass Breakfast
+	(is-a Meal)
 	(role concrete)
-	(slot plato
+	(slot course
 		(type INSTANCE)
-;+		(allowed-classes Plato)
+;+		(allowed-classes Course)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass NutrientQuantity
+	(is-a USER)
+	(role concrete)
+	(slot nutrient
+		(type INSTANCE)
+;+		(allowed-classes Nutrient)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(slot quantity
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass IngredientQuantity
+	(is-a USER)
+	(role concrete)
+	(slot ingredient
+		(type INSTANCE)
+;+		(allowed-classes Ingredient)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(slot quantity
+		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))

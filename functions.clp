@@ -2,72 +2,81 @@
 ;;* DEFFUNCTIONS *
 ;;****************
 
+(deffunction is-num (?num)
+  (bind ?ret (or (eq (type ?num) INTEGER) (eq (type ?num) FLOAT)))
+  ?ret
+)
+
+(deffunction num-between (?num ?min ?max)
+  (bind ?ret (and (is-num ?num) (>= ?num ?min) (<= ?num ?max)))
+  ?ret
+)
+
 (deffunction ask-question-yes-no (?question)
-  (printout t "| > " ?question " (yes/no) " crlf "| ")
-  (bind ?answer (read))
-  (bind ?allowed-values (create$ Yes No yes no Y N y n))
-  (while (not (member$ ?answer ?allowed-values)) do
-    (printout t "| > " ?question crlf "| ")
+  (bind ?allowed-values-yes (create$ Yes yes Y y))
+  (bind ?allowed-values-no (create$ No no N n))
+  (while TRUE do ;return function will exit this loop
+    (printout t "| > " ?question " (yes/no) " crlf "| ")
     (bind ?answer (read))
-  )
-  (if (or (eq ?answer Yes) (eq ?answer yes) (eq ?answer Y) (eq ?answer y))
-  then TRUE
-  else FALSE
+    (if (member$ ?answer ?allowed-values-yes) then
+      (return TRUE)
+    else (if (member$ ?answer ?allowed-values-no) then
+            (return FALSE)
+        )
+    )
   )
 )
 
 (deffunction ask-question-opt (?question ?allowed-values)
-  (printout t "| > " ?question " " ?allowed-values crlf "| ")
-  (bind ?answer (read))
-  (while (not (member$ ?answer ?allowed-values)) do
-    (printout t "| > " ?question crlf "| ")
+  (while TRUE do ;return function will exit this loop
+    (printout t "| > " ?question " ")
+    (loop-for-count (?i 1 (length$ $?allowed-values)) do
+      (printout t crlf tab ?i ") " (nth$ ?i $?allowed-values))
+    )
+    (printout t crlf "| ")
     (bind ?answer (read))
+    (if (num-between ?answer 1 (length$ $?allowed-values)) then
+      (return (nth$ ?answer $?allowed-values))
+    )
   )
   ?answer
 )
 
 (deffunction ask-question-multi-opt (?question ?allowed-values)
-  (printout t "| > " ?question " " ?allowed-values crlf "| ")
-  (bind ?line (readline))
-  (bind $?answer (explode$ ?line))
-  (bind ?valid FALSE)
-  (while (not ?valid) do
-    (loop-for-count (?i 1 (length$ $?answer)) do
-      (bind ?valid FALSE)
-      (bind ?value-belongs FALSE)
-      (loop-for-count (?j 1 (length$ $?allowed-values)) do
-        (if (eq (nth$ ?i $?answer) (nth$ ?j $?allowed-values)) then
-          (bind ?value-belongs TRUE)
-          (break)
-        )
-      )
-      (if (not ?value-belongs) then
-        (printout t "| > " (nth$ ?i $?answer) " is not a valid option" crlf)
-        (break)
-      )
-      (bind ?valid TRUE)
+  (while TRUE do ;return function will exit this loop
+    (printout t "| > " ?question " ")
+    (loop-for-count (?i 1 (length$ $?allowed-values)) do
+      (printout t crlf tab ?i ") " (nth$ ?i $?allowed-values))
     )
-    (if ?valid then (break))
-
-    (printout t "| > " ?question crlf "| ")
+    (printout t crlf "| ")
     (bind ?line (readline))
     (bind $?answer (explode$ ?line))
+    (bind ?out (create$))
+    (foreach ?i ?answer
+      (if (not (num-between ?i 1 (length$ $?allowed-values))) then
+        (break)
+      )
+      (bind ?v (nth$ ?i ?allowed-values))
+      (if (not (member$ ?v ?out)) then
+        (bind ?out (insert$ ?out 1 ?v))
+      )
+    )
+    (if (eq (length$ ?out) (length$ ?answer)) then
+      (return ?out)
+    )
   )
-  $?answer
 )
-	   
-(deffunction is-num (?num)
-  (bind ?ret (or (eq (type ?num) INTEGER) (eq (type ?num) FLOAT)))
-  ?ret
-)	   
 
 (deffunction ask-question-num (?question ?min ?max)
-  (printout t "| > " ?question crlf "| ")
-  (bind ?answer (read))
-  (while (not (and (is-num ?answer) (>= ?answer ?min) (<= ?answer ?max))) do
-    (printout t "| " ?question)
-        (bind ?answer (read)))
-  ?answer)
+  (while TRUE do ;return function will exit this loop
+    (printout t "| > " ?question " ")
+    (printout t crlf "| ")
+    (bind ?answer (read))
+    (if (num-between ?answer ?min ?max) then
+      (return ?answer)
+    )
+  )
+)
 
 
 (deffunction print-menu (?menuSemana)
@@ -76,5 +85,5 @@
 )
 
 (deffunction random-from-list (?list)
-  (return (nth$ (random 1 (length$ ?list)) ?list))
+  (nth$ (random 1 (length$ ?list)) ?list)
 )
