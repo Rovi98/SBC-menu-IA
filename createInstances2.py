@@ -1,5 +1,6 @@
 import os
 import csv
+import re
 
 ## COURSES
 
@@ -106,7 +107,7 @@ def writeList3(llista):
     return "".join(llista)
 
 def changeString(word):
-    return word.replace(" ","").replace("-","").replace("+","").replace("'","").replace(".","").replace("!","").replace("&","").replace(",","").replace('NULL','0').replace('(',"").replace(')',"").replace('%',"")
+    return re.sub("[^a-zA-Z0-9-]+", "", word)
 
 
 def changeString2(word): 
@@ -117,7 +118,7 @@ def main():
         os.makedirs('instances/')
 
     
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/Dataset.csv','r') as g:
+    with open('./Dataset.csv','r') as g:
         csv_reader2 = csv.reader(g, delimiter=',')
         line_count2 = 0
         nutrients = []
@@ -153,20 +154,20 @@ def main():
 
     #NUTRIENTS-QUANTITY
   
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/NutrientsQuantity.pins','w') as r:
+    with open('./instances/NutrientsQuantity.pins','w') as r:
         for i,i2 in enumerate(ingredients):
             for j,j2 in enumerate(characteristics):
                 if j > 0:
                     if j2[1] != 'NULL' and j2[1] != "0": 
                         r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t')
-                        r.write('\n\t(nutrient '+j2[0]+')')       
+                        r.write('\n\t(nutrient ['+j2[0]+'])')       
                         r.write('\n\t(quantity '+j2[1]+'))\n\n')                      
     r.close()
 
     
     #NUTRIENTS
 
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Nutrients.pins','w') as r:
+    with open('./instances/Nutrients.pins','w') as r:
         for i,i2 in enumerate(characteristics):
             r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutrient\n\t')
             r.write('\n\t(name_ "'+i2[0]+'"))\n\n')                         
@@ -175,34 +176,27 @@ def main():
 
     # INGREDIENTS-QUANTITY
     
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/IngredientsQuantity.pins','w') as t:
-        for i,i2 in enumerate(FirstCourse): 
+    with open('./instances/IngredientsQuantity.pins','w') as t:
+        for i,i2 in enumerate(list(breakfast+FirstCourse+SecondCourse+Deserts)): 
             for j,j2 in enumerate(i2[1]): 
                 if isinstance(j2[1],int):
                     if (j2[1]) > 0:
-                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0])+')')
-                        t.write('\n\t(quantity "'+str(j2[1])+'"))\n\n')
-        for i,i2 in enumerate(breakfast):
-            for j,j2 in enumerate(i2[1]): 
-                 if isinstance(j2[1],int):
-                    if (j2[1]) > 0:
-                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient '+changeString(j2[0])+')')
-                        t.write('\n\t(quantity "'+str(j2[1])+'"))\n\n')
-
+                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient ['+changeString(j2[0])+'])')
+                        t.write('\n\t(quantity '+str(j2[1])+'))\n\n')
     t.close()
     
     # INGREDIENTS FALTA SEASON
     
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Ingredients.pins','w') as t:
+    with open('./instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients):
-            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i])+')')
+            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i][1:])+')')
             t.write('\n\t(name_ "'+i2+'")')
-            t.write('\n\t(type "'+changeString(nutrients[i][0][1])+'"))\n\n')
+            t.write('\n\t(type '+changeString(nutrients[i][0][1])+'))\n\n')
     t.close()
     
     # ENFERMETATS canviar aqui lo de limitacions
     
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Disease.pins','w') as r:
+    with open('./instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
             r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitations '+writeList2(LIMITACIONS[i])+')')
             r.write('\n\t(name_ "'+i2+'"))\n\n')
@@ -210,15 +204,15 @@ def main():
 
     # LIMITACIONS #FER DOS TIPUS DE LIMITACIONS INGREDIENT I NUTRIENT TIPUS LO DE BREAKFAST
     #LIMITATION NUTRIENT
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitations.pins','w') as r:
+    with open('./instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
             r.write('(['+ changeString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+str(i2[1])+')')
-            r.write('\n\t(nutrient "'+changeString(i2[0])+'"))\n\n')                         
+            r.write('\n\t(nutrient ['+changeString(i2[0])+'])\n\n')                         
     r.close()
 
     #LIMITATION FOOD
     """
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Limitations.pins','w') as r:
+    with open('./instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
             r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(value '+str(i2[1])+')')
             r.write('\n\t(nutrient "'+i2[0]+'"))\n\n')                         
@@ -227,23 +221,23 @@ def main():
     
     #COURSES
 
-    with open('/home/adria/Desktop/Universitat/SBC-menu-IA/instances/Courses.pins','w') as t:
+    with open('./instances/Courses.pins','w') as t:
         for i,i2 in enumerate(breakfast):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t(category "'+'Breakfast'+'"))\n\n')
+            t.write('\n\t(category '+'Breakfast'+'))\n\n')
         for i,i2 in enumerate(FirstCourse):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t(category "'+'FirstCourse'+'"))\n\n')
+            t.write('\n\t(category '+'FirstCourse'+'))\n\n')
         for i,i2 in enumerate(SecondCourse):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t(category "'+'SecondCourse'+'"))\n\n')
+            t.write('\n\t(category '+'SecondCourse'+'))\n\n')
         for i,i2 in enumerate(Deserts):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t(category "'+'Deserts'+'"))\n\n')
+            t.write('\n\t(category '+'Deserts'+'))\n\n')
     t.close()
 
 
