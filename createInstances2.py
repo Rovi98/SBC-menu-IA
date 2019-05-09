@@ -4,7 +4,7 @@ import re
 
 ## COURSES
 
-breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
+Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
 ["Jam Toasts",[("Jams and preserves",30), ("Bread, white, commercially prepared, toasted",90)]],
 ["Bacon and Fried Eggs",[("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",40), ("Egg, whole, cooked, fried",100)]],
 ["Cornflakes with milk",[("Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds",30), ("Milk, producer, fluid, 3.7% milkfat",90)]],
@@ -46,7 +46,7 @@ SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, 
 ["Veggie Lasagna",[("MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared", 200)]],
 ["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]]]
 
-Deserts = [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],
+Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],
 ["Fruit Yogurt",[("Yogurt, fruit, low fat, 10 grams protein per 8 ounce",100)]],
 ["Yogurt",[("Yogurt, plain, low fat, 12 grams protein per 8 ounce",100)]],
 ["Gelatin",[("Gelatin desserts, dry mix, prepared with water",100)]],
@@ -177,7 +177,7 @@ def main():
     # INGREDIENTS-QUANTITY
     
     with open('./instances/IngredientsQuantity.pins','w') as t:
-        for i,i2 in enumerate(list(breakfast+FirstCourse+SecondCourse+Deserts)): 
+        for i,i2 in enumerate(list(Breakfast+FirstCourse+SecondCourse+Dessert)): 
             for j,j2 in enumerate(i2[1]): 
                 if isinstance(j2[1],int):
                     if (j2[1]) > 0:
@@ -222,7 +222,7 @@ def main():
     #COURSES
 
     with open('./instances/Courses.pins','w') as t:
-        for i,i2 in enumerate(breakfast):
+        for i,i2 in enumerate(Breakfast):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'Breakfast'+'))\n\n')
@@ -234,10 +234,10 @@ def main():
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'SecondCourse'+'))\n\n')
-        for i,i2 in enumerate(Deserts):
+        for i,i2 in enumerate(Dessert):
             t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t(category '+'Deserts'+'))\n\n')
+            t.write('\n\t(category '+'Dessert'+'))\n\n')
     t.close()
 
 

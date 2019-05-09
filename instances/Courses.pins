@@ -273,90 +273,90 @@
 	(ingredients 
 		[Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50])
 	(name_ "Chocolate cake")
-	(category Deserts))
+	(category Dessert))
 
 ([FruitYogurt] of Course
 	(ingredients 
 		[Yogurtfruitlowfat10gramsproteinper8ounce100])
 	(name_ "Fruit Yogurt")
-	(category Deserts))
+	(category Dessert))
 
 ([Yogurt] of Course
 	(ingredients 
 		[Yogurtplainlowfat12gramsproteinper8ounce100])
 	(name_ "Yogurt")
-	(category Deserts))
+	(category Dessert))
 
 ([Gelatin] of Course
 	(ingredients 
 		[Gelatindessertsdrymixpreparedwithwater100])
 	(name_ "Gelatin")
-	(category Deserts))
+	(category Dessert))
 
 ([Flan] of Course
 	(ingredients 
 		[Dessertsflancaramelcustardprepared-from-recipe100])
 	(name_ "Flan")
-	(category Deserts))
+	(category Dessert))
 
 ([SomeNuts] of Course
 	(ingredients 
 		[NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50])
 	(name_ "Some Nuts")
-	(category Deserts))
+	(category Dessert))
 
 ([ApplePie] of Course
 	(ingredients 
 		[Cakefruitcakecommerciallyprepared50])
 	(name_ "Apple Pie")
-	(category Deserts))
+	(category Dessert))
 
 ([Apple] of Course
 	(ingredients 
 		[Applesrawwithskin100])
 	(name_ "Apple")
-	(category Deserts))
+	(category Dessert))
 
 ([Banana] of Course
 	(ingredients 
 		[Bananasraw100])
 	(name_ "Banana")
-	(category Deserts))
+	(category Dessert))
 
 ([Watermelon] of Course
 	(ingredients 
 		[Watermelonraw100])
 	(name_ "Watermelon")
-	(category Deserts))
+	(category Dessert))
 
 ([Plum] of Course
 	(ingredients 
 		[Plumsraw100])
 	(name_ "Plum")
-	(category Deserts))
+	(category Dessert))
 
 ([Cherries] of Course
 	(ingredients 
 		[Cherriessweetraw100])
 	(name_ "Cherries")
-	(category Deserts))
+	(category Dessert))
 
 ([Pears] of Course
 	(ingredients 
 		[Pearsasianraw100])
 	(name_ "Pears")
-	(category Deserts))
+	(category Dessert))
 
 ([Orange] of Course
 	(ingredients 
 		[OrangesrawCaliforniavalencias100])
 	(name_ "Orange")
-	(category Deserts))
+	(category Dessert))
 
 ([Strawberrieswithcream] of Course
 	(ingredients 
 		[Strawberriesraw80]
 		[Creamfluidlightwhipping20])
 	(name_ "Strawberries with cream")
-	(category Deserts))
+	(category Dessert))
 

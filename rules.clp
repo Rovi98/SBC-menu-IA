@@ -24,29 +24,35 @@
    (declare (salience 10))
    (menu-done)
    =>
-   (bind ?menuWeek (make-instance (gensym) of MenuWeek))
-   (bind ?list-courses (find-all-instances ((?c Course)) TRUE))
-   (loop-for-count (?i 7) do
+    (bind ?menuWeek (make-instance (gensym) of MenuWeek))
+    (bind ?list-courses (sort-courses (find-all-instances ((?c Course)) TRUE)))
 
+    (bind ?breakfasts (get-n-courses-of-category ?list-courses 7 Breakfast))
+    (printout t ?breakfasts crlf)
+    (bind ?firstCourses (get-n-courses-of-category ?list-courses (* 7 2) FirstCourse))
+    (bind ?secondCourses (get-n-courses-of-category ?list-courses (* 7 2) SecondCourse))
+    (bind ?desserts (get-n-courses-of-category ?list-courses (* 7 2) Dessert))
+
+   (loop-for-count (?i 0 6) do
       (bind ?breakfast
         (make-instance (gensym) of Breakfast
-          (course (random-from-list ?list-courses))
+          (course (nth$ (+ ?i 1) ?breakfasts))
         )
       )
-
+      (printout t (send ?breakfast display) crlf)
       (bind ?lunch
         (make-instance (gensym) of Lunch
-          (firstCourse (random-from-list ?list-courses))
-          (secondCourse (random-from-list ?list-courses))
-          (desert (random-from-list ?list-courses))
+          (firstCourse (nth$ (+ (* ?i 2) 1) ?firstCourses))
+          (secondCourse (nth$ (+ (* ?i 2) 1) ?secondCourses))
+          (dessert (nth$ (+ (* ?i 2) 1) ?desserts))
         )
       )
 
       (bind ?dinner
         (make-instance (gensym) of Dinner
-          (firstCourse (random-from-list ?list-courses))
-          (secondCourse (random-from-list ?list-courses))
-          (desert (random-from-list ?list-courses))
+          (firstCourse (nth$ (+ (* ?i 2) 2) ?firstCourses))
+          (secondCourse (nth$ (+ (* ?i 2) 2) ?secondCourses))
+          (dessert (nth$ (+ (* ?i 2) 1) ?desserts))
         )
       )
 
@@ -57,7 +63,8 @@
           (dinner ?dinner)
         )
       )
-      (slot-replace$ ?menuWeek menusDay ?i ?i ?menuDay)
+      (bind ?i1 (+ ?i 1))
+      (slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
       ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
    )
 
@@ -208,13 +215,13 @@
 (defmessage-handler Lunch display ()
   (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
   (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · [Postre] " (send ?self:desert get-name_) crlf)
+  (printout t "|| · [Postre] " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler Dinner display ()
   (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
   (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · [Postre] " (send ?self:desert get-name_) crlf)
+  (printout t "|| · [Postre] " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler MenuDay display ()

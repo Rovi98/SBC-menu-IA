@@ -1,4 +1,4 @@
-; Thu May 09 18:38:13 CEST 2019
+; Thu May 09 23:13:49 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,6 +7,11 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(slot dessert
+		(type INSTANCE)
+;+		(allowed-classes Course)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(slot dinner
 		(type INSTANCE)
 ;+		(allowed-classes Dinner)
@@ -28,7 +33,7 @@
 		(create-accessor read-write))
 	(multislot category
 		(type SYMBOL)
-		(allowed-values FirstCourse SecondCourse Desert Breakfast)
+		(allowed-values FirstCourse SecondCourse Dessert Breakfast)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(slot secondCourse
@@ -71,11 +76,6 @@
 	(slot type
 		(type SYMBOL)
 		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(slot desert
-		(type INSTANCE)
-;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(slot quantity
@@ -159,7 +159,7 @@
 		(create-accessor read-write))
 	(multislot category
 		(type SYMBOL)
-		(allowed-values FirstCourse SecondCourse Desert Breakfast)
+		(allowed-values FirstCourse SecondCourse Dessert Breakfast)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(slot score
@@ -330,7 +330,7 @@
 (defclass Lunch
 	(is-a Meal)
 	(role concrete)
-	(slot desert
+	(slot dessert
 		(type INSTANCE)
 ;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
@@ -349,7 +349,7 @@
 (defclass Dinner
 	(is-a Meal)
 	(role concrete)
-	(slot desert
+	(slot dessert
 		(type INSTANCE)
 ;+		(allowed-classes Course)
 ;+		(cardinality 1 1)
