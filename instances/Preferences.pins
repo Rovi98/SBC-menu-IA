@@ -1,34 +1,34 @@
-([Vegetarian] of Preference
+([Preference_Vegetarian] of Preference
 	(limitations 
-		[PorkProducts-80]
-		[BeefProducts-80]
-		[SausagesandLuncheonMeats-80]
-		[PoultryProducts-80]
-		[FinfishandShellfishProducts-80]
-		[LambVealandGameProducts-80]
+		[LimitationType_PorkProducts-80]
+		[LimitationType_BeefProducts-80]
+		[LimitationType_SausagesandLuncheonMeats-80]
+		[LimitationType_PoultryProducts-80]
+		[LimitationType_FinfishandShellfishProducts-80]
+		[LimitationType_LambVealandGameProducts-80]
 	)
 	(name_ "Vegetarian"))
 
-([PorkProducts-80] of LimitationType
+([LimitationType_PorkProducts-80] of LimitationType
 	(value -80)
 	(type PorkProducts))
 
-([BeefProducts-80] of LimitationType
+([LimitationType_BeefProducts-80] of LimitationType
 	(value -80)
-	(type PorkProducts))
+	(type BeefProducts))
 
-([SausagesandLuncheonMeats-80] of LimitationType
+([LimitationType_SausagesandLuncheonMeats-80] of LimitationType
 	(value -80)
 	(type SausagesandLuncheonMeats))
 
-([PoultryProducts-80] of LimitationType
+([LimitationType_PoultryProducts-80] of LimitationType
 	(value -80)
 	(type PoultryProducts))
 
-([FinfishandShellfishProducts-80] of LimitationType
+([LimitationType_FinfishandShellfishProducts-80] of LimitationType
 	(value -80)
 	(type FinfishandShellfishProducts))
 
-([LambVealandGameProducts-80] of LimitationType
+([LimitationType_LambVealandGameProducts-80] of LimitationType
 	(value -80)
 	(type LambVealandGameProducts))

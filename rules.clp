@@ -9,7 +9,8 @@
   ?*MEALS* = (create$ Breakfast Lunch Dinner)
   ?*SEASONS* = (slot-allowed-values Course season)
   ?*DISEASES* = (create$ Diabetes Celiaco Intolerante-Lactosa Hipertension Osteoporosis VIH Cancer ELA Ebola)
-  ?*FOODTYPES* = (create$ Fruits Vegetables Meat Fish Pasta)
+  ;?*FOODTYPES* = (create$ Fruits Vegetables Meat Fish Pasta)
+  ?*FOODTYPES* = (slot-allowed-values Ingredient type)
   ;?*EVENT_TYPES* = (create$ Familiar Congress)
   ;?*DRINK_TYPES* = (create$ Alcohol Soft-drinks Caffeine Juice none)
   ;?*CUISINE_STYLES* = (create$ Mediterranean Spanish Italian French Chinese Japanese Turkish American Mexican Indian Moroccan Gourmet any)
@@ -28,7 +29,6 @@
     (bind ?list-courses (sort-courses (find-all-instances ((?c Course)) TRUE)))
 
     (bind ?breakfasts (get-n-courses-of-category ?list-courses 7 Breakfast))
-    (printout t ?breakfasts crlf)
     (bind ?firstCourses (get-n-courses-of-category ?list-courses (* 7 2) FirstCourse))
     (bind ?secondCourses (get-n-courses-of-category ?list-courses (* 7 2) SecondCourse))
     (bind ?desserts (get-n-courses-of-category ?list-courses (* 7 2) Dessert))
@@ -39,7 +39,6 @@
           (course (nth$ (+ ?i 1) ?breakfasts))
         )
       )
-      (printout t (send ?breakfast display) crlf)
       (bind ?lunch
         (make-instance (gensym) of Lunch
           (firstCourse (nth$ (+ (* ?i 2) 1) ?firstCourses))
@@ -52,7 +51,7 @@
         (make-instance (gensym) of Dinner
           (firstCourse (nth$ (+ (* ?i 2) 2) ?firstCourses))
           (secondCourse (nth$ (+ (* ?i 2) 2) ?secondCourses))
-          (dessert (nth$ (+ (* ?i 2) 1) ?desserts))
+          (dessert (nth$ (+ (* ?i 2) 2) ?desserts))
         )
       )
 
@@ -68,7 +67,21 @@
       ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
    )
 
+   (printout t crlf "############################################")
+   (printout t crlf "############################################" crlf crlf)
+   
    (print-menu ?menuWeek)
+
+   (printout t crlf "############################################")
+   (printout t crlf "############################################" crlf crlf)
+
+   (bind ?calories (send ?menuWeek get-calories))
+
+   (printout t "Total Calories: " (integer ?calories) crlf)
+   (printout t "Approx. Calories per Day: " (integer (/ ?calories 7)) crlf)
+
+   (printout t crlf "############################################")
+   (printout t crlf "############################################" crlf crlf)
 )
 
 ;(assert (menu-done))
@@ -90,8 +103,7 @@
 (defrule vegetables-state-vegetarian ""
    (vegetables-state vegetarian)
    =>
-    (bind ?pref (nth$ 1 (find-instance ((?p Preference)) (eq ?p:name_ "Vegetarian"))))
-    (foreach ?lim (send ?pref get-limitations)
+    (foreach ?lim (send [Preference_Vegetarian] get-limitations)
       (send ?lim apply)
     )
 )
@@ -247,14 +259,55 @@
   (printout t "============================================" crlf)
 )
 
-(defmessage-handler Ingredient gett-energy ()
-  ; Las grasas tienen un contenido energético de 9 kcal/g (37,7 kJ/g);
-  ; proteínas y carbohidratos tienen 4 kcal/g (16,7 kJ/g).
-  ; El etanol tienen contenido de energía de 7 kcal/g (29,3 kJ/g).
-  ; source: Wikipedia
-  ;(bind ?kcal (+ (* 9 ?self:grasas) (* 7 ?self:proteinas) (* 7 ?self:carbohidratos)))
-  ;(return ?kcal)
-  (return 0)
+(defmessage-handler NutrientQuantity get-name_ ()
+  (send ?self:nutrient get-name_)
+)
+
+(defmessage-handler IngredientQuantity get-name_ ()
+  (send ?self:ingredient get-name_)
+)
+
+(defmessage-handler Ingredient get-calories ()
+  (foreach ?nutrientQty ?self:nutrients
+    (if (eq (send ?nutrientQty get-nutrient) [Nutrient_calories]) then
+      (return (send ?nutrientQty get-quantity))
+    )
+  )
+  0
+)
+
+(defmessage-handler IngredientQuantity get-calories ()
+  (* ?self:quantity (send ?self:ingredient get-calories))
+)
+
+(defmessage-handler Course get-calories ()
+  (bind ?sum 0)
+  (foreach ?ingredientQty ?self:ingredients
+    (bind ?sum (+ ?sum (send ?ingredientQty get-calories)))
+  )
+)
+
+(defmessage-handler Breakfast get-calories ()
+  (send ?self:course get-calories)
+)
+
+(defmessage-handler Lunch get-calories ()
+  (+ (send ?self:firstCourse get-calories) (send ?self:secondCourse get-calories) (send ?self:dessert get-calories))
+)
+
+(defmessage-handler Dinner get-calories ()
+  (+ (send ?self:firstCourse get-calories) (send ?self:secondCourse get-calories) (send ?self:dessert get-calories))
+)
+
+(defmessage-handler MenuDay get-calories ()
+  (+ (send ?self:breakfast get-calories) (send ?self:lunch get-calories) (send ?self:dinner get-calories))
+)
+
+(defmessage-handler MenuWeek get-calories ()
+  (bind ?sum 0)
+  (foreach ?menuDay ?self:menusDay
+    (bind ?sum (+ ?sum (send ?menuDay get-calories)))
+  )
 )
 
 (defmessage-handler LimitationType apply ()

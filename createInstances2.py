@@ -13,7 +13,7 @@ Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",3
 ["Ham Sandwich",[("Ham, sliced, regular (approximately 11% fat)",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Chorizo Sandwich",[("Chorizo, pork and beef",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Vegan Cheese Sandwich",[("Imitation cheese, american or cheddar, low cholesterol",30), ("Bread, french or vienna (includes sourdough)",90)]],
-["Nuts with milk",[("Nuts, walnuts, black, dried",15), ("Raisins, seeded", "Seeds, sunflower seed kernels, toasted, without salt",15), ("Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",90)]],
+["Nuts with milk",[("Nuts, walnuts, black, dried",15), ("Raisins, seeded", 15), ("Seeds, sunflower seed kernels, toasted, without salt",15), ("Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",90)]],
 ["Tofu Sandwich",[("Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",20), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]]]
 
 FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added salt",200), ("Tomato products, canned, sauce",50)]],
@@ -93,25 +93,37 @@ LIMITACIONS_ORIGINAL = [
         ['Caffeine',LIMITACIONS_TIPO[0]],
         ] 
 
+NUTRIENTS = dict(
+        fat='Fat',
+        carbohydrates='Carbohydrates', 
+        calories='Calories', 
+        sucrose='Sucrose',  
+        glucose='Glucose', 
+        fructose='Fructose', 
+        lactose='Lactose', 
+        alcohol='Alcohol',
+        caffeine='Caffeine', 
+        sugar='Sugar',
+        cholesterol='Cholesterol',
+        saturated='Saturated',
+        vitaminB5='Vitamin B5',
+        vitaminB6='Vitamin B6',
+        vitaminB12='Vitamin B12')
 
-def writeList(llista):
-    llista =list(map(lambda x:'\n\t\t['+changeString(x)+']' , llista))
+def writeList(prefix, llista):
+    llista =list(map(lambda x:'\n\t\t['+prefix+cleanString(x)+']' , llista))
     return "".join(llista)
 
-def writeList2(llista):
-    llista =list(map(lambda x:'\n\t\t['+changeString(x[0])+ str(x[1])+']' , llista))
+def writeList2(prefix, llista):
+    llista =list(map(lambda x:'\n\t\t['+prefix+cleanString2(x)+']' , llista))
     return "".join(llista)
     
-def writeList3(llista):
-    llista =list(map(lambda x:'\n\t\t['+changeString(x[0])+']' , llista))
-    return "".join(llista)
-
-def changeString(word):
-    return re.sub("[^a-zA-Z0-9-]+", "", word)
+def cleanString(word):
+    return re.sub("[^a-zA-Z0-9-]+", "", str(word))
 
 
-def changeString2(word): 
-    return changeString(word[0])+str(word[1])
+def cleanString2(word): 
+    return cleanString(word[0])+cleanString(word[1])
 
 def main():
     if not os.path.exists('instances/'):
@@ -122,7 +134,11 @@ def main():
         csv_reader2 = csv.reader(g, delimiter=',')
         line_count2 = 0
         nutrients = []
-        ingredients =[]
+        ingredients_type = []
+        ingredients_nutrients = []
+        ingredients_name = []
+        nutrients_set = set()
+
         for row in csv_reader2: 
             if line_count2 == 0:
                 line_count2 = line_count2 +1 
@@ -130,47 +146,49 @@ def main():
             else:
                 if len(row) < 2:
                     continue
-                tipus = row[0]
-                name = row[1]
-                fat = row[2]
-                carbohydrates = row[3]
-                calories = row[5]
-                sucrose = row[6]
-                glucose = row[7]
-                fructose = row[8]
-                lactose = row[9]
-                caffeine = row[13]
-                alcohol = row[11]
-                sugar = row[15]
-                cholesterol = row[-3]
-                saturated = row[-2]
-                vitaminB5 = row[-8]
-                vitaminB6 = row[-7]
-                vitaminB12 = row[-5]
-                characteristics = [('tipus',tipus), ('fat',fat), ('carbohydrates',carbohydrates), ('calories',calories), ('sucrose',sucrose), ('glucose',glucose), ('fructose',fructose) ,('lactose',lactose), ('alcohol',alcohol),('caffeine',caffeine), ('sugar',sugar),('cholesterol',cholesterol), ('saturated',saturated), ('vitaminB5',vitaminB5), ('vitaminB6',vitaminB6), ('vitaminB12',vitaminB12)]
-                nutrients.append(characteristics)
-                ingredients.append(name)
+
+                ingredients_name.append(row[1])
+                ingredients_type.append(row[0])
+
+                nutrients = dict(
+                    fat = row[2],
+                    carbohydrates = row[3],
+                    calories = row[5],
+                    sucrose = row[6],
+                    glucose = row[7],
+                    fructose = row[8],
+                    lactose = row[9],
+                    caffeine = row[13],
+                    alcohol = row[11],
+                    sugar = row[15],
+                    cholesterol = row[-3],
+                    saturated = row[-2],
+                    vitaminB5 = row[-8],
+                    vitaminB6 = row[-7],
+                    vitaminB12 = row[-5])
+                
+                nutrients = {k: v for k, v in nutrients.items() if v != 'NULL' and v != "0"}
+                ingredients_nutrients.append(nutrients)
+
+                nutrients_set.update(nutrients.items())
 
 
     #NUTRIENTS-QUANTITY
   
     with open('./instances/NutrientsQuantity.pins','w') as r:
-        for i,i2 in enumerate(ingredients):
-            for j,j2 in enumerate(characteristics):
-                if j > 0:
-                    if j2[1] != 'NULL' and j2[1] != "0": 
-                        r.write('(['+ changeString(changeString2(j2)) + '] of '+ 'NutrientQuantity\n\t')
-                        r.write('\n\t(nutrient ['+j2[0]+'])')       
-                        r.write('\n\t(quantity '+j2[1]+'))\n\n')                      
+        for v in nutrients_set:
+            r.write('([NutrientQuantity_'+ cleanString2(v) + '] of '+ 'NutrientQuantity\n\t')
+            r.write('\n\t(nutrient [Nutrient_'+v[0]+'])')       
+            r.write('\n\t(quantity '+v[1]+'))\n\n')                      
     r.close()
 
     
     #NUTRIENTS
 
     with open('./instances/Nutrients.pins','w') as r:
-        for i,i2 in enumerate(characteristics):
-            r.write('(['+ changeString(i2[0]) + '] of '+ 'Nutrient\n\t')
-            r.write('\n\t(name_ "'+i2[0]+'"))\n\n')                         
+        for k,v in NUTRIENTS.items():
+            r.write('([Nutrient_'+ k + '] of '+ 'Nutrient\n\t')
+            r.write('\n\t(name_ "'+ v +'"))\n\n')                         
     r.close()
 
 
@@ -181,24 +199,24 @@ def main():
             for j,j2 in enumerate(i2[1]): 
                 if isinstance(j2[1],int):
                     if (j2[1]) > 0:
-                        t.write('(['+ changeString2(j2) + '] of IngredientQuantity\n\t(ingredient ['+changeString(j2[0])+'])')
+                        t.write('([IngredientQuantity_'+ cleanString2(j2) + '] of IngredientQuantity\n\t(ingredient [Ingredient_'+cleanString(j2[0])+'])')
                         t.write('\n\t(quantity '+str(j2[1])+'))\n\n')
     t.close()
     
     # INGREDIENTS FALTA SEASON
     
     with open('./instances/Ingredients.pins','w') as t:
-        for i,i2 in enumerate(ingredients):
-            t.write('(['+ changeString(i2) + '] of Ingredient\n\t(nutrients '+writeList3(nutrients[i][1:])+')')
+        for i,i2 in enumerate(ingredients_name):
+            t.write('([Ingredient_'+ cleanString(i2) + '] of Ingredient\n\t(nutrients '+writeList2("NutrientQuantity_", ingredients_nutrients[i].items())+')')
             t.write('\n\t(name_ "'+i2+'")')
-            t.write('\n\t(type '+changeString(nutrients[i][0][1])+'))\n\n')
+            t.write('\n\t(type '+cleanString(ingredients_type[i])+'))\n\n')
     t.close()
     
     # ENFERMETATS canviar aqui lo de limitacions
     
     with open('./instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
-            r.write('(['+ changeString(i2) + '] of '+ 'Disease\n\t(limitations '+writeList2(LIMITACIONS[i])+')')
+            r.write('([Disease_'+ cleanString(i2) + '] of '+ 'Disease\n\t(limitations '+writeList2("LimitationNutrient_", LIMITACIONS[i])+')')
             r.write('\n\t(name_ "'+i2+'"))\n\n')
     r.close()
 
@@ -206,15 +224,15 @@ def main():
     #LIMITATION NUTRIENT
     with open('./instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('(['+ changeString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+str(i2[1])+')')
-            r.write('\n\t(nutrient ['+changeString(i2[0])+'])\n\n')                         
+            r.write('([LimitationNutrient_'+ cleanString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+str(i2[1])+')')
+            r.write('\n\t(nutrient [Nutrient_'+cleanString(i2[0])+'])\n\n')                         
     r.close()
 
     #LIMITATION FOOD
     """
     with open('./instances/Limitations.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('(['+ changeString(i2[0]) + '] of '+ 'Limitacion\n\t(value '+str(i2[1])+')')
+            r.write('(['+ cleanString(i2[0]) + '] of '+ 'Limitacion\n\t(value '+str(i2[1])+')')
             r.write('\n\t(nutrient "'+i2[0]+'"))\n\n')                         
     r.close()
     """
@@ -223,19 +241,19 @@ def main():
 
     with open('./instances/Courses.pins','w') as t:
         for i,i2 in enumerate(Breakfast):
-            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'Breakfast'+'))\n\n')
         for i,i2 in enumerate(FirstCourse):
-            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'FirstCourse'+'))\n\n')
         for i,i2 in enumerate(SecondCourse):
-            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'SecondCourse'+'))\n\n')
         for i,i2 in enumerate(Dessert):
-            t.write('(['+ changeString(i2[0]) + '] of Course\n\t(ingredients '+writeList2(i2[1])+')')
+            t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'Dessert'+'))\n\n')
     t.close()
