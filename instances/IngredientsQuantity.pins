@@ -1,364 +1,372 @@
-([Oilcocoabutter30] of IngredientQuantity
-	(ingredient [Oilcocoabutter])
+([IngredientQuantity_Oilcocoabutter30] of IngredientQuantity
+	(ingredient [Ingredient_Oilcocoabutter])
 	(quantity 30))
 
-([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
+([IngredientQuantity_Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
+	(ingredient [Ingredient_Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
 	(quantity 90))
 
-([Jamsandpreserves30] of IngredientQuantity
-	(ingredient [Jamsandpreserves])
+([IngredientQuantity_Jamsandpreserves30] of IngredientQuantity
+	(ingredient [Ingredient_Jamsandpreserves])
 	(quantity 30))
 
-([Breadwhitecommerciallypreparedtoasted90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedtoasted])
+([IngredientQuantity_Breadwhitecommerciallypreparedtoasted90] of IngredientQuantity
+	(ingredient [Ingredient_Breadwhitecommerciallypreparedtoasted])
 	(quantity 90))
 
-([Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40] of IngredientQuantity
-	(ingredient [Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
+([IngredientQuantity_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40] of IngredientQuantity
+	(ingredient [Ingredient_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
 	(quantity 40))
 
-([Eggwholecookedfried100] of IngredientQuantity
-	(ingredient [Eggwholecookedfried])
+([IngredientQuantity_Eggwholecookedfried100] of IngredientQuantity
+	(ingredient [Ingredient_Eggwholecookedfried])
 	(quantity 100))
 
-([Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30] of IngredientQuantity
-	(ingredient [Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds])
+([IngredientQuantity_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30] of IngredientQuantity
+	(ingredient [Ingredient_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds])
 	(quantity 30))
 
-([Milkproducerfluid37milkfat90] of IngredientQuantity
-	(ingredient [Milkproducerfluid37milkfat])
+([IngredientQuantity_Milkproducerfluid37milkfat90] of IngredientQuantity
+	(ingredient [Ingredient_Milkproducerfluid37milkfat])
 	(quantity 90))
 
-([Englishmuffinsplainenrichedwithcapropincludessourdough150] of IngredientQuantity
-	(ingredient [Englishmuffinsplainenrichedwithcapropincludessourdough])
+([IngredientQuantity_Englishmuffinsplainenrichedwithcapropincludessourdough150] of IngredientQuantity
+	(ingredient [Ingredient_Englishmuffinsplainenrichedwithcapropincludessourdough])
 	(quantity 150))
 
-([Salamidryorhardpork30] of IngredientQuantity
-	(ingredient [Salamidryorhardpork])
+([IngredientQuantity_Salamidryorhardpork30] of IngredientQuantity
+	(ingredient [Ingredient_Salamidryorhardpork])
 	(quantity 30))
 
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
+([IngredientQuantity_Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Ingredient_Breadfrenchorviennaincludessourdough])
 	(quantity 90))
 
-([Hamslicedregularapproximately11fat30] of IngredientQuantity
-	(ingredient [Hamslicedregularapproximately11fat])
+([IngredientQuantity_Hamslicedregularapproximately11fat30] of IngredientQuantity
+	(ingredient [Ingredient_Hamslicedregularapproximately11fat])
 	(quantity 30))
 
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
+([IngredientQuantity_Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Ingredient_Breadfrenchorviennaincludessourdough])
 	(quantity 90))
 
-([Chorizoporkandbeef30] of IngredientQuantity
-	(ingredient [Chorizoporkandbeef])
+([IngredientQuantity_Chorizoporkandbeef30] of IngredientQuantity
+	(ingredient [Ingredient_Chorizoporkandbeef])
 	(quantity 30))
 
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
+([IngredientQuantity_Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Ingredient_Breadfrenchorviennaincludessourdough])
 	(quantity 90))
 
-([Imitationcheeseamericanorcheddarlowcholesterol30] of IngredientQuantity
-	(ingredient [Imitationcheeseamericanorcheddarlowcholesterol])
+([IngredientQuantity_Imitationcheeseamericanorcheddarlowcholesterol30] of IngredientQuantity
+	(ingredient [Ingredient_Imitationcheeseamericanorcheddarlowcholesterol])
 	(quantity 30))
 
-([Breadfrenchorviennaincludessourdough90] of IngredientQuantity
-	(ingredient [Breadfrenchorviennaincludessourdough])
+([IngredientQuantity_Breadfrenchorviennaincludessourdough90] of IngredientQuantity
+	(ingredient [Ingredient_Breadfrenchorviennaincludessourdough])
 	(quantity 90))
 
-([Nutswalnutsblackdried15] of IngredientQuantity
-	(ingredient [Nutswalnutsblackdried])
+([IngredientQuantity_Nutswalnutsblackdried15] of IngredientQuantity
+	(ingredient [Ingredient_Nutswalnutsblackdried])
 	(quantity 15))
 
-([SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90] of IngredientQuantity
-	(ingredient [SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD])
+([IngredientQuantity_Raisinsseeded15] of IngredientQuantity
+	(ingredient [Ingredient_Raisinsseeded])
+	(quantity 15))
+
+([IngredientQuantity_Seedssunflowerseedkernelstoastedwithoutsalt15] of IngredientQuantity
+	(ingredient [Ingredient_Seedssunflowerseedkernelstoastedwithoutsalt])
+	(quantity 15))
+
+([IngredientQuantity_SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90] of IngredientQuantity
+	(ingredient [Ingredient_SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD])
 	(quantity 90))
 
-([Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari20] of IngredientQuantity
-	(ingredient [Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari])
+([IngredientQuantity_Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari20] of IngredientQuantity
+	(ingredient [Ingredient_Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari])
 	(quantity 20))
 
-([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
-	(ingredient [Tomatoesredriperawyearroundaverage])
+([IngredientQuantity_Tomatoesredriperawyearroundaverage10] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoesredriperawyearroundaverage])
 	(quantity 10))
 
-([Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
-	(ingredient [Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
+([IngredientQuantity_Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
+	(ingredient [Ingredient_Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
 	(quantity 90))
 
-([Pastacookedenrichedwithaddedsalt200] of IngredientQuantity
-	(ingredient [Pastacookedenrichedwithaddedsalt])
+([IngredientQuantity_Pastacookedenrichedwithaddedsalt200] of IngredientQuantity
+	(ingredient [Ingredient_Pastacookedenrichedwithaddedsalt])
 	(quantity 200))
 
-([Tomatoproductscannedsauce50] of IngredientQuantity
-	(ingredient [Tomatoproductscannedsauce])
+([IngredientQuantity_Tomatoproductscannedsauce50] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoproductscannedsauce])
 	(quantity 50))
 
-([Ricewhitemedium-grainenrichedcooked200] of IngredientQuantity
-	(ingredient [Ricewhitemedium-grainenrichedcooked])
+([IngredientQuantity_Ricewhitemedium-grainenrichedcooked200] of IngredientQuantity
+	(ingredient [Ingredient_Ricewhitemedium-grainenrichedcooked])
 	(quantity 200))
 
-([Tomatoproductscannedsauce50] of IngredientQuantity
-	(ingredient [Tomatoproductscannedsauce])
+([IngredientQuantity_Tomatoproductscannedsauce50] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoproductscannedsauce])
 	(quantity 50))
 
-([Beanssnapgreenfrozencookedboileddrainedwithoutsalt100] of IngredientQuantity
-	(ingredient [Beanssnapgreenfrozencookedboileddrainedwithoutsalt])
+([IngredientQuantity_Beanssnapgreenfrozencookedboileddrainedwithoutsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Beanssnapgreenfrozencookedboileddrainedwithoutsalt])
 	(quantity 100))
 
-([Potatoesboiledcookedinskinfleshwithsalt100] of IngredientQuantity
-	(ingredient [Potatoesboiledcookedinskinfleshwithsalt])
+([IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Potatoesboiledcookedinskinfleshwithsalt])
 	(quantity 100))
 
-([Soupchickennoodlereducedsodiumcannedready-to-serve200] of IngredientQuantity
-	(ingredient [Soupchickennoodlereducedsodiumcannedready-to-serve])
+([IngredientQuantity_Soupchickennoodlereducedsodiumcannedready-to-serve200] of IngredientQuantity
+	(ingredient [Ingredient_Soupchickennoodlereducedsodiumcannedready-to-serve])
 	(quantity 200))
 
-([Pumpkincookedboileddrainedwithoutsalt180] of IngredientQuantity
-	(ingredient [Pumpkincookedboileddrainedwithoutsalt])
+([IngredientQuantity_Pumpkincookedboileddrainedwithoutsalt180] of IngredientQuantity
+	(ingredient [Ingredient_Pumpkincookedboileddrainedwithoutsalt])
 	(quantity 180))
 
-([Potatoesboiledcookedinskinfleshwithsalt50] of IngredientQuantity
-	(ingredient [Potatoesboiledcookedinskinfleshwithsalt])
+([IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt50] of IngredientQuantity
+	(ingredient [Ingredient_Potatoesboiledcookedinskinfleshwithsalt])
 	(quantity 50))
 
-([Noodleseggenrichedcooked150] of IngredientQuantity
-	(ingredient [Noodleseggenrichedcooked])
+([IngredientQuantity_Noodleseggenrichedcooked150] of IngredientQuantity
+	(ingredient [Ingredient_Noodleseggenrichedcooked])
 	(quantity 150))
 
-([Molluskssquidmixedspeciescookedfried30] of IngredientQuantity
-	(ingredient [Molluskssquidmixedspeciescookedfried])
+([IngredientQuantity_Molluskssquidmixedspeciescookedfried30] of IngredientQuantity
+	(ingredient [Ingredient_Molluskssquidmixedspeciescookedfried])
 	(quantity 30))
 
-([Mollusksmusselbluecookedmoistheat30] of IngredientQuantity
-	(ingredient [Mollusksmusselbluecookedmoistheat])
+([IngredientQuantity_Mollusksmusselbluecookedmoistheat30] of IngredientQuantity
+	(ingredient [Ingredient_Mollusksmusselbluecookedmoistheat])
 	(quantity 30))
 
-([Lentilsmatureseedscookedboiledwithsalt180] of IngredientQuantity
-	(ingredient [Lentilsmatureseedscookedboiledwithsalt])
+([IngredientQuantity_Lentilsmatureseedscookedboiledwithsalt180] of IngredientQuantity
+	(ingredient [Ingredient_Lentilsmatureseedscookedboiledwithsalt])
 	(quantity 180))
 
-([Pepperssweetredcookedboileddrainedwithoutsalt30] of IngredientQuantity
-	(ingredient [Pepperssweetredcookedboileddrainedwithoutsalt])
+([IngredientQuantity_Pepperssweetredcookedboileddrainedwithoutsalt30] of IngredientQuantity
+	(ingredient [Ingredient_Pepperssweetredcookedboileddrainedwithoutsalt])
 	(quantity 30))
 
-([Onionsraw30] of IngredientQuantity
-	(ingredient [Onionsraw])
+([IngredientQuantity_Onionsraw30] of IngredientQuantity
+	(ingredient [Ingredient_Onionsraw])
 	(quantity 30))
 
-([Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids230] of IngredientQuantity
-	(ingredient [Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids])
+([IngredientQuantity_Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids230] of IngredientQuantity
+	(ingredient [Ingredient_Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids])
 	(quantity 230))
 
-([Melonscasabaraw200] of IngredientQuantity
-	(ingredient [Melonscasabaraw])
+([IngredientQuantity_Melonscasabaraw200] of IngredientQuantity
+	(ingredient [Ingredient_Melonscasabaraw])
 	(quantity 200))
 
-([Porkcuredhamcenterslicecountry-styleseparableleanonlyraw50] of IngredientQuantity
-	(ingredient [Porkcuredhamcenterslicecountry-styleseparableleanonlyraw])
+([IngredientQuantity_Porkcuredhamcenterslicecountry-styleseparableleanonlyraw50] of IngredientQuantity
+	(ingredient [Ingredient_Porkcuredhamcenterslicecountry-styleseparableleanonlyraw])
 	(quantity 50))
 
-([Ricewhitemedium-grainenrichedcooked100] of IngredientQuantity
-	(ingredient [Ricewhitemedium-grainenrichedcooked])
+([IngredientQuantity_Ricewhitemedium-grainenrichedcooked100] of IngredientQuantity
+	(ingredient [Ingredient_Ricewhitemedium-grainenrichedcooked])
 	(quantity 100))
 
-([Peassplitmatureseedscookedboiledwithsalt100] of IngredientQuantity
-	(ingredient [Peassplitmatureseedscookedboiledwithsalt])
+([IngredientQuantity_Peassplitmatureseedscookedboiledwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Peassplitmatureseedscookedboiledwithsalt])
 	(quantity 100))
 
-([Cornsweetwhitecannedwholekernelregularpacksolidsandliquids100] of IngredientQuantity
-	(ingredient [Cornsweetwhitecannedwholekernelregularpacksolidsandliquids])
+([IngredientQuantity_Cornsweetwhitecannedwholekernelregularpacksolidsandliquids100] of IngredientQuantity
+	(ingredient [Ingredient_Cornsweetwhitecannedwholekernelregularpacksolidsandliquids])
 	(quantity 100))
 
-([Carrotscookedboileddrainedwithsalt100] of IngredientQuantity
-	(ingredient [Carrotscookedboileddrainedwithsalt])
+([IngredientQuantity_Carrotscookedboileddrainedwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Carrotscookedboileddrainedwithsalt])
 	(quantity 100))
 
-([Potatoesboiledcookedinskinfleshwithsalt100] of IngredientQuantity
-	(ingredient [Potatoesboiledcookedinskinfleshwithsalt])
+([IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Potatoesboiledcookedinskinfleshwithsalt])
 	(quantity 100))
 
-([Peassplitmatureseedscookedboiledwithsalt100] of IngredientQuantity
-	(ingredient [Peassplitmatureseedscookedboiledwithsalt])
+([IngredientQuantity_Peassplitmatureseedscookedboiledwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Peassplitmatureseedscookedboiledwithsalt])
 	(quantity 100))
 
-([Couscouscooked150] of IngredientQuantity
-	(ingredient [Couscouscooked])
+([IngredientQuantity_Couscouscooked150] of IngredientQuantity
+	(ingredient [Ingredient_Couscouscooked])
 	(quantity 150))
 
-([Carrotscookedboileddrainedwithsalt50] of IngredientQuantity
-	(ingredient [Carrotscookedboileddrainedwithsalt])
+([IngredientQuantity_Carrotscookedboileddrainedwithsalt50] of IngredientQuantity
+	(ingredient [Ingredient_Carrotscookedboileddrainedwithsalt])
 	(quantity 50))
 
-([Pepperssweetredcookedboileddrainedwithoutsalt50] of IngredientQuantity
-	(ingredient [Pepperssweetredcookedboileddrainedwithoutsalt])
+([IngredientQuantity_Pepperssweetredcookedboileddrainedwithoutsalt50] of IngredientQuantity
+	(ingredient [Ingredient_Pepperssweetredcookedboileddrainedwithoutsalt])
 	(quantity 50))
 
-([Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250] of IngredientQuantity
-	(ingredient [Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded])
+([IngredientQuantity_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250] of IngredientQuantity
+	(ingredient [Ingredient_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded])
 	(quantity 250))
 
-([Spaghettiprotein-fortifiedcookedenrichednx625200] of IngredientQuantity
-	(ingredient [Spaghettiprotein-fortifiedcookedenrichednx625])
+([IngredientQuantity_Spaghettiprotein-fortifiedcookedenrichednx625200] of IngredientQuantity
+	(ingredient [Ingredient_Spaghettiprotein-fortifiedcookedenrichednx625])
 	(quantity 200))
 
-([Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium20] of IngredientQuantity
-	(ingredient [Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
+([IngredientQuantity_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium20] of IngredientQuantity
+	(ingredient [Ingredient_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
 	(quantity 20))
 
-([Milkbuttermilkfluidculturedreducedfat30] of IngredientQuantity
-	(ingredient [Milkbuttermilkfluidculturedreducedfat])
+([IngredientQuantity_Milkbuttermilkfluidculturedreducedfat30] of IngredientQuantity
+	(ingredient [Ingredient_Milkbuttermilkfluidculturedreducedfat])
 	(quantity 30))
 
-([Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
-	(ingredient [Chickenbroilersorfryersmeatandskincookedfriedflour])
+([IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
+	(ingredient [Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour])
 	(quantity 150))
 
-([Rollshamburgerorhotdogmixed-grain150] of IngredientQuantity
-	(ingredient [Rollshamburgerorhotdogmixed-grain])
+([IngredientQuantity_Rollshamburgerorhotdogmixed-grain150] of IngredientQuantity
+	(ingredient [Ingredient_Rollshamburgerorhotdogmixed-grain])
 	(quantity 150))
 
-([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
-	(ingredient [Tomatoesredriperawyearroundaverage])
+([IngredientQuantity_Tomatoesredriperawyearroundaverage10] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoesredriperawyearroundaverage])
 	(quantity 10))
 
-([Breadirishsodapreparedfromrecipe30] of IngredientQuantity
-	(ingredient [Breadirishsodapreparedfromrecipe])
+([IngredientQuantity_Breadirishsodapreparedfromrecipe30] of IngredientQuantity
+	(ingredient [Ingredient_Breadirishsodapreparedfromrecipe])
 	(quantity 30))
 
-([Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled200] of IngredientQuantity
-	(ingredient [Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled])
+([IngredientQuantity_Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled200] of IngredientQuantity
+	(ingredient [Ingredient_Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled])
 	(quantity 200))
 
-([Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220] of IngredientQuantity
-	(ingredient [Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised])
+([IngredientQuantity_Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220] of IngredientQuantity
+	(ingredient [Ingredient_Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised])
 	(quantity 220))
 
-([Fishtunafreshbluefincookeddryheat200] of IngredientQuantity
-	(ingredient [Fishtunafreshbluefincookeddryheat])
+([IngredientQuantity_Fishtunafreshbluefincookeddryheat200] of IngredientQuantity
+	(ingredient [Ingredient_Fishtunafreshbluefincookeddryheat])
 	(quantity 200))
 
-([FishsalmonAtlanticwildcookeddryheat200] of IngredientQuantity
-	(ingredient [FishsalmonAtlanticwildcookeddryheat])
+([IngredientQuantity_FishsalmonAtlanticwildcookeddryheat200] of IngredientQuantity
+	(ingredient [Ingredient_FishsalmonAtlanticwildcookeddryheat])
 	(quantity 200))
 
-([Fishflatfishflounderandsolespeciescookeddryheat150] of IngredientQuantity
-	(ingredient [Fishflatfishflounderandsolespeciescookeddryheat])
+([IngredientQuantity_Fishflatfishflounderandsolespeciescookeddryheat150] of IngredientQuantity
+	(ingredient [Ingredient_Fishflatfishflounderandsolespeciescookeddryheat])
 	(quantity 150))
 
-([Onionsdehydratedflakes10] of IngredientQuantity
-	(ingredient [Onionsdehydratedflakes])
+([IngredientQuantity_Onionsdehydratedflakes10] of IngredientQuantity
+	(ingredient [Ingredient_Onionsdehydratedflakes])
 	(quantity 10))
 
-([Pineapplecannedjuicepacksolidsandliquids20] of IngredientQuantity
-	(ingredient [Pineapplecannedjuicepacksolidsandliquids])
+([IngredientQuantity_Pineapplecannedjuicepacksolidsandliquids20] of IngredientQuantity
+	(ingredient [Ingredient_Pineapplecannedjuicepacksolidsandliquids])
 	(quantity 20))
 
-([FishsardineAtlanticcannedinoildrainedsolidswithbone150] of IngredientQuantity
-	(ingredient [FishsardineAtlanticcannedinoildrainedsolidswithbone])
+([IngredientQuantity_FishsardineAtlanticcannedinoildrainedsolidswithbone150] of IngredientQuantity
+	(ingredient [Ingredient_FishsardineAtlanticcannedinoildrainedsolidswithbone])
 	(quantity 150))
 
-([SausageItalianporkraw170] of IngredientQuantity
-	(ingredient [SausageItalianporkraw])
+([IngredientQuantity_SausageItalianporkraw170] of IngredientQuantity
+	(ingredient [Ingredient_SausageItalianporkraw])
 	(quantity 170))
 
-([Meatballsmeatless170] of IngredientQuantity
-	(ingredient [Meatballsmeatless])
+([IngredientQuantity_Meatballsmeatless170] of IngredientQuantity
+	(ingredient [Ingredient_Meatballsmeatless])
 	(quantity 170))
 
-([MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170] of IngredientQuantity
-	(ingredient [MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared])
+([IngredientQuantity_MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170] of IngredientQuantity
+	(ingredient [Ingredient_MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared])
 	(quantity 170))
 
-([Veggieburgersorsoyburgersunprepared150] of IngredientQuantity
-	(ingredient [Veggieburgersorsoyburgersunprepared])
+([IngredientQuantity_Veggieburgersorsoyburgersunprepared150] of IngredientQuantity
+	(ingredient [Ingredient_Veggieburgersorsoyburgersunprepared])
 	(quantity 150))
 
-([Tomatoesredriperawyearroundaverage10] of IngredientQuantity
-	(ingredient [Tomatoesredriperawyearroundaverage])
+([IngredientQuantity_Tomatoesredriperawyearroundaverage10] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoesredriperawyearroundaverage])
 	(quantity 10))
 
-([Breadirishsodapreparedfromrecipe30] of IngredientQuantity
-	(ingredient [Breadirishsodapreparedfromrecipe])
+([IngredientQuantity_Breadirishsodapreparedfromrecipe30] of IngredientQuantity
+	(ingredient [Ingredient_Breadirishsodapreparedfromrecipe])
 	(quantity 30))
 
-([MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200] of IngredientQuantity
-	(ingredient [MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared])
+([IngredientQuantity_MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200] of IngredientQuantity
+	(ingredient [Ingredient_MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared])
 	(quantity 200))
 
-([Eggplantcookedboileddrainedwithsalt100] of IngredientQuantity
-	(ingredient [Eggplantcookedboileddrainedwithsalt])
+([IngredientQuantity_Eggplantcookedboileddrainedwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Eggplantcookedboileddrainedwithsalt])
 	(quantity 100))
 
-([Tomatoesredripecookedwithsalt100] of IngredientQuantity
-	(ingredient [Tomatoesredripecookedwithsalt])
+([IngredientQuantity_Tomatoesredripecookedwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoesredripecookedwithsalt])
 	(quantity 100))
 
-([Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100] of IngredientQuantity
-	(ingredient [Squashsummerzucchiniincludesskincookedboileddrainedwithsalt])
+([IngredientQuantity_Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Squashsummerzucchiniincludesskincookedboileddrainedwithsalt])
 	(quantity 100))
 
-([Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50] of IngredientQuantity
-	(ingredient [Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery])
+([IngredientQuantity_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50] of IngredientQuantity
+	(ingredient [Ingredient_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery])
 	(quantity 50))
 
-([Yogurtfruitlowfat10gramsproteinper8ounce100] of IngredientQuantity
-	(ingredient [Yogurtfruitlowfat10gramsproteinper8ounce])
+([IngredientQuantity_Yogurtfruitlowfat10gramsproteinper8ounce100] of IngredientQuantity
+	(ingredient [Ingredient_Yogurtfruitlowfat10gramsproteinper8ounce])
 	(quantity 100))
 
-([Yogurtplainlowfat12gramsproteinper8ounce100] of IngredientQuantity
-	(ingredient [Yogurtplainlowfat12gramsproteinper8ounce])
+([IngredientQuantity_Yogurtplainlowfat12gramsproteinper8ounce100] of IngredientQuantity
+	(ingredient [Ingredient_Yogurtplainlowfat12gramsproteinper8ounce])
 	(quantity 100))
 
-([Gelatindessertsdrymixpreparedwithwater100] of IngredientQuantity
-	(ingredient [Gelatindessertsdrymixpreparedwithwater])
+([IngredientQuantity_Gelatindessertsdrymixpreparedwithwater100] of IngredientQuantity
+	(ingredient [Ingredient_Gelatindessertsdrymixpreparedwithwater])
 	(quantity 100))
 
-([Dessertsflancaramelcustardprepared-from-recipe100] of IngredientQuantity
-	(ingredient [Dessertsflancaramelcustardprepared-from-recipe])
+([IngredientQuantity_Dessertsflancaramelcustardprepared-from-recipe100] of IngredientQuantity
+	(ingredient [Ingredient_Dessertsflancaramelcustardprepared-from-recipe])
 	(quantity 100))
 
-([NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50] of IngredientQuantity
-	(ingredient [NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend])
+([IngredientQuantity_NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50] of IngredientQuantity
+	(ingredient [Ingredient_NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend])
 	(quantity 50))
 
-([Cakefruitcakecommerciallyprepared50] of IngredientQuantity
-	(ingredient [Cakefruitcakecommerciallyprepared])
+([IngredientQuantity_Cakefruitcakecommerciallyprepared50] of IngredientQuantity
+	(ingredient [Ingredient_Cakefruitcakecommerciallyprepared])
 	(quantity 50))
 
-([Applesrawwithskin100] of IngredientQuantity
-	(ingredient [Applesrawwithskin])
+([IngredientQuantity_Applesrawwithskin100] of IngredientQuantity
+	(ingredient [Ingredient_Applesrawwithskin])
 	(quantity 100))
 
-([Bananasraw100] of IngredientQuantity
-	(ingredient [Bananasraw])
+([IngredientQuantity_Bananasraw100] of IngredientQuantity
+	(ingredient [Ingredient_Bananasraw])
 	(quantity 100))
 
-([Watermelonraw100] of IngredientQuantity
-	(ingredient [Watermelonraw])
+([IngredientQuantity_Watermelonraw100] of IngredientQuantity
+	(ingredient [Ingredient_Watermelonraw])
 	(quantity 100))
 
-([Plumsraw100] of IngredientQuantity
-	(ingredient [Plumsraw])
+([IngredientQuantity_Plumsraw100] of IngredientQuantity
+	(ingredient [Ingredient_Plumsraw])
 	(quantity 100))
 
-([Cherriessweetraw100] of IngredientQuantity
-	(ingredient [Cherriessweetraw])
+([IngredientQuantity_Cherriessweetraw100] of IngredientQuantity
+	(ingredient [Ingredient_Cherriessweetraw])
 	(quantity 100))
 
-([Pearsasianraw100] of IngredientQuantity
-	(ingredient [Pearsasianraw])
+([IngredientQuantity_Pearsasianraw100] of IngredientQuantity
+	(ingredient [Ingredient_Pearsasianraw])
 	(quantity 100))
 
-([OrangesrawCaliforniavalencias100] of IngredientQuantity
-	(ingredient [OrangesrawCaliforniavalencias])
+([IngredientQuantity_OrangesrawCaliforniavalencias100] of IngredientQuantity
+	(ingredient [Ingredient_OrangesrawCaliforniavalencias])
 	(quantity 100))
 
-([Strawberriesraw80] of IngredientQuantity
-	(ingredient [Strawberriesraw])
+([IngredientQuantity_Strawberriesraw80] of IngredientQuantity
+	(ingredient [Ingredient_Strawberriesraw])
 	(quantity 80))
 
-([Creamfluidlightwhipping20] of IngredientQuantity
-	(ingredient [Creamfluidlightwhipping])
+([IngredientQuantity_Creamfluidlightwhipping20] of IngredientQuantity
+	(ingredient [Ingredient_Creamfluidlightwhipping])
 	(quantity 20))
 
