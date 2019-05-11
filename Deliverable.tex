@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \date{\today}
 \author{Carlos Bergillos, Roger Vilaseca, Adrià Cabeza}
-\title{Creación de dietas para ancianos: \\ Sistemas Basados en el conocimiento \\
+\title{Creación de dietas para ancianos: \\ sistemas Basados en el conocimiento \\
 	\large IA FIB @ UPC}
 \usepackage[margin=1.25in]{geometry}
 \usepackage{listings}
@@ -29,6 +29,7 @@
 \tableofcontents
 \newpage
 \section{Introducción}
+
 Los \textbf{sistemas basados en el conocimiento (SBC)} son la parte de la Inteligencia Artificial donde se intenta hallar una solución utilizando el conocimiento. Hay ciertos problemas en la vida real que no se pueden resolver sin tener conocimiento específico sobre los elementos del dominio. 
 \par
 El motivo de esta práctica es comprender estos modelos de IA así que hemos atacado un problema con esta técnica: creación de menús para ancianos dependiendo de sus necesidades nutricionales y requisitos médicos. 
@@ -57,14 +58,41 @@ La alimentación es una pieza clave de nuestras vidas: nuestra manera de aliment
 En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considearndo sus enfermedades y sus preferencias generales sobre la comida. Por ejemplo, si una persona es vegetariana y además diabética se lo generaría un horari sin carne y con poca cantidad de azúcares. 
 
 \subsection{Viabilidad de utilizar un SBC}
+Si analizamos el problema podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.\\
+Además nuestro objetivo, como ya hemos mencionado anteriormente, es dada la información de un anciano como input es dar una solución viable. Así que un SBC parece una opción bastante apropiada para enfretarse al problema. 
+\\
+Pese a que se podría utilizar otros métodos como la satisfacción de restricciones o incluso mediante una búsqueda en el espacio de soluciones creemos que la mejor manera de aprovechar el conocimiento implícito que requiere el problema es usando la potencia que nos proporciona un sistema basado en conocmiento.
+
 \subsection{Fuentes de conocimiento}
+
+Nuestras fuentes de conocimiento se pueden dividir en dos grandes pilares:
+\begin{itemize}
+	\item \textbf{El usuario}: la persona que utilize nuestro sistema tendrá que indicar e introducir información acerca de su edad, sexo, enfermedades...para que podamos proporcionarle el mejor plan alimenticio. %maybe podem ser més específics amb el què preguntem i el perquè
+	\item \textbf{Platos, ingredientes, enfermedades, nutrientes...}: el conjunto de conocimiento que necesita nuestro SBC para poder operar ha sido obtenido utilizando recursos en la red, especialmente se ha usado documentación especializada en el tema. 
+\end{itemize}
+
+
 \subsection{Objetivos y resultados esperados del sistema}
 
 
 \section{Conceptualización}
-En este apartado describiremos todos los conceptos del dominio.
+En este apartado describiremos todos los conceptos del dominio. 
 
 \subsection{Conceptos del dominio}
+\begin{itemize}
+\item \textbf{Persona}: las características necesarias para definir correctamente a la persona (usuario) son: \begin{itemize}
+	\item \textbf{Edad}: tiene que ser >= 65 ya que el sistema está orientado a ancianos
+	\item \textbf{Género}: ya que dependiendo del sexo se tienen que seguir unas restricciones alimentícias u otras.
+	\item \textbf{Nivel de ejercicio semanal}: que puede ser COMPLETAR
+	\item \textbf{Enfermedades que padece}
+	\item \textbf{Preferencias alimenticias}: que pueden ser Vegetariano, Vegano, COMPLETAR	
+	\end{itemize}
+\item \textbf{Nutrientes}
+\item \textbf{Ingredientes}
+\item \textbf{Platos}
+\item \textbf{Enfermedades}
+\end{itemize}
+
 
 \section{Formalización}
 
@@ -73,14 +101,14 @@ Para desarrollar correctamente la ontología hemos procurado que todos los conce
 
 \subsubsection{Definición de clases y jerarquía}
 
-La ontología que hemos realizado para nuestro SBC contiene diversas clases. Se puede observar en la figura \ref{ontologia}
+La ontología que hemos realizado para nuestro SBC contiene diversas clases. Se puede observar en la figura %\ref{ontologia}
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics{images\fulllight.png}
-%\caption{Ontología de nuestro SBC}
-%\label{ontologia}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics{images\fulllight.png}
+\caption{Ontología de nuestro SBC}
+\label{ontologia}
+\end{figure}
 
 
 \textbf{class\_menu}
@@ -97,9 +125,11 @@ Definimos toda la información de un menú en esta clase. Tenemos la cantidad de
 Los atributos son: 
 \begin{itemize}
 \item \textbf{menuDays}: menú diario
-\item \textit{comida}: comida de un menú diario
-\item \textit{dinner}: cena de un menú diario
-\item \textit{breakfast}: desayuno de un menú diario
+	\begin{itemize}
+	\item comida: comida de un menú diario
+	\item dinner: cena de un menú diario
+	\item breakfast: desayuno de un menú diario
+	\end{itemize}
 \end{itemize}
 
 \vspace{0.5cm}
@@ -168,13 +198,13 @@ Los atributos son:
 
 \vspace{0.5cm}
 
-\textbf{class\_Nutrients}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{images/classNutrient.png}
-\caption{Clase Nutrientes}
-\label{nutrientes}
-\end{figure}
+%\textbf{class\_Nutrients}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.5]{images/classNutrient.png}
+%\caption{Clase Nutrientes}
+%\label{nutrientes}
+%\end{figure}
 
 Definimos en esta clase toda la información que contiene un nutriente... TODO FINISH IT 
 \\
@@ -225,13 +255,12 @@ Los atributos son:
 \item \textbf{name}: nombre de la enfermedad
 \end{itemize}
 
-
 \vspace{0.5cm}
 
 \textbf{class\_Limitation}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{images/classNutrientQuantity.png}
+\includegraphics[scale=0.5]{images/classLimitation.png}
 \caption{Clase Limitación}
 \label{limitacion}
 \end{figure}

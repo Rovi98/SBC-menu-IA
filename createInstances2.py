@@ -1,8 +1,69 @@
 import os
 import csv
 import re
+import random
 
-## COURSES
+## ALL INGREDIENTS USED IN ORDER TO DELETE THOSE THAT ARE NOT USED FROM INGREDIENS.PINS
+INGREDIENTS_USED = [
+"Oil, cocoa butter", "Bread, white, commercially prepared (includes soft bread crumbs)"
+,"Jams and preserves", "Bread, white, commercially prepared, toasted"
+,"Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium", "Egg, whole, cooked, fried"
+,"Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds", "Milk, producer, fluid, 3.7% milkfat"
+,"English muffins, plain, enriched, with ca prop (includes sourdough)"
+,"Salami, dry or hard, pork", "Bread, french or vienna (includes sourdough)"
+,"Ham, sliced, regular (approximately 11% fat)", "Bread, french or vienna (includes sourdough)"
+,"Chorizo, pork and beef", "Bread, french or vienna (includes sourdough)"
+,"Imitation cheese, american or cheddar, low cholesterol", "Bread, french or vienna (includes sourdough)"
+,"Nuts, walnuts, black, dried", "Raisins, seeded",  "Seeds, sunflower seed kernels, toasted, without salt", "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D"
+,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)","Tomatoes, red, ripe, raw, year round average", "Bread, white, commercially prepared (includes soft bread crumbs)"
+,"Pasta, cooked, enriched, with added salt", "Tomato products, canned, sauce"
+,"Rice, white, medium-grain, enriched, cooked", "Tomato products, canned, sauce"
+,"Beans, snap, green, frozen, cooked, boiled, drained without salt", "Potatoes, boiled, cooked in skin, flesh, with salt"
+,"Soup, chicken noodle, reduced sodium, canned, ready-to-serve"
+,"Pumpkin, cooked, boiled, drained, without salt", "Potatoes, boiled, cooked in skin, flesh, with salt"
+,"Noodles, egg, enriched, cooked", "Mollusks, squid, mixed species, cooked, fried", "Mollusks, mussel, blue, cooked, moist heat"
+,"Lentils, mature seeds, cooked, boiled, with salt", "Peppers, sweet, red, cooked, boiled, drained, without salt", "Onions, raw"
+,"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids"
+,"Melons, casaba, raw", "Pork, cured, ham, center slice, country-style, separable lean only, raw"
+,"Rice, white, medium-grain, enriched, cooked", "Peas, split, mature seeds, cooked, boiled, with salt",  "Corn, sweet, white, canned, whole kernel, regular pack, solids and liquids"
+,"Carrots, cooked, boiled, drained, with salt", "Potatoes, boiled, cooked in skin, flesh, with salt", "Peas, split, mature seeds, cooked, boiled, with salt"
+,"Couscous, cooked", "Carrots, cooked, boiled, drained, with salt", "Peppers, sweet, red, cooked, boiled, drained, without salt"
+,"Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added"
+,"Spaghetti, protein-fortified, cooked, enriched (n x 6.25)", "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium", "Milk, buttermilk, fluid, cultured, reduced fat"
+,"Chicken, broilers or fryers, meat and skin, cooked, fried, flour"
+,"Rolls, hamburger or hotdog, mixed-grain", "Tomatoes, red, ripe, raw, year round average", "Bread, irish soda, prepared from recipe"
+,"Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled"
+,"Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised"
+,"Fish, tuna, fresh, bluefin, cooked, dry heat"
+,"Fish, salmon, Atlantic, wild, cooked, dry heat"
+,"Fish, flatfish (flounder and sole species), cooked, dry heat", "Onions, dehydrated flakes", "Pineapple, canned, juice pack, solids and liquids"
+,"Fish, sardine, Atlantic, canned in oil, drained solids with bone"
+,"Sausage, Italian, pork, raw"
+,"Meatballs, meatless"
+,"MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared"
+,"Veggie burgers or soyburgers, unprepared", "Tomatoes, red, ripe, raw, year round average", "Bread, irish soda, prepared from recipe"
+,"MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared"
+,"Eggplant, cooked, boiled, drained, with salt", "Tomatoes, red, ripe, cooked, with salt",  "Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt"
+,"Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery"
+,"Yogurt, fruit, low fat, 10 grams protein per 8 ounce"
+,"Yogurt, plain, low fat, 12 grams protein per 8 ounce"
+,"Gelatin desserts, dry mix, prepared with water"
+,"Desserts, flan, caramel custard, prepared-from-recipe"
+,"Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend"
+,"Cake, fruitcake, commercially prepared"
+,"Apples, raw, with skin"
+,"Bananas, raw"
+,"Watermelon, raw"
+,"Plums, raw"
+,"Cherries, sweet, raw"
+,"Pears, asian, raw"
+,"Oranges, raw, California, valencias"
+,"Strawberries, raw","Cream, fluid, light whipping"
+]
+
+
+
+
 
 Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
 ["Jam Toasts",[("Jams and preserves",30), ("Bread, white, commercially prepared, toasted",90)]],
@@ -63,19 +124,22 @@ Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with choc
 ["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
 
               
-# DISEASES
+# DISEASES: LIMITATIONS AND NAME
+#TODO AFEGIR MÉS ENFERMETATS
 
-ENFERMETATS = ['Diabetes', 'Celiac','Colesterol','Gota','Hipertension'] 
+ENFERMETATS = [[['Nutrients_sugar-50','Type_Sweets-50'],'Diabetes'],
+                [['Nutrients_gluten-100'],'Celiac'],
+                [['Nutrients_colesterol-50','fat-50'],'Colesterol']]
 
-# LIMITATIONS
+# TODO AFEGIR ENFERMETATS AMB ELS TIPUS QUE TINGUIN SENTIT
+"""
+                [['Meat','Shellfish'],'Gota'],
+                [['Alchohol','Caffeine'],'Hipertension']] 
+"""
 
-LIMITACIONS = [
-		['sugar', 'hidratos','fructosa','glucosa'],
-		['gluten'],['colesterol','saturated','fat'],['Tomatoe','Meat','Steak','Shellfish'], ['Coffee','Wine','Caffeine','Alcohol']]
-                
-#canviar limitacions 
+
 LIMITACIONS_TIPO = [-100,-50]
-LIMITACIONS_ORIGINAL = [
+LIMITACIONS_NUTRIENTS = [
 		['sugar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
 		['gluten',LIMITACIONS_TIPO[0]],
@@ -83,15 +147,38 @@ LIMITACIONS_ORIGINAL = [
         ['glucosa',LIMITACIONS_TIPO[1]],
         ['colesterol',LIMITACIONS_TIPO[1]],
         ['saturated',LIMITACIONS_TIPO[0]],
-        ['fat', LIMITACIONS_TIPO[1]],
-        ['Tomatoe', LIMITACIONS_TIPO[0]],
-        ['Meat', LIMITACIONS_TIPO[1]],
-        ['Shellfish', LIMITACIONS_TIPO[0]],
-        ['Coffee', LIMITACIONS_TIPO[0]],
-        ['Wine', LIMITACIONS_TIPO[1]],
-        ['Alcohol',LIMITACIONS_TIPO[1]],
-        ['Caffeine',LIMITACIONS_TIPO[0]],
+        ['fat', LIMITACIONS_TIPO[1]]]
+
+#TODO: FICAR LIMITACIONS TIPUS AMB ELS TIPUS DEL DATASET
+LIMITACIONS_TIPUS = [
+        ['Sweets',LIMITACIONS_TIPO[1]]
         ] 
+
+# FOOD TYPES
+
+FOOD_TYPES= [
+'Dairy and Egg Products',
+'Spices and Herbs',
+'Fats and Oils',
+'Poultry Products',
+'Fruits and Fruit Juices',
+'Pork Products',
+'Vegetables and Vegetable Products',
+'Nut and Seed Products',
+'Beef Products',
+'Sausages and Luncheon Meats',
+'Beverages',
+'Finfish and Shellfish Products',
+'Legumes and Legume Products',
+'Sweets',
+'Soups, Sauces, and Gravies',
+'Snacks'
+'Breakfast Cereals',
+'Baby Foods',
+'Baked Products',
+'Lamb, Veal, and Game Products',
+'Cereal Grains and Pasta'
+]
 
 NUTRIENTS = dict(
         fat='Fat',
@@ -124,6 +211,8 @@ def cleanString(word):
 
 def cleanString2(word): 
     return cleanString(word[0])+cleanString(word[1])
+
+
 
 def main():
     if not os.path.exists('instances/'):
@@ -181,7 +270,7 @@ def main():
             r.write('\n\t(nutrient [Nutrient_'+v[0]+'])')       
             r.write('\n\t(quantity '+v[1]+'))\n\n')                      
     r.close()
-
+    print('Instances of nutrients quantity: DONE')
     
     #NUTRIENTS
 
@@ -190,7 +279,7 @@ def main():
             r.write('([Nutrient_'+ k + '] of '+ 'Nutrient\n\t')
             r.write('\n\t(name_ "'+ v +'"))\n\n')                         
     r.close()
-
+    print('Instances of nutrients: DONE')
 
     # INGREDIENTS-QUANTITY
     
@@ -202,40 +291,59 @@ def main():
                         t.write('([IngredientQuantity_'+ cleanString2(j2) + '] of IngredientQuantity\n\t(ingredient [Ingredient_'+cleanString(j2[0])+'])')
                         t.write('\n\t(quantity '+str(j2[1])+'))\n\n')
     t.close()
-    
-    # INGREDIENTS FALTA SEASON
-    
+    print('Instances of ingredients quantity: DONE')
+
+    # INGREDIENTS
+    # ARA MATEIX LO DE SEASONS ES MEGA RANDOM: agafa un subset random de la tupla que hi ha a sota
+   
+    seasons = ('Verano', 'Otono', 'Winter', 'Spring')
     with open('./instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients_name):
-            t.write('([Ingredient_'+ cleanString(i2) + '] of Ingredient\n\t(nutrients '+writeList2("NutrientQuantity_", ingredients_nutrients[i].items())+')')
-            t.write('\n\t(name_ "'+i2+'")')
-            t.write('\n\t(type '+cleanString(ingredients_type[i])+'))\n\n')
+            if(i2 in INGREDIENTS_USED):
+                t.write('([Ingredient_'+ cleanString(i2) + '] of Ingredient\n\t(nutrients '+writeList2("NutrientQuantity_", ingredients_nutrients[i].items())+')')
+                t.write('\n\t(name_ "'+i2+'")')
+                t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
+                t.write('\n\t(type '+cleanString(ingredients_type[i])+'))\n\n')
+            else:
+                continue
     t.close()
+    print('Instances of ingredients: DONE')
     
-    # ENFERMETATS canviar aqui lo de limitacions
-    
+    # ENFERMETATS
+
     with open('./instances/Disease.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
-            r.write('([Disease_'+ cleanString(i2) + '] of '+ 'Disease\n\t(limitations '+writeList2("LimitationNutrient_", LIMITACIONS[i])+')')
-            r.write('\n\t(name_ "'+i2+'"))\n\n')
+            r.write('([Disease_'+ cleanString(i2[1]) + '] of '+ 'Disease\n\t(limitations '+writeList("Limitation",i2[0])+')')
+            r.write('\n\t(name_ '+i2[1]+'))\n\n')
     r.close()
+    print('Instances of enfermetats: DONE')
+    
+    #LIMITATIONS NUTRIENT
+   
+    with open('./instances/LimitationsNutrients.pins','w') as r:
+        for i,i2 in enumerate(LIMITACIONS_NUTRIENTS):
+            r.write('([LimitationNutrients_'+ cleanString2(i2) + '] of '+ 'LimitationNutrients\n\t(value '+cleanString(i2[1])+')')
+            r.write('\n\t(nutrient '+cleanString(i2[0])+'))\n\n')                      
+    r.close()
+    print('Instances of limitació nutrients: DONE')
 
-    # LIMITACIONS #FER DOS TIPUS DE LIMITACIONS INGREDIENT I NUTRIENT TIPUS LO DE BREAKFAST
-    #LIMITATION NUTRIENT
-    with open('./instances/Limitations.pins','w') as r:
-        for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('([LimitationNutrient_'+ cleanString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+str(i2[1])+')')
-            r.write('\n\t(nutrient [Nutrient_'+cleanString(i2[0])+'])\n\n')                         
-    r.close()
+    #LIMITATIONS TYPE 
+    #NO LI DIC PREFERENCES PER NO MOLESTAR EL FET A MÀ
 
-    #LIMITATION FOOD
-    """
-    with open('./instances/Limitations.pins','w') as r:
-        for i,i2 in enumerate(LIMITACIONS_ORIGINAL):
-            r.write('(['+ cleanString(i2[0]) + '] of '+ 'Limitacion\n\t(value '+str(i2[1])+')')
-            r.write('\n\t(nutrient "'+i2[0]+'"))\n\n')                         
+    with open('./instances/LimitationsType.pins','w') as r:
+      for i,i2 in enumerate(LIMITACIONS_TIPUS):
+            r.write('([LimitationType_'+ cleanString2(i2) + '] of '+ 'LimitationType\n\t(value '+cleanString(i2[1])+')')
+            r.write('\n\t(type '+cleanString(i2[0])+'))\n\n')                     
     r.close()
-    """
+    print('Instances of limitació tipus: DONE')
+
+    #FOOD TYPE
+    with open('./instances/FoodType.pins','w') as r:
+        for i,i2 in enumerate(FOOD_TYPES):
+            r.write('([FoodType'+ cleanString2(i2) + ']')
+            r.write('\n\t(name_"'+cleanString(i2)+'])\n\n')                         
+    r.close()
+    print('Instances of tipus de menjar: DONE')
     
     #COURSES
 
@@ -257,7 +365,7 @@ def main():
             t.write('\n\t(name_ "'+i2[0]+'")')
             t.write('\n\t(category '+'Dessert'+'))\n\n')
     t.close()
-
+    print('Instances of plats: DONE')
 
 
 if __name__ == '__main__':

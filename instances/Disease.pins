@@ -1,36 +1,17 @@
 ([Disease_Diabetes] of Disease
 	(limitations 
-		[LimitationNutrient_su]
-		[LimitationNutrient_hi]
-		[LimitationNutrient_fr]
-		[LimitationNutrient_gl])
-	(name_ "Diabetes"))
+		[LimitationNutrientssugar-50]
+		[LimitationTypeSweets-50])
+	(name_ Diabetes))
 
 ([Disease_Celiac] of Disease
 	(limitations 
-		[LimitationNutrient_gl])
-	(name_ "Celiac"))
+		[LimitationNutrientsgluten-100])
+	(name_ Celiac))
 
 ([Disease_Colesterol] of Disease
 	(limitations 
-		[LimitationNutrient_co]
-		[LimitationNutrient_sa]
-		[LimitationNutrient_fa])
-	(name_ "Colesterol"))
-
-([Disease_Gota] of Disease
-	(limitations 
-		[LimitationNutrient_To]
-		[LimitationNutrient_Me]
-		[LimitationNutrient_St]
-		[LimitationNutrient_Sh])
-	(name_ "Gota"))
-
-([Disease_Hipertension] of Disease
-	(limitations 
-		[LimitationNutrient_Co]
-		[LimitationNutrient_Wi]
-		[LimitationNutrient_Ca]
-		[LimitationNutrient_Al])
-	(name_ "Hipertension"))
+		[LimitationNutrientscolesterol-50]
+		[Limitationfat-50])
+	(name_ Colesterol))
 

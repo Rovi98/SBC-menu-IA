@@ -1,0 +1,60 @@
+([FoodTypeDa]
+	(name_"DairyandEggProducts])
+
+([FoodTypeSp]
+	(name_"SpicesandHerbs])
+
+([FoodTypeFa]
+	(name_"FatsandOils])
+
+([FoodTypePo]
+	(name_"PoultryProducts])
+
+([FoodTypeFr]
+	(name_"FruitsandFruitJuices])
+
+([FoodTypePo]
+	(name_"PorkProducts])
+
+([FoodTypeVe]
+	(name_"VegetablesandVegetableProducts])
+
+([FoodTypeNu]
+	(name_"NutandSeedProducts])
+
+([FoodTypeBe]
+	(name_"BeefProducts])
+
+([FoodTypeSa]
+	(name_"SausagesandLuncheonMeats])
+
+([FoodTypeBe]
+	(name_"Beverages])
+
+([FoodTypeFi]
+	(name_"FinfishandShellfishProducts])
+
+([FoodTypeLe]
+	(name_"LegumesandLegumeProducts])
+
+([FoodTypeSw]
+	(name_"Sweets])
+
+([FoodTypeSo]
+	(name_"SoupsSaucesandGravies])
+
+([FoodTypeSn]
+	(name_"SnacksBreakfastCereals])
+
+([FoodTypeBa]
+	(name_"BabyFoods])
+
+([FoodTypeBa]
+	(name_"BakedProducts])
+
+([FoodTypeLa]
+	(name_"LambVealandGameProducts])
+
+([FoodTypeCe]
+	(name_"CerealGrainsandPasta])
+

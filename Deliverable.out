@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Identificaci\363n}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Descripci\363n del problema}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Viabilidad de utilizar un SBC}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Fuentes de conocimiento}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Objetivos y resultados esperados del sistema}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Conceptualizaci\363n}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Conceptos del dominio}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Formalizaci\363n}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Desarrollo de la ontolog\355a}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Definici\363n de clases y jerarqu\355a}{subsection.4.1}% 11
+\BOOKMARK [2][-]{subsection.4.2}{M\351todo de resoluci\363n}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Implementaci\363n}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Creaci\363n de la ontolog\355a}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Juego de Prueba}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Ejemplos del conocimiento extra\355do del dominio}{section.6}% 16
