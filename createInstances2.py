@@ -346,23 +346,27 @@ def main():
     print('Instances of tipus de menjar: DONE')
     
     #COURSES
-
+    #AQUI TAMBE ES PUTU RANDOM 
     with open('./instances/Courses.pins','w') as t:
         for i,i2 in enumerate(Breakfast):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
             t.write('\n\t(category '+'Breakfast'+'))\n\n')
         for i,i2 in enumerate(FirstCourse):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
             t.write('\n\t(category '+'FirstCourse'+'))\n\n')
         for i,i2 in enumerate(SecondCourse):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
             t.write('\n\t(category '+'SecondCourse'+'))\n\n')
         for i,i2 in enumerate(Dessert):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
+            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
             t.write('\n\t(category '+'Dessert'+'))\n\n')
     t.close()
     print('Instances of plats: DONE')

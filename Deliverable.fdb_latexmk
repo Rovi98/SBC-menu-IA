@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1557586342 "Deliverable.tex" "Deliverable.pdf" "Deliverable" 1557586342
+["pdflatex"] 1557598388 "Deliverable.tex" "Deliverable.pdf" "Deliverable" 1557598388
   "/etc/texmf/web2c/texmf.cnf" 1556823659 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -18,6 +18,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1480098701 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1480098733 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1480098733 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1480098733 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -64,10 +65,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1556823805 127853 b41f58aff49fe1af38af8d065f49d51c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1556823808 859409 05d8ba5462f652291a2bb95fbdfcf5be ""
-  "Deliverable.aux" 1557586332 3807 496f787816dc19e2dbfbc368dc981f45 ""
-  "Deliverable.out" 1557586332 1133 834dc798db61d2d56c4f131fdaabd06f ""
-  "Deliverable.tex" 1557586342 13620 a91c525abb6446dc5b4c802b66dd9ae0 ""
-  "Deliverable.toc" 1557586332 1498 b7b565967a8864004530ae390dcb1855 ""
+  "Deliverable.aux" 1557598364 4750 38c4450e50278726fa4741143e2a4c52 ""
+  "Deliverable.out" 1557598364 1662 72db29409fa2ef090c73dd1e6172b16d ""
+  "Deliverable.tex" 1557598388 18858 abc4c82870207ffbd5e0466863669642 ""
+  "Deliverable.toc" 1557598364 2192 d053ffc75871f899e0652fde155f2849 ""
   "images.png" 0 -1 0 ""
   "images/classCourse.png" 1557358360 6141 55a9d272bc4e4f059680b0fadbf11bf2 ""
   "images/classDisease.png" 1557358360 1710 e17efb46c4b276aef2f49751a0071fd3 ""
@@ -77,8 +78,8 @@
   "images/classMenu.png" 1557358361 4098 4aa3599ac5ec54559315de9a5832b27a ""
   "images/classNutrientQuantity.png" 1557358361 1669 a0947b3afe7887c7622f0d564cbc5e6e ""
   (generated)
+  "Deliverable.toc"
+  "Deliverable.out"
   "Deliverable.log"
   "Deliverable.aux"
-  "Deliverable.out"
-  "Deliverable.toc"
   "Deliverable.pdf"
