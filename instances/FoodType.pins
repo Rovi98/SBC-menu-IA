@@ -1,60 +1,60 @@
-([FoodTypeDa]
+([FoodTypeDairyandEggProducts]
 	(name_"DairyandEggProducts])
 
-([FoodTypeSp]
+([FoodTypeSpicesandHerbs]
 	(name_"SpicesandHerbs])
 
-([FoodTypeFa]
+([FoodTypeFatsandOils]
 	(name_"FatsandOils])
 
-([FoodTypePo]
+([FoodTypePoultryProducts]
 	(name_"PoultryProducts])
 
-([FoodTypeFr]
+([FoodTypeFruitsandFruitJuices]
 	(name_"FruitsandFruitJuices])
 
-([FoodTypePo]
+([FoodTypePorkProducts]
 	(name_"PorkProducts])
 
-([FoodTypeVe]
+([FoodTypeVegetablesandVegetableProducts]
 	(name_"VegetablesandVegetableProducts])
 
-([FoodTypeNu]
+([FoodTypeNutandSeedProducts]
 	(name_"NutandSeedProducts])
 
-([FoodTypeBe]
+([FoodTypeBeefProducts]
 	(name_"BeefProducts])
 
-([FoodTypeSa]
+([FoodTypeSausagesandLuncheonMeats]
 	(name_"SausagesandLuncheonMeats])
 
-([FoodTypeBe]
+([FoodTypeBeverages]
 	(name_"Beverages])
 
-([FoodTypeFi]
+([FoodTypeFinfishandShellfishProducts]
 	(name_"FinfishandShellfishProducts])
 
-([FoodTypeLe]
+([FoodTypeLegumesandLegumeProducts]
 	(name_"LegumesandLegumeProducts])
 
-([FoodTypeSw]
+([FoodTypeSweets]
 	(name_"Sweets])
 
-([FoodTypeSo]
+([FoodTypeSoupsSaucesandGravies]
 	(name_"SoupsSaucesandGravies])
 
-([FoodTypeSn]
+([FoodTypeSnacksBreakfastCereals]
 	(name_"SnacksBreakfastCereals])
 
-([FoodTypeBa]
+([FoodTypeBabyFoods]
 	(name_"BabyFoods])
 
-([FoodTypeBa]
+([FoodTypeBakedProducts]
 	(name_"BakedProducts])
 
-([FoodTypeLa]
+([FoodTypeLambVealandGameProducts]
 	(name_"LambVealandGameProducts])
 
-([FoodTypeCe]
+([FoodTypeCerealGrainsandPasta]
 	(name_"CerealGrainsandPasta])
 

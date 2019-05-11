@@ -340,7 +340,7 @@ def main():
     #FOOD TYPE
     with open('./instances/FoodType.pins','w') as r:
         for i,i2 in enumerate(FOOD_TYPES):
-            r.write('([FoodType'+ cleanString2(i2) + ']')
+            r.write('([FoodType'+ cleanString(i2) + ']')
             r.write('\n\t(name_"'+cleanString(i2)+'])\n\n')                         
     r.close()
     print('Instances of tipus de menjar: DONE')
