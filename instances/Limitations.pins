@@ -1,64 +1,60 @@
-([sugar-50] of LimitationNutrient
+([LimitationNutrient_sugar-50] of LimitationNutrient
 	(value -50)
-	(nutrient [sugar])
+	(nutrient [Nutrient_sugar])
 
-([hidratos-50] of LimitationNutrient
+([LimitationNutrient_hidratos-50] of LimitationNutrient
 	(value -50)
-	(nutrient [hidratos])
+	(nutrient [Nutrient_hidratos])
 
-([gluten-100] of LimitationNutrient
+([LimitationNutrient_gluten-100] of LimitationNutrient
 	(value -100)
-	(nutrient [gluten])
+	(nutrient [Nutrient_gluten])
 
-([fructosa-50] of LimitationNutrient
+([LimitationNutrient_fructosa-50] of LimitationNutrient
 	(value -50)
-	(nutrient [fructosa])
+	(nutrient [Nutrient_fructosa])
 
-([glucosa-50] of LimitationNutrient
+([LimitationNutrient_glucosa-50] of LimitationNutrient
 	(value -50)
-	(nutrient [glucosa])
+	(nutrient [Nutrient_glucosa])
 
-([colesterol-50] of LimitationNutrient
+([LimitationNutrient_colesterol-50] of LimitationNutrient
 	(value -50)
-	(nutrient [colesterol])
+	(nutrient [Nutrient_colesterol])
 
-([saturated-100] of LimitationNutrient
+([LimitationNutrient_saturated-100] of LimitationNutrient
 	(value -100)
-	(nutrient [saturated])
+	(nutrient [Nutrient_saturated])
 
-([fat-50] of LimitationNutrient
+([LimitationNutrient_fat-50] of LimitationNutrient
 	(value -50)
-	(nutrient [fat])
+	(nutrient [Nutrient_fat])
 
-([Tomatoe-100] of LimitationNutrient
+([LimitationNutrient_Tomatoe-100] of LimitationNutrient
 	(value -100)
-	(nutrient [Tomatoe])
+	(nutrient [Nutrient_Tomatoe])
 
-([Meat-50] of LimitationNutrient
+([LimitationNutrient_Meat-50] of LimitationNutrient
 	(value -50)
-	(nutrient [Meat])
+	(nutrient [Nutrient_Meat])
 
-([Shellfish-100] of LimitationNutrient
+([LimitationNutrient_Shellfish-100] of LimitationNutrient
 	(value -100)
-	(nutrient [Shellfish])
+	(nutrient [Nutrient_Shellfish])
 
-([Coffee-100] of LimitationNutrient
+([LimitationNutrient_Coffee-100] of LimitationNutrient
 	(value -100)
-	(nutrient [Coffee])
+	(nutrient [Nutrient_Coffee])
 
-([Wine-50] of LimitationNutrient
+([LimitationNutrient_Wine-50] of LimitationNutrient
 	(value -50)
-	(nutrient [Wine])
+	(nutrient [Nutrient_Wine])
 
-([Alcohol-50] of LimitationNutrient
+([LimitationNutrient_Alcohol-50] of LimitationNutrient
 	(value -50)
-	(nutrient [Alcohol])
+	(nutrient [Nutrient_Alcohol])
 
-([Caffeine-100] of LimitationNutrient
+([LimitationNutrient_Caffeine-100] of LimitationNutrient
 	(value -100)
-	(nutrient [Caffeine])
-	
-([Sweets-100] of LimitationType
-	(value -100)
-	(type Sweets)
+	(nutrient [Nutrient_Caffeine])
 

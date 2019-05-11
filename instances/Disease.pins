@@ -1,36 +1,36 @@
-([Diabetes] of Disease
+([Disease_Diabetes] of Disease
 	(limitations 
-		[su]
-		[hi]
-		[fr]
-		[gl])
+		[LimitationNutrient_su]
+		[LimitationNutrient_hi]
+		[LimitationNutrient_fr]
+		[LimitationNutrient_gl])
 	(name_ "Diabetes"))
 
-([Celiac] of Disease
+([Disease_Celiac] of Disease
 	(limitations 
-		[gl])
+		[LimitationNutrient_gl])
 	(name_ "Celiac"))
 
-([Colesterol] of Disease
+([Disease_Colesterol] of Disease
 	(limitations 
-		[co]
-		[sa]
-		[fa])
+		[LimitationNutrient_co]
+		[LimitationNutrient_sa]
+		[LimitationNutrient_fa])
 	(name_ "Colesterol"))
 
-([Gota] of Disease
+([Disease_Gota] of Disease
 	(limitations 
-		[To]
-		[Me]
-		[St]
-		[Sh])
+		[LimitationNutrient_To]
+		[LimitationNutrient_Me]
+		[LimitationNutrient_St]
+		[LimitationNutrient_Sh])
 	(name_ "Gota"))
 
-([Hipertension] of Disease
+([Disease_Hipertension] of Disease
 	(limitations 
-		[Co]
-		[Wi]
-		[Ca]
-		[Al])
+		[LimitationNutrient_Co]
+		[LimitationNutrient_Wi]
+		[LimitationNutrient_Ca]
+		[LimitationNutrient_Al])
 	(name_ "Hipertension"))
 

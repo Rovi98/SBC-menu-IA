@@ -79,11 +79,43 @@
 )
 
 
-(deffunction print-menu (?menuSemana)
+(deffunction print-menu (?menuWeek)
   (printout t "Menu:" crlf)
-  (printout t (send ?menuSemana imprimir))
+  (printout t (send ?menuWeek display))
 )
 
 (deffunction random-from-list (?list)
   (nth$ (random 1 (length$ ?list)) ?list)
+)
+
+(deffunction random-ord (?a ?b)
+  (eq 1 (random 1 2))
+)
+
+(deffunction random-sort (?list)
+  (sort random-ord ?list)
+)
+
+(deffunction ord-course (?a ?b)
+  (< (send ?a get-score) (send ?b get-score))
+)
+
+(deffunction sort-courses (?list)
+  ;(funcall sort course_ord ?list)  
+  (sort ord-course ?list)
+)
+
+(deffunction get-n-courses-of-category (?list ?n ?category)
+  (sort ord-course ?list)
+  (bind ?i 0)
+  (bind ?out (create$))
+  (foreach ?e ?list
+    (if (member$ ?category (send ?e get-category)) then
+    ;(if TRUE then
+      (bind ?out (insert$ ?out (+ (length$ ?out) 1) ?e)) 
+      (bind ?i (+ ?i 1))
+      (if (>= ?i ?n) then (break))
+    )
+  )
+  ?out
 )

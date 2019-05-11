@@ -1,64 +1,60 @@
-([tipus] of Nutrient
+([Nutrient_fat] of Nutrient
 	
-	(name_ "tipus"))
+	(name_ "Fat"))
 
-([fat] of Nutrient
+([Nutrient_carbohydrates] of Nutrient
 	
-	(name_ "fat"))
+	(name_ "Carbohydrates"))
 
-([carbohydrates] of Nutrient
+([Nutrient_calories] of Nutrient
 	
-	(name_ "carbohydrates"))
+	(name_ "Calories"))
 
-([calories] of Nutrient
+([Nutrient_sucrose] of Nutrient
 	
-	(name_ "calories"))
+	(name_ "Sucrose"))
 
-([sucrose] of Nutrient
+([Nutrient_glucose] of Nutrient
 	
-	(name_ "sucrose"))
+	(name_ "Glucose"))
 
-([glucose] of Nutrient
+([Nutrient_fructose] of Nutrient
 	
-	(name_ "glucose"))
+	(name_ "Fructose"))
 
-([fructose] of Nutrient
+([Nutrient_lactose] of Nutrient
 	
-	(name_ "fructose"))
+	(name_ "Lactose"))
 
-([lactose] of Nutrient
+([Nutrient_alcohol] of Nutrient
 	
-	(name_ "lactose"))
+	(name_ "Alcohol"))
 
-([alcohol] of Nutrient
+([Nutrient_caffeine] of Nutrient
 	
-	(name_ "alcohol"))
+	(name_ "Caffeine"))
 
-([caffeine] of Nutrient
+([Nutrient_sugar] of Nutrient
 	
-	(name_ "caffeine"))
+	(name_ "Sugar"))
 
-([sugar] of Nutrient
+([Nutrient_cholesterol] of Nutrient
 	
-	(name_ "sugar"))
+	(name_ "Cholesterol"))
 
-([cholesterol] of Nutrient
+([Nutrient_saturated] of Nutrient
 	
-	(name_ "cholesterol"))
+	(name_ "Saturated"))
 
-([saturated] of Nutrient
+([Nutrient_vitaminB5] of Nutrient
 	
-	(name_ "saturated"))
+	(name_ "Vitamin B5"))
 
-([vitaminB5] of Nutrient
+([Nutrient_vitaminB6] of Nutrient
 	
-	(name_ "vitaminB5"))
+	(name_ "Vitamin B6"))
 
-([vitaminB6] of Nutrient
+([Nutrient_vitaminB12] of Nutrient
 	
-	(name_ "vitaminB6"))
-
-([vitaminB12] of Nutrient
-	
-	(name_ "vitaminB12"))
+	(name_ "Vitamin B12"))
 
