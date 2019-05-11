@@ -21,10 +21,10 @@
 	}
 \begin{document}
 \maketitle
-%\vspace*{\fill}
-%\begin{center}
-%\includegraphics[scale=0.5]{images/UPClogo.png}
-%\end{center
+\vspace*{\fill}
+\begin{center}
+\includegraphics[scale=0.5]{images/UPClogo.png}
+\end{center}
 \newpage
 \tableofcontents
 \newpage
@@ -45,7 +45,6 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 \item \textbf{Implementación}, donde dividiremos el problema en módulos para encapsular las diferentes partes del procedimiento en la resolución descrita en la fase anterior. Esta fase se basará en una metodología de desarrollo incremental, partiendo de un prototipo inicial que se va aumentando hasta conseguir un sistema final. 
 \item \textbf{Prueba}, donde mediante juegos de prueba testearemos diferentes aspectos, en especial los más críticos, del sistema. 
 \end{itemize}
-
 
 \section{Identificación} %NOMÉS FALTA ESCRIURE AMB MÉS DETALL EL PROBLEMA
 En este primer apartado del trabajo, describiremos el problema, sus distintas partes y fuentes de infromación que requieren. Además añadiremos un análisis de viabilidad de utilizar un SBC para su resolución.
@@ -80,19 +79,18 @@ El objetivo final del problema es mostrar un menú para toda la semana que sea a
 Para esto el sistema tiene que cumplir una serie de objetivos: 
 \begin{itemize}
 	\item Obtener todos los datos del usuario que sean necesarios para poder utilizar el conocimiento del sistema y así poder devolver el mejor resultado posible
-	\item Inferir sobre las característiacs del usuario de forma que obtengamos un conjunto de platos específicos para el usuario
+	\item Inferir sobre las características del usuario de forma que obtengamos un conjunto de platos específicos para el usuario
 	\item Presentar al usuario el menú obtenido por el sistema		
 \end{itemize}
 
 Así pues esperamos de nuesto sistema un comportamiento que cumpla todos los objetivos indicados arriba para finalmente obtener unos resultados aceptables que esten concorde con el conocimiento del sistema. 
-
 \section{Conceptualización}
 En este apartado describiremos todos los conceptos del dominio. 
 
 \subsection{Conceptos del dominio}
 \begin{itemize}
 \item \textbf{Persona}: las características necesarias para definir correctamente a la persona (usuario) son: \begin{itemize}
-	\item \textbf{Edad}: tiene que ser \>= 65 ya que el sistema está orientado a ancianos
+	\item \textbf{Edad}: tiene que ser $>=$ 65 ya que el sistema está orientado a ancianos
 	\item \textbf{Género}: ya que dependiendo del sexo se tienen que seguir unas restricciones alimentícias u otras.
 	\item \textbf{Nivel de ejercicio semanal}: que puede ser COMPLETAR
 	\item \textbf{Enfermedades que padece}
@@ -144,7 +142,10 @@ En este apartado describiremos todos los conceptos del dominio.
 
 \end{itemize}
 
-
+\subsection{Problemas y subproblemas}
+\subsection{Ejemplos del conocimiento extraído del dominio}
+%aquí deberíamos explicar como hemos ido desarrollando prototipos de la implementación para demostrar que hemos usado una metodología incremental 
+\subsection{Flujo de razonamiento}
 \section{Formalización}
 
 \subsection{Desarrollo de la ontología}
@@ -223,7 +224,7 @@ Los atributos son:
 \begin{itemize}
 \item \textbf{season}: estación del año; puede ser Otoño, Verano, Invierno o Primavera
 \item \textbf{name}: nombre del ingrediente
-\item \textbf{nutrients}:nutrientes del ingrediente
+\item \textbf{nutrients}: nutrientes del ingrediente
 \end{itemize}
 
 
@@ -334,7 +335,6 @@ Los atributos son:
 
  explicar problemas que intervienen en la resolución
 % Descripción del proceso de resolución y como se organizasn los problemas y subproblemas
-
 \section{Implementación}
 
 \subsection{Creación de la ontología}
@@ -343,11 +343,11 @@ Para generar la ontología hemos usado el programa Protégé añadiendo las dife
 \\
 En cuanto a las instancias, hay una distinción básica entre ellas: estáticas y dinámicas. Hay algunas que se han creado dinámicamente durante la ejecucción del programa como podrían ser Persona o MenúDía. Para las estáticas en cambio (Nutriente, Plato, Ingrediente, IngredienteCantidad, NutrienteCantidad, Enfermedad o Limitaciones) hemos usado diversas bases de datos y un script en python para crearlas a priori y tener los archivos .pins necesarios. 
 \subsection{Módulos}
-*\\
-*\\
+\\
+\\
 THIS GOTTA BE WRITTEN STILL\\
-*\\
-*\\
+\\
+\\
 \subsection{Prototipos}
 %ES POT ALLARGAR I MILLORAR, FET PQ HO POSA A LES RÚBRIQUES
 Tal y como se ha mencionado anteriormente, hemos seguido para el desarrollo de la práctica un método incremental por prototipos. Este tipo de desarrollo nos ha permitido avanzar de manera más organizada y paulatina. 
@@ -355,7 +355,6 @@ Tal y como se ha mencionado anteriormente, hemos seguido para el desarrollo de l
 En un inicio, desarrollemos nuestro \textbf{prototipo inicial}: una ontología bastante completa (muy parecida a la que se ha utilizado en la versión final) y un sistema que hacía preguntas y creaba un menú totalmente random.  Nos sirvió para empezar a familiarizarnos con \textbf{Protégé} y \textbf{CLIPS} y en cómo tenían que ser las instancias. Después iteremos sobre ese prototipo: creemos un script en \textbf{Python} para facilitarnos la creación de las instancias y empezemos a añadir las primeras reglas básicas (i.e. restricciones de vegetariano). 
 \\
 Entonces después de hacer unos pequeños cambios en la ontología y por consiguiente en el script para crear instancias, procedimos a crear, de manera progresiva, las diferentes reglas inherentes al conocimiento.  
-
 
 \section{Juego de Prueba}
 %fer-ne més de 6 (lo que consideren un bon número)
@@ -367,11 +366,6 @@ Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas
 \subsection{Prueba 4: }
 \subsection{Prueba 5: }
 \subsection{Prueba 6: }
-
-%COSES QUE HAURÍEM DE TENIR SEGONS LES RÚBRIQUES 
-\subsection{Ejemplos del conocimiento extraído del dominio}
-%aquí deberíamos explicar como hemos ido desarrollando prototipos de la implementación para demostrar que hemos usado una metodología incremental 
-
 \section{Conclusión}
 Podemos concluir que hemos aprendido sobre SBC y sobre el desarrollo de éstos pues hemos sido capaces de desarrollar un SBC functional basado en otologías y reglas de producción.
 \medksip

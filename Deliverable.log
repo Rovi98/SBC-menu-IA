@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  11 MAY 2019 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  11 MAY 2019 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,14 +596,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 \c@lstlisting=\count116
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <12> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <6> on input line 24.
+<images/UPClogo.png, id=112, 569.12625pt x 170.6375pt>
+File: images/UPClogo.png Graphic file (type png)
+<use images/UPClogo.png>
+Package pdftex.def Info: images/UPClogo.png  used on input line 26.
+(pdftex.def)             Requested size: 284.56242pt x 85.31853pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Deliverable.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/UPClogo.png>] (./Deliverable.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -619,171 +624,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [3]
-./Deliverable.tex:95: Missing $ inserted.
-<inserted text> 
-                $
-l.95 	\item \textbf{Edad}: tiene que ser \>
-                                           = 65 ya que el sistema está orie...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 95.
-
-./Deliverable.tex:95: Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.95 ...ene que ser \>= 65 ya que el sistema está
-                                                   orientado a ancianos
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-./Deliverable.tex:95: You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.95 ...ene que ser \>= 65 ya que el sistema está
-                                                   orientado a ancianos
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-./Deliverable.tex:96: LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 	\item
-            \textbf{Género}: ya que dependiendo del sexo se tienen que segu...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Deliverable.tex:96: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 	\item \textbf
-                   {Género}: ya que dependiendo del sexo se tienen que segu...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Deliverable.tex:96: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 	\item \textbf
-                   {Género}: ya que dependiendo del sexo se tienen que segu...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 96.
-
-./Deliverable.tex:96: Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.96 ...en que seguir unas restricciones alimentí
-                                                  cias u otras.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-./Deliverable.tex:96: Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.96 ...en que seguir unas restricciones alimentí
-                                                  cias u otras.
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-
-LaTeX Warning: Command \i invalid in math mode on input line 96.
-
-./Deliverable.tex:96: You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.96 ...en que seguir unas restricciones alimentí
-                                                  cias u otras.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-./Deliverable.tex:97: LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 	\item
-            \textbf{Nivel de ejercicio semanal}: que puede ser COMPLETAR
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Deliverable.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 	\item \textbf
-                   {Nivel de ejercicio semanal}: que puede ser COMPLETAR
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Deliverable.tex:97: Missing } inserted.
-<inserted text> 
-                }
-l.97 	\item \textbf
-                   {Nivel de ejercicio semanal}: que puede ser COMPLETAR
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./Deliverable.tex:97: Missing } inserted.
-<inserted text> 
-                }
-l.97 	\item \textbf
-                   {Nivel de ejercicio semanal}: que puede ser COMPLETAR
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-
-Overfull \hbox (303.66443pt too wide) in paragraph at lines 95--97
-[]\OT1/cmr/bx/n/10 Edad\OT1/cmr/m/n/10 : tiene que ser $ = 65\OML/cmm/m/it/10 yaqueelsistemaest[]orientadoaancianos[] \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 yaquedependiendodelsexosetienenqueseguirunasrestriccionesaliment[]$ 
- []
-
-./Deliverable.tex:97: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.97 	\item \textbf
-                   {Nivel de ejercicio semanal}: que puede ser COMPLETAR
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-[4] [5]
-./Deliverable.tex:159: Undefined control sequence.
+ [3] [4] [5]
+./Deliverable.tex:160: Undefined control sequence.
 <argument> images\fulllight 
                             
-l.159 \includegraphics{images\fulllight.png}
+l.160 \includegraphics{images\fulllight.png}
                                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -791,11 +636,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Deliverable.tex:159: Undefined control sequence.
+./Deliverable.tex:160: Undefined control sequence.
 <write> 
 LaTeX Warning: File `images\fulllight 
                                                .png' not found\on@line .
-l.159 \includegraphics{images\fulllight.png}
+l.160 \includegraphics{images\fulllight.png}
                                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -804,108 +649,136 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: File `images.png' not found on input line 159.
+LaTeX Warning: File `images.png' not found on input line 160.
 
 
-./Deliverable.tex:159: Package pdftex.def Error: File `images.png' not found: using draft setting.
+./Deliverable.tex:160: Package pdftex.def Error: File `images.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 \includegraphics{images\fulllight.png}
+l.160 \includegraphics{images\fulllight.png}
                                             
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<images/classMenu.png, id=159, 300.12125pt x 270.00874pt>
+<images/classMenu.png, id=172, 300.12125pt x 270.00874pt>
 File: images/classMenu.png Graphic file (type png)
 <use images/classMenu.png>
-Package pdftex.def Info: images/classMenu.png  used on input line 168.
+Package pdftex.def Info: images/classMenu.png  used on input line 169.
 (pdftex.def)             Requested size: 150.06026pt x 135.00403pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
-<images/classCourse.png, id=160, 388.45125pt x 382.42876pt>
+[6 <./images/classMenu.png>]
+<images/classCourse.png, id=182, 388.45125pt x 382.42876pt>
 File: images/classCourse.png Graphic file (type png)
 <use images/classCourse.png>
-Package pdftex.def Info: images/classCourse.png  used on input line 191.
+Package pdftex.def Info: images/classCourse.png  used on input line 192.
 (pdftex.def)             Requested size: 194.22514pt x 191.2139pt.
-[6 <./images/classMenu.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
-<images/classIngredient.png, id=170, 334.24875pt x 289.08pt>
+<images/classIngredient.png, id=183, 334.24875pt x 289.08pt>
 File: images/classIngredient.png Graphic file (type png)
 <use images/classIngredient.png>
-Package pdftex.def Info: images/classIngredient.png  used on input line 213.
+Package pdftex.def Info: images/classIngredient.png  used on input line 214.
 (pdftex.def)             Requested size: 167.12396pt x 144.53964pt.
 [7 <./images/classCourse.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
-<images/classIngredientQuantity.png, id=178, 286.06876pt x 104.39pt>
+<images/classIngredientQuantity.png, id=191, 286.06876pt x 104.39pt>
 File: images/classIngredientQuantity.png Graphic file (type png)
 <use images/classIngredientQuantity.png>
-Package pdftex.def Info: images/classIngredientQuantity.png  used on input line 235.
+Package pdftex.def Info: images/classIngredientQuantity.png  used on input line 236.
 (pdftex.def)             Requested size: 143.03403pt x 52.19485pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--242
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
-<images/classNutrientQuantity.png, id=179, 253.94875pt x 104.39pt>
+<images/classNutrientQuantity.png, id=192, 253.94875pt x 104.39pt>
 File: images/classNutrientQuantity.png Graphic file (type png)
 <use images/classNutrientQuantity.png>
-Package pdftex.def Info: images/classNutrientQuantity.png  used on input line 275.
+Package pdftex.def Info: images/classNutrientQuantity.png  used on input line 276.
 (pdftex.def)             Requested size: 126.97406pt x 52.19485pt.
 [8 <./images/classIngredient.png> <./images/classIngredientQuantity.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
 
-<images/classDisease.png, id=188, 297.11pt x 104.39pt>
+<images/classDisease.png, id=201, 297.11pt x 104.39pt>
 File: images/classDisease.png Graphic file (type png)
 <use images/classDisease.png>
-Package pdftex.def Info: images/classDisease.png  used on input line 295.
+Package pdftex.def Info: images/classDisease.png  used on input line 296.
 (pdftex.def)             Requested size: 148.55463pt x 52.19485pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
-<images/classLimitation.png, id=189, 270.00874pt x 165.61874pt>
+<images/classLimitation.png, id=202, 270.00874pt x 165.61874pt>
 File: images/classLimitation.png Graphic file (type png)
 <use images/classLimitation.png>
-Package pdftex.def Info: images/classLimitation.png  used on input line 314.
+Package pdftex.def Info: images/classLimitation.png  used on input line 315.
 (pdftex.def)             Requested size: 135.00403pt x 82.80916pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
 
  []
 
 [9 <./images/classNutrientQuantity.png> <./images/classDisease.png> <./images/classLimitation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 346--351
+
+./Deliverable.tex:347: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.347 \\
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Deliverable.tex:348: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.348 T
+       HIS GOTTA BE WRITTEN STILL\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
 
  []
 
 [10]
-./Deliverable.tex:377: Undefined control sequence.
-l.377 \medksip
+./Deliverable.tex:371: Undefined control sequence.
+l.371 \medksip
               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -914,33 +787,33 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./Deliverable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
 Package rerunfilecheck Info: File `Deliverable.out' has not changed.
-(rerunfilecheck)             Checksum: 72DB29409FA2EF090C73DD1E6172B16D;1662.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+(rerunfilecheck)             Checksum: 7CD739D79C8972291FD5C2A30604AA21;1807.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
- 7284 strings out of 494880
- 105274 string characters out of 6179602
- 193780 words of memory out of 5000000
- 10500 multiletter control sequences out of 15000+600000
+ 7293 strings out of 494880
+ 105436 string characters out of 6179602
+ 194780 words of memory out of 5000000
+ 10506 multiletter control sequences out of 15000+600000
  8409 words of font info for 30 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 28i,7n,32p,753b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,7n,32p,753b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Deliverable.pdf (11 pages, 160328 bytes).
+Output written on Deliverable.pdf (11 pages, 164263 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
