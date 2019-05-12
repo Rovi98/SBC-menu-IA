@@ -10,9 +10,8 @@
 		[NutrientQuantity_vitaminB60028]
 		[NutrientQuantity_vitaminB1202])
 	(name_ "Cream, fluid, light whipping")
-	("season "
-		[Spring]")
-	(type DairyandEggProducts))
+	(season  Spring)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Milkproducerfluid37milkfat] of Ingredient
 	(nutrients 
@@ -26,12 +25,8 @@
 		[NutrientQuantity_vitaminB60042]
 		[NutrientQuantity_vitaminB12036])
 	(name_ "Milk, producer, fluid, 3.7% milkfat")
-	("season "
-		[Spring]
-		[Winter]
-		[Otono]
-		[Verano]")
-	(type DairyandEggProducts))
+	(season  Spring Winter)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Yogurtplainlowfat12gramsproteinper8ounce] of Ingredient
 	(nutrients 
@@ -45,11 +40,8 @@
 		[NutrientQuantity_vitaminB60049]
 		[NutrientQuantity_vitaminB12056])
 	(name_ "Yogurt, plain, low fat, 12 grams protein per 8 ounce")
-	("season "
-		[Verano]
-		[Spring]
-		[Otono]")
-	(type DairyandEggProducts))
+	(season  Spring Autumn Winter)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Yogurtfruitlowfat10gramsproteinper8ounce] of Ingredient
 	(nutrients 
@@ -63,9 +55,8 @@
 		[NutrientQuantity_vitaminB6004]
 		[NutrientQuantity_vitaminB12047])
 	(name_ "Yogurt, fruit, low fat, 10 grams protein per 8 ounce")
-	("season "
-		[Verano]")
-	(type DairyandEggProducts))
+	(season  Winter Autumn Spring Summer)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Eggwholecookedfried] of Ingredient
 	(nutrients 
@@ -80,12 +71,8 @@
 		[NutrientQuantity_vitaminB60184]
 		[NutrientQuantity_vitaminB12097])
 	(name_ "Egg, whole, cooked, fried")
-	("season "
-		[Verano]
-		[Otono]
-		[Winter]
-		[Spring]")
-	(type DairyandEggProducts))
+	(season  Summer Winter Spring Autumn)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Oilcocoabutter] of Ingredient
 	(nutrients 
@@ -93,10 +80,8 @@
 		[NutrientQuantity_sucrose884]
 		[NutrientQuantity_saturated597])
 	(name_ "Oil, cocoa butter")
-	("season "
-		[Spring]
-		[Winter]")
-	(type FatsandOils))
+	(season  Spring Autumn)
+	(type [FoodType_FatsandOils]))
 
 ([Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour] of Ingredient
 	(nutrients 
@@ -110,10 +95,8 @@
 		[NutrientQuantity_vitaminB6041]
 		[NutrientQuantity_vitaminB12031])
 	(name_ "Chicken, broilers or fryers, meat and skin, cooked, fried, flour")
-	("season "
-		[Winter]
-		[Verano]")
-	(type PoultryProducts))
+	(season  Autumn Winter Spring Summer)
+	(type [FoodType_PoultryProducts]))
 
 ([Ingredient_Chorizoporkandbeef] of Ingredient
 	(nutrients 
@@ -127,11 +110,8 @@
 		[NutrientQuantity_vitaminB6053]
 		[NutrientQuantity_vitaminB122])
 	(name_ "Chorizo, pork and beef")
-	("season "
-		[Otono]
-		[Winter]
-		[Verano]")
-	(type SausagesandLuncheonMeats))
+	(season  Summer Spring Autumn Winter)
+	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Hamslicedregularapproximately11fat] of Ingredient
 	(nutrients 
@@ -145,11 +125,8 @@
 		[NutrientQuantity_vitaminB60329]
 		[NutrientQuantity_vitaminB12042])
 	(name_ "Ham, sliced, regular (approximately 11% fat)")
-	("season "
-		[Otono]
-		[Spring]
-		[Verano]")
-	(type SausagesandLuncheonMeats))
+	(season  Winter)
+	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_SausageItalianporkraw] of Ingredient
 	(nutrients 
@@ -163,11 +140,8 @@
 		[NutrientQuantity_vitaminB603]
 		[NutrientQuantity_vitaminB12091])
 	(name_ "Sausage, Italian, pork, raw")
-	("season "
-		[Spring]
-		[Winter]
-		[Otono]")
-	(type SausagesandLuncheonMeats))
+	(season  Summer Autumn Spring)
+	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Salamidryorhardpork] of Ingredient
 	(nutrients 
@@ -181,12 +155,8 @@
 		[NutrientQuantity_vitaminB6055]
 		[NutrientQuantity_vitaminB1228])
 	(name_ "Salami, dry or hard, pork")
-	("season "
-		[Winter]
-		[Spring]
-		[Otono]
-		[Verano]")
-	(type SausagesandLuncheonMeats))
+	(season  Summer Spring Autumn Winter)
+	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Applesrawwithskin] of Ingredient
 	(nutrients 
@@ -201,12 +171,8 @@
 		[NutrientQuantity_vitaminB50061]
 		[NutrientQuantity_vitaminB60041])
 	(name_ "Apples, raw, with skin")
-	("season "
-		[Spring]
-		[Verano]
-		[Otono]
-		[Winter]")
-	(type FruitsandFruitJuices))
+	(season  Spring)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Bananasraw] of Ingredient
 	(nutrients 
@@ -221,12 +187,8 @@
 		[NutrientQuantity_vitaminB50334]
 		[NutrientQuantity_vitaminB60367])
 	(name_ "Bananas, raw")
-	("season "
-		[Spring]
-		[Otono]
-		[Verano]
-		[Winter]")
-	(type FruitsandFruitJuices))
+	(season  Summer)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Cherriessweetraw] of Ingredient
 	(nutrients 
@@ -240,12 +202,8 @@
 		[NutrientQuantity_vitaminB50199]
 		[NutrientQuantity_vitaminB60049])
 	(name_ "Cherries, sweet, raw")
-	("season "
-		[Otono]
-		[Verano]
-		[Spring]
-		[Winter]")
-	(type FruitsandFruitJuices))
+	(season  Autumn Winter)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Melonscasabaraw] of Ingredient
 	(nutrients 
@@ -257,9 +215,8 @@
 		[NutrientQuantity_vitaminB50084]
 		[NutrientQuantity_vitaminB60163])
 	(name_ "Melons, casaba, raw")
-	("season "
-		[Spring]")
-	(type FruitsandFruitJuices))
+	(season  Summer)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_OrangesrawCaliforniavalencias] of Ingredient
 	(nutrients 
@@ -271,11 +228,8 @@
 		[NutrientQuantity_vitaminB5025]
 		[NutrientQuantity_vitaminB60063])
 	(name_ "Oranges, raw, California, valencias")
-	("season "
-		[Verano]
-		[Winter]
-		[Spring]")
-	(type FruitsandFruitJuices))
+	(season  Autumn Spring Summer)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Pineapplecannedjuicepacksolidsandliquids] of Ingredient
 	(nutrients 
@@ -289,9 +243,8 @@
 		[NutrientQuantity_vitaminB501]
 		[NutrientQuantity_vitaminB60074])
 	(name_ "Pineapple, canned, juice pack, solids and liquids")
-	("season "
-		[Winter]")
-	(type FruitsandFruitJuices))
+	(season  Summer Winter Autumn)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Plumsraw] of Ingredient
 	(nutrients 
@@ -305,11 +258,8 @@
 		[NutrientQuantity_vitaminB50135]
 		[NutrientQuantity_vitaminB60029])
 	(name_ "Plums, raw")
-	("season "
-		[Spring]
-		[Winter]
-		[Verano]")
-	(type FruitsandFruitJuices))
+	(season  Summer Winter Spring)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Raisinsseeded] of Ingredient
 	(nutrients 
@@ -321,10 +271,8 @@
 		[NutrientQuantity_vitaminB50045]
 		[NutrientQuantity_vitaminB60188])
 	(name_ "Raisins, seeded")
-	("season "
-		[Winter]
-		[Otono]")
-	(type FruitsandFruitJuices))
+	(season  Spring)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Strawberriesraw] of Ingredient
 	(nutrients 
@@ -339,12 +287,8 @@
 		[NutrientQuantity_vitaminB50125]
 		[NutrientQuantity_vitaminB60047])
 	(name_ "Strawberries, raw")
-	("season "
-		[Verano]
-		[Spring]
-		[Otono]
-		[Winter]")
-	(type FruitsandFruitJuices))
+	(season  Winter Autumn)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Watermelonraw] of Ingredient
 	(nutrients 
@@ -358,12 +302,8 @@
 		[NutrientQuantity_vitaminB50221]
 		[NutrientQuantity_vitaminB60045])
 	(name_ "Watermelon, raw")
-	("season "
-		[Winter]
-		[Otono]
-		[Spring]
-		[Verano]")
-	(type FruitsandFruitJuices))
+	(season  Winter)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Pearsasianraw] of Ingredient
 	(nutrients 
@@ -375,11 +315,8 @@
 		[NutrientQuantity_vitaminB5007]
 		[NutrientQuantity_vitaminB60022])
 	(name_ "Pears, asian, raw")
-	("season "
-		[Winter]
-		[Otono]
-		[Spring]")
-	(type FruitsandFruitJuices))
+	(season  Winter Summer)
+	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Porkcuredhamcenterslicecountry-styleseparableleanonlyraw] of Ingredient
 	(nutrients 
@@ -393,12 +330,8 @@
 		[NutrientQuantity_vitaminB6042]
 		[NutrientQuantity_vitaminB12088])
 	(name_ "Pork, cured, ham, center slice, country-style, separable lean only, raw")
-	("season "
-		[Spring]
-		[Winter]
-		[Verano]
-		[Otono]")
-	(type PorkProducts))
+	(season  Winter Summer Autumn)
+	(type [FoodType_PorkProducts]))
 
 ([Ingredient_Beanssnapgreenfrozencookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
@@ -410,11 +343,8 @@
 		[NutrientQuantity_vitaminB50049]
 		[NutrientQuantity_vitaminB6006])
 	(name_ "Beans, snap, green, frozen, cooked, boiled, drained without salt")
-	("season "
-		[Verano]
-		[Winter]
-		[Spring]")
-	(type VegetablesandVegetableProducts))
+	(season  Spring Winter Summer)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Onionsraw] of Ingredient
 	(nutrients 
@@ -428,11 +358,8 @@
 		[NutrientQuantity_vitaminB50123]
 		[NutrientQuantity_vitaminB6012])
 	(name_ "Onions, raw")
-	("season "
-		[Otono]
-		[Verano]
-		[Winter]")
-	(type VegetablesandVegetableProducts))
+	(season  Winter Autumn)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Onionsdehydratedflakes] of Ingredient
 	(nutrients 
@@ -444,10 +371,8 @@
 		[NutrientQuantity_vitaminB5138]
 		[NutrientQuantity_vitaminB616])
 	(name_ "Onions, dehydrated flakes")
-	("season "
-		[Spring]
-		[Verano]")
-	(type VegetablesandVegetableProducts))
+	(season  Autumn Spring Winter)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Pumpkincookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
@@ -459,9 +384,8 @@
 		[NutrientQuantity_vitaminB50201]
 		[NutrientQuantity_vitaminB60044])
 	(name_ "Pumpkin, cooked, boiled, drained, without salt")
-	("season "
-		[Verano]")
-	(type VegetablesandVegetableProducts))
+	(season  Autumn Summer)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoesredriperawyearroundaverage] of Ingredient
 	(nutrients 
@@ -474,10 +398,8 @@
 		[NutrientQuantity_vitaminB50089]
 		[NutrientQuantity_vitaminB6008])
 	(name_ "Tomatoes, red, ripe, raw, year round average")
-	("season "
-		[Spring]
-		[Winter]")
-	(type VegetablesandVegetableProducts))
+	(season  Summer Spring Winter Autumn)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoproductscannedsauce] of Ingredient
 	(nutrients 
@@ -491,11 +413,8 @@
 		[NutrientQuantity_vitaminB50309]
 		[NutrientQuantity_vitaminB60098])
 	(name_ "Tomato products, canned, sauce")
-	("season "
-		[Winter]
-		[Otono]
-		[Spring]")
-	(type VegetablesandVegetableProducts))
+	(season  Winter)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Carrotscookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
@@ -510,11 +429,8 @@
 		[NutrientQuantity_vitaminB50232]
 		[NutrientQuantity_vitaminB60153])
 	(name_ "Carrots, cooked, boiled, drained, with salt")
-	("season "
-		[Verano]
-		[Winter]
-		[Otono]")
-	(type VegetablesandVegetableProducts))
+	(season  Summer Autumn Winter Spring)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Eggplantcookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
@@ -526,10 +442,8 @@
 		[NutrientQuantity_vitaminB50075]
 		[NutrientQuantity_vitaminB60086])
 	(name_ "Eggplant, cooked, boiled, drained, with salt")
-	("season "
-		[Otono]
-		[Winter]")
-	(type VegetablesandVegetableProducts))
+	(season  Autumn Spring Winter)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Pepperssweetredcookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
@@ -541,9 +455,8 @@
 		[NutrientQuantity_vitaminB50079]
 		[NutrientQuantity_vitaminB60233])
 	(name_ "Peppers, sweet, red, cooked, boiled, drained, without salt")
-	("season "
-		[Verano]")
-	(type VegetablesandVegetableProducts))
+	(season  Winter Autumn Spring)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Potatoesboiledcookedinskinfleshwithsalt] of Ingredient
 	(nutrients 
@@ -555,10 +468,8 @@
 		[NutrientQuantity_vitaminB5052]
 		[NutrientQuantity_vitaminB60299])
 	(name_ "Potatoes, boiled, cooked in skin, flesh, with salt")
-	("season "
-		[Spring]
-		[Verano]")
-	(type VegetablesandVegetableProducts))
+	(season  Spring Summer Winter)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Squashsummerzucchiniincludesskincookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
@@ -570,9 +481,8 @@
 		[NutrientQuantity_vitaminB50288]
 		[NutrientQuantity_vitaminB6008])
 	(name_ "Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt")
-	("season "
-		[Spring]")
-	(type VegetablesandVegetableProducts))
+	(season  Autumn Summer Winter Spring)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoesredripecookedwithsalt] of Ingredient
 	(nutrients 
@@ -585,12 +495,8 @@
 		[NutrientQuantity_vitaminB50129]
 		[NutrientQuantity_vitaminB60079])
 	(name_ "Tomatoes, red, ripe, cooked, with salt")
-	("season "
-		[Spring]
-		[Winter]
-		[Otono]
-		[Verano]")
-	(type VegetablesandVegetableProducts))
+	(season  Winter Summer)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Cornsweetwhitecannedwholekernelregularpacksolidsandliquids] of Ingredient
 	(nutrients 
@@ -602,12 +508,8 @@
 		[NutrientQuantity_vitaminB50522]
 		[NutrientQuantity_vitaminB60037])
 	(name_ "Corn, sweet, white, canned, whole kernel, regular pack, solids and liquids")
-	("season "
-		[Spring]
-		[Verano]
-		[Otono]
-		[Winter]")
-	(type VegetablesandVegetableProducts))
+	(season  Autumn)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Seedssunflowerseedkernelstoastedwithoutsalt] of Ingredient
 	(nutrients 
@@ -619,10 +521,8 @@
 		[NutrientQuantity_vitaminB57056]
 		[NutrientQuantity_vitaminB60805])
 	(name_ "Seeds, sunflower seed kernels, toasted, without salt")
-	("season "
-		[Winter]
-		[Spring]")
-	(type NutandSeedProducts))
+	(season  Summer Winter Autumn)
+	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend] of Ingredient
 	(nutrients 
@@ -635,12 +535,8 @@
 		[NutrientQuantity_saturated671]
 		[NutrientQuantity_vitaminB60495])
 	(name_ "Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend")
-	("season "
-		[Spring]
-		[Winter]
-		[Otono]
-		[Verano]")
-	(type NutandSeedProducts))
+	(season  Summer Autumn Winter)
+	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_Nutswalnutsblackdried] of Ingredient
 	(nutrients 
@@ -655,9 +551,8 @@
 		[NutrientQuantity_vitaminB5166]
 		[NutrientQuantity_vitaminB60583])
 	(name_ "Nuts, walnuts, black, dried")
-	("season "
-		[Otono]")
-	(type NutandSeedProducts))
+	(season  Autumn)
+	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised] of Ingredient
 	(nutrients 
@@ -671,11 +566,8 @@
 		[NutrientQuantity_vitaminB6035]
 		[NutrientQuantity_vitaminB1233])
 	(name_ "Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised")
-	("season "
-		[Winter]
-		[Verano]
-		[Otono]")
-	(type BeefProducts))
+	(season  Winter Spring)
+	(type [FoodType_BeefProducts]))
 
 ([Ingredient_Fishflatfishflounderandsolespeciescookeddryheat] of Ingredient
 	(nutrients 
@@ -689,12 +581,8 @@
 		[NutrientQuantity_vitaminB60115]
 		[NutrientQuantity_vitaminB12131])
 	(name_ "Fish, flatfish (flounder and sole species), cooked, dry heat")
-	("season "
-		[Otono]
-		[Spring]
-		[Verano]
-		[Winter]")
-	(type FinfishandShellfishProducts))
+	(season  Winter Autumn)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_FishsardineAtlanticcannedinoildrainedsolidswithbone] of Ingredient
 	(nutrients 
@@ -708,12 +596,8 @@
 		[NutrientQuantity_vitaminB60167]
 		[NutrientQuantity_vitaminB12894])
 	(name_ "Fish, sardine, Atlantic, canned in oil, drained solids with bone")
-	("season "
-		[Spring]
-		[Verano]
-		[Winter]
-		[Otono]")
-	(type FinfishandShellfishProducts))
+	(season  Winter Spring Autumn Summer)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Fishtunafreshbluefincookeddryheat] of Ingredient
 	(nutrients 
@@ -727,9 +611,8 @@
 		[NutrientQuantity_vitaminB60525]
 		[NutrientQuantity_vitaminB121088])
 	(name_ "Fish, tuna, fresh, bluefin, cooked, dry heat")
-	("season "
-		[Verano]")
-	(type FinfishandShellfishProducts))
+	(season  Autumn Winter Summer Spring)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Mollusksmusselbluecookedmoistheat] of Ingredient
 	(nutrients 
@@ -743,10 +626,8 @@
 		[NutrientQuantity_vitaminB601]
 		[NutrientQuantity_vitaminB1224])
 	(name_ "Mollusks, mussel, blue, cooked, moist heat")
-	("season "
-		[Otono]
-		[Winter]")
-	(type FinfishandShellfishProducts))
+	(season  Spring)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Molluskssquidmixedspeciescookedfried] of Ingredient
 	(nutrients 
@@ -760,9 +641,8 @@
 		[NutrientQuantity_vitaminB60058]
 		[NutrientQuantity_vitaminB12123])
 	(name_ "Mollusks, squid, mixed species, cooked, fried")
-	("season "
-		[Winter]")
-	(type FinfishandShellfishProducts))
+	(season  Autumn Spring)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_FishsalmonAtlanticwildcookeddryheat] of Ingredient
 	(nutrients 
@@ -776,11 +656,8 @@
 		[NutrientQuantity_vitaminB60944]
 		[NutrientQuantity_vitaminB12305])
 	(name_ "Fish, salmon, Atlantic, wild, cooked, dry heat")
-	("season "
-		[Verano]
-		[Otono]
-		[Spring]")
-	(type FinfishandShellfishProducts))
+	(season  Winter Summer)
+	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids] of Ingredient
 	(nutrients 
@@ -792,10 +669,8 @@
 		[NutrientQuantity_vitaminB50299]
 		[NutrientQuantity_vitaminB60473])
 	(name_ "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids")
-	("season "
-		[Spring]
-		[Otono]")
-	(type LegumesandLegumeProducts))
+	(season  Summer Winter)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari] of Ingredient
 	(nutrients 
@@ -807,12 +682,8 @@
 		[NutrientQuantity_vitaminB50051]
 		[NutrientQuantity_vitaminB60052])
 	(name_ "Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)")
-	("season "
-		[Spring]
-		[Verano]
-		[Winter]
-		[Otono]")
-	(type LegumesandLegumeProducts))
+	(season  Spring)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Veggieburgersorsoyburgersunprepared] of Ingredient
 	(nutrients 
@@ -830,10 +701,8 @@
 		[NutrientQuantity_vitaminB60303]
 		[NutrientQuantity_vitaminB12201])
 	(name_ "Veggie burgers or soyburgers, unprepared")
-	("season "
-		[Otono]
-		[Spring]")
-	(type LegumesandLegumeProducts))
+	(season  Winter)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD] of Ingredient
 	(nutrients 
@@ -846,9 +715,8 @@
 		[NutrientQuantity_vitaminB60049]
 		[NutrientQuantity_vitaminB12111])
 	(name_ "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D")
-	("season "
-		[Winter]")
-	(type LegumesandLegumeProducts))
+	(season  Autumn)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Lentilsmatureseedscookedboiledwithsalt] of Ingredient
 	(nutrients 
@@ -860,9 +728,8 @@
 		[NutrientQuantity_vitaminB50638]
 		[NutrientQuantity_vitaminB60178])
 	(name_ "Lentils, mature seeds, cooked, boiled, with salt")
-	("season "
-		[Verano]")
-	(type LegumesandLegumeProducts))
+	(season  Winter Spring Autumn)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Peassplitmatureseedscookedboiledwithsalt] of Ingredient
 	(nutrients 
@@ -874,9 +741,8 @@
 		[NutrientQuantity_vitaminB50595]
 		[NutrientQuantity_vitaminB60048])
 	(name_ "Peas, split, mature seeds, cooked, boiled, with salt")
-	("season "
-		[Verano]")
-	(type LegumesandLegumeProducts))
+	(season  Spring Winter Summer Autumn)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared] of Ingredient
 	(nutrients 
@@ -889,9 +755,8 @@
 		[NutrientQuantity_vitaminB6015]
 		[NutrientQuantity_vitaminB1208])
 	(name_ "MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared")
-	("season "
-		[Spring]")
-	(type LegumesandLegumeProducts))
+	(season  Autumn)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared] of Ingredient
 	(nutrients 
@@ -903,9 +768,8 @@
 		[NutrientQuantity_saturated11]
 		[NutrientQuantity_vitaminB6009])
 	(name_ "MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared")
-	("season "
-		[Otono]")
-	(type LegumesandLegumeProducts))
+	(season  Autumn Spring Winter)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Breadfrenchorviennaincludessourdough] of Ingredient
 	(nutrients 
@@ -919,9 +783,8 @@
 		[NutrientQuantity_vitaminB50455]
 		[NutrientQuantity_vitaminB60107])
 	(name_ "Bread, french or vienna (includes sourdough)")
-	("season "
-		[Verano]")
-	(type BakedProducts))
+	(season  Autumn Winter)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadirishsodapreparedfromrecipe] of Ingredient
 	(nutrients 
@@ -935,9 +798,8 @@
 		[NutrientQuantity_vitaminB60083]
 		[NutrientQuantity_vitaminB12005])
 	(name_ "Bread, irish soda, prepared from recipe")
-	("season "
-		[Verano]")
-	(type BakedProducts))
+	(season  Spring Summer Autumn Winter)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadwhitecommerciallypreparedincludessoftbreadcrumbs] of Ingredient
 	(nutrients 
@@ -951,11 +813,8 @@
 		[NutrientQuantity_vitaminB50536]
 		[NutrientQuantity_vitaminB60087])
 	(name_ "Bread, white, commercially prepared (includes soft bread crumbs)")
-	("season "
-		[Verano]
-		[Spring]
-		[Otono]")
-	(type BakedProducts))
+	(season  Spring Summer Autumn Winter)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadwhitecommerciallypreparedtoasted] of Ingredient
 	(nutrients 
@@ -969,10 +828,8 @@
 		[NutrientQuantity_vitaminB60063]
 		[NutrientQuantity_vitaminB12002])
 	(name_ "Bread, white, commercially prepared, toasted")
-	("season "
-		[Winter]
-		[Verano]")
-	(type BakedProducts))
+	(season  Winter Summer Autumn)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery] of Ingredient
 	(nutrients 
@@ -989,9 +846,8 @@
 		[NutrientQuantity_saturated5917]
 		[NutrientQuantity_vitaminB5019])
 	(name_ "Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery")
-	("season "
-		[Winter]")
-	(type BakedProducts))
+	(season  Winter Spring Summer Autumn)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Cakefruitcakecommerciallyprepared] of Ingredient
 	(nutrients 
@@ -1005,10 +861,8 @@
 		[NutrientQuantity_vitaminB60046]
 		[NutrientQuantity_vitaminB12001])
 	(name_ "Cake, fruitcake, commercially prepared")
-	("season "
-		[Spring]
-		[Otono]")
-	(type BakedProducts))
+	(season  Summer Spring)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Englishmuffinsplainenrichedwithcapropincludessourdough] of Ingredient
 	(nutrients 
@@ -1023,11 +877,8 @@
 		[NutrientQuantity_vitaminB60054]
 		[NutrientQuantity_vitaminB12004])
 	(name_ "English muffins, plain, enriched, with ca prop (includes sourdough)")
-	("season "
-		[Winter]
-		[Verano]
-		[Otono]")
-	(type BakedProducts))
+	(season  Winter Autumn Spring)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Rollshamburgerorhotdogmixed-grain] of Ingredient
 	(nutrients 
@@ -1040,12 +891,8 @@
 		[NutrientQuantity_vitaminB60092]
 		[NutrientQuantity_vitaminB12001])
 	(name_ "Rolls, hamburger or hotdog, mixed-grain")
-	("season "
-		[Verano]
-		[Otono]
-		[Spring]
-		[Winter]")
-	(type BakedProducts))
+	(season  Autumn Summer Winter Spring)
+	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Dessertsflancaramelcustardprepared-from-recipe] of Ingredient
 	(nutrients 
@@ -1059,9 +906,8 @@
 		[NutrientQuantity_vitaminB60044]
 		[NutrientQuantity_vitaminB12036])
 	(name_ "Desserts, flan, caramel custard, prepared-from-recipe")
-	("season "
-		[Winter]")
-	(type Sweets))
+	(season  Winter)
+	(type [FoodType_Sweets]))
 
 ([Ingredient_Gelatindessertsdrymixpreparedwithwater] of Ingredient
 	(nutrients 
@@ -1070,10 +916,8 @@
 		[NutrientQuantity_sucrose62]
 		[NutrientQuantity_vitaminB50002])
 	(name_ "Gelatin desserts, dry mix, prepared with water")
-	("season "
-		[Winter]
-		[Verano]")
-	(type Sweets))
+	(season  Spring Winter Autumn Summer)
+	(type [FoodType_Sweets]))
 
 ([Ingredient_Jamsandpreserves] of Ingredient
 	(nutrients 
@@ -1085,12 +929,8 @@
 		[NutrientQuantity_vitaminB5002]
 		[NutrientQuantity_vitaminB6002])
 	(name_ "Jams and preserves")
-	("season "
-		[Verano]
-		[Otono]
-		[Winter]
-		[Spring]")
-	(type Sweets))
+	(season  Summer)
+	(type [FoodType_Sweets]))
 
 ([Ingredient_Couscouscooked] of Ingredient
 	(nutrients 
@@ -1102,12 +942,8 @@
 		[NutrientQuantity_vitaminB50371]
 		[NutrientQuantity_vitaminB60051])
 	(name_ "Couscous, cooked")
-	("season "
-		[Spring]
-		[Winter]
-		[Otono]
-		[Verano]")
-	(type CerealGrainsandPasta))
+	(season  Spring Winter)
+	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Ricewhitemedium-grainenrichedcooked] of Ingredient
 	(nutrients 
@@ -1119,11 +955,8 @@
 		[NutrientQuantity_vitaminB50411]
 		[NutrientQuantity_vitaminB6005])
 	(name_ "Rice, white, medium-grain, enriched, cooked")
-	("season "
-		[Winter]
-		[Verano]
-		[Spring]")
-	(type CerealGrainsandPasta))
+	(season  Autumn)
+	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Noodleseggenrichedcooked] of Ingredient
 	(nutrients 
@@ -1139,12 +972,8 @@
 		[NutrientQuantity_vitaminB60046]
 		[NutrientQuantity_vitaminB12009])
 	(name_ "Noodles, egg, enriched, cooked")
-	("season "
-		[Verano]
-		[Spring]
-		[Winter]
-		[Otono]")
-	(type CerealGrainsandPasta))
+	(season  Summer Autumn Winter)
+	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Pastacookedenrichedwithaddedsalt] of Ingredient
 	(nutrients 
@@ -1159,11 +988,8 @@
 		[NutrientQuantity_vitaminB50112]
 		[NutrientQuantity_vitaminB60049])
 	(name_ "Pasta, cooked, enriched, with added salt")
-	("season "
-		[Verano]
-		[Otono]
-		[Spring]")
-	(type CerealGrainsandPasta))
+	(season  Summer Autumn)
+	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Spaghettiprotein-fortifiedcookedenrichednx625] of Ingredient
 	(nutrients 
@@ -1175,10 +1001,8 @@
 		[NutrientQuantity_vitaminB50286]
 		[NutrientQuantity_vitaminB60064])
 	(name_ "Spaghetti, protein-fortified, cooked, enriched (n x 6.25)")
-	("season "
-		[Otono]
-		[Verano]")
-	(type CerealGrainsandPasta))
+	(season  Winter)
+	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled] of Ingredient
 	(nutrients 
@@ -1191,11 +1015,8 @@
 		[NutrientQuantity_vitaminB60623]
 		[NutrientQuantity_vitaminB12203])
 	(name_ "Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled")
-	("season "
-		[Verano]
-		[Winter]
-		[Spring]")
-	(type BeefProducts))
+	(season  Summer Winter Autumn)
+	(type [FoodType_BeefProducts]))
 
 ([Ingredient_Soupchickennoodlereducedsodiumcannedready-to-serve] of Ingredient
 	(nutrients 
@@ -1209,12 +1030,8 @@
 		[NutrientQuantity_vitaminB6006]
 		[NutrientQuantity_vitaminB12015])
 	(name_ "Soup, chicken noodle, reduced sodium, canned, ready-to-serve")
-	("season "
-		[Verano]
-		[Spring]
-		[Winter]
-		[Otono]")
-	(type SoupsSaucesandGravies))
+	(season  Spring Winter Summer)
+	(type [FoodType_SoupsSaucesandGravies]))
 
 ([Ingredient_Imitationcheeseamericanorcheddarlowcholesterol] of Ingredient
 	(nutrients 
@@ -1227,9 +1044,8 @@
 		[NutrientQuantity_vitaminB6007]
 		[NutrientQuantity_vitaminB12083])
 	(name_ "Imitation cheese, american or cheddar, low cholesterol")
-	("season "
-		[Otono]")
-	(type DairyandEggProducts))
+	(season  Winter)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Milkbuttermilkfluidculturedreducedfat] of Ingredient
 	(nutrients 
@@ -1242,11 +1058,8 @@
 		[NutrientQuantity_vitaminB6003]
 		[NutrientQuantity_vitaminB12037])
 	(name_ "Milk, buttermilk, fluid, cultured, reduced fat")
-	("season "
-		[Otono]
-		[Verano]
-		[Spring]")
-	(type DairyandEggProducts))
+	(season  Summer Spring Autumn)
+	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds] of Ingredient
 	(nutrients 
@@ -1258,11 +1071,8 @@
 		[NutrientQuantity_vitaminB616]
 		[NutrientQuantity_vitaminB1247])
 	(name_ "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds")
-	("season "
-		[Winter]
-		[Spring]
-		[Verano]")
-	(type BreakfastCereals))
+	(season  Autumn Summer)
+	(type [FoodType_BreakfastCereals]))
 
 ([Ingredient_Meatballsmeatless] of Ingredient
 	(nutrients 
@@ -1275,10 +1085,8 @@
 		[NutrientQuantity_vitaminB602]
 		[NutrientQuantity_vitaminB1215])
 	(name_ "Meatballs, meatless")
-	("season "
-		[Verano]
-		[Winter]")
-	(type LegumesandLegumeProducts))
+	(season  Summer Spring Autumn Winter)
+	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded] of Ingredient
 	(nutrients 
@@ -1289,9 +1097,8 @@
 		[NutrientQuantity_saturated0039]
 		[NutrientQuantity_vitaminB6008])
 	(name_ "Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added")
-	("season "
-		[Otono]")
-	(type VegetablesandVegetableProducts))
+	(season  Summer Spring Autumn)
+	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium] of Ingredient
 	(nutrients 
@@ -1305,9 +1112,6 @@
 		[NutrientQuantity_vitaminB60349]
 		[NutrientQuantity_vitaminB12123])
 	(name_ "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium")
-	("season "
-		[Winter]
-		[Verano]
-		[Spring]")
-	(type PorkProducts))
+	(season  Summer Autumn Winter Spring)
+	(type [FoodType_PorkProducts]))
 

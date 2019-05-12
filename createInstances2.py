@@ -3,68 +3,6 @@ import csv
 import re
 import random
 
-## ALL INGREDIENTS USED IN ORDER TO DELETE THOSE THAT ARE NOT USED FROM INGREDIENS.PINS
-INGREDIENTS_USED = [
-"Oil, cocoa butter", "Bread, white, commercially prepared (includes soft bread crumbs)"
-,"Jams and preserves", "Bread, white, commercially prepared, toasted"
-,"Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium", "Egg, whole, cooked, fried"
-,"Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds", "Milk, producer, fluid, 3.7% milkfat"
-,"English muffins, plain, enriched, with ca prop (includes sourdough)"
-,"Salami, dry or hard, pork", "Bread, french or vienna (includes sourdough)"
-,"Ham, sliced, regular (approximately 11% fat)", "Bread, french or vienna (includes sourdough)"
-,"Chorizo, pork and beef", "Bread, french or vienna (includes sourdough)"
-,"Imitation cheese, american or cheddar, low cholesterol", "Bread, french or vienna (includes sourdough)"
-,"Nuts, walnuts, black, dried", "Raisins, seeded",  "Seeds, sunflower seed kernels, toasted, without salt", "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D"
-,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)","Tomatoes, red, ripe, raw, year round average", "Bread, white, commercially prepared (includes soft bread crumbs)"
-,"Pasta, cooked, enriched, with added salt", "Tomato products, canned, sauce"
-,"Rice, white, medium-grain, enriched, cooked", "Tomato products, canned, sauce"
-,"Beans, snap, green, frozen, cooked, boiled, drained without salt", "Potatoes, boiled, cooked in skin, flesh, with salt"
-,"Soup, chicken noodle, reduced sodium, canned, ready-to-serve"
-,"Pumpkin, cooked, boiled, drained, without salt", "Potatoes, boiled, cooked in skin, flesh, with salt"
-,"Noodles, egg, enriched, cooked", "Mollusks, squid, mixed species, cooked, fried", "Mollusks, mussel, blue, cooked, moist heat"
-,"Lentils, mature seeds, cooked, boiled, with salt", "Peppers, sweet, red, cooked, boiled, drained, without salt", "Onions, raw"
-,"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids"
-,"Melons, casaba, raw", "Pork, cured, ham, center slice, country-style, separable lean only, raw"
-,"Rice, white, medium-grain, enriched, cooked", "Peas, split, mature seeds, cooked, boiled, with salt",  "Corn, sweet, white, canned, whole kernel, regular pack, solids and liquids"
-,"Carrots, cooked, boiled, drained, with salt", "Potatoes, boiled, cooked in skin, flesh, with salt", "Peas, split, mature seeds, cooked, boiled, with salt"
-,"Couscous, cooked", "Carrots, cooked, boiled, drained, with salt", "Peppers, sweet, red, cooked, boiled, drained, without salt"
-,"Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added"
-,"Spaghetti, protein-fortified, cooked, enriched (n x 6.25)", "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium", "Milk, buttermilk, fluid, cultured, reduced fat"
-,"Chicken, broilers or fryers, meat and skin, cooked, fried, flour"
-,"Rolls, hamburger or hotdog, mixed-grain", "Tomatoes, red, ripe, raw, year round average", "Bread, irish soda, prepared from recipe"
-,"Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled"
-,"Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised"
-,"Fish, tuna, fresh, bluefin, cooked, dry heat"
-,"Fish, salmon, Atlantic, wild, cooked, dry heat"
-,"Fish, flatfish (flounder and sole species), cooked, dry heat", "Onions, dehydrated flakes", "Pineapple, canned, juice pack, solids and liquids"
-,"Fish, sardine, Atlantic, canned in oil, drained solids with bone"
-,"Sausage, Italian, pork, raw"
-,"Meatballs, meatless"
-,"MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared"
-,"Veggie burgers or soyburgers, unprepared", "Tomatoes, red, ripe, raw, year round average", "Bread, irish soda, prepared from recipe"
-,"MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared"
-,"Eggplant, cooked, boiled, drained, with salt", "Tomatoes, red, ripe, cooked, with salt",  "Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt"
-,"Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery"
-,"Yogurt, fruit, low fat, 10 grams protein per 8 ounce"
-,"Yogurt, plain, low fat, 12 grams protein per 8 ounce"
-,"Gelatin desserts, dry mix, prepared with water"
-,"Desserts, flan, caramel custard, prepared-from-recipe"
-,"Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend"
-,"Cake, fruitcake, commercially prepared"
-,"Apples, raw, with skin"
-,"Bananas, raw"
-,"Watermelon, raw"
-,"Plums, raw"
-,"Cherries, sweet, raw"
-,"Pears, asian, raw"
-,"Oranges, raw, California, valencias"
-,"Strawberries, raw","Cream, fluid, light whipping"
-]
-
-
-
-
-
 Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
 ["Jam Toasts",[("Jams and preserves",30), ("Bread, white, commercially prepared, toasted",90)]],
 ["Bacon and Fried Eggs",[("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",40), ("Egg, whole, cooked, fried",100)]],
@@ -123,11 +61,16 @@ Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with choc
 ["Orange",[("Oranges, raw, California, valencias",100)]],
 ["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
 
-              
+## SET OF INGREDIENTS USED IN ORDER TO NOT INCLUDE IN INGREDIENS.PINS THOSE THAT ARE NOT USED
+INGREDIENTS_USED = set()
+for course in list(Breakfast+FirstCourse+SecondCourse+Dessert):
+    for ingredient in course[1]:
+        INGREDIENTS_USED.add(ingredient[0])
+
 # DISEASES: LIMITATIONS AND NAME
 #TODO AFEGIR MÉS ENFERMETATS
 
-ENFERMETATS = [[['Nutrients_sugar-50','Type_Sweets-50'],'Diabetes'],
+ENFERMETATS = [[['Nutrients_sugar-50','FoodType_Sweets-50'],'Diabetes'],
                 [['Nutrients_gluten-100'],'Celiac'],
                 [['Nutrients_colesterol-50','fat-50'],'Colesterol']]
 
@@ -198,11 +141,15 @@ NUTRIENTS = dict(
         vitaminB12='Vitamin B12')
 
 def writeList(prefix, llista):
-    llista =list(map(lambda x:'\n\t\t['+prefix+cleanString(x)+']' , llista))
+    llista =list(map(lambda x:'\n\t\t['+prefix+x+']' , llista))
     return "".join(llista)
 
 def writeList2(prefix, llista):
     llista =list(map(lambda x:'\n\t\t['+prefix+cleanString2(x)+']' , llista))
+    return "".join(llista)
+
+def writeListSimple(prefix, llista):
+    llista =list(map(lambda x:' '+prefix+x, llista))
     return "".join(llista)
     
 def cleanString(word):
@@ -234,6 +181,9 @@ def main():
                 continue
             else:
                 if len(row) < 2:
+                    continue
+
+                if(row[1] not in INGREDIENTS_USED):
                     continue
 
                 ingredients_name.append(row[1])
@@ -296,22 +246,20 @@ def main():
     # INGREDIENTS
     # ARA MATEIX LO DE SEASONS ES MEGA RANDOM: agafa un subset random de la tupla que hi ha a sota
    
-    seasons = ('Verano', 'Otono', 'Winter', 'Spring')
+    seasons = ('Summer', 'Autumn', 'Winter', 'Spring')
+
     with open('./instances/Ingredients.pins','w') as t:
         for i,i2 in enumerate(ingredients_name):
-            if(i2 in INGREDIENTS_USED):
                 t.write('([Ingredient_'+ cleanString(i2) + '] of Ingredient\n\t(nutrients '+writeList2("NutrientQuantity_", ingredients_nutrients[i].items())+')')
                 t.write('\n\t(name_ "'+i2+'")')
-                t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
-                t.write('\n\t(type '+cleanString(ingredients_type[i])+'))\n\n')
-            else:
-                continue
+                t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
+                t.write('\n\t(type [FoodType_'+cleanString(ingredients_type[i])+']))\n\n')
     t.close()
     print('Instances of ingredients: DONE')
     
     # ENFERMETATS
 
-    with open('./instances/Disease.pins','w') as r:
+    with open('./instances/Diseases.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
             r.write('([Disease_'+ cleanString(i2[1]) + '] of '+ 'Disease\n\t(limitations '+writeList("Limitation",i2[0])+')')
             r.write('\n\t(name_ '+i2[1]+'))\n\n')
@@ -320,10 +268,10 @@ def main():
     
     #LIMITATIONS NUTRIENT
    
-    with open('./instances/LimitationsNutrients.pins','w') as r:
+    with open('./instances/LimitationsNutrient.pins','w') as r:
         for i,i2 in enumerate(LIMITACIONS_NUTRIENTS):
-            r.write('([LimitationNutrients_'+ cleanString2(i2) + '] of '+ 'LimitationNutrients\n\t(value '+cleanString(i2[1])+')')
-            r.write('\n\t(nutrient '+cleanString(i2[0])+'))\n\n')                      
+            r.write('([LimitationNutrient_'+ cleanString2(i2) + '] of '+ 'LimitationNutrient\n\t(value '+cleanString(i2[1])+')')
+            r.write('\n\t(nutrient [Nutrient_'+cleanString(i2[0])+']))\n\n')                      
     r.close()
     print('Instances of limitació nutrients: DONE')
 
@@ -333,15 +281,15 @@ def main():
     with open('./instances/LimitationsType.pins','w') as r:
       for i,i2 in enumerate(LIMITACIONS_TIPUS):
             r.write('([LimitationType_'+ cleanString2(i2) + '] of '+ 'LimitationType\n\t(value '+cleanString(i2[1])+')')
-            r.write('\n\t(type '+cleanString(i2[0])+'))\n\n')                     
+            r.write('\n\t(type [FoodType_'+cleanString(i2[0])+']))\n\n')                     
     r.close()
     print('Instances of limitació tipus: DONE')
 
     #FOOD TYPE
-    with open('./instances/FoodType.pins','w') as r:
+    with open('./instances/FoodTypes.pins','w') as r:
         for i,i2 in enumerate(FOOD_TYPES):
-            r.write('([FoodType'+ cleanString(i2) + ']')
-            r.write('\n\t(name_"'+cleanString(i2)+'])\n\n')                         
+            r.write('([FoodType_'+ cleanString(i2) + '] of FoodType')
+            r.write('\n\t(name_ "'+ i2 +'"))\n\n')                         
     r.close()
     print('Instances of tipus de menjar: DONE')
     
@@ -351,22 +299,22 @@ def main():
         for i,i2 in enumerate(Breakfast):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
+            t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
             t.write('\n\t(category '+'Breakfast'+'))\n\n')
         for i,i2 in enumerate(FirstCourse):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
+            t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
             t.write('\n\t(category '+'FirstCourse'+'))\n\n')
         for i,i2 in enumerate(SecondCourse):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
+            t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
             t.write('\n\t(category '+'SecondCourse'+'))\n\n')
         for i,i2 in enumerate(Dessert):
             t.write('([Course_'+ cleanString(i2[0]) + '] of Course\n\t(ingredients '+writeList2("IngredientQuantity_", i2[1])+')')
             t.write('\n\t(name_ "'+i2[0]+'")')
-            t.write('\n\t("season "'+writeList("",random.sample(seasons,random.randint(1,len(seasons))))+'")')
+            t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
             t.write('\n\t(category '+'Dessert'+'))\n\n')
     t.close()
     print('Instances of plats: DONE')

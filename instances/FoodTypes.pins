@@ -1,0 +1,60 @@
+([FoodType_DairyandEggProducts] of FoodType
+	(name_ "Dairy and Egg Products"))
+
+([FoodType_SpicesandHerbs] of FoodType
+	(name_ "Spices and Herbs"))
+
+([FoodType_FatsandOils] of FoodType
+	(name_ "Fats and Oils"))
+
+([FoodType_PoultryProducts] of FoodType
+	(name_ "Poultry Products"))
+
+([FoodType_FruitsandFruitJuices] of FoodType
+	(name_ "Fruits and Fruit Juices"))
+
+([FoodType_PorkProducts] of FoodType
+	(name_ "Pork Products"))
+
+([FoodType_VegetablesandVegetableProducts] of FoodType
+	(name_ "Vegetables and Vegetable Products"))
+
+([FoodType_NutandSeedProducts] of FoodType
+	(name_ "Nut and Seed Products"))
+
+([FoodType_BeefProducts] of FoodType
+	(name_ "Beef Products"))
+
+([FoodType_SausagesandLuncheonMeats] of FoodType
+	(name_ "Sausages and Luncheon Meats"))
+
+([FoodType_Beverages] of FoodType
+	(name_ "Beverages"))
+
+([FoodType_FinfishandShellfishProducts] of FoodType
+	(name_ "Finfish and Shellfish Products"))
+
+([FoodType_LegumesandLegumeProducts] of FoodType
+	(name_ "Legumes and Legume Products"))
+
+([FoodType_Sweets] of FoodType
+	(name_ "Sweets"))
+
+([FoodType_SoupsSaucesandGravies] of FoodType
+	(name_ "Soups, Sauces, and Gravies"))
+
+([FoodType_SnacksBreakfastCereals] of FoodType
+	(name_ "SnacksBreakfast Cereals"))
+
+([FoodType_BabyFoods] of FoodType
+	(name_ "Baby Foods"))
+
+([FoodType_BakedProducts] of FoodType
+	(name_ "Baked Products"))
+
+([FoodType_LambVealandGameProducts] of FoodType
+	(name_ "Lamb, Veal, and Game Products"))
+
+([FoodType_CerealGrainsandPasta] of FoodType
+	(name_ "Cereal Grains and Pasta"))
+
