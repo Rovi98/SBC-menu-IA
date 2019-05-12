@@ -4,13 +4,26 @@
 ;%
 ;%%%%%
 
+(defglobal ?*debug-print* = t) ; nil vs t
+
+(deftemplate user
+  (slot sex (type SYMBOL))
+  (slot age-range (type INTEGER))
+  (slot exercise-level (type SYMBOL))
+  (multislot foodtypes-positive (type INSTANCE))
+  (multislot foodtypes-negative (type INSTANCE))
+  (multislot preferences (type INSTANCE))
+  (multislot diseases (type INSTANCE))
+)
+
+(deffacts facts-initialization
+    (user)
+)
+
 (defglobal
   ?*WEEKDAYS* = (create$ Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
   ?*MEALS* = (create$ Breakfast Lunch Dinner)
   ?*SEASONS* = (slot-allowed-values Course season)
-  ?*DISEASES* = (create$ Diabetes Celiaco Intolerante-Lactosa Hipertension Osteoporosis VIH Cancer ELA Ebola)
-  ;?*FOODTYPES* = (create$ Fruits Vegetables Meat Fish Pasta)
-  ?*FOODTYPES* = (slot-allowed-values Ingredient type)
   ;?*EVENT_TYPES* = (create$ Familiar Congress)
   ;?*DRINK_TYPES* = (create$ Alcohol Soft-drinks Caffeine Juice none)
   ;?*CUISINE_STYLES* = (create$ Mediterranean Spanish Italian French Chinese Japanese Turkish American Mexican Indian Moroccan Gourmet any)
@@ -21,7 +34,7 @@
 ;;;* MENU STATE RULES *
 ;;;********************
 
-(defrule menu-done ""
+(defrule menu-done
    (declare (salience 10))
    (menu-done)
    =>
@@ -86,100 +99,120 @@
 
 ;(assert (menu-done))
 
-(defrule normal-menu-state-conclusions ""
-   (declare (salience 10))
-   (vegetables-state ?)
-   (age-range ?)
-   (season ?)
-   (diseases ?)
-   (sex ?)
-   (exercise ?)
-   (preferences-positive ?)
-   (preferences-negative ?)
+(defrule normal-menu-state-conclusions
+  (declare (salience 10))
+  (asked-age-range)
+  (season ?)
+  (asked-vegetables-preference)
+  (asked-diseases)
+  (asked-sex)
+  (asked-exercise-level)
+  (asked-foodtypes-positive)
+  (asked-foodtypes-negative)
    =>
    (assert (menu-done))
 )
 
-(defrule vegetables-state-vegetarian ""
-   (vegetables-state vegetarian)
+(defrule apply-preferences
+  (asked-vegetables-preference)
+  (not (applied-preferences))
+  (user (preferences $?prefs))
    =>
-    (foreach ?lim (send [Preference_Vegetarian] get-limitations)
-      (send ?lim apply)
+    (foreach ?pref ?prefs
+      (foreach ?lim (send ?pref get-limitations)
+        (send ?lim apply)
+      )
     )
+    (assert (applied-preferences))
 )
 
 ;;;***************
 ;;;* QUERY RULES *
 ;;;***************
 
-(defrule determine-preferences-positive ""
-  (not (preferences-positive ?))
+(defrule determine-age-range
+  (not (asked-age-range))
+  ?user <- (user)
   =>
-   (bind ?response (ask-question-multi-opt "Do you really like any of the following foods? List as many as required." ?*FOODTYPES*))
-   (assert(preferences-positive ?response))
-)
-
-(defrule determine-preferences-negative ""
-  (not (preferences-negative ?))
-  =>
-   (bind ?response (ask-question-multi-opt "Do you dislike any of the following foods? List as many as required." ?*FOODTYPES*))
-   (assert(preferences-negative ?response))
-)
-
-(defrule determine-vegetables-state ""
-   (not (vegetables-state ?))
-   =>
-   (if (ask-question-yes-no "Do you eat meat?")
-       then
-       (assert (vegetables-state normal))
-       else
-       (if (ask-question-yes-no "Do you eat milk or egs?")
-           then (assert (vegetables-state vegetarian))
-           else (assert (vegetables-state vegan))
-      )
+    (bind ?num (ask-question-num "How old are you?" 0 150))
+    (if (< ?num 65) then
+      (modify ?user (age-range 1))
     )
+    (if (<= 65 ?num 74) then
+      (modify ?user (age-range 2))
+    )
+    (if (<= 75 ?num 84) then
+      (modify ?user (age-range 3))
+    )
+    (if (<= 85 ?num ) then
+      (modify ?user (age-range 4))
+    )
+    (assert (asked-age-range))
 )
 
-(defrule determine-disease ""
-  (not (diseases $?))
+(defrule determine-sex
+  (not (asked-sex))
+  ?user <- (user)
   =>
-   (bind ?response (ask-question-multi-opt "Do you have any of the following diseases? List as many as required." ?*DISEASES*))
-   (assert(diseases ?response))
+    (bind ?response (ask-question-opt "What is your gender?" (create$ Male Female n/a)))
+    (modify ?user (sex ?response))
+    (assert (asked-sex))
 )
 
-(defrule determine-exercise ""
-  (not (exercise ?))
+(defrule determine-exercise-level
+  (not (asked-exercise-level))
+  ?user <- (user)
   =>
    (bind ?response (ask-question-opt "How much exercise do you do per week?" (create$ None Once-a-week Twice-a-week More)))
-   (assert(exercise ?response))
+   (modify ?user (exercise-level ?response))
+   (assert (asked-exercise-level))
 )
 
-(defrule determine-sex ""
-  (not (sex ?))
+(defrule determine-diseases
+  (not (asked-diseases))
+  ?user <- (user)
   =>
-   (bind ?response (ask-question-opt "What is your gender?" (create$ Male Female n/a)))
-   (assert(sex ?response))
+   (bind ?response (ask-question-multi-opt-instances "Do you have any of the following diseases? List as many as required." Disease (create$)))
+   (modify ?user (diseases ?response))
+   (assert (asked-diseases))
 )
 
-(defrule determine-age-range ""
-  (not (age ?))
+(defrule determine-vegetables-preference
+  (not (asked-vegetables-preference))
+  (user (preferences $?prefs))
+  ?user <- (user)
+   =>
+    (if (not (ask-question-yes-no "Do you eat meat?")) then
+      (if (ask-question-yes-no "Do you eat milk or eggs?") then
+        (modify ?user (preferences ?prefs [Preference_Vegetarian]))
+      else
+        (modify ?user (preferences ?prefs [Preference_Vegan]))
+      )
+    )
+   (assert (asked-vegetables-preference))
+)
+
+(defrule determine-foodtypes-positive
+  (not (asked-foodtypes-positive))
+  (user (foodtypes-negative $?exclude))
+  ?user <- (user)
   =>
-  (bind ?num (ask-question-num "How old are you?" 0 150))
-  (if (< ?num 65) then
-    (assert (age-range range1))
-  )
-  (if (<= 65 ?num 74) then
-    (assert (age-range range2))
-  )
-  (if (<= 75 ?num 84) then
-    (assert (age-range range3))
-  )
-  (if (<= 85 ?num ) then
-    (assert (age-range range4))
-  )
+    (bind ?response (ask-question-multi-opt-instances "Do you really LIKE any of the following foods? List as many as required." FoodType $?exclude))
+    (modify ?user (foodtypes-positive ?response))
+    (assert (asked-foodtypes-positive))
 )
 
-(defrule determine-season ""
+(defrule determine-foodtypes-negative
+  (not (asked-foodtypes-negative))
+  (user (foodtypes-positive $?exclude))
+  ?user <- (user)
+  =>
+    (bind ?response (ask-question-multi-opt-instances "Do you DISLIKE any of the following foods? List as many as required." FoodType $?exclude))
+    (modify ?user (foodtypes-negative ?response))
+    (assert (asked-foodtypes-negative))
+)
+
+(defrule determine-season
    (not (temporada ?))
    =>
    (bind ?response (ask-question-opt "Which season do you want the menu for?" ?*SEASONS*))
@@ -190,7 +223,7 @@
 ;;;* STARTUP AND OUTPUT RULES *
 ;;;****************************
 
-(defrule system-banner ""
+(defrule system-banner
   (declare (salience 10))
   =>
   (printout t crlf crlf)
@@ -225,26 +258,26 @@
 )
 
 (defmessage-handler Lunch display ()
-  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · [Postre] " (send ?self:dessert get-name_) crlf)
+  (printout t "|| · " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| · " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| · " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler Dinner display ()
-  (printout t "|| · [1r Plato] " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| · [2o Plato] " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · [Postre] " (send ?self:dessert get-name_) crlf)
+  (printout t "|| · " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| · " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| · " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler MenuDay display ()
   (printout t "||" crlf)
-  (printout t "|| >>> Desayuno <<<" crlf)
+  (printout t "|| >>> Breakfast <<<" crlf)
   (printout t (send ?self:breakfast display))
   (printout t "||" crlf)
-  (printout t "|| >>>  Comida  <<<" crlf)
+  (printout t "|| >>>   Lunch   <<<" crlf)
   (printout t (send ?self:lunch display))
   (printout t "||" crlf)
-  (printout t "|| >>>   Cena   <<<" crlf)
+  (printout t "|| >>>   Dinner  <<<" crlf)
   (printout t (send ?self:dinner display))
   (printout t "||" crlf)
 )
@@ -317,7 +350,7 @@
       (eq ?self:type (send ?ingrQty:ingredient get-type))
     )
     (bind ?prev_score (send ?cour get-score))
-    (printout t "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
+    (printout ?*debug-print* "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
     (send ?cour put-score (+ ?prev_score (* ?self:value (send ?ingrQty get-quantity))))
   )
 )

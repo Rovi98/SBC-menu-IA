@@ -67,6 +67,44 @@
   )
 )
 
+(deffunction names-list (?instances)
+  (bind ?out (create$))
+  (foreach ?i ?instances
+    (bind ?out (insert$ ?out (+ (length$ ?out) 1) (send ?i get-name_))) 
+  )
+)
+
+(deffunction ask-question-multi-opt-instances (?question ?class ?exclude)
+  (bind ?instances (find-all-instances ((?c ?class)) (not (member$ ?c ?exclude))))
+  (bind ?names (names-list ?instances))
+  (bind ?count (length$ ?instances))
+  
+  (if (= ?count 0) then (return (create$)))
+
+  (while TRUE do ;return function will exit this loop
+    (printout t "| > " ?question " ")
+    (loop-for-count (?i ?count) do
+      (printout t crlf tab ?i ") " (nth$ ?i ?names))
+    )
+    (printout t crlf "| ")
+    (bind ?line (readline))
+    (bind $?answer (explode$ ?line))
+    (bind ?out (create$))
+    (foreach ?i ?answer
+      (if (not (num-between ?i 1 ?count)) then
+        (break)
+      )
+      (bind ?v (nth$ ?i ?instances))
+      (if (not (member$ ?v ?out)) then
+        (bind ?out (insert$ ?out 1 ?v))
+      )
+    )
+    (if (eq (length$ ?out) (length$ ?answer)) then
+      (return ?out)
+    )
+  )
+)
+
 (deffunction ask-question-num (?question ?min ?max)
   (while TRUE do ;return function will exit this loop
     (printout t "| > " ?question " ")

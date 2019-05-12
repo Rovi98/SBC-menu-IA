@@ -1,4 +1,4 @@
-; Sun May 12 18:59:29 CEST 2019
+; Sun May 12 19:23:28 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -74,8 +74,8 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(slot type
-		(type SYMBOL)
-		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(slot quantity
@@ -119,8 +119,8 @@
 	(is-a USER)
 	(role concrete)
 	(slot type
-		(type SYMBOL)
-		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot nutrients
@@ -285,8 +285,8 @@
 	(is-a Limitation)
 	(role concrete)
 	(slot type
-		(type SYMBOL)
-		(allowed-values NutandSeedProducts PorkProducts DairyandEggProducts BakedProducts SoupsSaucesandGravies Sweets BeefProducts SausagesandLuncheonMeats FruitsandFruitJuices VegetablesandVegetableProducts BabyFoods FatsandOils PoultryProducts FinfishandShellfishProducts LegumesandLegumeProducts Snacks Beverages BreakfastCereals SpicesandHerbs CerealGrainsandPasta LambVealandGameProducts)
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(slot value
