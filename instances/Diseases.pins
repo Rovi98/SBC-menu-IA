@@ -1,17 +1,17 @@
 ([Disease_Diabetes] of Disease
 	(limitations 
-		[LimitationNutrients_sugar-50]
-		[LimitationFoodType_Sweets-50])
-	(name_ Diabetes))
+		[LimitationNutrient_sugar-50]
+		[LimitationType_Sweets-50])
+	(name_ "Diabetes"))
 
 ([Disease_Celiac] of Disease
 	(limitations 
-		[LimitationNutrients_gluten-100])
-	(name_ Celiac))
+		[LimitationNutrient_gluten-100])
+	(name_ "Celiac"))
 
 ([Disease_Colesterol] of Disease
 	(limitations 
-		[LimitationNutrients_colesterol-50]
-		[Limitationfat-50])
-	(name_ Colesterol))
+		[LimitationNutrient_colesterol-50]
+		[LimitationNutrient_fat-50])
+	(name_ "Colesterol"))
 

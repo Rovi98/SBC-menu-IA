@@ -58,7 +58,7 @@
       )
       (bind ?v (nth$ ?i ?allowed-values))
       (if (not (member$ ?v ?out)) then
-        (bind ?out (insert$ ?out 1 ?v))
+        (bind ?out (create$ ?out ?v))
       )
     )
     (if (eq (length$ ?out) (length$ ?answer)) then
@@ -70,7 +70,7 @@
 (deffunction names-list (?instances)
   (bind ?out (create$))
   (foreach ?i ?instances
-    (bind ?out (insert$ ?out (+ (length$ ?out) 1) (send ?i get-name_))) 
+    (bind ?out (create$ ?out (send ?i get-name_)))
   )
 )
 
@@ -96,7 +96,7 @@
       )
       (bind ?v (nth$ ?i ?instances))
       (if (not (member$ ?v ?out)) then
-        (bind ?out (insert$ ?out 1 ?v))
+        (bind ?out (create$ ?out ?v))
       )
     )
     (if (eq (length$ ?out) (length$ ?answer)) then
@@ -122,7 +122,7 @@
   (printout t (send ?menuWeek display))
 )
 
-(deffunction random-from-list (?list)
+(deffunction random-item (?list)
   (nth$ (random 1 (length$ ?list)) ?list)
 )
 
@@ -149,8 +149,7 @@
   (bind ?out (create$))
   (foreach ?e ?list
     (if (member$ ?category (send ?e get-category)) then
-    ;(if TRUE then
-      (bind ?out (insert$ ?out (+ (length$ ?out) 1) ?e)) 
+      (bind ?out (create$ ?out ?e))
       (bind ?i (+ ?i 1))
       (if (>= ?i ?n) then (break))
     )

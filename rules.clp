@@ -39,12 +39,11 @@
    (menu-done)
    =>
     (bind ?menuWeek (make-instance (gensym) of MenuWeek))
-    (bind ?list-courses (sort-courses (find-all-instances ((?c Course)) TRUE)))
-
-    (bind ?breakfasts (get-n-courses-of-category ?list-courses 7 Breakfast))
-    (bind ?firstCourses (get-n-courses-of-category ?list-courses (* 7 2) FirstCourse))
-    (bind ?secondCourses (get-n-courses-of-category ?list-courses (* 7 2) SecondCourse))
-    (bind ?desserts (get-n-courses-of-category ?list-courses (* 7 2) Dessert))
+    
+    (bind ?breakfasts (sort-courses (find-all-instances ((?c Course)) (member$ Breakfast ?c:category))))
+    (bind ?firstCourses (sort-courses (find-all-instances ((?c Course)) (member$ FirstCourse ?c:category))))
+    (bind ?secondCourses (sort-courses (find-all-instances ((?c Course)) (member$ SecondCourse ?c:category))))
+    (bind ?desserts (sort-courses (find-all-instances ((?c Course)) (member$ Dessert ?c:category))))
 
    (loop-for-count (?i 0 6) do
       (bind ?breakfast
@@ -113,17 +112,48 @@
    (assert (menu-done))
 )
 
-(defrule apply-preferences
+(defrule apply-specific-preferences
   (asked-vegetables-preference)
-  (not (applied-preferences))
+  (not (applied-specific-preferences))
   (user (preferences $?prefs))
    =>
     (foreach ?pref ?prefs
       (foreach ?lim (send ?pref get-limitations)
+        ;(printout t ?lim crlf)
         (send ?lim apply)
       )
     )
-    (assert (applied-preferences))
+    (assert (applied-specific-preferences))
+)
+
+(defrule apply-diseases
+  (asked-diseases)
+  (not (applied-diseases))
+  (user (diseases $?diss))
+   =>
+    (foreach ?dis ?diss
+      (foreach ?lim (send ?dis get-limitations)
+        ;(printout t ?lim crlf)
+        (send ?lim apply)
+      )
+    )
+    (assert (applied-diseases))
+)
+
+(defrule apply-foodtypes-preferences
+  (asked-foodtypes-positive)
+  (asked-foodtypes-negative)
+  (not (applied-foodtypes-preferences))
+  (user (foodtypes-positive $?types-positive))
+  (user (foodtypes-negative $?types-negative))
+   =>
+    (foreach ?type ?types-positive
+      (send ?type apply-as-preference +50)
+    )
+    (foreach ?type ?types-negative
+      (send ?type apply-as-preference -50)
+    )
+    (assert (applied-foodtypes-preferences))
 )
 
 ;;;***************
@@ -345,26 +375,35 @@
 
 (defmessage-handler LimitationType apply ()
   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity))
-    (and 
-      (member$ ?ingrQty ?cour:ingredients)
+    (and
       (eq ?self:type (send ?ingrQty:ingredient get-type))
+      (member$ ?ingrQty ?cour:ingredients)
     )
-    (bind ?prev_score (send ?cour get-score))
-    (printout ?*debug-print* "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
-    (send ?cour put-score (+ ?prev_score (* ?self:value (send ?ingrQty get-quantity))))
+    (printout ?*debug-print* "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty " of type " ?self:type crlf)
+    (send ?cour put-score (+ ?cour:score (* ?self:value ?ingrQty:quantity)))
   )
 )
 
-; (defmessage-handler LimitationNutrient apply ()
-;   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity) (?nutrQty Nutrient))
-;     (and 
-;       (member$ ?ingrQty (send ?cour get-ingredients))
-;       (member$ ?nutr (send ?cour get-nutrients))
-;       (eq ?self:type  (send (send ?ingrQty get-ingredient) get-type))
-;     )
-;     (bind ?prev_score (send ?cour get-score))
-;     (printout t "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty crlf)
-;     (send ?cour put-score (+ ?prev_score (* ?self:value (send ?ingrQty get-quantity))))
-;   )
-; )
+(defmessage-handler LimitationNutrient apply ()
+  (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity) (?nutrQty NutrientQuantity))
+    (and
+      (eq ?self:nutrient ?nutrQty:nutrient)
+      (member$ ?nutrQty (send ?ingrQty:ingredient get-nutrients))
+      (member$ ?ingrQty ?cour:ingredients)
+    )
+    (printout t "DEBUG: reduced score of course " ?cour " because it has " ?ingrQty " with nutrient " ?nutrQty crlf)
+    (send ?cour put-score (+ ?cour:score (* ?self:value ?ingrQty:quantity ?nutrQty:quantity 0.1)))
+  )
+)
+
+(defmessage-handler FoodType apply-as-preference (?value)
+  (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity))
+    (and
+      (eq (instance-name ?self) (send ?ingrQty:ingredient get-type))
+      (member$ ?ingrQty ?cour:ingredients)
+    )
+    (printout ?*debug-print* "DEBUG: changed score (" ?value ") of course " ?cour " because it has " ?ingrQty " of type " ?self crlf)
+    (send ?cour put-score (+ ?cour:score (* ?value ?ingrQty:quantity)))
+  )
+)
 

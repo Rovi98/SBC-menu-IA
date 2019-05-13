@@ -34,7 +34,7 @@
 
 ([LimitationType_PoultryProducts-80] of LimitationType
 	(value -80)
-	(type [FoodType_PoultryProducts))
+	(type [FoodType_PoultryProducts]))
 
 ([LimitationType_FinfishandShellfishProducts-80] of LimitationType
 	(value -80)

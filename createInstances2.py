@@ -70,9 +70,9 @@ for course in list(Breakfast+FirstCourse+SecondCourse+Dessert):
 # DISEASES: LIMITATIONS AND NAME
 #TODO AFEGIR MÉS ENFERMETATS
 
-ENFERMETATS = [[['Nutrients_sugar-50','FoodType_Sweets-50'],'Diabetes'],
-                [['Nutrients_gluten-100'],'Celiac'],
-                [['Nutrients_colesterol-50','fat-50'],'Colesterol']]
+ENFERMETATS = [[['Nutrient_sugar-50','Type_Sweets-50'],'Diabetes'],
+                [['Nutrient_gluten-100'],'Celiac'],
+                [['Nutrient_colesterol-50','Nutrient_fat-50'],'Colesterol']]
 
 # TODO AFEGIR ENFERMETATS AMB ELS TIPUS QUE TINGUIN SENTIT
 """
@@ -262,7 +262,7 @@ def main():
     with open('./instances/Diseases.pins','w') as r:
         for i,i2 in enumerate(ENFERMETATS):
             r.write('([Disease_'+ cleanString(i2[1]) + '] of '+ 'Disease\n\t(limitations '+writeList("Limitation",i2[0])+')')
-            r.write('\n\t(name_ '+i2[1]+'))\n\n')
+            r.write('\n\t(name_ "'+i2[1]+'"))\n\n')
     r.close()
     print('Instances of enfermetats: DONE')
     
