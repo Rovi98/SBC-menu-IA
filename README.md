@@ -1,14 +1,10 @@
 # TODO
-- Dataset dishes.  Add information Attributes
-	- Primer plato, segundo plato (RANDOM) en el csv
-	- TEMPORADA LAS CUATRO POR DEFECTO
-		- TODO: canviar/afegir algunes manualment
--	- POSTRES 
-		- Manual del csv
-- Dataset de ingredients
-	- Obtenir csv?
-	- Convertir a clips
-	- Asegurar compatibilitat de ids amb dishes 
+- Jocs de Prova
+- Documentació IT SHOULD BE DONE TODAY
+	- RESOLUCIÓN
+	- SUBPROBLEMAS, BLABLABLA
+- CLIPS A MUERTE 
+- SCRIPT INSTANCES EVERYTHING IS FINISHED
 
 
 # Questions (Aquestes ja estan posades)
