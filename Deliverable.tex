@@ -143,9 +143,51 @@ En este apartado describiremos todos los conceptos del dominio.
 \end{itemize}
 
 \subsection{Problemas y subproblemas}
+
+Uno de los mejores métodos para trabajar con grandes problemas como este es dividirlos en varios subproblemas más pequeños para poderlo solucionar.
+
+En nuestro caso lo vamos a dividir entre los siguientes 4:
+
+\subsubsection{Recogida de información personal}
+
+En esta parte del problema realizaremos varias preguntas al usuario (descritas en el apartado anterior), donde obtendremos la suficiente información para luego poder ser usado y obtener un menú adecuado a las condiciones y gustos de la persona.
+
+\subsubsection{Análisis de los datos personales}
+
+Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. En esta parte también vamos a descartar aquellos platos que la persona no pueda tener en su menú en ninguna circunstancia.
+
+\subsubsection{Filtrado de platos para el menú}
+
+Vamos a coger los diferentes platos y los vamos a repartir mediante ... FALTA ACABAR UN COP DECIDIM L?ALGORITME FINAL
+
+\subsubsection{Impresión del menú}
+
+Una vez tengamos el menú construido vamos a sacar por pantalla el menú final de la semana, donde por cada plato habrá sus ingredientes.
+Después del menú va a salir la información nutricional del menú obtenido, comparados con los resultados que deberíamos tener a partir de la información que nos ha dado la persona en el primer subproblema.
+
 \subsection{Ejemplos del conocimiento extraído del dominio}
 %aquí deberíamos explicar como hemos ido desarrollando prototipos de la implementación para demostrar que hemos usado una metodología incremental 
+A partir de información que obtenemos del dominio podemos llegar a clasificar los platos en función de las características y peticiones de cada persona.
+
+Por ejemplo a partir de las siguientes características o preferencias que podríamos obtener a partir de las preguntas hechas, obtendríamos los siguientes resultados.
+
+\begin{itemize}
+	\item En el caso de los vegetarianos vamos a quitar de los posibles platos aquellos que tengan algún ingrediente del tipos carne.
+	\item Si la persona tuviera diabetes vamos a intentar que los platos sugeridos tengan poca cantidades de azúcares.
+	\item En cambio si la persona responde que le gusta un alimento en concreto vamos a puntuar de una forma más alta aquellos platos que contengan el alimento en cuestión.
+\end{itemize}
+
 \subsection{Flujo de razonamiento}
+
+Para poder clasificar correctamente los platos en nuestro problema a partir de las preguntas hechas.
+
+Primero de todo pasaremos un filtro donde se eliminaran del conjunto de platos, aquellos que la persona no puede tomar en ninguna circunstancia.
+
+A continuación los platos que hayan pasado de la opción anterior serán puntuados para prioriza que platos debe o no debe tomar dicha persona.
+
+Al final obtendremos una lista ordenada de los mejores platos para la persona, con los cuales diseñaremos el menú más adecuado para cada usuario. 
+
+
 \section{Formalización}
 
 \subsection{Desarrollo de la ontología}
