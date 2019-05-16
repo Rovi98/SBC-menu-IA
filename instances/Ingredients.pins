@@ -1,1117 +1,993 @@
 ([Ingredient_Creamfluidlightwhipping] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat217]
-		[NutrientQuantity_carbohydrates3091]
-		[NutrientQuantity_calories046]
-		[NutrientQuantity_sucrose292]
+		[NutrientQuantity_fat3091]
+		[NutrientQuantity_carbohydrates296]
+		[NutrientQuantity_calories292]
+		[NutrientQuantity_sugar296]
 		[NutrientQuantity_cholesterol111]
 		[NutrientQuantity_saturated19337]
-		[NutrientQuantity_vitaminB50259]
-		[NutrientQuantity_vitaminB60028]
-		[NutrientQuantity_vitaminB1202])
+		[NutrientQuantity_calcium69])
 	(name_ "Cream, fluid, light whipping")
-	(season  Winter Spring Summer Autumn)
+	(season  Summer)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Milkproducerfluid37milkfat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat328]
-		[NutrientQuantity_carbohydrates366]
-		[NutrientQuantity_calories072]
-		[NutrientQuantity_sucrose64]
+		[NutrientQuantity_fat366]
+		[NutrientQuantity_carbohydrates465]
+		[NutrientQuantity_calories64]
 		[NutrientQuantity_cholesterol14]
 		[NutrientQuantity_saturated2278]
-		[NutrientQuantity_vitaminB50313]
-		[NutrientQuantity_vitaminB60042]
-		[NutrientQuantity_vitaminB12036])
+		[NutrientQuantity_calcium119])
 	(name_ "Milk, producer, fluid, 3.7% milkfat")
-	(season  Autumn Summer Winter)
+	(season  Spring Winter Summer Autumn)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Yogurtplainlowfat12gramsproteinper8ounce] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat525]
-		[NutrientQuantity_carbohydrates155]
-		[NutrientQuantity_calories109]
-		[NutrientQuantity_sucrose63]
+		[NutrientQuantity_fat155]
+		[NutrientQuantity_carbohydrates704]
+		[NutrientQuantity_calories63]
+		[NutrientQuantity_sugar704]
 		[NutrientQuantity_cholesterol6]
 		[NutrientQuantity_saturated1]
-		[NutrientQuantity_vitaminB50591]
-		[NutrientQuantity_vitaminB60049]
-		[NutrientQuantity_vitaminB12056])
+		[NutrientQuantity_calcium183])
 	(name_ "Yogurt, plain, low fat, 12 grams protein per 8 ounce")
-	(season  Summer Spring)
+	(season  Autumn Summer Spring)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Yogurtfruitlowfat10gramsproteinper8ounce] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat437]
-		[NutrientQuantity_carbohydrates108]
+		[NutrientQuantity_fat108]
+		[NutrientQuantity_carbohydrates1905]
 		[NutrientQuantity_calories102]
-		[NutrientQuantity_sucrose102]
+		[NutrientQuantity_sugar1905]
 		[NutrientQuantity_cholesterol4]
 		[NutrientQuantity_saturated0697]
-		[NutrientQuantity_vitaminB50489]
-		[NutrientQuantity_vitaminB6004]
-		[NutrientQuantity_vitaminB12047])
+		[NutrientQuantity_calcium152])
 	(name_ "Yogurt, fruit, low fat, 10 grams protein per 8 ounce")
-	(season  Spring)
+	(season  Autumn Spring)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Eggwholecookedfried] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1361]
-		[NutrientQuantity_carbohydrates1484]
-		[NutrientQuantity_calories126]
-		[NutrientQuantity_sucrose196]
-		[NutrientQuantity_lactose04]
+		[NutrientQuantity_fat1484]
+		[NutrientQuantity_carbohydrates083]
+		[NutrientQuantity_calories196]
+		[NutrientQuantity_glucose04]
+		[NutrientQuantity_sugar04]
 		[NutrientQuantity_cholesterol401]
 		[NutrientQuantity_saturated4323]
-		[NutrientQuantity_vitaminB5166]
-		[NutrientQuantity_vitaminB60184]
-		[NutrientQuantity_vitaminB12097])
+		[NutrientQuantity_calcium62])
 	(name_ "Egg, whole, cooked, fried")
-	(season  Autumn)
+	(season  Spring Winter)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Oilcocoabutter] of Ingredient
 	(nutrients 
-		[NutrientQuantity_carbohydrates100]
-		[NutrientQuantity_sucrose884]
+		[NutrientQuantity_fat100]
+		[NutrientQuantity_calories884]
 		[NutrientQuantity_saturated597])
 	(name_ "Oil, cocoa butter")
-	(season  Autumn Spring Winter)
+	(season  Autumn Winter Summer Spring)
 	(type [FoodType_FatsandOils]))
 
 ([Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2856]
-		[NutrientQuantity_carbohydrates1492]
-		[NutrientQuantity_calories098]
-		[NutrientQuantity_sucrose269]
+		[NutrientQuantity_fat1492]
+		[NutrientQuantity_carbohydrates315]
+		[NutrientQuantity_calories269]
 		[NutrientQuantity_cholesterol90]
 		[NutrientQuantity_saturated406]
-		[NutrientQuantity_vitaminB51079]
-		[NutrientQuantity_vitaminB6041]
-		[NutrientQuantity_vitaminB12031])
+		[NutrientQuantity_calcium17])
 	(name_ "Chicken, broilers or fryers, meat and skin, cooked, fried, flour")
-	(season  Summer Winter)
+	(season  Summer Winter Spring Autumn)
 	(type [FoodType_PoultryProducts]))
 
 ([Ingredient_Chorizoporkandbeef] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat241]
-		[NutrientQuantity_carbohydrates3827]
-		[NutrientQuantity_calories392]
-		[NutrientQuantity_sucrose455]
+		[NutrientQuantity_fat3827]
+		[NutrientQuantity_carbohydrates186]
+		[NutrientQuantity_calories455]
 		[NutrientQuantity_cholesterol88]
 		[NutrientQuantity_saturated1438]
-		[NutrientQuantity_vitaminB5112]
-		[NutrientQuantity_vitaminB6053]
-		[NutrientQuantity_vitaminB122])
+		[NutrientQuantity_calcium8])
 	(name_ "Chorizo, pork and beef")
-	(season  Winter Spring)
+	(season  Autumn Summer)
 	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Hamslicedregularapproximately11fat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat166]
-		[NutrientQuantity_carbohydrates86]
-		[NutrientQuantity_calories37]
-		[NutrientQuantity_sucrose163]
+		[NutrientQuantity_fat86]
+		[NutrientQuantity_carbohydrates383]
+		[NutrientQuantity_calories163]
 		[NutrientQuantity_cholesterol57]
 		[NutrientQuantity_saturated2936]
-		[NutrientQuantity_vitaminB50435]
-		[NutrientQuantity_vitaminB60329]
-		[NutrientQuantity_vitaminB12042])
+		[NutrientQuantity_calcium24])
 	(name_ "Ham, sliced, regular (approximately 11% fat)")
-	(season  Winter Spring Summer Autumn)
+	(season  Winter Spring Summer)
 	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_SausageItalianporkraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1425]
-		[NutrientQuantity_carbohydrates3133]
-		[NutrientQuantity_calories27]
-		[NutrientQuantity_sucrose346]
+		[NutrientQuantity_fat3133]
+		[NutrientQuantity_carbohydrates065]
+		[NutrientQuantity_calories346]
 		[NutrientQuantity_cholesterol76]
 		[NutrientQuantity_saturated1127]
-		[NutrientQuantity_vitaminB5051]
-		[NutrientQuantity_vitaminB603]
-		[NutrientQuantity_vitaminB12091])
+		[NutrientQuantity_calcium18])
 	(name_ "Sausage, Italian, pork, raw")
-	(season  Spring Summer)
+	(season  Winter Spring Summer)
 	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Salamidryorhardpork] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2258]
-		[NutrientQuantity_carbohydrates3372]
-		[NutrientQuantity_calories592]
-		[NutrientQuantity_sucrose407]
+		[NutrientQuantity_fat3372]
+		[NutrientQuantity_carbohydrates16]
+		[NutrientQuantity_calories407]
 		[NutrientQuantity_cholesterol79]
 		[NutrientQuantity_saturated1189]
-		[NutrientQuantity_vitaminB5106]
-		[NutrientQuantity_vitaminB6055]
-		[NutrientQuantity_vitaminB1228])
+		[NutrientQuantity_calcium13])
 	(name_ "Salami, dry or hard, pork")
-	(season  Autumn Spring Summer Winter)
+	(season  Spring Autumn Summer Winter)
 	(type [FoodType_SausagesandLuncheonMeats]))
 
 ([Ingredient_Applesrawwithskin] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat026]
-		[NutrientQuantity_carbohydrates017]
-		[NutrientQuantity_calories019]
-		[NutrientQuantity_sucrose52]
-		[NutrientQuantity_glucose005]
-		[NutrientQuantity_fructose207]
-		[NutrientQuantity_lactose243]
+		[NutrientQuantity_fat017]
+		[NutrientQuantity_carbohydrates1381]
+		[NutrientQuantity_calories52]
+		[NutrientQuantity_sucrose207]
+		[NutrientQuantity_glucose243]
+		[NutrientQuantity_fructose59]
+		[NutrientQuantity_sugar1039]
 		[NutrientQuantity_saturated0028]
-		[NutrientQuantity_vitaminB50061]
-		[NutrientQuantity_vitaminB60041])
+		[NutrientQuantity_calcium6])
 	(name_ "Apples, raw, with skin")
-	(season  Autumn Summer Winter)
+	(season  Summer Autumn)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Bananasraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat109]
-		[NutrientQuantity_carbohydrates033]
-		[NutrientQuantity_calories082]
-		[NutrientQuantity_sucrose89]
-		[NutrientQuantity_glucose538]
-		[NutrientQuantity_fructose239]
-		[NutrientQuantity_lactose498]
+		[NutrientQuantity_fat033]
+		[NutrientQuantity_carbohydrates2284]
+		[NutrientQuantity_calories89]
+		[NutrientQuantity_sucrose239]
+		[NutrientQuantity_glucose498]
+		[NutrientQuantity_fructose485]
+		[NutrientQuantity_sugar1223]
 		[NutrientQuantity_saturated0112]
-		[NutrientQuantity_vitaminB50334]
-		[NutrientQuantity_vitaminB60367])
+		[NutrientQuantity_calcium5])
 	(name_ "Bananas, raw")
-	(season  Autumn)
+	(season  Summer Winter)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Cherriessweetraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat106]
-		[NutrientQuantity_carbohydrates02]
-		[NutrientQuantity_calories048]
-		[NutrientQuantity_sucrose63]
-		[NutrientQuantity_fructose015]
-		[NutrientQuantity_lactose659]
+		[NutrientQuantity_fat02]
+		[NutrientQuantity_carbohydrates1601]
+		[NutrientQuantity_calories63]
+		[NutrientQuantity_sucrose015]
+		[NutrientQuantity_glucose659]
+		[NutrientQuantity_fructose537]
+		[NutrientQuantity_sugar1282]
 		[NutrientQuantity_saturated0038]
-		[NutrientQuantity_vitaminB50199]
-		[NutrientQuantity_vitaminB60049])
+		[NutrientQuantity_calcium13])
 	(name_ "Cherries, sweet, raw")
-	(season  Winter Spring Autumn Summer)
+	(season  Spring Winter)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Melonscasabaraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat111]
-		[NutrientQuantity_carbohydrates01]
-		[NutrientQuantity_calories036]
-		[NutrientQuantity_sucrose28]
+		[NutrientQuantity_fat01]
+		[NutrientQuantity_carbohydrates658]
+		[NutrientQuantity_calories28]
+		[NutrientQuantity_sugar569]
 		[NutrientQuantity_saturated0025]
-		[NutrientQuantity_vitaminB50084]
-		[NutrientQuantity_vitaminB60163])
+		[NutrientQuantity_calcium11])
 	(name_ "Melons, casaba, raw")
-	(season  Summer Spring Winter)
+	(season  Autumn Spring Summer Winter)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_OrangesrawCaliforniavalencias] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat104]
-		[NutrientQuantity_carbohydrates03]
-		[NutrientQuantity_calories042]
-		[NutrientQuantity_sucrose49]
+		[NutrientQuantity_fat03]
+		[NutrientQuantity_carbohydrates1189]
+		[NutrientQuantity_calories49]
 		[NutrientQuantity_saturated0035]
-		[NutrientQuantity_vitaminB5025]
-		[NutrientQuantity_vitaminB60063])
+		[NutrientQuantity_calcium40])
 	(name_ "Oranges, raw, California, valencias")
-	(season  Spring Winter Autumn Summer)
+	(season  Summer)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Pineapplecannedjuicepacksolidsandliquids] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat042]
-		[NutrientQuantity_carbohydrates008]
-		[NutrientQuantity_calories03]
-		[NutrientQuantity_sucrose60]
-		[NutrientQuantity_fructose025]
-		[NutrientQuantity_lactose77]
+		[NutrientQuantity_fat008]
+		[NutrientQuantity_carbohydrates157]
+		[NutrientQuantity_calories60]
+		[NutrientQuantity_sucrose025]
+		[NutrientQuantity_glucose77]
+		[NutrientQuantity_fructose65]
+		[NutrientQuantity_sugar1445]
 		[NutrientQuantity_saturated0006]
-		[NutrientQuantity_vitaminB501]
-		[NutrientQuantity_vitaminB60074])
+		[NutrientQuantity_calcium14])
 	(name_ "Pineapple, canned, juice pack, solids and liquids")
-	(season  Winter Spring Autumn Summer)
+	(season  Winter Summer Spring Autumn)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Plumsraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat07]
-		[NutrientQuantity_carbohydrates028]
-		[NutrientQuantity_calories037]
-		[NutrientQuantity_sucrose46]
-		[NutrientQuantity_fructose157]
-		[NutrientQuantity_lactose507]
+		[NutrientQuantity_fat028]
+		[NutrientQuantity_carbohydrates1142]
+		[NutrientQuantity_calories46]
+		[NutrientQuantity_sucrose157]
+		[NutrientQuantity_glucose507]
+		[NutrientQuantity_fructose307]
+		[NutrientQuantity_sugar992]
 		[NutrientQuantity_saturated0017]
-		[NutrientQuantity_vitaminB50135]
-		[NutrientQuantity_vitaminB60029])
+		[NutrientQuantity_calcium6])
 	(name_ "Plums, raw")
-	(season  Summer)
+	(season  Autumn Winter)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Raisinsseeded] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat252]
-		[NutrientQuantity_carbohydrates054]
-		[NutrientQuantity_calories189]
-		[NutrientQuantity_sucrose296]
+		[NutrientQuantity_fat054]
+		[NutrientQuantity_carbohydrates7847]
+		[NutrientQuantity_calories296]
 		[NutrientQuantity_saturated0178]
-		[NutrientQuantity_vitaminB50045]
-		[NutrientQuantity_vitaminB60188])
+		[NutrientQuantity_calcium28])
 	(name_ "Raisins, seeded")
-	(season  Spring)
+	(season  Summer)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Strawberriesraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat067]
-		[NutrientQuantity_carbohydrates03]
-		[NutrientQuantity_calories04]
-		[NutrientQuantity_sucrose32]
-		[NutrientQuantity_glucose004]
-		[NutrientQuantity_fructose047]
-		[NutrientQuantity_lactose199]
+		[NutrientQuantity_fat03]
+		[NutrientQuantity_carbohydrates768]
+		[NutrientQuantity_calories32]
+		[NutrientQuantity_sucrose047]
+		[NutrientQuantity_glucose199]
+		[NutrientQuantity_fructose244]
+		[NutrientQuantity_sugar489]
 		[NutrientQuantity_saturated0015]
-		[NutrientQuantity_vitaminB50125]
-		[NutrientQuantity_vitaminB60047])
+		[NutrientQuantity_calcium16])
 	(name_ "Strawberries, raw")
-	(season  Summer Autumn Winter Spring)
+	(season  Autumn)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Watermelonraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat061]
-		[NutrientQuantity_carbohydrates015]
-		[NutrientQuantity_calories025]
-		[NutrientQuantity_sucrose30]
-		[NutrientQuantity_fructose121]
-		[NutrientQuantity_lactose158]
+		[NutrientQuantity_fat015]
+		[NutrientQuantity_carbohydrates755]
+		[NutrientQuantity_calories30]
+		[NutrientQuantity_sucrose121]
+		[NutrientQuantity_glucose158]
+		[NutrientQuantity_fructose336]
+		[NutrientQuantity_sugar62]
 		[NutrientQuantity_saturated0016]
-		[NutrientQuantity_vitaminB50221]
-		[NutrientQuantity_vitaminB60045])
+		[NutrientQuantity_calcium7])
 	(name_ "Watermelon, raw")
-	(season  Autumn Winter)
+	(season  Autumn Spring Winter Summer)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Pearsasianraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat05]
-		[NutrientQuantity_carbohydrates023]
-		[NutrientQuantity_calories037]
-		[NutrientQuantity_sucrose42]
+		[NutrientQuantity_fat023]
+		[NutrientQuantity_carbohydrates1065]
+		[NutrientQuantity_calories42]
+		[NutrientQuantity_sugar705]
 		[NutrientQuantity_saturated0012]
-		[NutrientQuantity_vitaminB5007]
-		[NutrientQuantity_vitaminB60022])
+		[NutrientQuantity_calcium4])
 	(name_ "Pears, asian, raw")
-	(season  Winter Summer Spring)
+	(season  Autumn Spring Summer)
 	(type [FoodType_FruitsandFruitJuices]))
 
 ([Ingredient_Porkcuredhamcenterslicecountry-styleseparableleanonlyraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat278]
-		[NutrientQuantity_carbohydrates832]
-		[NutrientQuantity_calories765]
-		[NutrientQuantity_sucrose195]
+		[NutrientQuantity_fat832]
+		[NutrientQuantity_carbohydrates03]
+		[NutrientQuantity_calories195]
 		[NutrientQuantity_cholesterol70]
 		[NutrientQuantity_saturated278]
-		[NutrientQuantity_vitaminB50402]
-		[NutrientQuantity_vitaminB6042]
-		[NutrientQuantity_vitaminB12088])
+		[NutrientQuantity_calcium10])
 	(name_ "Pork, cured, ham, center slice, country-style, separable lean only, raw")
-	(season  Summer)
+	(season  Autumn Summer)
 	(type [FoodType_PorkProducts]))
 
 ([Ingredient_Beanssnapgreenfrozencookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat149]
-		[NutrientQuantity_carbohydrates017]
-		[NutrientQuantity_calories047]
-		[NutrientQuantity_sucrose28]
+		[NutrientQuantity_fat017]
+		[NutrientQuantity_carbohydrates645]
+		[NutrientQuantity_calories28]
+		[NutrientQuantity_sugar188]
 		[NutrientQuantity_saturated0044]
-		[NutrientQuantity_vitaminB50049]
-		[NutrientQuantity_vitaminB6006])
+		[NutrientQuantity_calcium42])
 	(name_ "Beans, snap, green, frozen, cooked, boiled, drained without salt")
-	(season  Spring)
+	(season  Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Onionsraw] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat11]
-		[NutrientQuantity_carbohydrates01]
-		[NutrientQuantity_calories035]
-		[NutrientQuantity_sucrose40]
-		[NutrientQuantity_fructose099]
-		[NutrientQuantity_lactose197]
+		[NutrientQuantity_fat01]
+		[NutrientQuantity_carbohydrates934]
+		[NutrientQuantity_calories40]
+		[NutrientQuantity_sucrose099]
+		[NutrientQuantity_glucose197]
+		[NutrientQuantity_fructose129]
+		[NutrientQuantity_sugar424]
 		[NutrientQuantity_saturated0042]
-		[NutrientQuantity_vitaminB50123]
-		[NutrientQuantity_vitaminB6012])
+		[NutrientQuantity_calcium23])
 	(name_ "Onions, raw")
-	(season  Summer)
+	(season  Summer Winter Autumn Spring)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Onionsdehydratedflakes] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat895]
-		[NutrientQuantity_carbohydrates046]
-		[NutrientQuantity_calories338]
-		[NutrientQuantity_sucrose349]
+		[NutrientQuantity_fat046]
+		[NutrientQuantity_carbohydrates8328]
+		[NutrientQuantity_calories349]
+		[NutrientQuantity_sugar3741]
 		[NutrientQuantity_saturated0078]
-		[NutrientQuantity_vitaminB5138]
-		[NutrientQuantity_vitaminB616])
+		[NutrientQuantity_calcium257])
 	(name_ "Onions, dehydrated flakes")
-	(season  Summer Spring Autumn Winter)
+	(season  Winter Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Pumpkincookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat072]
-		[NutrientQuantity_carbohydrates007]
-		[NutrientQuantity_calories062]
-		[NutrientQuantity_sucrose20]
+		[NutrientQuantity_fat007]
+		[NutrientQuantity_carbohydrates49]
+		[NutrientQuantity_calories20]
+		[NutrientQuantity_sugar208]
 		[NutrientQuantity_saturated0037]
-		[NutrientQuantity_vitaminB50201]
-		[NutrientQuantity_vitaminB60044])
+		[NutrientQuantity_calcium15])
 	(name_ "Pumpkin, cooked, boiled, drained, without salt")
-	(season  Winter)
+	(season  Winter Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoesredriperawyearroundaverage] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat088]
-		[NutrientQuantity_carbohydrates02]
-		[NutrientQuantity_calories05]
-		[NutrientQuantity_sucrose18]
-		[NutrientQuantity_lactose125]
+		[NutrientQuantity_fat02]
+		[NutrientQuantity_carbohydrates389]
+		[NutrientQuantity_calories18]
+		[NutrientQuantity_glucose125]
+		[NutrientQuantity_fructose137]
+		[NutrientQuantity_sugar263]
 		[NutrientQuantity_saturated0028]
-		[NutrientQuantity_vitaminB50089]
-		[NutrientQuantity_vitaminB6008])
+		[NutrientQuantity_calcium10])
 	(name_ "Tomatoes, red, ripe, raw, year round average")
-	(season  Spring Autumn)
+	(season  Summer Winter Spring Autumn)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoproductscannedsauce] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat12]
-		[NutrientQuantity_carbohydrates03]
-		[NutrientQuantity_calories192]
-		[NutrientQuantity_sucrose24]
-		[NutrientQuantity_fructose007]
-		[NutrientQuantity_lactose182]
+		[NutrientQuantity_fat03]
+		[NutrientQuantity_carbohydrates531]
+		[NutrientQuantity_calories24]
+		[NutrientQuantity_sucrose007]
+		[NutrientQuantity_glucose182]
+		[NutrientQuantity_fructose167]
+		[NutrientQuantity_sugar356]
 		[NutrientQuantity_saturated0041]
-		[NutrientQuantity_vitaminB50309]
-		[NutrientQuantity_vitaminB60098])
+		[NutrientQuantity_calcium14])
 	(name_ "Tomato products, canned, sauce")
-	(season  Autumn Summer Winter)
+	(season  Autumn Summer Spring)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Carrotscookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat076]
-		[NutrientQuantity_carbohydrates018]
-		[NutrientQuantity_calories067]
-		[NutrientQuantity_sucrose35]
-		[NutrientQuantity_glucose017]
-		[NutrientQuantity_fructose27]
-		[NutrientQuantity_lactose04]
+		[NutrientQuantity_fat018]
+		[NutrientQuantity_carbohydrates822]
+		[NutrientQuantity_calories35]
+		[NutrientQuantity_sucrose27]
+		[NutrientQuantity_glucose04]
+		[NutrientQuantity_fructose036]
+		[NutrientQuantity_sugar345]
 		[NutrientQuantity_saturated0037]
-		[NutrientQuantity_vitaminB50232]
-		[NutrientQuantity_vitaminB60153])
+		[NutrientQuantity_calcium30])
 	(name_ "Carrots, cooked, boiled, drained, with salt")
-	(season  Winter Spring)
+	(season  Spring Summer Autumn)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Eggplantcookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat083]
-		[NutrientQuantity_carbohydrates023]
-		[NutrientQuantity_calories113]
-		[NutrientQuantity_sucrose33]
+		[NutrientQuantity_fat023]
+		[NutrientQuantity_carbohydrates814]
+		[NutrientQuantity_calories33]
+		[NutrientQuantity_sugar32]
 		[NutrientQuantity_saturated0044]
-		[NutrientQuantity_vitaminB50075]
-		[NutrientQuantity_vitaminB60086])
+		[NutrientQuantity_calcium6])
 	(name_ "Eggplant, cooked, boiled, drained, with salt")
-	(season  Spring Winter Summer Autumn)
+	(season  Autumn Summer Spring)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Pepperssweetredcookedboileddrainedwithoutsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat092]
-		[NutrientQuantity_carbohydrates02]
-		[NutrientQuantity_calories031]
-		[NutrientQuantity_sucrose28]
+		[NutrientQuantity_fat02]
+		[NutrientQuantity_carbohydrates67]
+		[NutrientQuantity_calories28]
+		[NutrientQuantity_sugar439]
 		[NutrientQuantity_saturated0029]
-		[NutrientQuantity_vitaminB50079]
-		[NutrientQuantity_vitaminB60233])
+		[NutrientQuantity_calcium9])
 	(name_ "Peppers, sweet, red, cooked, boiled, drained, without salt")
-	(season  Autumn Spring Winter)
+	(season  Spring Winter Autumn Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Potatoesboiledcookedinskinfleshwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat187]
-		[NutrientQuantity_carbohydrates01]
-		[NutrientQuantity_calories092]
-		[NutrientQuantity_sucrose87]
+		[NutrientQuantity_fat01]
+		[NutrientQuantity_carbohydrates2013]
+		[NutrientQuantity_calories87]
+		[NutrientQuantity_sugar091]
 		[NutrientQuantity_saturated0026]
-		[NutrientQuantity_vitaminB5052]
-		[NutrientQuantity_vitaminB60299])
+		[NutrientQuantity_calcium5])
 	(name_ "Potatoes, boiled, cooked in skin, flesh, with salt")
-	(season  Spring Summer Autumn Winter)
+	(season  Winter Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Squashsummerzucchiniincludesskincookedboileddrainedwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat114]
-		[NutrientQuantity_carbohydrates036]
-		[NutrientQuantity_calories059]
-		[NutrientQuantity_sucrose15]
+		[NutrientQuantity_fat036]
+		[NutrientQuantity_carbohydrates269]
+		[NutrientQuantity_calories15]
+		[NutrientQuantity_sugar171]
 		[NutrientQuantity_saturated0072]
-		[NutrientQuantity_vitaminB50288]
-		[NutrientQuantity_vitaminB6008])
+		[NutrientQuantity_calcium18])
 	(name_ "Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt")
-	(season  Autumn)
+	(season  Spring Autumn Winter)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Tomatoesredripecookedwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat095]
-		[NutrientQuantity_carbohydrates011]
-		[NutrientQuantity_calories06]
-		[NutrientQuantity_sucrose18]
-		[NutrientQuantity_lactose118]
+		[NutrientQuantity_fat011]
+		[NutrientQuantity_carbohydrates401]
+		[NutrientQuantity_calories18]
+		[NutrientQuantity_glucose118]
+		[NutrientQuantity_fructose131]
+		[NutrientQuantity_sugar249]
 		[NutrientQuantity_saturated0015]
-		[NutrientQuantity_vitaminB50129]
-		[NutrientQuantity_vitaminB60079])
+		[NutrientQuantity_calcium11])
 	(name_ "Tomatoes, red, ripe, cooked, with salt")
-	(season  Spring)
+	(season  Winter Autumn)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Cornsweetwhitecannedwholekernelregularpacksolidsandliquids] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat195]
-		[NutrientQuantity_carbohydrates05]
-		[NutrientQuantity_calories08]
-		[NutrientQuantity_sucrose64]
+		[NutrientQuantity_fat05]
+		[NutrientQuantity_carbohydrates1541]
+		[NutrientQuantity_calories64]
 		[NutrientQuantity_saturated0077]
-		[NutrientQuantity_vitaminB50522]
-		[NutrientQuantity_vitaminB60037])
+		[NutrientQuantity_calcium4])
 	(name_ "Corn, sweet, white, canned, whole kernel, regular pack, solids and liquids")
-	(season  Summer Autumn Spring)
+	(season  Spring Summer)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Seedssunflowerseedkernelstoastedwithoutsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1721]
-		[NutrientQuantity_carbohydrates568]
-		[NutrientQuantity_calories44]
-		[NutrientQuantity_sucrose619]
+		[NutrientQuantity_fat568]
+		[NutrientQuantity_carbohydrates2059]
+		[NutrientQuantity_calories619]
 		[NutrientQuantity_saturated5953]
-		[NutrientQuantity_vitaminB57056]
-		[NutrientQuantity_vitaminB60805])
+		[NutrientQuantity_calcium57])
 	(name_ "Seeds, sunflower seed kernels, toasted, without salt")
-	(season  Autumn Spring Winter)
+	(season  Spring Summer)
 	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2195]
-		[NutrientQuantity_carbohydrates493]
-		[NutrientQuantity_calories333]
-		[NutrientQuantity_sucrose580]
-		[NutrientQuantity_glucose575]
-		[NutrientQuantity_fructose445]
+		[NutrientQuantity_fat493]
+		[NutrientQuantity_carbohydrates2251]
+		[NutrientQuantity_calories580]
+		[NutrientQuantity_sucrose445]
+		[NutrientQuantity_sugar445]
 		[NutrientQuantity_saturated671]
-		[NutrientQuantity_vitaminB60495])
+		[NutrientQuantity_calcium129])
 	(name_ "Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend")
-	(season  Winter Spring)
+	(season  Summer Spring Winter)
 	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_Nutswalnutsblackdried] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2406]
-		[NutrientQuantity_carbohydrates5933]
-		[NutrientQuantity_calories247]
-		[NutrientQuantity_sucrose619]
-		[NutrientQuantity_glucose024]
-		[NutrientQuantity_fructose1]
-		[NutrientQuantity_lactose005]
+		[NutrientQuantity_fat5933]
+		[NutrientQuantity_carbohydrates958]
+		[NutrientQuantity_calories619]
+		[NutrientQuantity_sucrose1]
+		[NutrientQuantity_glucose005]
+		[NutrientQuantity_fructose005]
+		[NutrientQuantity_sugar11]
 		[NutrientQuantity_saturated3483]
-		[NutrientQuantity_vitaminB5166]
-		[NutrientQuantity_vitaminB60583])
+		[NutrientQuantity_calcium61])
 	(name_ "Nuts, walnuts, black, dried")
-	(season  Autumn Winter)
+	(season  Winter Autumn)
 	(type [FoodType_NutandSeedProducts]))
 
 ([Ingredient_Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2698]
-		[NutrientQuantity_carbohydrates1644]
-		[NutrientQuantity_calories204]
-		[NutrientQuantity_sucrose263]
+		[NutrientQuantity_fat1644]
+		[NutrientQuantity_calories263]
 		[NutrientQuantity_cholesterol72]
 		[NutrientQuantity_saturated692]
-		[NutrientQuantity_vitaminB5037]
-		[NutrientQuantity_vitaminB6035]
-		[NutrientQuantity_vitaminB1233])
+		[NutrientQuantity_calcium6])
 	(name_ "Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised")
-	(season  Spring)
+	(season  Summer)
 	(type [FoodType_BeefProducts]))
 
 ([Ingredient_Fishflatfishflounderandsolespeciescookeddryheat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1524]
-		[NutrientQuantity_carbohydrates237]
-		[NutrientQuantity_calories149]
-		[NutrientQuantity_sucrose86]
+		[NutrientQuantity_fat237]
+		[NutrientQuantity_calories86]
 		[NutrientQuantity_cholesterol56]
 		[NutrientQuantity_saturated0542]
-		[NutrientQuantity_vitaminB50227]
-		[NutrientQuantity_vitaminB60115]
-		[NutrientQuantity_vitaminB12131])
+		[NutrientQuantity_calcium25])
 	(name_ "Fish, flatfish (flounder and sole species), cooked, dry heat")
-	(season  Summer Spring)
+	(season  Autumn)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_FishsardineAtlanticcannedinoildrainedsolidswithbone] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2462]
-		[NutrientQuantity_carbohydrates1145]
-		[NutrientQuantity_calories338]
-		[NutrientQuantity_sucrose208]
+		[NutrientQuantity_fat1145]
+		[NutrientQuantity_calories208]
 		[NutrientQuantity_cholesterol142]
 		[NutrientQuantity_saturated1528]
-		[NutrientQuantity_vitaminB50642]
-		[NutrientQuantity_vitaminB60167]
-		[NutrientQuantity_vitaminB12894])
+		[NutrientQuantity_calcium382])
 	(name_ "Fish, sardine, Atlantic, canned in oil, drained solids with bone")
-	(season  Winter Summer)
+	(season  Autumn)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Fishtunafreshbluefincookeddryheat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2991]
-		[NutrientQuantity_carbohydrates628]
-		[NutrientQuantity_calories151]
-		[NutrientQuantity_sucrose184]
+		[NutrientQuantity_fat628]
+		[NutrientQuantity_calories184]
 		[NutrientQuantity_cholesterol49]
 		[NutrientQuantity_saturated1612]
-		[NutrientQuantity_vitaminB5137]
-		[NutrientQuantity_vitaminB60525]
-		[NutrientQuantity_vitaminB121088])
+		[NutrientQuantity_calcium10])
 	(name_ "Fish, tuna, fresh, bluefin, cooked, dry heat")
-	(season  Autumn Winter)
+	(season  Autumn)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Mollusksmusselbluecookedmoistheat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat238]
-		[NutrientQuantity_carbohydrates448]
-		[NutrientQuantity_calories318]
-		[NutrientQuantity_sucrose172]
+		[NutrientQuantity_fat448]
+		[NutrientQuantity_carbohydrates739]
+		[NutrientQuantity_calories172]
 		[NutrientQuantity_cholesterol56]
 		[NutrientQuantity_saturated085]
-		[NutrientQuantity_vitaminB5095]
-		[NutrientQuantity_vitaminB601]
-		[NutrientQuantity_vitaminB1224])
+		[NutrientQuantity_calcium33])
 	(name_ "Mollusks, mussel, blue, cooked, moist heat")
-	(season  Summer)
+	(season  Spring Autumn Winter)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Molluskssquidmixedspeciescookedfried] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1794]
-		[NutrientQuantity_carbohydrates748]
-		[NutrientQuantity_calories159]
-		[NutrientQuantity_sucrose175]
+		[NutrientQuantity_fat748]
+		[NutrientQuantity_carbohydrates779]
+		[NutrientQuantity_calories175]
 		[NutrientQuantity_cholesterol260]
 		[NutrientQuantity_saturated1878]
-		[NutrientQuantity_vitaminB5051]
-		[NutrientQuantity_vitaminB60058]
-		[NutrientQuantity_vitaminB12123])
+		[NutrientQuantity_calcium39])
 	(name_ "Mollusks, squid, mixed species, cooked, fried")
-	(season  Winter Autumn)
+	(season  Autumn)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_FishsalmonAtlanticwildcookeddryheat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat2544]
-		[NutrientQuantity_carbohydrates813]
-		[NutrientQuantity_calories326]
-		[NutrientQuantity_sucrose182]
+		[NutrientQuantity_fat813]
+		[NutrientQuantity_calories182]
 		[NutrientQuantity_cholesterol71]
 		[NutrientQuantity_saturated1257]
-		[NutrientQuantity_vitaminB5192]
-		[NutrientQuantity_vitaminB60944]
-		[NutrientQuantity_vitaminB12305])
+		[NutrientQuantity_calcium15])
 	(name_ "Fish, salmon, Atlantic, wild, cooked, dry heat")
-	(season  Autumn Spring)
+	(season  Winter Spring Summer Autumn)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([Ingredient_Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat492]
-		[NutrientQuantity_carbohydrates195]
-		[NutrientQuantity_calories109]
-		[NutrientQuantity_sucrose88]
+		[NutrientQuantity_fat195]
+		[NutrientQuantity_carbohydrates1349]
+		[NutrientQuantity_calories88]
 		[NutrientQuantity_saturated0204]
-		[NutrientQuantity_vitaminB50299]
-		[NutrientQuantity_vitaminB60473])
+		[NutrientQuantity_calcium35])
 	(name_ "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids")
-	(season  Spring Autumn)
+	(season  Autumn Summer Winter)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Tofusoftpreparedwithcalciumsulfateandmagnesiumchloridenigari] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat717]
-		[NutrientQuantity_carbohydrates369]
-		[NutrientQuantity_calories07]
-		[NutrientQuantity_sucrose61]
+		[NutrientQuantity_fat369]
+		[NutrientQuantity_carbohydrates118]
+		[NutrientQuantity_calories61]
+		[NutrientQuantity_sugar07]
 		[NutrientQuantity_saturated0533]
-		[NutrientQuantity_vitaminB50051]
-		[NutrientQuantity_vitaminB60052])
+		[NutrientQuantity_calcium111])
 	(name_ "Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)")
-	(season  Winter Spring Autumn Summer)
+	(season  Autumn Summer Winter)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Veggieburgersorsoyburgersunprepared] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat157]
-		[NutrientQuantity_carbohydrates63]
-		[NutrientQuantity_calories252]
-		[NutrientQuantity_sucrose177]
-		[NutrientQuantity_glucose578]
-		[NutrientQuantity_fructose062]
-		[NutrientQuantity_lactose026]
-		[NutrientQuantity_alcohol006]
+		[NutrientQuantity_fat63]
+		[NutrientQuantity_carbohydrates1427]
+		[NutrientQuantity_calories177]
+		[NutrientQuantity_sucrose062]
+		[NutrientQuantity_glucose026]
+		[NutrientQuantity_fructose013]
+		[NutrientQuantity_lactose006]
+		[NutrientQuantity_sugar107]
 		[NutrientQuantity_cholesterol5]
 		[NutrientQuantity_saturated144]
-		[NutrientQuantity_vitaminB50289]
-		[NutrientQuantity_vitaminB60303]
-		[NutrientQuantity_vitaminB12201])
+		[NutrientQuantity_calcium136])
 	(name_ "Veggie burgers or soyburgers, unprepared")
-	(season  Winter Spring Autumn)
+	(season  Summer Winter Autumn Spring)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat286]
-		[NutrientQuantity_carbohydrates161]
-		[NutrientQuantity_calories064]
-		[NutrientQuantity_sucrose33]
+		[NutrientQuantity_fat161]
+		[NutrientQuantity_carbohydrates174]
+		[NutrientQuantity_calories33]
+		[NutrientQuantity_sugar041]
 		[NutrientQuantity_saturated0206]
-		[NutrientQuantity_vitaminB50082]
-		[NutrientQuantity_vitaminB60049]
-		[NutrientQuantity_vitaminB12111])
+		[NutrientQuantity_calcium124])
 	(name_ "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D")
-	(season  Autumn Spring Summer)
+	(season  Winter Spring Summer)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Lentilsmatureseedscookedboiledwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat902]
-		[NutrientQuantity_carbohydrates038]
-		[NutrientQuantity_calories142]
-		[NutrientQuantity_sucrose114]
+		[NutrientQuantity_fat038]
+		[NutrientQuantity_carbohydrates1954]
+		[NutrientQuantity_calories114]
+		[NutrientQuantity_sugar18]
 		[NutrientQuantity_saturated0053]
-		[NutrientQuantity_vitaminB50638]
-		[NutrientQuantity_vitaminB60178])
+		[NutrientQuantity_calcium19])
 	(name_ "Lentils, mature seeds, cooked, boiled, with salt")
-	(season  Spring Autumn)
+	(season  Summer Winter)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Peassplitmatureseedscookedboiledwithsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat834]
-		[NutrientQuantity_carbohydrates039]
-		[NutrientQuantity_calories127]
-		[NutrientQuantity_sucrose116]
+		[NutrientQuantity_fat039]
+		[NutrientQuantity_carbohydrates2051]
+		[NutrientQuantity_calories116]
+		[NutrientQuantity_sugar29]
 		[NutrientQuantity_saturated0054]
-		[NutrientQuantity_vitaminB50595]
-		[NutrientQuantity_vitaminB60048])
+		[NutrientQuantity_calcium14])
 	(name_ "Peas, split, mature seeds, cooked, boiled, with salt")
-	(season  Autumn)
+	(season  Summer)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat71]
-		[NutrientQuantity_carbohydrates23]
-		[NutrientQuantity_calories12]
-		[NutrientQuantity_sucrose96]
+		[NutrientQuantity_fat23]
+		[NutrientQuantity_carbohydrates144]
+		[NutrientQuantity_calories96]
+		[NutrientQuantity_sugar17]
 		[NutrientQuantity_cholesterol4]
 		[NutrientQuantity_saturated1]
-		[NutrientQuantity_vitaminB6015]
-		[NutrientQuantity_vitaminB1208])
+		[NutrientQuantity_calcium88])
 	(name_ "MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared")
-	(season  Winter Autumn)
+	(season  Summer Spring)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat96]
-		[NutrientQuantity_carbohydrates122]
-		[NutrientQuantity_calories26]
-		[NutrientQuantity_sucrose197]
+		[NutrientQuantity_fat122]
+		[NutrientQuantity_carbohydrates169]
+		[NutrientQuantity_calories197]
+		[NutrientQuantity_sugar35]
 		[NutrientQuantity_cholesterol1]
 		[NutrientQuantity_saturated11]
-		[NutrientQuantity_vitaminB6009])
+		[NutrientQuantity_calcium74])
 	(name_ "MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared")
-	(season  Summer Winter Spring Autumn)
+	(season  Autumn Spring Winter)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Breadfrenchorviennaincludessourdough] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat1075]
-		[NutrientQuantity_carbohydrates242]
-		[NutrientQuantity_calories196]
-		[NutrientQuantity_sucrose272]
-		[NutrientQuantity_glucose4423]
-		[NutrientQuantity_lactose04]
+		[NutrientQuantity_fat242]
+		[NutrientQuantity_carbohydrates5188]
+		[NutrientQuantity_calories272]
+		[NutrientQuantity_glucose04]
+		[NutrientQuantity_fructose051]
+		[NutrientQuantity_sugar462]
 		[NutrientQuantity_saturated0529]
-		[NutrientQuantity_vitaminB50455]
-		[NutrientQuantity_vitaminB60107])
+		[NutrientQuantity_calcium52])
 	(name_ "Bread, french or vienna (includes sourdough)")
-	(season  Summer Autumn Winter)
+	(season  Winter)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadirishsodapreparedfromrecipe] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat66]
-		[NutrientQuantity_carbohydrates5]
-		[NutrientQuantity_calories19]
-		[NutrientQuantity_sucrose290]
+		[NutrientQuantity_fat5]
+		[NutrientQuantity_carbohydrates56]
+		[NutrientQuantity_calories290]
 		[NutrientQuantity_cholesterol18]
 		[NutrientQuantity_saturated1111]
-		[NutrientQuantity_vitaminB5025]
-		[NutrientQuantity_vitaminB60083]
-		[NutrientQuantity_vitaminB12005])
+		[NutrientQuantity_calcium81])
 	(name_ "Bread, irish soda, prepared from recipe")
-	(season  Spring Winter Autumn Summer)
+	(season  Spring)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadwhitecommerciallypreparedincludessoftbreadcrumbs] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat885]
-		[NutrientQuantity_carbohydrates333]
-		[NutrientQuantity_calories198]
-		[NutrientQuantity_sucrose266]
-		[NutrientQuantity_glucose3717]
-		[NutrientQuantity_lactose157]
+		[NutrientQuantity_fat333]
+		[NutrientQuantity_carbohydrates4942]
+		[NutrientQuantity_calories266]
+		[NutrientQuantity_glucose157]
+		[NutrientQuantity_fructose243]
+		[NutrientQuantity_sugar567]
 		[NutrientQuantity_saturated0698]
-		[NutrientQuantity_vitaminB50536]
-		[NutrientQuantity_vitaminB60087])
+		[NutrientQuantity_calcium144])
 	(name_ "Bread, white, commercially prepared (includes soft bread crumbs)")
-	(season  Spring Autumn Winter Summer)
+	(season  Winter Summer Autumn Spring)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Breadwhitecommerciallypreparedtoasted] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat9]
-		[NutrientQuantity_carbohydrates4]
-		[NutrientQuantity_calories21]
-		[NutrientQuantity_sucrose290]
+		[NutrientQuantity_fat4]
+		[NutrientQuantity_carbohydrates545]
+		[NutrientQuantity_calories290]
+		[NutrientQuantity_sugar62]
 		[NutrientQuantity_cholesterol1]
 		[NutrientQuantity_saturated0764]
-		[NutrientQuantity_vitaminB50278]
-		[NutrientQuantity_vitaminB60063]
-		[NutrientQuantity_vitaminB12002])
+		[NutrientQuantity_calcium119])
 	(name_ "Bread, white, commercially prepared, toasted")
-	(season  Winter Autumn Summer)
+	(season  Winter)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat348]
-		[NutrientQuantity_carbohydrates2005]
-		[NutrientQuantity_calories158]
-		[NutrientQuantity_sucrose389]
-		[NutrientQuantity_glucose745]
-		[NutrientQuantity_fructose3712]
-		[NutrientQuantity_lactose142]
-		[NutrientQuantity_alcohol046]
-		[NutrientQuantity_sugar6]
+		[NutrientQuantity_fat2005]
+		[NutrientQuantity_carbohydrates5284]
+		[NutrientQuantity_calories389]
+		[NutrientQuantity_sucrose3712]
+		[NutrientQuantity_glucose142]
+		[NutrientQuantity_fructose082]
+		[NutrientQuantity_lactose046]
+		[NutrientQuantity_caffeine6]
+		[NutrientQuantity_sugar3996]
 		[NutrientQuantity_cholesterol22]
 		[NutrientQuantity_saturated5917]
-		[NutrientQuantity_vitaminB5019])
+		[NutrientQuantity_calcium30])
 	(name_ "Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery")
-	(season  Autumn Winter Summer)
+	(season  Winter)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Cakefruitcakecommerciallyprepared] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat29]
-		[NutrientQuantity_carbohydrates91]
-		[NutrientQuantity_calories1]
-		[NutrientQuantity_sucrose324]
+		[NutrientQuantity_fat91]
+		[NutrientQuantity_carbohydrates616]
+		[NutrientQuantity_calories324]
+		[NutrientQuantity_sugar2742]
 		[NutrientQuantity_cholesterol5]
 		[NutrientQuantity_saturated1048]
-		[NutrientQuantity_vitaminB50226]
-		[NutrientQuantity_vitaminB60046]
-		[NutrientQuantity_vitaminB12001])
+		[NutrientQuantity_calcium33])
 	(name_ "Cake, fruitcake, commercially prepared")
 	(season  Winter)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Englishmuffinsplainenrichedwithcapropincludessourdough] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat887]
-		[NutrientQuantity_carbohydrates169]
-		[NutrientQuantity_calories171]
-		[NutrientQuantity_sucrose227]
-		[NutrientQuantity_glucose372]
-		[NutrientQuantity_lactose066]
+		[NutrientQuantity_fat169]
+		[NutrientQuantity_carbohydrates4417]
+		[NutrientQuantity_calories227]
+		[NutrientQuantity_glucose066]
+		[NutrientQuantity_fructose069]
+		[NutrientQuantity_sugar353]
 		[NutrientQuantity_saturated0733]
-		[NutrientQuantity_vitaminB50363]
-		[NutrientQuantity_vitaminB60054]
-		[NutrientQuantity_vitaminB12004])
+		[NutrientQuantity_calcium163])
 	(name_ "English muffins, plain, enriched, with ca prop (includes sourdough)")
-	(season  Spring Autumn Winter)
+	(season  Summer)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Rollshamburgerorhotdogmixed-grain] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat96]
-		[NutrientQuantity_carbohydrates6]
-		[NutrientQuantity_calories18]
-		[NutrientQuantity_sucrose263]
+		[NutrientQuantity_fat6]
+		[NutrientQuantity_carbohydrates446]
+		[NutrientQuantity_calories263]
+		[NutrientQuantity_sugar625]
 		[NutrientQuantity_saturated139]
-		[NutrientQuantity_vitaminB50492]
-		[NutrientQuantity_vitaminB60092]
-		[NutrientQuantity_vitaminB12001])
+		[NutrientQuantity_calcium95])
 	(name_ "Rolls, hamburger or hotdog, mixed-grain")
-	(season  Spring Autumn)
+	(season  Summer)
 	(type [FoodType_BakedProducts]))
 
 ([Ingredient_Dessertsflancaramelcustardprepared-from-recipe] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat453]
-		[NutrientQuantity_carbohydrates403]
-		[NutrientQuantity_calories062]
-		[NutrientQuantity_sucrose145]
+		[NutrientQuantity_fat403]
+		[NutrientQuantity_carbohydrates2278]
+		[NutrientQuantity_calories145]
+		[NutrientQuantity_sugar2315]
 		[NutrientQuantity_cholesterol90]
 		[NutrientQuantity_saturated1799]
-		[NutrientQuantity_vitaminB50514]
-		[NutrientQuantity_vitaminB60044]
-		[NutrientQuantity_vitaminB12036])
+		[NutrientQuantity_calcium83])
 	(name_ "Desserts, flan, caramel custard, prepared-from-recipe")
-	(season  Spring Winter)
+	(season  Spring)
 	(type [FoodType_Sweets]))
 
 ([Ingredient_Gelatindessertsdrymixpreparedwithwater] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat122]
-		[NutrientQuantity_calories02]
-		[NutrientQuantity_sucrose62]
-		[NutrientQuantity_vitaminB50002])
+		[NutrientQuantity_carbohydrates1419]
+		[NutrientQuantity_calories62]
+		[NutrientQuantity_sugar1349]
+		[NutrientQuantity_calcium3])
 	(name_ "Gelatin desserts, dry mix, prepared with water")
-	(season  Winter Spring Autumn)
+	(season  Autumn Winter Summer Spring)
 	(type [FoodType_Sweets]))
 
 ([Ingredient_Jamsandpreserves] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat037]
-		[NutrientQuantity_carbohydrates007]
-		[NutrientQuantity_calories023]
-		[NutrientQuantity_sucrose278]
+		[NutrientQuantity_fat007]
+		[NutrientQuantity_carbohydrates6886]
+		[NutrientQuantity_calories278]
+		[NutrientQuantity_sugar485]
 		[NutrientQuantity_saturated001]
-		[NutrientQuantity_vitaminB5002]
-		[NutrientQuantity_vitaminB6002])
+		[NutrientQuantity_calcium20])
 	(name_ "Jams and preserves")
-	(season  Winter)
+	(season  Autumn Summer)
 	(type [FoodType_Sweets]))
 
 ([Ingredient_Couscouscooked] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat379]
-		[NutrientQuantity_carbohydrates016]
-		[NutrientQuantity_calories026]
-		[NutrientQuantity_sucrose112]
+		[NutrientQuantity_fat016]
+		[NutrientQuantity_carbohydrates2322]
+		[NutrientQuantity_calories112]
+		[NutrientQuantity_sugar01]
 		[NutrientQuantity_saturated0029]
-		[NutrientQuantity_vitaminB50371]
-		[NutrientQuantity_vitaminB60051])
+		[NutrientQuantity_calcium8])
 	(name_ "Couscous, cooked")
-	(season  Winter Summer Spring Autumn)
+	(season  Spring Summer Winter Autumn)
 	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Ricewhitemedium-grainenrichedcooked] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat238]
-		[NutrientQuantity_carbohydrates021]
-		[NutrientQuantity_calories021]
-		[NutrientQuantity_sucrose130]
+		[NutrientQuantity_fat021]
+		[NutrientQuantity_carbohydrates2859]
+		[NutrientQuantity_calories130]
 		[NutrientQuantity_saturated0057]
-		[NutrientQuantity_vitaminB50411]
-		[NutrientQuantity_vitaminB6005])
+		[NutrientQuantity_calcium3])
 	(name_ "Rice, white, medium-grain, enriched, cooked")
-	(season  Spring Summer)
+	(season  Winter)
 	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Noodleseggenrichedcooked] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat454]
-		[NutrientQuantity_carbohydrates207]
-		[NutrientQuantity_calories05]
-		[NutrientQuantity_sucrose138]
-		[NutrientQuantity_fructose004]
-		[NutrientQuantity_lactose007]
+		[NutrientQuantity_fat207]
+		[NutrientQuantity_carbohydrates2516]
+		[NutrientQuantity_calories138]
+		[NutrientQuantity_sucrose004]
+		[NutrientQuantity_glucose007]
+		[NutrientQuantity_sugar04]
 		[NutrientQuantity_cholesterol29]
 		[NutrientQuantity_saturated0419]
-		[NutrientQuantity_vitaminB50263]
-		[NutrientQuantity_vitaminB60046]
-		[NutrientQuantity_vitaminB12009])
+		[NutrientQuantity_calcium12])
 	(name_ "Noodles, egg, enriched, cooked")
 	(season  Summer Winter)
 	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Pastacookedenrichedwithaddedsalt] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat58]
-		[NutrientQuantity_carbohydrates093]
-		[NutrientQuantity_calories055]
-		[NutrientQuantity_sucrose157]
-		[NutrientQuantity_glucose2601]
-		[NutrientQuantity_fructose009]
-		[NutrientQuantity_lactose004]
+		[NutrientQuantity_fat093]
+		[NutrientQuantity_carbohydrates3059]
+		[NutrientQuantity_calories157]
+		[NutrientQuantity_sucrose009]
+		[NutrientQuantity_glucose004]
+		[NutrientQuantity_fructose003]
+		[NutrientQuantity_sugar056]
 		[NutrientQuantity_saturated0176]
-		[NutrientQuantity_vitaminB50112]
-		[NutrientQuantity_vitaminB60049])
+		[NutrientQuantity_calcium7])
 	(name_ "Pasta, cooked, enriched, with added salt")
-	(season  Spring)
+	(season  Spring Winter Summer)
 	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Spaghettiprotein-fortifiedcookedenrichednx625] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat886]
-		[NutrientQuantity_carbohydrates021]
-		[NutrientQuantity_calories031]
-		[NutrientQuantity_sucrose164]
+		[NutrientQuantity_fat021]
+		[NutrientQuantity_carbohydrates3088]
+		[NutrientQuantity_calories164]
 		[NutrientQuantity_saturated0032]
-		[NutrientQuantity_vitaminB50286]
-		[NutrientQuantity_vitaminB60064])
+		[NutrientQuantity_calcium10])
 	(name_ "Spaghetti, protein-fortified, cooked, enriched (n x 6.25)")
-	(season  Autumn)
+	(season  Autumn Summer Winter)
 	(type [FoodType_CerealGrainsandPasta]))
 
 ([Ingredient_Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat254]
-		[NutrientQuantity_carbohydrates1857]
-		[NutrientQuantity_calories098]
-		[NutrientQuantity_sucrose276]
+		[NutrientQuantity_fat1857]
+		[NutrientQuantity_calories276]
 		[NutrientQuantity_cholesterol83]
 		[NutrientQuantity_saturated7481]
-		[NutrientQuantity_vitaminB60623]
-		[NutrientQuantity_vitaminB12203])
+		[NutrientQuantity_calcium19])
 	(name_ "Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled")
-	(season  Spring Summer)
+	(season  Winter Autumn Summer)
 	(type [FoodType_BeefProducts]))
 
 ([Ingredient_Soupchickennoodlereducedsodiumcannedready-to-serve] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat329]
-		[NutrientQuantity_carbohydrates134]
-		[NutrientQuantity_calories107]
-		[NutrientQuantity_sucrose41]
-		[NutrientQuantity_fructose034]
+		[NutrientQuantity_fat134]
+		[NutrientQuantity_carbohydrates384]
+		[NutrientQuantity_calories41]
+		[NutrientQuantity_sucrose034]
+		[NutrientQuantity_sugar034]
 		[NutrientQuantity_cholesterol4]
 		[NutrientQuantity_saturated0394]
-		[NutrientQuantity_vitaminB6006]
-		[NutrientQuantity_vitaminB12015])
+		[NutrientQuantity_calcium11])
 	(name_ "Soup, chicken noodle, reduced sodium, canned, ready-to-serve")
-	(season  Autumn Winter)
+	(season  Autumn Summer Spring)
 	(type [FoodType_SoupsSaucesandGravies]))
 
 ([Ingredient_Imitationcheeseamericanorcheddarlowcholesterol] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat25]
-		[NutrientQuantity_carbohydrates32]
-		[NutrientQuantity_calories4]
-		[NutrientQuantity_sucrose390]
+		[NutrientQuantity_fat32]
+		[NutrientQuantity_carbohydrates1]
+		[NutrientQuantity_calories390]
+		[NutrientQuantity_sugar1]
 		[NutrientQuantity_cholesterol15]
 		[NutrientQuantity_saturated5815]
-		[NutrientQuantity_vitaminB6007]
-		[NutrientQuantity_vitaminB12083])
+		[NutrientQuantity_calcium705])
 	(name_ "Imitation cheese, american or cheddar, low cholesterol")
-	(season  Winter)
+	(season  Autumn Summer)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Milkbuttermilkfluidculturedreducedfat] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat41]
-		[NutrientQuantity_carbohydrates2]
-		[NutrientQuantity_calories09]
-		[NutrientQuantity_sucrose56]
+		[NutrientQuantity_fat2]
+		[NutrientQuantity_carbohydrates53]
+		[NutrientQuantity_calories56]
+		[NutrientQuantity_sugar53]
 		[NutrientQuantity_cholesterol8]
 		[NutrientQuantity_saturated1242]
-		[NutrientQuantity_vitaminB6003]
-		[NutrientQuantity_vitaminB12037])
+		[NutrientQuantity_calcium143])
 	(name_ "Milk, buttermilk, fluid, cultured, reduced fat")
 	(season  Winter)
 	(type [FoodType_DairyandEggProducts]))
 
 ([Ingredient_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat77]
-		[NutrientQuantity_carbohydrates73]
-		[NutrientQuantity_calories232]
-		[NutrientQuantity_sucrose409]
+		[NutrientQuantity_fat73]
+		[NutrientQuantity_carbohydrates796]
+		[NutrientQuantity_calories409]
+		[NutrientQuantity_sugar20]
 		[NutrientQuantity_saturated08]
-		[NutrientQuantity_vitaminB616]
-		[NutrientQuantity_vitaminB1247])
+		[NutrientQuantity_calcium35])
 	(name_ "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds")
-	(season  Spring Summer Winter)
+	(season  Summer)
 	(type [FoodType_BreakfastCereals]))
 
 ([Ingredient_Meatballsmeatless] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat21]
-		[NutrientQuantity_carbohydrates9]
-		[NutrientQuantity_calories4]
-		[NutrientQuantity_sucrose197]
+		[NutrientQuantity_fat9]
+		[NutrientQuantity_carbohydrates8]
+		[NutrientQuantity_calories197]
+		[NutrientQuantity_sugar125]
 		[NutrientQuantity_saturated1425]
-		[NutrientQuantity_vitaminB505]
-		[NutrientQuantity_vitaminB602]
-		[NutrientQuantity_vitaminB1215])
+		[NutrientQuantity_calcium25])
 	(name_ "Meatballs, meatless")
-	(season  Winter Summer Autumn)
+	(season  Winter Spring Autumn)
 	(type [FoodType_LegumesandLegumeProducts]))
 
 ([Ingredient_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat14]
-		[NutrientQuantity_carbohydrates02]
-		[NutrientQuantity_calories089]
-		[NutrientQuantity_sucrose37]
+		[NutrientQuantity_fat02]
+		[NutrientQuantity_carbohydrates731]
+		[NutrientQuantity_calories37]
+		[NutrientQuantity_sugar241]
 		[NutrientQuantity_saturated0039]
-		[NutrientQuantity_vitaminB6008])
+		[NutrientQuantity_calcium21])
 	(name_ "Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added")
-	(season  Autumn Summer)
+	(season  Summer Spring Winter Autumn)
 	(type [FoodType_VegetablesandVegetableProducts]))
 
 ([Ingredient_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium] of Ingredient
 	(nutrients 
-		[NutrientQuantity_fat3704]
-		[NutrientQuantity_carbohydrates4178]
-		[NutrientQuantity_calories743]
-		[NutrientQuantity_sucrose541]
+		[NutrientQuantity_fat4178]
+		[NutrientQuantity_carbohydrates143]
+		[NutrientQuantity_calories541]
 		[NutrientQuantity_cholesterol110]
 		[NutrientQuantity_saturated13739]
-		[NutrientQuantity_vitaminB51171]
-		[NutrientQuantity_vitaminB60349]
-		[NutrientQuantity_vitaminB12123])
+		[NutrientQuantity_calcium11])
 	(name_ "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium")
-	(season  Autumn)
+	(season  Summer Winter Spring)
 	(type [FoodType_PorkProducts]))
 

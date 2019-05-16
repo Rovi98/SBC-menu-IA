@@ -46,15 +46,7 @@
 	
 	(name_ "Saturated"))
 
-([Nutrient_vitaminB5] of Nutrient
+([Nutrient_calcium] of Nutrient
 	
-	(name_ "Vitamin B5"))
-
-([Nutrient_vitaminB6] of Nutrient
-	
-	(name_ "Vitamin B6"))
-
-([Nutrient_vitaminB12] of Nutrient
-	
-	(name_ "Vitamin B12"))
+	(name_ "Calcium"))
 

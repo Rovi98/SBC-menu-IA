@@ -1,2945 +1,2315 @@
-([NutrientQuantity_saturated0016] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.016))
-
-([NutrientQuantity_carbohydrates23] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 2.3))
-
-([NutrientQuantity_carbohydrates093] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.93))
-
-([NutrientQuantity_vitaminB5002] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.02))
-
-([NutrientQuantity_saturated001] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.01))
-
-([NutrientQuantity_carbohydrates054] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.54))
-
-([NutrientQuantity_fat1425] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 14.25))
-
-([NutrientQuantity_vitaminB60029] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.029))
-
-([NutrientQuantity_lactose026] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.26))
-
-([NutrientQuantity_cholesterol29] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 29))
-
-([NutrientQuantity_fructose207] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 2.07))
-
-([NutrientQuantity_vitaminB50201] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.201))
-
-([NutrientQuantity_carbohydrates008] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.08))
-
-([NutrientQuantity_carbohydrates4178] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 41.78))
-
-([NutrientQuantity_vitaminB12091] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.91))
-
-([NutrientQuantity_fat166] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 16.6))
-
-([NutrientQuantity_sucrose164] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 164))
-
-([NutrientQuantity_saturated5953] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 5.953))
-
-([NutrientQuantity_vitaminB50221] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.221))
-
-([NutrientQuantity_vitaminB60045] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.045))
-
-([NutrientQuantity_vitaminB6055] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.55))
-
-([NutrientQuantity_fat095] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.95))
-
-([NutrientQuantity_vitaminB6003] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.03))
-
-([NutrientQuantity_saturated0026] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.026))
-
-([NutrientQuantity_vitaminB50492] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.492))
-
-([NutrientQuantity_vitaminB50226] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.226))
-
-([NutrientQuantity_fructose445] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 4.45))
-
-([NutrientQuantity_glucose005] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 0.05))
-
-([NutrientQuantity_fat252] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 2.52))
-
-([NutrientQuantity_carbohydrates3372] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 33.72))
-
-([NutrientQuantity_vitaminB60107] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.107))
-
-([NutrientQuantity_vitaminB50334] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.334))
-
-([NutrientQuantity_saturated3483] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 3.483))
-
-([NutrientQuantity_cholesterol401] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 401))
-
-([NutrientQuantity_calories247] of NutrientQuantity
+([NutrientQuantity_calories64] of NutrientQuantity
 	
 	(nutrient [Nutrient_calories])
-	(quantity 2.47))
-
-([NutrientQuantity_fat217] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 2.17))
-
-([NutrientQuantity_fat12] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.2))
-
-([NutrientQuantity_fat157] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 15.7))
-
-([NutrientQuantity_fat77] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 7.7))
-
-([NutrientQuantity_carbohydrates02] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.2))
-
-([NutrientQuantity_saturated13739] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 13.739))
-
-([NutrientQuantity_vitaminB5137] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.37))
-
-([NutrientQuantity_vitaminB6053] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.53))
-
-([NutrientQuantity_vitaminB122] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 2))
-
-([NutrientQuantity_fat66] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 6.6))
-
-([NutrientQuantity_calories127] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.27))
-
-([NutrientQuantity_saturated0697] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.697))
-
-([NutrientQuantity_carbohydrates007] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.07))
-
-([NutrientQuantity_fat2406] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 24.06))
-
-([NutrientQuantity_calories743] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 7.43))
-
-([NutrientQuantity_carbohydrates1644] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 16.44))
-
-([NutrientQuantity_carbohydrates108] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.08))
-
-([NutrientQuantity_fat1524] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 15.24))
-
-([NutrientQuantity_vitaminB501] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.1))
-
-([NutrientQuantity_calories02] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.2))
-
-([NutrientQuantity_calories036] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.36))
-
-([NutrientQuantity_vitaminB50129] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.129))
-
-([NutrientQuantity_vitaminB60299] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.299))
-
-([NutrientQuantity_vitaminB50232] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.232))
-
-([NutrientQuantity_vitaminB50051] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.051))
-
-([NutrientQuantity_vitaminB50313] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.313))
-
-([NutrientQuantity_sucrose138] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 138))
-
-([NutrientQuantity_saturated1127] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 11.27))
-
-([NutrientQuantity_sucrose884] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 884))
-
-([NutrientQuantity_vitaminB50123] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.123))
-
-([NutrientQuantity_vitaminB6035] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.35))
-
-([NutrientQuantity_sucrose290] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 290))
-
-([NutrientQuantity_vitaminB12037] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.37))
-
-([NutrientQuantity_calories089] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.89))
-
-([NutrientQuantity_fat238] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 2.38))
-
-([NutrientQuantity_cholesterol142] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 142))
-
-([NutrientQuantity_calories326] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.26))
-
-([NutrientQuantity_sucrose18] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 18))
-
-([NutrientQuantity_cholesterol70] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 70))
-
-([NutrientQuantity_sucrose46] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 46))
-
-([NutrientQuantity_calories149] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.49))
-
-([NutrientQuantity_sucrose96] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 96))
-
-([NutrientQuantity_fat037] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.37))
-
-([NutrientQuantity_fat71] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 7.1))
-
-([NutrientQuantity_saturated4323] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 4.323))
-
-([NutrientQuantity_vitaminB5025] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.25))
-
-([NutrientQuantity_vitaminB50286] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.286))
-
-([NutrientQuantity_fat492] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 4.92))
-
-([NutrientQuantity_saturated0053] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.053))
-
-([NutrientQuantity_carbohydrates207] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 2.07))
-
-([NutrientQuantity_carbohydrates021] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.21))
-
-([NutrientQuantity_vitaminB60178] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.178))
-
-([NutrientQuantity_calories042] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.42))
-
-([NutrientQuantity_cholesterol57] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 57))
-
-([NutrientQuantity_vitaminB12004] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.04))
-
-([NutrientQuantity_vitaminB1202] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.2))
-
-([NutrientQuantity_carbohydrates568] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 56.8))
-
-([NutrientQuantity_sucrose37] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 37))
-
-([NutrientQuantity_carbohydrates016] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.16))
-
-([NutrientQuantity_carbohydrates4] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 4))
-
-([NutrientQuantity_sucrose263] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 263))
-
-([NutrientQuantity_vitaminB50642] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.642))
-
-([NutrientQuantity_cholesterol260] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 260))
-
-([NutrientQuantity_fat195] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.95))
-
-([NutrientQuantity_carbohydrates32] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 32))
-
-([NutrientQuantity_calories4] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 4))
-
-([NutrientQuantity_vitaminB60052] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.052))
-
-([NutrientQuantity_carbohydrates832] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 8.32))
-
-([NutrientQuantity_fat58] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 5.8))
-
-([NutrientQuantity_sucrose184] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 184))
-
-([NutrientQuantity_saturated1111] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.111))
-
-([NutrientQuantity_sucrose389] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 389))
-
-([NutrientQuantity_lactose125] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.25))
-
-([NutrientQuantity_vitaminB5095] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.95))
-
-([NutrientQuantity_vitaminB6041] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.41))
-
-([NutrientQuantity_vitaminB6007] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.07))
-
-([NutrientQuantity_calories592] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 5.92))
-
-([NutrientQuantity_saturated0032] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.032))
-
-([NutrientQuantity_carbohydrates038] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.38))
-
-([NutrientQuantity_glucose004] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 0.04))
-
-([NutrientQuantity_vitaminB50455] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.455))
-
-([NutrientQuantity_vitaminB50411] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.411))
-
-([NutrientQuantity_saturated0039] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.039))
-
-([NutrientQuantity_vitaminB6004] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.04))
-
-([NutrientQuantity_sucrose49] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 49))
-
-([NutrientQuantity_vitaminB602] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.2))
-
-([NutrientQuantity_sucrose276] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 276))
-
-([NutrientQuantity_carbohydrates155] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.55))
-
-([NutrientQuantity_sucrose208] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 208))
-
-([NutrientQuantity_calories059] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.59))
-
-([NutrientQuantity_cholesterol90] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 90))
-
-([NutrientQuantity_saturated0419] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.419))
-
-([NutrientQuantity_vitaminB50075] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.075))
-
-([NutrientQuantity_vitaminB5192] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.92))
-
-([NutrientQuantity_vitaminB60047] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.047))
-
-([NutrientQuantity_carbohydrates018] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.18))
-
-([NutrientQuantity_sucrose33] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 33))
-
-([NutrientQuantity_fat25] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 25))
-
-([NutrientQuantity_lactose659] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 6.59))
-
-([NutrientQuantity_lactose243] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 2.43))
-
-([NutrientQuantity_saturated0054] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.054))
-
-([NutrientQuantity_vitaminB12015] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.15))
-
-([NutrientQuantity_calories098] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.98))
-
-([NutrientQuantity_carbohydrates448] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 4.48))
-
-([NutrientQuantity_sucrose32] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 32))
-
-([NutrientQuantity_vitaminB50371] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.371))
-
-([NutrientQuantity_calories031] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.31))
-
-([NutrientQuantity_sucrose102] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 102))
-
-([NutrientQuantity_vitaminB60044] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.044))
-
-([NutrientQuantity_saturated1242] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.242))
-
-([NutrientQuantity_sucrose407] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 407))
-
-([NutrientQuantity_fat11] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.1))
-
-([NutrientQuantity_cholesterol6] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 6))
-
-([NutrientQuantity_fructose27] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 2.7))
-
-([NutrientQuantity_vitaminB6012] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.12))
-
-([NutrientQuantity_vitaminB50522] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.522))
-
-([NutrientQuantity_vitaminB50045] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.045))
-
-([NutrientQuantity_vitaminB60041] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.041))
-
-([NutrientQuantity_vitaminB60495] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.495))
-
-([NutrientQuantity_vitaminB1224] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 24))
-
-([NutrientQuantity_fat21] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 21))
-
-([NutrientQuantity_calories04] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.4))
-
-([NutrientQuantity_fat083] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.83))
-
-([NutrientQuantity_lactose507] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 5.07))
-
-([NutrientQuantity_carbohydrates122] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 12.2))
-
-([NutrientQuantity_calories196] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.96))
-
-([NutrientQuantity_vitaminB50084] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.084))
-
-([NutrientQuantity_carbohydrates86] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 8.6))
-
-([NutrientQuantity_vitaminB6009] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.09))
-
-([NutrientQuantity_fat14] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.4))
-
-([NutrientQuantity_vitaminB50061] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.061))
-
-([NutrientQuantity_vitaminB5007] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.07))
-
-([NutrientQuantity_calories12] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.2))
-
-([NutrientQuantity_vitaminB60583] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.583))
-
-([NutrientQuantity_lactose197] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.97))
-
-([NutrientQuantity_fructose1] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 1))
-
-([NutrientQuantity_vitaminB60153] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.153))
-
-([NutrientQuantity_fructose062] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.62))
-
-([NutrientQuantity_calories171] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.71))
-
-([NutrientQuantity_glucose578] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 5.78))
-
-([NutrientQuantity_vitaminB50125] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.125))
-
-([NutrientQuantity_vitaminB50082] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.082))
-
-([NutrientQuantity_vitaminB60042] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.042))
-
-([NutrientQuantity_saturated0077] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.077))
-
-([NutrientQuantity_carbohydrates6] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 6))
-
-([NutrientQuantity_fat278] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 27.8))
-
-([NutrientQuantity_sucrose580] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 580))
-
-([NutrientQuantity_fat067] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.67))
-
-([NutrientQuantity_sucrose272] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 272))
-
-([NutrientQuantity_vitaminB50363] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.363))
-
-([NutrientQuantity_saturated1612] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.612))
-
-([NutrientQuantity_saturated0533] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.533))
-
-([NutrientQuantity_vitaminB12001] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.01))
-
-([NutrientQuantity_vitaminB12097] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.97))
-
-([NutrientQuantity_carbohydrates169] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.69))
-
-([NutrientQuantity_glucose024] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 0.24))
-
-([NutrientQuantity_carbohydrates493] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 49.3))
-
-([NutrientQuantity_saturated144] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.44))
-
-([NutrientQuantity_calories102] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.02))
-
-([NutrientQuantity_lactose77] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 7.7))
-
-([NutrientQuantity_fat902] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 9.02))
-
-([NutrientQuantity_carbohydrates403] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 4.03))
-
-([NutrientQuantity_cholesterol5] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 5))
-
-([NutrientQuantity_vitaminB6006] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.06))
-
-([NutrientQuantity_carbohydrates73] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 7.3))
-
-([NutrientQuantity_fat9] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 9))
-
-([NutrientQuantity_sucrose28] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 28))
-
-([NutrientQuantity_lactose066] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.66))
-
-([NutrientQuantity_calories109] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.09))
-
-([NutrientQuantity_carbohydrates63] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 6.3))
-
-([NutrientQuantity_fat329] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 3.29))
-
-([NutrientQuantity_cholesterol8] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 8))
-
-([NutrientQuantity_cholesterol56] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 56))
-
-([NutrientQuantity_saturated1189] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 11.89))
-
-([NutrientQuantity_cholesterol72] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 72))
-
-([NutrientQuantity_saturated0206] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.206))
-
-([NutrientQuantity_sucrose349] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 349))
-
-([NutrientQuantity_vitaminB60473] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.473))
-
-([NutrientQuantity_vitaminB12047] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.47))
-
-([NutrientQuantity_vitaminB12111] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 1.11))
-
-([NutrientQuantity_vitaminB50638] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.638))
-
-([NutrientQuantity_calories37] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.7))
-
-([NutrientQuantity_saturated7481] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 7.481))
-
-([NutrientQuantity_carbohydrates1492] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 14.92))
-
-([NutrientQuantity_vitaminB12894] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 8.94))
-
-([NutrientQuantity_calories19] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.9))
-
-([NutrientQuantity_calories18] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.8))
-
-([NutrientQuantity_saturated0029] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.029))
-
-([NutrientQuantity_vitaminB12031] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.31))
-
-([NutrientQuantity_vitaminB60623] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.623))
-
-([NutrientQuantity_sucrose177] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 177))
-
-([NutrientQuantity_vitaminB60049] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.049))
-
-([NutrientQuantity_sucrose42] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 42))
-
-([NutrientQuantity_glucose745] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 7.45))
-
-([NutrientQuantity_carbohydrates161] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.61))
-
-([NutrientQuantity_fructose099] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.99))
-
-([NutrientQuantity_vitaminB60048] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.048))
-
-([NutrientQuantity_fat437] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 4.37))
-
-([NutrientQuantity_fat886] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 8.86))
-
-([NutrientQuantity_saturated597] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 59.7))
-
-([NutrientQuantity_lactose118] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.18))
-
-([NutrientQuantity_vitaminB50278] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.278))
-
-([NutrientQuantity_vitaminB60051] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.051))
-
-([NutrientQuantity_vitaminB12305] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 3.05))
-
-([NutrientQuantity_saturated0017] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.017))
-
-([NutrientQuantity_glucose4423] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 44.23))
-
-([NutrientQuantity_saturated139] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.39))
-
-([NutrientQuantity_vitaminB12036] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.36))
-
-([NutrientQuantity_sucrose227] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 227))
-
-([NutrientQuantity_sucrose541] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 541))
-
-([NutrientQuantity_fat1361] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 13.61))
-
-([NutrientQuantity_sucrose86] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 86))
-
-([NutrientQuantity_fat042] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.42))
-
-([NutrientQuantity_saturated19337] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 19.337))
-
-([NutrientQuantity_calories047] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.47))
-
-([NutrientQuantity_sucrose175] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 175))
-
-([NutrientQuantity_vitaminB12088] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.88))
-
-([NutrientQuantity_vitaminB60944] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.944))
-
-([NutrientQuantity_sucrose269] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 269))
-
-([NutrientQuantity_cholesterol110] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 110))
-
-([NutrientQuantity_calories189] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.89))
-
-([NutrientQuantity_fat092] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.92))
-
-([NutrientQuantity_sucrose292] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 292))
-
-([NutrientQuantity_calories27] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 2.7))
-
-([NutrientQuantity_vitaminB60367] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.367))
-
-([NutrientQuantity_saturated085] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.85))
-
-([NutrientQuantity_vitaminB12123] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 1.23))
-
-([NutrientQuantity_sucrose20] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 20))
-
-([NutrientQuantity_saturated1257] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.257))
-
-([NutrientQuantity_sucrose195] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 195))
-
-([NutrientQuantity_sucrose35] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 35))
-
-([NutrientQuantity_fat885] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 8.85))
-
-([NutrientQuantity_vitaminB60087] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.087))
-
-([NutrientQuantity_fat3704] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 37.04))
-
-([NutrientQuantity_vitaminB50435] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.435))
-
-([NutrientQuantity_lactose005] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.05))
-
-([NutrientQuantity_cholesterol1] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 1))
-
-([NutrientQuantity_cholesterol15] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 15))
-
-([NutrientQuantity_saturated0112] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.112))
-
-([NutrientQuantity_saturated2278] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 2.278))
-
-([NutrientQuantity_calories192] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.92))
-
-([NutrientQuantity_fructose157] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 1.57))
-
-([NutrientQuantity_saturated0042] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.042))
-
-([NutrientQuantity_saturated0394] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.394))
-
-([NutrientQuantity_sucrose63] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 63))
-
-([NutrientQuantity_calories09] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.9))
-
-([NutrientQuantity_vitaminB601] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.1))
-
-([NutrientQuantity_vitaminB50079] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.079))
-
-([NutrientQuantity_saturated1528] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.528))
-
-([NutrientQuantity_sucrose62] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 62))
-
-([NutrientQuantity_cholesterol71] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 71))
-
-([NutrientQuantity_carbohydrates01] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.1))
-
-([NutrientQuantity_fat29] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 2.9))
-
-([NutrientQuantity_calories035] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.35))
-
-([NutrientQuantity_carbohydrates91] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 9.1))
-
-([NutrientQuantity_vitaminB50402] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.402))
-
-([NutrientQuantity_vitaminB6005] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.05))
-
-([NutrientQuantity_saturated0178] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.178))
-
-([NutrientQuantity_sucrose89] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 89))
-
-([NutrientQuantity_sucrose324] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 324))
-
-([NutrientQuantity_carbohydrates9] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 9))
-
-([NutrientQuantity_vitaminB5106] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.06))
-
-([NutrientQuantity_sucrose60] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 60))
-
-([NutrientQuantity_fat111] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.11))
-
-([NutrientQuantity_fat454] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 4.54))
-
-([NutrientQuantity_vitaminB603] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.3))
-
-([NutrientQuantity_fat2544] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 25.44))
-
-([NutrientQuantity_carbohydrates03] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.3))
-
-([NutrientQuantity_saturated0035] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.035))
-
-([NutrientQuantity_fat453] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 4.53))
-
-([NutrientQuantity_carbohydrates3091] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 30.91))
-
-([NutrientQuantity_vitaminB6015] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.15))
-
-([NutrientQuantity_vitaminB5037] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.37))
-
-([NutrientQuantity_fat834] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 8.34))
-
-([NutrientQuantity_calories318] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.18))
-
-([NutrientQuantity_vitaminB60092] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.092))
-
-([NutrientQuantity_sucrose197] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 197))
-
-([NutrientQuantity_sucrose296] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 296))
-
-([NutrientQuantity_sucrose182] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 182))
-
-([NutrientQuantity_cholesterol18] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 18))
-
-([NutrientQuantity_glucose3717] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 37.17))
-
-([NutrientQuantity_alcohol046] of NutrientQuantity
-	
-	(nutrient [Nutrient_alcohol])
-	(quantity 0.46))
-
-([NutrientQuantity_vitaminB1247] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 4.7))
-
-([NutrientQuantity_sucrose41] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 41))
-
-([NutrientQuantity_vitaminB50259] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.259))
-
-([NutrientQuantity_carbohydrates1857] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 18.57))
-
-([NutrientQuantity_carbohydrates134] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.34))
-
-([NutrientQuantity_vitaminB6008] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.08))
-
-([NutrientQuantity_sucrose24] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 24))
-
-([NutrientQuantity_sucrose409] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 409))
-
-([NutrientQuantity_cholesterol4] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 4))
-
-([NutrientQuantity_vitaminB50263] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.263))
-
-([NutrientQuantity_calories067] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.67))
-
-([NutrientQuantity_carbohydrates369] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 3.69))
-
-([NutrientQuantity_vitaminB50591] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.591))
-
-([NutrientQuantity_calories158] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.58))
-
-([NutrientQuantity_calories055] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.55))
-
-([NutrientQuantity_fructose025] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.25))
-
-([NutrientQuantity_saturated0028] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.028))
-
-([NutrientQuantity_saturated0015] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.015))
-
-([NutrientQuantity_fat1721] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 17.21))
-
-([NutrientQuantity_vitaminB12042] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.42))
-
-([NutrientQuantity_lactose157] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.57))
-
-([NutrientQuantity_vitaminB1228] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 2.8))
-
-([NutrientQuantity_vitaminB12203] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 2.03))
-
-([NutrientQuantity_vitaminB50199] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.199))
-
-([NutrientQuantity_fat96] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 9.6))
-
-([NutrientQuantity_fat241] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 24.1))
-
-([NutrientQuantity_vitaminB60115] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.115))
-
-([NutrientQuantity_vitaminB5019] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.19))
-
-([NutrientQuantity_sucrose196] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 196))
-
-([NutrientQuantity_vitaminB5112] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.12))
-
-([NutrientQuantity_vitaminB50049] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.049))
-
-([NutrientQuantity_vitaminB5052] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.52))
-
-([NutrientQuantity_saturated406] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 4.06))
-
-([NutrientQuantity_glucose2601] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 26.01))
-
-([NutrientQuantity_fat2698] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 26.98))
-
-([NutrientQuantity_saturated0012] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.012))
-
-([NutrientQuantity_carbohydrates813] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 8.13))
-
-([NutrientQuantity_fat07] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.7))
-
-([NutrientQuantity_sucrose56] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 56))
-
-([NutrientQuantity_vitaminB60188] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.188))
-
-([NutrientQuantity_fat328] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 3.28))
-
-([NutrientQuantity_fat187] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.87))
-
-([NutrientQuantity_saturated0733] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.733))
-
-([NutrientQuantity_fat254] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 25.4))
-
-([NutrientQuantity_carbohydrates015] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.15))
-
-([NutrientQuantity_calories023] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.23))
-
-([NutrientQuantity_saturated5917] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 5.917))
-
-([NutrientQuantity_sucrose390] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 390))
-
-([NutrientQuantity_carbohydrates100] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 100))
-
-([NutrientQuantity_carbohydrates5933] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 59.33))
-
-([NutrientQuantity_vitaminB60233] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.233))
-
-([NutrientQuantity_fat061] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.61))
-
-([NutrientQuantity_vitaminB50135] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.135))
-
-([NutrientQuantity_saturated0044] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.044))
-
-([NutrientQuantity_carbohydrates023] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.23))
-
-([NutrientQuantity_vitaminB50489] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.489))
-
-([NutrientQuantity_vitaminB50299] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.299))
-
-([NutrientQuantity_saturated0041] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.041))
-
-([NutrientQuantity_vitaminB60098] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.098))
-
-([NutrientQuantity_sucrose157] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 157))
-
-([NutrientQuantity_sucrose87] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 87))
-
-([NutrientQuantity_sucrose455] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 455))
-
-([NutrientQuantity_vitaminB6042] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.42))
-
-([NutrientQuantity_vitaminB50309] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.309))
-
-([NutrientQuantity_calories072] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.72))
-
-([NutrientQuantity_calories062] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.62))
-
-([NutrientQuantity_fructose034] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.34))
-
-([NutrientQuantity_calories142] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.42))
-
-([NutrientQuantity_vitaminB50288] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.288))
-
-([NutrientQuantity_carbohydrates333] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 3.33))
-
-([NutrientQuantity_fructose047] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.47))
-
-([NutrientQuantity_vitaminB50536] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.536))
-
-([NutrientQuantity_sucrose130] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 130))
-
-([NutrientQuantity_calories392] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.92))
-
-([NutrientQuantity_calories07] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.7))
-
-([NutrientQuantity_vitaminB5166] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.66))
-
-([NutrientQuantity_saturated0529] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.529))
-
-([NutrientQuantity_calories232] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 2.32))
-
-([NutrientQuantity_sucrose346] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 346))
-
-([NutrientQuantity_cholesterol111] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 111))
-
-([NutrientQuantity_saturated08] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.8))
-
-([NutrientQuantity_saturated2936] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 2.936))
-
-([NutrientQuantity_calories048] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.48))
-
-([NutrientQuantity_lactose007] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.07))
-
-([NutrientQuantity_fat238] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 23.8))
-
-([NutrientQuantity_fructose239] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 2.39))
-
-([NutrientQuantity_vitaminB60058] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.058))
-
-([NutrientQuantity_saturated11] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.1))
-
-([NutrientQuantity_fat2462] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 24.62))
-
-([NutrientQuantity_fat1075] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 10.75))
-
-([NutrientQuantity_carbohydrates3827] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 38.27))
-
-([NutrientQuantity_vitaminB60046] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.046))
-
-([NutrientQuantity_calories026] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.26))
-
-([NutrientQuantity_vitaminB60805] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.805))
-
-([NutrientQuantity_calories765] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 7.65))
-
-([NutrientQuantity_carbohydrates05] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.5))
-
-([NutrientQuantity_calories08] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.8))
-
-([NutrientQuantity_sucrose64] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
 	(quantity 64))
 
-([NutrientQuantity_fat072] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.72))
-
-([NutrientQuantity_carbohydrates748] of NutrientQuantity
+([NutrientQuantity_carbohydrates1601] of NutrientQuantity
 	
 	(nutrient [Nutrient_carbohydrates])
-	(quantity 7.48))
+	(quantity 16.01))
 
-([NutrientQuantity_vitaminB60028] of NutrientQuantity
+([NutrientQuantity_calcium61] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.028))
-
-([NutrientQuantity_vitaminB60184] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.184))
-
-([NutrientQuantity_calories198] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.98))
-
-([NutrientQuantity_vitaminB1215] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 1.5))
-
-([NutrientQuantity_cholesterol14] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 14))
-
-([NutrientQuantity_vitaminB60054] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.054))
-
-([NutrientQuantity_vitaminB12056] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.56))
-
-([NutrientQuantity_vitaminB60349] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.349))
-
-([NutrientQuantity_saturated0038] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.038))
-
-([NutrientQuantity_fat1794] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 17.94))
-
-([NutrientQuantity_lactose142] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.42))
-
-([NutrientQuantity_sucrose172] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 172))
-
-([NutrientQuantity_cholesterol22] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 22))
-
-([NutrientQuantity_saturated0037] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.037))
-
-([NutrientQuantity_carbohydrates039] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.39))
-
-([NutrientQuantity_vitaminB50595] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.595))
-
-([NutrientQuantity_saturated1048] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.048))
-
-([NutrientQuantity_fat114] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.14))
-
-([NutrientQuantity_carbohydrates1484] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 14.84))
-
-([NutrientQuantity_carbohydrates195] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 1.95))
-
-([NutrientQuantity_carbohydrates028] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.28))
-
-([NutrientQuantity_vitaminB12131] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 1.31))
-
-([NutrientQuantity_carbohydrates1145] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 11.45))
-
-([NutrientQuantity_glucose372] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 37.2))
-
-([NutrientQuantity_saturated0542] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.542))
-
-([NutrientQuantity_saturated0176] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.176))
-
-([NutrientQuantity_sucrose40] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 40))
-
-([NutrientQuantity_vitaminB60086] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.086))
-
-([NutrientQuantity_vitaminB5138] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.38))
-
-([NutrientQuantity_glucose575] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 5.75))
-
-([NutrientQuantity_vitaminB50289] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.289))
-
-([NutrientQuantity_vitaminB60063] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.063))
-
-([NutrientQuantity_lactose04] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.4))
+	(nutrient [Nutrient_calcium])
+	(quantity 61))
 
 ([NutrientQuantity_saturated0025] of NutrientQuantity
 	
 	(nutrient [Nutrient_saturated])
 	(quantity 0.025))
 
-([NutrientQuantity_lactose199] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.99))
-
-([NutrientQuantity_calories252] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 2.52))
-
-([NutrientQuantity_sucrose116] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 116))
-
-([NutrientQuantity_calories046] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.46))
-
-([NutrientQuantity_vitaminB121088] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 10.88))
-
-([NutrientQuantity_calories151] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.51))
-
-([NutrientQuantity_carbohydrates033] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.33))
-
-([NutrientQuantity_calories064] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.64))
-
-([NutrientQuantity_sucrose114] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 114))
-
-([NutrientQuantity_saturated1425] of NutrientQuantity
+([NutrientQuantity_saturated0394] of NutrientQuantity
 	
 	(nutrient [Nutrient_saturated])
-	(quantity 1.425))
+	(quantity 0.394))
 
-([NutrientQuantity_calories44] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 4.4))
-
-([NutrientQuantity_vitaminB12083] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.83))
-
-([NutrientQuantity_vitaminB1208] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.8))
-
-([NutrientQuantity_calories03] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.3))
-
-([NutrientQuantity_carbohydrates046] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.46))
-
-([NutrientQuantity_fructose007] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.07))
-
-([NutrientQuantity_fat286] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 2.86))
-
-([NutrientQuantity_vitaminB60525] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.525))
-
-([NutrientQuantity_calories21] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 2.1))
-
-([NutrientQuantity_sucrose30] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 30))
-
-([NutrientQuantity_fat05] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.5))
-
-([NutrientQuantity_saturated0764] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.764))
-
-([NutrientQuantity_carbohydrates5] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 5))
-
-([NutrientQuantity_lactose182] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.82))
-
-([NutrientQuantity_vitaminB60163] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.163))
-
-([NutrientQuantity_calories025] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.25))
-
-([NutrientQuantity_carbohydrates017] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.17))
-
-([NutrientQuantity_cholesterol49] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 49))
-
-([NutrientQuantity_sucrose61] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 61))
-
-([NutrientQuantity_lactose004] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 0.04))
-
-([NutrientQuantity_fat122] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.22))
-
-([NutrientQuantity_carbohydrates242] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 2.42))
-
-([NutrientQuantity_saturated0078] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.078))
-
-([NutrientQuantity_fat348] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 3.48))
-
-([NutrientQuantity_fat379] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 3.79))
-
-([NutrientQuantity_vitaminB50227] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.227))
-
-([NutrientQuantity_calories107] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.07))
-
-([NutrientQuantity_calories019] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.19))
-
-([NutrientQuantity_sucrose619] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 619))
-
-([NutrientQuantity_fructose015] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.15))
-
-([NutrientQuantity_saturated692] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 6.92))
-
-([NutrientQuantity_vitaminB12005] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.05))
-
-([NutrientQuantity_calories037] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.37))
-
-([NutrientQuantity_saturated278] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 2.78))
-
-([NutrientQuantity_fat149] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.49))
-
-([NutrientQuantity_vitaminB50514] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.514))
-
-([NutrientQuantity_calories126] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.26))
-
-([NutrientQuantity_calories159] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.59))
-
-([NutrientQuantity_carbohydrates2005] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 20.05))
-
-([NutrientQuantity_sucrose112] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 112))
-
-([NutrientQuantity_carbohydrates3133] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 31.33))
-
-([NutrientQuantity_fat2195] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 21.95))
-
-([NutrientQuantity_fat525] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 5.25))
-
-([NutrientQuantity_sucrose145] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 145))
-
-([NutrientQuantity_carbohydrates237] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 2.37))
-
-([NutrientQuantity_carbohydrates036] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.36))
-
-([NutrientQuantity_saturated0006] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.006))
-
-([NutrientQuantity_vitaminB51079] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.079))
-
-([NutrientQuantity_saturated1438] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 14.38))
-
-([NutrientQuantity_fat2991] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 29.91))
-
-([NutrientQuantity_vitaminB60037] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.037))
-
-([NutrientQuantity_calories06] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.6))
-
-([NutrientQuantity_carbohydrates2] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 2))
-
-([NutrientQuantity_lactose158] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 1.58))
-
-([NutrientQuantity_vitaminB60079] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.079))
-
-([NutrientQuantity_vitaminB505] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.5))
-
-([NutrientQuantity_cholesterol79] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 79))
-
-([NutrientQuantity_calories26] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 2.6))
-
-([NutrientQuantity_fructose009] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.09))
-
-([NutrientQuantity_fat076] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 0.76))
-
-([NutrientQuantity_carbohydrates011] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 0.11))
-
-([NutrientQuantity_calories113] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1.13))
-
-([NutrientQuantity_saturated0057] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.057))
-
-([NutrientQuantity_vitaminB6002] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.02))
-
-([NutrientQuantity_lactose498] of NutrientQuantity
-	
-	(nutrient [Nutrient_lactose])
-	(quantity 4.98))
-
-([NutrientQuantity_sucrose52] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 52))
-
-([NutrientQuantity_fat2856] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 28.56))
-
-([NutrientQuantity_cholesterol88] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 88))
-
-([NutrientQuantity_cholesterol83] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 83))
-
-([NutrientQuantity_vitaminB5051] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.51))
-
-([NutrientQuantity_calories338] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.38))
-
-([NutrientQuantity_carbohydrates628] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 6.28))
-
-([NutrientQuantity_saturated0204] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.204))
-
-([NutrientQuantity_vitaminB60022] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.022))
-
-([NutrientQuantity_saturated671] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 6.71))
-
-([NutrientQuantity_calories021] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.21))
-
-([NutrientQuantity_fructose004] of NutrientQuantity
-	
-	(nutrient [Nutrient_fructose])
-	(quantity 0.04))
-
-([NutrientQuantity_vitaminB60083] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.083))
-
-([NutrientQuantity_carbohydrates366] of NutrientQuantity
-	
-	(nutrient [Nutrient_carbohydrates])
-	(quantity 3.66))
-
-([NutrientQuantity_fat717] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 7.17))
-
-([NutrientQuantity_glucose017] of NutrientQuantity
-	
-	(nutrient [Nutrient_glucose])
-	(quantity 0.17))
-
-([NutrientQuantity_vitaminB50112] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.112))
-
-([NutrientQuantity_calories092] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.92))
-
-([NutrientQuantity_fat2258] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 22.58))
-
-([NutrientQuantity_fat109] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.09))
-
-([NutrientQuantity_saturated0072] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 0.072))
-
-([NutrientQuantity_calories1] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 1))
-
-([NutrientQuantity_calories333] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 3.33))
-
-([NutrientQuantity_fat895] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 8.95))
-
-([NutrientQuantity_fat104] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 1.04))
-
-([NutrientQuantity_vitaminB1233] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 3.3))
-
-([NutrientQuantity_fat41] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 4.1))
-
-([NutrientQuantity_vitaminB51171] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 1.171))
-
-([NutrientQuantity_saturated1878] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 1.878))
-
-([NutrientQuantity_vitaminB616] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 1.6))
-
-([NutrientQuantity_sucrose278] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 278))
-
-([NutrientQuantity_cholesterol76] of NutrientQuantity
-	
-	(nutrient [Nutrient_cholesterol])
-	(quantity 76))
-
-([NutrientQuantity_fat887] of NutrientQuantity
-	
-	(nutrient [Nutrient_fat])
-	(quantity 8.87))
-
-([NutrientQuantity_calories082] of NutrientQuantity
-	
-	(nutrient [Nutrient_calories])
-	(quantity 0.82))
-
-([NutrientQuantity_vitaminB60329] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.329))
-
-([NutrientQuantity_sugar6] of NutrientQuantity
+([NutrientQuantity_sugar249] of NutrientQuantity
 	
 	(nutrient [Nutrient_sugar])
-	(quantity 6))
+	(quantity 2.49))
 
-([NutrientQuantity_vitaminB60064] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.064))
-
-([NutrientQuantity_vitaminB50002] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.002))
-
-([NutrientQuantity_fructose121] of NutrientQuantity
+([NutrientQuantity_fructose336] of NutrientQuantity
 	
 	(nutrient [Nutrient_fructose])
-	(quantity 1.21))
+	(quantity 3.36))
 
-([NutrientQuantity_vitaminB60074] of NutrientQuantity
+([NutrientQuantity_calories15] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.074))
+	(nutrient [Nutrient_calories])
+	(quantity 15))
 
-([NutrientQuantity_sucrose163] of NutrientQuantity
+([NutrientQuantity_carbohydrates531] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 5.31))
+
+([NutrientQuantity_carbohydrates169] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 16.9))
+
+([NutrientQuantity_calories182] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 182))
+
+([NutrientQuantity_calories41] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 41))
+
+([NutrientQuantity_calories116] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 116))
+
+([NutrientQuantity_carbohydrates739] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.39))
+
+([NutrientQuantity_saturated0112] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.112))
+
+([NutrientQuantity_calories87] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 87))
+
+([NutrientQuantity_carbohydrates1142] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 11.42))
+
+([NutrientQuantity_fat1492] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 14.92))
+
+([NutrientQuantity_calcium28] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 28))
+
+([NutrientQuantity_sugar01] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.1))
+
+([NutrientQuantity_fructose65] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 6.5))
+
+([NutrientQuantity_carbohydrates1065] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 10.65))
+
+([NutrientQuantity_saturated0029] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.029))
+
+([NutrientQuantity_carbohydrates958] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 9.58))
+
+([NutrientQuantity_calories175] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 175))
+
+([NutrientQuantity_calcium9] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 9))
+
+([NutrientQuantity_sugar35] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 3.5))
+
+([NutrientQuantity_sugar3741] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 37.41))
+
+([NutrientQuantity_fat5933] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 59.33))
+
+([NutrientQuantity_calcium16] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 16))
+
+([NutrientQuantity_sucrose099] of NutrientQuantity
 	
 	(nutrient [Nutrient_sucrose])
-	(quantity 163))
+	(quantity 0.99))
+
+([NutrientQuantity_sucrose025] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.25))
+
+([NutrientQuantity_sugar20] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 20))
+
+([NutrientQuantity_sugar32] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 3.2))
 
 ([NutrientQuantity_saturated1799] of NutrientQuantity
 	
 	(nutrient [Nutrient_saturated])
 	(quantity 1.799))
 
-([NutrientQuantity_vitaminB57056] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 7.056))
-
-([NutrientQuantity_vitaminB12201] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 2.01))
-
-([NutrientQuantity_sucrose266] of NutrientQuantity
-	
-	(nutrient [Nutrient_sucrose])
-	(quantity 266))
-
-([NutrientQuantity_saturated5815] of NutrientQuantity
-	
-	(nutrient [Nutrient_saturated])
-	(quantity 5.815))
-
-([NutrientQuantity_vitaminB50089] of NutrientQuantity
-	
-	(nutrient [Nutrient_vitaminB5])
-	(quantity 0.089))
-
-([NutrientQuantity_calories204] of NutrientQuantity
+([NutrientQuantity_calories269] of NutrientQuantity
 	
 	(nutrient [Nutrient_calories])
-	(quantity 2.04))
+	(quantity 269))
 
-([NutrientQuantity_vitaminB60167] of NutrientQuantity
+([NutrientQuantity_calories409] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.167))
+	(nutrient [Nutrient_calories])
+	(quantity 409))
 
-([NutrientQuantity_saturated0698] of NutrientQuantity
+([NutrientQuantity_calcium95] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 95))
+
+([NutrientQuantity_saturated1612] of NutrientQuantity
 	
 	(nutrient [Nutrient_saturated])
-	(quantity 0.698))
+	(quantity 1.612))
 
-([NutrientQuantity_fructose3712] of NutrientQuantity
+([NutrientQuantity_sugar188] of NutrientQuantity
 	
-	(nutrient [Nutrient_fructose])
-	(quantity 37.12))
+	(nutrient [Nutrient_sugar])
+	(quantity 1.88))
 
-([NutrientQuantity_vitaminB12002] of NutrientQuantity
+([NutrientQuantity_sugar17] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.02))
+	(nutrient [Nutrient_sugar])
+	(quantity 1.7))
 
-([NutrientQuantity_vitaminB12009] of NutrientQuantity
+([NutrientQuantity_cholesterol88] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB12])
-	(quantity 0.09))
+	(nutrient [Nutrient_cholesterol])
+	(quantity 88))
 
-([NutrientQuantity_glucose538] of NutrientQuantity
+([NutrientQuantity_saturated0697] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.697))
+
+([NutrientQuantity_calcium124] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 124))
+
+([NutrientQuantity_calcium382] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 382))
+
+([NutrientQuantity_fat033] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.33))
+
+([NutrientQuantity_saturated692] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 6.92))
+
+([NutrientQuantity_sugar2742] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 27.42))
+
+([NutrientQuantity_glucose066] of NutrientQuantity
 	
 	(nutrient [Nutrient_glucose])
-	(quantity 5.38))
+	(quantity 0.66))
 
-([NutrientQuantity_calories05] of NutrientQuantity
+([NutrientQuantity_fat3372] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 33.72))
+
+([NutrientQuantity_saturated0026] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.026))
+
+([NutrientQuantity_carbohydrates2322] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 23.22))
+
+([NutrientQuantity_saturated1878] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.878))
+
+([NutrientQuantity_carbohydrates645] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 6.45))
+
+([NutrientQuantity_saturated0072] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.072))
+
+([NutrientQuantity_carbohydrates065] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 0.65))
+
+([NutrientQuantity_fructose167] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 1.67))
+
+([NutrientQuantity_carbohydrates56] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 56))
+
+([NutrientQuantity_calcium14] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 14))
+
+([NutrientQuantity_sucrose009] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.09))
+
+([NutrientQuantity_carbohydrates446] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 44.6))
+
+([NutrientQuantity_calcium13] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 13))
+
+([NutrientQuantity_saturated0204] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.204))
+
+([NutrientQuantity_saturated1528] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.528))
+
+([NutrientQuantity_glucose007] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 0.07))
+
+([NutrientQuantity_fat448] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 4.48))
+
+([NutrientQuantity_fat86] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 8.6))
+
+([NutrientQuantity_sugar1039] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 10.39))
+
+([NutrientQuantity_fat038] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.38))
+
+([NutrientQuantity_cholesterol76] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 76))
+
+([NutrientQuantity_sucrose034] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.34))
+
+([NutrientQuantity_glucose659] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 6.59))
+
+([NutrientQuantity_fat017] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.17))
+
+([NutrientQuantity_calories96] of NutrientQuantity
 	
 	(nutrient [Nutrient_calories])
-	(quantity 0.5))
+	(quantity 96))
+
+([NutrientQuantity_calories114] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 114))
+
+([NutrientQuantity_carbohydrates296] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 2.96))
+
+([NutrientQuantity_carbohydrates1541] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 15.41))
+
+([NutrientQuantity_saturated2936] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 2.936))
+
+([NutrientQuantity_saturated1111] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.111))
+
+([NutrientQuantity_carbohydrates143] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1.43))
+
+([NutrientQuantity_carbohydrates465] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 4.65))
+
+([NutrientQuantity_saturated1189] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 11.89))
+
+([NutrientQuantity_cholesterol1] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 1))
+
+([NutrientQuantity_saturated13739] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 13.739))
+
+([NutrientQuantity_saturated0006] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.006))
+
+([NutrientQuantity_calories49] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 49))
+
+([NutrientQuantity_carbohydrates16] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1.6))
+
+([NutrientQuantity_saturated0035] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.035))
+
+([NutrientQuantity_glucose197] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.97))
+
+([NutrientQuantity_saturated0057] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.057))
+
+([NutrientQuantity_saturated671] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 6.71))
+
+([NutrientQuantity_fructose129] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 1.29))
+
+([NutrientQuantity_sugar625] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 6.25))
+
+([NutrientQuantity_fat195] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.95))
+
+([NutrientQuantity_fructose051] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.51))
+
+([NutrientQuantity_saturated0078] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.078))
+
+([NutrientQuantity_carbohydrates8328] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 83.28))
+
+([NutrientQuantity_fat028] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.28))
+
+([NutrientQuantity_cholesterol401] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 401))
+
+([NutrientQuantity_cholesterol110] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 110))
+
+([NutrientQuantity_calories172] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 172))
+
+([NutrientQuantity_fat134] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.34))
+
+([NutrientQuantity_saturated0529] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.529))
+
+([NutrientQuantity_saturated08] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.8))
+
+([NutrientQuantity_sugar53] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 5.3))
+
+([NutrientQuantity_glucose498] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 4.98))
+
+([NutrientQuantity_fat628] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 6.28))
+
+([NutrientQuantity_sugar1349] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 13.49))
+
+([NutrientQuantity_calcium40] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 40))
+
+([NutrientQuantity_carbohydrates7847] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 78.47))
+
+([NutrientQuantity_calories266] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 266))
+
+([NutrientQuantity_calories580] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 580))
+
+([NutrientQuantity_calcium7] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 7))
+
+([NutrientQuantity_cholesterol4] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 4))
+
+([NutrientQuantity_carbohydrates2278] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 22.78))
+
+([NutrientQuantity_saturated3483] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 3.483))
+
+([NutrientQuantity_glucose77] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 7.7))
+
+([NutrientQuantity_fat1145] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 11.45))
+
+([NutrientQuantity_carbohydrates1419] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 14.19))
+
+([NutrientQuantity_sugar424] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 4.24))
+
+([NutrientQuantity_calories195] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 195))
+
+([NutrientQuantity_calcium42] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 42))
+
+([NutrientQuantity_calories227] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 227))
+
+([NutrientQuantity_fat3091] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 30.91))
+
+([NutrientQuantity_carbohydrates2859] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 28.59))
+
+([NutrientQuantity_saturated2278] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 2.278))
+
+([NutrientQuantity_calcium705] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 705))
+
+([NutrientQuantity_carbohydrates03] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 0.3))
+
+([NutrientQuantity_calories60] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 60))
+
+([NutrientQuantity_saturated0542] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.542))
+
+([NutrientQuantity_glucose158] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.58))
+
+([NutrientQuantity_cholesterol111] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 111))
+
+([NutrientQuantity_calcium136] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 136))
+
+([NutrientQuantity_carbohydrates389] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 3.89))
+
+([NutrientQuantity_saturated0178] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.178))
+
+([NutrientQuantity_calcium129] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 129))
+
+([NutrientQuantity_carbohydrates49] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 4.9))
+
+([NutrientQuantity_carbohydrates704] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.04))
+
+([NutrientQuantity_calcium4] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 4))
+
+([NutrientQuantity_carbohydrates269] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 2.69))
+
+([NutrientQuantity_carbohydrates814] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 8.14))
+
+([NutrientQuantity_sucrose062] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.62))
+
+([NutrientQuantity_sugar462] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 4.62))
+
+([NutrientQuantity_fat242] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 2.42))
+
+([NutrientQuantity_fat832] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 8.32))
+
+([NutrientQuantity_calcium3] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 3))
+
+([NutrientQuantity_sugar208] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 2.08))
+
+([NutrientQuantity_carbohydrates5284] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 52.84))
+
+([NutrientQuantity_carbohydrates545] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 54.5))
+
+([NutrientQuantity_calories346] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 346))
+
+([NutrientQuantity_glucose026] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 0.26))
+
+([NutrientQuantity_calories61] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 61))
+
+([NutrientQuantity_calories86] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 86))
+
+([NutrientQuantity_calories56] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 56))
+
+([NutrientQuantity_fat3133] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 31.33))
+
+([NutrientQuantity_saturated0764] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.764))
+
+([NutrientQuantity_sucrose004] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.04))
+
+([NutrientQuantity_cholesterol18] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 18))
+
+([NutrientQuantity_fat02] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.2))
+
+([NutrientQuantity_cholesterol72] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 72))
+
+([NutrientQuantity_calories619] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 619))
+
+([NutrientQuantity_sugar62] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 6.2))
+
+([NutrientQuantity_carbohydrates2251] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 22.51))
+
+([NutrientQuantity_saturated5917] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 5.917))
+
+([NutrientQuantity_cholesterol29] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 29))
+
+([NutrientQuantity_calcium143] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 143))
+
+([NutrientQuantity_calcium119] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 119))
+
+([NutrientQuantity_calcium81] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 81))
+
+([NutrientQuantity_saturated0032] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.032))
+
+([NutrientQuantity_saturated1127] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 11.27))
+
+([NutrientQuantity_calcium163] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 163))
+
+([NutrientQuantity_fat046] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.46))
+
+([NutrientQuantity_carbohydrates384] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 3.84))
+
+([NutrientQuantity_saturated0044] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.044))
+
+([NutrientQuantity_calcium69] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 69))
+
+([NutrientQuantity_sugar485] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 48.5))
+
+([NutrientQuantity_calories89] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 89))
+
+([NutrientQuantity_calories130] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 130))
+
+([NutrientQuantity_calories276] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 276))
+
+([NutrientQuantity_fat018] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.18))
+
+([NutrientQuantity_fat01] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.1))
+
+([NutrientQuantity_carbohydrates174] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1.74))
+
+([NutrientQuantity_fat007] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.07))
 
 ([NutrientQuantity_saturated1] of NutrientQuantity
 	
 	(nutrient [Nutrient_saturated])
 	(quantity 1))
 
-([NutrientQuantity_vitaminB60303] of NutrientQuantity
+([NutrientQuantity_calories30] of NutrientQuantity
 	
-	(nutrient [Nutrient_vitaminB6])
-	(quantity 0.303))
+	(nutrient [Nutrient_calories])
+	(quantity 30))
 
-([NutrientQuantity_sucrose88] of NutrientQuantity
+([NutrientQuantity_calcium88] of NutrientQuantity
 	
-	(nutrient [Nutrient_sucrose])
+	(nutrient [Nutrient_calcium])
 	(quantity 88))
 
-([NutrientQuantity_sucrose15] of NutrientQuantity
+([NutrientQuantity_calcium6] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 6))
+
+([NutrientQuantity_calcium74] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 74))
+
+([NutrientQuantity_calories102] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 102))
+
+([NutrientQuantity_calcium20] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 20))
+
+([NutrientQuantity_carbohydrates186] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1.86))
+
+([NutrientQuantity_fructose485] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 4.85))
+
+([NutrientQuantity_sugar041] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.41))
+
+([NutrientQuantity_calories292] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 292))
+
+([NutrientQuantity_calcium144] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 144))
+
+([NutrientQuantity_carbohydrates8] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 8))
+
+([NutrientQuantity_fat366] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 3.66))
+
+([NutrientQuantity_sucrose27] of NutrientQuantity
 	
 	(nutrient [Nutrient_sucrose])
+	(quantity 2.7))
+
+([NutrientQuantity_fructose537] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 5.37))
+
+([NutrientQuantity_sugar241] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 2.41))
+
+([NutrientQuantity_calcium10] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 10))
+
+([NutrientQuantity_calories208] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 208))
+
+([NutrientQuantity_saturated7481] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 7.481))
+
+([NutrientQuantity_sucrose1] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 1))
+
+([NutrientQuantity_sugar704] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 7.04))
+
+([NutrientQuantity_saturated0054] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.054))
+
+([NutrientQuantity_saturated144] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.44))
+
+([NutrientQuantity_sugar1] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1))
+
+([NutrientQuantity_cholesterol70] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 70))
+
+([NutrientQuantity_sugar345] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 3.45))
+
+([NutrientQuantity_fat333] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 3.33))
+
+([NutrientQuantity_calcium25] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 25))
+
+([NutrientQuantity_fat237] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 2.37))
+
+([NutrientQuantity_sugar056] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.56))
+
+([NutrientQuantity_sugar18] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1.8))
+
+([NutrientQuantity_calories196] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 196))
+
+([NutrientQuantity_carbohydrates934] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 9.34))
+
+([NutrientQuantity_fat813] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 8.13))
+
+([NutrientQuantity_calories35] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 35))
+
+([NutrientQuantity_calcium152] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 152))
+
+([NutrientQuantity_cholesterol5] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 5))
+
+([NutrientQuantity_saturated1257] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.257))
+
+([NutrientQuantity_calories389] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 389))
+
+([NutrientQuantity_saturated0698] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.698))
+
+([NutrientQuantity_calories28] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 28))
+
+([NutrientQuantity_fat036] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.36))
+
+([NutrientQuantity_sugar107] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1.07))
+
+([NutrientQuantity_saturated0176] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.176))
+
+([NutrientQuantity_fat015] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.15))
+
+([NutrientQuantity_cholesterol6] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 6))
+
+([NutrientQuantity_fat748] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 7.48))
+
+([NutrientQuantity_sugar1223] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 12.23))
+
+([NutrientQuantity_calories884] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 884))
+
+([NutrientQuantity_saturated5953] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 5.953))
+
+([NutrientQuantity_sugar445] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 4.45))
+
+([NutrientQuantity_carbohydrates2516] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 25.16))
+
+([NutrientQuantity_sucrose445] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 4.45))
+
+([NutrientQuantity_sugar3996] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 39.96))
+
+([NutrientQuantity_calories455] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 455))
+
+([NutrientQuantity_carbohydrates768] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.68))
+
+([NutrientQuantity_saturated0077] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.077))
+
+([NutrientQuantity_sugar29] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 2.9))
+
+([NutrientQuantity_carbohydrates2284] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 22.84))
+
+([NutrientQuantity_fructose082] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.82))
+
+([NutrientQuantity_glucose157] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.57))
+
+([NutrientQuantity_fat039] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.39))
+
+([NutrientQuantity_sugar1445] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 14.45))
+
+([NutrientQuantity_sugar567] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 5.67))
+
+([NutrientQuantity_carbohydrates755] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.55))
+
+([NutrientQuantity_carbohydrates3088] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 30.88))
+
+([NutrientQuantity_sucrose007] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.07))
+
+([NutrientQuantity_cholesterol8] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 8))
+
+([NutrientQuantity_sugar353] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 3.53))
+
+([NutrientQuantity_calories33] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 33))
+
+([NutrientQuantity_cholesterol22] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 22))
+
+([NutrientQuantity_carbohydrates2013] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 20.13))
+
+([NutrientQuantity_calories37] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 37))
+
+([NutrientQuantity_fat369] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 3.69))
+
+([NutrientQuantity_sucrose121] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 1.21))
+
+([NutrientQuantity_fat6] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 6))
+
+([NutrientQuantity_fat1644] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 16.44))
+
+([NutrientQuantity_sugar569] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 5.69))
+
+([NutrientQuantity_fat63] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 6.3))
+
+([NutrientQuantity_calcium39] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 39))
+
+([NutrientQuantity_carbohydrates083] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 0.83))
+
+([NutrientQuantity_carbohydrates118] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1.18))
+
+([NutrientQuantity_fat3827] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 38.27))
+
+([NutrientQuantity_fat023] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.23))
+
+([NutrientQuantity_calories407] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 407))
+
+([NutrientQuantity_fructose137] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 1.37))
+
+([NutrientQuantity_saturated0028] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.028))
+
+([NutrientQuantity_sugar04] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.4))
+
+([NutrientQuantity_carbohydrates5188] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 51.88))
+
+([NutrientQuantity_calcium17] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 17))
+
+([NutrientQuantity_fat493] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 49.3))
+
+([NutrientQuantity_carbohydrates53] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 5.3))
+
+([NutrientQuantity_sugar263] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 2.63))
+
+([NutrientQuantity_carbohydrates1954] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 19.54))
+
+([NutrientQuantity_calories390] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 390))
+
+([NutrientQuantity_glucose118] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.18))
+
+([NutrientQuantity_calories157] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 157))
+
+([NutrientQuantity_carbohydrates315] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 3.15))
+
+([NutrientQuantity_carbohydrates1349] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 13.49))
+
+([NutrientQuantity_calcium57] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 57))
+
+([NutrientQuantity_saturated0733] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.733))
+
+([NutrientQuantity_fat73] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 7.3))
+
+([NutrientQuantity_calories63] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 63))
+
+([NutrientQuantity_fat403] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 4.03))
+
+([NutrientQuantity_fat32] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 32))
+
+([NutrientQuantity_calcium15] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
 	(quantity 15))
 
-([NutrientQuantity_fat026] of NutrientQuantity
+([NutrientQuantity_fat2005] of NutrientQuantity
 	
 	(nutrient [Nutrient_fat])
-	(quantity 0.26))
+	(quantity 20.05))
 
-([NutrientQuantity_fat088] of NutrientQuantity
+([NutrientQuantity_calories42] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 42))
+
+([NutrientQuantity_saturated1242] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.242))
+
+([NutrientQuantity_fat05] of NutrientQuantity
 	
 	(nutrient [Nutrient_fat])
-	(quantity 0.88))
+	(quantity 0.5))
 
-([NutrientQuantity_fat106] of NutrientQuantity
+([NutrientQuantity_sugar489] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 4.89))
+
+([NutrientQuantity_fructose244] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 2.44))
+
+([NutrientQuantity_fat4] of NutrientQuantity
 	
 	(nutrient [Nutrient_fat])
-	(quantity 1.06))
+	(quantity 4))
 
-([NutrientQuantity_alcohol006] of NutrientQuantity
+([NutrientQuantity_calcium24] of NutrientQuantity
 	
-	(nutrient [Nutrient_alcohol])
+	(nutrient [Nutrient_calcium])
+	(quantity 24))
+
+([NutrientQuantity_calcium19] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 19))
+
+([NutrientQuantity_saturated1048] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.048))
+
+([NutrientQuantity_glucose142] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.42))
+
+([NutrientQuantity_cholesterol49] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 49))
+
+([NutrientQuantity_saturated1425] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.425))
+
+([NutrientQuantity_calcium111] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 111))
+
+([NutrientQuantity_saturated0533] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.533))
+
+([NutrientQuantity_saturated0206] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.206))
+
+([NutrientQuantity_calories324] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 324))
+
+([NutrientQuantity_saturated597] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 59.7))
+
+([NutrientQuantity_saturated0041] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.041))
+
+([NutrientQuantity_calories24] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 24))
+
+([NutrientQuantity_calories163] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 163))
+
+([NutrientQuantity_carbohydrates658] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 6.58))
+
+([NutrientQuantity_lactose046] of NutrientQuantity
+	
+	(nutrient [Nutrient_lactose])
+	(quantity 0.46))
+
+([NutrientQuantity_saturated0015] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.015))
+
+([NutrientQuantity_carbohydrates1381] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 13.81))
+
+([NutrientQuantity_saturated0039] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.039))
+
+([NutrientQuantity_fructose307] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 3.07))
+
+([NutrientQuantity_saturated0038] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.038))
+
+([NutrientQuantity_calories20] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 20))
+
+([NutrientQuantity_calcium52] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 52))
+
+([NutrientQuantity_sucrose239] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 2.39))
+
+([NutrientQuantity_calories32] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 32))
+
+([NutrientQuantity_calories272] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 272))
+
+([NutrientQuantity_saturated11] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.1))
+
+([NutrientQuantity_sucrose207] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 2.07))
+
+([NutrientQuantity_carbohydrates157] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 15.7))
+
+([NutrientQuantity_lactose006] of NutrientQuantity
+	
+	(nutrient [Nutrient_lactose])
 	(quantity 0.06))
+
+([NutrientQuantity_saturated0053] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.053))
+
+([NutrientQuantity_calories278] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 278))
+
+([NutrientQuantity_calcium83] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 83))
+
+([NutrientQuantity_carbohydrates4417] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 44.17))
+
+([NutrientQuantity_calcium23] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 23))
+
+([NutrientQuantity_saturated001] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.01))
+
+([NutrientQuantity_calcium12] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 12))
+
+([NutrientQuantity_sugar11] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1.1))
+
+([NutrientQuantity_sucrose157] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 1.57))
+
+([NutrientQuantity_calories46] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 46))
+
+([NutrientQuantity_saturated0419] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.419))
+
+([NutrientQuantity_carbohydrates2059] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 20.59))
+
+([NutrientQuantity_fat1484] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 14.84))
+
+([NutrientQuantity_sugar296] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 2.96))
+
+([NutrientQuantity_fructose013] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.13))
+
+([NutrientQuantity_carbohydrates1905] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 19.05))
+
+([NutrientQuantity_calories112] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 112))
+
+([NutrientQuantity_fat207] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 2.07))
+
+([NutrientQuantity_fat1857] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 18.57))
+
+([NutrientQuantity_fat568] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 56.8))
+
+([NutrientQuantity_carbohydrates2051] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 20.51))
+
+([NutrientQuantity_carbohydrates616] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 61.6))
+
+([NutrientQuantity_carbohydrates779] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.79))
+
+([NutrientQuantity_saturated139] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 1.39))
+
+([NutrientQuantity_caffeine6] of NutrientQuantity
+	
+	(nutrient [Nutrient_caffeine])
+	(quantity 6))
+
+([NutrientQuantity_fat155] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.55))
+
+([NutrientQuantity_cholesterol260] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 260))
+
+([NutrientQuantity_fat2] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 2))
+
+([NutrientQuantity_calories145] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 145))
+
+([NutrientQuantity_calories40] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 40))
+
+([NutrientQuantity_sugar1282] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 12.82))
+
+([NutrientQuantity_fat5] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 5))
+
+([NutrientQuantity_fat122] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 12.2))
+
+([NutrientQuantity_sugar125] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1.25))
+
+([NutrientQuantity_calories290] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 290))
+
+([NutrientQuantity_fat021] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.21))
+
+([NutrientQuantity_carbohydrates1427] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 14.27))
+
+([NutrientQuantity_calories263] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 263))
+
+([NutrientQuantity_cholesterol56] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 56))
+
+([NutrientQuantity_carbohydrates401] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 4.01))
+
+([NutrientQuantity_fructose005] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.05))
+
+([NutrientQuantity_calories18] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 18))
+
+([NutrientQuantity_fructose003] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.03))
+
+([NutrientQuantity_calories349] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 349))
+
+([NutrientQuantity_calories164] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 164))
+
+([NutrientQuantity_cholesterol83] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 83))
+
+([NutrientQuantity_carbohydrates1] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 1))
+
+([NutrientQuantity_sugar091] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.91))
+
+([NutrientQuantity_calories88] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 88))
+
+([NutrientQuantity_cholesterol142] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 142))
+
+([NutrientQuantity_glucose243] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 2.43))
+
+([NutrientQuantity_calories296] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 296))
+
+([NutrientQuantity_fat4178] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 41.78))
+
+([NutrientQuantity_fat011] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.11))
+
+([NutrientQuantity_fructose036] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.36))
+
+([NutrientQuantity_calories138] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 138))
+
+([NutrientQuantity_calcium62] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 62))
+
+([NutrientQuantity_calories541] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 541))
+
+([NutrientQuantity_fructose069] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 0.69))
+
+([NutrientQuantity_fat008] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.08))
+
+([NutrientQuantity_sucrose047] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.47))
+
+([NutrientQuantity_fat108] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.08))
+
+([NutrientQuantity_calories184] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 184))
+
+([NutrientQuantity_glucose04] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 0.4))
+
+([NutrientQuantity_fat093] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.93))
+
+([NutrientQuantity_calories62] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 62))
+
+([NutrientQuantity_sugar2315] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 23.15))
+
+([NutrientQuantity_carbohydrates3059] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 30.59))
+
+([NutrientQuantity_saturated0042] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.042))
+
+([NutrientQuantity_cholesterol14] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 14))
+
+([NutrientQuantity_fat016] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.16))
+
+([NutrientQuantity_fat100] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 100))
+
+([NutrientQuantity_saturated0037] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.037))
+
+([NutrientQuantity_carbohydrates144] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 14.4))
+
+([NutrientQuantity_carbohydrates822] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 8.22))
+
+([NutrientQuantity_calcium8] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 8))
+
+([NutrientQuantity_cholesterol15] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 15))
+
+([NutrientQuantity_calcium11] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 11))
+
+([NutrientQuantity_fat9] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 9))
+
+([NutrientQuantity_cholesterol71] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 71))
+
+([NutrientQuantity_sucrose015] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 0.15))
+
+([NutrientQuantity_carbohydrates731] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 7.31))
+
+([NutrientQuantity_carbohydrates383] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 3.83))
+
+([NutrientQuantity_sugar1905] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 19.05))
+
+([NutrientQuantity_fat161] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.61))
+
+([NutrientQuantity_saturated0012] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.012))
+
+([NutrientQuantity_sugar439] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 4.39))
+
+([NutrientQuantity_carbohydrates796] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 79.6))
+
+([NutrientQuantity_fat23] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 2.3))
+
+([NutrientQuantity_glucose182] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.82))
+
+([NutrientQuantity_saturated5815] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 5.815))
+
+([NutrientQuantity_calories52] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 52))
+
+([NutrientQuantity_carbohydrates4942] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 49.42))
+
+([NutrientQuantity_glucose507] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 5.07))
+
+([NutrientQuantity_carbohydrates6886] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 68.86))
+
+([NutrientQuantity_saturated085] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.85))
+
+([NutrientQuantity_glucose005] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 0.05))
+
+([NutrientQuantity_cholesterol57] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 57))
+
+([NutrientQuantity_saturated278] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 2.78))
+
+([NutrientQuantity_sugar705] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 7.05))
+
+([NutrientQuantity_calories177] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 177))
+
+([NutrientQuantity_sugar07] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.7))
+
+([NutrientQuantity_calcium18] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 18))
+
+([NutrientQuantity_carbohydrates67] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 6.7))
+
+([NutrientQuantity_calcium33] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 33))
+
+([NutrientQuantity_saturated0016] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.016))
+
+([NutrientQuantity_fat91] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 9.1))
+
+([NutrientQuantity_saturated4323] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 4.323))
+
+([NutrientQuantity_calcium35] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 35))
+
+([NutrientQuantity_fructose59] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 5.9))
+
+([NutrientQuantity_calcium183] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 183))
+
+([NutrientQuantity_saturated0017] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 0.017))
+
+([NutrientQuantity_fat169] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 1.69))
+
+([NutrientQuantity_glucose004] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 0.04))
+
+([NutrientQuantity_fat03] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.3))
+
+([NutrientQuantity_sugar034] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 0.34))
+
+([NutrientQuantity_saturated406] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 4.06))
+
+([NutrientQuantity_sucrose3712] of NutrientQuantity
+	
+	(nutrient [Nutrient_sucrose])
+	(quantity 37.12))
+
+([NutrientQuantity_fructose131] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 1.31))
+
+([NutrientQuantity_fructose243] of NutrientQuantity
+	
+	(nutrient [Nutrient_fructose])
+	(quantity 2.43))
+
+([NutrientQuantity_sugar356] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 3.56))
+
+([NutrientQuantity_sugar171] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 1.71))
+
+([NutrientQuantity_calcium5] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 5))
+
+([NutrientQuantity_calories197] of NutrientQuantity
+	
+	(nutrient [Nutrient_calories])
+	(quantity 197))
+
+([NutrientQuantity_carbohydrates1189] of NutrientQuantity
+	
+	(nutrient [Nutrient_carbohydrates])
+	(quantity 11.89))
+
+([NutrientQuantity_cholesterol90] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 90))
+
+([NutrientQuantity_calcium257] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 257))
+
+([NutrientQuantity_glucose125] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.25))
+
+([NutrientQuantity_calcium21] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 21))
+
+([NutrientQuantity_cholesterol79] of NutrientQuantity
+	
+	(nutrient [Nutrient_cholesterol])
+	(quantity 79))
+
+([NutrientQuantity_fat054] of NutrientQuantity
+	
+	(nutrient [Nutrient_fat])
+	(quantity 0.54))
+
+([NutrientQuantity_sugar992] of NutrientQuantity
+	
+	(nutrient [Nutrient_sugar])
+	(quantity 9.92))
+
+([NutrientQuantity_saturated1438] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 14.38))
+
+([NutrientQuantity_calcium30] of NutrientQuantity
+	
+	(nutrient [Nutrient_calcium])
+	(quantity 30))
+
+([NutrientQuantity_glucose199] of NutrientQuantity
+	
+	(nutrient [Nutrient_glucose])
+	(quantity 1.99))
+
+([NutrientQuantity_saturated19337] of NutrientQuantity
+	
+	(nutrient [Nutrient_saturated])
+	(quantity 19.337))
 

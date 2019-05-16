@@ -61,14 +61,15 @@ Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with choc
 ["Orange",[("Oranges, raw, California, valencias",100)]],
 ["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
 
-## SET OF INGREDIENTS USED IN ORDER TO NOT INCLUDE IN INGREDIENS.PINS THOSE THAT ARE NOT USED
+# SET OF INGREDIENTS USED IN ORDER TO NOT INCLUDE IN INGREDIENS.PINS THOSE THAT ARE NOT USED
 INGREDIENTS_USED = set()
 for course in list(Breakfast+FirstCourse+SecondCourse+Dessert):
     for ingredient in course[1]:
         INGREDIENTS_USED.add(ingredient[0])
 
+
+
 # DISEASES: LIMITATIONS AND NAME
-#TODO AFEGIR MÉS ENFERMETATS
 
 ENFERMETATS = [[['Nutrient_sugar-50','Type_Sweets-50'],'Diabetes'],
                 [['Nutrient_gluten-100'],'Celiac'],
@@ -136,9 +137,7 @@ NUTRIENTS = dict(
         sugar='Sugar',
         cholesterol='Cholesterol',
         saturated='Saturated',
-        vitaminB5='Vitamin B5',
-        vitaminB6='Vitamin B6',
-        vitaminB12='Vitamin B12')
+        calcium='Calcium')
 
 def writeList(prefix, llista):
     llista =list(map(lambda x:'\n\t\t['+prefix+x+']' , llista))
@@ -159,13 +158,66 @@ def cleanString(word):
 def cleanString2(word): 
     return cleanString(word[0])+cleanString(word[1])
 
+# MAX VALUES OF EACH NUTRIENT
+def getmaxValue():
+     with open('./Dataset.csv','r') as g:
+        csv_reader2 = csv.reader(g, delimiter=',')
+        max_fat =  0
+        max_carbohydrates= 0
+        max_calories= 0
+        max_sucrose= 0
+        max_glucose= 0
+        max_fructose= 0
+        max_lactose= 0
+        max_caffeine= 0
+        max_alcohol= 0
+        max_sugar= 0
+        max_cholesterol= 0
+        max_saturated= 0
+        max_calcium=0
+        line_count = 0
+        for row in csv_reader2: 
+            if line_count == 0:
+                line_count = line_count +1 
+                continue
+            else:
+                if len(row) < 2:
+                    continue
 
+                if max_fat < float(row[3]):
+                    max_fat = float(row[3])
+                if max_carbohydrates < float(row[4]):
+                    max_carbohydrates = float(row[4])
+                if max_calories < float(row[6]):
+                    max_calories = float(row[6])
+                if max_sucrose < float(row[8]):
+                    max_sucrose = float(row[8])
+                if max_glucose < float(row[9]):
+                    max_glucose = float(row[9])
+                if max_fructose < float(row[10]):
+                    max_fructose = float(row[10])
+                if max_lactose < float(row[11]):
+                    max_lactose = float(row[11])
+                if max_caffeine < float(row[15]):
+                    max_caffeine = float(row[15])
+                if max_alcohol < float(row[13]):
+                    max_alcohol = float(row[13])
+                if max_sugar < float(row[17]):
+                    max_sugar = float(row[17])
+                if max_cholesterol < float(row[-3]):
+                    max_cholesterol = float(row[-3])
+                if max_saturated < float(row[-2]):
+                    max_saturated = float(row[-2])
+                if max_calcium < float(row[20]):
+                    max_calcium = float(row[20])
+        return max_fat, max_carbohydrates, max_calories,max_sucrose,max_glucose,max_fructose,max_lactose, max_caffeine, max_alcohol, max_sugar,max_cholesterol, max_saturated, max_calcium
 
 def main():
     if not os.path.exists('instances/'):
         os.makedirs('instances/')
 
-    
+    maximums = getmaxValue()
+    print('Maximums: {}'.format(maximums))
     with open('./Dataset.csv','r') as g:
         csv_reader2 = csv.reader(g, delimiter=',')
         line_count2 = 0
@@ -190,21 +242,19 @@ def main():
                 ingredients_type.append(row[0])
 
                 nutrients = dict(
-                    fat = row[2],
-                    carbohydrates = row[3],
-                    calories = row[5],
-                    sucrose = row[6],
-                    glucose = row[7],
-                    fructose = row[8],
-                    lactose = row[9],
-                    caffeine = row[13],
-                    alcohol = row[11],
-                    sugar = row[15],
+                    fat = row[3],
+                    carbohydrates = row[4],
+                    calories = row[6],
+                    sucrose = row[8],
+                    glucose = row[9],
+                    fructose = row[10],
+                    lactose = row[11],
+                    caffeine = row[15],
+                    alcohol = row[13],
+                    sugar = row[17],
                     cholesterol = row[-3],
                     saturated = row[-2],
-                    vitaminB5 = row[-8],
-                    vitaminB6 = row[-7],
-                    vitaminB12 = row[-5])
+                    calcium = row[20])
                 
                 nutrients = {k: v for k, v in nutrients.items() if v != 'NULL' and v != "0"}
                 ingredients_nutrients.append(nutrients)
