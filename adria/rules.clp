@@ -43,17 +43,21 @@
 ;%
 ;%%%%%
 
-(defglobal ?*debug-print* = t) ; nil vs t
+
 
 (deftemplate user
   (slot sex (type SYMBOL))
-  (slot age-range (type INTEGER))
+  (slot age (type INTEGER))
   (slot exercise-level (type SYMBOL))
+  (slot required-calories (type FLOAT))
+  (slot height (type INTEGER))
+  (slot weight (type FLOAT))
   (multislot foodtypes-positive (type INSTANCE))
   (multislot foodtypes-negative (type INSTANCE))
   (multislot preferences (type INSTANCE))
   (multislot diseases (type INSTANCE))
 )
+
 
 (deffacts ask_questions::facts-initialization
     (user)
@@ -206,14 +210,17 @@
 
 (defrule normal-menu-state-conclusions
   (declare (salience 10))
-  (asked-age-range)
+  (asked-age)
   (season ?)
+  (asked-weight)
+  (asked-height)
   (asked-vegetables-preference)
   (asked-diseases)
   (asked-sex)
   (asked-exercise-level)
   (asked-foodtypes-positive)
   (asked-foodtypes-negative)
+  (calories-calculated)
    =>
    (assert (asked-all)
    (focus inference_of_data)
@@ -272,30 +279,60 @@
    =>
     (printout t "Generating solution..." crlf)
     (focus generate_solutions)
+)
+
+(defrule calories-calculator
+	(not (calories-calculated))
+	?user <- (user)
+	(asked-age)
+	(asked-sex)
+	(asked-exercise-level)
+	(asked-weight)
+	(asked-height)
+	(user (height ?height-var))
+	(user (weight ?weight-var))
+	(user (age ?age-var))
+	(user (exercise-level ?exercise-var))
+	(user (sex ?sex-var))
+	=>
+	(bind ?BMR (calculate-calories ?sex-var ?weight-var ?height-var ?age-var ?exercise-var))
+	(printout ?*debug-print* "DEBUG: Calories: " ?BMR crlf)
+	(modify ?user (required-calories ?BMR))
+	(assert (calories-calculated))
+)
+
 
 ;;;***************
 ;;;* QUERY RULES *
 ;;;***************
 
-(defrule determine-age-range
-  (not (asked-age-range))
+(defrule determine-age
+  (not (asked-age))
   ?user <- (user)
   =>
     (bind ?num (ask-question-num "How old are you?" 0 150))
-    (if (< ?num 65) then
-      (modify ?user (age-range 1))
-    )
-    (if (<= 65 ?num 74) then
-      (modify ?user (age-range 2))
-    )
-    (if (<= 75 ?num 84) then
-      (modify ?user (age-range 3))
-    )
-    (if (<= 85 ?num ) then
-      (modify ?user (age-range 4))
-    )
-    (assert (asked-age-range))
+    (modify ?user (age ?num))
+    (assert (asked-age))
 )
+
+(defrule determine-height
+  (not (asked-height))
+  ?user <- (user)
+  =>
+    (bind ?num (ask-question-num "How tall are you? (cm)" 0 300))
+    (modify ?user (height ?num))
+    (assert (asked-height))
+)
+
+(defrule determine-weight
+  (not (asked-weight))
+  ?user <- (user)
+  =>
+    (bind ?num (ask-question-num "What is your weight? (Kg)" 0 300))
+    (modify ?user (weight ?num))
+    (assert (asked-weight))
+)
+
 
 (defrule determine-sex
   (not (asked-sex))
@@ -306,14 +343,16 @@
     (assert (asked-sex))
 )
 
+
 (defrule determine-exercise-level
   (not (asked-exercise-level))
   ?user <- (user)
   =>
-   (bind ?response (ask-question-opt "How much exercise do you do per week?" (create$ None Once-a-week Twice-a-week More)))
+   (bind ?response (ask-question-opt "How much exercise do you do per week?" (create$ Sedentary Active Vigorously-active)))
    (modify ?user (exercise-level ?response))
    (assert (asked-exercise-level))
 )
+
 
 (defrule determine-diseases
   (not (asked-diseases))

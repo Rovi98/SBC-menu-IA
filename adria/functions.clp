@@ -1,6 +1,8 @@
 ;;****************
 ;;* DEFFUNCTIONS *
 ;;****************
+(defglobal ?*debug-print* = t) ; nil vs t
+
 
 (deffunction MAIN::is-num (?num)
   (bind ?ret (or (eq (type ?num) INTEGER) (eq (type ?num) FLOAT)))
@@ -155,4 +157,33 @@
     )
   )
   ?out
+)
+
+
+
+(deffunction MAIN::calculate-calories (?sex-var ?weight-var ?height-var ?age-var ?exercise-var)
+  (bind ?BMR (- (+ (* 10 ?weight-var) (* 6.25 ?height-var)) (* 5 ?age-var)))
+	(if (eq ?sex-var Male)
+		then
+			(bind ?BMR (+ ?BMR 5))
+			(printout ?*debug-print* "DEBUG: Male" crlf)
+		else
+			(bind ?BMR (- ?BMR 161))
+			(printout ?*debug-print* "DEBUG: Female" crlf)
+	)
+	(if (eq ?exercise-var Sedentary)
+		then
+			(bind ?BMR (* ?BMR 1.53))
+			(printout ?*debug-print* "DEBUG: Sedentary" crlf)
+		else
+			(if (eq ?exercise-var Active)
+				then
+					(bind ?BMR (* ?BMR 1.76))
+						(printout ?*debug-print* "DEBUG: Active" crlf)
+				else
+					(bind ?BMR (* ?BMR 2.25))
+						(printout ?*debug-print* "DEBUG: Vigorously-active" crlf)
+			)
+	)
+  (return ?BMR)
 )
