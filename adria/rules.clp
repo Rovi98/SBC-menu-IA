@@ -79,7 +79,6 @@
 
 (defrule generate_solutions::menu-done
    (declare (salience 10))
-   (asked-all)
    =>
     (bind ?menuWeek (make-instance (gensym) of MenuWeek))
     
@@ -159,9 +158,7 @@
   (asked-exercise-level)
   (asked-foodtypes-positive)
   (asked-foodtypes-negative)
-  (calories-calculated)
    =>
-   (assert (asked-all)
    (focus inference_of_data)
    (printout t "Processing the data obtained..." crlf)
 )
@@ -212,9 +209,11 @@
 
 
 (defrule inference_of_data::start_generating
-  (apply-foodtypes-preferences) 
-  (apply-diseases)
-  (apply-specific-preferences)
+  (applied-foodtypes-preferences) 
+  (applied-diseases)
+  (applied-specific-preferences)
+  (calories-calculated)
+  
    =>
     (printout t "Generating solution..." crlf)
     (focus generate_solutions)
@@ -223,11 +222,6 @@
 (defrule inference_of_data::calories-calculator
 	(not (calories-calculated))
 	?user <- (user)
-	(asked-age)
-	(asked-sex)
-	(asked-exercise-level)
-	(asked-weight)
-	(asked-height)
 	(user (height ?height-var))
 	(user (weight ?weight-var))
 	(user (age ?age-var))
@@ -355,6 +349,7 @@
   (printout t "Food Menu v0.8")
   (printout t crlf crlf)
   (focus ask_questions)
+)
 
   ;(format t " %s%n%n%n" ?item))
 
