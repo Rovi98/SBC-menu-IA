@@ -45,7 +45,7 @@
 
 
 
-(deftemplate user
+(deftemplate MAIN::user
   (slot sex (type SYMBOL))
   (slot age (type INTEGER))
   (slot exercise-level (type SYMBOL))
@@ -59,7 +59,7 @@
 )
 
 
-(deffacts ask_questions::facts-initialization
+(deffacts MAIN::facts-initialization
     (user)
 )
 
@@ -77,69 +77,7 @@
 ;;;* MENU STATE RULES *
 ;;;********************
 
-(defrule menu-done
-   (declare (salience 10))
-   (menu-done)
-   =>
-    (bind ?menuWeek (make-instance (gensym) of MenuWeek))
-    
-    (bind ?breakfasts (sort-courses (find-all-instances ((?c Course)) (member$ Breakfast ?c:category))))
-    (bind ?firstCourses (sort-courses (find-all-instances ((?c Course)) (member$ FirstCourse ?c:category))))
-    (bind ?secondCourses (sort-courses (find-all-instances ((?c Course)) (member$ SecondCourse ?c:category))))
-    (bind ?desserts (sort-courses (find-all-instances ((?c Course)) (member$ Dessert ?c:category))))
-
-   (loop-for-count (?i 0 6) do
-      (bind ?breakfast
-        (make-instance (gensym) of Breakfast
-          (course (nth$ (+ ?i 1) ?breakfasts))
-        )
-      )
-      (bind ?lunch
-        (make-instance (gensym) of Lunch
-          (firstCourse (nth$ (+ (* ?i 2) 1) ?firstCourses))
-          (secondCourse (nth$ (+ (* ?i 2) 1) ?secondCourses))
-          (dessert (nth$ (+ (* ?i 2) 1) ?desserts))
-        )
-      )
-
-      (bind ?dinner
-        (make-instance (gensym) of Dinner
-          (firstCourse (nth$ (+ (* ?i 2) 2) ?firstCourses))
-          (secondCourse (nth$ (+ (* ?i 2) 2) ?secondCourses))
-          (dessert (nth$ (+ (* ?i 2) 2) ?desserts))
-        )
-      )
-
-      (bind ?menuDay
-        (make-instance (gensym) of MenuDay
-          (breakfast ?breakfast)
-          (lunch ?lunch)
-          (dinner ?dinner)
-        )
-      )
-      (bind ?i1 (+ ?i 1))
-      (slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
-      ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
-   )
-
-   (printout t crlf "############################################")
-   (printout t crlf "############################################" crlf crlf)
-   
-   (print-menu ?menuWeek)
-
-   (printout t crlf "############################################")
-   (printout t crlf "############################################" crlf crlf)
-
-   (bind ?calories (send ?menuWeek get-calories))
-
-   (printout t "Total Calories: " (integer ?calories) crlf)
-   (printout t "Approx. Calories per Day: " (integer (/ ?calories 7)) crlf)
-
-   (printout t crlf "############################################")
-   (printout t crlf "############################################" crlf crlf)
-)
-
-(defrule menu-done2
+(defrule generate_solutions::menu-done
    (declare (salience 10))
    (asked-all)
    =>
@@ -183,12 +121,13 @@
       (slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
       ;(slot-insert$ ?menuSemana menusDia 1 ?menuDia)
    )
-   focus(printing)
+   (assert (menu ?menuWeek))
+   (focus printing)
 )
 
 
 (defrule printing::print-result 
-   (menu)   =>
+    (menu ?menu)=>
    (printout t crlf "############################################")
    (printout t crlf "############################################" crlf crlf)
    
@@ -208,7 +147,7 @@
 
 ;(assert (menu-done))
 
-(defrule normal-menu-state-conclusions
+(defrule ask_questions::normal-menu-state-conclusions
   (declare (salience 10))
   (asked-age)
   (season ?)
@@ -227,7 +166,7 @@
    (printout t "Processing the data obtained..." crlf)
 )
 
-(defrule apply-specific-preferences
+(defrule inference_of_data::apply-specific-preferences
   (asked-vegetables-preference)
   (not (applied-specific-preferences))
   (user (preferences $?prefs))
@@ -241,7 +180,7 @@
     (assert (applied-specific-preferences))
 )
 
-(defrule apply-diseases
+(defrule inference_of_data::apply-diseases
   (asked-diseases)
   (not (applied-diseases))
   (user (diseases $?diss))
@@ -255,7 +194,7 @@
     (assert (applied-diseases))
 )
 
-(defrule apply-foodtypes-preferences
+(defrule inference_of_data::apply-foodtypes-preferences
   (asked-foodtypes-positive)
   (asked-foodtypes-negative)
   (not (applied-foodtypes-preferences))
@@ -281,7 +220,7 @@
     (focus generate_solutions)
 )
 
-(defrule calories-calculator
+(defrule inference_of_data::calories-calculator
 	(not (calories-calculated))
 	?user <- (user)
 	(asked-age)
@@ -306,7 +245,7 @@
 ;;;* QUERY RULES *
 ;;;***************
 
-(defrule determine-age
+(defrule ask_questions::determine-age
   (not (asked-age))
   ?user <- (user)
   =>
@@ -315,7 +254,7 @@
     (assert (asked-age))
 )
 
-(defrule determine-height
+(defrule ask_questions::determine-height
   (not (asked-height))
   ?user <- (user)
   =>
@@ -324,7 +263,7 @@
     (assert (asked-height))
 )
 
-(defrule determine-weight
+(defrule ask_questions::determine-weight
   (not (asked-weight))
   ?user <- (user)
   =>
@@ -334,7 +273,7 @@
 )
 
 
-(defrule determine-sex
+(defrule ask_questions::determine-sex
   (not (asked-sex))
   ?user <- (user)
   =>
@@ -344,7 +283,7 @@
 )
 
 
-(defrule determine-exercise-level
+(defrule ask_questions::determine-exercise-level
   (not (asked-exercise-level))
   ?user <- (user)
   =>
@@ -354,7 +293,7 @@
 )
 
 
-(defrule determine-diseases
+(defrule ask_questions::determine-diseases
   (not (asked-diseases))
   ?user <- (user)
   =>
@@ -363,7 +302,7 @@
    (assert (asked-diseases))
 )
 
-(defrule determine-vegetables-preference
+(defrule ask_questions::determine-vegetables-preference
   (not (asked-vegetables-preference))
   (user (preferences $?prefs))
   ?user <- (user)
@@ -378,7 +317,7 @@
    (assert (asked-vegetables-preference))
 )
 
-(defrule determine-foodtypes-positive
+(defrule ask_questions::determine-foodtypes-positive
   (not (asked-foodtypes-positive))
   (user (foodtypes-negative $?exclude))
   ?user <- (user)
@@ -388,7 +327,7 @@
     (assert (asked-foodtypes-positive))
 )
 
-(defrule determine-foodtypes-negative
+(defrule ask_questions::determine-foodtypes-negative
   (not (asked-foodtypes-negative))
   (user (foodtypes-positive $?exclude))
   ?user <- (user)
@@ -398,7 +337,7 @@
     (assert (asked-foodtypes-negative))
 )
 
-(defrule determine-season
+(defrule ask_questions::determine-season
    (not (temporada ?))
    =>
    (bind ?response (ask-question-opt "Which season do you want the menu for?" ?*SEASONS*))
