@@ -147,21 +147,7 @@
   (sort ord-course ?list)
 )
 
-(deffunction MAIN::get-n-courses-of-category (?list ?n ?category)
-  (sort ord-course ?list)
-  (bind ?i 0)
-  (bind ?out (create$))
-  (foreach ?e ?list
-    (if (member$ ?category (send ?e get-category)) then
-      (bind ?out (create$ ?out ?e))
-      (bind ?i (+ ?i 1))
-      (if (>= ?i ?n) then (break))
-    )
-  )
-  ?out
-)
-
-(deffunction MAIN::calculate-calories (?sex-var ?weight-var ?height-var ?age-var ?exercise-var)
+(deffunction MAIN::calculate-daily-calories (?sex-var ?weight-var ?height-var ?age-var ?exercise-var)
   (bind ?BMR (- (+ (* 10 ?weight-var) (* 6.25 ?height-var)) (* 5 ?age-var)))
 	(if (eq ?sex-var Male)
 		then
@@ -186,6 +172,18 @@
 			)
 	)
   (return ?BMR)
+)
+
+(deffunction MAIN::init-scoredcourses (?courses)
+  (bind ?out (create$))
+  (foreach ?course ?courses
+    (bind ?out (create$ ?out 
+      (make-instance (gensym) of ScoredCourse
+          (course ?course)
+          (calories (send ?course get-calories))
+      )
+    ))
+  )
 )
 
 (deffunction count-calories ($?courses)

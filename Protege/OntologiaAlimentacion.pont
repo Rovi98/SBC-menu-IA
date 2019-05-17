@@ -54,11 +54,6 @@
 		(type INSTANCE)
 ;+		(allowed-classes Preference)
 		(create-accessor read-write))
-	(single-slot score
-		(type FLOAT)
-		(default 0.0)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(multislot limitations
 		(type INSTANCE)
 ;+		(allowed-classes Limitation)
@@ -161,11 +156,6 @@
 		(type SYMBOL)
 		(allowed-values FirstCourse SecondCourse Dessert Breakfast)
 		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot score
-		(type FLOAT)
-		(default 0.0)
-;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Person
