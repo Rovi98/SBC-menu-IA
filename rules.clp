@@ -142,12 +142,8 @@
 
 (defglobal
   ?*WEEKDAYS* = (create$ Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
-  ?*MEALS* = (create$ Breakfast Lunch Dinner)
   ?*SEASONS* = (slot-allowed-values Course season)
-  ;?*EVENT_TYPES* = (create$ Familiar Congress)
-  ;?*DRINK_TYPES* = (create$ Alcohol Soft-drinks Caffeine Juice none)
-  ;?*CUISINE_STYLES* = (create$ Mediterranean Spanish Italian French Chinese Japanese Turkish American Mexican Indian Moroccan Gourmet any)
-  ;?*DIETARY_RESTRICTIONS* = (create$ Gluten-free Vegan Vegetarian Lactose-free Kosher Islamic none)
+	?*count* = 0
 )
 
 ;;;********************
@@ -178,69 +174,79 @@
 	(user (required-calories ?req-calories))
 	?best-menu <- (best-menu)
 	(best-menu (score ?bestScore))
-	(sorted-courses (breakfasts $? ?bf1 $? ?bf2 $? ?bf3 $? ?bf4 $? ?bf5 $? ?bf6 $? ?bf7))
-	(sorted-courses (firstCourses $? ?fc1 $? ?fc2 $? ?fc3 $? ?fc4 $? ?fc5 $? ?fc6 $? ?fc7 $? ?fc8 $? ?fc9 $? ?fc10 $? ?fc11 $? ?fc12 $? ?fc13 $? ?fc14))
-	(sorted-courses (secondCourses $? ?sc1 $? ?sc2 $? ?sc3 $? ?sc4 $? ?sc5 $? ?sc6 $? ?sc7 $? ?sc8 $? ?sc9 $? ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14))
-	(sorted-courses (desserts $? ?ds1 $? ?ds2 $? ?ds3 $? ?ds4 $? ?ds5 $? ?ds6 $? ?ds7 $? ?ds8 $? ?ds9 $? ?ds10 $? ?ds11 $? ?ds12 $? ?ds13 $? ?ds14))
+	; (sorted-courses (breakfasts $? ?bf1 $? ?bf2 $? ?bf3 $? ?bf4 $? ?bf5 $? ?bf6 $? ?bf7))
+	; (sorted-courses (firstCourses $? ?fc1 $? ?fc2 $? ?fc3 $? ?fc4 $? ?fc5 $? ?fc6 $? ?fc7 $? ?fc8 $? ?fc9 $? ?fc10 $? ?fc11 $? ?fc12 $? ?fc13 $? ?fc14))
+	; (sorted-courses (secondCourses $? ?sc1 $? ?sc2 $? ?sc3 $? ?sc4 $? ?sc5 $? ?sc6 $? ?sc7 $? ?sc8 $? ?sc9 $? ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14))
+	; (sorted-courses (desserts $? ?ds1 $? ?ds2 $? ?ds3 $? ?ds4 $? ?ds5 $? ?ds6 $? ?ds7 $? ?ds8 $? ?ds9 $? ?ds10 $? ?ds11 $? ?ds12 $? ?ds13 $? ?ds14))
+
+	(sorted-courses (breakfasts ?bf1  ?bf2  ?bf3  ?bf4  ?bf5 ?bf6 $? ?bf7 $?))
+	(sorted-courses (firstCourses ?fc1  ?fc2  ?fc3  ?fc4  ?fc5  ?fc6  ?fc7  ?fc8  ?fc9  ?fc10 ?fc11 ?fc12 ?fc13 $? ?fc14 $?))
+	(sorted-courses (secondCourses ?sc1  ?sc2  ?sc3  ?sc4  ?sc5  ?sc6  ?sc7  ?sc8  ?sc9  ?sc10 ?sc11  ?sc12 ?sc13 $? ?sc14 $?))
+	(sorted-courses (desserts ?ds1 ?ds2 ?ds3  ?ds4  ?ds5  ?ds6  ?ds7  ?ds8  ?ds9  ?ds10  ?ds11 ?ds12 ?ds13 $? ?ds14 $?))
+
 	(test (within-tolerance
-	(count-calories	?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7
-					?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14
-					?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14
-					?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 )
-	(* 7 ?req-calories) ;11000
-	1000
+		(count-calories	?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7
+										?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14
+										?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14
+										?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 )
+		(* 7 ?req-calories) ;11000
+		2500
 	))
    =>
+	(if (< ?*count* 5) then
+		(bind ?*count* (+ ?*count* 1))
+		(printout t ?*count* crlf)
+		(bind ?menuWeek (make-instance (gensym) of MenuWeek)) ;
+		(bind ?chosenBreakfasts (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7))
+		(bind ?chosenFirstCourses (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14))
+		(bind ?chosenSecondCourses (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
+		(bind ?chosenDessert (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14))
 
-	(bind ?chosenBreakfasts (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7))
-	(bind ?chosenFirstCourses (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14))
-	(bind ?chosenSecondCourses (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
-	(bind ?chosenDessert (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14))
+		(bind ?score (count-score (create$ ?chosenBreakfasts ?chosenFirstCourses ?chosenSecondCourses ?chosenDessert)))
 
-	(bind ?score (count-score (create$ ?chosenBreakfasts ?chosenFirstCourses ?chosenSecondCourses ?chosenDessert)))
+		(if (> ?score ?bestScore) then
+		 	(bind ?menuWeek (make-instance (gensym) of MenuWeek))
 
-	(if (> ?score ?bestScore) then
-	 	(bind ?menuWeek (make-instance (gensym) of MenuWeek))
+			(loop-for-count (?i 0 6) do
 
-		(loop-for-count (?i 0 6) do
-
-		(bind ?breakfast
-			(make-instance (gensym) of Breakfast
-				(course (nth$ (+ ?i 1) ?chosenBreakfasts))
+			(bind ?breakfast
+				(make-instance (gensym) of Breakfast
+					(course (nth$ (+ ?i 1) ?chosenBreakfasts))
+				)
 			)
-		)
 
-	    (bind ?lunch
-			(make-instance (gensym) of Lunch
-				(firstCourse (nth$ (+ (* ?i 2) 1) ?chosenFirstCourses))
-				(secondCourse (nth$ (+ (* ?i 2) 1) ?chosenSecondCourses))
-				(dessert (nth$ (+ (* ?i 2) 1) ?chosenDessert))
+		    (bind ?lunch
+				(make-instance (gensym) of Lunch
+					(firstCourse (nth$ (+ (* ?i 2) 1) ?chosenFirstCourses))
+					(secondCourse (nth$ (+ (* ?i 2) 1) ?chosenSecondCourses))
+					(dessert (nth$ (+ (* ?i 2) 1) ?chosenDessert))
+				)
 			)
-		)
 
-		(bind ?dinner
-			(make-instance (gensym) of Dinner
-				(firstCourse (nth$ (+ (* ?i 2) 2) ?chosenFirstCourses))
-				(secondCourse (nth$ (+ (* ?i 2) 2) ?chosenSecondCourses))
-				(dessert (nth$ (+ (* ?i 2) 2) ?chosenDessert))
+			(bind ?dinner
+				(make-instance (gensym) of Dinner
+					(firstCourse (nth$ (+ (* ?i 2) 2) ?chosenFirstCourses))
+					(secondCourse (nth$ (+ (* ?i 2) 2) ?chosenSecondCourses))
+					(dessert (nth$ (+ (* ?i 2) 2) ?chosenDessert))
+				)
 			)
-		)
 
-		(bind ?menuDay
-			(make-instance (gensym) of MenuDay
-				(breakfast ?breakfast)
-				(lunch ?lunch)
-				(dinner ?dinner)
+			(bind ?menuDay
+				(make-instance (gensym) of MenuDay
+					(breakfast ?breakfast)
+					(lunch ?lunch)
+					(dinner ?dinner)
+				)
 			)
+
+			(bind ?i1 (+ ?i 1))
+				(slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
+			)
+
+			(modify ?best-menu (menu ?menuWeek) (score 1))
+
+			(focus printing)
 		)
-
-		(bind ?i1 (+ ?i 1))
-			(slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
-		)
-
-		(modify ?best-menu (menu ?menuWeek) (score ?score))
-
-		(focus printing)
 	)
 )
 
@@ -586,7 +592,7 @@
   )
 )
 
-(defmessage-handler generate_solutions::LimitationType apply ()
+(defmessage-handler inference_of_data::LimitationType apply ()
   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity))
     (and
       (eq ?self:type (send ?ingrQty:ingredient get-type))
@@ -597,7 +603,7 @@
   )
 )
 
-(defmessage-handler generate_solutions::LimitationNutrient apply ()
+(defmessage-handler inference_of_data::LimitationNutrient apply ()
   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity) (?nutrQty NutrientQuantity))
     (and
       (eq ?self:nutrient ?nutrQty:nutrient)
@@ -609,7 +615,7 @@
   )
 )
 
-(defmessage-handler generate_solutions::FoodType apply-as-preference (?value)
+(defmessage-handler inference_of_data::FoodType apply-as-preference (?value)
   (do-for-all-instances  ((?cour Course) (?ingrQty IngredientQuantity))
     (and
       (eq (instance-name ?self) (send ?ingrQty:ingredient get-type))
