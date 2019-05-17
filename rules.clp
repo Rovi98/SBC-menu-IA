@@ -72,7 +72,7 @@
 (defmodule MAIN (export ?ALL))
 
 ;;; Ask questions module
-(defmodule ask_questions 
+(defmodule ask_questions
   (import MAIN ?ALL)
   (export ?ALL)
 )
@@ -168,7 +168,7 @@
     (modify ?sorted-courses (firstCourses ?firstCourses))
     (modify ?sorted-courses (secondCourses ?secondCourses))
     (modify ?sorted-courses (desserts ?desserts))
-	
+
 	(assert (sort-courses-done))
 )
 
@@ -187,7 +187,7 @@
 					?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14
 					?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14
 					?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 )
-	?req-calories ;11000
+	(* 7 ?req-calories) ;11000
 	1000
 	))
    =>
@@ -203,13 +203,13 @@
 	 	(bind ?menuWeek (make-instance (gensym) of MenuWeek))
 
 		(loop-for-count (?i 0 6) do
-	    
+
 		(bind ?breakfast
 			(make-instance (gensym) of Breakfast
 				(course (nth$ (+ ?i 1) ?chosenBreakfasts))
 			)
 		)
-		
+
 	    (bind ?lunch
 			(make-instance (gensym) of Lunch
 				(firstCourse (nth$ (+ (* ?i 2) 1) ?chosenFirstCourses))
@@ -233,23 +233,23 @@
 				(dinner ?dinner)
 			)
 		)
-		
+
 		(bind ?i1 (+ ?i 1))
 			(slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
 		)
 
 		(modify ?best-menu (menu ?menuWeek) (score ?score))
-		
+
 		(focus printing)
 	)
 )
 
-(defrule printing::print-result 
+(defrule printing::print-result
    (best-menu (score ?score) (menu ?menu))
 	=>
    (printout t crlf "############################################")
    (printout t crlf "############################################" crlf crlf)
-   
+
    (print-menu ?menu)
 
    (printout t crlf "############################################")
@@ -262,7 +262,7 @@
 
    (printout t crlf "############################################")
    (printout t crlf "############################################" crlf crlf)
-   
+
    (printout t ?score crlf)
 )
 
@@ -331,11 +331,11 @@
 
 
 (defrule inference_of_data::start_generating
-  (applied-foodtypes-preferences) 
+  (applied-foodtypes-preferences)
   (applied-diseases)
   (applied-specific-preferences)
   (calories-calculated)
-  
+
    =>
     (printout t "Generating solution..." crlf)
     (focus generate_solutions)
