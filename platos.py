@@ -8,7 +8,14 @@
 ["Chorizo Sandwich",[("Chorizo, pork and beef",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Vegan Cheese Sandwich",[("Imitation cheese, american or cheddar, low cholesterol",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Nuts with milk",[("Nuts, walnuts, black, dried",15), ("Raisins, seeded", "Seeds, sunflower seed kernels, toasted, without salt",15), ("Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",90)]],
-["Tofu Sandwich",[("Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",20), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]]]
+["Tofu Sandwich",[("Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",20), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
+
+["Pancakes with maple syrup",[("Pancakes, plain, dry mix, complete, prepared",120), ("Syrups, maple",30)]],
+["Doughnuts",[("Doughnuts, cake-type, plain, sugared or glazed",150)]],
+["Cookies and milk",[("Cookies, oatmeal, dry mix",50),("Milk, producer, fluid, 3.7% milkfat",100)]],
+["Fruit Salad",[("Apples, raw, without skin",50),("Bananas, raw",50),("Pineapple, raw, all varieties",50),("Oranges, raw, California, valencias",50)]],
+
+]
 
 [["Macaroni with tomato",[("Pasta, cooked, enriched, with added salt",200), ("Tomato products, canned, sauce",50)]],
 ["Rice with tomato",[("Rice, white, medium-grain, enriched, cooked",200), ("Tomato products, canned, sauce",50)]],
@@ -54,5 +61,18 @@
 ["Cherries",[("Cherries, sweet, raw",100)]],
 ["Pears",[("Pears, asian, raw",100)]],
 ["Orange",[("Oranges, raw, California, valencias",100)]],
-["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
+["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]],
+
+["Curd with honey",[("Cheese, cottage, creamed, large or small curd",80), ("Honey",20)]],
+["Catalan Cream",[("Desserts, egg custard, baked, prepared-from-recipe",100)]],
+["Truffles with Cream",[("Candies, truffles, prepared-from-recipe",80),("Cream, fluid, light whipping",20)]],
+["Chocolate Ice cream",[("Ice creams, chocolate",100)]],
+["Strawberry Ice cream",[("Ice creams, strawberry",100)]],
+["Yogurt with jam",[("Yogurt, plain, low fat, 12 grams protein per 8 ounce",100),("Jams, preserves, marmalades, sweetened with fruit juice",20)]],
+["Coffee cake",[("Coffeecake, cinnamon with crumb topping, commercially prepared, unenriched",120)]],
+["Rice with milk",[("Milk, producer, fluid, 3.7% milkfat",125),("Rice, white, medium-grain, enriched, cooked",25)]],
+["Fried milk",[("Milk, producer, fluid, 3.7% milkfat",100),("Egg, yolk, raw, fresh",20),("Corn flour, whole-grain, yellow",20)]],
+
+
+]
 
