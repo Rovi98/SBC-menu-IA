@@ -34,7 +34,6 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Vegan couscous",[("Couscous, cooked",150), ("Carrots, cooked, boiled, drained, with salt",50), ("Peppers, sweet, red, cooked, boiled, drained, without salt",50)]],
 ["Mixed Vegetables",[("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
 ["Carbonara Spaghetti",[("Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",200), ("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",20), ("Milk, buttermilk, fluid, cultured, reduced fat",30)]],
-
 ["Tortilla",[("Egg, whole, cooked, fried",200),("Potatoes, french fried, shoestring, salt added in processing, frozen, oven-heated",125)]],
 ["Gazpacho",[("Tomatoes, red, ripe, raw, year round average",200),("Pickles, cucumber, dill or kosher dill",200),("Onions, raw",75)]],
 ["Mashed Potatoes with carrots",[("Potatoes, boiled, cooked in skin, flesh, with salt",200),("Carrots, cooked, boiled, drained, without salt",70))]],
@@ -60,7 +59,6 @@ SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, 
 ["Veggie Burger",[("Veggie burgers or soyburgers, unprepared",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Veggie Lasagna",[("MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared", 200)]],
 ["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]],
-
 ["Sushi",[("Fish, salmon, chinook, raw",100),("Seaweed, agar, raw",50),("Rice, white, medium-grain, enriched, cooked",250)]],
 ["Lasagna",[("Tomato products, canned, sauce",50), ("Bologna, meat and poultry",50),("Cheese, mozzarella, whole milk",70),("Pasta, cooked, enriched, with added salt",200)]],
 ["Bolognesa Spaghetti",[("Tomato products, canned, sauce",50), ("Bologna, meat and poultry",50),("Cheese, mozzarella, whole milk",70),("Squash, winter, spaghetti, raw",85)]],
