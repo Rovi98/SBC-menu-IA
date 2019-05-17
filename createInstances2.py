@@ -13,7 +13,12 @@ Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",3
 ["Chorizo Sandwich",[("Chorizo, pork and beef",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Vegan Cheese Sandwich",[("Imitation cheese, american or cheddar, low cholesterol",30), ("Bread, french or vienna (includes sourdough)",90)]],
 ["Nuts with milk",[("Nuts, walnuts, black, dried",15), ("Raisins, seeded", 15), ("Seeds, sunflower seed kernels, toasted, without salt",15), ("Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",90)]],
-["Tofu Sandwich",[("Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",20), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]]]
+["Tofu Sandwich",[("Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",20), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
+["Pancakes with maple syrup",[("Pancakes, plain, dry mix, complete, prepared",120), ("Syrups, maple",30)]],
+["Doughnuts",[("Doughnuts, cake-type, plain, sugared or glazed",150)]],
+["Cookies and milk",[("Cookies, oatmeal, dry mix",50),("Milk, producer, fluid, 3.7% milkfat",100)]],
+["Fruit Salad",[("Apples, raw, without skin",50),("Bananas, raw",50),("Pineapple, raw, all varieties",50),("Oranges, raw, California, valencias",50)]]
+]
 
 FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added salt",200), ("Tomato products, canned, sauce",50)]],
 ["Rice with tomato",[("Rice, white, medium-grain, enriched, cooked",200), ("Tomato products, canned, sauce",50)]],
@@ -28,7 +33,7 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Boiled Vegetables (Carrots, Potatoes and Peas)",[("Carrots, cooked, boiled, drained, with salt",100), ("Potatoes, boiled, cooked in skin, flesh, with salt",100), ("Peas, split, mature seeds, cooked, boiled, with salt",100)]],
 ["Vegan couscous",[("Couscous, cooked",150), ("Carrots, cooked, boiled, drained, with salt",50), ("Peppers, sweet, red, cooked, boiled, drained, without salt",50)]],
 ["Mixed Vegetables",[("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
-["Carbonara Spaghetti",[("Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",200), ("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",20), ("Milk, buttermilk, fluid, cultured, reduced fat",30)]]]
+["Carbonara Spaghetti",[("Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",200), ("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",20), ("Milk, buttermilk, fluid, cultured, reduced fat",30)]],
 
 ["Tortilla",[("Egg, whole, cooked, fried",200),("Potatoes, french fried, shoestring, salt added in processing, frozen, oven-heated",125)]],
 ["Gazpacho",[("Tomatoes, red, ripe, raw, year round average",200),("Pickles, cucumber, dill or kosher dill",200),("Onions, raw",75)]],
@@ -54,7 +59,7 @@ SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, 
 ["Veggie Nuggets",[("MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared",170)]],
 ["Veggie Burger",[("Veggie burgers or soyburgers, unprepared",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Veggie Lasagna",[("MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared", 200)]],
-["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)],
+["Ratatouille",[("Eggplant, cooked, boiled, drained, with salt",100), ("Tomatoes, red, ripe, cooked, with salt", 100), ("Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt", 100)]],
 
 ["Sushi",[("Fish, salmon, chinook, raw",100),("Seaweed, agar, raw",50),("Rice, white, medium-grain, enriched, cooked",250)]],
 ["Lasagna",[("Tomato products, canned, sauce",50), ("Bologna, meat and poultry",50),("Cheese, mozzarella, whole milk",70),("Pasta, cooked, enriched, with added salt",200)]],
@@ -62,13 +67,13 @@ SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, 
 ["Grilled Lamb",[("Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, raw",100),("Snacks, potato chips, made from dried potatoes, cheese-flavor",50)]],
 ["Grilled cuttlefish",[("Mollusks, cuttlefish, mixed species, raw",150),("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
 ["Rabbit with mushroom sauce",[("Game meat, rabbit, wild, cooked, stewed",300),("Mushrooms, portabella, grilled",75)]],
-["Pork sirloin with artichokes",[("Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean and fat, raw",100), ("Artichokes, (globe or french), raw",80)],
+["Pork sirloin with artichokes",[("Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean and fat, raw",100), ("Artichokes, (globe or french), raw",80)]],
 ["Blue fish with boiled eggplants",[("Eggplant, cooked, boiled, drained, with salt",150),("Fish, bluefish, raw",300)]],
 ["Pork Sausage with legums", [("Pork sausage rice links, brown and serve, cooked",160),("Lentils, raw",220)]],
 ["Spinach with salmon dices",[("Spinach, cooked, boiled, drained, without salt",260),("Fish, salmon, Atlantic, wild, cooked, dry heat",120)]],
 ["Roasted Duck",[("Duck, domesticated, meat only, cooked, roasted",200),("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]]
 ["Spanish Migas",[("Sausage, Berliner, pork, beef",200),("Corn flour, whole-grain, yellow", 300)]]
-]]
+]
 
 Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],
 ["Fruit Yogurt",[("Yogurt, fruit, low fat, 10 grams protein per 8 ounce",100)]],
@@ -84,7 +89,17 @@ Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with choc
 ["Cherries",[("Cherries, sweet, raw",100)]],
 ["Pears",[("Pears, asian, raw",100)]],
 ["Orange",[("Oranges, raw, California, valencias",100)]],
-["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]]]
+["Strawberries with cream",[("Strawberries, raw",80), ("Cream, fluid, light whipping",20)]],
+["Curd with honey",[("Cheese, cottage, creamed, large or small curd",80), ("Honey",20)]],
+["Catalan Cream",[("Desserts, egg custard, baked, prepared-from-recipe",100)]],
+["Truffles with Cream",[("Candies, truffles, prepared-from-recipe",80),("Cream, fluid, light whipping",20)]],
+["Chocolate Ice cream",[("Ice creams, chocolate",100)]],
+["Strawberry Ice cream",[("Ice creams, strawberry",100)]],
+["Yogurt with jam",[("Yogurt, plain, low fat, 12 grams protein per 8 ounce",100),("Jams, preserves, marmalades, sweetened with fruit juice",20)]],
+["Coffee cake",[("Coffeecake, cinnamon with crumb topping, commercially prepared, unenriched",120)]],
+["Rice with milk",[("Milk, producer, fluid, 3.7% milkfat",125),("Rice, white, medium-grain, enriched, cooked",25)]],
+["Fried milk",[("Milk, producer, fluid, 3.7% milkfat",100),("Egg, yolk, raw, fresh",20),("Corn flour, whole-grain, yellow",20)]]
+]
 
 # SET OF INGREDIENTS USED IN ORDER TO NOT INCLUDE IN INGREDIENS.PINS THOSE THAT ARE NOT USED
 INGREDIENTS_USED = set()
