@@ -240,23 +240,24 @@ def main():
 
                 ingredients_name.append(row[1])
                 ingredients_type.append(row[0])
+#max_fat, max_carbohydrates, max_calories,max_sucrose,max_glucose,max_fructose,max_lactose, max_caffeine, max_alcohol, max_sugar,max_cholesterol, max_saturated, max_calcium
 
                 nutrients = dict(
-                    fat = row[3],
-                    carbohydrates = row[4],
+                    fat = "{0:.2f}".format(100*float(row[3])/maximums[0]),
+                    carbohydrates = "{0:.2f}".format(100*float(row[4])/maximums[1]),
                     calories = row[6],
-                    sucrose = row[8],
-                    glucose = row[9],
-                    fructose = row[10],
-                    lactose = row[11],
-                    caffeine = row[15],
-                    alcohol = row[13],
-                    sugar = row[17],
-                    cholesterol = row[-3],
-                    saturated = row[-2],
-                    calcium = row[20])
+                    sucrose = "{0:.2f}".format(100*float(row[8])/maximums[3]),
+                    glucose = "{0:.2f}".format(100*float(row[9])/maximums[4]),
+                    fructose = "{0:.2f}".format(100*float(row[10])/maximums[5]),
+                    lactose = "{0:.2f}".format(100*float(row[11])/maximums[6]),
+                    caffeine = "{0:.2f}".format(100*float(row[15])/maximums[7]),
+                    alcohol = "{0:.2f}".format(100*float(row[13])/maximums[8]),
+                    sugar = "{0:.2f}".format(100*float(row[17])/maximums[9]),
+                    cholesterol = "{0:.2f}".format(100*float(row[-3])/maximums[10]),
+                    saturated = "{0:.2f}".format(100*float(row[-2])/maximums[11]),
+                    calcium = "{0:.2f}".format(100*float(row[20])/maximums[12]))
                 
-                nutrients = {k: v for k, v in nutrients.items() if v != 'NULL' and v != "0"}
+                nutrients = {k: v for k, v in nutrients.items() if v != 'NULL' and v != "0.00"}
                 ingredients_nutrients.append(nutrients)
 
                 nutrients_set.update(nutrients.items())
