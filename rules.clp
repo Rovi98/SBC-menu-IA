@@ -125,7 +125,7 @@
 		(count-calories	?fc11 ?fc12 ?fc13 ?fc14
 										?sc11 ?sc12 ?sc13 ?sc14)
 		?calories-left
-		2000
+		750
 	))
   =>
 
