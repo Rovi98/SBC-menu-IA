@@ -364,7 +364,7 @@
   (not (asked-age))
   ?user <- (user)
   =>
-    (bind ?num (ask-question-num "How old are you?" 0 150))
+    (bind ?num (ask-question-num "How old are you?" 65 115))
     (modify ?user (age ?num))
     (assert (asked-age))
 )
@@ -373,7 +373,7 @@
   (not (asked-height))
   ?user <- (user)
   =>
-    (bind ?num (ask-question-num "How tall are you? (cm)" 0 300))
+    (bind ?num (ask-question-num "How tall are you? (cm)" 140 210))
     (modify ?user (height ?num))
     (assert (asked-height))
 )
@@ -382,7 +382,7 @@
   (not (asked-weight))
   ?user <- (user)
   =>
-    (bind ?num (ask-question-num "What is your weight? (kg)" 0 300))
+    (bind ?num (ask-question-num "What is your weight? (kg)" 40 200))
     (modify ?user (weight ?num))
     (assert (asked-weight))
 )

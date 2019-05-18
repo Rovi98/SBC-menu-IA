@@ -26,7 +26,7 @@
       (return TRUE)
     else (if (member$ ?answer ?allowed-values-no) then
             (return FALSE)
-        )
+    else (printout t "| ## Invalid input ##" crlf))
     )
   )
 )
@@ -41,6 +41,7 @@
     (bind ?answer (read))
     (if (num-between ?answer 1 (length$ $?allowed-values)) then
       (return (nth$ ?answer $?allowed-values))
+	  else (printout t "| ## Invalid input ##" crlf)
     )
   )
   ?answer
@@ -67,6 +68,7 @@
     )
     (if (eq (length$ ?out) (length$ ?answer)) then
       (return ?out)
+	  else (printout t "| ## Invalid input ##" crlf)
     )
   )
 )
@@ -105,6 +107,7 @@
     )
     (if (eq (length$ ?out) (length$ ?answer)) then
       (return ?out)
+	  else (printout t "| ## Invalid input ##" crlf)
     )
   )
 )
@@ -116,6 +119,7 @@
     (bind ?answer (read))
     (if (num-between ?answer ?min ?max) then
       (return ?answer)
+	  else (printout t "| ## Invalid input ##" crlf)
     )
   )
 )
