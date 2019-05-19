@@ -7,21 +7,28 @@
 \BOOKMARK [1][-]{section.3}{Conceptualizaci\363n}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Conceptos del dominio}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Problemas y subproblemas}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Ejemplos del conocimiento extra\355do del dominio}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.4}{Flujo de razonamiento}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Formalizaci\363n}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Desarrollo de la ontolog\355a}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Definici\363n de clases y jerarqu\355a}{subsection.4.1}% 14
-\BOOKMARK [2][-]{subsection.4.2}{M\351todo de resoluci\363n}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Implementaci\363n}{}% 16
-\BOOKMARK [2][-]{subsection.5.1}{Creaci\363n de la ontolog\355a}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.2}{M\363dulos}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.3}{Prototipos}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Juego de Prueba}{}% 20
-\BOOKMARK [2][-]{subsection.6.1}{Prueba 1: }{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.2}{Prueba 2: }{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.3}{Prueba 3: }{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.4}{Prueba 4: }{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.5}{Prueba 5: }{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.6}{Prueba 6: }{section.6}% 26
-\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Recogida de informaci\363n personal}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{An\341lisis de los datos personales}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Filtrado de platos para el men\372}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Impresi\363n del men\372}{subsection.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Ejemplos del conocimiento extra\355do del dominio}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Flujo de razonamiento}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Formalizaci\363n}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Desarrollo de la ontolog\355a}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Definici\363n de clases y jerarqu\355a}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{M\351todo de resoluci\363n}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Abstracci\363n de los datos}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Asociaci\363n heur\355stica}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Adaptaci\363n}{subsection.4.2}% 22
+\BOOKMARK [1][-]{section.5}{Implementaci\363n}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Creaci\363n de la ontolog\355a}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.2}{M\363dulos}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.3}{Prototipos}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Juego de Prueba}{}% 27
+\BOOKMARK [2][-]{subsection.6.1}{Prueba 1: }{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Prueba 2: }{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.3}{Prueba 3: }{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.4}{Prueba 4: }{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.5}{Prueba 5: }{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.6}{Prueba 6: }{section.6}% 33
+\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 34

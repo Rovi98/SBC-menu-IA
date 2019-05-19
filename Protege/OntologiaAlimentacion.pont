@@ -1,4 +1,4 @@
-; Sun May 12 19:23:28 CEST 2019
+; Mon May 20 00:45:14 CEST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -28,7 +28,7 @@
 		(create-accessor read-write))
 	(multislot menusDay
 		(type INSTANCE)
-;+		(allowed-classes MenuDay)
+;+		(allowed-classes)
 		(cardinality 7 7)
 		(create-accessor read-write))
 	(multislot category
@@ -54,6 +54,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Preference)
 		(create-accessor read-write))
+	(multislot types
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
+		(create-accessor read-write))
 	(multislot limitations
 		(type INSTANCE)
 ;+		(allowed-classes Limitation)
@@ -72,10 +76,6 @@
 		(type INSTANCE)
 ;+		(allowed-classes FoodType)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot types
-		(type INSTANCE)
-;+		(allowed-classes FoodType)
 		(create-accessor read-write))
 	(single-slot quantity
 		(type FLOAT)
@@ -99,11 +99,6 @@
 		(type INSTANCE)
 ;+		(allowed-classes IngredientQuantity)
 		(create-accessor read-write))
-	(multislot season
-		(type SYMBOL)
-		(allowed-values Summer Winter Autumn Spring)
-		(cardinality 1 4)
-		(create-accessor read-write))
 	(single-slot lunch
 		(type INSTANCE)
 ;+		(allowed-classes Lunch)
@@ -117,10 +112,6 @@
 (defclass Ingredient
 	(is-a USER)
 	(role concrete)
-	(multislot types
-		(type INSTANCE)
-;+		(allowed-classes FoodType)
-		(create-accessor read-write))
 	(multislot nutrients
 		(type INSTANCE)
 ;+		(allowed-classes NutrientQuantity)
@@ -129,10 +120,9 @@
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot season
-		(type SYMBOL)
-		(allowed-values Summer Winter Autumn Spring)
-		(cardinality 1 4)
+	(multislot types
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
 		(create-accessor read-write)))
 
 (defclass Course
@@ -141,11 +131,6 @@
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot season
-		(type SYMBOL)
-		(allowed-values Summer Winter Autumn Spring)
-		(cardinality 1 4)
 		(create-accessor read-write))
 	(multislot ingredients
 		(type INSTANCE)
@@ -217,26 +202,6 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Micronutrient
-	(is-a Nutrient)
-	(role concrete))
-
-(defclass Vitamin
-	(is-a Micronutrient)
-	(role concrete))
-
-(defclass Mineral
-	(is-a Micronutrient)
-	(role concrete))
-
-(defclass Macronutrient
-	(is-a Nutrient)
-	(role concrete))
-
-(defclass Protein
-	(is-a Macronutrient)
-	(role concrete))
-
 (defclass Limitation
 	(is-a USER)
 	(role concrete)
@@ -253,21 +218,11 @@
 		(type INSTANCE)
 ;+		(allowed-classes Nutrient)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot value
-		(type INTEGER)
-		(range -100 100)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass LimitationIngredient
 	(is-a Limitation)
 	(role concrete)
-	(single-slot value
-		(type INTEGER)
-		(range -100 100)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot ingredient
 		(type INSTANCE)
 ;+		(allowed-classes Ingredient)
@@ -280,39 +235,6 @@
 	(single-slot type
 		(type INSTANCE)
 ;+		(allowed-classes FoodType)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot value
-		(type INTEGER)
-		(range -100 100)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass MenuWeek
-	(is-a USER)
-	(role concrete)
-	(multislot menusDay
-		(type INSTANCE)
-;+		(allowed-classes MenuDay)
-		(cardinality 7 7)
-		(create-accessor read-write)))
-
-(defclass MenuDay
-	(is-a USER)
-	(role concrete)
-	(single-slot breakfast
-		(type INSTANCE)
-;+		(allowed-classes Breakfast)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot dinner
-		(type INSTANCE)
-;+		(allowed-classes Dinner)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot lunch
-		(type INSTANCE)
-;+		(allowed-classes Lunch)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 

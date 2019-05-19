@@ -1,3 +1,4 @@
+\babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}{section.1}
 \contentsline {section}{\numberline {2}Identificaci\IeC {\'o}n}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Descripci\IeC {\'o}n del problema}{3}{subsection.2.1}
@@ -7,21 +8,36 @@
 \contentsline {section}{\numberline {3}Conceptualizaci\IeC {\'o}n}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Conceptos del dominio}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Problemas y subproblemas}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Recogida de informaci\IeC {\'o}n personal}{6}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}An\IeC {\'a}lisis de los datos personales}{6}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Filtrado de platos para el men\IeC {\'u}}{6}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Impresi\IeC {\'o}n del men\IeC {\'u}}{6}{subsubsection.3.2.4}
 \contentsline {subsection}{\numberline {3.3}Ejemplos del conocimiento extra\IeC {\'\i }do del dominio}{6}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Flujo de razonamiento}{6}{subsection.3.4}
-\contentsline {section}{\numberline {4}Formalizaci\IeC {\'o}n}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Desarrollo de la ontolog\IeC {\'\i }a}{6}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Definici\IeC {\'o}n de clases y jerarqu\IeC {\'\i }a}{6}{subsubsection.4.1.1}
-\contentsline {subsection}{\numberline {4.2}M\IeC {\'e}todo de resoluci\IeC {\'o}n}{10}{subsection.4.2}
-\contentsline {section}{\numberline {5}Implementaci\IeC {\'o}n}{10}{section.5}
-\contentsline {subsection}{\numberline {5.1}Creaci\IeC {\'o}n de la ontolog\IeC {\'\i }a}{10}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}M\IeC {\'o}dulos}{10}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Prototipos}{10}{subsection.5.3}
-\contentsline {section}{\numberline {6}Juego de Prueba}{11}{section.6}
-\contentsline {subsection}{\numberline {6.1}Prueba 1: }{11}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Prueba 2: }{11}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Prueba 3: }{11}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Prueba 4: }{11}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Prueba 5: }{11}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Prueba 6: }{11}{subsection.6.6}
-\contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{11}{section.7}
+\contentsline {section}{\numberline {4}Formalizaci\IeC {\'o}n}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Desarrollo de la ontolog\IeC {\'\i }a}{7}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Definici\IeC {\'o}n de clases y jerarqu\IeC {\'\i }a}{7}{subsubsection.4.1.1}
+\contentsline {paragraph}{Clase \emph {Course}}{8}{section*.2}
+\contentsline {paragraph}{Clase \emph {Ingredient}}{8}{section*.3}
+\contentsline {paragraph}{Clase \emph {IngredientQuantity}}{9}{section*.4}
+\contentsline {paragraph}{Clase \emph {Nutrient}}{9}{section*.5}
+\contentsline {paragraph}{Clase \emph {NutrientQuantity}}{9}{section*.6}
+\contentsline {paragraph}{Clase \emph {Disease}}{10}{section*.7}
+\contentsline {paragraph}{Clase \emph {Preference}}{10}{section*.8}
+\contentsline {paragraph}{Clase \emph {Limitation}}{11}{section*.9}
+\contentsline {subsection}{\numberline {4.2}M\IeC {\'e}todo de resoluci\IeC {\'o}n}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Abstracci\IeC {\'o}n de los datos}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Asociaci\IeC {\'o}n heur\IeC {\'\i }stica}{12}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Adaptaci\IeC {\'o}n}{12}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Implementaci\IeC {\'o}n}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Creaci\IeC {\'o}n de la ontolog\IeC {\'\i }a}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}M\IeC {\'o}dulos}{12}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Prototipos}{13}{subsection.5.3}
+\contentsline {section}{\numberline {6}Juego de Prueba}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Prueba 1: }{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Prueba 2: }{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Prueba 3: }{13}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Prueba 4: }{13}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Prueba 5: }{13}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Prueba 6: }{13}{subsection.6.6}
+\contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{13}{section.7}

@@ -459,7 +459,7 @@
    (printout t "Age:" tab tab tab tab ?age crlf)
    (printout t "Height:" tab tab tab tab ?height " cm" crlf)
    (printout t "Weight:" tab tab tab tab ?weight " kg" crlf)
-   (printout t "Execise Level:" tab tab tab ?exercise-level crlf)
+   (printout t "Exercise Level:" tab tab ?exercise-level crlf)
    (printout t "Required Daily Calories:" tab (integer (/ ?req-calories 7)) " kcal" crlf)
 
    (printout t crlf "############################################")
@@ -673,7 +673,7 @@
 (defmessage-handler MAIN::Ingredient get-calories ()
   (foreach ?nutrientQty ?self:nutrients
     (if (eq (send ?nutrientQty get-nutrient) [Nutrient_calories]) then
-      (return (* 0.01 (send ?nutrientQty get-quantity) 1.1))
+      (return (* 0.01 (send ?nutrientQty get-quantity) 1))
     )
   )
   0
