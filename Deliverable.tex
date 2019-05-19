@@ -374,8 +374,31 @@ Los atributos son:
 
 \subsection{Método de resolución}
 
- explicar problemas que intervienen en la resolución
-% Descripción del proceso de resolución y como se organizasn los problemas y subproblemas
+En los problemas de SBC, donde se debe a partir de una preguntas obtener una solución adecuada, se realiza mediante una clasificación heurística.
+Los problemas que se resuelven mediante clasificación heurística se pueden dividir en tres partes:
+
+\subsubsection{Abstracción de los datos}
+
+En esta parte del problema pasaremos de un problema concreto a un problema abstracto. 
+Obteniendo los datos de la persona (condiciones físicas, enfermedades, preferencias alimentarias...), el sistema abstraerá los datos necesarios por tal de poder ser usados luego para encontrar la mejor situación.
+En nuestro caso podemos encontrar esta parte del problema en los módulos NO ELS TINC A MÀ.
+
+\subsubsection{Asociación heurística}
+
+En esta parte pasaremos del problema abstracto a una solución abstracta.
+A partir de los diferentes datos del problema abstracto obtenido en la primera parte, obtendremos una solución abstracta, la cual consistirá en puntuar los diferentes platos según lo convenvenientes que sean para la persona.
+Por ejemplo una persona vegetariana obtendrá una puntuación menor para los platos que contengan carne.
+También en esta parte haremos el cálculo de Harris Benedict para obtener el número de calorías que necesita una persona al día.
+De esta forma tendremos una lista ordenada de los platos mas recomendados para cada usuario.
+Esta parte lo podemos encontrar en los módulos, FALTA MODULS.
+
+\subsubsection{Adaptación}
+
+Finalmente la Adaptación consiste en pasar de la solución abstracta a la solución concreta.
+Aquí cogeremos las listas de platos ordenadas i repartiremos estos platos en un menú dónde cada día se cumpla el número de calorías necesarias.
+Finalmente sacaremos por pantalla el menú obtenido para la persona i la cantidad de calorías que contiene.
+La adaptación esta formada por los módulos AAAAAAA.
+
 \section{Implementación}
 
 \subsection{Creación de la ontología}
