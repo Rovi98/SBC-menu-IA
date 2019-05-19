@@ -1,8 +1,6 @@
 ;;****************
 ;;* DEFFUNCTIONS *
 ;;****************
-(defglobal ?*debug-print* = nil) ; nil vs t
-
 
 (deffunction MAIN::is-num (?num)
   (or (eq (type ?num) INTEGER) (eq (type ?num) FLOAT))

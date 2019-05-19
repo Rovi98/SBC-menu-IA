@@ -73,6 +73,10 @@
 ;+		(allowed-classes FoodType)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(multislot types
+		(type INSTANCE)
+;+		(allowed-classes FoodType)
+		(create-accessor read-write))
 	(slot quantity
 		(type FLOAT)
 ;+		(cardinality 1 1)
@@ -113,10 +117,9 @@
 (defclass Ingredient
 	(is-a USER)
 	(role concrete)
-	(slot type
+	(multislot types
 		(type INSTANCE)
 ;+		(allowed-classes FoodType)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot nutrients
 		(type INSTANCE)

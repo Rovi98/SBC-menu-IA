@@ -63,6 +63,13 @@
   (slot score (type FLOAT) (default -9999999.0))
 )
 
+(deftemplate MAIN::chosen-courses
+  (multislot breakfasts (type INSTANCE))
+  (multislot firstCourses (type INSTANCE))
+  (multislot secondCourses (type INSTANCE))
+  (multislot desserts (type INSTANCE))
+)
+
 (deftemplate MAIN::available-courses
   (multislot breakfasts (type INSTANCE))
   (multislot firstCourses (type INSTANCE))
@@ -145,56 +152,141 @@
 		(count-calories   ?fc11 ?fc12 ?fc13 ?fc14
                       ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)
 		?calories-left
-		2000
+		1750
 	))
+
   =>
 
-	(bind ?chosenBreakfasts (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
-	(bind ?chosenFirstCourses (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
-	(bind ?chosenSecondCourses (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
-	(bind ?chosenDessert (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
+  (bind ?chosenBreakfasts     (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
+  (bind ?chosenFirstCourses   (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
+  (bind ?chosenSecondCourses  (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
+  (bind ?chosenDesserts       (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
 
- 	(bind ?menuWeek (make-instance (gensym) of MenuWeek))
+  (assert (chosen-courses (breakfasts     ?chosenBreakfasts)
+                          (firstCourses   ?chosenFirstCourses)
+                          (secondCourses  ?chosenSecondCourses)
+                          (desserts       ?chosenDesserts)
+  ))
+)
 
-	(loop-for-count (?i 0 6) do
+(defrule generate_solutions::solve-repetitions-firstCourse
+  (declare (salience 15))
+  (not (chosen-menu))
+  ?chosen-courses <- (chosen-courses (firstCourses ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14))
 
-  	(bind ?breakfast
-  		(make-instance (gensym) of Breakfast
-  			(course (nth$ (+ ?i 1) ?chosenBreakfasts))
-  		)
-  	)
+  (test (or (eq (send ?fc1 get-course) (send ?fc2 get-course))
+            (eq (send ?fc3 get-course) (send ?fc4 get-course))
+            (eq (send ?fc5 get-course) (send ?fc6 get-course))
+            (eq (send ?fc7 get-course) (send ?fc8 get-course))
+            (eq (send ?fc9 get-course) (send ?fc10 get-course))
+            (eq (send ?fc11 get-course) (send ?fc12 get-course))
+            (eq (send ?fc13 get-course) (send ?fc14 get-course))
+    )
+  )
+
+  =>
+  
+  (printout ?*debug-print* "DEBUG: re-sorting firstCourses to avoid repetitions" crlf)
+  (bind ?chosenFirstCourses (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
+  (modify ?chosen-courses (firstCourses ?chosenFirstCourses))
+)
+
+(defrule generate_solutions::solve-repetitions-secondCourses
+  (declare (salience 15))
+  (not (chosen-menu))
+  ?chosen-courses <- (chosen-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
+
+  (test (or (eq (send ?sc1 get-course) (send ?sc2 get-course))
+            (eq (send ?sc3 get-course) (send ?sc4 get-course))
+            (eq (send ?sc5 get-course) (send ?sc6 get-course))
+            (eq (send ?sc7 get-course) (send ?sc8 get-course))
+            (eq (send ?sc9 get-course) (send ?sc10 get-course))
+            (eq (send ?sc11 get-course) (send ?sc12 get-course))
+            (eq (send ?sc13 get-course) (send ?sc14 get-course))
+    )
+  )
+
+  =>
+  
+  (printout ?*debug-print* "DEBUG: re-sorting secondCourses to avoid repetitions" crlf)
+  (bind ?chosenSecondCourses (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
+  (modify ?chosen-courses (secondCourses ?chosenSecondCourses))
+)
+
+(defrule generate_solutions::solve-repetitions-desserts
+  (declare (salience 15))
+  (not (chosen-menu))
+  ?chosen-courses <- (chosen-courses (desserts ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14))
+
+  (test (or (eq (send ?ds1 get-course) (send ?ds2 get-course))
+            (eq (send ?ds3 get-course) (send ?ds4 get-course))
+            (eq (send ?ds5 get-course) (send ?ds6 get-course))
+            (eq (send ?ds7 get-course) (send ?ds8 get-course))
+            (eq (send ?ds9 get-course) (send ?ds10 get-course))
+            (eq (send ?ds11 get-course) (send ?ds12 get-course))
+            (eq (send ?ds13 get-course) (send ?ds14 get-course))
+    )
+  )
+
+  =>
+  
+  (printout ?*debug-print* "DEBUG: re-sorting desserts to avoid repetitions" crlf)
+  (bind ?chosenDesserts (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
+  (modify ?chosen-courses (desserts ?chosenDesserts))
+)
+
+(defrule generate_solutions::assign-menu
+  (declare (salience 10))
+  (not (chosen-menu))
+  (chosen-courses (breakfasts    $?chosenBreakfasts)
+                  (firstCourses  $?chosenFirstCourses)
+                  (secondCourses $?chosenSecondCourses)
+                  (desserts      $?chosenDesserts)
+  )
+
+  =>
+
+  (bind ?menuWeek (make-instance (gensym) of MenuWeek))
+
+  (loop-for-count (?i 0 6) do
+
+    (bind ?breakfast
+      (make-instance (gensym) of Breakfast
+        (course (nth$ (+ ?i 1) ?chosenBreakfasts))
+      )
+    )
 
       (bind ?lunch
-  		(make-instance (gensym) of Lunch
-  			(firstCourse (nth$ (+ (* ?i 2) 1) ?chosenFirstCourses))
-  			(secondCourse (nth$ (+ (* ?i 2) 1) ?chosenSecondCourses))
-  			(dessert (nth$ (+ (* ?i 2) 1) ?chosenDessert))
-  		)
-  	)
+      (make-instance (gensym) of Lunch
+        (firstCourse (nth$ (+ (* ?i 2) 1) ?chosenFirstCourses))
+        (secondCourse (nth$ (+ (* ?i 2) 1) ?chosenSecondCourses))
+        (dessert (nth$ (+ (* ?i 2) 1) ?chosenDesserts))
+      )
+    )
 
-  	(bind ?dinner
-  		(make-instance (gensym) of Dinner
-  			(firstCourse (nth$ (+ (* ?i 2) 2) ?chosenFirstCourses))
-  			(secondCourse (nth$ (+ (* ?i 2) 2) ?chosenSecondCourses))
-  			(dessert (nth$ (+ (* ?i 2) 2) ?chosenDessert))
-  		)
-  	)
+    (bind ?dinner
+      (make-instance (gensym) of Dinner
+        (firstCourse (nth$ (+ (* ?i 2) 2) ?chosenFirstCourses))
+        (secondCourse (nth$ (+ (* ?i 2) 2) ?chosenSecondCourses))
+        (dessert (nth$ (+ (* ?i 2) 2) ?chosenDesserts))
+      )
+    )
 
-  	(bind ?menuDay
-  		(make-instance (gensym) of MenuDay
-  			(breakfast ?breakfast)
-  			(lunch ?lunch)
-  			(dinner ?dinner)
-  		)
-  	)
+    (bind ?menuDay
+      (make-instance (gensym) of MenuDay
+        (breakfast ?breakfast)
+        (lunch ?lunch)
+        (dinner ?dinner)
+      )
+    )
 
-  	(bind ?i1 (+ ?i 1))
-		(slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
-	)
+    (bind ?i1 (+ ?i 1))
+    (slot-replace$ ?menuWeek menusDay ?i1 ?i1 ?menuDay)
+  )
 
-  (bind ?score (count-score (create$ ?chosenBreakfasts ?chosenFirstCourses ?chosenSecondCourses ?chosenDessert)))
+  (bind ?score (count-score (create$ ?chosenBreakfasts ?chosenFirstCourses ?chosenSecondCourses ?chosenDesserts)))
 
-	(assert (chosen-menu (menu ?menuWeek) (score ?score)))
+  (assert (chosen-menu (menu ?menuWeek) (score ?score)))
 
 )
 
@@ -628,7 +720,7 @@
 (defmessage-handler inference_of_data::LimitationType apply ()
   (do-for-all-instances  ((?scCour ScoredCourse) (?ingrQty IngredientQuantity))
     (and
-      (eq ?self:type (send ?ingrQty:ingredient get-type))
+      (member$ ?self:type (send ?ingrQty:ingredient get-types))
       (member$ ?ingrQty (send ?scCour:course get-ingredients))
     )
     (printout ?*debug-print* "DEBUG: reduced score of course " ?scCour:course " because it has " ?ingrQty " of type " ?self:type crlf)
@@ -651,7 +743,7 @@
 (defmessage-handler inference_of_data::FoodType apply-as-preference (?value)
   (do-for-all-instances  ((?scCour ScoredCourse) (?ingrQty IngredientQuantity))
     (and
-      (eq (instance-name ?self) (send ?ingrQty:ingredient get-type))
+      (member$ (instance-name ?self) (send ?ingrQty:ingredient get-types))
       (member$ ?ingrQty (send ?scCour:course get-ingredients))
     )
     (printout ?*debug-print* "DEBUG: changed score (" ?value ") of course " ?scCour:course " because it has " ?ingrQty " of type " ?self crlf)

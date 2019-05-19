@@ -2,6 +2,7 @@ import os
 import csv
 import re
 import random
+import shlex
 
 Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
 ["Jam Toasts",[("Jams and preserves",30), ("Bread, white, commercially prepared, toasted",90)]],
@@ -179,6 +180,10 @@ def writeList(prefix, llista):
     llista =list(map(lambda x:'\n\t\t['+prefix+x+']' , llista))
     return "".join(llista)
 
+def writeListC(prefix, llista):
+    llista =list(map(lambda x:'\n\t\t['+prefix+cleanString(x)+']' , llista))
+    return "".join(llista)
+
 def writeList2(prefix, llista):
     llista =list(map(lambda x:'\n\t\t['+prefix+cleanString2(x)+']' , llista))
     return "".join(llista)
@@ -275,7 +280,7 @@ def main():
                     continue
 
                 ingredients_name.append(row[1])
-                ingredients_type.append(row[0])
+                ingredients_type.append(shlex.split(row[0].strip()[1:-1]))
 #max_fat, max_carbohydrates, max_calories,max_sucrose,max_glucose,max_fructose,max_lactose, max_caffeine, max_alcohol, max_sugar,max_cholesterol, max_saturated, max_calcium
 
                 nutrients = dict(
@@ -339,8 +344,8 @@ def main():
         for i,i2 in enumerate(ingredients_name):
                 t.write('([Ingredient_'+ cleanString(i2) + '] of Ingredient\n\t(nutrients '+writeList2("NutrientQuantity_", ingredients_nutrients[i].items())+')')
                 t.write('\n\t(name_ "'+i2+'")')
-                t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')
-                t.write('\n\t(type [FoodType_'+cleanString(ingredients_type[i])+']))\n\n')
+                t.write('\n\t(season '+writeListSimple("",random.sample(seasons,random.randint(1,len(seasons))))+')')                
+                t.write('\n\t(types '+writeListC("FoodType_", ingredients_type[i])+'))\n\n')
     t.close()
     print('Instances of ingredients: DONE')
     

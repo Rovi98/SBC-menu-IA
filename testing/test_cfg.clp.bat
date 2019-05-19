@@ -1,4 +1,5 @@
 (clear)
+(defglobal ?*debug-print* = nil) ;nil vs t
 (load "../ontology.pont")
 (load "../aux_classes.clp")
 (load "../functions.clp")
