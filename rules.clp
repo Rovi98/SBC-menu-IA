@@ -77,7 +77,6 @@
 
 (defglobal
   ?*WEEKDAYS* = (create$ Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
-  ?*SEASONS* = (slot-allowed-values Course season)
 )
 
 ;;;********************
@@ -93,18 +92,39 @@
                                             (secondCourses $?secondCourses)
                                             (desserts $?desserts)
   )
+
   =>
-  (modify ?available-courses  (breakfasts (sort-courses ?breakfasts))
-                              (firstCourses (sort-courses ?firstCourses))
-                              (secondCourses (sort-courses ?secondCourses))
-                              (desserts (sort-courses ?desserts))
+
+  (bind ?sorted-breakfasts (sort-courses ?breakfasts))
+  (bind ?sorted-firstCourses (sort-courses ?firstCourses))
+  (bind ?sorted-secondCourses (sort-courses ?secondCourses))
+  (bind ?sorted-desserts (sort-courses ?desserts))
+
+  (bind ?dup-breakfasts (offseted-scoredcourses (subseq$ ?sorted-breakfasts 1 3) -1000))
+  (bind ?dup-firstCourses (offseted-scoredcourses (subseq$ ?sorted-firstCourses 1 7) -1000))
+  (bind ?dup-secondCourses (offseted-scoredcourses (subseq$ ?sorted-secondCourses 1 7) -1000))
+  (bind ?dup-desserts (offseted-scoredcourses (subseq$ ?sorted-desserts 1 7) -1000))
+
+  (bind ?sorted-breakfasts (sort-courses (create$ ?breakfasts ?dup-breakfasts)))
+  (bind ?sorted-firstCourses (sort-courses (create$ ?firstCourses ?dup-firstCourses)))
+  (bind ?sorted-secondCourses (sort-courses (create$ ?secondCourses ?dup-secondCourses)))
+  (bind ?sorted-desserts (sort-courses (create$ ?desserts ?dup-desserts)))
+
+  (modify ?available-courses  (breakfasts (subseq$ ?sorted-breakfasts 1 10))
+                              (firstCourses (subseq$ ?sorted-firstCourses 1 22))
+                              (secondCourses (subseq$ ?sorted-secondCourses 1 24))
+                              (desserts (subseq$ ?sorted-desserts 1 20))
   )
 
-  (bind ?fixed-used-calories (count-calories (create$ 
-        (subseq$ ?breakfasts 1 7 )
-        (subseq$ ?firstCourses 1 10)
-        (subseq$ ?secondCourses 1 10)
-        (subseq$ ?desserts 1 14 )
+  (bind ?fixed-breakfasts (subseq$ ?sorted-breakfasts 1 7))
+  (bind ?fixed-firstCourses (subseq$ ?sorted-firstCourses 1 10))
+  (bind ?fixed-secondCourses (subseq$ ?sorted-secondCourses 1 9))
+  (bind ?fixed-desserts (subseq$ ?sorted-desserts 1 14))
+
+  (bind ?fixed-used-calories (count-calories (create$ ?fixed-breakfasts
+                                                      ?fixed-firstCourses
+                                                      ?fixed-secondCourses
+                                                      ?fixed-desserts
   )))
 
   (assert (calories-left (- ?req-calories ?fixed-used-calories)))
@@ -118,21 +138,21 @@
 	(calories-left ?calories-left)
   (available-courses (breakfasts    ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7 $?))
   (available-courses (firstCourses  ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 $? ?fc11 $? ?fc12 $? ?fc13 $? ?fc14 $?))
-  (available-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14 $?))
+  (available-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 $? ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14 $?))
   (available-courses (desserts      ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 $?))
 
 	(test (within-tolerance
-		(count-calories	?fc11 ?fc12 ?fc13 ?fc14
-										?sc11 ?sc12 ?sc13 ?sc14)
+		(count-calories   ?fc11 ?fc12 ?fc13 ?fc14
+                      ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)
 		?calories-left
-		1500
+		2000
 	))
   =>
 
-	(bind ?chosenBreakfasts (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7))
-	(bind ?chosenFirstCourses (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14))
-	(bind ?chosenSecondCourses (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
-	(bind ?chosenDessert (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14))
+	(bind ?chosenBreakfasts (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
+	(bind ?chosenFirstCourses (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
+	(bind ?chosenSecondCourses (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
+	(bind ?chosenDessert (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
 
  	(bind ?menuWeek (make-instance (gensym) of MenuWeek))
 
@@ -175,7 +195,7 @@
   (bind ?score (count-score (create$ ?chosenBreakfasts ?chosenFirstCourses ?chosenSecondCourses ?chosenDessert)))
 
 	(assert (chosen-menu (menu ?menuWeek) (score ?score)))
-		
+
 )
 
 (defrule generate_solutions::no-menu-found
@@ -200,14 +220,14 @@
 
 (defrule printing::print-result
   (chosen-menu (menu ?menu) (score ?score))
-  (user (height ?height)
-        (weight ?weight)
-        (age ?age)
-        (exercise-level ?exercise-level)
-        (sex ?sex)
-        (required-weekly-calories ?req-calories)
+  (available-courses  (breakfasts ?bf1 ?bf2 ?bf3 $?)
+                      (firstCourses ?fc1 ?fc2 ?fc3 $?)
+                      (secondCourses ?sc1 ?sc2 ?sc3 $?)
+                      (desserts ?ds1 ?ds2 ?ds3 $?)
   )
+
 	=>
+
   (printout t crlf "############################################")
   (printout t crlf "################### MENU ###################")
   (printout t crlf "############################################" crlf crlf)
@@ -223,16 +243,13 @@
   (printout t "Total Calories:" tab tab (integer ?calories) " kcal" crlf)
   (printout t "Approx. Daily Calories:" tab (integer (/ ?calories 7)) " kcal" crlf)
 
-  (printout t crlf "############################################")
-  (printout t crlf "############# USER INFORMATION #############")
-  (printout t crlf "############################################" crlf crlf)
-  
-  (printout t "Sex:" tab tab tab tab ?sex crlf)
-  (printout t "Age:" tab tab tab tab ?age crlf)
-  (printout t "Height:" tab tab tab tab ?height " cm" crlf)
-  (printout t "Weight:" tab tab tab tab ?weight " kg" crlf)
-  (printout t "Execise Level:" tab tab tab ?exercise-level crlf)
-  (printout t "Required Daily Calories:" tab (integer (/ ?req-calories 7)) " kcal" crlf)
+  (printout t crlf "============================================" crlf)
+  (printout t "Top Scored Courses" crlf)
+  (printout t "============================================" crlf)
+  (printout t "- Breakfasts:" tab tab (remove-duplicates (names-list (create$ ?bf1 ?bf2 ?bf3))) crlf)
+  (printout t "- First Courses:" tab (remove-duplicates (names-list (create$ ?fc1 ?fc2 ?fc3))) crlf)
+  (printout t "- Second Courses:" tab (remove-duplicates (names-list (create$ ?sc1 ?sc2 ?sc3))) crlf)
+  (printout t "- Desserts:" tab tab (remove-duplicates (names-list (create$ ?ds1 ?ds2 ?ds3))) crlf)
 
   (printout t crlf "############################################")
   (printout t crlf "############################################" crlf crlf)
@@ -243,7 +260,6 @@
 (defrule ask_questions::normal-menu-state-conclusions
   (declare (salience 10))
   (asked-age)
-  (season ?)
   (asked-weight)
   (asked-height)
   (asked-vegetables-preference)
@@ -252,9 +268,11 @@
   (asked-exercise-level)
   (asked-foodtypes-positive)
   (asked-foodtypes-negative)
+
    =>
-  (focus inference_of_data)
-  (printout t "Processing the data obtained..." crlf)
+
+   (printout t crlf "Processing the data obtained..." crlf)
+   (focus inference_of_data)
 )
 
 (defrule inference_of_data::list-available-courses
@@ -266,10 +284,10 @@
   (bind ?secondCourses (find-all-instances ((?c Course)) (member$ SecondCourse ?c:category)))
   (bind ?desserts (find-all-instances ((?c Course)) (member$ Dessert ?c:category)))
 
-  (modify ?available-courses  (breakfasts (init-scoredcourses ?breakfasts))
-                              (firstCourses (init-scoredcourses ?firstCourses))
-                              (secondCourses (init-scoredcourses ?secondCourses))
-                              (desserts (init-scoredcourses ?desserts))
+  (modify ?available-courses  (breakfasts (init-scoredcourses ?breakfasts 0))
+                              (firstCourses (init-scoredcourses ?firstCourses 0))
+                              (secondCourses (init-scoredcourses ?secondCourses 0))
+                              (desserts (init-scoredcourses ?desserts 0))
   )
 
   (assert (listed-available-courses))
@@ -331,9 +349,33 @@
   (applied-specific-preferences)
   (required-calories-calculated)
   (listed-available-courses)
+  (user (height ?height)
+        (weight ?weight)
+        (age ?age)
+        (exercise-level ?exercise-level)
+        (sex ?sex)
+        (required-weekly-calories ?req-calories)
+  )
+
    =>
-  (printout t "Generating solution..." crlf)
-  (focus generate_solutions)
+
+   (printout t crlf "############################################")
+   (printout t crlf "############# USER INFORMATION #############")
+   (printout t crlf "############################################" crlf crlf)
+
+   (printout t "Sex:" tab tab tab tab ?sex crlf)
+   (printout t "Age:" tab tab tab tab ?age crlf)
+   (printout t "Height:" tab tab tab tab ?height " cm" crlf)
+   (printout t "Weight:" tab tab tab tab ?weight " kg" crlf)
+   (printout t "Execise Level:" tab tab tab ?exercise-level crlf)
+   (printout t "Required Daily Calories:" tab (integer (/ ?req-calories 7)) " kcal" crlf)
+
+   (printout t crlf "############################################")
+   (printout t crlf "############################################" crlf crlf)
+
+   (printout t "Generating solution..." crlf)
+
+   (focus generate_solutions)
 )
 
 (defrule inference_of_data::calories-calculator
@@ -350,7 +392,7 @@
 
   (bind ?WBMR (* 7 ?BMR))
   (printout ?*debug-print* "DEBUG: Weekly Required Calories: " ?WBMR crlf)
-	
+
   (modify ?user (required-weekly-calories ?WBMR))
 	(assert (required-calories-calculated))
 )
@@ -449,13 +491,6 @@
     (assert (asked-foodtypes-negative))
 )
 
-(defrule ask_questions::determine-season
-   (not (temporada ?))
-   =>
-   (bind ?response (ask-question-opt "Which season do you want the menu for?" ?*SEASONS*))
-	 (assert(season ?response))
-)
-
 ;;;****************************
 ;;;* STARTUP AND OUTPUT RULES *
 ;;;****************************
@@ -497,19 +532,19 @@
 )
 
 (defmessage-handler printing::Breakfast display ()
-  (printout t "|| · " (send ?self:course get-name_) crlf)
+  (printout t "|| - " (send ?self:course get-name_) crlf)
 )
 
 (defmessage-handler printing::Lunch display ()
-  (printout t "|| · " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| · " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · " (send ?self:dessert get-name_) crlf)
+  (printout t "|| - " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| - " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| - " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler printing::Dinner display ()
-  (printout t "|| · " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| · " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| · " (send ?self:dessert get-name_) crlf)
+  (printout t "|| - " (send ?self:firstCourse get-name_) crlf)
+  (printout t "|| - " (send ?self:secondCourse get-name_) crlf)
+  (printout t "|| - " (send ?self:dessert get-name_) crlf)
 )
 
 (defmessage-handler printing::MenuDay display ()
@@ -546,7 +581,7 @@
 (defmessage-handler MAIN::Ingredient get-calories ()
   (foreach ?nutrientQty ?self:nutrients
     (if (eq (send ?nutrientQty get-nutrient) [Nutrient_calories]) then
-      (return (* 0.01 (send ?nutrientQty get-quantity)))
+      (return (* 0.01 (send ?nutrientQty get-quantity) 1.1))
     )
   )
   0
@@ -586,6 +621,10 @@
   )
 )
 
+(defmessage-handler MAIN::ScoredCourse add-score (?score)
+  (bind ?self:score (+ ?self:score ?score))
+)
+
 (defmessage-handler inference_of_data::LimitationType apply ()
   (do-for-all-instances  ((?scCour ScoredCourse) (?ingrQty IngredientQuantity))
     (and
@@ -593,7 +632,7 @@
       (member$ ?ingrQty (send ?scCour:course get-ingredients))
     )
     (printout ?*debug-print* "DEBUG: reduced score of course " ?scCour:course " because it has " ?ingrQty " of type " ?self:type crlf)
-    (send ?scCour put-score (+ ?scCour:score (* ?self:value ?ingrQty:quantity)))
+    (send ?scCour add-score (* ?self:value ?ingrQty:quantity))
   )
 )
 
@@ -604,8 +643,8 @@
       (member$ ?nutrQty (send ?ingrQty:ingredient get-nutrients))
       (member$ ?ingrQty (send ?scCour:course get-ingredients))
     )
-    (printout t "DEBUG: reduced score of course " ?scCour:course " because it has " ?ingrQty " with nutrient " ?nutrQty crlf)
-    (send ?scCour put-score (+ ?scCour:score (* ?self:value ?ingrQty:quantity ?nutrQty:quantity 0.1)))
+    (printout ?*debug-print* "DEBUG: reduced score of course " ?scCour:course " because it has " ?ingrQty " with nutrient " ?nutrQty crlf)
+    (send ?scCour add-score (* ?self:value ?ingrQty:quantity ?nutrQty:quantity 0.1))
   )
 )
 
@@ -616,6 +655,6 @@
       (member$ ?ingrQty (send ?scCour:course get-ingredients))
     )
     (printout ?*debug-print* "DEBUG: changed score (" ?value ") of course " ?scCour:course " because it has " ?ingrQty " of type " ?self crlf)
-    (send ?scCour put-score (+ ?scCour:score (* ?value ?ingrQty:quantity)))
+    (send ?scCour add-score (* ?value ?ingrQty:quantity))
   )
 )

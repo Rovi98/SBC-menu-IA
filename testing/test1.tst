@@ -9,6 +9,5 @@
 yes	;eat meat
 	;no positive preferences
 	;no negative preferences
-1	;season: summer
 
 

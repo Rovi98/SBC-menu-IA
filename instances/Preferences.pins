@@ -17,6 +17,7 @@
 		[LimitationType_PoultryProducts-80]
 		[LimitationType_FinfishandShellfishProducts-80]
 		[LimitationType_LambVealandGameProducts-80]
+		[LimitationType_DairyandEggProducts-80]
 	)
 	(name_ "Vegetarian"))
 
@@ -43,3 +44,7 @@
 ([LimitationType_LambVealandGameProducts-80] of LimitationType
 	(value -80)
 	(type [FoodType_LambVealandGameProducts]))
+	
+([LimitationType_DairyandEggProducts-80] of LimitationType
+	(value -80)
+	(type [FoodType_DairyandEggProducts]))

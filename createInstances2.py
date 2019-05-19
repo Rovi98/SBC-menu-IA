@@ -149,14 +149,12 @@ FOOD_TYPES= [
 'Nut and Seed Products',
 'Beef Products',
 'Sausages and Luncheon Meats',
-'Beverages',
 'Finfish and Shellfish Products',
 'Legumes and Legume Products',
 'Sweets',
 'Soups, Sauces, and Gravies',
 'Snacks'
 'Breakfast Cereals',
-'Baby Foods',
 'Baked Products',
 'Lamb, Veal, and Game Products',
 'Cereal Grains and Pasta'

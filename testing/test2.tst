@@ -9,6 +9,5 @@
 yes	;eat meat
 7 15	;positive-preferences: vegetables, soups
 3		;negative-preferences: fats
-1	;season: summer
 
 

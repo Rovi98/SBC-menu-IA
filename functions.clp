@@ -1,7 +1,7 @@
 ;;****************
 ;;* DEFFUNCTIONS *
 ;;****************
-(defglobal ?*debug-print* = t) ; nil vs t
+(defglobal ?*debug-print* = nil) ; nil vs t
 
 
 (deffunction MAIN::is-num (?num)
@@ -80,11 +80,21 @@
   )
 )
 
+(deffunction MAIN::remove-duplicates (?list)
+  (bind ?out (create$))
+  (foreach ?i ?list
+    (if (not (member$ ?i ?out)) then
+      (bind ?out (create$ ?out ?i))
+    )
+  )
+  ?out
+)
+
 (deffunction MAIN::ask-question-multi-opt-instances (?question ?class ?exclude)
   (bind ?instances (find-all-instances ((?c ?class)) (not (member$ ?c ?exclude))))
   (bind ?names (names-list ?instances))
   (bind ?count (length$ ?instances))
-  
+
   (if (= ?count 0) then (return (create$)))
 
   (while TRUE do ;return function will exit this loop
@@ -147,7 +157,7 @@
 )
 
 (deffunction MAIN::sort-courses (?list)
-  ;(funcall sort course_ord ?list)  
+  ;(funcall sort course_ord ?list)
   (sort ord-course ?list)
 )
 
@@ -178,19 +188,31 @@
   (return ?BMR)
 )
 
-(deffunction MAIN::init-scoredcourses (?courses)
+(deffunction MAIN::init-scoredcourses (?courses ?init-score)
   (bind ?out (create$))
   (foreach ?course ?courses
-    (bind ?out (create$ ?out 
-      (make-instance (gensym) of ScoredCourse
+    (bind ?out (create$ ?out
+      (make-instance (sym-cat Scored (instance-name ?course)) of ScoredCourse
           (course ?course)
+          (score ?init-score)
           (calories (send ?course get-calories))
       )
     ))
   )
 )
 
-(deffunction count-calories ($?courses)
+(deffunction MAIN::offseted-scoredcourses (?courses ?offset-score)
+  (bind ?out (create$))
+  (foreach ?course ?courses
+    (bind ?out (create$ ?out
+      (duplicate-instance ?course to (sym-cat Copy (instance-name ?course))
+        (score (+ (send ?course get-score) ?offset-score))
+      )
+    ))
+  )
+)
+
+(deffunction MAIN::count-calories ($?courses)
   (bind ?count 0)
   (foreach ?course ?courses
     (bind ?count (+ ?count (send ?course get-calories)))

@@ -28,9 +28,6 @@
 ([FoodType_SausagesandLuncheonMeats] of FoodType
 	(name_ "Sausages and Luncheon Meats"))
 
-([FoodType_Beverages] of FoodType
-	(name_ "Beverages"))
-
 ([FoodType_FinfishandShellfishProducts] of FoodType
 	(name_ "Finfish and Shellfish Products"))
 
@@ -45,9 +42,6 @@
 
 ([FoodType_SnacksBreakfastCereals] of FoodType
 	(name_ "SnacksBreakfast Cereals"))
-
-([FoodType_BabyFoods] of FoodType
-	(name_ "Baby Foods"))
 
 ([FoodType_BakedProducts] of FoodType
 	(name_ "Baked Products"))
