@@ -3,7 +3,7 @@
 		[IngredientQuantity_Oilcocoabutter30]
 		[IngredientQuantity_Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
 	(name_ "Cocoa Butter Sandwich (Nocilla Sandwich)")
-	(season  Spring Winter)
+	(season  Winter Autumn)
 	(category Breakfast))
 
 ([Course_JamToasts] of Course
@@ -11,7 +11,7 @@
 		[IngredientQuantity_Jamsandpreserves30]
 		[IngredientQuantity_Breadwhitecommerciallypreparedtoasted90])
 	(name_ "Jam Toasts")
-	(season  Autumn Summer Spring)
+	(season  Autumn Spring Winter)
 	(category Breakfast))
 
 ([Course_BaconandFriedEggs] of Course
@@ -19,7 +19,7 @@
 		[IngredientQuantity_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40]
 		[IngredientQuantity_Eggwholecookedfried100])
 	(name_ "Bacon and Fried Eggs")
-	(season  Winter)
+	(season  Winter Spring Autumn Summer)
 	(category Breakfast))
 
 ([Course_Cornflakeswithmilk] of Course
@@ -27,14 +27,14 @@
 		[IngredientQuantity_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30]
 		[IngredientQuantity_Milkproducerfluid37milkfat90])
 	(name_ "Cornflakes with milk")
-	(season  Spring)
+	(season  Spring Winter Summer)
 	(category Breakfast))
 
 ([Course_Muffins] of Course
 	(ingredients 
 		[IngredientQuantity_Englishmuffinsplainenrichedwithcapropincludessourdough150])
 	(name_ "Muffins")
-	(season  Spring Summer)
+	(season  Autumn)
 	(category Breakfast))
 
 ([Course_SalamiSandwich] of Course
@@ -42,7 +42,7 @@
 		[IngredientQuantity_Salamidryorhardpork30]
 		[IngredientQuantity_Breadfrenchorviennaincludessourdough90])
 	(name_ "Salami Sandwich")
-	(season  Spring Summer Autumn)
+	(season  Summer)
 	(category Breakfast))
 
 ([Course_HamSandwich] of Course
@@ -50,7 +50,7 @@
 		[IngredientQuantity_Hamslicedregularapproximately11fat30]
 		[IngredientQuantity_Breadfrenchorviennaincludessourdough90])
 	(name_ "Ham Sandwich")
-	(season  Spring)
+	(season  Spring Winter Summer Autumn)
 	(category Breakfast))
 
 ([Course_ChorizoSandwich] of Course
@@ -58,7 +58,7 @@
 		[IngredientQuantity_Chorizoporkandbeef30]
 		[IngredientQuantity_Breadfrenchorviennaincludessourdough90])
 	(name_ "Chorizo Sandwich")
-	(season  Winter)
+	(season  Winter Summer)
 	(category Breakfast))
 
 ([Course_VeganCheeseSandwich] of Course
@@ -66,7 +66,7 @@
 		[IngredientQuantity_Imitationcheeseamericanorcheddarlowcholesterol30]
 		[IngredientQuantity_Breadfrenchorviennaincludessourdough90])
 	(name_ "Vegan Cheese Sandwich")
-	(season  Summer Autumn)
+	(season  Summer Spring)
 	(category Breakfast))
 
 ([Course_Nutswithmilk] of Course
@@ -76,7 +76,7 @@
 		[IngredientQuantity_Seedssunflowerseedkernelstoastedwithoutsalt15]
 		[IngredientQuantity_SoymilkallflavorsunsweetenedwithaddedcalciumvitaminsAandD90])
 	(name_ "Nuts with milk")
-	(season  Summer)
+	(season  Spring Autumn Winter)
 	(category Breakfast))
 
 ([Course_TofuSandwich] of Course
@@ -85,7 +85,7 @@
 		[IngredientQuantity_Tomatoesredriperawyearroundaverage10]
 		[IngredientQuantity_Breadwhitecommerciallypreparedincludessoftbreadcrumbs90])
 	(name_ "Tofu Sandwich")
-	(season  Summer Spring Autumn Winter)
+	(season  Autumn)
 	(category Breakfast))
 
 ([Course_Pancakeswithmaplesyrup] of Course
@@ -93,14 +93,14 @@
 		[IngredientQuantity_Pancakesplaindrymixcompleteprepared120]
 		[IngredientQuantity_Syrupsmaple30])
 	(name_ "Pancakes with maple syrup")
-	(season  Autumn)
+	(season  Summer Autumn Winter)
 	(category Breakfast))
 
 ([Course_Doughnuts] of Course
 	(ingredients 
 		[IngredientQuantity_Doughnutscake-typeplainsugaredorglazed150])
 	(name_ "Doughnuts")
-	(season  Spring Winter Autumn Summer)
+	(season  Spring)
 	(category Breakfast))
 
 ([Course_Cookiesandmilk] of Course
@@ -108,7 +108,7 @@
 		[IngredientQuantity_Cookiesoatmealdrymix50]
 		[IngredientQuantity_Milkproducerfluid37milkfat100])
 	(name_ "Cookies and milk")
-	(season  Spring Summer)
+	(season  Spring Summer Winter)
 	(category Breakfast))
 
 ([Course_FruitSalad] of Course
@@ -118,7 +118,7 @@
 		[IngredientQuantity_Pineapplerawallvarieties50]
 		[IngredientQuantity_OrangesrawCaliforniavalencias50])
 	(name_ "Fruit Salad")
-	(season  Winter Spring Summer)
+	(season  Summer Autumn Spring Winter)
 	(category Breakfast))
 
 ([Course_Macaroniwithtomato] of Course
@@ -126,7 +126,7 @@
 		[IngredientQuantity_Pastacookedenrichedwithaddedsalt200]
 		[IngredientQuantity_Tomatoproductscannedsauce50])
 	(name_ "Macaroni with tomato")
-	(season  Autumn)
+	(season  Spring)
 	(category FirstCourse))
 
 ([Course_Ricewithtomato] of Course
@@ -134,7 +134,7 @@
 		[IngredientQuantity_Ricewhitemedium-grainenrichedcooked200]
 		[IngredientQuantity_Tomatoproductscannedsauce50])
 	(name_ "Rice with tomato")
-	(season  Summer Autumn Spring Winter)
+	(season  Spring Summer)
 	(category FirstCourse))
 
 ([Course_Greenbeanwithpotatoes] of Course
@@ -142,14 +142,14 @@
 		[IngredientQuantity_Beanssnapgreenfrozencookedboileddrainedwithoutsalt100]
 		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100])
 	(name_ "Green bean with potatoes")
-	(season  Summer)
+	(season  Summer Winter)
 	(category FirstCourse))
 
 ([Course_Chickensoup] of Course
 	(ingredients 
 		[IngredientQuantity_Soupchickennoodlereducedsodiumcannedready-to-serve200])
 	(name_ "Chicken soup")
-	(season  Spring Summer Winter Autumn)
+	(season  Winter Summer Spring)
 	(category FirstCourse))
 
 ([Course_Pupkincream] of Course
@@ -157,7 +157,7 @@
 		[IngredientQuantity_Pumpkincookedboileddrainedwithoutsalt180]
 		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt50])
 	(name_ "Pupkin cream")
-	(season  Summer Autumn)
+	(season  Spring Winter Autumn)
 	(category FirstCourse))
 
 ([Course_Fideua] of Course
@@ -166,7 +166,7 @@
 		[IngredientQuantity_Molluskssquidmixedspeciescookedfried30]
 		[IngredientQuantity_Mollusksmusselbluecookedmoistheat30])
 	(name_ "Fideua")
-	(season  Spring Autumn Summer Winter)
+	(season  Summer)
 	(category FirstCourse))
 
 ([Course_Lentilssalad] of Course
@@ -175,14 +175,14 @@
 		[IngredientQuantity_Pepperssweetredcookedboileddrainedwithoutsalt30]
 		[IngredientQuantity_Onionsraw30])
 	(name_ "Lentils salad")
-	(season  Spring)
+	(season  Spring Autumn Winter Summer)
 	(category FirstCourse))
 
 ([Course_Chickpeas] of Course
 	(ingredients 
 		[IngredientQuantity_Chickpeasgarbanzobeansbengalgrammatureseedscannedsolidsandliquids230])
 	(name_ "Chickpeas")
-	(season  Winter Spring Autumn)
+	(season  Autumn)
 	(category FirstCourse))
 
 ([Course_Melonwithham] of Course
@@ -190,7 +190,7 @@
 		[IngredientQuantity_Melonscasabaraw200]
 		[IngredientQuantity_Porkcuredhamcenterslicecountry-styleseparableleanonlyraw50])
 	(name_ "Melon with ham")
-	(season  Summer Spring Autumn)
+	(season  Autumn Spring Summer Winter)
 	(category FirstCourse))
 
 ([Course_ThreeDelightRice] of Course
@@ -199,7 +199,7 @@
 		[IngredientQuantity_Peassplitmatureseedscookedboiledwithsalt100]
 		[IngredientQuantity_Cornsweetwhitecannedwholekernelregularpacksolidsandliquids100])
 	(name_ "Three Delight Rice")
-	(season  Spring)
+	(season  Summer Autumn)
 	(category FirstCourse))
 
 ([Course_BoiledVegetablesCarrotsPotatoesandPeas] of Course
@@ -208,7 +208,7 @@
 		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100]
 		[IngredientQuantity_Peassplitmatureseedscookedboiledwithsalt100])
 	(name_ "Boiled Vegetables (Carrots, Potatoes and Peas)")
-	(season  Autumn Summer)
+	(season  Spring Winter)
 	(category FirstCourse))
 
 ([Course_Vegancouscous] of Course
@@ -217,14 +217,14 @@
 		[IngredientQuantity_Carrotscookedboileddrainedwithsalt50]
 		[IngredientQuantity_Pepperssweetredcookedboileddrainedwithoutsalt50])
 	(name_ "Vegan couscous")
-	(season  Winter Autumn Summer)
+	(season  Summer Winter)
 	(category FirstCourse))
 
 ([Course_MixedVegetables] of Course
 	(ingredients 
 		[IngredientQuantity_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250])
 	(name_ "Mixed Vegetables")
-	(season  Autumn)
+	(season  Summer Winter Autumn Spring)
 	(category FirstCourse))
 
 ([Course_CarbonaraSpaghetti] of Course
@@ -233,7 +233,7 @@
 		[IngredientQuantity_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium20]
 		[IngredientQuantity_Milkbuttermilkfluidculturedreducedfat30])
 	(name_ "Carbonara Spaghetti")
-	(season  Autumn Spring)
+	(season  Winter Summer Spring)
 	(category FirstCourse))
 
 ([Course_Tortilla] of Course
@@ -241,7 +241,7 @@
 		[IngredientQuantity_Eggwholecookedfried200]
 		[IngredientQuantity_Potatoesfrenchfriedshoestringsaltaddedinprocessingfrozenoven-heated125])
 	(name_ "Tortilla")
-	(season  Summer)
+	(season  Summer Spring Winter)
 	(category FirstCourse))
 
 ([Course_Gazpacho] of Course
@@ -250,7 +250,7 @@
 		[IngredientQuantity_Picklescucumberdillorkosherdill200]
 		[IngredientQuantity_Onionsraw75])
 	(name_ "Gazpacho")
-	(season  Summer Winter Autumn Spring)
+	(season  Spring Summer Autumn Winter)
 	(category FirstCourse))
 
 ([Course_MashedPotatoeswithcarrots] of Course
@@ -258,7 +258,7 @@
 		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt200]
 		[IngredientQuantity_Carrotscookedboileddrainedwithoutsalt70])
 	(name_ "Mashed Potatoes with carrots")
-	(season  Winter Autumn)
+	(season  Summer)
 	(category FirstCourse))
 
 ([Course_Paella] of Course
@@ -276,7 +276,7 @@
 		[IngredientQuantity_Picklescucumberdillorkosherdill200]
 		[IngredientQuantity_Onionsraw75])
 	(name_ "Melon soup")
-	(season  Summer Winter)
+	(season  Summer Winter Spring)
 	(category FirstCourse))
 
 ([Course_TomatoSaladwithcheese] of Course
@@ -284,7 +284,7 @@
 		[IngredientQuantity_Tomatoesredriperawyearroundaverage80]
 		[IngredientQuantity_Cheesemozzarellawholemilk70])
 	(name_ "Tomato Salad with cheese")
-	(season  Winter)
+	(season  Autumn Winter Spring)
 	(category FirstCourse))
 
 ([Course_Potatowithbeans] of Course
@@ -292,7 +292,7 @@
 		[IngredientQuantity_Beansbakedhomeprepared100]
 		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt200])
 	(name_ "Potato with beans")
-	(season  Summer Spring Winter)
+	(season  Summer Winter)
 	(category FirstCourse))
 
 ([Course_Pumpkincream] of Course
@@ -301,7 +301,7 @@
 		[IngredientQuantity_Picklescucumberdillorkosherdill200]
 		[IngredientQuantity_Onionsraw75])
 	(name_ "Pumpkin cream")
-	(season  Winter)
+	(season  Spring Summer Winter)
 	(category FirstCourse))
 
 ([Course_Couscous] of Course
@@ -310,7 +310,7 @@
 		[IngredientQuantity_Carrotscookedboileddrainedwithsalt50]
 		[IngredientQuantity_Gamemeatrabbitwildcookedstewed100])
 	(name_ "Couscous")
-	(season  Spring Summer)
+	(season  Spring Winter)
 	(category FirstCourse))
 
 ([Course_CaesarSalad] of Course
@@ -318,14 +318,22 @@
 		[IngredientQuantity_Saladdressingcaesardressingregular200]
 		[IngredientQuantity_Chickencaponsgibletscookedsimmered80])
 	(name_ "Caesar Salad")
-	(season  Winter Summer Spring Autumn)
+	(season  Autumn)
+	(category FirstCourse))
+
+([Course_PearRavioli] of Course
+	(ingredients 
+		[IngredientQuantity_Pastacookedenrichedwithaddedsalt200]
+		[IngredientQuantity_Pearsraw100])
+	(name_ "Pear Ravioli")
+	(season  Summer Winter Autumn)
 	(category FirstCourse))
 
 ([Course_Friedchicken] of Course
 	(ingredients 
 		[IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150])
 	(name_ "Fried chicken")
-	(season  Spring Summer)
+	(season  Summer)
 	(category SecondCourse))
 
 ([Course_Hamburger] of Course
@@ -334,35 +342,35 @@
 		[IngredientQuantity_Tomatoesredriperawyearroundaverage10]
 		[IngredientQuantity_Breadirishsodapreparedfromrecipe30])
 	(name_ "Hamburger")
-	(season  Summer Winter Spring Autumn)
+	(season  Autumn)
 	(category SecondCourse))
 
 ([Course_Loin] of Course
 	(ingredients 
 		[IngredientQuantity_Beefshortloinporterhousesteakseparableleanandfattrimmedto18fatallgradescookedgrilled200])
 	(name_ "Loin")
-	(season  Summer Spring Winter)
+	(season  Winter)
 	(category SecondCourse))
 
 ([Course_Beef] of Course
 	(ingredients 
 		[IngredientQuantity_Beefflanksteakseparableleanandfattrimmedto0fatchoicecookedbraised220])
 	(name_ "Beef")
-	(season  Autumn Winter)
+	(season  Autumn Spring Winter Summer)
 	(category SecondCourse))
 
 ([Course_Tuna] of Course
 	(ingredients 
 		[IngredientQuantity_Fishtunafreshbluefincookeddryheat200])
 	(name_ "Tuna")
-	(season  Spring Summer Winter)
+	(season  Spring Autumn Winter)
 	(category SecondCourse))
 
 ([Course_Salmon] of Course
 	(ingredients 
 		[IngredientQuantity_FishsalmonAtlanticwildcookeddryheat200])
 	(name_ "Salmon")
-	(season  Spring Winter)
+	(season  Autumn)
 	(category SecondCourse))
 
 ([Course_Sole] of Course
@@ -371,7 +379,7 @@
 		[IngredientQuantity_Onionsdehydratedflakes10]
 		[IngredientQuantity_Pineapplecannedjuicepacksolidsandliquids20])
 	(name_ "Sole")
-	(season  Winter Summer Spring)
+	(season  Winter)
 	(category SecondCourse))
 
 ([Course_Sardinswithbread] of Course
@@ -392,14 +400,14 @@
 	(ingredients 
 		[IngredientQuantity_Meatballsmeatless170])
 	(name_ "Vegan Meatballs")
-	(season  Autumn Summer Spring)
+	(season  Winter Autumn Summer)
 	(category SecondCourse))
 
 ([Course_VeggieNuggets] of Course
 	(ingredients 
 		[IngredientQuantity_MORNINGSTARFARMSGardenVeggieNuggetsfrozenunprepared170])
 	(name_ "Veggie Nuggets")
-	(season  Winter Summer Spring)
+	(season  Summer)
 	(category SecondCourse))
 
 ([Course_VeggieBurger] of Course
@@ -408,14 +416,14 @@
 		[IngredientQuantity_Tomatoesredriperawyearroundaverage10]
 		[IngredientQuantity_Breadirishsodapreparedfromrecipe30])
 	(name_ "Veggie Burger")
-	(season  Summer Spring)
+	(season  Autumn Winter Summer)
 	(category SecondCourse))
 
 ([Course_VeggieLasagna] of Course
 	(ingredients 
 		[IngredientQuantity_MORNINGSTARFARMSLasagnawithVeggieSausagefrozenunprepared200])
 	(name_ "Veggie Lasagna")
-	(season  Spring Autumn Summer)
+	(season  Summer Spring)
 	(category SecondCourse))
 
 ([Course_Ratatouille] of Course
@@ -424,7 +432,7 @@
 		[IngredientQuantity_Tomatoesredripecookedwithsalt100]
 		[IngredientQuantity_Squashsummerzucchiniincludesskincookedboileddrainedwithsalt100])
 	(name_ "Ratatouille")
-	(season  Autumn)
+	(season  Winter Autumn)
 	(category SecondCourse))
 
 ([Course_Sushi] of Course
@@ -433,7 +441,7 @@
 		[IngredientQuantity_Seaweedagarraw50]
 		[IngredientQuantity_Ricewhitemedium-grainenrichedcooked250])
 	(name_ "Sushi")
-	(season  Spring Winter)
+	(season  Autumn)
 	(category SecondCourse))
 
 ([Course_Lasagna] of Course
@@ -443,7 +451,7 @@
 		[IngredientQuantity_Cheesemozzarellawholemilk70]
 		[IngredientQuantity_Pastacookedenrichedwithaddedsalt200])
 	(name_ "Lasagna")
-	(season  Summer Autumn)
+	(season  Spring Winter Summer)
 	(category SecondCourse))
 
 ([Course_BolognesaSpaghetti] of Course
@@ -453,7 +461,7 @@
 		[IngredientQuantity_Cheesemozzarellawholemilk70]
 		[IngredientQuantity_Squashwinterspaghettiraw85])
 	(name_ "Bolognesa Spaghetti")
-	(season  Winter Summer Autumn Spring)
+	(season  Summer Spring)
 	(category SecondCourse))
 
 ([Course_GrilledLamb] of Course
@@ -461,7 +469,7 @@
 		[IngredientQuantity_LambNewZealandimportedsquare-cutshoulderseparableleanandfatraw100]
 		[IngredientQuantity_Snackspotatochipsmadefromdriedpotatoescheese-flavor50])
 	(name_ "Grilled Lamb")
-	(season  Summer)
+	(season  Winter Autumn Summer Spring)
 	(category SecondCourse))
 
 ([Course_Grilledcuttlefish] of Course
@@ -469,7 +477,7 @@
 		[IngredientQuantity_Molluskscuttlefishmixedspeciesraw150]
 		[IngredientQuantity_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250])
 	(name_ "Grilled cuttlefish")
-	(season  Spring)
+	(season  Winter)
 	(category SecondCourse))
 
 ([Course_Rabbitwithmushroomsauce] of Course
@@ -477,7 +485,7 @@
 		[IngredientQuantity_Gamemeatrabbitwildcookedstewed300]
 		[IngredientQuantity_Mushroomsportabellagrilled75])
 	(name_ "Rabbit with mushroom sauce")
-	(season  Summer Autumn Spring Winter)
+	(season  Autumn)
 	(category SecondCourse))
 
 ([Course_Porksirloinwithartichokes] of Course
@@ -485,7 +493,7 @@
 		[IngredientQuantity_Porkfreshloinsirloinchopsorroastsbone-inseparableleanandfatraw100]
 		[IngredientQuantity_Artichokesglobeorfrenchraw80])
 	(name_ "Pork sirloin with artichokes")
-	(season  Spring)
+	(season  Winter Spring)
 	(category SecondCourse))
 
 ([Course_Bluefishwithboiledeggplants] of Course
@@ -493,7 +501,7 @@
 		[IngredientQuantity_Eggplantcookedboileddrainedwithsalt150]
 		[IngredientQuantity_Fishbluefishraw300])
 	(name_ "Blue fish with boiled eggplants")
-	(season  Spring Autumn Winter Summer)
+	(season  Summer Autumn Spring)
 	(category SecondCourse))
 
 ([Course_PorkSausagewithlegums] of Course
@@ -501,7 +509,7 @@
 		[IngredientQuantity_Porksausagericelinksbrownandservecooked160]
 		[IngredientQuantity_Lentilsraw220])
 	(name_ "Pork Sausage with legums")
-	(season  Spring Summer)
+	(season  Autumn Winter Spring)
 	(category SecondCourse))
 
 ([Course_Spinachwithsalmondices] of Course
@@ -509,7 +517,7 @@
 		[IngredientQuantity_Spinachcookedboileddrainedwithoutsalt260]
 		[IngredientQuantity_FishsalmonAtlanticwildcookeddryheat120])
 	(name_ "Spinach with salmon dices")
-	(season  Winter Spring Autumn Summer)
+	(season  Winter)
 	(category SecondCourse))
 
 ([Course_RoastedDuck] of Course
@@ -517,7 +525,7 @@
 		[IngredientQuantity_Duckdomesticatedmeatonlycookedroasted200]
 		[IngredientQuantity_Vegetablesmixedcornlimabeanspeasgreenbeanscarrotscannednosaltadded250])
 	(name_ "Roasted Duck")
-	(season  Autumn)
+	(season  Autumn Summer)
 	(category SecondCourse))
 
 ([Course_SpanishMigas] of Course
@@ -525,7 +533,74 @@
 		[IngredientQuantity_SausageBerlinerporkbeef200]
 		[IngredientQuantity_Cornflourwhole-grainyellow300])
 	(name_ "Spanish Migas")
-	(season  Autumn)
+	(season  Summer Spring Winter)
+	(category SecondCourse))
+
+([Course_SanJacobo] of Course
+	(ingredients 
+		[IngredientQuantity_Cheesebrie100]
+		[IngredientQuantity_Hamchoppedcanned100])
+	(name_ "San Jacobo")
+	(season  Spring Autumn Winter)
+	(category SecondCourse))
+
+([Course_Tunapatty] of Course
+	(ingredients 
+		[IngredientQuantity_Fishtunafreshbluefincookeddryheat100]
+		[IngredientQuantity_Onionscookedboileddrainedwithoutsalt60])
+	(name_ "Tuna patty")
+	(season  Summer)
+	(category SecondCourse))
+
+([Course_CroqueMonsieur] of Course
+	(ingredients 
+		[IngredientQuantity_Cheesemozzarellawholemilk100]
+		[IngredientQuantity_Hamminced200]
+		[IngredientQuantity_Creamfluidlightwhipping50])
+	(name_ "Croque Monsieur")
+	(season  Summer Autumn Winter Spring)
+	(category SecondCourse))
+
+([Course_Salmagundi] of Course
+	(ingredients 
+		[IngredientQuantity_Onionscookedboileddrainedwithoutsalt100]
+		[IngredientQuantity_Eggsscrambledfrozenmixture150]
+		[IngredientQuantity_Fishanchovyeuropeancannedinoildrainedsolids150])
+	(name_ "Salmagundi")
+	(season  Winter Spring Autumn Summer)
+	(category SecondCourse))
+
+([Course_CurryChickenwithzucchinicream] of Course
+	(ingredients 
+		[IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150]
+		[IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150]
+		[IngredientQuantity_Spicescurrypowder5])
+	(name_ "Curry Chicken with zucchini cream")
+	(season  Summer Winter)
+	(category SecondCourse))
+
+([Course_BakedBurbotwithpotatoes] of Course
+	(ingredients 
+		[IngredientQuantity_Fishbluefishraw200]
+		[IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100])
+	(name_ "Baked Burbot with potatoes")
+	(season  Spring Winter Summer Autumn)
+	(category SecondCourse))
+
+([Course_CarrotCream] of Course
+	(ingredients 
+		[IngredientQuantity_Creamfluidlightwhipping200]
+		[IngredientQuantity_Carrotscookedboileddrainedwithoutsalt200])
+	(name_ "Carrot Cream")
+	(season  Summer Autumn)
+	(category SecondCourse))
+
+([Course_TomatowithAvocado] of Course
+	(ingredients 
+		[IngredientQuantity_AvocadosrawCalifornia200]
+		[IngredientQuantity_Tomatoesredriperawyearroundaverage250])
+	(name_ "Tomato with Avocado")
+	(season  Winter)
 	(category SecondCourse))
 
 ([Course_Chocolatecake] of Course
@@ -539,56 +614,56 @@
 	(ingredients 
 		[IngredientQuantity_Yogurtfruitlowfat10gramsproteinper8ounce100])
 	(name_ "Fruit Yogurt")
-	(season  Spring Autumn Summer)
+	(season  Summer)
 	(category Dessert))
 
 ([Course_Yogurt] of Course
 	(ingredients 
 		[IngredientQuantity_Yogurtplainlowfat12gramsproteinper8ounce100])
 	(name_ "Yogurt")
-	(season  Autumn Spring Winter)
+	(season  Spring)
 	(category Dessert))
 
 ([Course_Gelatin] of Course
 	(ingredients 
 		[IngredientQuantity_Gelatindessertsdrymixpreparedwithwater100])
 	(name_ "Gelatin")
-	(season  Summer Winter)
+	(season  Spring)
 	(category Dessert))
 
 ([Course_Flan] of Course
 	(ingredients 
 		[IngredientQuantity_Dessertsflancaramelcustardprepared-from-recipe100])
 	(name_ "Flan")
-	(season  Spring)
+	(season  Summer Spring)
 	(category Dessert))
 
 ([Course_SomeNuts] of Course
 	(ingredients 
 		[IngredientQuantity_NutsmixednutsdryroastedwithpeanutssaltaddedPLANTERSpistachioblend50])
 	(name_ "Some Nuts")
-	(season  Summer Winter)
+	(season  Winter Autumn Summer)
 	(category Dessert))
 
 ([Course_ApplePie] of Course
 	(ingredients 
 		[IngredientQuantity_Cakefruitcakecommerciallyprepared50])
 	(name_ "Apple Pie")
-	(season  Autumn Spring Summer Winter)
+	(season  Autumn)
 	(category Dessert))
 
 ([Course_Apple] of Course
 	(ingredients 
 		[IngredientQuantity_Applesrawwithskin100])
 	(name_ "Apple")
-	(season  Summer)
+	(season  Summer Autumn Spring Winter)
 	(category Dessert))
 
 ([Course_Banana] of Course
 	(ingredients 
 		[IngredientQuantity_Bananasraw100])
 	(name_ "Banana")
-	(season  Summer)
+	(season  Autumn)
 	(category Dessert))
 
 ([Course_Watermelon] of Course
@@ -602,28 +677,28 @@
 	(ingredients 
 		[IngredientQuantity_Plumsraw100])
 	(name_ "Plum")
-	(season  Winter)
+	(season  Autumn Winter Summer Spring)
 	(category Dessert))
 
 ([Course_Cherries] of Course
 	(ingredients 
 		[IngredientQuantity_Cherriessweetraw100])
 	(name_ "Cherries")
-	(season  Winter Summer)
+	(season  Autumn)
 	(category Dessert))
 
 ([Course_Pears] of Course
 	(ingredients 
 		[IngredientQuantity_Pearsasianraw100])
 	(name_ "Pears")
-	(season  Autumn Spring)
+	(season  Winter Spring Summer Autumn)
 	(category Dessert))
 
 ([Course_Orange] of Course
 	(ingredients 
 		[IngredientQuantity_OrangesrawCaliforniavalencias100])
 	(name_ "Orange")
-	(season  Summer)
+	(season  Winter Spring Autumn)
 	(category Dessert))
 
 ([Course_Strawberrieswithcream] of Course
@@ -631,7 +706,7 @@
 		[IngredientQuantity_Strawberriesraw80]
 		[IngredientQuantity_Creamfluidlightwhipping20])
 	(name_ "Strawberries with cream")
-	(season  Spring Winter Autumn Summer)
+	(season  Spring Autumn Summer Winter)
 	(category Dessert))
 
 ([Course_Curdwithhoney] of Course
@@ -639,14 +714,14 @@
 		[IngredientQuantity_Cheesecottagecreamedlargeorsmallcurd80]
 		[IngredientQuantity_Honey20])
 	(name_ "Curd with honey")
-	(season  Autumn Summer Spring)
+	(season  Winter Spring Autumn)
 	(category Dessert))
 
 ([Course_CatalanCream] of Course
 	(ingredients 
 		[IngredientQuantity_Dessertseggcustardbakedprepared-from-recipe100])
 	(name_ "Catalan Cream")
-	(season  Autumn Summer)
+	(season  Autumn Summer Winter Spring)
 	(category Dessert))
 
 ([Course_TruffleswithCream] of Course
@@ -654,21 +729,21 @@
 		[IngredientQuantity_Candiestrufflesprepared-from-recipe80]
 		[IngredientQuantity_Creamfluidlightwhipping20])
 	(name_ "Truffles with Cream")
-	(season  Winter Autumn)
+	(season  Winter Spring Summer Autumn)
 	(category Dessert))
 
 ([Course_ChocolateIcecream] of Course
 	(ingredients 
 		[IngredientQuantity_Icecreamschocolate100])
 	(name_ "Chocolate Ice cream")
-	(season  Winter Summer Spring)
+	(season  Winter)
 	(category Dessert))
 
 ([Course_StrawberryIcecream] of Course
 	(ingredients 
 		[IngredientQuantity_Icecreamsstrawberry100])
 	(name_ "Strawberry Ice cream")
-	(season  Spring Winter Summer)
+	(season  Summer)
 	(category Dessert))
 
 ([Course_Yogurtwithjam] of Course
@@ -676,14 +751,14 @@
 		[IngredientQuantity_Yogurtplainlowfat12gramsproteinper8ounce100]
 		[IngredientQuantity_Jamspreservesmarmaladessweetenedwithfruitjuice20])
 	(name_ "Yogurt with jam")
-	(season  Summer Autumn)
+	(season  Spring Winter)
 	(category Dessert))
 
 ([Course_Coffeecake] of Course
 	(ingredients 
 		[IngredientQuantity_Coffeecakecinnamonwithcrumbtoppingcommerciallypreparedunenriched120])
 	(name_ "Coffee cake")
-	(season  Summer Spring Winter)
+	(season  Summer Spring Autumn)
 	(category Dessert))
 
 ([Course_Ricewithmilk] of Course
@@ -691,7 +766,7 @@
 		[IngredientQuantity_Milkproducerfluid37milkfat125]
 		[IngredientQuantity_Ricewhitemedium-grainenrichedcooked25])
 	(name_ "Rice with milk")
-	(season  Autumn Summer)
+	(season  Spring Autumn Summer)
 	(category Dessert))
 
 ([Course_Friedmilk] of Course
@@ -700,6 +775,6 @@
 		[IngredientQuantity_Eggyolkrawfresh20]
 		[IngredientQuantity_Cornflourwhole-grainyellow20])
 	(name_ "Fried milk")
-	(season  Summer)
+	(season  Autumn Spring)
 	(category Dessert))
 
