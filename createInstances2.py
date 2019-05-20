@@ -44,8 +44,9 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Potato with beans",[("Beans, baked, home prepared",100), ("Potatoes, boiled, cooked in skin, flesh, with salt",200)]],
 ["Pumpkin cream",[("Pumpkin flowers, cooked, boiled, drained, without salt",150),("Pickles, cucumber, dill or kosher dill",200),("Onions, raw",75)]],
 ["Couscous",[("Couscous, cooked",150), ("Carrots, cooked, boiled, drained, with salt",50), ("Game meat, rabbit, wild, cooked, stewed",100)]],
-["Caesar Salad",[("Salad dressing, caesar dressing, regular",200), ("Chicken, capons, giblets, cooked, simmered",80)]]
-]
+["Caesar Salad",[("Salad dressing, caesar dressing, regular",200), ("Chicken, capons, giblets, cooked, simmered",80)]],
+["Pear Ravioli",[("Pasta, cooked, enriched, with added salt",200),("Pears, raw",100)]]]
+
 SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",150)]],
 ["Hamburger",[("Rolls, hamburger or hotdog, mixed-grain",200), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Loin",[("Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled",200)]],
@@ -71,7 +72,19 @@ SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, 
 ["Pork Sausage with legums", [("Pork sausage rice links, brown and serve, cooked",160),("Lentils, raw",220)]],
 ["Spinach with salmon dices",[("Spinach, cooked, boiled, drained, without salt",260),("Fish, salmon, Atlantic, wild, cooked, dry heat",120)]],
 ["Roasted Duck",[("Duck, domesticated, meat only, cooked, roasted",200),("Vegetables, mixed (corn, lima beans, peas, green beans, carrots) canned, no salt added", 250)]],
-["Spanish Migas",[("Sausage, Berliner, pork, beef",200),("Corn flour, whole-grain, yellow", 300)]]
+["Spanish Migas",[("Sausage, Berliner, pork, beef",200),("Corn flour, whole-grain, yellow", 300)]],
+["San Jacobo",[("Cheese, brie",100),("Ham, chopped, canned",100)]],
+["Tuna patty",[("Fish, tuna, fresh, bluefin, cooked, dry heat",100),("Onions, cooked, boiled, drained, without salt",60)]],
+["Croque Monsieur",[("Cheese, mozzarella, whole milk",100), ("Ham, minced",200), ("Cream, fluid, light whipping",50)]],
+["Salmagundi",[("Onions, cooked, boiled, drained, without salt",100),("Eggs, scrambled, frozen mixture",150), ("Fish, anchovy, european, canned in oil, drained solids",150)]],
+["Curry Chicken with zucchini cream",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",150), ("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",150),("Spices, curry powder",5)]],
+["Baked Burbot with potatoes",[("Fish, bluefish, raw",200),("Potatoes, boiled, cooked in skin, flesh, with salt",100)]],
+["Carrot Cream",[("Cream, fluid, light whipping",200),("Carrots, cooked, boiled, drained, without salt",200)]],
+["Tomato with Avocado",[("Avocados, raw, California",200),("Tomatoes, red, ripe, raw, year round average",250)],
+["Chickpeas burguer", [("Chickpeas (garbanzo beans, bengal gram), mature seeds, raw", 200),("Carrots, cooked, boiled, drained, without salt", 100), ("Sweet potato, raw, unprepared", 100)]],
+["Grilled salmon",[("Fish, salmon, Atlantic, wild, raw", 120),("Lemonade, powder, prepared with water", 2)]],
+["Rice and quinoa meatballs",[("Rice, white, long-grain, regular, raw, enriched",80),("Quinoa, cooked",80),("Onions, raw",60)]],
+["Falafel",[("Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",200),("Onions, raw",40),("Spices, curry powder",5),("Bread crumbs, dry, grated, plain",20)]]]
 ]
 
 Dessert = [["Chocolate cake",[("Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",50)]],

@@ -354,6 +354,14 @@
 	(ingredient [Ingredient_Chickencaponsgibletscookedsimmered])
 	(quantity 80))
 
+([IngredientQuantity_Pastacookedenrichedwithaddedsalt200] of IngredientQuantity
+	(ingredient [Ingredient_Pastacookedenrichedwithaddedsalt])
+	(quantity 200))
+
+([IngredientQuantity_Pearsraw100] of IngredientQuantity
+	(ingredient [Ingredient_Pearsraw])
+	(quantity 100))
+
 ([IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
 	(ingredient [Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour])
 	(quantity 150))
@@ -557,6 +565,82 @@
 ([IngredientQuantity_Cornflourwhole-grainyellow300] of IngredientQuantity
 	(ingredient [Ingredient_Cornflourwhole-grainyellow])
 	(quantity 300))
+
+([IngredientQuantity_Cheesebrie100] of IngredientQuantity
+	(ingredient [Ingredient_Cheesebrie])
+	(quantity 100))
+
+([IngredientQuantity_Hamchoppedcanned100] of IngredientQuantity
+	(ingredient [Ingredient_Hamchoppedcanned])
+	(quantity 100))
+
+([IngredientQuantity_Fishtunafreshbluefincookeddryheat100] of IngredientQuantity
+	(ingredient [Ingredient_Fishtunafreshbluefincookeddryheat])
+	(quantity 100))
+
+([IngredientQuantity_Onionscookedboileddrainedwithoutsalt60] of IngredientQuantity
+	(ingredient [Ingredient_Onionscookedboileddrainedwithoutsalt])
+	(quantity 60))
+
+([IngredientQuantity_Cheesemozzarellawholemilk100] of IngredientQuantity
+	(ingredient [Ingredient_Cheesemozzarellawholemilk])
+	(quantity 100))
+
+([IngredientQuantity_Hamminced200] of IngredientQuantity
+	(ingredient [Ingredient_Hamminced])
+	(quantity 200))
+
+([IngredientQuantity_Creamfluidlightwhipping50] of IngredientQuantity
+	(ingredient [Ingredient_Creamfluidlightwhipping])
+	(quantity 50))
+
+([IngredientQuantity_Onionscookedboileddrainedwithoutsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Onionscookedboileddrainedwithoutsalt])
+	(quantity 100))
+
+([IngredientQuantity_Eggsscrambledfrozenmixture150] of IngredientQuantity
+	(ingredient [Ingredient_Eggsscrambledfrozenmixture])
+	(quantity 150))
+
+([IngredientQuantity_Fishanchovyeuropeancannedinoildrainedsolids150] of IngredientQuantity
+	(ingredient [Ingredient_Fishanchovyeuropeancannedinoildrainedsolids])
+	(quantity 150))
+
+([IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
+	(ingredient [Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour])
+	(quantity 150))
+
+([IngredientQuantity_Chickenbroilersorfryersmeatandskincookedfriedflour150] of IngredientQuantity
+	(ingredient [Ingredient_Chickenbroilersorfryersmeatandskincookedfriedflour])
+	(quantity 150))
+
+([IngredientQuantity_Spicescurrypowder5] of IngredientQuantity
+	(ingredient [Ingredient_Spicescurrypowder])
+	(quantity 5))
+
+([IngredientQuantity_Fishbluefishraw200] of IngredientQuantity
+	(ingredient [Ingredient_Fishbluefishraw])
+	(quantity 200))
+
+([IngredientQuantity_Potatoesboiledcookedinskinfleshwithsalt100] of IngredientQuantity
+	(ingredient [Ingredient_Potatoesboiledcookedinskinfleshwithsalt])
+	(quantity 100))
+
+([IngredientQuantity_Creamfluidlightwhipping200] of IngredientQuantity
+	(ingredient [Ingredient_Creamfluidlightwhipping])
+	(quantity 200))
+
+([IngredientQuantity_Carrotscookedboileddrainedwithoutsalt200] of IngredientQuantity
+	(ingredient [Ingredient_Carrotscookedboileddrainedwithoutsalt])
+	(quantity 200))
+
+([IngredientQuantity_AvocadosrawCalifornia200] of IngredientQuantity
+	(ingredient [Ingredient_AvocadosrawCalifornia])
+	(quantity 200))
+
+([IngredientQuantity_Tomatoesredriperawyearroundaverage250] of IngredientQuantity
+	(ingredient [Ingredient_Tomatoesredriperawyearroundaverage])
+	(quantity 250))
 
 ([IngredientQuantity_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery50] of IngredientQuantity
 	(ingredient [Ingredient_Cakechocolatecommerciallypreparedwithchocolatefrostingin-storebakery])
