@@ -451,12 +451,11 @@ Dichos módulos son los siguientes:
 
 
 \subsection{Prototipos}
-%ES POT ALLARGAR I MILLORAR, FET PQ HO POSA A LES RÚBRIQUES
 Tal y como se ha mencionado anteriormente, hemos seguido para el desarrollo de la práctica un método incremental por prototipos. Este tipo de desarrollo nos ha permitido avanzar de manera más organizada y paulatina. 
 \\
 En un inicio, desarrollemos nuestro \textbf{prototipo inicial}: una ontología bastante completa (muy parecida a la que se ha utilizado en la versión final) y un sistema que hacía preguntas y creaba un menú totalmente random.  Nos sirvió para empezar a familiarizarnos con \textbf{Protégé} y \textbf{CLIPS} y en cómo tenían que ser las instancias. Después iteremos sobre ese prototipo: creemos un script en \textbf{Python} para facilitarnos la creación de las instancias y empezemos a añadir las primeras reglas básicas (i.e. restricciones de vegetariano). 
 \\
-Entonces después de hacer unos pequeños cambios en la ontología y por consiguiente en el script para crear instancias, procedimos a crear, de manera progresiva, las diferentes reglas inherentes al conocimiento.  
+Entonces después de hacer unos pequeños cambios en la ontología y por consiguiente en el script para crear instancias, procedimos a crear, de manera progresiva, las diferentes reglas inherentes al conocimiento: enfermedades, limitaciones, preferencias, etc.
 
 \section{Juego de Prueba}
 Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas a testear diferentes puntos de la aplicación. Así pues, mediante estas pruebas, hemos podido comprovar el correcto funcionamento del sistema, tanto a nivel general como a nivel particular.
@@ -523,7 +522,7 @@ En este caso hemos querido probar como funcionaba nuestro SBC con una \textbf{mu
 
 \begin{itemize}
 \item \textbf{Sexo}: Mujer
-\item \textbf{Edad}: 80
+\item \textbf{Edad}: 92
 \item \textbf{Peso}: 72kg 
 \item \textbf{Altura}: 168cm
 \item \textbf{Actividad Física}: Sedentaria
@@ -536,7 +535,7 @@ Esperamos obtener una solución que esté acorde con los requisitos alimentício
 
 
 \subsection{Prueba 5: Mujer vegana}
-En este caso, hemos querido observar como se comporta nuestro sistema cuando se le añade la restricción de veganismo. Ésta es una de las más restrictivas puesto restringe carne, huevos, lácteos y pescado entre otros. 
+En este caso, hemos querido observar como se comporta nuestro sistema cuando se le añade la restricción de \textbf{veganismo}. Ésta es una de las más restrictivas puesto restringe carne, huevos, lácteos y pescado entre otros. 
 
 \begin{itemize}
 \item \textbf{Sexo}: Mujer
@@ -551,16 +550,18 @@ Esperamos obtener un menú que esté acorde con las necesidades alimentícias y 
 
 \subsubsection{Resultado obtenido}
 
-\subsection{Prueba 6: }
+\subsection{Prueba 6: Hombre con muchas preferencias}
+En este caso, hemos querido observar como se comporta nuestro sistema con una persona que tiene como preferencia alimentícia fruta y verdura y no le gusta nada la carne. Así pues, podremos ver la diferencia entre un menú con estas preferencias y un vegetariano lo cual consideramos interesante para testear el sistema de preferencias implementado. 
 
 \begin{itemize}
-\item \textbf{Sexo}: 
-\item \textbf{Edad}:
-\item \textbf{Peso}:
-\item \textbf{Altura}:
-\item \textbf{Actividad Física}
+\item \textbf{Sexo}: Hombre
+\item \textbf{Edad}: 76
+\item \textbf{Peso}: 74
+\item \textbf{Altura}: 155cm
+\item \textbf{Actividad Física}: Activo
 \end{itemize}
 \subsubsection{Solución esperada}
+Esperamos obtener un menú bastante parecido al vegetariano con la presencia de pescados y mariscos puesto que el usuario prefiere frutas y verduras y no le gusta la carne. Aunque es posible que aparezca algo de carne creemos que obtendremos pocos platos con ingredientes cárnicos. 
 
 \subsubsection{Resultado obtenido}
 
@@ -588,6 +589,10 @@ En este apartado incluíremos los outputs de los casos de prueba que antes hemos
 
 
 \subsection{Prueba 5: Mujer vegana}
+
+
+\subsection{Prueba 6: Hombre con muchas preferencias}
+
 
 
 \end{document}
