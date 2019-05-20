@@ -618,7 +618,7 @@
   (not (asked-religion-preference))
   ?user <- (user (preferences $?prefs))
    =>
-    (bind ?response (ask-question-opt "Are you from one of this religions?" (create$ Muslim Jewish None)))
+    (bind ?response (ask-question-opt "Do you practice any of the following religions?" (create$ Muslim Jewish None)))
     (switch ?response
       (case Muslim then (modify ?user (preferences ?prefs [Preference_Muslim])))
       (case Jewish then (modify ?user (preferences ?prefs [Preference_Jewish])))
@@ -662,14 +662,14 @@
 (defrule MAIN::system-banner
   (declare (salience 10))
   =>
-  (open "ascii.txt" asciiFile "r")
-  (bind ?line (readline asciiFile))
+  (open ?*banner-file* bannerFile "r")
+  (bind ?line (readline bannerFile))
   (while (neq EOF ?line) do
     (printout t ?line crlf)
-    (bind ?line (readline asciiFile))
+    (bind ?line (readline bannerFile))
   )
   (printout t crlf)
-  (close asciiFile)
+  (close bannerFile)
   (focus ask_questions)
 )
 
