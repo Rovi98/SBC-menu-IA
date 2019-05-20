@@ -10,5 +10,5 @@ yes	;eat meat
 3	;religion
 	;no positive preferences
 	;no negative preferences
-
+yes	;verbose print
 

@@ -10,5 +10,5 @@ yes	;eat meat
 3	;religion
 7 14	;positive-preferences: vegetables, soups
 3		;negative-preferences: fats
-
+yes	;verbose print
 
