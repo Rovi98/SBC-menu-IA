@@ -1,6 +1,5 @@
 \documentclass[12]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
 \usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
@@ -182,11 +181,12 @@ En esta parte del problema realizaremos varias preguntas al usuario (descritas e
 
 \subsubsection{Análisis de los datos personales}
 
-Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. En esta parte también vamos a descartar aquellos platos que la persona no pueda tener en su menú en ninguna circunstancia.
+Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. Para esto tendremos en cuenta si la persona tiene alguna enfermeda, alguna preferencia alimentaria, su religión o que clase de alimentos prefiere.
 
 \subsubsection{Filtrado de platos para el menú}
 
-Vamos a coger los diferentes platos y los vamos a repartir mediante ... FALTA ACABAR UN COP DECIDIM L?ALGORITME FINAL
+Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 5 (cogiendo los que tengan mejor puntación).
+Finalmente con los platos que falten, haremos diferentes permutaciones para encontrar los platos que sean mas adecuado para la cantidad de calorias necesarias para la persona.
 
 \subsubsection{Impresión del menú}
 
@@ -412,7 +412,7 @@ Los problemas que se resuelven mediante clasificación heurística se pueden div
 
 En esta parte del problema pasaremos de un problema concreto a un problema abstracto. 
 Obteniendo los datos de la persona (condiciones físicas, enfermedades, preferencias alimentarias...), el sistema abstraerá los datos necesarios por tal de poder ser usados luego para encontrar la mejor situación.
-En nuestro caso podemos encontrar esta parte del problema en los módulos NO ELS TINC A MÀ.
+En nuestro caso podemos encontrar esta parte del problema en los módulos MAIN, ask\_questions.
 
 \subsubsection{Asociación heurística}
 
@@ -421,14 +421,14 @@ A partir de los diferentes datos del problema abstracto obtenido en la primera p
 Por ejemplo una persona vegetariana obtendrá una puntuación menor para los platos que contengan carne.
 También en esta parte haremos el cálculo de Harris Benedict para obtener el número de calorías que necesita una persona al día.
 De esta forma tendremos una lista ordenada de los platos mas recomendados para cada usuario.
-Esta parte lo podemos encontrar en los módulos, FALTA MODULS.
+Esta parte lo podemos encontrar en el modulo inference\_of\_data.
 
 \subsubsection{Adaptación}
 
 Finalmente la Adaptación consiste en pasar de la solución abstracta a la solución concreta.
 Aquí cogeremos las listas de platos ordenadas i repartiremos estos platos en un menú dónde cada día se cumpla el número de calorías necesarias.
 Finalmente sacaremos por pantalla el menú obtenido para la persona i la cantidad de calorías que contiene.
-La adaptación esta formada por los módulos AAAAAAA.
+La adaptación esta formada por los módulos generate\_solutions i printing.
 
 \section{Implementación}
 
