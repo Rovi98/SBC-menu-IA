@@ -80,6 +80,8 @@
 (deffacts MAIN::facts-initialization
   (user)
   (available-courses)
+  (chosen-courses)
+  (best-calories-diff 9999999)
 )
 
 (defglobal
@@ -139,39 +141,62 @@
 )
 
 (defrule generate_solutions::generate-menus
-	(declare (salience 10))
+	(declare (salience 20))
 	(sort-courses-done)
+  (not (visited-all-menus))
   (not (chosen-menu))
+  (not (visited-all-menus))
 	(calories-left ?calories-left)
+  ?chosen-courses <- (chosen-courses)
+  ?best-calories-diff-fact <- (best-calories-diff ?best-calories-diff)
+
   (available-courses (breakfasts    ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7 $?))
   (available-courses (firstCourses  ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 $? ?fc11 $? ?fc12 $? ?fc13 $? ?fc14 $?))
   (available-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 $? ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14 $?))
   (available-courses (desserts      ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 $?))
 
-	(test (within-tolerance
-		(count-calories   ?fc11 ?fc12 ?fc13 ?fc14
-                      ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)
-		?calories-left
-		1750
-	))
+	; (test (within-tolerance
+	; 	(count-calories   ?fc11 ?fc12 ?fc13 ?fc14
+  ;                     ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)
+	; 	?calories-left
+	; 	1750
+	; ))
 
   =>
+  (bind ?this-calories  (count-calories ?fc11 ?fc12 ?fc13 ?fc14
+                                        ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
 
-  (bind ?chosenBreakfasts     (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
-  (bind ?chosenFirstCourses   (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
-  (bind ?chosenSecondCourses  (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
-  (bind ?chosenDesserts       (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
+  (bind ?this-calories-diff (abs (- ?this-calories ?calories-left)))
 
-  (assert (chosen-courses (breakfasts     ?chosenBreakfasts)
-                          (firstCourses   ?chosenFirstCourses)
-                          (secondCourses  ?chosenSecondCourses)
-                          (desserts       ?chosenDesserts)
-  ))
+  (if (< ?this-calories-diff ?best-calories-diff) then
+    (printout ?*debug-print* "DEBUG: New best menu. " ?best-calories-diff " -> " ?this-calories-diff crlf)
+    (bind ?chosenBreakfasts     (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
+    (bind ?chosenFirstCourses   (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
+    (bind ?chosenSecondCourses  (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
+    (bind ?chosenDesserts       (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
+
+    (modify ?chosen-courses (breakfasts     ?chosenBreakfasts)
+                            (firstCourses   ?chosenFirstCourses)
+                            (secondCourses  ?chosenSecondCourses)
+                            (desserts       ?chosenDesserts)
+    )
+
+    (retract ?best-calories-diff-fact)
+    (assert (best-calories-diff ?this-calories-diff))
+  )
+)
+
+(defrule generate_solutions::solve-repetitions-firstCourse
+  (declare (salience 15))
+  (not (visited-all-menus))
+  =>
+  (assert (visited-all-menus))
 )
 
 (defrule generate_solutions::solve-repetitions-firstCourse
   (declare (salience 15))
   (not (chosen-menu))
+  (visited-all-menus)
   ?chosen-courses <- (chosen-courses (firstCourses ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14))
 
   (test (or (eq (send ?fc1 get-course) (send ?fc2 get-course))
@@ -185,7 +210,7 @@
   )
 
   =>
-  
+
   (printout ?*debug-print* "DEBUG: re-sorting firstCourses to avoid repetitions" crlf)
   (bind ?chosenFirstCourses (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
   (modify ?chosen-courses (firstCourses ?chosenFirstCourses))
@@ -207,7 +232,7 @@
   )
 
   =>
-  
+
   (printout ?*debug-print* "DEBUG: re-sorting secondCourses to avoid repetitions" crlf)
   (bind ?chosenSecondCourses (random-sort (create$ ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 ?sc11 ?sc12 ?sc13 ?sc14)))
   (modify ?chosen-courses (secondCourses ?chosenSecondCourses))
@@ -229,7 +254,7 @@
   )
 
   =>
-  
+
   (printout ?*debug-print* "DEBUG: re-sorting desserts to avoid repetitions" crlf)
   (bind ?chosenDesserts (random-sort (create$ ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14)))
   (modify ?chosen-courses (desserts ?chosenDesserts))
