@@ -30,3 +30,15 @@
 	(value -50)
 	(nutrient [Nutrient_fat]))
 
+([LimitationNutrient_caffeine-50] of LimitationNutrient
+	(value -50)
+	(nutrient [Nutrient_caffeine]))
+
+([LimitationNutrient_alcohol-50] of LimitationNutrient
+	(value -50)
+	(nutrient [Nutrient_alcohol]))
+
+([LimitationNutrient_calcium50] of LimitationNutrient
+	(value 50)
+	(nutrient [Nutrient_calcium]))
+
