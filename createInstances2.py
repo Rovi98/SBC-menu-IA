@@ -47,7 +47,7 @@ FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added sa
 ["Caesar Salad",[("Salad dressing, caesar dressing, regular",200), ("Chicken, capons, giblets, cooked, simmered",80)]]
 ]
 SecondCourse = [["Fried chicken",[("Chicken, broilers or fryers, meat and skin, cooked, fried, flour",150)]],
-["Hamburger",[("Rolls, hamburger or hotdog, mixed-grain",150), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
+["Hamburger",[("Rolls, hamburger or hotdog, mixed-grain",200), ("Tomatoes, red, ripe, raw, year round average",10), ("Bread, irish soda, prepared from recipe",30)]],
 ["Loin",[("Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8 fat, all grades, cooked, grilled",200)]],
 ["Beef",[("Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, cooked, braised",220)]],
 ["Tuna",[("Fish, tuna, fresh, bluefin, cooked, dry heat",200)]],
