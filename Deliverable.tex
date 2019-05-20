@@ -461,12 +461,56 @@ Entonces después de hacer unos pequeños cambios en la ontología y por consigu
 \section{Juego de Prueba}
 Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas a testear diferentes puntos de la aplicación. Así pues, mediante estas pruebas, hemos podido comprovar el correcto funcionamento del sistema, tanto a nivel general como a nivel particular.
 
-\subsection{Prueba 1: }
-\subsection{Prueba 2: }
+\subsection{Prueba 1: Usuario Estándard}
+\subsubsection{Descripción del caso}
+En nuestro primer caso de prueba hemos querido probar el buen funcionamiento de nuestro SBC con casos estándard. 
+\medskip
+
+Nuestro test incluye:
+Un \textbf{hombre genérico}, sin preferencias alimenticias y que no padece ninguna enfermedad.
+
+\begin{itemize}
+\item \textbf{Sexo}: Hombre
+\item \textbf{Edad}: 80
+\item \textbf{Peso}: 65kg
+\item \textbf{Altura}: 170cm
+\item \textbf{Actividad Física}: Sedentario
+\end{itemize}
+
+\subsubsection{Solución esperada}
+Esperamos obtener una solución que esté acorde con las necesidades calóricas del individuo, los cuales dependen de la altura, el sexo, la actividad física y el peso.
+
+\subsubsection{Resultado obtenido}
+
+\subsection{Prueba 2: Mujer diabética con preferencias alimentícias}
+En este caso hemos querido probar como funcionaba nuestro SCB con una \textbf{mujer diabética con ciertas preferencias alimentícias}. La mujer en cuestión \textbf{prefiere comer verduras y sopas y no prefiere alimentos con grasas y/o aceites}.  
+
+\begin{itemize}
+\item \textbf{Sexo}: Mujer
+\item \textbf{Edad}: 85
+\item \textbf{Peso}: 60kg
+\item \textbf{Altura}: 160cm
+\item \textbf{Actividad Física}: Sedentaria
+\end{itemize}
+
+\subsubsection{Solución esperada}
+Esperamos obtener una solución que esté acorde con las necesidades calóricas del individuo. Además también esperamos obtener un menú con platos con cantidades bajas de azúcar; una presencia baja o nula de aceites o grasa y una disposición de platos que sean sopas o tengan verduras.
+
+\subsubsection{Resultado obtenido}
+
 \subsection{Prueba 3: }
+
+
+
 \subsection{Prueba 4: }
+
+
 \subsection{Prueba 5: }
+
+
 \subsection{Prueba 6: }
+
+
 \section{Conclusión}
 Podemos concluir que hemos aprendido sobre SBC y sobre el desarrollo de éstos pues hemos sido capaces de desarrollar un SBC functional basado en otologías y reglas de producción.
 
