@@ -47,14 +47,18 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 \item \textbf{Prueba}, donde mediante juegos de prueba testearemos diferentes aspectos, en especial los más críticos, del sistema. 
 \end{itemize}
 
-\section{Identificación} %NOMÉS FALTA ESCRIURE AMB MÉS DETALL EL PROBLEMA
+\section{Identificación}
 En este primer apartado del trabajo, describiremos el problema, sus distintas partes y fuentes de infromación que requieren. Además añadiremos un análisis de viabilidad de utilizar un SBC para su resolución.
 
 \subsection{Descripción del problema}
 % REESCRIURE I ALLARGAR, DEMANEN QUE SIGUI MÉS GRAN QUE EL PROPI ENUNCIAT
-La alimentación es una pieza clave de nuestras vidas: nuestra manera de alimentarnos define nuestra salud. Con nuestra alimentación podemos prevenir el riesgo y agravamiento de enfermedades y mantener un nivel óptimo de salud. Es por eso que cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
+La alimentación es una pieza clave de nuestras vidas: nuestra manera de alimentarnos define nuestra salud, tanto física como mental. Con nuestra alimentación podemos prevenir el riesgo y agravamiento de enfermedades y mantener un nivel óptimo de salud. Para obtener una \textbf{buena alimentación} necesitamos consumir una cantidad equilibrada de nutrientes, integrada por nutrientes, vitaminas, proteínas, lípidos...
 \\
-En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considearndo sus enfermedades y sus preferencias generales sobre la comida. Por ejemplo, si una persona es vegetariana y además diabética se lo generaría un horari sin carne y con poca cantidad de azúcares. 
+Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza, es por eso que cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
+\\
+En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considerando sus enfermedades y sus preferencias generales sobre la comida.\\
+
+Por ejemplo, si una persona es vegetariana y además diabética se lo generaría un horari sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
 
 \subsection{Viabilidad de utilizar un SBC}
 Si analizamos el problema podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
@@ -81,7 +85,7 @@ Para esto el sistema tiene que cumplir una serie de objetivos:
 \begin{itemize}
 	\item Obtener todos los datos del usuario que sean necesarios para poder utilizar el conocimiento del sistema y así poder devolver el mejor resultado posible
 	\item Inferir sobre las características del usuario de forma que obtengamos un conjunto de platos específicos para el usuario
-	\item Presentar al usuario el menú obtenido por el sistema		
+	\item Presentar al usuario el menú semanal (7 días) obtenido por el sistema		
 \end{itemize}
 
 Así pues esperamos de nuesto sistema un comportamiento que cumpla todos los objetivos indicados arriba para finalmente obtener unos resultados aceptables que esten concorde con el conocimiento del sistema. 
@@ -143,9 +147,7 @@ En este apartado describiremos todos los conceptos del dominio.
 		\item Azúcar
 		\item Colesterol
 		\item Grasas de las cuáles saturadas
-		\item Vitamina B5
-		\item Vitamina B6
-		\item Vitamina B12
+		\item Calcium
 	\end{itemize}
 
 
@@ -164,10 +166,6 @@ En este apartado describiremos todos los conceptos del dominio.
 		\item Osteoporosis / Arthritis
 		\end{itemize}
 \end{itemize}
-
-
-
-
 \end{itemize}
 
 \subsection{Problemas y subproblemas}
