@@ -678,6 +678,7 @@
 
 (defmessage-handler printing::ScoredCourse display ()
   (printout t (send ?self get-name_))
+  (printout ?*verbose-print* " [" (round ?self:calories) " kcal]")
   (foreach ?ingr (send ?self:course get-ingredients)
     (printout ?*verbose-print* crlf "|| " tab "-> "  (clean-ingredient-name (send ?ingr get-name_)))
   )
