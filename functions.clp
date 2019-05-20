@@ -223,3 +223,19 @@
     (bind ?count (+ ?count (send ?course get-score)))
   )
 )
+
+(deffunction clean-ingredient-name (?string)
+  (bind ?end1 (str-index "," ?string))
+  (bind ?length-total (str-length ?string))
+  (if (not ?end1) then
+    (return ?string)
+    else
+    (bind ?string2 (sub-string (+ ?end1 1) ?length-total ?string))
+    (bind ?end2 (str-index "," ?string2))
+    (if (not ?end2) then
+      (return ?string)
+      else
+      (return (sub-string 0 (+ ?end1 ?end2 -1) ?string))
+    )
+  )
+)
