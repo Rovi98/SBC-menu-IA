@@ -1,16 +1,14 @@
 (batch "test_cfg.clp.bat")
 
-65	;age
+80	;age
 170	;height
-55	;weight
-2	;sex: female
-2	;execise-level: active
+60;	;weight
+1	;sex: male
+1	;execise-level: sedentary
 	;no diseases
-no	;no meat
-no	;no egg and milk
-3	;religion
+yes	;eat meat
+1	;religion: muslim
 	;no positive preferences
 	;no negative preferences
-
 
 
