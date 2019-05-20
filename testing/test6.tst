@@ -8,6 +8,6 @@
 	;no diseases
 yes	;eat meat
 3	;religion
-4 6 9 10 11 17	;no positive preferences
-	;no negative preferences
+7	;no positive preferences
+4 6 8 9 10 16	;no negative preferences
 yes	;verbose print
