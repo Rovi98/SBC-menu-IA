@@ -1,12 +1,12 @@
 (batch "test_cfg.clp.bat")
 
-65	;age
-170	;height
-55	;weight
+80	;age
+168	;height
+72	;weight
 2	;sex: female
 2	;execise-level: active
-	;diseases: gota
+4	;diseases: gota
 yes	;eat meat
 3	;religion
-	;no positive preferences
+4 6 9 10 11 17	;positive preferences: Meat and fish
 	;no negative preferences
