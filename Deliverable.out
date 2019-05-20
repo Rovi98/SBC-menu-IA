@@ -25,10 +25,30 @@
 \BOOKMARK [2][-]{subsection.5.2}{M\363dulos}{section.5}% 25
 \BOOKMARK [2][-]{subsection.5.3}{Prototipos}{section.5}% 26
 \BOOKMARK [1][-]{section.6}{Juego de Prueba}{}% 27
-\BOOKMARK [2][-]{subsection.6.1}{Prueba 1: }{section.6}% 28
-\BOOKMARK [2][-]{subsection.6.2}{Prueba 2: }{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.3}{Prueba 3: }{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.4}{Prueba 4: }{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.5}{Prueba 5: }{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.6}{Prueba 6: }{section.6}% 33
-\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 34
+\BOOKMARK [2][-]{subsection.6.1}{Prueba 1: Usuario Est\341ndard}{section.6}% 28
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Descripci\363n del caso}{subsection.6.1}% 29
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Soluci\363n esperada}{subsection.6.1}% 30
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Resultado obtenido}{subsection.6.1}% 31
+\BOOKMARK [2][-]{subsection.6.2}{Prueba 2: Mujer diab\351tica con preferencias aliment\355cias}{section.6}% 32
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Soluci\363n esperada}{subsection.6.2}% 33
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Resultado obtenido}{subsection.6.2}% 34
+\BOOKMARK [2][-]{subsection.6.3}{Prueba 3: Hombre Musulm\341n que necesita muchas calor\355as}{section.6}% 35
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Soluci\363n esperada}{subsection.6.3}% 36
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Resultado obtenido}{subsection.6.3}% 37
+\BOOKMARK [2][-]{subsection.6.4}{Prueba 4: Mujer con gota que necesita pocas calor\355as con preferencias aliment\355cias}{section.6}% 38
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Soluci\363n esperada}{subsection.6.4}% 39
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Resultado obtenido}{subsection.6.4}% 40
+\BOOKMARK [2][-]{subsection.6.5}{Prueba 5: Mujer vegana}{section.6}% 41
+\BOOKMARK [3][-]{subsubsection.6.5.1}{Soluci\363n esperada}{subsection.6.5}% 42
+\BOOKMARK [3][-]{subsubsection.6.5.2}{Resultado obtenido}{subsection.6.5}% 43
+\BOOKMARK [2][-]{subsection.6.6}{Prueba 6: Hombre con muchas preferencias}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.6.1}{Soluci\363n esperada}{subsection.6.6}% 45
+\BOOKMARK [3][-]{subsubsection.6.6.2}{Resultado obtenido}{subsection.6.6}% 46
+\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 47
+\BOOKMARK [1][-]{section.8}{Annexo: Casos de prueba}{}% 48
+\BOOKMARK [2][-]{subsection.8.1}{Prueba 1: Usuario Est\341ndard}{section.8}% 49
+\BOOKMARK [2][-]{subsection.8.2}{Prueba 2: Mujer diab\351tica con preferencias aliment\355cias}{section.8}% 50
+\BOOKMARK [2][-]{subsection.8.3}{Prueba 3: Hombre Musulm\341n que necesita muchas calor\355as}{section.8}% 51
+\BOOKMARK [2][-]{subsection.8.4}{Prueba 4: Mujer con gota que necesita pocas calor\355as con preferencias aliment\355cias}{section.8}% 52
+\BOOKMARK [2][-]{subsection.8.5}{Prueba 5: Mujer vegana}{section.8}% 53
+\BOOKMARK [2][-]{subsection.8.6}{Prueba 6: Hombre con muchas preferencias}{section.8}% 54

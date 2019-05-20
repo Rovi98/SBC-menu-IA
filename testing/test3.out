@@ -1,20 +1,20 @@
 | > How old are you? 
 | 
-80	;age
+80
 | > How tall are you? (cm) 
-| 170	;height
+| 170
 | > What is your weight? (kg) 
-| 60;	;weight
+| 60
 | > What is your gender? 
 	1) Male
 	2) Female
 	3) n/a
-| 1	;sex: male
+| 1
 | > How much exercise do you do per week? 
 	1) Sedentary
 	2) Active
 	3) Vigorously-active
-| 3	;execise-level: vigorously active
+| 3
 | > Do you have any of the following diseases? List as many as required. 
 	1) Diabetes
 	2) Celiac
@@ -24,14 +24,14 @@
 	6) Cirrhosis
 	7) Anemia
 	8) Osteoporosis / Arthritis
-| 	;no diseases
+| 
 | > Do you eat meat? (yes/no) 
-| yes	;eat meat
+| yes
 | > Are you from one of this religions? 
 	1) Muslim
 	2) Jewish
 	3) None
-| 1	;religion: muslim
+| 1
 | > Do you really LIKE any of the following foods? List as many as required. 
 	1) Dairy and Egg Products
 	2) Spices and Herbs
@@ -51,7 +51,7 @@
 	16) Baked Products
 	17) Lamb, Veal, and Game Products
 	18) Cereal Grains and Pasta
-| 	;no positive preferences
+| 
 | > Do you DISLIKE any of the following foods? List as many as required. 
 	1) Dairy and Egg Products
 	2) Spices and Herbs
@@ -71,9 +71,9 @@
 	16) Baked Products
 	17) Lamb, Veal, and Game Products
 	18) Cereal Grains and Pasta
-| 	;no negative preferences
+| 
 | > Do you want a detailed output? With detailed ingredient information? (yes/no) 
-| yes	;verbose print
+| yes
 
 Processing the data obtained...
 
