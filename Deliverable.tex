@@ -17,7 +17,7 @@
 	    showstringspaces=false,
 	    commentstyle=\color{orange},
 	    breaklines=true,numbers=none,
-	    tabsize=3,   
+	    tabsize=4,   
 	    showstringspaces=false,
 	    columns=flexible
 	}
@@ -182,12 +182,12 @@ En esta parte del problema realizaremos varias preguntas al usuario, donde obten
 
 \subsubsection{Análisis de los datos personales}
 
-Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. Para esto tendremos en cuenta si la persona tiene alguna enfermeda, alguna preferencia alimentaria, su religión o que clase de alimentos prefiere.
+Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. Para esto tendremos en cuenta si la persona tiene alguna enfermedad, alguna preferencia alimentaria, su religión o que clase de alimentos prefiere.
 
 \subsubsection{Filtrado de platos para el menú}
 
-Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 5 (cogiendo los que tengan mejor puntación).
-Finalmente con los platos que falten, haremos diferentes permutaciones para encontrar los platos que sean mas adecuado para la cantidad de calorias necesarias para la persona.
+Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 5 (cogiendo los que tengan mejor puntuación).
+Finalmente con los platos que falten, haremos diferentes permutaciones para encontrar los platos que sean mas adecuado para la cantidad de calorías necesarias para la persona.
 
 \subsubsection{Impresión del menú}
 
@@ -224,7 +224,7 @@ Para desarrollar correctamente la ontología hemos procurado que todos los conce
 \label{ontologia_apartado}
 \subsubsection{Definición de clases y jerarquía}
 
-La ontología que hemos realizado para nuestro SBC contiene diversas clases. Se puedens observar en la \autoref{fig_ontologia}.
+La ontología que hemos realizado para nuestro SBC contiene diversas clases. Se pueden observar en la \autoref{fig_ontologia}.
 
 \begin{figure}[H]
 \centering
@@ -309,7 +309,7 @@ Los atributos son:
 \end{figure}
 
 Definimos en esta clase toda la información que contiene un nutriente.
-Aunque la clase actualmente solo contiente un atributo para el nombre, representa un concepto lo suficientemente importante en nuestra ontología como para merecer su propia clase, ya que en futuros proyectos esta clase podria requerir otros atributos.
+Aunque la clase actualmente solo contiene un atributo para el nombre, representa un concepto lo suficientemente importante en nuestra ontología como para merecer su propia clase, ya que en futuros proyectos esta clase podría requerir otros atributos.
 \\
 
 Los atributos son:
@@ -347,12 +347,12 @@ Los atributos son:
 \label{fig_class_Disease}
 \end{figure}
 
-Definimos en esta clase toda la información que contiene una enfermedad. En nuestro caso, una enfermedad presenta una serie de limitaciones alimentícias.
+Definimos en esta clase toda la información que contiene una enfermedad. En nuestro caso, una enfermedad presenta una serie de limitaciones alimenticias.
 \\
 
 Los atributos son: 
 \begin{itemize}
-\item \textbf{limitations}: limitaciones alimentícias que suponen la enfermedad
+\item \textbf{limitations}: limitaciones alimenticias que suponen la enfermedad
 \item \textbf{name}: nombre de la enfermedad
 \end{itemize}
 
@@ -366,7 +366,7 @@ Los atributos son:
 \label{fig_class_Preference}
 \end{figure}
 
-Definimos en esta clase toda la información que contiene una preferencia. En la práctica, una instancia de esta clase se comporta de forma muy parecida a la de una de la clase \emph{Disease}. Pero aunque las preferencias tengan tambien una lista de limitaciones, estas suelen ser menos estrictas que las de una enfermedad, e incluso puede tratarse de preferencias positivas, en las que se quiere propiciar el uso de ciertos alimentos o nutrientes.
+Definimos en esta clase toda la información que contiene una preferencia. En la práctica, una instancia de esta clase se comporta de forma muy parecida a la de una de la clase \emph{Disease}. Pero aunque las preferencias tengan también una lista de limitaciones, estas suelen ser menos estrictas que las de una enfermedad, e incluso puede tratarse de preferencias positivas, en las que se quiere propiciar el uso de ciertos alimentos o nutrientes.
 \\
 
 Los atributos son: 
@@ -385,7 +385,7 @@ Los atributos son:
 \label{fig_class_Limitation}
 \end{figure}
 
-Para ser capaces de expresar una limitación o incluso una preferencia alimentícia, hemos hecho uso de esta clase para poder describir la voluntad de castigar o premiar el uso de ciertos alimentos o nutrientes.
+Para ser capaces de expresar una limitación o incluso una preferencia alimenticia, hemos hecho uso de esta clase para poder describir la voluntad de castigar o premiar el uso de ciertos alimentos o nutrientes.
 \\
 
 Existen tres tipos (subclases) de la clase \emph{Limitation} según el objetivo de la limitación:
@@ -398,7 +398,7 @@ Existen tres tipos (subclases) de la clase \emph{Limitation} según el objetivo 
 
 A parte de la instancia asociada según la subclase, las limitaciones también disponen del siguiente atributo:
 \begin{itemize}
-\item \textbf{value}: valor númerico asociado a la limitacion. Se usan valores negativos para castigar el uso de ingredientes y nutrientes, y valores positivos para premiarlo. La magnitud del valor indica la severidad con la que se quiere hacer efectiva la limitación. Un valor de 0 indica una limitación neutral y no tiene ningún efecto. 
+\item \textbf{value}: valor numérico asociado a la limitación. Se usan valores negativos para castigar el uso de ingredientes y nutrientes, y valores positivos para premiarlo. La magnitud del valor indica la severidad con la que se quiere hacer efectiva la limitación. Un valor de 0 indica una limitación neutral y no tiene ningún efecto. 
 \end{itemize}
 
 
@@ -482,9 +482,12 @@ Un \textbf{hombre genérico}, sin preferencias alimenticias y que no padece ning
 Esperamos obtener una solución que esté acorde con las necesidades calóricas del individuo, los cuales dependen de la altura, el sexo, la actividad física y el peso.
 
 \subsubsection{Resultado obtenido}
+El usuario necesita 2015 kcal diarias según nuestros cálculos, dadas sus características. El sistema ha propuesto un menú de 1920 kcal diarias, dentro del rango esperado.
+
+Dado que el individuo no padece ninguna enfermedad ni tiene necesidades alimenticias especiales, el sistema no ha tenido problemas en proporcionar un menú variado y adecuado, sin ninguna repetición.
 
 \subsection{Prueba 2: Mujer diabética con preferencias alimentícias}
-En este caso hemos querido probar como funcionaba nuestro SCB con una \textbf{mujer diabética con ciertas preferencias alimentícias}. La mujer en cuestión \textbf{prefiere comer verduras y sopas y no prefiere alimentos con grasas y/o aceites}.  
+En este caso hemos querido probar como funcionaba nuestro SCB con una \textbf{mujer diabética con ciertas preferencias alimenticias}. La mujer en cuestión \textbf{prefiere comer verduras y sopas y no prefiere alimentos con grasas y/o aceites}.  
 
 \begin{itemize}
 \item \textbf{Sexo}: Mujer
@@ -545,7 +548,7 @@ Esperamos obtener una solución que esté acorde con los requisitos alimentício
 
 
 \subsection{Prueba 5: Mujer vegana}
-En este caso, hemos querido observar como se comporta nuestro sistema cuando se le añade la restricción de \textbf{veganismo}. Ésta es una de las más restrictivas puesto restringe carne, huevos, lácteos y pescado entre otros. 
+En este caso, hemos querido observar como se comporta nuestro sistema cuando se le añade la restricción de \textbf{veganismo}. Ésta es una de las más restrictivas puesto que restringe carne, huevos, lácteos y pescado entre otros. 
 
 \begin{itemize}
 \item \textbf{Sexo}: Mujer
@@ -557,9 +560,15 @@ En este caso, hemos querido observar como se comporta nuestro sistema cuando se 
 \end{itemize}
 
 \subsubsection{Solución esperada}
-Esperamos obtener un menú que esté acorde con las necesidades alimentícias del usuario y además cumpla los requísitos que comportan el hecho de ser vegano.
+Esperamos obtener un menú que esté acorde con las necesidades alimenticias del usuario y además cumpla los requisitos que comportan el hecho de ser vegano.
 
 \subsubsection{Resultado obtenido}
+
+El menú dado consigue respetar en gran parte las estrictas necesidades de una persona vegana.
+Los platos mejor puntuados por el sistema, tal como esperábamos, son de contenido animal nulo (macarrones, arroz, albóndigas veganas, nuggets veganos...).
+
+Aún así, para garantizar los requerimientos energéticos, el sistema ha introducido un par de platos no veganos (lasaña y cordero).
+Hemos obtenido así un menu que se acerca mucho a las necesidades calóricas del individuo, obteniendo un menu con valor calórico medio-bajo.
 
 \subsection{Prueba 6: Hombre con muchas preferencias}
 En este caso, hemos querido observar como se comporta nuestro sistema con una persona que tiene como preferencia alimentícia fruta y verdura y no le gusta nada la carne. Así pues, podremos ver la diferencia entre un menú con estas preferencias y un vegetariano lo cual consideramos interesante para testear el sistema de preferencias implementado. 
@@ -578,9 +587,9 @@ Esperamos obtener un menú bastante parecido al vegetariano con la presencia de 
 \subsubsection{Resultado obtenido}
 
 En este caso, hemos obtenido un menú que proporcionaba una cantidad diaria de 500 calorías menos a la cantidad óptima calculada según las características del usuario. 
-\\
+
 No obstante, tal y como sugeríamos, podemos observar una predominancia en la cantidad de platos con fruta y verdura con platos como sopa de melón, verduras variadas, ciruelas, sandía, yogur de frutas, patatas con zanahoria, crema de zanahoria o plátanos. 
-\\
+
 Además la única presencia de platos con carne son espaguetis a la boloñesa así que la preferencia se ha podido cumplir más que satisfactoriamente. 
 
 \section{Conclusión}
