@@ -1,5 +1,6 @@
 (clear)
 (defglobal ?*debug-print* = nil) ;nil vs t
+(defglobal ?*banner-file* = "../ascii.txt")
 (load "../ontology.pont")
 (load "../aux_classes.clp")
 (load "../functions.clp")

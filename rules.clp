@@ -618,7 +618,7 @@
   (not (asked-religion-preference))
   ?user <- (user (preferences $?prefs))
    =>
-    (bind ?response (ask-question-opt "Are you from one of this religions?" (create$ Muslim Jewish None)))
+    (bind ?response (ask-question-opt "Do you practice any of the following religions?" (create$ Muslim Jewish None)))
     (switch ?response
       (case Muslim then (modify ?user (preferences ?prefs [Preference_Muslim])))
       (case Jewish then (modify ?user (preferences ?prefs [Preference_Jewish])))
@@ -662,9 +662,14 @@
 (defrule MAIN::system-banner
   (declare (salience 10))
   =>
-  (printout t crlf crlf)
-  (printout t "Food Menu v0.8")
-  (printout t crlf crlf)
+  (open ?*banner-file* bannerFile "r")
+  (bind ?line (readline bannerFile))
+  (while (neq EOF ?line) do
+    (printout t ?line crlf)
+    (bind ?line (readline bannerFile))
+  )
+  (printout t crlf)
+  (close bannerFile)
   (focus ask_questions)
 )
 
