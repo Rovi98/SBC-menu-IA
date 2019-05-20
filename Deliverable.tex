@@ -8,7 +8,7 @@
 \author{Carlos Bergillos, Roger Vilaseca, Adrià Cabeza}
 \title{Creación de dietas para ancianos: \\ sistemas Basados en el conocimiento \\
 	\large IA FIB @ UPC}
-\usepackage[margin=1.25in]{geometry}
+%\usepackage[margin=1.25in]{geometry}
 \usepackage{listings}
 \lstset{
 	    basicstyle=\ttfamily,
@@ -101,6 +101,7 @@ En este apartado describiremos todos los conceptos del dominio.
 	\item \textbf{Enfermedades que padece}
 	\item \textbf{Preferencias alimenticias}: que pueden ser Vegetariano, Vegano o Musulmán
 	\end{itemize}
+	
 	\item \textbf{Platos}
 	\begin{itemize}
 		\item \textbf{Temporadas}: pueden ser Otoño, Verano, Invierno y/o Primavera
@@ -157,7 +158,7 @@ En este apartado describiremos todos los conceptos del dominio.
 	\item Nuestro SBC admite actualmente las siguientes enfermedades:
 		\begin{itemize}
 		\item Diabetes
-		\item Celíaco
+		\item Celiaquía
 		\item Colesterol
 		\item Gota
 		\item Hipertension
@@ -167,6 +168,7 @@ En este apartado describiremos todos los conceptos del dominio.
 		\end{itemize}
 \end{itemize}
 \end{itemize}
+
 
 \subsection{Problemas y subproblemas}
 
@@ -431,7 +433,7 @@ La adaptación esta formada por los módulos AAAAAAA.
 \section{Implementación}
 
 \subsection{Creación de la ontología}
-Para generar la ontología hemos usado el programa Protégé añadiendo las diferentes características anteriormente mencionadas en los apartados% \ref{ontologia_apartado}
+Para generar la ontología hemos usado el programa Protégé añadiendo varias características y atributos para poder representar nuestros conceptos del dominio y crear nuestras soluciones.
 \\
 En cuanto a las instancias, hay una distinción básica entre ellas: estáticas y dinámicas. Hay algunas que se han creado dinámicamente durante la ejecución del programa como podrían ser Persona o MenúDía. Para las estáticas en cambio (Nutriente, Plato, Ingrediente, IngredienteCantidad, NutrienteCantidad, Enfermedad o Limitaciones) hemos usado diversas bases de datos y un script en python para crearlas a priori y tener los archivos .pins necesarios. 
 \subsection{Módulos}
@@ -457,7 +459,6 @@ En un inicio, desarrollemos nuestro \textbf{prototipo inicial}: una ontología b
 Entonces después de hacer unos pequeños cambios en la ontología y por consiguiente en el script para crear instancias, procedimos a crear, de manera progresiva, las diferentes reglas inherentes al conocimiento.  
 
 \section{Juego de Prueba}
-%fer-ne més de 6 (lo que consideren un bon número)
 Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas a testear diferentes puntos de la aplicación. Así pues, mediante estas pruebas, hemos podido comprovar el correcto funcionamento del sistema, tanto a nivel general como a nivel particular.
 
 \subsection{Prueba 1: }
