@@ -1,15 +1,17 @@
-\documentclass[12]{article}
+\documentclass[11]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \date{\today}
+\usepackage{xcolor}
 \author{Carlos Bergillos, Roger Vilaseca, Adrià Cabeza}
 \title{Creación de dietas para ancianos: \\ sistemas Basados en el conocimiento \\
 	\large IA FIB @ UPC}
-%\usepackage[margin=1.25in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 \usepackage{listings}
 \lstset{
+	language = Python,
 	    basicstyle=\ttfamily,
 	    showstringspaces=false,
 	    commentstyle=\color{orange},
@@ -548,7 +550,7 @@ En este caso, hemos querido observar como se comporta nuestro sistema cuando se 
 \end{itemize}
 
 \subsubsection{Solución esperada}
-Esperamos obtener un menú que esté acorde con las necesidades alimentícias y además cumpla los requísitos que comportan el hecho de ser vegano.
+Esperamos obtener un menú que esté acorde con las necesidades alimentícias del usuario y además cumpla los requísitos que comportan el hecho de ser vegano.
 
 \subsubsection{Resultado obtenido}
 
@@ -585,7 +587,7 @@ En este apartado incluíremos los outputs de los casos de prueba que antes hemos
 
 \subsection{Prueba 1: Usuario Estándard}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 | > How old are you? 
 | 
 80
@@ -910,7 +912,7 @@ Top Scored Courses
 
 \subsection{Prueba 2: Mujer diabética con preferencias alimentícias}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 | > How old are you? 
 | 
 85
@@ -1240,10 +1242,10 @@ Top Scored Courses
 ############################################
 ############################################
 \end{lstlisting}
-
 \subsection{Prueba 3: Hombre Musulmán que necesita muchas calorías}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
+
 | > How old are you? 
 | 
 80
@@ -1577,7 +1579,7 @@ Make sure to enrichen your daily calories intake with larger meal quantities or 
 
 \subsection{Prueba 4: Mujer con gota que necesita pocas calorías con preferencias alimentícias}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 | > How old are you? 
 | 
 92
@@ -1895,7 +1897,7 @@ Top Scored Courses
 ############################################
 \end{lstlisting}
 
-\subsection{Prueba 5: Mujer vegana}
+\subsection{Prueba 5: Mujer vegana}[frame=single]
 
 \begin{lstlisting}
 | > How old are you? 
@@ -2231,7 +2233,7 @@ Top Scored Courses
 
 \subsection{Prueba 6: Hombre con muchas preferencias}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 | > How old are you? 
 | 
 76
