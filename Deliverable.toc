@@ -53,10 +53,11 @@
 \contentsline {subsubsection}{\numberline {6.6.1}Soluci\IeC {\'o}n esperada}{18}{subsubsection.6.6.1}
 \contentsline {subsubsection}{\numberline {6.6.2}Resultado obtenido}{18}{subsubsection.6.6.2}
 \contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{18}{section.7}
-\contentsline {section}{\numberline {8}Annexo: Casos de prueba}{18}{section.8}
-\contentsline {subsection}{\numberline {8.1}Prueba 1: Usuario Est\IeC {\'a}ndard}{18}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Prueba 2: Mujer diab\IeC {\'e}tica con preferencias aliment\IeC {\'\i }cias}{24}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Prueba 3: Hombre Musulm\IeC {\'a}n que necesita muchas calor\IeC {\'\i }as}{31}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Prueba 4: Mujer con gota que necesita pocas calor\IeC {\'\i }as con preferencias aliment\IeC {\'\i }cias}{37}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Prueba 5: Mujer vegana}{44}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Prueba 6: Hombre con muchas preferencias}{50}{subsection.8.6}
+\contentsline {section}{Appendices}{19}{section*.10}
+\contentsline {section}{\numberline {A}Casos de prueba}{19}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Prueba 1: Usuario Est\IeC {\'a}ndard}{19}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Prueba 2: Mujer diab\IeC {\'e}tica con preferencias aliment\IeC {\'\i }cias}{25}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Prueba 3: Hombre Musulm\IeC {\'a}n que necesita muchas calor\IeC {\'\i }as}{32}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Prueba 4: Mujer con gota que necesita pocas calor\IeC {\'\i }as con preferencias aliment\IeC {\'\i }cias}{38}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}Prueba 5: Mujer vegana}{44}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.6}Prueba 6: Hombre con muchas preferencias}{51}{subsection.A.6}
