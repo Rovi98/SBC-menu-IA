@@ -380,6 +380,7 @@
   (asked-weight)
   (asked-height)
   (asked-vegetables-preference)
+  (asked-religion-preference)
   (asked-diseases)
   (asked-sex)
   (asked-exercise-level)
@@ -414,6 +415,7 @@
 (defrule inference_of_data::apply-specific-preferences
   (listed-available-courses)
   (asked-vegetables-preference)
+  (asked-religion-preference)
   (not (applied-specific-preferences))
   (user (preferences $?prefs))
    =>
@@ -588,6 +590,18 @@
       )
     )
    (assert (asked-vegetables-preference))
+)
+
+(defrule ask_questions::determine-religion-preference
+  (not (asked-religion-preference))
+  ?user <- (user (preferences $?prefs))
+   =>
+    (bind ?response (ask-question-opt "Are you from one of this religions?" (create$ Muslim Jewish None)))
+    (switch ?response
+      (case Muslim then (modify ?user (preferences ?prefs [Preference_Muslim])))
+      (case Jewish then (modify ?user (preferences ?prefs [Preference_Jewish])))
+    )
+   (assert (asked-religion-preference))
 )
 
 (defrule ask_questions::determine-foodtypes-positive
