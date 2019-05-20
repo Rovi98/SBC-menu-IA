@@ -20,9 +20,26 @@
 		[LimitationType_DairyandEggProducts-80]
 	)
 	(name_ "Vegetarian"))
+	
+([Preference_Muslim] of Preference
+	(limitations 
+		[LimitationType_PorkProducts-100]
+	)
+	(name_ "Vegetarian"))
+	
+([Preference_Jewish] of Preference
+	(limitations 
+		[LimitationType_PorkProducts-100]
+		[LimitationType_FinfishandShellfishProducts-100]
+	)
+	(name_ "Vegetarian"))
 
 ([LimitationType_PorkProducts-80] of LimitationType
 	(value -80)
+	(type [FoodType_PorkProducts]))
+	
+([LimitationType_PorkProducts-100] of LimitationType
+	(value -100)
 	(type [FoodType_PorkProducts]))
 
 ([LimitationType_BeefProducts-80] of LimitationType
@@ -39,6 +56,10 @@
 
 ([LimitationType_FinfishandShellfishProducts-80] of LimitationType
 	(value -80)
+	(type [FoodType_FinfishandShellfishProducts]))
+	
+([LimitationType_FinfishandShellfishProducts-100] of LimitationType
+	(value -100)
 	(type [FoodType_FinfishandShellfishProducts]))
 
 ([LimitationType_LambVealandGameProducts-80] of LimitationType
