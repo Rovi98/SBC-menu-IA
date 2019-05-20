@@ -1,3 +1,8 @@
+(defglobal
+  ?*WEEKDAYS* = (create$ Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
+  ?*verbose-print* = nil ;nil vs t
+)
+
 ;%%%%%
 ;%
 ;% MODULES
@@ -84,10 +89,6 @@
   (best-calories-diff 9999999)
 )
 
-(defglobal
-  ?*WEEKDAYS* = (create$ Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
-)
-
 ;;;********************
 ;;;* MENU STATE RULES *
 ;;;********************
@@ -166,9 +167,9 @@
   (bind ?this-calories  (count-calories ?fc11 ?fc12 ?fc13 ?fc14
                                         ?sc10 ?sc11 ?sc12 ?sc13 ?sc14))
 
-  (bind ?this-calories-diff (abs (- ?this-calories ?calories-left)))
+  (bind ?this-calories-diff (- ?this-calories ?calories-left))
 
-  (if (< ?this-calories-diff ?best-calories-diff) then
+  (if (< (abs ?this-calories-diff) (abs ?best-calories-diff)) then
     (printout ?*debug-print* "DEBUG: New best menu. " ?best-calories-diff " -> " ?this-calories-diff crlf)
     (bind ?chosenBreakfasts     (random-sort (create$ ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7)))
     (bind ?chosenFirstCourses   (random-sort (create$ ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 ?fc11 ?fc12 ?fc13 ?fc14)))
@@ -183,6 +184,10 @@
 
     (retract ?best-calories-diff-fact)
     (assert (best-calories-diff ?this-calories-diff))
+
+    (if (<= (abs ?this-calories-diff) 700) then
+      (assert (visited-all-menus))
+    )
   )
 )
 
@@ -315,19 +320,6 @@
 
 )
 
-(defrule generate_solutions::no-menu-found
-  (declare (salience -10))
-  (not (chosen-menu))
-  =>
-  (printout t crlf "############################################")
-  (printout t crlf "############################################" crlf crlf)
-
-  (printout t "We did not find any valid menu. " crlf "We are very sorry." crlf crlf "Try again with a less restrictive input." crlf)
-
-  (printout t crlf "############################################")
-  (printout t crlf "############################################" crlf crlf)
-)
-
 (defrule generate_solutions::menu-found
   (declare (salience -10))
   (chosen-menu)
@@ -335,7 +327,36 @@
   (focus printing)
 )
 
-(defrule printing::print-result
+(defrule printing::print-low-calories-warnings
+  (declare (salience -11))
+  (chosen-menu)
+  (best-calories-diff ?calories-diff&:(< ?calories-diff -2100))
+  =>
+
+  (printout t "Warning:" crlf)
+  (printout t "The given menu provides " (* (div ?calories-diff 700) -100) " less daily calories than you need." crlf)
+  (printout t "Make sure to enrichen your daily calories intake with larger meal quantities or other snacks throughout the day." crlf)
+
+  (printout t crlf "############################################")
+  (printout t crlf "############################################" crlf crlf)
+)
+
+(defrule printing::print-high-calories-warnings
+  (declare (salience -11))
+  (chosen-menu)
+  (best-calories-diff ?calories-diff&:(> ?calories-diff 2100))
+  =>
+
+  (printout t "Warning:" crlf)
+  (printout t "The given menu provides " (* (div ?calories-diff 700) 100) " more daily calories than you need." crlf)
+  (printout t "Make sure to lower your daily calories intake with smaller meal quantities." crlf)
+
+  (printout t crlf "############################################")
+  (printout t crlf "############################################" crlf crlf)
+)
+
+(defrule printing::print-chosen-menu
+  (declare (salience -10))
   (chosen-menu (menu ?menu) (score ?score))
   (available-courses  (breakfasts ?bf1 ?bf2 ?bf3 $?)
                       (firstCourses ?fc1 ?fc2 ?fc3 $?)
@@ -386,6 +407,7 @@
   (asked-exercise-level)
   (asked-foodtypes-positive)
   (asked-foodtypes-negative)
+  (asked-verbose-print)
 
    =>
 
@@ -622,6 +644,17 @@
     (assert (asked-foodtypes-negative))
 )
 
+(defrule ask_questions::determine-verbose-print
+  (not (asked-verbose-print))
+  =>
+    (if (ask-question-yes-no "Do you want a detailed output? With detailed ingredient information?") then
+      (bind ?*verbose-print* t)
+      else
+      (bind ?*verbose-print* nil)
+    )
+    (assert (asked-verbose-print))
+)
+
 ;;;****************************
 ;;;* STARTUP AND OUTPUT RULES *
 ;;;****************************
@@ -635,25 +668,6 @@
   (focus ask_questions)
 )
 
-  ;(format t " %s%n%n%n" ?item))
-
-
-;;; Modulo de presentacion de resultados ----------------------------------------------------
-;;;(defrule presentacion::mostrar-respuesta "Muestra el contenido escogido"
-	;;;(lista-dias (dias $?dias))
-	;;;(Usuario (nombre ?nombre))
-	;;;(not (final))
-	;;;=>
-	;;;(printout t crlf)
-	;;;(format t "%s, esta es nuestra recomendación para usted. ¡Esperamos que la disfrute!" ?nombre)
-	;;;(printout t crlf)
-	;;;(progn$ (?curr-dia $?dias)
-	;;;(progn$ (?curr-dia $?dias)
-	;;;(printout t (send ?curr-dia display))
-	;;;)
-	;;;(assert (final))
-;;;)
-
 ;;;************
 ;;;* MESSAGES *
 ;;;************
@@ -662,20 +676,27 @@
   (send ?self:course get-name_)
 )
 
+(defmessage-handler printing::ScoredCourse display ()
+  (printout t (send ?self get-name_))
+  (foreach ?ingr (send ?self:course get-ingredients)
+    (printout ?*verbose-print* crlf "|| " tab "-> "  (clean-ingredient-name (send ?ingr get-name_)))
+  )
+)
+
 (defmessage-handler printing::Breakfast display ()
-  (printout t "|| - " (send ?self:course get-name_) crlf)
+  (printout t "|| - " (send ?self:course display) crlf)
 )
 
 (defmessage-handler printing::Lunch display ()
-  (printout t "|| - " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| - " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| - " (send ?self:dessert get-name_) crlf)
+  (printout t "|| - " (send ?self:firstCourse display) crlf)
+  (printout t "|| - " (send ?self:secondCourse display) crlf)
+  (printout t "|| - " (send ?self:dessert display) crlf)
 )
 
 (defmessage-handler printing::Dinner display ()
-  (printout t "|| - " (send ?self:firstCourse get-name_) crlf)
-  (printout t "|| - " (send ?self:secondCourse get-name_) crlf)
-  (printout t "|| - " (send ?self:dessert get-name_) crlf)
+  (printout t "|| - " (send ?self:firstCourse display) crlf)
+  (printout t "|| - " (send ?self:secondCourse display) crlf)
+  (printout t "|| - " (send ?self:dessert display) crlf)
 )
 
 (defmessage-handler printing::MenuDay display ()

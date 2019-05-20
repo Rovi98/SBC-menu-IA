@@ -32,7 +32,7 @@
 
 Los \textbf{sistemas basados en el conocimiento (SBC)} son la parte de la Inteligencia Artificial donde se intenta hallar una solución utilizando el conocimiento. Hay ciertos problemas en la vida real que no se pueden resolver sin tener conocimiento específico sobre los elementos del dominio. 
 \par
-El motivo de esta práctica es comprender estos modelos de IA así que hemos atacado un problema con esta técnica: creación de menús para ancianos dependiendo de sus necesidades nutricionales y requisitos médicos. 
+El motivo de esta práctica es comprender estos modelos de IA. Por eso hemos atacado un problema con esta técnica. El problema en cuestión ha sido la creación de menús para ancianos dependiendo de sus necesidades nutricionales y requisitos médicos. 
 \par
 Hemos desarrollado una ontología capaz de almacenar la información sobre los platos, los ingredientes, los nutrientes, las enfermedades y las limitaciones con \textbf{Protégé} y un sistema de reglas que describen el proceso de toma de decisiones usando \textbf{CLIPS}.
 \par
@@ -47,20 +47,20 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 \end{itemize}
 
 \section{Identificación}
-En este primer apartado del trabajo, describiremos el problema, sus distintas partes y fuentes de infromación que requieren. Además añadiremos un análisis de viabilidad de utilizar un SBC para su resolución.
+En este primer apartado del trabajo, describiremos el problema, sus distintas partes y las fuentes de información que requieren. Además añadiremos un análisis de viabilidad acerca la opción de utilizar un SBC para su resolución.
 
 \subsection{Descripción del problema}
 % REESCRIURE I ALLARGAR, DEMANEN QUE SIGUI MÉS GRAN QUE EL PROPI ENUNCIAT
 La alimentación es una pieza clave de nuestras vidas: nuestra manera de alimentarnos define nuestra salud, tanto física como mental. Con nuestra alimentación podemos prevenir el riesgo y agravamiento de enfermedades y mantener un nivel óptimo de salud. Para obtener una \textbf{buena alimentación} necesitamos consumir una cantidad equilibrada de nutrientes, integrada por nutrientes, vitaminas, proteínas, lípidos...
 \\
-Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza, es por eso que cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
+Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza. Debido a eso, cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
 \\
 En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considerando sus enfermedades y sus preferencias generales sobre la comida.\\
 
-Por ejemplo, si una persona es vegetariana y además diabética se lo generaría un horari sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
+Por ejemplo, si una persona es vegetariana y además diabética, se le generaría un menú sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias, así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
 
 \subsection{Viabilidad de utilizar un SBC}
-Si analizamos el problema podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
+Si analizamos el problema, podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
 \\
 Además nuestro objetivo, como ya hemos mencionado anteriormente, es dada la información de un anciano como input es dar una solución viable. Así que un SBC parece una opción bastante apropiada para enfretarse al problema. 
 \medskip
