@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {5.1}Creaci\IeC {\'o}n de la ontolog\IeC {\'\i }a}{14}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}M\IeC {\'o}dulos}{14}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Prototipos}{15}{subsection.5.3}
-\contentsline {section}{\numberline {6}Juego de Prueba}{15}{section.6}
+\contentsline {section}{\numberline {6}Juegos de Prueba}{15}{section.6}
 \contentsline {subsection}{\numberline {6.1}Prueba 1: Usuario Est\IeC {\'a}ndard}{15}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Descripci\IeC {\'o}n del caso}{15}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}Soluci\IeC {\'o}n esperada}{15}{subsubsection.6.1.2}
@@ -55,7 +55,7 @@
 \contentsline {subsubsection}{\numberline {6.6.2}Resultado obtenido}{19}{subsubsection.6.6.2}
 \contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{19}{section.7}
 \contentsline {section}{Appendices}{20}{section*.10}
-\contentsline {section}{\numberline {A}Casos de prueba}{20}{appendix.Alph1}
+\contentsline {section}{\numberline {A}Juegos de prueba completos}{20}{appendix.Alph1}
 \contentsline {subsection}{\numberline {A.1}Prueba 1: Usuario Est\IeC {\'a}ndard}{20}{subsection.Alph1.1}
 \contentsline {subsection}{\numberline {A.2}Prueba 2: Mujer diab\IeC {\'e}tica con preferencias aliment\IeC {\'\i }cias}{26}{subsection.Alph1.2}
 \contentsline {subsection}{\numberline {A.3}Prueba 3: Hombre Musulm\IeC {\'a}n que necesita muchas calor\IeC {\'\i }as}{33}{subsection.Alph1.3}

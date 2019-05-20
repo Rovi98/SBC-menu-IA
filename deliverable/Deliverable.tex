@@ -44,7 +44,7 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 \begin{itemize}
 	\item \textbf{Identificación}, donde identificaremos el problema y sus características y requisitos. Además también concretaremos el dominio para poder identificar las fuentes de conocimiento necesarias para su desarrollo.%DONE
 	\item \textbf{Conceptualización}, donde describiremos en profundidad los conceptos que intervienen en el dominio del problema y la descomposición de este último en subproblemas. %ALMOST DONE, FA FALTA AFEGIR INFO SOBRE ELS CONCEPTES QUE TENIM AL DOMINI
-	\item \textbf{Formalización}, donde partiendo de los conceptos de la fase anterior, procediremos a su formalización desarrollando una ontología. También, para la resolución del problema formalizaremos el conocimiento y una metodología de resolución.
+	\item \textbf{Formalización}, donde partiendo de los conceptos de la fase anterior, procederemos a su formalización desarrollando una ontología. También, para la resolución del problema formalizaremos el conocimiento y una metodología de resolución.
 \item \textbf{Implementación}, donde dividiremos el problema en módulos para encapsular las diferentes partes del procedimiento en la resolución descrita en la fase anterior. Esta fase se basará en una metodología de desarrollo incremental, partiendo de un prototipo inicial que se va aumentando hasta conseguir un sistema final. 
 \item \textbf{Prueba}, donde mediante juegos de prueba testearemos diferentes aspectos, en especial los más críticos, del sistema. 
 \end{itemize}
@@ -59,27 +59,27 @@ Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebra
 \\
 En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considerando sus enfermedades y sus preferencias generales sobre la comida.\\
 
-Por ejemplo, si una persona es vegetariana y además diabética, se le generaría un menú sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias, así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
+Por ejemplo, si una persona es vegetariana y además diabética, se le generaría un menú sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias, así pues a una persona que tenga osteoporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
 
 \subsection{Viabilidad de utilizar un SBC}
-Si analizamos el problema, podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
+Si analizamos el problema, podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sino que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
 \\
-Además nuestro objetivo, como ya hemos mencionado anteriormente, es dada la información de un anciano como input es dar una solución viable. Así que un SBC parece una opción bastante apropiada para enfretarse al problema. 
+Además nuestro objetivo, como ya hemos mencionado anteriormente, es dada la información de un anciano como input es dar una solución viable. Así que un SBC parece una opción bastante apropiada para enfrentarse al problema. 
 \medskip
 
-Pese a que se podría utilizar otros métodos como la satisfacción de restricciones o incluso mediante una búsqueda en el espacio de soluciones creemos que la mejor manera de aprovechar el conocimiento implícito que requiere el problema es usando la potencia que nos proporciona un sistema basado en conocmiento.
+Pese a que se podría utilizar otros métodos como la satisfacción de restricciones o incluso mediante una búsqueda en el espacio de soluciones creemos que la mejor manera de aprovechar el conocimiento implícito que requiere el problema es usando la potencia que nos proporciona un sistema basado en conocimiento.
 
 \subsection{Fuentes de conocimiento}
 
 Nuestras fuentes de conocimiento se pueden dividir en dos grandes pilares:
 \begin{itemize}
-	\item \textbf{El usuario}: la persona que utilize nuestro sistema tendrá que indicar e introducir información acerca de su edad, sexo, enfermedades...para que podamos proporcionarle el mejor plan alimenticio. 
+	\item \textbf{El usuario}: la persona que utilice nuestro sistema tendrá que indicar e introducir información acerca de su edad, sexo, enfermedades...para que podamos proporcionarle el mejor plan alimenticio. 
 	\item \textbf{Platos, ingredientes, enfermedades, nutrientes, etc}: el conjunto de conocimiento que necesita nuestro SBC para poder operar ha sido obtenido utilizando recursos en la red, especialmente se ha usado documentación especializada en el tema. 
 \end{itemize}
 
 
 \subsection{Objetivos y resultados esperados del sistema}
-El objetivo final del problema es mostrar un menú para toda la semana que sea adecuado a las necesidades alimentícias del usuario. 
+El objetivo final del problema es mostrar un menú para toda la semana que sea adecuado a las necesidades alimenticias del usuario. 
 \medskip
 
 Para esto el sistema tiene que cumplir una serie de objetivos: 
@@ -89,7 +89,7 @@ Para esto el sistema tiene que cumplir una serie de objetivos:
 	\item Presentar al usuario el menú semanal (7 días) obtenido por el sistema		
 \end{itemize}
 
-Así pues esperamos de nuesto sistema un comportamiento que cumpla todos los objetivos indicados arriba para finalmente obtener unos resultados aceptables que esten concorde con el conocimiento del sistema. 
+Así pues esperamos de nuestro sistema un comportamiento que cumpla todos los objetivos indicados arriba para finalmente obtener unos resultados aceptables que estén concorde con el conocimiento del sistema. 
 \section{Conceptualización}
 En este apartado describiremos todos los conceptos del dominio. 
 
@@ -100,7 +100,7 @@ En este apartado describiremos todos los conceptos del dominio.
 	\item \textbf{Género}: ya que dependiendo del sexo se tienen que seguir unas restricciones alimentícias u otras.
 	\item \textbf{Nivel de ejercicio semanal}: que puede ser Sedentario, Activo o Vigorosamente Activo
 	\item \textbf{Enfermedades que padece}
-	\item \textbf{Preferencias alimenticias}: que pueden ser Vegetariano, Vegano o Musulmán
+	\item \textbf{Preferencias alimenticias}: tales como el ser vegetariano, vegano, o practicar alguna religión con requerimientos alimenticios específicos (como el islam o el judaísmo).
 	\end{itemize}
 	
 	\item \textbf{Platos}
@@ -109,7 +109,7 @@ En este apartado describiremos todos los conceptos del dominio.
 		\item \textbf{Ingredientes}		
 	\end{itemize}
 
-	\item \textbf{Ingredientes}: las caracerístias necesarias para definir correctamente a un ingrediente son las siguientes: \begin{itemize}
+	\item \textbf{Ingredientes}: las características necesarias para definir correctamente a un ingrediente son las siguientes: \begin{itemize}
 		\item \textbf{Nutrientes} Los nutrientes que contiene el ingrediente en cuestión
 		\item \textbf{Nombre}
 		\item \textbf{Temporadas}: pueden ser Otoño, Verano, Invierno y/o Primavera
@@ -153,7 +153,7 @@ En este apartado describiremos todos los conceptos del dominio.
 	\end{itemize}
 
 
-\item \textbf{Enfermedades}: cada enfermedad, además de su nombre la cual nos sirve para definirla en sí, tenemos para cada enfermedad el conocimiento de qué limitaciones alimentícias presentan. \begin{itemize}
+\item \textbf{Enfermedades}: cada enfermedad, además de su nombre la cual nos sirve para definirla en sí, tenemos para cada enfermedad el conocimiento de qué limitaciones alimenticias presenta. \begin{itemize}
 	\item \textbf{Nombre}
 	\item \textbf{Limitaciones}: pueden ser limitaciones asociadas a nutrientes o a ingredientes.
 	\item Nuestro SBC admite actualmente las siguientes enfermedades:
@@ -187,8 +187,9 @@ Una vez obtenidos los datos de la persona, el experto clasificará mediante una 
 
 \subsubsection{Filtrado de platos para el menú}
 
-Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 5 (cogiendo los que tengan mejor puntuación).
-Finalmente con los platos que falten, haremos diferentes permutaciones para encontrar los platos que sean mas adecuado para la cantidad de calorías necesarias para la persona.
+Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 4 (cogiendo los que tengan mejor puntuación).
+
+Finalmente con los platos que falten, probaremos distintas posibilidades (siendo más flexibles en cuanto a las preferencias de la persona) para tratar de obtener un menu que se adecúe a las necesidades energéticas del individuo.
 
 \subsubsection{Impresión del menú}
 
@@ -202,20 +203,20 @@ A partir de información que obtenemos del dominio podemos llegar a clasificar l
 Por ejemplo a partir de las siguientes características o preferencias que podríamos obtener a partir de las preguntas hechas, obtendríamos los siguientes resultados.
 
 \begin{itemize}
-	\item En el caso de los vegetarianos vamos a quitar de los posibles platos aquellos que tengan algún ingrediente del tipos carne.
+	\item En el caso de los vegetarianos vamos a penalizar los platos que tengan algún ingrediente de carne.
 	\item Si la persona tuviera diabetes vamos a intentar que los platos sugeridos tengan poca cantidades de azúcares.
 	\item En cambio si la persona responde que le gusta un alimento en concreto vamos a puntuar de una forma más alta aquellos platos que contengan el alimento en cuestión.
 \end{itemize}
 
 \subsection{Flujo de razonamiento}
 
-Para poder clasificar correctamente los platos en nuestro problema a partir de las preguntas hechas.
+Para poder clasificar correctamente los platos en nuestro problema a partir de las preguntas hechas:
 
-Primero de todo pasaremos un filtro donde se eliminaran del conjunto de platos, aquellos que la persona no puede tomar en ninguna circunstancia.
+Primero ordenaremos los platos según si se adecúan o no a las necesidades y preferencias de la persona (las necesidades médicas se tratarán de forma más estricta que las preferencias).
 
-A continuación los platos que hayan pasado de la opción anterior serán puntuados para prioriza que platos debe o no debe tomar dicha persona.
+Descartaremos los platos peor puntuados de la lista, ya que perjudicarían el menú.
 
-Al final obtendremos una lista ordenada de los mejores platos para la persona, con los cuales diseñaremos el menú más adecuado para cada usuario. 
+Con los platos restantes diseñaremos el menú más adecuado para cada usuario. 
 
 
 \section{Formalización}
@@ -447,7 +448,7 @@ Dichos módulos son los siguientes:
 	\item \textbf{Módulo ask\_questions}: este módulo recopila toda la información que se necesita del usuario. Esta información se recopila mediante una serie de preguntas. 
 	\item \textbf{Módulo inference\_of\_data}:este módulo realiza todo el procesado de la información aportada por el ususario para poder generar la solución. En este módulo se calculan las calorías que necesita el usuario y se les asigna la puntuación a los platos dependiendo de sus preferencias, enfermedades.  
 	\item \textbf{Módulo generate\_solutions}: este módulo contiene las reglas que generan nuestro menú semanal.
-	\item \textbf{Módulo printing}: la función de este módulo es printar la información al usuario y finalizar la ejecucción
+	\item \textbf{Módulo printing}: la función de este módulo es imprimir la información al usuario y finalizar la ejecución.
 \end{itemize}
 
 
@@ -455,12 +456,12 @@ Dichos módulos son los siguientes:
 \subsection{Prototipos}
 Tal y como se ha mencionado anteriormente, hemos seguido para el desarrollo de la práctica un método incremental por prototipos. Este tipo de desarrollo nos ha permitido avanzar de manera más organizada y paulatina. 
 \\
-En un inicio, desarrollemos nuestro \textbf{prototipo inicial}: una ontología bastante completa (muy parecida a la que se ha utilizado en la versión final) y un sistema que hacía preguntas y creaba un menú totalmente random.  Nos sirvió para empezar a familiarizarnos con \textbf{Protégé} y \textbf{CLIPS} y en cómo tenían que ser las instancias. Después iteremos sobre ese prototipo: creemos un script en \textbf{Python} para facilitarnos la creación de las instancias y empezemos a añadir las primeras reglas básicas (i.e. restricciones de vegetariano). 
+En un inicio, desarrollemos nuestro \textbf{prototipo inicial}: una ontología bastante completa (muy parecida a la que se ha utilizado en la versión final) y un sistema que hacía preguntas y creaba un menú totalmente aleatorio.  Nos sirvió para empezar a familiarizarnos con \textbf{Protégé} y \textbf{CLIPS} y en cómo tenían que ser las instancias. Después iteremos sobre ese prototipo: creemos un script en \textbf{Python} para facilitarnos la creación de las instancias y empezemos a añadir las primeras reglas básicas (i.e. restricciones de vegetariano). 
 \\
 Entonces después de hacer unos pequeños cambios en la ontología y por consiguiente en el script para crear instancias, procedimos a crear, de manera progresiva, las diferentes reglas inherentes al conocimiento: enfermedades, limitaciones, preferencias, etc.
 
-\section{Juego de Prueba}
-Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas a testear diferentes puntos de la aplicación. Así pues, mediante estas pruebas, hemos podido comprovar el correcto funcionamento del sistema, tanto a nivel general como a nivel particular.
+\section{Juegos de Prueba}
+Una vez implementado nuestro SBC, hemos realizado una serie de pruebas enfocadas a testear diferentes puntos de la aplicación. Así pues, mediante estas pruebas, hemos podido comprobar el correcto funcionamento del sistema, tanto a nivel general como a nivel particular.
 
 \subsection{Prueba 1: Usuario Estándard}
 \subsubsection{Descripción del caso}
@@ -527,12 +528,12 @@ Además, puesto que el requisito de la carne de cerdo tiene más peso que el de 
 
 \subsubsection{Resultado obtenido}
 
-En este apartado hemos obtenido un resultado con pocas calorias. Esto es debido a que la persona realiza mucho ejercicio, esto proboca que la cantidad de calorias al dia sea muy grande. Por otro lado al ser muslmán, no puede comer cerdo, por lo tanto todos los platos con bastantes calorias que contienen cerdo no serán cogidos.
-Esto se podria solucionar si el programa tubiese mas variedad de platos con mayores cantidades para personas que no comen carne.
+En este apartado hemos obtenido un resultado con pocas calorías. Esto es debido a que la persona realiza mucho ejercicio, esto provoca que la cantidad de calorías al día sea muy grande. Por otro lado al ser musulmán, no puede comer cerdo, por lo tanto todos los platos con bastantes calorías que contienen cerdo no serán cogidos.
+Esto se podría solucionar si el programa tuviese mas variedad de platos con mayores cantidades para personas que no comen carne.
 
 \subsection{Prueba 4: Mujer con gota que necesita pocas calorías con preferencias alimentícias}
 
-En este caso hemos querido probar como funcionaba nuestro SBC con una \textbf{mujer con gota y que necesita pocas calorías}. La mujer en cuestión además tiene \textbf{preferencias alimentícias que no están acorde con la enfermedad}. Es decir, prefiere comer carne y marisco cuando su enfermedad se lo restringe. 
+En este caso hemos querido probar como funcionaba nuestro SBC con una \textbf{mujer con gota y que necesita pocas calorías}. La mujer en cuestión además tiene \textbf{preferencias alimenticias que no están acorde con la enfermedad}. Es decir, prefiere comer carne y marisco cuando su enfermedad se lo restringe. 
 
 \begin{itemize}
 \item \textbf{Sexo}: Mujer
@@ -544,11 +545,11 @@ En este caso hemos querido probar como funcionaba nuestro SBC con una \textbf{mu
 \end{itemize}
 
 \subsubsection{Solución esperada}
-Esperamos obtener una solución que esté acorde con los requisitos alimentícios de la gota. Es importante mencionar que las preferencias de la persona son contrarias a las restricciones de la enfermedad. No obstante, debido a que las restricciones de enfermedad tienen más peso que las otras, esperamos seguir obteniendo un buen resultado. Además también queremos probar como se comporta nuestro sistema cuando el individuo necesita una cantidad muy pequeña de calorías. 
+Esperamos obtener una solución que esté acorde con los requisitos alimenticios de la gota. Es importante mencionar que las preferencias de la persona son contrarias a las restricciones de la enfermedad. No obstante, debido a que las restricciones de enfermedad tienen más peso que las otras, esperamos seguir obteniendo un buen resultado. Además también queremos probar como se comporta nuestro sistema cuando el individuo necesita una cantidad muy pequeña de calorías. 
 
 \subsubsection{Resultado obtenido}
 
-En este caso hemos obtenido un resultado bastante curioso, porque al no poder comer carne, pero al gustarle mucho, aparece bastantas veces la carne en los resultados. Esto proboca que seguramente el menú obtenido no seria del todo adecuado para esta persona, porque hay demasiado carne.
+En este caso hemos obtenido un resultado bastante curioso, porque al no poder comer carne, pero al gustarle mucho, aparece bastantes veces la carne en los resultados. Esto provoca que seguramente el menú obtenido no seria del todo adecuado para esta persona, porque hay demasiado carne para lo que su enfermedad requiere.
 
 \subsection{Prueba 5: Mujer vegana}
 En este caso, hemos querido observar como se comporta nuestro sistema cuando se le añade la restricción de \textbf{veganismo}. Ésta es una de las más restrictivas puesto que restringe carne, huevos, lácteos y pescado entre otros. 
@@ -571,7 +572,7 @@ El menú dado consigue respetar en gran parte las estrictas necesidades de una p
 Los platos mejor puntuados por el sistema, tal como esperábamos, son de contenido animal nulo (macarrones, arroz, albóndigas veganas, nuggets veganos...).
 
 Aún así, para garantizar los requerimientos energéticos, el sistema ha introducido un par de platos no veganos (lasaña y cordero).
-Hemos obtenido así un menu que se acerca mucho a las necesidades calóricas del individuo, obteniendo un menu con valor calórico medio-bajo.
+Hemos obtenido así un menú que se acerca mucho a las necesidades calóricas del individuo, obteniendo un menú con valor calórico medio-bajo.
 
 \subsection{Prueba 6: Hombre con muchas preferencias}
 En este caso, hemos querido observar como se comporta nuestro sistema con una persona que tiene como preferencia alimentícia fruta y verdura y no le gusta nada la carne. Así pues, podremos ver la diferencia entre un menú con estas preferencias y un vegetariano lo cual consideramos interesante para testear el sistema de preferencias implementado. 
@@ -596,7 +597,7 @@ No obstante, tal y como sugeríamos, podemos observar una predominancia en la ca
 Además la única presencia de platos con carne son espaguetis a la boloñesa así que la preferencia se ha podido cumplir más que satisfactoriamente. 
 
 \section{Conclusión}
-Podemos concluir que hemos aprendido sobre SBC y sobre el desarrollo de éstos pues hemos sido capaces de desarrollar un SBC functional basado en otologías y reglas de producción.
+Podemos concluir que hemos aprendido sobre SBC y sobre el desarrollo de éstos pues hemos sido capaces de desarrollar un SBC funcional basado en otologías y reglas de producción.
 
 No obstante, cabe mencionar que debido a la complejidad inherente a la representación del conocimiento y el poco tiempo del que se ha dispuesto para realizar la práctica, el sistema podría ser mejorado con más conocimiento y más instancias. 
 \\
@@ -607,8 +608,8 @@ A pesar de eso, hemos profundizado en el subcampo de los SBC y hemos conseguido 
 \appendix
 \appendixpage
 \addappheadtotoc
-\section{Casos de prueba}
-En este apartado incluíremos los outputs de los casos de prueba que antes hemos analizado.
+\section{Juegos de prueba completos}
+En este anexo incluiremos los \emph{intputs} y \emph{outputs} completos de los casos de prueba que antes hemos tratado al ejecutarlos en nuestro sistema \emph{CLIPS}.
 
 \subsection{Prueba 1: Usuario Estándard}
 
