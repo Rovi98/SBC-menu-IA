@@ -662,9 +662,14 @@
 (defrule MAIN::system-banner
   (declare (salience 10))
   =>
-  (printout t crlf crlf)
-  (printout t "Food Menu v0.8")
-  (printout t crlf crlf)
+  (open "ascii.txt" asciiFile "r")
+  (bind ?line (readline asciiFile))
+  (while (neq EOF ?line) do
+    (printout t ?line crlf)
+    (bind ?line (readline asciiFile))
+  )
+  (printout t crlf)
+  (close asciiFile)
   (focus ask_questions)
 )
 
