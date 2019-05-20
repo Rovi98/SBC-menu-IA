@@ -7,7 +7,7 @@
 \author{Carlos Bergillos, Roger Vilaseca, Adrià Cabeza}
 \title{Creación de dietas para ancianos: \\ sistemas Basados en el conocimiento \\
 	\large IA FIB @ UPC}
-%\usepackage[margin=1.25in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 \usepackage{listings}
 \lstset{
 	    basicstyle=\ttfamily,
@@ -28,7 +28,7 @@
 \newpage
 \tableofcontents
 \newpage
-\section{Introducción} %CREC QUE DONE
+\section{Introducción} 
 
 Los \textbf{sistemas basados en el conocimiento (SBC)} son la parte de la Inteligencia Artificial donde se intenta hallar una solución utilizando el conocimiento. Hay ciertos problemas en la vida real que no se pueden resolver sin tener conocimiento específico sobre los elementos del dominio. 
 \par
@@ -50,7 +50,6 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 En este primer apartado del trabajo, describiremos el problema, sus distintas partes y las fuentes de información que requieren. Además añadiremos un análisis de viabilidad acerca la opción de utilizar un SBC para su resolución.
 
 \subsection{Descripción del problema}
-% REESCRIURE I ALLARGAR, DEMANEN QUE SIGUI MÉS GRAN QUE EL PROPI ENUNCIAT
 La alimentación es una pieza clave de nuestras vidas: nuestra manera de alimentarnos define nuestra salud, tanto física como mental. Con nuestra alimentación podemos prevenir el riesgo y agravamiento de enfermedades y mantener un nivel óptimo de salud. Para obtener una \textbf{buena alimentación} necesitamos consumir una cantidad equilibrada de nutrientes, integrada por nutrientes, vitaminas, proteínas, lípidos...
 \\
 Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza. Debido a eso, cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
@@ -71,7 +70,7 @@ Pese a que se podría utilizar otros métodos como la satisfacción de restricci
 
 Nuestras fuentes de conocimiento se pueden dividir en dos grandes pilares:
 \begin{itemize}
-	\item \textbf{El usuario}: la persona que utilize nuestro sistema tendrá que indicar e introducir información acerca de su edad, sexo, enfermedades...para que podamos proporcionarle el mejor plan alimenticio. %maybe podem ser més específics amb el què preguntem i el perquè
+	\item \textbf{El usuario}: la persona que utilize nuestro sistema tendrá que indicar e introducir información acerca de su edad, sexo, enfermedades...para que podamos proporcionarle el mejor plan alimenticio. 
 	\item \textbf{Platos, ingredientes, enfermedades, nutrientes, etc}: el conjunto de conocimiento que necesita nuestro SBC para poder operar ha sido obtenido utilizando recursos en la red, especialmente se ha usado documentación especializada en el tema. 
 \end{itemize}
 
@@ -96,7 +95,7 @@ En este apartado describiremos todos los conceptos del dominio.
 \item \textbf{Persona}: las características necesarias para definir correctamente a la persona (usuario) son: \begin{itemize}
 	\item \textbf{Edad}: tiene que ser $>=$ 65 ya que el sistema está orientado a ancianos
 	\item \textbf{Género}: ya que dependiendo del sexo se tienen que seguir unas restricciones alimentícias u otras.
-	\item \textbf{Nivel de ejercicio semanal}: que puede ser COMPLETAR
+	\item \textbf{Nivel de ejercicio semanal}: que puede ser Sedentario, Activo o Vigorosamente Activo
 	\item \textbf{Enfermedades que padece}
 	\item \textbf{Preferencias alimenticias}: que pueden ser Vegetariano, Vegano o Musulmán
 	\end{itemize}
@@ -177,7 +176,7 @@ En nuestro caso lo vamos a dividir entre los siguientes 4:
 
 \subsubsection{Recogida de información personal}
 
-En esta parte del problema realizaremos varias preguntas al usuario (descritas en el apartado anterior), donde obtendremos la suficiente información para luego poder ser usado y obtener un menú adecuado a las condiciones y gustos de la persona.
+En esta parte del problema realizaremos varias preguntas al usuario, donde obtendremos la suficiente información para luego poder ser usado y obtener un menú adecuado a las condiciones y gustos de la persona.
 
 \subsubsection{Análisis de los datos personales}
 
