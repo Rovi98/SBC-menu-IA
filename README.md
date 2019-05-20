@@ -1,4 +1,12 @@
-Autores: Carlos Bergillos, Roger Vilaseca y Adrià Cabeza 
+[![HitCount](http://hits.dwyl.io/Rovi98/SBC-menu-IA.svg)](http://hits.dwyl.io/Rovi98/SBC-menu-IA)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Rovi98/SBC-menu-IA.svg)](https://github.com/Rovi98/SBC-menu-IA)
+[![GitHub contributors](https://img.shields.io/github/contributors/Rovi98/SBC-menu-IA.svg)](https://GitHub.com/Rovi98/SBC-menu-IA/graphs/contributors/)
+
+**Autores: Carlos Bergillos, Roger Vilaseca y Adrià Cabeza**
+
+
+[![forthebadge](https://forthebadge.com/images/badges/certified-elijah-wood.svg)](https://forthebadge.com)
+
 Trabajo de Sistemas Basados en el Conocimiento: IA (2018-2019 Primavera)
 
 ![image](images/UPClogo.png)
