@@ -2,3 +2,59 @@
 	(value -50)
 	(type [FoodType_Sweets]))
 
+([LimitationType_BeefProducts-50] of LimitationType
+	(value -50)
+	(type [FoodType_BeefProducts]))
+
+([LimitationType_SausagesandLuncheonMeats-50] of LimitationType
+	(value -50)
+	(type [FoodType_SausagesandLuncheonMeats]))
+
+([LimitationType_PorkProducts-50] of LimitationType
+	(value -50)
+	(type [FoodType_PorkProducts]))
+
+([LimitationType_PoultryProducts-50] of LimitationType
+	(value -50)
+	(type [FoodType_PoultryProducts]))
+
+([LimitationType_FinfishandShellfishProducts-50] of LimitationType
+	(value -50)
+	(type [FoodType_FinfishandShellfishProducts]))
+
+([LimitationType_FinfishandShellfishProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_FinfishandShellfishProducts]))
+
+([LimitationType_LambVealandGameProducts-50] of LimitationType
+	(value -50)
+	(type [FoodType_LambVealandGameProducts]))
+
+([LimitationType_BeefProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_BeefProducts]))
+
+([LimitationType_SausagesandLuncheonMeats50] of LimitationType
+	(value 50)
+	(type [FoodType_SausagesandLuncheonMeats]))
+
+([LimitationType_PorkProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_PorkProducts]))
+
+([LimitationType_PoultryProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_PoultryProducts]))
+
+([LimitationType_LambVealandGameProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_LambVealandGameProducts]))
+
+([LimitationType_VegetablesandVegetableProducts50] of LimitationType
+	(value 50)
+	(type [FoodType_VegetablesandVegetableProducts]))
+
+([LimitationType_FruitsandFruitJuices50] of LimitationType
+	(value 50)
+	(type [FoodType_FruitsandFruitJuices]))
+

@@ -15,3 +15,43 @@
 		[LimitationNutrient_fat-50])
 	(name_ "Colesterol"))
 
+([Disease_Gota] of Disease
+	(limitations 
+		[LimitationType_PorkProducts-50]
+		[LimitationType_BeefProducts-50]
+		[LimitationType_SausagesandLuncheonMeats-50]
+		[LimitationType_PoultryProducts-50]
+		[LimitationType_FinfishandShellfishProducts-50]
+		[LimitationType_LambVealandGameProducts-50])
+	(name_ "Gota"))
+
+([Disease_Hipertension] of Disease
+	(limitations 
+		[LimitationNutrient_alcohol-50]
+		[LimitationNutrient_caffeine-50])
+	(name_ "Hipertension"))
+
+([Disease_Cirrhosis] of Disease
+	(limitations 
+		[LimitationNutrient_alcohol-50]
+		[LimitationType_VegetablesandVegetableProducts50])
+	(name_ "Cirrhosis"))
+
+([Disease_Anemia] of Disease
+	(limitations 
+		[LimitationType_PorkProducts50]
+		[LimitationType_BeefProducts50]
+		[LimitationType_SausagesandLuncheonMeats50]
+		[LimitationType_PoultryProducts50]
+		[LimitationType_LambVealandGameProducts50])
+	(name_ "Anemia"))
+
+([Disease_OsteoporosisArthritis] of Disease
+	(limitations 
+		[LimitationType_FinfishandShellfishProducts50]
+		[LimitationType_FruitsandFruitJuices50]
+		[LimitationNutrient_alcohol-50]
+		[LimitationNutrient_caffeine-50]
+		[LimitationNutrient_calcium50])
+	(name_ "Osteoporosis / Arthritis"))
+

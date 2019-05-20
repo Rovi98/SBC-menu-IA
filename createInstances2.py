@@ -112,7 +112,12 @@ for course in list(Breakfast+FirstCourse+SecondCourse+Dessert):
 
 ENFERMETATS = [[['Nutrient_sugar-50','Type_Sweets-50'],'Diabetes'],
                 [['Nutrient_gluten-100'],'Celiac'],
-                [['Nutrient_colesterol-50','Nutrient_fat-50'],'Colesterol']]
+                [['Nutrient_colesterol-50','Nutrient_fat-50'],'Colesterol'],
+                [['Type_PorkProducts-50', 'Type_BeefProducts-50', 'Type_SausagesandLuncheonMeats-50', 'Type_PoultryProducts-50', 'Type_FinfishandShellfishProducts-50', 'Type_LambVealandGameProducts-50'],'Gota'],
+                [['Nutrient_alcohol-50','Nutrient_caffeine-50'],'Hipertension'],
+                [['Nutrient_alcohol-50','Type_VegetablesandVegetableProducts50'],'Cirrhosis'],
+                [['Type_PorkProducts50', 'Type_BeefProducts50', 'Type_SausagesandLuncheonMeats50', 'Type_PoultryProducts50', 'Type_LambVealandGameProducts50'],'Anemia'],
+                [['Type_FinfishandShellfishProducts50','Type_FruitsandFruitJuices50', 'Nutrient_alcohol-50','Nutrient_caffeine-50','Nutrient_calcium50'],'Osteoporosis / Arthritis']]
 
 # TODO AFEGIR ENFERMETATS AMB ELS TIPUS QUE TINGUIN SENTIT
 """
@@ -121,7 +126,7 @@ ENFERMETATS = [[['Nutrient_sugar-50','Type_Sweets-50'],'Diabetes'],
 """
 
 
-LIMITACIONS_TIPO = [-100,-50]
+LIMITACIONS_TIPO = [-100,-50,50]
 LIMITACIONS_NUTRIENTS = [
 		['sugar',LIMITACIONS_TIPO[1]],
 		['hidratos',LIMITACIONS_TIPO[1]],
@@ -130,11 +135,28 @@ LIMITACIONS_NUTRIENTS = [
         ['glucosa',LIMITACIONS_TIPO[1]],
         ['colesterol',LIMITACIONS_TIPO[1]],
         ['saturated',LIMITACIONS_TIPO[0]],
-        ['fat', LIMITACIONS_TIPO[1]]]
+        ['fat', LIMITACIONS_TIPO[1]],
+        ['caffeine', LIMITACIONS_TIPO[1]],
+        ['alcohol', LIMITACIONS_TIPO[1]],
+        ['calcium', LIMITACIONS_TIPO[2]]]
 
 #TODO: FICAR LIMITACIONS TIPUS AMB ELS TIPUS DEL DATASET
 LIMITACIONS_TIPUS = [
-        ['Sweets',LIMITACIONS_TIPO[1]]
+        ['Sweets',LIMITACIONS_TIPO[1]],
+        ['BeefProducts',LIMITACIONS_TIPO[1]],
+        ['SausagesandLuncheonMeats',LIMITACIONS_TIPO[1]],
+        ['PorkProducts',LIMITACIONS_TIPO[1]],
+        ['PoultryProducts',LIMITACIONS_TIPO[1]],
+        ['FinfishandShellfishProducts',LIMITACIONS_TIPO[1]],
+        ['FinfishandShellfishProducts',LIMITACIONS_TIPO[2]],
+        ['LambVealandGameProducts',LIMITACIONS_TIPO[1]],
+        ['BeefProducts',LIMITACIONS_TIPO[2]],
+        ['SausagesandLuncheonMeats',LIMITACIONS_TIPO[2]],
+        ['PorkProducts',LIMITACIONS_TIPO[2]],
+        ['PoultryProducts',LIMITACIONS_TIPO[2]],
+        ['LambVealandGameProducts',LIMITACIONS_TIPO[2]],
+        ['VegetablesandVegetableProducts',LIMITACIONS_TIPO[2]],
+        ['FruitsandFruitJuices',LIMITACIONS_TIPO[2]]
         ] 
 
 # FOOD TYPES
