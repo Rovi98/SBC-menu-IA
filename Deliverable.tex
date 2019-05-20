@@ -1,6 +1,5 @@
 \documentclass[12]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
 \usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
@@ -33,7 +32,7 @@
 
 Los \textbf{sistemas basados en el conocimiento (SBC)} son la parte de la Inteligencia Artificial donde se intenta hallar una solución utilizando el conocimiento. Hay ciertos problemas en la vida real que no se pueden resolver sin tener conocimiento específico sobre los elementos del dominio. 
 \par
-El motivo de esta práctica es comprender estos modelos de IA así que hemos atacado un problema con esta técnica: creación de menús para ancianos dependiendo de sus necesidades nutricionales y requisitos médicos. 
+El motivo de esta práctica es comprender estos modelos de IA. Por eso hemos atacado un problema con esta técnica. El problema en cuestión ha sido la creación de menús para ancianos dependiendo de sus necesidades nutricionales y requisitos médicos. 
 \par
 Hemos desarrollado una ontología capaz de almacenar la información sobre los platos, los ingredientes, los nutrientes, las enfermedades y las limitaciones con \textbf{Protégé} y un sistema de reglas que describen el proceso de toma de decisiones usando \textbf{CLIPS}.
 \par
@@ -48,20 +47,20 @@ Para atacar el problema de una manera adecuada hemos utilizado las diferentes fa
 \end{itemize}
 
 \section{Identificación}
-En este primer apartado del trabajo, describiremos el problema, sus distintas partes y fuentes de infromación que requieren. Además añadiremos un análisis de viabilidad de utilizar un SBC para su resolución.
+En este primer apartado del trabajo, describiremos el problema, sus distintas partes y las fuentes de información que requieren. Además añadiremos un análisis de viabilidad acerca la opción de utilizar un SBC para su resolución.
 
 \subsection{Descripción del problema}
 % REESCRIURE I ALLARGAR, DEMANEN QUE SIGUI MÉS GRAN QUE EL PROPI ENUNCIAT
 La alimentación es una pieza clave de nuestras vidas: nuestra manera de alimentarnos define nuestra salud, tanto física como mental. Con nuestra alimentación podemos prevenir el riesgo y agravamiento de enfermedades y mantener un nivel óptimo de salud. Para obtener una \textbf{buena alimentación} necesitamos consumir una cantidad equilibrada de nutrientes, integrada por nutrientes, vitaminas, proteínas, lípidos...
 \\
-Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza, es por eso que cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
+Además cuando nos hacemos mayores nuestra salud se vuelve más frágil y quebradiza. Debido a eso, cuantos más años tenemos, más tenemos que vigilar nuestra alimentación.
 \\
 En esta práctica desarrollaremos una solución para este problema. Una solución basada en un sistema basado en el conocimiento que sea capaz de generar menús semanales personalizados adecuados a las características de una persona según su edad, sus restricciones de dieta considerando sus enfermedades y sus preferencias generales sobre la comida.\\
 
-Por ejemplo, si una persona es vegetariana y además diabética se lo generaría un horari sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
+Por ejemplo, si una persona es vegetariana y además diabética, se le generaría un menú sin carne y con poca cantidad de azúcares. Además tal y como hemos mencionado, nuestro sistema también admite preferencias, así pues a una persona que tenga osteroporosis y no le guste nada la verdura se le intentará asignar un menú que contenga calcio y que no tenga platos con verduras. 
 
 \subsection{Viabilidad de utilizar un SBC}
-Si analizamos el problema podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
+Si analizamos el problema, podemos observar que no es un problema que se pueda resolver simplemente con algoritmos, sinó que el sistema requiere, para poder operar, de un conocimiento de nutrición salud.
 \\
 Además nuestro objetivo, como ya hemos mencionado anteriormente, es dada la información de un anciano como input es dar una solución viable. Así que un SBC parece una opción bastante apropiada para enfretarse al problema. 
 \medskip
@@ -182,11 +181,12 @@ En esta parte del problema realizaremos varias preguntas al usuario (descritas e
 
 \subsubsection{Análisis de los datos personales}
 
-Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. En esta parte también vamos a descartar aquellos platos que la persona no pueda tener en su menú en ninguna circunstancia.
+Una vez obtenidos los datos de la persona, el experto clasificará mediante una puntuación los diferentes platos según lo adecuados que sean para la persona. Para esto tendremos en cuenta si la persona tiene alguna enfermeda, alguna preferencia alimentaria, su religión o que clase de alimentos prefiere.
 
 \subsubsection{Filtrado de platos para el menú}
 
-Vamos a coger los diferentes platos y los vamos a repartir mediante ... FALTA ACABAR UN COP DECIDIM L?ALGORITME FINAL
+Para decidir que platos entran en el menú primero de todo vamos a coger los 7 desayunos y los 15 postres mejor puntuados del apartado anterior y los vamos a fijar en nuestro menú. A continuación fijaremos todos los primeros platos menos 4 y todos los segundos platos menos 5 (cogiendo los que tengan mejor puntación).
+Finalmente con los platos que falten, haremos diferentes permutaciones para encontrar los platos que sean mas adecuado para la cantidad de calorias necesarias para la persona.
 
 \subsubsection{Impresión del menú}
 
@@ -412,7 +412,7 @@ Los problemas que se resuelven mediante clasificación heurística se pueden div
 
 En esta parte del problema pasaremos de un problema concreto a un problema abstracto. 
 Obteniendo los datos de la persona (condiciones físicas, enfermedades, preferencias alimentarias...), el sistema abstraerá los datos necesarios por tal de poder ser usados luego para encontrar la mejor situación.
-En nuestro caso podemos encontrar esta parte del problema en los módulos NO ELS TINC A MÀ.
+En nuestro caso podemos encontrar esta parte del problema en los módulos MAIN, ask\_questions.
 
 \subsubsection{Asociación heurística}
 
@@ -421,14 +421,14 @@ A partir de los diferentes datos del problema abstracto obtenido en la primera p
 Por ejemplo una persona vegetariana obtendrá una puntuación menor para los platos que contengan carne.
 También en esta parte haremos el cálculo de Harris Benedict para obtener el número de calorías que necesita una persona al día.
 De esta forma tendremos una lista ordenada de los platos mas recomendados para cada usuario.
-Esta parte lo podemos encontrar en los módulos, FALTA MODULS.
+Esta parte lo podemos encontrar en el modulo inference\_of\_data.
 
 \subsubsection{Adaptación}
 
 Finalmente la Adaptación consiste en pasar de la solución abstracta a la solución concreta.
 Aquí cogeremos las listas de platos ordenadas i repartiremos estos platos en un menú dónde cada día se cumpla el número de calorías necesarias.
 Finalmente sacaremos por pantalla el menú obtenido para la persona i la cantidad de calorías que contiene.
-La adaptación esta formada por los módulos AAAAAAA.
+La adaptación esta formada por los módulos generate\_solutions i printing.
 
 \section{Implementación}
 
