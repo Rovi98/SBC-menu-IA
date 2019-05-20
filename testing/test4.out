@@ -1,0 +1,315 @@
+| > How old are you? 
+| 
+92	;age
+| > How tall are you? (cm) 
+| 168	;height
+| > What is your weight? (kg) 
+| 72	;weight
+| > What is your gender? 
+	1) Male
+	2) Female
+	3) n/a
+| 2	;sex: female
+| > How much exercise do you do per week? 
+	1) Sedentary
+	2) Active
+	3) Vigorously-active
+| 1	;execise-level: sedentary
+| > Do you have any of the following diseases? List as many as required. 
+	1) Diabetes
+	2) Celiac
+	3) Colesterol
+	4) Gota
+	5) Hipertension
+	6) Cirrhosis
+	7) Anemia
+	8) Osteoporosis / Arthritis
+| 4	;diseases: gota
+| > Do you eat meat? (yes/no) 
+| yes	;eat meat
+| > Are you from one of this religions? 
+	1) Muslim
+	2) Jewish
+	3) None
+| 3	;religion
+| > Do you really LIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Vegetables and Vegetable Products
+	8) Nut and Seed Products
+	9) Beef Products
+	10) Sausages and Luncheon Meats
+	11) Finfish and Shellfish Products
+	12) Legumes and Legume Products
+	13) Sweets
+	14) Soups, Sauces, and Gravies
+	15) SnacksBreakfast Cereals
+	16) Baked Products
+	17) Lamb, Veal, and Game Products
+	18) Cereal Grains and Pasta
+| 4 6 9 10 11 17	;positive preferences: Meat and fish
+| > Do you DISLIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Fruits and Fruit Juices
+	5) Vegetables and Vegetable Products
+	6) Nut and Seed Products
+	7) Legumes and Legume Products
+	8) Sweets
+	9) Soups, Sauces, and Gravies
+	10) SnacksBreakfast Cereals
+	11) Baked Products
+	12) Cereal Grains and Pasta
+| 	;no negative preferences
+| > Do you want a detailed output? With detailed ingredient information? (yes/no) 
+| yes	;verbose print
+
+Processing the data obtained...
+
+############################################
+############# USER INFORMATION #############
+############################################
+
+Sex:				Female
+Age:				92
+Height:				168 cm
+Weight:				72 kg
+Exercise Level:		Sedentary
+Required Daily Calories:	1757 kcal
+
+############################################
+############################################
+
+Generating solution...
+
+############################################
+################### MENU ###################
+############################################
+
+Menu:
+============================================
+|||| Monday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Tofu Sandwich [253 kcal]
+|| 	-> Tofu, soft
+|| 	-> Tomatoes, red
+|| 	-> Bread, white
+||
+|| >>>   Lunch   <<<
+|| - Macaroni with tomato [326 kcal]
+|| 	-> Pasta, cooked
+|| 	-> Tomato products, canned
+|| - Salmon [364 kcal]
+|| 	-> Fish, salmon
+|| - Chocolate cake [194 kcal]
+|| 	-> Cake, chocolate
+||
+|| >>>   Dinner  <<<
+|| - Pupkin cream [79 kcal]
+|| 	-> Pumpkin, cooked
+|| 	-> Potatoes, boiled
+|| - Sausages [588 kcal]
+|| 	-> Sausage, Italian
+|| - Yogurt [63 kcal]
+|| 	-> Yogurt, plain
+||
+============================================
+|||| Tuesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Chorizo Sandwich [381 kcal]
+|| 	-> Chorizo, pork and beef
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Melon with ham [153 kcal]
+|| 	-> Melons, casaba
+|| 	-> Pork, cured
+|| - Veggie Nuggets [335 kcal]
+|| 	-> MORNINGSTAR FARMS Garden Veggie Nuggets, frozen
+|| - Apple Pie [162 kcal]
+|| 	-> Cake, fruitcake
+||
+|| >>>   Dinner  <<<
+|| - Three Delight Rice [310 kcal]
+|| 	-> Rice, white
+|| 	-> Peas, split
+|| 	-> Corn, sweet
+|| - Tuna [368 kcal]
+|| 	-> Fish, tuna
+|| - Gelatin [62 kcal]
+|| 	-> Gelatin desserts, dry mix
+||
+============================================
+|||| Wednesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Nuts with milk [260 kcal]
+|| 	-> Nuts, walnuts
+|| 	-> Raisins, seeded
+|| 	-> Seeds, sunflower seed kernels
+|| 	-> Soymilk (all flavors), unsweetened
+||
+|| >>>   Lunch   <<<
+|| - Chickpeas [202 kcal]
+|| 	-> Chickpeas (garbanzo beans, bengal gram)
+|| - Loin [552 kcal]
+|| 	-> Beef, short loin
+|| - Watermelon [30 kcal]
+|| 	-> Watermelon, raw
+||
+|| >>>   Dinner  <<<
+|| - Lentils salad [226 kcal]
+|| 	-> Lentils, mature seeds
+|| 	-> Peppers, sweet
+|| 	-> Onions, raw
+|| - Ratatouille [66 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Tomatoes, red
+|| 	-> Squash, summer
+|| - Fruit Yogurt [102 kcal]
+|| 	-> Yogurt, fruit
+||
+============================================
+|||| Thursday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Vegan Cheese Sandwich [362 kcal]
+|| 	-> Imitation cheese, american or cheddar
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Mixed Vegetables [92 kcal]
+|| 	-> Vegetables, mixed (corn
+|| - Sole [176 kcal]
+|| 	-> Fish, flatfish (flounder and sole species)
+|| 	-> Onions, dehydrated flakes
+|| 	-> Pineapple, canned
+|| - Flan [145 kcal]
+|| 	-> Desserts, flan
+||
+|| >>>   Dinner  <<<
+|| - Vegan couscous [200 kcal]
+|| 	-> Couscous, cooked
+|| 	-> Carrots, cooked
+|| 	-> Peppers, sweet
+|| - Sardins with bread [312 kcal]
+|| 	-> Fish, sardine
+|| - Plum [46 kcal]
+|| 	-> Plums, raw
+||
+============================================
+|||| Friday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Muffins [340 kcal]
+|| 	-> English muffins, plain
+||
+|| >>>   Lunch   <<<
+|| - Fideua [449 kcal]
+|| 	-> Noodles, egg
+|| 	-> Mollusks, squid
+|| 	-> Mollusks, mussel
+|| - Vegan Meatballs [335 kcal]
+|| 	-> Meatballs, meatless
+|| - Orange [49 kcal]
+|| 	-> Oranges, raw
+||
+|| >>>   Dinner  <<<
+|| - Carbonara Spaghetti [453 kcal]
+|| 	-> Spaghetti, protein-fortified
+|| 	-> Pork, cured
+|| 	-> Milk, buttermilk
+|| - Hamburger [615 kcal]
+|| 	-> Rolls, hamburger or hotdog
+|| 	-> Tomatoes, red
+|| 	-> Bread, irish soda
+|| - Some Nuts [290 kcal]
+|| 	-> Nuts, mixed nuts
+||
+============================================
+|||| Saturday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Salami Sandwich [367 kcal]
+|| 	-> Salami, dry or hard
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Rice with tomato [272 kcal]
+|| 	-> Rice, white
+|| 	-> Tomato products, canned
+|| - Beef [579 kcal]
+|| 	-> Beef, flank
+|| - Banana [89 kcal]
+|| 	-> Bananas, raw
+||
+|| >>>   Dinner  <<<
+|| - Boiled Vegetables (Carrots, Potatoes and Peas) [238 kcal]
+|| 	-> Carrots, cooked
+|| 	-> Potatoes, boiled
+|| 	-> Peas, split
+|| - Veggie Lasagna [192 kcal]
+|| 	-> MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen
+|| - Pears [42 kcal]
+|| 	-> Pears, asian
+||
+============================================
+|||| Sunday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Ham Sandwich [294 kcal]
+|| 	-> Ham, sliced
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Green bean with potatoes [115 kcal]
+|| 	-> Beans, snap
+|| 	-> Potatoes, boiled
+|| - Fried chicken [403 kcal]
+|| 	-> Chicken, broilers or fryers
+|| - Apple [52 kcal]
+|| 	-> Apples, raw
+||
+|| >>>   Dinner  <<<
+|| - Chicken soup [82 kcal]
+|| 	-> Soup, chicken noodle
+|| - Veggie Burger [354 kcal]
+|| 	-> Veggie burgers or soyburgers, unprepared
+|| 	-> Tomatoes, red
+|| 	-> Bread, irish soda
+|| - Cherries [63 kcal]
+|| 	-> Cherries, sweet
+||
+============================================
+
+############################################
+############# MENU INFORMATION #############
+############################################
+
+Total Calories:		12084 kcal
+Approx. Daily Calories:	1726 kcal
+
+============================================
+Top Scored Courses
+============================================
+- Breakfasts:		("Muffins" "Salami Sandwich" "Ham Sandwich")
+- First Courses:	("Macaroni with tomato" "Rice with tomato" "Green bean with potatoes")
+- Second Courses:	("Fried chicken" "Hamburger" "Loin")
+- Desserts:		("Chocolate cake" "Fruit Yogurt" "Yogurt")
+
+############################################
+############################################

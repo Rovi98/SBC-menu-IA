@@ -1,0 +1,328 @@
+| > How old are you? 
+| 
+85	;age
+| > How tall are you? (cm) 
+| 160	;height
+| > What is your weight? (kg) 
+| 60	;weight
+| > What is your gender? 
+	1) Male
+	2) Female
+	3) n/a
+| 2	;sex: female
+| > How much exercise do you do per week? 
+	1) Sedentary
+	2) Active
+	3) Vigorously-active
+| 1	;execise-level: sedentary
+| > Do you have any of the following diseases? List as many as required. 
+	1) Diabetes
+	2) Celiac
+	3) Colesterol
+	4) Gota
+	5) Hipertension
+	6) Cirrhosis
+	7) Anemia
+	8) Osteoporosis / Arthritis
+| 1	;diseases: diabetes
+| > Do you eat meat? (yes/no) 
+| yes	;eat meat
+| > Are you from one of this religions? 
+	1) Muslim
+	2) Jewish
+	3) None
+| 3	;religion
+| > Do you really LIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Vegetables and Vegetable Products
+	8) Nut and Seed Products
+	9) Beef Products
+	10) Sausages and Luncheon Meats
+	11) Finfish and Shellfish Products
+	12) Legumes and Legume Products
+	13) Sweets
+	14) Soups, Sauces, and Gravies
+	15) SnacksBreakfast Cereals
+	16) Baked Products
+	17) Lamb, Veal, and Game Products
+	18) Cereal Grains and Pasta
+| 7 14	;positive-preferences: vegetables, soups
+| > Do you DISLIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Nut and Seed Products
+	8) Beef Products
+	9) Sausages and Luncheon Meats
+	10) Finfish and Shellfish Products
+	11) Legumes and Legume Products
+	12) Sweets
+	13) SnacksBreakfast Cereals
+	14) Baked Products
+	15) Lamb, Veal, and Game Products
+	16) Cereal Grains and Pasta
+| 3		;negative-preferences: fats
+| > Do you want a detailed output? With detailed ingredient information? (yes/no) 
+| yes	;verbose print
+
+Processing the data obtained...
+
+############################################
+############# USER INFORMATION #############
+############################################
+
+Sex:				Female
+Age:				85
+Height:				160 cm
+Weight:				60 kg
+Exercise Level:		Sedentary
+Required Daily Calories:	1551 kcal
+
+############################################
+############################################
+
+Generating solution...
+
+############################################
+################### MENU ###################
+############################################
+
+Menu:
+============================================
+|||| Monday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Cookies and milk [295 kcal]
+|| 	-> Cookies, oatmeal
+|| 	-> Milk, producer
+||
+|| >>>   Lunch   <<<
+|| - Chicken soup [82 kcal]
+|| 	-> Soup, chicken noodle
+|| - Grilled cuttlefish [211 kcal]
+|| 	-> Mollusks, cuttlefish
+|| 	-> Vegetables, mixed (corn
+|| - Fried milk [201 kcal]
+|| 	-> Milk, producer
+|| 	-> Egg, yolk
+|| 	-> Corn flour, whole-grain
+||
+|| >>>   Dinner  <<<
+|| - Potato with beans [329 kcal]
+|| 	-> Beans, baked
+|| 	-> Potatoes, boiled
+|| - Spinach with salmon dices [278 kcal]
+|| 	-> Spinach, cooked
+|| 	-> Fish, salmon
+|| - Watermelon [30 kcal]
+|| 	-> Watermelon, raw
+||
+============================================
+|||| Tuesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Two Oranges [98 kcal]
+|| 	-> Oranges, raw
+||
+|| >>>   Lunch   <<<
+|| - Gazpacho [90 kcal]
+|| 	-> Tomatoes, red
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Ratatouille [66 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Tomatoes, red
+|| 	-> Squash, summer
+|| - Rice with milk [112 kcal]
+|| 	-> Milk, producer
+|| 	-> Rice, white
+||
+|| >>>   Dinner  <<<
+|| - Mashed Potatoes with carrots [198 kcal]
+|| 	-> Potatoes, boiled
+|| 	-> Carrots, cooked
+|| - Spinach with salmon dices [278 kcal]
+|| 	-> Spinach, cooked
+|| 	-> Fish, salmon
+|| - Fried milk [201 kcal]
+|| 	-> Milk, producer
+|| 	-> Egg, yolk
+|| 	-> Corn flour, whole-grain
+||
+============================================
+|||| Wednesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Nuts with milk [260 kcal]
+|| 	-> Nuts, walnuts
+|| 	-> Raisins, seeded
+|| 	-> Seeds, sunflower seed kernels
+|| 	-> Soymilk (all flavors), unsweetened
+||
+|| >>>   Lunch   <<<
+|| - Pupkin cream [79 kcal]
+|| 	-> Pumpkin, cooked
+|| 	-> Potatoes, boiled
+|| - Tomato with Avocado [379 kcal]
+|| 	-> Avocados, raw
+|| 	-> Tomatoes, red
+|| - Some Nuts [290 kcal]
+|| 	-> Nuts, mixed nuts
+||
+|| >>>   Dinner  <<<
+|| - Mixed Vegetables [92 kcal]
+|| 	-> Vegetables, mixed (corn
+|| - Roasted Duck [495 kcal]
+|| 	-> Duck, domesticated
+|| 	-> Vegetables, mixed (corn
+|| - Pears [42 kcal]
+|| 	-> Pears, asian
+||
+============================================
+|||| Thursday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Doughnuts [639 kcal]
+|| 	-> Doughnuts, cake-type
+||
+|| >>>   Lunch   <<<
+|| - Mashed Potatoes with carrots [198 kcal]
+|| 	-> Potatoes, boiled
+|| 	-> Carrots, cooked
+|| - Carrot Cream [654 kcal]
+|| 	-> Cream, fluid
+|| 	-> Carrots, cooked
+|| - Strawberries with cream [84 kcal]
+|| 	-> Strawberries, raw
+|| 	-> Cream, fluid
+||
+|| >>>   Dinner  <<<
+|| - Chicken soup [82 kcal]
+|| 	-> Soup, chicken noodle
+|| - Grilled cuttlefish [211 kcal]
+|| 	-> Mollusks, cuttlefish
+|| 	-> Vegetables, mixed (corn
+|| - Coffee cake [502 kcal]
+|| 	-> Coffeecake, cinnamon with crumb topping
+||
+============================================
+|||| Friday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Bacon and Fried Eggs [412 kcal]
+|| 	-> Pork, cured
+|| 	-> Egg, whole
+||
+|| >>>   Lunch   <<<
+|| - Pupkin cream [79 kcal]
+|| 	-> Pumpkin, cooked
+|| 	-> Potatoes, boiled
+|| - Blue fish with boiled eggplants [421 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Fish, bluefish
+|| - Orange [49 kcal]
+|| 	-> Oranges, raw
+||
+|| >>>   Dinner  <<<
+|| - Mixed Vegetables [92 kcal]
+|| 	-> Vegetables, mixed (corn
+|| - Tomato with Avocado [379 kcal]
+|| 	-> Avocados, raw
+|| 	-> Tomatoes, red
+|| - Yogurt [63 kcal]
+|| 	-> Yogurt, plain
+||
+============================================
+|||| Saturday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Cookies and milk [295 kcal]
+|| 	-> Cookies, oatmeal
+|| 	-> Milk, producer
+||
+|| >>>   Lunch   <<<
+|| - Gazpacho [90 kcal]
+|| 	-> Tomatoes, red
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Roasted Duck [495 kcal]
+|| 	-> Duck, domesticated
+|| 	-> Vegetables, mixed (corn
+|| - Rice with milk [112 kcal]
+|| 	-> Milk, producer
+|| 	-> Rice, white
+||
+|| >>>   Dinner  <<<
+|| - Pumpkin cream [76 kcal]
+|| 	-> Pumpkin flowers, cooked
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Ratatouille [66 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Tomatoes, red
+|| 	-> Squash, summer
+|| - Coffee cake [502 kcal]
+|| 	-> Coffeecake, cinnamon with crumb topping
+||
+============================================
+|||| Sunday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Doughnuts [639 kcal]
+|| 	-> Doughnuts, cake-type
+||
+|| >>>   Lunch   <<<
+|| - Pumpkin cream [76 kcal]
+|| 	-> Pumpkin flowers, cooked
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Blue fish with boiled eggplants [421 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Fish, bluefish
+|| - Orange [49 kcal]
+|| 	-> Oranges, raw
+||
+|| >>>   Dinner  <<<
+|| - Green bean with potatoes [115 kcal]
+|| 	-> Beans, snap
+|| 	-> Potatoes, boiled
+|| - Baked Burbot with potatoes [335 kcal]
+|| 	-> Fish, bluefish
+|| 	-> Potatoes, boiled
+|| - Some Nuts [290 kcal]
+|| 	-> Nuts, mixed nuts
+||
+============================================
+
+############################################
+############# MENU INFORMATION #############
+############################################
+
+Total Calories:		11536 kcal
+Approx. Daily Calories:	1648 kcal
+
+============================================
+Top Scored Courses
+============================================
+- Breakfasts:		("Doughnuts" "Cookies and milk" "Two Oranges")
+- First Courses:	("Gazpacho" "Pumpkin cream")
+- Second Courses:	("Spinach with salmon dices" "Ratatouille")
+- Desserts:		("Orange" "Coffee cake" "Rice with milk")
+
+############################################
+############################################

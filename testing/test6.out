@@ -1,0 +1,343 @@
+| > How old are you? 
+| 
+76	;age
+| > How tall are you? (cm) 
+| 155	;height
+| > What is your weight? (kg) 
+| 74	;weight
+| > What is your gender? 
+	1) Male
+	2) Female
+	3) n/a
+| 1	;sex: male
+| > How much exercise do you do per week? 
+	1) Sedentary
+	2) Active
+	3) Vigorously-active
+| 2	;execise-level: active
+| > Do you have any of the following diseases? List as many as required. 
+	1) Diabetes
+	2) Celiac
+	3) Colesterol
+	4) Gota
+	5) Hipertension
+	6) Cirrhosis
+	7) Anemia
+	8) Osteoporosis / Arthritis
+| 	;no diseases
+| > Do you eat meat? (yes/no) 
+| yes	;eat meat
+| > Are you from one of this religions? 
+	1) Muslim
+	2) Jewish
+	3) None
+| 3	;religion
+| > Do you really LIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Vegetables and Vegetable Products
+	8) Nut and Seed Products
+	9) Beef Products
+	10) Sausages and Luncheon Meats
+	11) Finfish and Shellfish Products
+	12) Legumes and Legume Products
+	13) Sweets
+	14) Soups, Sauces, and Gravies
+	15) SnacksBreakfast Cereals
+	16) Baked Products
+	17) Lamb, Veal, and Game Products
+	18) Cereal Grains and Pasta
+| 7	;no positive preferences
+| > Do you DISLIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Nut and Seed Products
+	8) Beef Products
+	9) Sausages and Luncheon Meats
+	10) Finfish and Shellfish Products
+	11) Legumes and Legume Products
+	12) Sweets
+	13) Soups, Sauces, and Gravies
+	14) SnacksBreakfast Cereals
+	15) Baked Products
+	16) Lamb, Veal, and Game Products
+	17) Cereal Grains and Pasta
+| 4 6 8 9 10 16	;no negative preferences
+| > Do you want a detailed output? With detailed ingredient information? (yes/no) 
+| yes	;verbose print
+
+Processing the data obtained...
+
+############################################
+############# USER INFORMATION #############
+############################################
+
+Sex:				Male
+Age:				76
+Height:				155 cm
+Weight:				74 kg
+Exercise Level:		Active
+Required Daily Calories:	2347 kcal
+
+############################################
+############################################
+
+Generating solution...
+
+############################################
+################### MENU ###################
+############################################
+
+Menu:
+============================================
+|||| Monday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Tofu Sandwich [253 kcal]
+|| 	-> Tofu, soft
+|| 	-> Tomatoes, red
+|| 	-> Bread, white
+||
+|| >>>   Lunch   <<<
+|| - Pupkin cream [79 kcal]
+|| 	-> Pumpkin, cooked
+|| 	-> Potatoes, boiled
+|| - Tomato with Avocado [379 kcal]
+|| 	-> Avocados, raw
+|| 	-> Tomatoes, red
+|| - Orange [49 kcal]
+|| 	-> Oranges, raw
+||
+|| >>>   Dinner  <<<
+|| - Mashed Potatoes with carrots [198 kcal]
+|| 	-> Potatoes, boiled
+|| 	-> Carrots, cooked
+|| - Bolognesa Spaghetti [389 kcal]
+|| 	-> Tomato products, canned
+|| 	-> Bologna, meat and poultry
+|| 	-> Cheese, mozzarella
+|| 	-> Squash, winter
+|| - Pears [42 kcal]
+|| 	-> Pears, asian
+||
+============================================
+|||| Tuesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Vegan Cheese Sandwich [362 kcal]
+|| 	-> Imitation cheese, american or cheddar
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Pumpkin cream [76 kcal]
+|| 	-> Pumpkin flowers, cooked
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Ratatouille [66 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Tomatoes, red
+|| 	-> Squash, summer
+|| - Apple Pie [162 kcal]
+|| 	-> Cake, fruitcake
+||
+|| >>>   Dinner  <<<
+|| - Gazpacho [90 kcal]
+|| 	-> Tomatoes, red
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Grilled cuttlefish [211 kcal]
+|| 	-> Mollusks, cuttlefish
+|| 	-> Vegetables, mixed (corn
+|| - Cherries [63 kcal]
+|| 	-> Cherries, sweet
+||
+============================================
+|||| Wednesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Nuts with milk [260 kcal]
+|| 	-> Nuts, walnuts
+|| 	-> Raisins, seeded
+|| 	-> Seeds, sunflower seed kernels
+|| 	-> Soymilk (all flavors), unsweetened
+||
+|| >>>   Lunch   <<<
+|| - Pumpkin cream [76 kcal]
+|| 	-> Pumpkin flowers, cooked
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Sushi [517 kcal]
+|| 	-> Fish, salmon
+|| 	-> Seaweed, agar
+|| 	-> Rice, white
+|| - Banana [89 kcal]
+|| 	-> Bananas, raw
+||
+|| >>>   Dinner  <<<
+|| - Melon soup [110 kcal]
+|| 	-> Melons, casaba
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Carrot Cream [654 kcal]
+|| 	-> Cream, fluid
+|| 	-> Carrots, cooked
+|| - Some Nuts [290 kcal]
+|| 	-> Nuts, mixed nuts
+||
+============================================
+|||| Thursday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Doughnuts [639 kcal]
+|| 	-> Doughnuts, cake-type
+||
+|| >>>   Lunch   <<<
+|| - Gazpacho [90 kcal]
+|| 	-> Tomatoes, red
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Spinach with salmon dices [278 kcal]
+|| 	-> Spinach, cooked
+|| 	-> Fish, salmon
+|| - Chocolate cake [194 kcal]
+|| 	-> Cake, chocolate
+||
+|| >>>   Dinner  <<<
+|| - Macaroni with tomato [326 kcal]
+|| 	-> Pasta, cooked
+|| 	-> Tomato products, canned
+|| - Carrot Cream [654 kcal]
+|| 	-> Cream, fluid
+|| 	-> Carrots, cooked
+|| - Apple [52 kcal]
+|| 	-> Apples, raw
+||
+============================================
+|||| Friday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Muffins [340 kcal]
+|| 	-> English muffins, plain
+||
+|| >>>   Lunch   <<<
+|| - Three Delight Rice [310 kcal]
+|| 	-> Rice, white
+|| 	-> Peas, split
+|| 	-> Corn, sweet
+|| - Lasagna [676 kcal]
+|| 	-> Tomato products, canned
+|| 	-> Bologna, meat and poultry
+|| 	-> Cheese, mozzarella
+|| 	-> Pasta, cooked
+|| - Watermelon [30 kcal]
+|| 	-> Watermelon, raw
+||
+|| >>>   Dinner  <<<
+|| - Melon soup [110 kcal]
+|| 	-> Melons, casaba
+|| 	-> Pickles, cucumber
+|| 	-> Onions, raw
+|| - Tomato with Avocado [379 kcal]
+|| 	-> Avocados, raw
+|| 	-> Tomatoes, red
+|| - Fruit Yogurt [102 kcal]
+|| 	-> Yogurt, fruit
+||
+============================================
+|||| Saturday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Pancakes with maple syrup [311 kcal]
+|| 	-> Pancakes, plain
+|| 	-> Syrups, maple
+||
+|| >>>   Lunch   <<<
+|| - Tortilla [641 kcal]
+|| 	-> Egg, whole
+|| 	-> Potatoes, french fried
+|| - Ratatouille [66 kcal]
+|| 	-> Eggplant, cooked
+|| 	-> Tomatoes, red
+|| 	-> Squash, summer
+|| - Flan [145 kcal]
+|| 	-> Desserts, flan
+||
+|| >>>   Dinner  <<<
+|| - Mashed Potatoes with carrots [198 kcal]
+|| 	-> Potatoes, boiled
+|| 	-> Carrots, cooked
+|| - Grilled Lamb [547 kcal]
+|| 	-> Lamb, New Zealand
+|| 	-> Snacks, potato chips
+|| - Yogurt [63 kcal]
+|| 	-> Yogurt, plain
+||
+============================================
+|||| Sunday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Cookies and milk [295 kcal]
+|| 	-> Cookies, oatmeal
+|| 	-> Milk, producer
+||
+|| >>>   Lunch   <<<
+|| - Mixed Vegetables [92 kcal]
+|| 	-> Vegetables, mixed (corn
+|| - Spinach with salmon dices [278 kcal]
+|| 	-> Spinach, cooked
+|| 	-> Fish, salmon
+|| - Gelatin [62 kcal]
+|| 	-> Gelatin desserts, dry mix
+||
+|| >>>   Dinner  <<<
+|| - Potato with beans [329 kcal]
+|| 	-> Beans, baked
+|| 	-> Potatoes, boiled
+|| - Salmagundi [555 kcal]
+|| 	-> Onions, cooked
+|| 	-> Eggs, scrambled
+|| 	-> Fish, anchovy
+|| - Plum [46 kcal]
+|| 	-> Plums, raw
+||
+============================================
+
+############################################
+############# MENU INFORMATION #############
+############################################
+
+Total Calories:		12228 kcal
+Approx. Daily Calories:	1746 kcal
+
+============================================
+Top Scored Courses
+============================================
+- Breakfasts:		("Tofu Sandwich" "Muffins" "Vegan Cheese Sandwich")
+- First Courses:	("Gazpacho" "Pumpkin cream")
+- Second Courses:	("Ratatouille" "Tomato with Avocado")
+- Desserts:		("Chocolate cake" "Fruit Yogurt" "Yogurt")
+
+############################################
+############################################
+
+Warning:
+The given menu provides 500 less daily calories than you need.
+Make sure to enrichen your daily calories intake with larger meal quantities or other snacks throughout the day.
+
+############################################
+############################################

@@ -1,0 +1,329 @@
+| > How old are you? 
+| 
+80	;age
+| > How tall are you? (cm) 
+| 170	;height
+| > What is your weight? (kg) 
+| 60;	;weight
+| > What is your gender? 
+	1) Male
+	2) Female
+	3) n/a
+| 1	;sex: male
+| > How much exercise do you do per week? 
+	1) Sedentary
+	2) Active
+	3) Vigorously-active
+| 3	;execise-level: vigorously active
+| > Do you have any of the following diseases? List as many as required. 
+	1) Diabetes
+	2) Celiac
+	3) Colesterol
+	4) Gota
+	5) Hipertension
+	6) Cirrhosis
+	7) Anemia
+	8) Osteoporosis / Arthritis
+| 	;no diseases
+| > Do you eat meat? (yes/no) 
+| yes	;eat meat
+| > Are you from one of this religions? 
+	1) Muslim
+	2) Jewish
+	3) None
+| 1	;religion: muslim
+| > Do you really LIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Vegetables and Vegetable Products
+	8) Nut and Seed Products
+	9) Beef Products
+	10) Sausages and Luncheon Meats
+	11) Finfish and Shellfish Products
+	12) Legumes and Legume Products
+	13) Sweets
+	14) Soups, Sauces, and Gravies
+	15) SnacksBreakfast Cereals
+	16) Baked Products
+	17) Lamb, Veal, and Game Products
+	18) Cereal Grains and Pasta
+| 	;no positive preferences
+| > Do you DISLIKE any of the following foods? List as many as required. 
+	1) Dairy and Egg Products
+	2) Spices and Herbs
+	3) Fats and Oils
+	4) Poultry Products
+	5) Fruits and Fruit Juices
+	6) Pork Products
+	7) Vegetables and Vegetable Products
+	8) Nut and Seed Products
+	9) Beef Products
+	10) Sausages and Luncheon Meats
+	11) Finfish and Shellfish Products
+	12) Legumes and Legume Products
+	13) Sweets
+	14) Soups, Sauces, and Gravies
+	15) SnacksBreakfast Cereals
+	16) Baked Products
+	17) Lamb, Veal, and Game Products
+	18) Cereal Grains and Pasta
+| 	;no negative preferences
+| > Do you want a detailed output? With detailed ingredient information? (yes/no) 
+| yes	;verbose print
+
+Processing the data obtained...
+
+############################################
+############# USER INFORMATION #############
+############################################
+
+Sex:				Male
+Age:				80
+Height:				170 cm
+Weight:				60 kg
+Exercise Level:		Vigorously-active
+Required Daily Calories:	2851 kcal
+
+############################################
+############################################
+
+Generating solution...
+
+############################################
+################### MENU ###################
+############################################
+
+Menu:
+============================================
+|||| Monday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Muffins [340 kcal]
+|| 	-> English muffins, plain
+||
+|| >>>   Lunch   <<<
+|| - Three Delight Rice [310 kcal]
+|| 	-> Rice, white
+|| 	-> Peas, split
+|| 	-> Corn, sweet
+|| - Spanish Migas [1543 kcal]
+|| 	-> Sausage, Berliner
+|| 	-> Corn flour, whole-grain
+|| - Fruit Yogurt [102 kcal]
+|| 	-> Yogurt, fruit
+||
+|| >>>   Dinner  <<<
+|| - Tortilla [641 kcal]
+|| 	-> Egg, whole
+|| 	-> Potatoes, french fried
+|| - Vegan Meatballs [335 kcal]
+|| 	-> Meatballs, meatless
+|| - Watermelon [30 kcal]
+|| 	-> Watermelon, raw
+||
+============================================
+|||| Tuesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Nuts with milk [260 kcal]
+|| 	-> Nuts, walnuts
+|| 	-> Raisins, seeded
+|| 	-> Seeds, sunflower seed kernels
+|| 	-> Soymilk (all flavors), unsweetened
+||
+|| >>>   Lunch   <<<
+|| - Pupkin cream [79 kcal]
+|| 	-> Pumpkin, cooked
+|| 	-> Potatoes, boiled
+|| - Grilled Lamb [547 kcal]
+|| 	-> Lamb, New Zealand
+|| 	-> Snacks, potato chips
+|| - Some Nuts [290 kcal]
+|| 	-> Nuts, mixed nuts
+||
+|| >>>   Dinner  <<<
+|| - Fideua [449 kcal]
+|| 	-> Noodles, egg
+|| 	-> Mollusks, squid
+|| 	-> Mollusks, mussel
+|| - Sausages [588 kcal]
+|| 	-> Sausage, Italian
+|| - Orange [49 kcal]
+|| 	-> Oranges, raw
+||
+============================================
+|||| Wednesday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Tofu Sandwich [253 kcal]
+|| 	-> Tofu, soft
+|| 	-> Tomatoes, red
+|| 	-> Bread, white
+||
+|| >>>   Lunch   <<<
+|| - Lentils salad [226 kcal]
+|| 	-> Lentils, mature seeds
+|| 	-> Peppers, sweet
+|| 	-> Onions, raw
+|| - Lasagna [676 kcal]
+|| 	-> Tomato products, canned
+|| 	-> Bologna, meat and poultry
+|| 	-> Cheese, mozzarella
+|| 	-> Pasta, cooked
+|| - Cherries [63 kcal]
+|| 	-> Cherries, sweet
+||
+|| >>>   Dinner  <<<
+|| - Couscous [358 kcal]
+|| 	-> Couscous, cooked
+|| 	-> Carrots, cooked
+|| 	-> Game meat, rabbit
+|| - Pork Sausage with legums [1426 kcal]
+|| 	-> Pork sausage rice links, brown and serve
+|| 	-> Lentils, raw
+|| - Pears [42 kcal]
+|| 	-> Pears, asian
+||
+============================================
+|||| Thursday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Vegan Cheese Sandwich [362 kcal]
+|| 	-> Imitation cheese, american or cheddar
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Green bean with potatoes [115 kcal]
+|| 	-> Beans, snap
+|| 	-> Potatoes, boiled
+|| - Sardins with bread [312 kcal]
+|| 	-> Fish, sardine
+|| - Plum [46 kcal]
+|| 	-> Plums, raw
+||
+|| >>>   Dinner  <<<
+|| - Caesar Salad [1215 kcal]
+|| 	-> Salad dressing, caesar dressing
+|| 	-> Chicken, capons
+|| - Salmon [364 kcal]
+|| 	-> Fish, salmon
+|| - Apple Pie [162 kcal]
+|| 	-> Cake, fruitcake
+||
+============================================
+|||| Friday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Salami Sandwich [367 kcal]
+|| 	-> Salami, dry or hard
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Macaroni with tomato [326 kcal]
+|| 	-> Pasta, cooked
+|| 	-> Tomato products, canned
+|| - Veggie Nuggets [335 kcal]
+|| 	-> MORNINGSTAR FARMS Garden Veggie Nuggets, frozen
+|| - Apple [52 kcal]
+|| 	-> Apples, raw
+||
+|| >>>   Dinner  <<<
+|| - Chicken soup [82 kcal]
+|| 	-> Soup, chicken noodle
+|| - Sole [176 kcal]
+|| 	-> Fish, flatfish (flounder and sole species)
+|| 	-> Onions, dehydrated flakes
+|| 	-> Pineapple, canned
+|| - Banana [89 kcal]
+|| 	-> Bananas, raw
+||
+============================================
+|||| Saturday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Ham Sandwich [294 kcal]
+|| 	-> Ham, sliced
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Rice with tomato [272 kcal]
+|| 	-> Rice, white
+|| 	-> Tomato products, canned
+|| - Fried chicken [403 kcal]
+|| 	-> Chicken, broilers or fryers
+|| - Flan [145 kcal]
+|| 	-> Desserts, flan
+||
+|| >>>   Dinner  <<<
+|| - Paella [498 kcal]
+|| 	-> Rice, white
+|| 	-> Mollusks, squid
+|| 	-> Mollusks, mussel
+|| - Tuna [368 kcal]
+|| 	-> Fish, tuna
+|| - Gelatin [62 kcal]
+|| 	-> Gelatin desserts, dry mix
+||
+============================================
+|||| Sunday
+============================================
+||
+|| >>> Breakfast <<<
+|| - Chorizo Sandwich [381 kcal]
+|| 	-> Chorizo, pork and beef
+|| 	-> Bread, french or vienna (includes sourdough)
+||
+|| >>>   Lunch   <<<
+|| - Chickpeas [202 kcal]
+|| 	-> Chickpeas (garbanzo beans, bengal gram)
+|| - Beef [579 kcal]
+|| 	-> Beef, flank
+|| - Chocolate cake [194 kcal]
+|| 	-> Cake, chocolate
+||
+|| >>>   Dinner  <<<
+|| - Boiled Vegetables (Carrots, Potatoes and Peas) [238 kcal]
+|| 	-> Carrots, cooked
+|| 	-> Potatoes, boiled
+|| 	-> Peas, split
+|| - Loin [552 kcal]
+|| 	-> Beef, short loin
+|| - Yogurt [63 kcal]
+|| 	-> Yogurt, plain
+||
+============================================
+
+############################################
+############# MENU INFORMATION #############
+############################################
+
+Total Calories:		16864 kcal
+Approx. Daily Calories:	2409 kcal
+
+============================================
+Top Scored Courses
+============================================
+- Breakfasts:		("Muffins" "Salami Sandwich" "Ham Sandwich")
+- First Courses:	("Macaroni with tomato" "Rice with tomato" "Green bean with potatoes")
+- Second Courses:	("Fried chicken" "Loin" "Beef")
+- Desserts:		("Chocolate cake" "Fruit Yogurt" "Yogurt")
+
+############################################
+############################################
+
+Warning:
+The given menu provides 300 less daily calories than you need.
+Make sure to enrichen your daily calories intake with larger meal quantities or other snacks throughout the day.
+
+############################################
+############################################

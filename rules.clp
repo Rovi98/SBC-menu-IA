@@ -128,7 +128,7 @@
 
   (bind ?fixed-breakfasts (subseq$ ?sorted-breakfasts 1 7))
   (bind ?fixed-firstCourses (subseq$ ?sorted-firstCourses 1 10))
-  (bind ?fixed-secondCourses (subseq$ ?sorted-secondCourses 1 9))
+  (bind ?fixed-secondCourses (subseq$ ?sorted-secondCourses 1 10))
   (bind ?fixed-desserts (subseq$ ?sorted-desserts 1 14))
 
   (bind ?fixed-used-calories (count-calories (create$ ?fixed-breakfasts
@@ -153,7 +153,7 @@
 
   (available-courses (breakfasts    ?bf1 ?bf2 ?bf3 ?bf4 ?bf5 ?bf6 ?bf7 $?))
   (available-courses (firstCourses  ?fc1 ?fc2 ?fc3 ?fc4 ?fc5 ?fc6 ?fc7 ?fc8 ?fc9 ?fc10 $? ?fc11 $? ?fc12 $? ?fc13 $? ?fc14 $?))
-  (available-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 $? ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14 $?))
+  (available-courses (secondCourses ?sc1 ?sc2 ?sc3 ?sc4 ?sc5 ?sc6 ?sc7 ?sc8 ?sc9 ?sc10 $? ?sc11 $? ?sc12 $? ?sc13 $? ?sc14 $?))
   (available-courses (desserts      ?ds1 ?ds2 ?ds3 ?ds4 ?ds5 ?ds6 ?ds7 ?ds8 ?ds9 ?ds10 ?ds11 ?ds12 ?ds13 ?ds14 $?))
 
 	; (test (within-tolerance
