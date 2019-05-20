@@ -130,6 +130,74 @@
 	(ingredient [Ingredient_OrangesrawCaliforniavalencias])
 	(quantity 50))
 
+([IngredientQuantity_Applesrawwithskin200] of IngredientQuantity
+	(ingredient [Ingredient_Applesrawwithskin])
+	(quantity 200))
+
+([IngredientQuantity_Bananasraw200] of IngredientQuantity
+	(ingredient [Ingredient_Bananasraw])
+	(quantity 200))
+
+([IngredientQuantity_Watermelonraw200] of IngredientQuantity
+	(ingredient [Ingredient_Watermelonraw])
+	(quantity 200))
+
+([IngredientQuantity_Plumsraw200] of IngredientQuantity
+	(ingredient [Ingredient_Plumsraw])
+	(quantity 200))
+
+([IngredientQuantity_Cherriessweetraw200] of IngredientQuantity
+	(ingredient [Ingredient_Cherriessweetraw])
+	(quantity 200))
+
+([IngredientQuantity_Pearsasianraw200] of IngredientQuantity
+	(ingredient [Ingredient_Pearsasianraw])
+	(quantity 200))
+
+([IngredientQuantity_OrangesrawCaliforniavalencias200] of IngredientQuantity
+	(ingredient [Ingredient_OrangesrawCaliforniavalencias])
+	(quantity 200))
+
+([IngredientQuantity_Strawberriesraw160] of IngredientQuantity
+	(ingredient [Ingredient_Strawberriesraw])
+	(quantity 160))
+
+([IngredientQuantity_Creamfluidlightwhipping40] of IngredientQuantity
+	(ingredient [Ingredient_Creamfluidlightwhipping])
+	(quantity 40))
+
+([IngredientQuantity_Oilcocoabutter30] of IngredientQuantity
+	(ingredient [Ingredient_Oilcocoabutter])
+	(quantity 30))
+
+([IngredientQuantity_Breadwhitecommerciallypreparedincludessoftbreadcrumbs90] of IngredientQuantity
+	(ingredient [Ingredient_Breadwhitecommerciallypreparedincludessoftbreadcrumbs])
+	(quantity 90))
+
+([IngredientQuantity_Jamsandpreserves30] of IngredientQuantity
+	(ingredient [Ingredient_Jamsandpreserves])
+	(quantity 30))
+
+([IngredientQuantity_Breadwhitecommerciallypreparedtoasted90] of IngredientQuantity
+	(ingredient [Ingredient_Breadwhitecommerciallypreparedtoasted])
+	(quantity 90))
+
+([IngredientQuantity_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium40] of IngredientQuantity
+	(ingredient [Ingredient_Porkcuredbaconcookedbroiledpan-friedorroastedreducedsodium])
+	(quantity 40))
+
+([IngredientQuantity_Eggwholecookedfried100] of IngredientQuantity
+	(ingredient [Ingredient_Eggwholecookedfried])
+	(quantity 100))
+
+([IngredientQuantity_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds30] of IngredientQuantity
+	(ingredient [Ingredient_Cerealsready-to-eatPOSTHONEYBUNCHESOFOATSwithalmonds])
+	(quantity 30))
+
+([IngredientQuantity_Milkproducerfluid37milkfat90] of IngredientQuantity
+	(ingredient [Ingredient_Milkproducerfluid37milkfat])
+	(quantity 90))
+
 ([IngredientQuantity_Pastacookedenrichedwithaddedsalt200] of IngredientQuantity
 	(ingredient [Ingredient_Pastacookedenrichedwithaddedsalt])
 	(quantity 200))

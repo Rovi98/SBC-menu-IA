@@ -18,7 +18,19 @@ Breakfast = [["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",3
 ["Pancakes with maple syrup",[("Pancakes, plain, dry mix, complete, prepared",120), ("Syrups, maple",30)]],
 ["Doughnuts",[("Doughnuts, cake-type, plain, sugared or glazed",150)]],
 ["Cookies and milk",[("Cookies, oatmeal, dry mix",50),("Milk, producer, fluid, 3.7% milkfat",100)]],
-["Fruit Salad",[("Apples, raw, without skin",50),("Bananas, raw",50),("Pineapple, raw, all varieties",50),("Oranges, raw, California, valencias",50)]]
+["Fruit Salad",[("Apples, raw, without skin",50),("Bananas, raw",50),("Pineapple, raw, all varieties",50),("Oranges, raw, California, valencias",50)]],
+["Two Apples",[("Apples, raw, with skin",200)]],
+["Two Bananas",[("Bananas, raw",200)]],
+["Watermelon Slices",[("Watermelon, raw",200)]],
+["Two Plums",[("Plums, raw",200)]],
+["Bowl of Cherries",[("Cherries, sweet, raw",200)]],
+["Two Pears",[("Pears, asian, raw",200)]],
+["Two Oranges",[("Oranges, raw, California, valencias",200)]],
+["Bowl of Strawberries with cream",[("Strawberries, raw",160), ("Cream, fluid, light whipping",40)]],
+["Cocoa Butter Sandwich (Nocilla Sandwich)",[("Oil, cocoa butter",30), ("Bread, white, commercially prepared (includes soft bread crumbs)",90)]],
+["Jam Toasts",[("Jams and preserves",30), ("Bread, white, commercially prepared, toasted",90)]],
+["Bacon and Fried Eggs",[("Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",40), ("Egg, whole, cooked, fried",100)]],
+["Cornflakes with milk",[("Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds",30), ("Milk, producer, fluid, 3.7% milkfat",90)]]
 ]
 
 FirstCourse = [["Macaroni with tomato",[("Pasta, cooked, enriched, with added salt",200), ("Tomato products, canned, sauce",50)]],
