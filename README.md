@@ -4,7 +4,6 @@
 
 **Autores: Carlos Bergillos, Roger Vilaseca y Adrià Cabeza**
 
-
 [![forthebadge](https://forthebadge.com/images/badges/certified-elijah-wood.svg)](https://forthebadge.com)
 
 Trabajo de Sistemas Basados en el Conocimiento: IA (2018-2019 Primavera)
@@ -400,7 +399,7 @@ La ontología que hemos realizado para nuestro SBC contiene diversas
 clases. Se puedens observar en la .
 
 ![Ontología completa de nuestro
-SBC[]{data-label="fig_ontologia"}](images/full_light.png){width="\textwidth"
+SBC[]{data-label="fig_ontologia"}](deliverable/images/full_light.png){width="\textwidth"
 height="\textheight"}
 
 A continuación detallaremos cada una de las clases.
@@ -410,7 +409,7 @@ A continuación detallaremos cada una de las clases.
 
 
 ![Clase
-*Course*[]{data-label="fig_class_Course"}](images/class_Course.png)
+*Course*[]{data-label="fig_class_Course"}](deliverable/images/class_Course.png)
 
 Definimos aquí toda la información que contiene un plato. Tenemos, entre
 otras cosas, la información acerca de los ingredientes que contiene y
@@ -434,7 +433,7 @@ Los atributos son:
 
 
 ![Clase
-*Ingredient*[]{data-label="fig_class_Ingredient"}](images/class_Ingredient.png)
+*Ingredient*[]{data-label="fig_class_Ingredient"}](deliverable/images/class_Ingredient.png)
 
 Definimos aquí toda la información que contiene un ingrediente. Por
 ejemplo, los valores nutricionales que presenta el ingrediente.\
@@ -449,7 +448,7 @@ Los atributos son:
 
 
 ![Clase
-*IngredientQuantity*[]{data-label="fig_class_IngredientQuantity"}](images/class_IngredientQuantity.png)
+*IngredientQuantity*[]{data-label="fig_class_IngredientQuantity"}](deliverable/images/class_IngredientQuantity.png)
 
 Para poder expresar la cantidad de ingredientes que contiene un plato
 hacemos uso de esta clase la cual contiene una referencia a una
@@ -466,7 +465,7 @@ Los atributos son:
 
 
 ![Clase
-*Nutrient*[]{data-label="fig_class_Nutrient"}](images/class_Nutrient.png)
+*Nutrient*[]{data-label="fig_class_Nutrient"}](deliverable/images/class_Nutrient.png)
 
 Definimos en esta clase toda la información que contiene un nutriente.
 Aunque la clase actualmente solo contiente un atributo para el nombre,
@@ -482,7 +481,7 @@ Los atributos son:
 
 
 ![Clase
-*NutrientQuantity*[]{data-label="fig_class_NutrientQuantity"}](images/class_NutrientQuantity.png)
+*NutrientQuantity*[]{data-label="fig_class_NutrientQuantity"}](deliverable/images/class_NutrientQuantity.png)
 
 Para poder expresar la cantidad de nutrientes que contiene un
 ingrediente en concreto hacemos uso de esta clase. Esta dispone de una
@@ -500,7 +499,7 @@ Los atributos son:
 
 
 ![Clase
-*Disease*[]{data-label="fig_class_Disease"}](images/class_Disease.png)
+*Disease*[]{data-label="fig_class_Disease"}](deliverable/images/class_Disease.png)
 
 Definimos en esta clase toda la información que contiene una enfermedad.
 En nuestro caso, una enfermedad presenta una serie de limitaciones
@@ -516,7 +515,7 @@ Los atributos son:
 
 
 ![Clase
-*Preference*[]{data-label="fig_class_Preference"}](images/class_Preference.png)
+*Preference*[]{data-label="fig_class_Preference"}](deliverable/images/class_Preference.png)
 
 Definimos en esta clase toda la información que contiene una
 preferencia. En la práctica, una instancia de esta clase se comporta de
@@ -537,7 +536,7 @@ Los atributos son:
 
 
 ![Clase
-*Limitation*[]{data-label="fig_class_Limitation"}](images/class_Limitation.png)
+*Limitation*[]{data-label="fig_class_Limitation"}](deliverable/images/class_Limitation.png)
 
 Para ser capaces de expresar una limitación o incluso una preferencia
 alimentícia, hemos hecho uso de esta clase para poder describir la
