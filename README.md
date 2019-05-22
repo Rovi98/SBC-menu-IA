@@ -8,7 +8,7 @@
 
 Trabajo de Sistemas Basados en el Conocimiento: IA (2018-2019 Primavera)
 
-![image](images/UPClogo.png)
+![image](deliverable/images/UPClogo.png)
 
 Introducción
 ============
